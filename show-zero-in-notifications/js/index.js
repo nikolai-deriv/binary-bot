@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 723);
+/******/ 	return __webpack_require__(__webpack_require__.s = 720);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -74,9 +74,9 @@
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return translate; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return translateLangToLang; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return xml; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_modules_es6_string_iterator__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_modules_es6_string_iterator__ = __webpack_require__(48);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_modules_es6_string_iterator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_core_js_modules_es6_string_iterator__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_modules_es6_array_from__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_modules_es6_array_from__ = __webpack_require__(64);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_modules_es6_array_from___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_core_js_modules_es6_array_from__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_modules_es6_object_keys__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_modules_es6_object_keys___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_core_js_modules_es6_object_keys__);
@@ -86,7 +86,7 @@
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_core_js_modules_es6_array_iterator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_core_js_modules_es6_array_iterator__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_core_js_modules_es6_object_to_string__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_core_js_modules_es6_object_to_string___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_core_js_modules_es6_object_to_string__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_core_js_modules_es7_object_values__ = __webpack_require__(140);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_core_js_modules_es7_object_values__ = __webpack_require__(139);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_core_js_modules_es7_object_values___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_core_js_modules_es7_object_values__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_core_js_modules_es6_array_find_index__ = __webpack_require__(68);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_core_js_modules_es6_array_find_index___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_core_js_modules_es6_array_find_index__);
@@ -11086,11 +11086,11 @@ return jQuery;
 "use strict";
 
 // 19.1.3.6 Object.prototype.toString()
-var classof = __webpack_require__(73);
+var classof = __webpack_require__(72);
 var test = {};
 test[__webpack_require__(4)('toStringTag')] = 'z';
 if (test + '' != '[object z]') {
-  __webpack_require__(27)(Object.prototype, 'toString', function toString() {
+  __webpack_require__(26)(Object.prototype, 'toString', function toString() {
     return '[object ' + classof(this) + ']';
   }, true);
 }
@@ -11100,8 +11100,8 @@ if (test + '' != '[object z]') {
 /* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var store = __webpack_require__(69)('wks');
-var uid = __webpack_require__(57);
+var store = __webpack_require__(73)('wks');
+var uid = __webpack_require__(56);
 var Symbol = __webpack_require__(10).Symbol;
 var USE_SYMBOL = typeof Symbol == 'function';
 
@@ -11121,9 +11121,9 @@ $exports.store = store;
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(195);
+  module.exports = __webpack_require__(191);
 } else {
-  module.exports = __webpack_require__(196);
+  module.exports = __webpack_require__(192);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6)))
@@ -11324,16 +11324,16 @@ process.umask = function() { return 0; };
 
 "use strict";
 
-var addToUnscopables = __webpack_require__(64);
+var addToUnscopables = __webpack_require__(65);
 var step = __webpack_require__(166);
-var Iterators = __webpack_require__(60);
+var Iterators = __webpack_require__(58);
 var toIObject = __webpack_require__(40);
 
 // 22.1.3.4 Array.prototype.entries()
 // 22.1.3.13 Array.prototype.keys()
 // 22.1.3.29 Array.prototype.values()
 // 22.1.3.30 Array.prototype[@@iterator]()
-module.exports = __webpack_require__(111)(Array, 'Array', function (iterated, kind) {
+module.exports = __webpack_require__(109)(Array, 'Array', function (iterated, kind) {
   this._t = toIObject(iterated); // target
   this._i = 0;                   // next index
   this._k = kind;                // kind
@@ -11365,8 +11365,8 @@ addToUnscopables('entries');
 
 var global = __webpack_require__(10);
 var core = __webpack_require__(38);
-var hide = __webpack_require__(33);
-var redefine = __webpack_require__(27);
+var hide = __webpack_require__(32);
+var redefine = __webpack_require__(26);
 var ctx = __webpack_require__(36);
 var PROTOTYPE = 'prototype';
 
@@ -11414,10 +11414,10 @@ module.exports = $export;
 
 var $iterators = __webpack_require__(7);
 var getKeys = __webpack_require__(39);
-var redefine = __webpack_require__(27);
+var redefine = __webpack_require__(26);
 var global = __webpack_require__(10);
-var hide = __webpack_require__(33);
-var Iterators = __webpack_require__(60);
+var hide = __webpack_require__(32);
+var Iterators = __webpack_require__(58);
 var wks = __webpack_require__(4);
 var ITERATOR = wks('iterator');
 var TO_STRING_TAG = wks('toStringTag');
@@ -11489,10 +11489,10 @@ if (typeof __g == 'number') __g = global; // eslint-disable-line no-undef
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.14 Object.keys(O)
-var toObject = __webpack_require__(34);
+var toObject = __webpack_require__(33);
 var $keys = __webpack_require__(39);
 
-__webpack_require__(127)('keys', function () {
+__webpack_require__(136)('keys', function () {
   return function keys(it) {
     return $keys(toObject(it));
   };
@@ -11503,35 +11503,24 @@ __webpack_require__(127)('keys', function () {
 /* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isObject = __webpack_require__(15);
-module.exports = function (it) {
-  if (!isObject(it)) throw TypeError(it + ' is not an object!');
-  return it;
-};
-
-
-/***/ }),
-/* 13 */
-/***/ (function(module, exports, __webpack_require__) {
-
 "use strict";
 
-var LIBRARY = __webpack_require__(58);
+var LIBRARY = __webpack_require__(55);
 var global = __webpack_require__(10);
 var ctx = __webpack_require__(36);
-var classof = __webpack_require__(73);
+var classof = __webpack_require__(72);
 var $export = __webpack_require__(8);
 var isObject = __webpack_require__(15);
-var aFunction = __webpack_require__(51);
-var anInstance = __webpack_require__(132);
-var forOf = __webpack_require__(133);
-var speciesConstructor = __webpack_require__(134);
-var task = __webpack_require__(135).set;
-var microtask = __webpack_require__(191)();
-var newPromiseCapabilityModule = __webpack_require__(136);
-var perform = __webpack_require__(192);
-var userAgent = __webpack_require__(193);
-var promiseResolve = __webpack_require__(194);
+var aFunction = __webpack_require__(62);
+var anInstance = __webpack_require__(128);
+var forOf = __webpack_require__(129);
+var speciesConstructor = __webpack_require__(130);
+var task = __webpack_require__(131).set;
+var microtask = __webpack_require__(187)();
+var newPromiseCapabilityModule = __webpack_require__(132);
+var perform = __webpack_require__(188);
+var userAgent = __webpack_require__(189);
+var promiseResolve = __webpack_require__(190);
 var PROMISE = 'Promise';
 var TypeError = global.TypeError;
 var process = global.process;
@@ -11706,7 +11695,7 @@ if (!USE_NATIVE) {
     this._h = 0;              // <- rejection state, 0 - default, 1 - handled, 2 - unhandled
     this._n = false;          // <- notify
   };
-  Internal.prototype = __webpack_require__(137)($Promise.prototype, {
+  Internal.prototype = __webpack_require__(133)($Promise.prototype, {
     // 25.4.5.3 Promise.prototype.then(onFulfilled, onRejected)
     then: function then(onFulfilled, onRejected) {
       var reaction = newPromiseCapability(speciesConstructor(this, $Promise));
@@ -11738,7 +11727,7 @@ if (!USE_NATIVE) {
 
 $export($export.G + $export.W + $export.F * !USE_NATIVE, { Promise: $Promise });
 __webpack_require__(63)($Promise, PROMISE);
-__webpack_require__(113)(PROMISE);
+__webpack_require__(111)(PROMISE);
 Wrapper = __webpack_require__(38)[PROMISE];
 
 // statics
@@ -11757,7 +11746,7 @@ $export($export.S + $export.F * (LIBRARY || !USE_NATIVE), PROMISE, {
     return promiseResolve(LIBRARY && this === Wrapper ? $Promise : this, x);
   }
 });
-$export($export.S + $export.F * !(USE_NATIVE && __webpack_require__(112)(function (iter) {
+$export($export.S + $export.F * !(USE_NATIVE && __webpack_require__(110)(function (iter) {
   $Promise.all(iter)['catch'](empty);
 })), PROMISE, {
   // 25.4.4.1 Promise.all(iterable)
@@ -11804,6 +11793,17 @@ $export($export.S + $export.F * !(USE_NATIVE && __webpack_require__(112)(functio
 
 
 /***/ }),
+/* 13 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var isObject = __webpack_require__(15);
+module.exports = function (it) {
+  if (!isObject(it)) throw TypeError(it + ' is not an object!');
+  return it;
+};
+
+
+/***/ }),
 /* 14 */,
 /* 15 */
 /***/ (function(module, exports) {
@@ -11818,26 +11818,13 @@ module.exports = function (it) {
 /***/ (function(module, exports, __webpack_require__) {
 
 // Thank's IE8 for his funny defineProperty
-module.exports = !__webpack_require__(17)(function () {
+module.exports = !__webpack_require__(18)(function () {
   return Object.defineProperty({}, 'a', { get: function () { return 7; } }).a != 7;
 });
 
 
 /***/ }),
 /* 17 */
-/***/ (function(module, exports) {
-
-module.exports = function (exec) {
-  try {
-    return !!exec();
-  } catch (e) {
-    return true;
-  }
-};
-
-
-/***/ }),
-/* 18 */
 /***/ (function(module, exports) {
 
 var g;
@@ -11864,12 +11851,25 @@ module.exports = g;
 
 
 /***/ }),
+/* 18 */
+/***/ (function(module, exports) {
+
+module.exports = function (exec) {
+  try {
+    return !!exec();
+  } catch (e) {
+    return true;
+  }
+};
+
+
+/***/ }),
 /* 19 */,
 /* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var anObject = __webpack_require__(12);
-var IE8_DOM_DEFINE = __webpack_require__(121);
+var anObject = __webpack_require__(13);
+var IE8_DOM_DEFINE = __webpack_require__(120);
 var toPrimitive = __webpack_require__(81);
 var dP = Object.defineProperty;
 
@@ -11901,13 +11901,13 @@ exports.f = __webpack_require__(16) ? Object.defineProperty : function definePro
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return getExtension; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return showSpinnerInButton; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return removeSpinnerInButton; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_modules_es6_string_iterator__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_modules_es6_string_iterator__ = __webpack_require__(48);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_modules_es6_string_iterator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_core_js_modules_es6_string_iterator__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_modules_es6_array_from__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_modules_es6_array_from__ = __webpack_require__(64);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_modules_es6_array_from___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_core_js_modules_es6_array_from__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_modules_es6_regexp_split__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_modules_es6_regexp_split__ = __webpack_require__(116);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_modules_es6_regexp_split___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_core_js_modules_es6_regexp_split__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_modules_es6_regexp_match__ = __webpack_require__(71);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_modules_es6_regexp_match__ = __webpack_require__(69);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_modules_es6_regexp_match___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_core_js_modules_es6_regexp_match__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_core_js_modules_web_dom_iterable__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_core_js_modules_web_dom_iterable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_core_js_modules_web_dom_iterable__);
@@ -11919,15 +11919,15 @@ exports.f = __webpack_require__(16) ? Object.defineProperty : function definePro
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_core_js_modules_es6_object_keys___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_core_js_modules_es6_object_keys__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_core_js_modules_es6_regexp_constructor__ = __webpack_require__(117);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_core_js_modules_es6_regexp_constructor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_core_js_modules_es6_regexp_constructor__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_core_js_modules_es6_regexp_replace__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_core_js_modules_es6_regexp_replace__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_core_js_modules_es6_regexp_replace___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_core_js_modules_es6_regexp_replace__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_core_js_modules_es6_regexp_search__ = __webpack_require__(144);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_core_js_modules_es6_regexp_search__ = __webpack_require__(143);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_core_js_modules_es6_regexp_search___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_core_js_modules_es6_regexp_search__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_react_render_html__ = __webpack_require__(209);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_react_render_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_react_render_html__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__common_i18n__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__common_lang__ = __webpack_require__(47);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__common_appIdResolver__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__common_lang__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__common_appIdResolver__ = __webpack_require__(107);
 
 
 
@@ -12070,262 +12070,9 @@ var removeSpinnerInButton = function removeSpinnerInButton($buttonElement, initi
 
 "use strict";
 
-// ECMAScript 6 symbols shim
-var global = __webpack_require__(10);
-var has = __webpack_require__(35);
-var DESCRIPTORS = __webpack_require__(16);
-var $export = __webpack_require__(8);
-var redefine = __webpack_require__(27);
-var META = __webpack_require__(92).KEY;
-var $fails = __webpack_require__(17);
-var shared = __webpack_require__(69);
-var setToStringTag = __webpack_require__(63);
-var uid = __webpack_require__(57);
-var wks = __webpack_require__(4);
-var wksExt = __webpack_require__(122);
-var wksDefine = __webpack_require__(183);
-var enumKeys = __webpack_require__(184);
-var isArray = __webpack_require__(125);
-var anObject = __webpack_require__(12);
-var isObject = __webpack_require__(15);
-var toObject = __webpack_require__(34);
-var toIObject = __webpack_require__(40);
-var toPrimitive = __webpack_require__(81);
-var createDesc = __webpack_require__(56);
-var _create = __webpack_require__(82);
-var gOPNExt = __webpack_require__(186);
-var $GOPD = __webpack_require__(110);
-var $GOPS = __webpack_require__(96);
-var $DP = __webpack_require__(20);
-var $keys = __webpack_require__(39);
-var gOPD = $GOPD.f;
-var dP = $DP.f;
-var gOPN = gOPNExt.f;
-var $Symbol = global.Symbol;
-var $JSON = global.JSON;
-var _stringify = $JSON && $JSON.stringify;
-var PROTOTYPE = 'prototype';
-var HIDDEN = wks('_hidden');
-var TO_PRIMITIVE = wks('toPrimitive');
-var isEnum = {}.propertyIsEnumerable;
-var SymbolRegistry = shared('symbol-registry');
-var AllSymbols = shared('symbols');
-var OPSymbols = shared('op-symbols');
-var ObjectProto = Object[PROTOTYPE];
-var USE_NATIVE = typeof $Symbol == 'function';
-var QObject = global.QObject;
-// Don't use setters in Qt Script, https://github.com/zloirock/core-js/issues/173
-var setter = !QObject || !QObject[PROTOTYPE] || !QObject[PROTOTYPE].findChild;
-
-// fallback for old Android, https://code.google.com/p/v8/issues/detail?id=687
-var setSymbolDesc = DESCRIPTORS && $fails(function () {
-  return _create(dP({}, 'a', {
-    get: function () { return dP(this, 'a', { value: 7 }).a; }
-  })).a != 7;
-}) ? function (it, key, D) {
-  var protoDesc = gOPD(ObjectProto, key);
-  if (protoDesc) delete ObjectProto[key];
-  dP(it, key, D);
-  if (protoDesc && it !== ObjectProto) dP(ObjectProto, key, protoDesc);
-} : dP;
-
-var wrap = function (tag) {
-  var sym = AllSymbols[tag] = _create($Symbol[PROTOTYPE]);
-  sym._k = tag;
-  return sym;
-};
-
-var isSymbol = USE_NATIVE && typeof $Symbol.iterator == 'symbol' ? function (it) {
-  return typeof it == 'symbol';
-} : function (it) {
-  return it instanceof $Symbol;
-};
-
-var $defineProperty = function defineProperty(it, key, D) {
-  if (it === ObjectProto) $defineProperty(OPSymbols, key, D);
-  anObject(it);
-  key = toPrimitive(key, true);
-  anObject(D);
-  if (has(AllSymbols, key)) {
-    if (!D.enumerable) {
-      if (!has(it, HIDDEN)) dP(it, HIDDEN, createDesc(1, {}));
-      it[HIDDEN][key] = true;
-    } else {
-      if (has(it, HIDDEN) && it[HIDDEN][key]) it[HIDDEN][key] = false;
-      D = _create(D, { enumerable: createDesc(0, false) });
-    } return setSymbolDesc(it, key, D);
-  } return dP(it, key, D);
-};
-var $defineProperties = function defineProperties(it, P) {
-  anObject(it);
-  var keys = enumKeys(P = toIObject(P));
-  var i = 0;
-  var l = keys.length;
-  var key;
-  while (l > i) $defineProperty(it, key = keys[i++], P[key]);
-  return it;
-};
-var $create = function create(it, P) {
-  return P === undefined ? _create(it) : $defineProperties(_create(it), P);
-};
-var $propertyIsEnumerable = function propertyIsEnumerable(key) {
-  var E = isEnum.call(this, key = toPrimitive(key, true));
-  if (this === ObjectProto && has(AllSymbols, key) && !has(OPSymbols, key)) return false;
-  return E || !has(this, key) || !has(AllSymbols, key) || has(this, HIDDEN) && this[HIDDEN][key] ? E : true;
-};
-var $getOwnPropertyDescriptor = function getOwnPropertyDescriptor(it, key) {
-  it = toIObject(it);
-  key = toPrimitive(key, true);
-  if (it === ObjectProto && has(AllSymbols, key) && !has(OPSymbols, key)) return;
-  var D = gOPD(it, key);
-  if (D && has(AllSymbols, key) && !(has(it, HIDDEN) && it[HIDDEN][key])) D.enumerable = true;
-  return D;
-};
-var $getOwnPropertyNames = function getOwnPropertyNames(it) {
-  var names = gOPN(toIObject(it));
-  var result = [];
-  var i = 0;
-  var key;
-  while (names.length > i) {
-    if (!has(AllSymbols, key = names[i++]) && key != HIDDEN && key != META) result.push(key);
-  } return result;
-};
-var $getOwnPropertySymbols = function getOwnPropertySymbols(it) {
-  var IS_OP = it === ObjectProto;
-  var names = gOPN(IS_OP ? OPSymbols : toIObject(it));
-  var result = [];
-  var i = 0;
-  var key;
-  while (names.length > i) {
-    if (has(AllSymbols, key = names[i++]) && (IS_OP ? has(ObjectProto, key) : true)) result.push(AllSymbols[key]);
-  } return result;
-};
-
-// 19.4.1.1 Symbol([description])
-if (!USE_NATIVE) {
-  $Symbol = function Symbol() {
-    if (this instanceof $Symbol) throw TypeError('Symbol is not a constructor!');
-    var tag = uid(arguments.length > 0 ? arguments[0] : undefined);
-    var $set = function (value) {
-      if (this === ObjectProto) $set.call(OPSymbols, value);
-      if (has(this, HIDDEN) && has(this[HIDDEN], tag)) this[HIDDEN][tag] = false;
-      setSymbolDesc(this, tag, createDesc(1, value));
-    };
-    if (DESCRIPTORS && setter) setSymbolDesc(ObjectProto, tag, { configurable: true, set: $set });
-    return wrap(tag);
-  };
-  redefine($Symbol[PROTOTYPE], 'toString', function toString() {
-    return this._k;
-  });
-
-  $GOPD.f = $getOwnPropertyDescriptor;
-  $DP.f = $defineProperty;
-  __webpack_require__(83).f = gOPNExt.f = $getOwnPropertyNames;
-  __webpack_require__(59).f = $propertyIsEnumerable;
-  $GOPS.f = $getOwnPropertySymbols;
-
-  if (DESCRIPTORS && !__webpack_require__(58)) {
-    redefine(ObjectProto, 'propertyIsEnumerable', $propertyIsEnumerable, true);
-  }
-
-  wksExt.f = function (name) {
-    return wrap(wks(name));
-  };
-}
-
-$export($export.G + $export.W + $export.F * !USE_NATIVE, { Symbol: $Symbol });
-
-for (var es6Symbols = (
-  // 19.4.2.2, 19.4.2.3, 19.4.2.4, 19.4.2.6, 19.4.2.8, 19.4.2.9, 19.4.2.10, 19.4.2.11, 19.4.2.12, 19.4.2.13, 19.4.2.14
-  'hasInstance,isConcatSpreadable,iterator,match,replace,search,species,split,toPrimitive,toStringTag,unscopables'
-).split(','), j = 0; es6Symbols.length > j;)wks(es6Symbols[j++]);
-
-for (var wellKnownSymbols = $keys(wks.store), k = 0; wellKnownSymbols.length > k;) wksDefine(wellKnownSymbols[k++]);
-
-$export($export.S + $export.F * !USE_NATIVE, 'Symbol', {
-  // 19.4.2.1 Symbol.for(key)
-  'for': function (key) {
-    return has(SymbolRegistry, key += '')
-      ? SymbolRegistry[key]
-      : SymbolRegistry[key] = $Symbol(key);
-  },
-  // 19.4.2.5 Symbol.keyFor(sym)
-  keyFor: function keyFor(sym) {
-    if (!isSymbol(sym)) throw TypeError(sym + ' is not a symbol!');
-    for (var key in SymbolRegistry) if (SymbolRegistry[key] === sym) return key;
-  },
-  useSetter: function () { setter = true; },
-  useSimple: function () { setter = false; }
-});
-
-$export($export.S + $export.F * !USE_NATIVE, 'Object', {
-  // 19.1.2.2 Object.create(O [, Properties])
-  create: $create,
-  // 19.1.2.4 Object.defineProperty(O, P, Attributes)
-  defineProperty: $defineProperty,
-  // 19.1.2.3 Object.defineProperties(O, Properties)
-  defineProperties: $defineProperties,
-  // 19.1.2.6 Object.getOwnPropertyDescriptor(O, P)
-  getOwnPropertyDescriptor: $getOwnPropertyDescriptor,
-  // 19.1.2.7 Object.getOwnPropertyNames(O)
-  getOwnPropertyNames: $getOwnPropertyNames,
-  // 19.1.2.8 Object.getOwnPropertySymbols(O)
-  getOwnPropertySymbols: $getOwnPropertySymbols
-});
-
-// Chrome 38 and 39 `Object.getOwnPropertySymbols` fails on primitives
-// https://bugs.chromium.org/p/v8/issues/detail?id=3443
-var FAILS_ON_PRIMITIVES = $fails(function () { $GOPS.f(1); });
-
-$export($export.S + $export.F * FAILS_ON_PRIMITIVES, 'Object', {
-  getOwnPropertySymbols: function getOwnPropertySymbols(it) {
-    return $GOPS.f(toObject(it));
-  }
-});
-
-// 24.3.2 JSON.stringify(value [, replacer [, space]])
-$JSON && $export($export.S + $export.F * (!USE_NATIVE || $fails(function () {
-  var S = $Symbol();
-  // MS Edge converts symbol values to JSON as {}
-  // WebKit converts symbol values to JSON as null
-  // V8 throws on boxed symbols
-  return _stringify([S]) != '[null]' || _stringify({ a: S }) != '{}' || _stringify(Object(S)) != '{}';
-})), 'JSON', {
-  stringify: function stringify(it) {
-    var args = [it];
-    var i = 1;
-    var replacer, $replacer;
-    while (arguments.length > i) args.push(arguments[i++]);
-    $replacer = replacer = args[1];
-    if (!isObject(replacer) && it === undefined || isSymbol(it)) return; // IE8 returns string on undefined
-    if (!isArray(replacer)) replacer = function (key, value) {
-      if (typeof $replacer == 'function') value = $replacer.call(this, key, value);
-      if (!isSymbol(value)) return value;
-    };
-    args[1] = replacer;
-    return _stringify.apply($JSON, args);
-  }
-});
-
-// 19.4.3.4 Symbol.prototype[@@toPrimitive](hint)
-$Symbol[PROTOTYPE][TO_PRIMITIVE] || __webpack_require__(33)($Symbol[PROTOTYPE], TO_PRIMITIVE, $Symbol[PROTOTYPE].valueOf);
-// 19.4.3.5 Symbol.prototype[@@toStringTag]
-setToStringTag($Symbol, 'Symbol');
-// 20.2.1.9 Math[@@toStringTag]
-setToStringTag(Math, 'Math', true);
-// 24.3.3 JSON[@@toStringTag]
-setToStringTag(global.JSON, 'JSON', true);
-
-
-/***/ }),
-/* 24 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
 // https://github.com/tc39/Array.prototype.includes
 var $export = __webpack_require__(8);
-var $includes = __webpack_require__(124)(true);
+var $includes = __webpack_require__(123)(true);
 
 $export($export.P, 'Array', {
   includes: function includes(el /* , fromIndex = 0 */) {
@@ -12333,11 +12080,11 @@ $export($export.P, 'Array', {
   }
 });
 
-__webpack_require__(64)('includes');
+__webpack_require__(65)('includes');
 
 
 /***/ }),
-/* 25 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12616,15 +12363,15 @@ SPECIAL_ELEMENTS[NS.SVG][$.DESC] = true;
 
 
 /***/ }),
-/* 26 */,
-/* 27 */
+/* 25 */,
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var global = __webpack_require__(10);
-var hide = __webpack_require__(33);
+var hide = __webpack_require__(32);
 var has = __webpack_require__(35);
-var SRC = __webpack_require__(57)('src');
-var $toString = __webpack_require__(182);
+var SRC = __webpack_require__(56)('src');
+var $toString = __webpack_require__(181);
 var TO_STRING = 'toString';
 var TPL = ('' + $toString).split(TO_STRING);
 
@@ -12651,6 +12398,259 @@ __webpack_require__(38).inspectSource = function (it) {
 })(Function.prototype, TO_STRING, function toString() {
   return typeof this == 'function' && this[SRC] || $toString.call(this);
 });
+
+
+/***/ }),
+/* 27 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+// ECMAScript 6 symbols shim
+var global = __webpack_require__(10);
+var has = __webpack_require__(35);
+var DESCRIPTORS = __webpack_require__(16);
+var $export = __webpack_require__(8);
+var redefine = __webpack_require__(26);
+var META = __webpack_require__(99).KEY;
+var $fails = __webpack_require__(18);
+var shared = __webpack_require__(73);
+var setToStringTag = __webpack_require__(63);
+var uid = __webpack_require__(56);
+var wks = __webpack_require__(4);
+var wksExt = __webpack_require__(137);
+var wksDefine = __webpack_require__(200);
+var enumKeys = __webpack_require__(201);
+var isArray = __webpack_require__(138);
+var anObject = __webpack_require__(13);
+var isObject = __webpack_require__(15);
+var toObject = __webpack_require__(33);
+var toIObject = __webpack_require__(40);
+var toPrimitive = __webpack_require__(81);
+var createDesc = __webpack_require__(57);
+var _create = __webpack_require__(94);
+var gOPNExt = __webpack_require__(202);
+var $GOPD = __webpack_require__(115);
+var $GOPS = __webpack_require__(100);
+var $DP = __webpack_require__(20);
+var $keys = __webpack_require__(39);
+var gOPD = $GOPD.f;
+var dP = $DP.f;
+var gOPN = gOPNExt.f;
+var $Symbol = global.Symbol;
+var $JSON = global.JSON;
+var _stringify = $JSON && $JSON.stringify;
+var PROTOTYPE = 'prototype';
+var HIDDEN = wks('_hidden');
+var TO_PRIMITIVE = wks('toPrimitive');
+var isEnum = {}.propertyIsEnumerable;
+var SymbolRegistry = shared('symbol-registry');
+var AllSymbols = shared('symbols');
+var OPSymbols = shared('op-symbols');
+var ObjectProto = Object[PROTOTYPE];
+var USE_NATIVE = typeof $Symbol == 'function';
+var QObject = global.QObject;
+// Don't use setters in Qt Script, https://github.com/zloirock/core-js/issues/173
+var setter = !QObject || !QObject[PROTOTYPE] || !QObject[PROTOTYPE].findChild;
+
+// fallback for old Android, https://code.google.com/p/v8/issues/detail?id=687
+var setSymbolDesc = DESCRIPTORS && $fails(function () {
+  return _create(dP({}, 'a', {
+    get: function () { return dP(this, 'a', { value: 7 }).a; }
+  })).a != 7;
+}) ? function (it, key, D) {
+  var protoDesc = gOPD(ObjectProto, key);
+  if (protoDesc) delete ObjectProto[key];
+  dP(it, key, D);
+  if (protoDesc && it !== ObjectProto) dP(ObjectProto, key, protoDesc);
+} : dP;
+
+var wrap = function (tag) {
+  var sym = AllSymbols[tag] = _create($Symbol[PROTOTYPE]);
+  sym._k = tag;
+  return sym;
+};
+
+var isSymbol = USE_NATIVE && typeof $Symbol.iterator == 'symbol' ? function (it) {
+  return typeof it == 'symbol';
+} : function (it) {
+  return it instanceof $Symbol;
+};
+
+var $defineProperty = function defineProperty(it, key, D) {
+  if (it === ObjectProto) $defineProperty(OPSymbols, key, D);
+  anObject(it);
+  key = toPrimitive(key, true);
+  anObject(D);
+  if (has(AllSymbols, key)) {
+    if (!D.enumerable) {
+      if (!has(it, HIDDEN)) dP(it, HIDDEN, createDesc(1, {}));
+      it[HIDDEN][key] = true;
+    } else {
+      if (has(it, HIDDEN) && it[HIDDEN][key]) it[HIDDEN][key] = false;
+      D = _create(D, { enumerable: createDesc(0, false) });
+    } return setSymbolDesc(it, key, D);
+  } return dP(it, key, D);
+};
+var $defineProperties = function defineProperties(it, P) {
+  anObject(it);
+  var keys = enumKeys(P = toIObject(P));
+  var i = 0;
+  var l = keys.length;
+  var key;
+  while (l > i) $defineProperty(it, key = keys[i++], P[key]);
+  return it;
+};
+var $create = function create(it, P) {
+  return P === undefined ? _create(it) : $defineProperties(_create(it), P);
+};
+var $propertyIsEnumerable = function propertyIsEnumerable(key) {
+  var E = isEnum.call(this, key = toPrimitive(key, true));
+  if (this === ObjectProto && has(AllSymbols, key) && !has(OPSymbols, key)) return false;
+  return E || !has(this, key) || !has(AllSymbols, key) || has(this, HIDDEN) && this[HIDDEN][key] ? E : true;
+};
+var $getOwnPropertyDescriptor = function getOwnPropertyDescriptor(it, key) {
+  it = toIObject(it);
+  key = toPrimitive(key, true);
+  if (it === ObjectProto && has(AllSymbols, key) && !has(OPSymbols, key)) return;
+  var D = gOPD(it, key);
+  if (D && has(AllSymbols, key) && !(has(it, HIDDEN) && it[HIDDEN][key])) D.enumerable = true;
+  return D;
+};
+var $getOwnPropertyNames = function getOwnPropertyNames(it) {
+  var names = gOPN(toIObject(it));
+  var result = [];
+  var i = 0;
+  var key;
+  while (names.length > i) {
+    if (!has(AllSymbols, key = names[i++]) && key != HIDDEN && key != META) result.push(key);
+  } return result;
+};
+var $getOwnPropertySymbols = function getOwnPropertySymbols(it) {
+  var IS_OP = it === ObjectProto;
+  var names = gOPN(IS_OP ? OPSymbols : toIObject(it));
+  var result = [];
+  var i = 0;
+  var key;
+  while (names.length > i) {
+    if (has(AllSymbols, key = names[i++]) && (IS_OP ? has(ObjectProto, key) : true)) result.push(AllSymbols[key]);
+  } return result;
+};
+
+// 19.4.1.1 Symbol([description])
+if (!USE_NATIVE) {
+  $Symbol = function Symbol() {
+    if (this instanceof $Symbol) throw TypeError('Symbol is not a constructor!');
+    var tag = uid(arguments.length > 0 ? arguments[0] : undefined);
+    var $set = function (value) {
+      if (this === ObjectProto) $set.call(OPSymbols, value);
+      if (has(this, HIDDEN) && has(this[HIDDEN], tag)) this[HIDDEN][tag] = false;
+      setSymbolDesc(this, tag, createDesc(1, value));
+    };
+    if (DESCRIPTORS && setter) setSymbolDesc(ObjectProto, tag, { configurable: true, set: $set });
+    return wrap(tag);
+  };
+  redefine($Symbol[PROTOTYPE], 'toString', function toString() {
+    return this._k;
+  });
+
+  $GOPD.f = $getOwnPropertyDescriptor;
+  $DP.f = $defineProperty;
+  __webpack_require__(82).f = gOPNExt.f = $getOwnPropertyNames;
+  __webpack_require__(59).f = $propertyIsEnumerable;
+  $GOPS.f = $getOwnPropertySymbols;
+
+  if (DESCRIPTORS && !__webpack_require__(55)) {
+    redefine(ObjectProto, 'propertyIsEnumerable', $propertyIsEnumerable, true);
+  }
+
+  wksExt.f = function (name) {
+    return wrap(wks(name));
+  };
+}
+
+$export($export.G + $export.W + $export.F * !USE_NATIVE, { Symbol: $Symbol });
+
+for (var es6Symbols = (
+  // 19.4.2.2, 19.4.2.3, 19.4.2.4, 19.4.2.6, 19.4.2.8, 19.4.2.9, 19.4.2.10, 19.4.2.11, 19.4.2.12, 19.4.2.13, 19.4.2.14
+  'hasInstance,isConcatSpreadable,iterator,match,replace,search,species,split,toPrimitive,toStringTag,unscopables'
+).split(','), j = 0; es6Symbols.length > j;)wks(es6Symbols[j++]);
+
+for (var wellKnownSymbols = $keys(wks.store), k = 0; wellKnownSymbols.length > k;) wksDefine(wellKnownSymbols[k++]);
+
+$export($export.S + $export.F * !USE_NATIVE, 'Symbol', {
+  // 19.4.2.1 Symbol.for(key)
+  'for': function (key) {
+    return has(SymbolRegistry, key += '')
+      ? SymbolRegistry[key]
+      : SymbolRegistry[key] = $Symbol(key);
+  },
+  // 19.4.2.5 Symbol.keyFor(sym)
+  keyFor: function keyFor(sym) {
+    if (!isSymbol(sym)) throw TypeError(sym + ' is not a symbol!');
+    for (var key in SymbolRegistry) if (SymbolRegistry[key] === sym) return key;
+  },
+  useSetter: function () { setter = true; },
+  useSimple: function () { setter = false; }
+});
+
+$export($export.S + $export.F * !USE_NATIVE, 'Object', {
+  // 19.1.2.2 Object.create(O [, Properties])
+  create: $create,
+  // 19.1.2.4 Object.defineProperty(O, P, Attributes)
+  defineProperty: $defineProperty,
+  // 19.1.2.3 Object.defineProperties(O, Properties)
+  defineProperties: $defineProperties,
+  // 19.1.2.6 Object.getOwnPropertyDescriptor(O, P)
+  getOwnPropertyDescriptor: $getOwnPropertyDescriptor,
+  // 19.1.2.7 Object.getOwnPropertyNames(O)
+  getOwnPropertyNames: $getOwnPropertyNames,
+  // 19.1.2.8 Object.getOwnPropertySymbols(O)
+  getOwnPropertySymbols: $getOwnPropertySymbols
+});
+
+// Chrome 38 and 39 `Object.getOwnPropertySymbols` fails on primitives
+// https://bugs.chromium.org/p/v8/issues/detail?id=3443
+var FAILS_ON_PRIMITIVES = $fails(function () { $GOPS.f(1); });
+
+$export($export.S + $export.F * FAILS_ON_PRIMITIVES, 'Object', {
+  getOwnPropertySymbols: function getOwnPropertySymbols(it) {
+    return $GOPS.f(toObject(it));
+  }
+});
+
+// 24.3.2 JSON.stringify(value [, replacer [, space]])
+$JSON && $export($export.S + $export.F * (!USE_NATIVE || $fails(function () {
+  var S = $Symbol();
+  // MS Edge converts symbol values to JSON as {}
+  // WebKit converts symbol values to JSON as null
+  // V8 throws on boxed symbols
+  return _stringify([S]) != '[null]' || _stringify({ a: S }) != '{}' || _stringify(Object(S)) != '{}';
+})), 'JSON', {
+  stringify: function stringify(it) {
+    var args = [it];
+    var i = 1;
+    var replacer, $replacer;
+    while (arguments.length > i) args.push(arguments[i++]);
+    $replacer = replacer = args[1];
+    if (!isObject(replacer) && it === undefined || isSymbol(it)) return; // IE8 returns string on undefined
+    if (!isArray(replacer)) replacer = function (key, value) {
+      if (typeof $replacer == 'function') value = $replacer.call(this, key, value);
+      if (!isSymbol(value)) return value;
+    };
+    args[1] = replacer;
+    return _stringify.apply($JSON, args);
+  }
+});
+
+// 19.4.3.4 Symbol.prototype[@@toPrimitive](hint)
+$Symbol[PROTOTYPE][TO_PRIMITIVE] || __webpack_require__(32)($Symbol[PROTOTYPE], TO_PRIMITIVE, $Symbol[PROTOTYPE].valueOf);
+// 19.4.3.5 Symbol.prototype[@@toStringTag]
+setToStringTag($Symbol, 'Symbol');
+// 20.2.1.9 Math[@@toStringTag]
+setToStringTag(Math, 'Math', true);
+// 24.3.3 JSON[@@toStringTag]
+setToStringTag(global.JSON, 'JSON', true);
 
 
 /***/ }),
@@ -13384,10 +13384,10 @@ exports.callbackify = callbackify;
 // 21.1.3.7 String.prototype.includes(searchString, position = 0)
 
 var $export = __webpack_require__(8);
-var context = __webpack_require__(114);
+var context = __webpack_require__(112);
 var INCLUDES = 'includes';
 
-$export($export.P + $export.F * __webpack_require__(115)(INCLUDES), 'String', {
+$export($export.P + $export.F * __webpack_require__(113)(INCLUDES), 'String', {
   includes: function includes(searchString /* , position = 0 */) {
     return !!~context(this, searchString, INCLUDES)
       .indexOf(searchString, arguments.length > 1 ? arguments[1] : undefined);
@@ -13397,6 +13397,31 @@ $export($export.P + $export.F * __webpack_require__(115)(INCLUDES), 'String', {
 
 /***/ }),
 /* 32 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var dP = __webpack_require__(20);
+var createDesc = __webpack_require__(57);
+module.exports = __webpack_require__(16) ? function (object, key, value) {
+  return dP.f(object, key, createDesc(1, value));
+} : function (object, key, value) {
+  object[key] = value;
+  return object;
+};
+
+
+/***/ }),
+/* 33 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// 7.1.13 ToObject(argument)
+var defined = __webpack_require__(51);
+module.exports = function (it) {
+  return Object(defined(it));
+};
+
+
+/***/ }),
+/* 34 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13521,31 +13546,6 @@ var remove = function remove(varName) {
 };
 
 /***/ }),
-/* 33 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var dP = __webpack_require__(20);
-var createDesc = __webpack_require__(56);
-module.exports = __webpack_require__(16) ? function (object, key, value) {
-  return dP.f(object, key, createDesc(1, value));
-} : function (object, key, value) {
-  object[key] = value;
-  return object;
-};
-
-
-/***/ }),
-/* 34 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// 7.1.13 ToObject(argument)
-var defined = __webpack_require__(52);
-module.exports = function (it) {
-  return Object(defined(it));
-};
-
-
-/***/ }),
 /* 35 */
 /***/ (function(module, exports) {
 
@@ -13560,7 +13560,7 @@ module.exports = function (it, key) {
 /***/ (function(module, exports, __webpack_require__) {
 
 // optional / simple context binding
-var aFunction = __webpack_require__(51);
+var aFunction = __webpack_require__(62);
 module.exports = function (fn, that, length) {
   aFunction(fn);
   if (that === undefined) return fn;
@@ -13595,8 +13595,8 @@ if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.14 / 15.2.3.14 Object.keys(O)
-var $keys = __webpack_require__(123);
-var enumBugKeys = __webpack_require__(95);
+var $keys = __webpack_require__(122);
+var enumBugKeys = __webpack_require__(97);
 
 module.exports = Object.keys || function keys(O) {
   return $keys(O, enumBugKeys);
@@ -13608,8 +13608,8 @@ module.exports = Object.keys || function keys(O) {
 /***/ (function(module, exports, __webpack_require__) {
 
 // to indexed object, toObject with fallback for non-array-like ES3 strings
-var IObject = __webpack_require__(93);
-var defined = __webpack_require__(52);
+var IObject = __webpack_require__(95);
+var defined = __webpack_require__(51);
 module.exports = function (it) {
   return IObject(defined(it));
 };
@@ -13694,12 +13694,12 @@ var objectKeys = Object.keys || function (obj) {
 module.exports = Duplex;
 
 /*<replacement>*/
-var util = __webpack_require__(62);
+var util = __webpack_require__(61);
 util.inherits = __webpack_require__(41);
 /*</replacement>*/
 
-var Readable = __webpack_require__(151);
-var Writable = __webpack_require__(107);
+var Readable = __webpack_require__(150);
+var Writable = __webpack_require__(106);
 
 util.inherits(Duplex, Readable);
 
@@ -13793,32 +13793,7 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 44 */,
-/* 45 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var $at = __webpack_require__(128)(true);
-
-// 21.1.3.27 String.prototype[@@iterator]()
-__webpack_require__(111)(String, 'String', function (iterated) {
-  this._t = String(iterated); // target
-  this._i = 0;                // next index
-// 21.1.5.2.1 %StringIteratorPrototype%.next()
-}, function () {
-  var O = this._t;
-  var index = this._i;
-  var point;
-  if (index >= O.length) return { value: undefined, done: true };
-  point = $at(O, index);
-  this._i += point.length;
-  return { value: point, done: false };
-});
-
-
-/***/ }),
-/* 46 */
+/* 44 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13835,19 +13810,19 @@ __webpack_require__(111)(String, 'String', function (iterated) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return generateTestLiveApiInstance; });
 /* harmony export (immutable) */ __webpack_exports__["b"] = addTokenIfValid;
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return logoutAllTokens; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_modules_es7_array_includes__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_modules_es7_array_includes__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_modules_es7_array_includes___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_core_js_modules_es7_array_includes__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_modules_es6_string_includes__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_modules_es6_string_includes___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_core_js_modules_es6_string_includes__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_regenerator_runtime_runtime__ = __webpack_require__(67);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_regenerator_runtime_runtime___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_regenerator_runtime_runtime__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_modules_es6_promise__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_modules_es6_promise__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_modules_es6_promise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_core_js_modules_es6_promise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_core_js_modules_es6_object_assign__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_core_js_modules_es6_object_assign__ = __webpack_require__(83);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_core_js_modules_es6_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_core_js_modules_es6_object_assign__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_core_js_modules_es6_regexp_replace__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_core_js_modules_es6_regexp_replace__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_core_js_modules_es6_regexp_replace___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_core_js_modules_es6_regexp_replace__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_core_js_modules_es6_string_starts_with__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_core_js_modules_es6_string_starts_with__ = __webpack_require__(204);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_core_js_modules_es6_string_starts_with___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_core_js_modules_es6_string_starts_with__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_core_js_modules_web_dom_iterable__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_core_js_modules_web_dom_iterable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_core_js_modules_web_dom_iterable__);
@@ -13857,15 +13832,15 @@ __webpack_require__(111)(String, 'String', function (iterated) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_core_js_modules_es6_object_to_string___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_core_js_modules_es6_object_to_string__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_core_js_modules_es6_object_keys__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_core_js_modules_es6_object_keys___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_core_js_modules_es6_object_keys__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_core_js_modules_es6_object_freeze__ = __webpack_require__(141);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_core_js_modules_es6_object_freeze__ = __webpack_require__(140);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_core_js_modules_es6_object_freeze___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_core_js_modules_es6_object_freeze__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_binary_live_api__ = __webpack_require__(169);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_binary_live_api__ = __webpack_require__(168);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_binary_live_api___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12_binary_live_api__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__common_utils_storageManager__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__common_utils_storageManager__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__common_utils_tools__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__lang__ = __webpack_require__(47);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__appIdResolver__ = __webpack_require__(108);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__elevio__ = __webpack_require__(158);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__lang__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__appIdResolver__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__elevio__ = __webpack_require__(157);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__gtm__ = __webpack_require__(76);
 
 
@@ -14105,17 +14080,17 @@ var logoutAllTokens = function logoutAllTokens() {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(2)))
 
 /***/ }),
-/* 47 */
+/* 45 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return getLanguage; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return load; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return showBanner; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_modules_es6_regexp_search__ = __webpack_require__(144);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_modules_es6_regexp_search__ = __webpack_require__(143);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_modules_es6_regexp_search___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_core_js_modules_es6_regexp_search__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_utils_tools__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_utils_storageManager__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_utils_storageManager__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__i18n__ = __webpack_require__(1);
 
 
@@ -14175,7 +14150,32 @@ var showBanner = function showBanner() {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(2)))
 
 /***/ }),
-/* 48 */,
+/* 46 */,
+/* 47 */,
+/* 48 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var $at = __webpack_require__(121)(true);
+
+// 21.1.3.27 String.prototype[@@iterator]()
+__webpack_require__(109)(String, 'String', function (iterated) {
+  this._t = String(iterated); // target
+  this._i = 0;                // next index
+// 21.1.5.2.1 %StringIteratorPrototype%.next()
+}, function () {
+  var O = this._t;
+  var index = this._i;
+  var point;
+  if (index >= O.length) return { value: undefined, done: true };
+  point = $at(O, index);
+  this._i += point.length;
+  return { value: point, done: false };
+});
+
+
+/***/ }),
 /* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -14183,7 +14183,7 @@ var showBanner = function showBanner() {
 
 
 var Preprocessor = __webpack_require__(211),
-    UNICODE = __webpack_require__(61),
+    UNICODE = __webpack_require__(60),
     neTree = __webpack_require__(212);
 
 //Aliases
@@ -16331,16 +16331,6 @@ _[CDATA_SECTION_STATE] = function cdataSectionState(cp) {
 /* 51 */
 /***/ (function(module, exports) {
 
-module.exports = function (it) {
-  if (typeof it != 'function') throw TypeError(it + ' is not a function!');
-  return it;
-};
-
-
-/***/ }),
-/* 52 */
-/***/ (function(module, exports) {
-
 // 7.2.1 RequireObjectCoercible(argument)
 module.exports = function (it) {
   if (it == undefined) throw TypeError("Can't call method on  " + it);
@@ -16349,18 +16339,18 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 53 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var anObject = __webpack_require__(12);
-var toObject = __webpack_require__(34);
+var anObject = __webpack_require__(13);
+var toObject = __webpack_require__(33);
 var toLength = __webpack_require__(29);
 var toInteger = __webpack_require__(70);
-var advanceStringIndex = __webpack_require__(97);
-var regExpExec = __webpack_require__(72);
+var advanceStringIndex = __webpack_require__(91);
+var regExpExec = __webpack_require__(71);
 var max = Math.max;
 var min = Math.min;
 var floor = Math.floor;
@@ -16474,14 +16464,14 @@ __webpack_require__(74)('replace', 2, function (defined, REPLACE, $replace, mayb
 
 
 /***/ }),
-/* 54 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 // 22.1.3.8 Array.prototype.find(predicate, thisArg = undefined)
 var $export = __webpack_require__(8);
-var $find = __webpack_require__(142)(5);
+var $find = __webpack_require__(141)(5);
 var KEY = 'find';
 var forced = true;
 // Shouldn't skip holes
@@ -16491,12 +16481,30 @@ $export($export.P + $export.F * forced, 'Array', {
     return $find(this, callbackfn, arguments.length > 1 ? arguments[1] : undefined);
   }
 });
-__webpack_require__(64)(KEY);
+__webpack_require__(65)(KEY);
 
 
 /***/ }),
-/* 55 */,
+/* 54 */,
+/* 55 */
+/***/ (function(module, exports) {
+
+module.exports = false;
+
+
+/***/ }),
 /* 56 */
+/***/ (function(module, exports) {
+
+var id = 0;
+var px = Math.random();
+module.exports = function (key) {
+  return 'Symbol('.concat(key === undefined ? '' : key, ')_', (++id + px).toString(36));
+};
+
+
+/***/ }),
+/* 57 */
 /***/ (function(module, exports) {
 
 module.exports = function (bitmap, value) {
@@ -16510,21 +16518,10 @@ module.exports = function (bitmap, value) {
 
 
 /***/ }),
-/* 57 */
-/***/ (function(module, exports) {
-
-var id = 0;
-var px = Math.random();
-module.exports = function (key) {
-  return 'Symbol('.concat(key === undefined ? '' : key, ')_', (++id + px).toString(36));
-};
-
-
-/***/ }),
 /* 58 */
 /***/ (function(module, exports) {
 
-module.exports = false;
+module.exports = {};
 
 
 /***/ }),
@@ -16536,13 +16533,6 @@ exports.f = {}.propertyIsEnumerable;
 
 /***/ }),
 /* 60 */
-/***/ (function(module, exports) {
-
-module.exports = {};
-
-
-/***/ }),
-/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16596,7 +16586,7 @@ exports.CODE_POINT_SEQUENCES = {
 
 
 /***/ }),
-/* 62 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(Buffer) {// Copyright Joyent, Inc. and other Node contributors.
@@ -16707,7 +16697,17 @@ function objectToString(o) {
   return Object.prototype.toString.call(o);
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(85).Buffer))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(84).Buffer))
+
+/***/ }),
+/* 62 */
+/***/ (function(module, exports) {
+
+module.exports = function (it) {
+  if (typeof it != 'function') throw TypeError(it + ' is not a function!');
+  return it;
+};
+
 
 /***/ }),
 /* 63 */
@@ -16726,31 +16726,18 @@ module.exports = function (it, tag, stat) {
 /* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
-// 22.1.3.31 Array.prototype[@@unscopables]
-var UNSCOPABLES = __webpack_require__(4)('unscopables');
-var ArrayProto = Array.prototype;
-if (ArrayProto[UNSCOPABLES] == undefined) __webpack_require__(33)(ArrayProto, UNSCOPABLES, {});
-module.exports = function (key) {
-  ArrayProto[UNSCOPABLES][key] = true;
-};
-
-
-/***/ }),
-/* 65 */
-/***/ (function(module, exports, __webpack_require__) {
-
 "use strict";
 
 var ctx = __webpack_require__(36);
 var $export = __webpack_require__(8);
-var toObject = __webpack_require__(34);
-var call = __webpack_require__(129);
-var isArrayIter = __webpack_require__(130);
+var toObject = __webpack_require__(33);
+var call = __webpack_require__(125);
+var isArrayIter = __webpack_require__(126);
 var toLength = __webpack_require__(29);
-var createProperty = __webpack_require__(190);
-var getIterFn = __webpack_require__(131);
+var createProperty = __webpack_require__(185);
+var getIterFn = __webpack_require__(127);
 
-$export($export.S + $export.F * !__webpack_require__(112)(function (iter) { Array.from(iter); }), 'Array', {
+$export($export.S + $export.F * !__webpack_require__(110)(function (iter) { Array.from(iter); }), 'Array', {
   // 22.1.2.1 Array.from(arrayLike, mapfn = undefined, thisArg = undefined)
   from: function from(arrayLike /* , mapfn = undefined, thisArg = undefined */) {
     var O = toObject(arrayLike);
@@ -16777,6 +16764,19 @@ $export($export.S + $export.F * !__webpack_require__(112)(function (iter) { Arra
     return result;
   }
 });
+
+
+/***/ }),
+/* 65 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// 22.1.3.31 Array.prototype[@@unscopables]
+var UNSCOPABLES = __webpack_require__(4)('unscopables');
+var ArrayProto = Array.prototype;
+if (ArrayProto[UNSCOPABLES] == undefined) __webpack_require__(32)(ArrayProto, UNSCOPABLES, {});
+module.exports = function (key) {
+  ArrayProto[UNSCOPABLES][key] = true;
+};
 
 
 /***/ }),
@@ -17616,7 +17616,7 @@ try {
 
 // 22.1.3.9 Array.prototype.findIndex(predicate, thisArg = undefined)
 var $export = __webpack_require__(8);
-var $find = __webpack_require__(142)(6);
+var $find = __webpack_require__(141)(6);
 var KEY = 'findIndex';
 var forced = true;
 // Shouldn't skip holes
@@ -17626,50 +17626,20 @@ $export($export.P + $export.F * forced, 'Array', {
     return $find(this, callbackfn, arguments.length > 1 ? arguments[1] : undefined);
   }
 });
-__webpack_require__(64)(KEY);
+__webpack_require__(65)(KEY);
 
 
 /***/ }),
 /* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var core = __webpack_require__(38);
-var global = __webpack_require__(10);
-var SHARED = '__core-js_shared__';
-var store = global[SHARED] || (global[SHARED] = {});
-
-(module.exports = function (key, value) {
-  return store[key] || (store[key] = value !== undefined ? value : {});
-})('versions', []).push({
-  version: core.version,
-  mode: __webpack_require__(58) ? 'pure' : 'global',
-  copyright: '© 2019 Denis Pushkarev (zloirock.ru)'
-});
-
-
-/***/ }),
-/* 70 */
-/***/ (function(module, exports) {
-
-// 7.1.4 ToInteger
-var ceil = Math.ceil;
-var floor = Math.floor;
-module.exports = function (it) {
-  return isNaN(it = +it) ? 0 : (it > 0 ? floor : ceil)(it);
-};
-
-
-/***/ }),
-/* 71 */
-/***/ (function(module, exports, __webpack_require__) {
-
 "use strict";
 
 
-var anObject = __webpack_require__(12);
+var anObject = __webpack_require__(13);
 var toLength = __webpack_require__(29);
-var advanceStringIndex = __webpack_require__(97);
-var regExpExec = __webpack_require__(72);
+var advanceStringIndex = __webpack_require__(91);
+var regExpExec = __webpack_require__(71);
 
 // @@match logic
 __webpack_require__(74)('match', 1, function (defined, MATCH, $match, maybeCallNative) {
@@ -17707,13 +17677,25 @@ __webpack_require__(74)('match', 1, function (defined, MATCH, $match, maybeCallN
 
 
 /***/ }),
-/* 72 */
+/* 70 */
+/***/ (function(module, exports) {
+
+// 7.1.4 ToInteger
+var ceil = Math.ceil;
+var floor = Math.floor;
+module.exports = function (it) {
+  return isNaN(it = +it) ? 0 : (it > 0 ? floor : ceil)(it);
+};
+
+
+/***/ }),
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var classof = __webpack_require__(73);
+var classof = __webpack_require__(72);
 var builtinExec = RegExp.prototype.exec;
 
  // `RegExpExec` abstract operation
@@ -17735,7 +17717,7 @@ module.exports = function (R, S) {
 
 
 /***/ }),
-/* 73 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // getting tag from 19.1.3.6 Object.prototype.toString()
@@ -17764,18 +17746,36 @@ module.exports = function (it) {
 
 
 /***/ }),
+/* 73 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var core = __webpack_require__(38);
+var global = __webpack_require__(10);
+var SHARED = '__core-js_shared__';
+var store = global[SHARED] || (global[SHARED] = {});
+
+(module.exports = function (key, value) {
+  return store[key] || (store[key] = value !== undefined ? value : {});
+})('versions', []).push({
+  version: core.version,
+  mode: __webpack_require__(55) ? 'pure' : 'global',
+  copyright: '© 2019 Denis Pushkarev (zloirock.ru)'
+});
+
+
+/***/ }),
 /* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-__webpack_require__(189);
-var redefine = __webpack_require__(27);
-var hide = __webpack_require__(33);
-var fails = __webpack_require__(17);
-var defined = __webpack_require__(52);
+__webpack_require__(180);
+var redefine = __webpack_require__(26);
+var hide = __webpack_require__(32);
+var fails = __webpack_require__(18);
+var defined = __webpack_require__(51);
 var wks = __webpack_require__(4);
-var regexpExec = __webpack_require__(98);
+var regexpExec = __webpack_require__(92);
 
 var SPECIES = wks('species');
 
@@ -17905,9 +17905,9 @@ if (process.env.NODE_ENV === 'production') {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(197);
+  module.exports = __webpack_require__(193);
 } else {
-  module.exports = __webpack_require__(200);
+  module.exports = __webpack_require__(196);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6)))
@@ -17917,7 +17917,7 @@ if (process.env.NODE_ENV === 'production') {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_modules_es6_symbol__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_modules_es6_symbol__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_modules_es6_symbol___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_core_js_modules_es6_symbol__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_modules_es6_object_keys__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_modules_es6_object_keys___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_core_js_modules_es6_object_keys__);
@@ -17927,15 +17927,15 @@ if (process.env.NODE_ENV === 'production') {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_modules_es6_array_iterator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_core_js_modules_es6_array_iterator__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_core_js_modules_es6_object_to_string__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_core_js_modules_es6_object_to_string___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_core_js_modules_es6_object_to_string__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_core_js_modules_es7_object_values__ = __webpack_require__(140);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_core_js_modules_es7_object_values__ = __webpack_require__(139);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_core_js_modules_es7_object_values___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_core_js_modules_es7_object_values__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_core_js_modules_es7_array_includes__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_core_js_modules_es7_array_includes__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_core_js_modules_es7_array_includes___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_core_js_modules_es7_array_includes__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_core_js_modules_es6_string_includes__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_core_js_modules_es6_string_includes___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_core_js_modules_es6_string_includes__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__appId__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__appIdResolver__ = __webpack_require__(108);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__utils_storageManager__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__appId__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__appIdResolver__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__utils_storageManager__ = __webpack_require__(34);
 
 
 
@@ -18054,11 +18054,11 @@ Mixin.prototype._getOverriddenMethods = function () {
 
 module.exports = Stream;
 
-var EE = __webpack_require__(105).EventEmitter;
+var EE = __webpack_require__(104).EventEmitter;
 var inherits = __webpack_require__(41);
 
 inherits(Stream, EE);
-Stream.Readable = __webpack_require__(106);
+Stream.Readable = __webpack_require__(105);
 Stream.Writable = __webpack_require__(228);
 Stream.Duplex = __webpack_require__(229);
 Stream.Transform = __webpack_require__(230);
@@ -18217,7 +18217,7 @@ function nextTick(fn, arg1, arg2, arg3) {
 /***/ (function(module, exports, __webpack_require__) {
 
 /* eslint-disable node/no-deprecated-api */
-var buffer = __webpack_require__(85)
+var buffer = __webpack_require__(84)
 var Buffer = buffer.Buffer
 
 // alternative to using Object.keys for old browsers
@@ -18302,56 +18302,9 @@ module.exports = function (it, S) {
 /* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
-// 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
-var anObject = __webpack_require__(12);
-var dPs = __webpack_require__(185);
-var enumBugKeys = __webpack_require__(95);
-var IE_PROTO = __webpack_require__(94)('IE_PROTO');
-var Empty = function () { /* empty */ };
-var PROTOTYPE = 'prototype';
-
-// Create object with fake `null` prototype: use iframe Object with cleared prototype
-var createDict = function () {
-  // Thrash, waste and sodomy: IE GC bug
-  var iframe = __webpack_require__(91)('iframe');
-  var i = enumBugKeys.length;
-  var lt = '<';
-  var gt = '>';
-  var iframeDocument;
-  iframe.style.display = 'none';
-  __webpack_require__(126).appendChild(iframe);
-  iframe.src = 'javascript:'; // eslint-disable-line no-script-url
-  // createDict = iframe.contentWindow.Object;
-  // html.removeChild(iframe);
-  iframeDocument = iframe.contentWindow.document;
-  iframeDocument.open();
-  iframeDocument.write(lt + 'script' + gt + 'document.F=Object' + lt + '/script' + gt);
-  iframeDocument.close();
-  createDict = iframeDocument.F;
-  while (i--) delete createDict[PROTOTYPE][enumBugKeys[i]];
-  return createDict();
-};
-
-module.exports = Object.create || function create(O, Properties) {
-  var result;
-  if (O !== null) {
-    Empty[PROTOTYPE] = anObject(O);
-    result = new Empty();
-    Empty[PROTOTYPE] = null;
-    // add "__proto__" for Object.getPrototypeOf polyfill
-    result[IE_PROTO] = O;
-  } else result = createDict();
-  return Properties === undefined ? result : dPs(result, Properties);
-};
-
-
-/***/ }),
-/* 83 */
-/***/ (function(module, exports, __webpack_require__) {
-
 // 19.1.2.7 / 15.2.3.4 Object.getOwnPropertyNames(O)
-var $keys = __webpack_require__(123);
-var hiddenKeys = __webpack_require__(95).concat('length', 'prototype');
+var $keys = __webpack_require__(122);
+var hiddenKeys = __webpack_require__(97).concat('length', 'prototype');
 
 exports.f = Object.getOwnPropertyNames || function getOwnPropertyNames(O) {
   return $keys(O, hiddenKeys);
@@ -18359,17 +18312,17 @@ exports.f = Object.getOwnPropertyNames || function getOwnPropertyNames(O) {
 
 
 /***/ }),
-/* 84 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.3.1 Object.assign(target, source)
 var $export = __webpack_require__(8);
 
-$export($export.S + $export.F, 'Object', { assign: __webpack_require__(204) });
+$export($export.S + $export.F, 'Object', { assign: __webpack_require__(203) });
 
 
 /***/ }),
-/* 85 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18385,7 +18338,7 @@ $export($export.S + $export.F, 'Object', { assign: __webpack_require__(204) });
 
 var base64 = __webpack_require__(219)
 var ieee754 = __webpack_require__(220)
-var isArray = __webpack_require__(152)
+var isArray = __webpack_require__(151)
 
 exports.Buffer = Buffer
 exports.SlowBuffer = SlowBuffer
@@ -20163,15 +20116,15 @@ function isnan (val) {
   return val !== val // eslint-disable-line no-self-compare
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(18)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(17)))
 
 /***/ }),
+/* 85 */,
 /* 86 */,
 /* 87 */,
 /* 88 */,
 /* 89 */,
-/* 90 */,
-/* 91 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isObject = __webpack_require__(15);
@@ -20184,111 +20137,12 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 92 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var META = __webpack_require__(57)('meta');
-var isObject = __webpack_require__(15);
-var has = __webpack_require__(35);
-var setDesc = __webpack_require__(20).f;
-var id = 0;
-var isExtensible = Object.isExtensible || function () {
-  return true;
-};
-var FREEZE = !__webpack_require__(17)(function () {
-  return isExtensible(Object.preventExtensions({}));
-});
-var setMeta = function (it) {
-  setDesc(it, META, { value: {
-    i: 'O' + ++id, // object ID
-    w: {}          // weak collections IDs
-  } });
-};
-var fastKey = function (it, create) {
-  // return primitive with prefix
-  if (!isObject(it)) return typeof it == 'symbol' ? it : (typeof it == 'string' ? 'S' : 'P') + it;
-  if (!has(it, META)) {
-    // can't set metadata to uncaught frozen object
-    if (!isExtensible(it)) return 'F';
-    // not necessary to add metadata
-    if (!create) return 'E';
-    // add missing metadata
-    setMeta(it);
-  // return object ID
-  } return it[META].i;
-};
-var getWeak = function (it, create) {
-  if (!has(it, META)) {
-    // can't set metadata to uncaught frozen object
-    if (!isExtensible(it)) return true;
-    // not necessary to add metadata
-    if (!create) return false;
-    // add missing metadata
-    setMeta(it);
-  // return hash weak collections IDs
-  } return it[META].w;
-};
-// add metadata on freeze-family methods calling
-var onFreeze = function (it) {
-  if (FREEZE && meta.NEED && isExtensible(it) && !has(it, META)) setMeta(it);
-  return it;
-};
-var meta = module.exports = {
-  KEY: META,
-  NEED: false,
-  fastKey: fastKey,
-  getWeak: getWeak,
-  onFreeze: onFreeze
-};
-
-
-/***/ }),
-/* 93 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// fallback for non-array-like ES3 and non-enumerable old V8 strings
-var cof = __webpack_require__(43);
-// eslint-disable-next-line no-prototype-builtins
-module.exports = Object('z').propertyIsEnumerable(0) ? Object : function (it) {
-  return cof(it) == 'String' ? it.split('') : Object(it);
-};
-
-
-/***/ }),
-/* 94 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var shared = __webpack_require__(69)('keys');
-var uid = __webpack_require__(57);
-module.exports = function (key) {
-  return shared[key] || (shared[key] = uid(key));
-};
-
-
-/***/ }),
-/* 95 */
-/***/ (function(module, exports) {
-
-// IE 8- don't enum bug keys
-module.exports = (
-  'constructor,hasOwnProperty,isPrototypeOf,propertyIsEnumerable,toLocaleString,toString,valueOf'
-).split(',');
-
-
-/***/ }),
-/* 96 */
-/***/ (function(module, exports) {
-
-exports.f = Object.getOwnPropertySymbols;
-
-
-/***/ }),
-/* 97 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var at = __webpack_require__(128)(true);
+var at = __webpack_require__(121)(true);
 
  // `AdvanceStringIndex` abstract operation
 // https://tc39.github.io/ecma262/#sec-advancestringindex
@@ -20298,13 +20152,13 @@ module.exports = function (S, index, unicode) {
 
 
 /***/ }),
-/* 98 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var regexpFlags = __webpack_require__(99);
+var regexpFlags = __webpack_require__(93);
 
 var nativeExec = RegExp.prototype.exec;
 // This always refers to the native implementation, because the
@@ -20363,13 +20217,13 @@ module.exports = patchedExec;
 
 
 /***/ }),
-/* 99 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 // 21.2.5.3 get RegExp.prototype.flags
-var anObject = __webpack_require__(12);
+var anObject = __webpack_require__(13);
 module.exports = function () {
   var that = anObject(this);
   var result = '';
@@ -20383,7 +20237,87 @@ module.exports = function () {
 
 
 /***/ }),
-/* 100 */
+/* 94 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
+var anObject = __webpack_require__(13);
+var dPs = __webpack_require__(183);
+var enumBugKeys = __webpack_require__(97);
+var IE_PROTO = __webpack_require__(96)('IE_PROTO');
+var Empty = function () { /* empty */ };
+var PROTOTYPE = 'prototype';
+
+// Create object with fake `null` prototype: use iframe Object with cleared prototype
+var createDict = function () {
+  // Thrash, waste and sodomy: IE GC bug
+  var iframe = __webpack_require__(90)('iframe');
+  var i = enumBugKeys.length;
+  var lt = '<';
+  var gt = '>';
+  var iframeDocument;
+  iframe.style.display = 'none';
+  __webpack_require__(124).appendChild(iframe);
+  iframe.src = 'javascript:'; // eslint-disable-line no-script-url
+  // createDict = iframe.contentWindow.Object;
+  // html.removeChild(iframe);
+  iframeDocument = iframe.contentWindow.document;
+  iframeDocument.open();
+  iframeDocument.write(lt + 'script' + gt + 'document.F=Object' + lt + '/script' + gt);
+  iframeDocument.close();
+  createDict = iframeDocument.F;
+  while (i--) delete createDict[PROTOTYPE][enumBugKeys[i]];
+  return createDict();
+};
+
+module.exports = Object.create || function create(O, Properties) {
+  var result;
+  if (O !== null) {
+    Empty[PROTOTYPE] = anObject(O);
+    result = new Empty();
+    Empty[PROTOTYPE] = null;
+    // add "__proto__" for Object.getPrototypeOf polyfill
+    result[IE_PROTO] = O;
+  } else result = createDict();
+  return Properties === undefined ? result : dPs(result, Properties);
+};
+
+
+/***/ }),
+/* 95 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// fallback for non-array-like ES3 and non-enumerable old V8 strings
+var cof = __webpack_require__(43);
+// eslint-disable-next-line no-prototype-builtins
+module.exports = Object('z').propertyIsEnumerable(0) ? Object : function (it) {
+  return cof(it) == 'String' ? it.split('') : Object(it);
+};
+
+
+/***/ }),
+/* 96 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var shared = __webpack_require__(73)('keys');
+var uid = __webpack_require__(56);
+module.exports = function (key) {
+  return shared[key] || (shared[key] = uid(key));
+};
+
+
+/***/ }),
+/* 97 */
+/***/ (function(module, exports) {
+
+// IE 8- don't enum bug keys
+module.exports = (
+  'constructor,hasOwnProperty,isPrototypeOf,propertyIsEnumerable,toLocaleString,toString,valueOf'
+).split(',');
+
+
+/***/ }),
+/* 98 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 7.2.8 IsRegExp(argument)
@@ -20397,154 +20331,79 @@ module.exports = function (it) {
 
 
 /***/ }),
+/* 99 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var META = __webpack_require__(56)('meta');
+var isObject = __webpack_require__(15);
+var has = __webpack_require__(35);
+var setDesc = __webpack_require__(20).f;
+var id = 0;
+var isExtensible = Object.isExtensible || function () {
+  return true;
+};
+var FREEZE = !__webpack_require__(18)(function () {
+  return isExtensible(Object.preventExtensions({}));
+});
+var setMeta = function (it) {
+  setDesc(it, META, { value: {
+    i: 'O' + ++id, // object ID
+    w: {}          // weak collections IDs
+  } });
+};
+var fastKey = function (it, create) {
+  // return primitive with prefix
+  if (!isObject(it)) return typeof it == 'symbol' ? it : (typeof it == 'string' ? 'S' : 'P') + it;
+  if (!has(it, META)) {
+    // can't set metadata to uncaught frozen object
+    if (!isExtensible(it)) return 'F';
+    // not necessary to add metadata
+    if (!create) return 'E';
+    // add missing metadata
+    setMeta(it);
+  // return object ID
+  } return it[META].i;
+};
+var getWeak = function (it, create) {
+  if (!has(it, META)) {
+    // can't set metadata to uncaught frozen object
+    if (!isExtensible(it)) return true;
+    // not necessary to add metadata
+    if (!create) return false;
+    // add missing metadata
+    setMeta(it);
+  // return hash weak collections IDs
+  } return it[META].w;
+};
+// add metadata on freeze-family methods calling
+var onFreeze = function (it) {
+  if (FREEZE && meta.NEED && isExtensible(it) && !has(it, META)) setMeta(it);
+  return it;
+};
+var meta = module.exports = {
+  KEY: META,
+  NEED: false,
+  fastKey: fastKey,
+  getWeak: getWeak,
+  onFreeze: onFreeze
+};
+
+
+/***/ }),
+/* 100 */
+/***/ (function(module, exports) {
+
+exports.f = Object.getOwnPropertySymbols;
+
+
+/***/ }),
 /* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var isRegExp = __webpack_require__(100);
-var anObject = __webpack_require__(12);
-var speciesConstructor = __webpack_require__(134);
-var advanceStringIndex = __webpack_require__(97);
-var toLength = __webpack_require__(29);
-var callRegExpExec = __webpack_require__(72);
-var regexpExec = __webpack_require__(98);
-var fails = __webpack_require__(17);
-var $min = Math.min;
-var $push = [].push;
-var $SPLIT = 'split';
-var LENGTH = 'length';
-var LAST_INDEX = 'lastIndex';
-var MAX_UINT32 = 0xffffffff;
-
-// babel-minify transpiles RegExp('x', 'y') -> /x/y and it causes SyntaxError
-var SUPPORTS_Y = !fails(function () { RegExp(MAX_UINT32, 'y'); });
-
-// @@split logic
-__webpack_require__(74)('split', 2, function (defined, SPLIT, $split, maybeCallNative) {
-  var internalSplit;
-  if (
-    'abbc'[$SPLIT](/(b)*/)[1] == 'c' ||
-    'test'[$SPLIT](/(?:)/, -1)[LENGTH] != 4 ||
-    'ab'[$SPLIT](/(?:ab)*/)[LENGTH] != 2 ||
-    '.'[$SPLIT](/(.?)(.?)/)[LENGTH] != 4 ||
-    '.'[$SPLIT](/()()/)[LENGTH] > 1 ||
-    ''[$SPLIT](/.?/)[LENGTH]
-  ) {
-    // based on es5-shim implementation, need to rework it
-    internalSplit = function (separator, limit) {
-      var string = String(this);
-      if (separator === undefined && limit === 0) return [];
-      // If `separator` is not a regex, use native split
-      if (!isRegExp(separator)) return $split.call(string, separator, limit);
-      var output = [];
-      var flags = (separator.ignoreCase ? 'i' : '') +
-                  (separator.multiline ? 'm' : '') +
-                  (separator.unicode ? 'u' : '') +
-                  (separator.sticky ? 'y' : '');
-      var lastLastIndex = 0;
-      var splitLimit = limit === undefined ? MAX_UINT32 : limit >>> 0;
-      // Make `global` and avoid `lastIndex` issues by working with a copy
-      var separatorCopy = new RegExp(separator.source, flags + 'g');
-      var match, lastIndex, lastLength;
-      while (match = regexpExec.call(separatorCopy, string)) {
-        lastIndex = separatorCopy[LAST_INDEX];
-        if (lastIndex > lastLastIndex) {
-          output.push(string.slice(lastLastIndex, match.index));
-          if (match[LENGTH] > 1 && match.index < string[LENGTH]) $push.apply(output, match.slice(1));
-          lastLength = match[0][LENGTH];
-          lastLastIndex = lastIndex;
-          if (output[LENGTH] >= splitLimit) break;
-        }
-        if (separatorCopy[LAST_INDEX] === match.index) separatorCopy[LAST_INDEX]++; // Avoid an infinite loop
-      }
-      if (lastLastIndex === string[LENGTH]) {
-        if (lastLength || !separatorCopy.test('')) output.push('');
-      } else output.push(string.slice(lastLastIndex));
-      return output[LENGTH] > splitLimit ? output.slice(0, splitLimit) : output;
-    };
-  // Chakra, V8
-  } else if ('0'[$SPLIT](undefined, 0)[LENGTH]) {
-    internalSplit = function (separator, limit) {
-      return separator === undefined && limit === 0 ? [] : $split.call(this, separator, limit);
-    };
-  } else {
-    internalSplit = $split;
-  }
-
-  return [
-    // `String.prototype.split` method
-    // https://tc39.github.io/ecma262/#sec-string.prototype.split
-    function split(separator, limit) {
-      var O = defined(this);
-      var splitter = separator == undefined ? undefined : separator[SPLIT];
-      return splitter !== undefined
-        ? splitter.call(separator, O, limit)
-        : internalSplit.call(String(O), separator, limit);
-    },
-    // `RegExp.prototype[@@split]` method
-    // https://tc39.github.io/ecma262/#sec-regexp.prototype-@@split
-    //
-    // NOTE: This cannot be properly polyfilled in engines that don't support
-    // the 'y' flag.
-    function (regexp, limit) {
-      var res = maybeCallNative(internalSplit, regexp, this, limit, internalSplit !== $split);
-      if (res.done) return res.value;
-
-      var rx = anObject(regexp);
-      var S = String(this);
-      var C = speciesConstructor(rx, RegExp);
-
-      var unicodeMatching = rx.unicode;
-      var flags = (rx.ignoreCase ? 'i' : '') +
-                  (rx.multiline ? 'm' : '') +
-                  (rx.unicode ? 'u' : '') +
-                  (SUPPORTS_Y ? 'y' : 'g');
-
-      // ^(? + rx + ) is needed, in combination with some S slicing, to
-      // simulate the 'y' flag.
-      var splitter = new C(SUPPORTS_Y ? rx : '^(?:' + rx.source + ')', flags);
-      var lim = limit === undefined ? MAX_UINT32 : limit >>> 0;
-      if (lim === 0) return [];
-      if (S.length === 0) return callRegExpExec(splitter, S) === null ? [S] : [];
-      var p = 0;
-      var q = 0;
-      var A = [];
-      while (q < S.length) {
-        splitter.lastIndex = SUPPORTS_Y ? q : 0;
-        var z = callRegExpExec(splitter, SUPPORTS_Y ? S : S.slice(q));
-        var e;
-        if (
-          z === null ||
-          (e = $min(toLength(splitter.lastIndex + (SUPPORTS_Y ? 0 : q)), S.length)) === p
-        ) {
-          q = advanceStringIndex(S, q, unicodeMatching);
-        } else {
-          A.push(S.slice(p, q));
-          if (A.length === lim) return A;
-          for (var i = 1; i <= z.length - 1; i++) {
-            A.push(z[i]);
-            if (A.length === lim) return A;
-          }
-          q = p = e;
-        }
-      }
-      A.push(S.slice(p));
-      return A;
-    }
-  ];
-});
-
-
-/***/ }),
-/* 102 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var DOCUMENT_MODE = __webpack_require__(25).DOCUMENT_MODE;
+var DOCUMENT_MODE = __webpack_require__(24).DOCUMENT_MODE;
 
 //Node construction
 exports.createDocument = function () {
@@ -20754,7 +20613,7 @@ exports.isElementNode = function (node) {
 
 
 /***/ }),
-/* 103 */
+/* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20774,13 +20633,13 @@ module.exports = function mergeOptions(defaults, options) {
 
 
 /***/ }),
-/* 104 */
+/* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var DOCUMENT_MODE = __webpack_require__(25).DOCUMENT_MODE;
+var DOCUMENT_MODE = __webpack_require__(24).DOCUMENT_MODE;
 
 //Const
 var VALID_DOCTYPE_NAME = 'html',
@@ -20937,7 +20796,7 @@ exports.serializeContent = function (name, publicId, systemId) {
 
 
 /***/ }),
-/* 105 */
+/* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21392,20 +21251,20 @@ function unwrapListeners(arr) {
 
 
 /***/ }),
-/* 106 */
+/* 105 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(151);
+exports = module.exports = __webpack_require__(150);
 exports.Stream = exports;
 exports.Readable = exports;
-exports.Writable = __webpack_require__(107);
+exports.Writable = __webpack_require__(106);
 exports.Duplex = __webpack_require__(42);
-exports.Transform = __webpack_require__(156);
+exports.Transform = __webpack_require__(155);
 exports.PassThrough = __webpack_require__(227);
 
 
 /***/ }),
-/* 107 */
+/* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21475,7 +21334,7 @@ var Duplex;
 Writable.WritableState = WritableState;
 
 /*<replacement>*/
-var util = __webpack_require__(62);
+var util = __webpack_require__(61);
 util.inherits = __webpack_require__(41);
 /*</replacement>*/
 
@@ -21486,7 +21345,7 @@ var internalUtil = {
 /*</replacement>*/
 
 /*<replacement>*/
-var Stream = __webpack_require__(153);
+var Stream = __webpack_require__(152);
 /*</replacement>*/
 
 /*<replacement>*/
@@ -21502,7 +21361,7 @@ function _isUint8Array(obj) {
 
 /*</replacement>*/
 
-var destroyImpl = __webpack_require__(154);
+var destroyImpl = __webpack_require__(153);
 
 util.inherits(Writable, Stream);
 
@@ -22096,14 +21955,14 @@ Writable.prototype._destroy = function (err, cb) {
   this.end();
   cb(err);
 };
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6), __webpack_require__(224).setImmediate, __webpack_require__(18)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6), __webpack_require__(224).setImmediate, __webpack_require__(17)))
 
 /***/ }),
-/* 108 */
+/* 107 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_modules_es6_object_freeze__ = __webpack_require__(141);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_modules_es6_object_freeze__ = __webpack_require__(140);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_modules_es6_object_freeze___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_core_js_modules_es6_object_freeze__);
 
 var AppIdMap = Object.freeze({
@@ -22114,42 +21973,20 @@ var AppIdMap = Object.freeze({
 /* harmony default export */ __webpack_exports__["a"] = (AppIdMap);
 
 /***/ }),
-/* 109 */,
-/* 110 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var pIE = __webpack_require__(59);
-var createDesc = __webpack_require__(56);
-var toIObject = __webpack_require__(40);
-var toPrimitive = __webpack_require__(81);
-var has = __webpack_require__(35);
-var IE8_DOM_DEFINE = __webpack_require__(121);
-var gOPD = Object.getOwnPropertyDescriptor;
-
-exports.f = __webpack_require__(16) ? gOPD : function getOwnPropertyDescriptor(O, P) {
-  O = toIObject(O);
-  P = toPrimitive(P, true);
-  if (IE8_DOM_DEFINE) try {
-    return gOPD(O, P);
-  } catch (e) { /* empty */ }
-  if (has(O, P)) return createDesc(!pIE.f.call(O, P), O[P]);
-};
-
-
-/***/ }),
-/* 111 */
+/* 108 */,
+/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var LIBRARY = __webpack_require__(58);
+var LIBRARY = __webpack_require__(55);
 var $export = __webpack_require__(8);
-var redefine = __webpack_require__(27);
-var hide = __webpack_require__(33);
-var Iterators = __webpack_require__(60);
-var $iterCreate = __webpack_require__(187);
+var redefine = __webpack_require__(26);
+var hide = __webpack_require__(32);
+var Iterators = __webpack_require__(58);
+var $iterCreate = __webpack_require__(182);
 var setToStringTag = __webpack_require__(63);
-var getPrototypeOf = __webpack_require__(188);
+var getPrototypeOf = __webpack_require__(184);
 var ITERATOR = __webpack_require__(4)('iterator');
 var BUGGY = !([].keys && 'next' in [].keys()); // Safari has buggy iterators w/o `next`
 var FF_ITERATOR = '@@iterator';
@@ -22213,7 +22050,7 @@ module.exports = function (Base, NAME, Constructor, next, DEFAULT, IS_SET, FORCE
 
 
 /***/ }),
-/* 112 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var ITERATOR = __webpack_require__(4)('iterator');
@@ -22241,7 +22078,7 @@ module.exports = function (exec, skipClosing) {
 
 
 /***/ }),
-/* 113 */
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22261,12 +22098,12 @@ module.exports = function (KEY) {
 
 
 /***/ }),
-/* 114 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // helper for String#{startsWith, endsWith, includes}
-var isRegExp = __webpack_require__(100);
-var defined = __webpack_require__(52);
+var isRegExp = __webpack_require__(98);
+var defined = __webpack_require__(51);
 
 module.exports = function (that, searchString, NAME) {
   if (isRegExp(searchString)) throw TypeError('String#' + NAME + " doesn't accept regex!");
@@ -22275,7 +22112,7 @@ module.exports = function (that, searchString, NAME) {
 
 
 /***/ }),
-/* 115 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var MATCH = __webpack_require__(4)('match');
@@ -22293,7 +22130,7 @@ module.exports = function (KEY) {
 
 
 /***/ }),
-/* 116 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22309,7 +22146,7 @@ module.exports = function (KEY) {
 var printWarning = function() {};
 
 if (process.env.NODE_ENV !== 'production') {
-  var ReactPropTypesSecret = __webpack_require__(138);
+  var ReactPropTypesSecret = __webpack_require__(134);
   var loggedTypeFailures = {};
   var has = Function.call.bind(Object.prototype.hasOwnProperty);
 
@@ -22403,15 +22240,178 @@ module.exports = checkPropTypes;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6)))
 
 /***/ }),
+/* 115 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var pIE = __webpack_require__(59);
+var createDesc = __webpack_require__(57);
+var toIObject = __webpack_require__(40);
+var toPrimitive = __webpack_require__(81);
+var has = __webpack_require__(35);
+var IE8_DOM_DEFINE = __webpack_require__(120);
+var gOPD = Object.getOwnPropertyDescriptor;
+
+exports.f = __webpack_require__(16) ? gOPD : function getOwnPropertyDescriptor(O, P) {
+  O = toIObject(O);
+  P = toPrimitive(P, true);
+  if (IE8_DOM_DEFINE) try {
+    return gOPD(O, P);
+  } catch (e) { /* empty */ }
+  if (has(O, P)) return createDesc(!pIE.f.call(O, P), O[P]);
+};
+
+
+/***/ }),
+/* 116 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var isRegExp = __webpack_require__(98);
+var anObject = __webpack_require__(13);
+var speciesConstructor = __webpack_require__(130);
+var advanceStringIndex = __webpack_require__(91);
+var toLength = __webpack_require__(29);
+var callRegExpExec = __webpack_require__(71);
+var regexpExec = __webpack_require__(92);
+var fails = __webpack_require__(18);
+var $min = Math.min;
+var $push = [].push;
+var $SPLIT = 'split';
+var LENGTH = 'length';
+var LAST_INDEX = 'lastIndex';
+var MAX_UINT32 = 0xffffffff;
+
+// babel-minify transpiles RegExp('x', 'y') -> /x/y and it causes SyntaxError
+var SUPPORTS_Y = !fails(function () { RegExp(MAX_UINT32, 'y'); });
+
+// @@split logic
+__webpack_require__(74)('split', 2, function (defined, SPLIT, $split, maybeCallNative) {
+  var internalSplit;
+  if (
+    'abbc'[$SPLIT](/(b)*/)[1] == 'c' ||
+    'test'[$SPLIT](/(?:)/, -1)[LENGTH] != 4 ||
+    'ab'[$SPLIT](/(?:ab)*/)[LENGTH] != 2 ||
+    '.'[$SPLIT](/(.?)(.?)/)[LENGTH] != 4 ||
+    '.'[$SPLIT](/()()/)[LENGTH] > 1 ||
+    ''[$SPLIT](/.?/)[LENGTH]
+  ) {
+    // based on es5-shim implementation, need to rework it
+    internalSplit = function (separator, limit) {
+      var string = String(this);
+      if (separator === undefined && limit === 0) return [];
+      // If `separator` is not a regex, use native split
+      if (!isRegExp(separator)) return $split.call(string, separator, limit);
+      var output = [];
+      var flags = (separator.ignoreCase ? 'i' : '') +
+                  (separator.multiline ? 'm' : '') +
+                  (separator.unicode ? 'u' : '') +
+                  (separator.sticky ? 'y' : '');
+      var lastLastIndex = 0;
+      var splitLimit = limit === undefined ? MAX_UINT32 : limit >>> 0;
+      // Make `global` and avoid `lastIndex` issues by working with a copy
+      var separatorCopy = new RegExp(separator.source, flags + 'g');
+      var match, lastIndex, lastLength;
+      while (match = regexpExec.call(separatorCopy, string)) {
+        lastIndex = separatorCopy[LAST_INDEX];
+        if (lastIndex > lastLastIndex) {
+          output.push(string.slice(lastLastIndex, match.index));
+          if (match[LENGTH] > 1 && match.index < string[LENGTH]) $push.apply(output, match.slice(1));
+          lastLength = match[0][LENGTH];
+          lastLastIndex = lastIndex;
+          if (output[LENGTH] >= splitLimit) break;
+        }
+        if (separatorCopy[LAST_INDEX] === match.index) separatorCopy[LAST_INDEX]++; // Avoid an infinite loop
+      }
+      if (lastLastIndex === string[LENGTH]) {
+        if (lastLength || !separatorCopy.test('')) output.push('');
+      } else output.push(string.slice(lastLastIndex));
+      return output[LENGTH] > splitLimit ? output.slice(0, splitLimit) : output;
+    };
+  // Chakra, V8
+  } else if ('0'[$SPLIT](undefined, 0)[LENGTH]) {
+    internalSplit = function (separator, limit) {
+      return separator === undefined && limit === 0 ? [] : $split.call(this, separator, limit);
+    };
+  } else {
+    internalSplit = $split;
+  }
+
+  return [
+    // `String.prototype.split` method
+    // https://tc39.github.io/ecma262/#sec-string.prototype.split
+    function split(separator, limit) {
+      var O = defined(this);
+      var splitter = separator == undefined ? undefined : separator[SPLIT];
+      return splitter !== undefined
+        ? splitter.call(separator, O, limit)
+        : internalSplit.call(String(O), separator, limit);
+    },
+    // `RegExp.prototype[@@split]` method
+    // https://tc39.github.io/ecma262/#sec-regexp.prototype-@@split
+    //
+    // NOTE: This cannot be properly polyfilled in engines that don't support
+    // the 'y' flag.
+    function (regexp, limit) {
+      var res = maybeCallNative(internalSplit, regexp, this, limit, internalSplit !== $split);
+      if (res.done) return res.value;
+
+      var rx = anObject(regexp);
+      var S = String(this);
+      var C = speciesConstructor(rx, RegExp);
+
+      var unicodeMatching = rx.unicode;
+      var flags = (rx.ignoreCase ? 'i' : '') +
+                  (rx.multiline ? 'm' : '') +
+                  (rx.unicode ? 'u' : '') +
+                  (SUPPORTS_Y ? 'y' : 'g');
+
+      // ^(? + rx + ) is needed, in combination with some S slicing, to
+      // simulate the 'y' flag.
+      var splitter = new C(SUPPORTS_Y ? rx : '^(?:' + rx.source + ')', flags);
+      var lim = limit === undefined ? MAX_UINT32 : limit >>> 0;
+      if (lim === 0) return [];
+      if (S.length === 0) return callRegExpExec(splitter, S) === null ? [S] : [];
+      var p = 0;
+      var q = 0;
+      var A = [];
+      while (q < S.length) {
+        splitter.lastIndex = SUPPORTS_Y ? q : 0;
+        var z = callRegExpExec(splitter, SUPPORTS_Y ? S : S.slice(q));
+        var e;
+        if (
+          z === null ||
+          (e = $min(toLength(splitter.lastIndex + (SUPPORTS_Y ? 0 : q)), S.length)) === p
+        ) {
+          q = advanceStringIndex(S, q, unicodeMatching);
+        } else {
+          A.push(S.slice(p, q));
+          if (A.length === lim) return A;
+          for (var i = 1; i <= z.length - 1; i++) {
+            A.push(z[i]);
+            if (A.length === lim) return A;
+          }
+          q = p = e;
+        }
+      }
+      A.push(S.slice(p));
+      return A;
+    }
+  ];
+});
+
+
+/***/ }),
 /* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var global = __webpack_require__(10);
-var inheritIfRequired = __webpack_require__(143);
+var inheritIfRequired = __webpack_require__(142);
 var dP = __webpack_require__(20).f;
-var gOPN = __webpack_require__(83).f;
-var isRegExp = __webpack_require__(100);
-var $flags = __webpack_require__(99);
+var gOPN = __webpack_require__(82).f;
+var isRegExp = __webpack_require__(98);
+var $flags = __webpack_require__(93);
 var $RegExp = global.RegExp;
 var Base = $RegExp;
 var proto = $RegExp.prototype;
@@ -22420,7 +22420,7 @@ var re2 = /a/g;
 // "new" creates a new object, old webkit buggy here
 var CORRECT_NEW = new $RegExp(re1) !== re1;
 
-if (__webpack_require__(16) && (!CORRECT_NEW || __webpack_require__(17)(function () {
+if (__webpack_require__(16) && (!CORRECT_NEW || __webpack_require__(18)(function () {
   re2[__webpack_require__(4)('match')] = false;
   // RegExp constructor can alter flags and IsRegExp works correct with @@match
   return $RegExp(re1) != re1 || $RegExp(re2) == re2 || $RegExp(re1, 'i') != '/a/i';
@@ -22445,39 +22445,54 @@ if (__webpack_require__(16) && (!CORRECT_NEW || __webpack_require__(17)(function
   for (var keys = gOPN(Base), i = 0; keys.length > i;) proxy(keys[i++]);
   proto.constructor = $RegExp;
   $RegExp.prototype = proto;
-  __webpack_require__(27)(global, 'RegExp', $RegExp);
+  __webpack_require__(26)(global, 'RegExp', $RegExp);
 }
 
-__webpack_require__(113)('RegExp');
+__webpack_require__(111)('RegExp');
 
 
 /***/ }),
 /* 118 */,
 /* 119 */,
-/* 120 */,
+/* 120 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = !__webpack_require__(16) && !__webpack_require__(18)(function () {
+  return Object.defineProperty(__webpack_require__(90)('div'), 'a', { get: function () { return 7; } }).a != 7;
+});
+
+
+/***/ }),
 /* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = !__webpack_require__(16) && !__webpack_require__(17)(function () {
-  return Object.defineProperty(__webpack_require__(91)('div'), 'a', { get: function () { return 7; } }).a != 7;
-});
+var toInteger = __webpack_require__(70);
+var defined = __webpack_require__(51);
+// true  -> String#at
+// false -> String#codePointAt
+module.exports = function (TO_STRING) {
+  return function (that, pos) {
+    var s = String(defined(that));
+    var i = toInteger(pos);
+    var l = s.length;
+    var a, b;
+    if (i < 0 || i >= l) return TO_STRING ? '' : undefined;
+    a = s.charCodeAt(i);
+    return a < 0xd800 || a > 0xdbff || i + 1 === l || (b = s.charCodeAt(i + 1)) < 0xdc00 || b > 0xdfff
+      ? TO_STRING ? s.charAt(i) : a
+      : TO_STRING ? s.slice(i, i + 2) : (a - 0xd800 << 10) + (b - 0xdc00) + 0x10000;
+  };
+};
 
 
 /***/ }),
 /* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports.f = __webpack_require__(4);
-
-
-/***/ }),
-/* 123 */
-/***/ (function(module, exports, __webpack_require__) {
-
 var has = __webpack_require__(35);
 var toIObject = __webpack_require__(40);
-var arrayIndexOf = __webpack_require__(124)(false);
-var IE_PROTO = __webpack_require__(94)('IE_PROTO');
+var arrayIndexOf = __webpack_require__(123)(false);
+var IE_PROTO = __webpack_require__(96)('IE_PROTO');
 
 module.exports = function (object, names) {
   var O = toIObject(object);
@@ -22494,7 +22509,7 @@ module.exports = function (object, names) {
 
 
 /***/ }),
-/* 124 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // false -> Array#indexOf
@@ -22523,18 +22538,7 @@ module.exports = function (IS_INCLUDES) {
 
 
 /***/ }),
-/* 125 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// 7.2.2 IsArray(argument)
-var cof = __webpack_require__(43);
-module.exports = Array.isArray || function isArray(arg) {
-  return cof(arg) == 'Array';
-};
-
-
-/***/ }),
-/* 126 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var document = __webpack_require__(10).document;
@@ -22542,50 +22546,11 @@ module.exports = document && document.documentElement;
 
 
 /***/ }),
-/* 127 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// most Object methods by ES6 should accept primitives
-var $export = __webpack_require__(8);
-var core = __webpack_require__(38);
-var fails = __webpack_require__(17);
-module.exports = function (KEY, exec) {
-  var fn = (core.Object || {})[KEY] || Object[KEY];
-  var exp = {};
-  exp[KEY] = exec(fn);
-  $export($export.S + $export.F * fails(function () { fn(1); }), 'Object', exp);
-};
-
-
-/***/ }),
-/* 128 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var toInteger = __webpack_require__(70);
-var defined = __webpack_require__(52);
-// true  -> String#at
-// false -> String#codePointAt
-module.exports = function (TO_STRING) {
-  return function (that, pos) {
-    var s = String(defined(that));
-    var i = toInteger(pos);
-    var l = s.length;
-    var a, b;
-    if (i < 0 || i >= l) return TO_STRING ? '' : undefined;
-    a = s.charCodeAt(i);
-    return a < 0xd800 || a > 0xdbff || i + 1 === l || (b = s.charCodeAt(i + 1)) < 0xdc00 || b > 0xdfff
-      ? TO_STRING ? s.charAt(i) : a
-      : TO_STRING ? s.slice(i, i + 2) : (a - 0xd800 << 10) + (b - 0xdc00) + 0x10000;
-  };
-};
-
-
-/***/ }),
-/* 129 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // call something on iterator step with safe closing on error
-var anObject = __webpack_require__(12);
+var anObject = __webpack_require__(13);
 module.exports = function (iterator, fn, value, entries) {
   try {
     return entries ? fn(anObject(value)[0], value[1]) : fn(value);
@@ -22599,11 +22564,11 @@ module.exports = function (iterator, fn, value, entries) {
 
 
 /***/ }),
-/* 130 */
+/* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // check on default Array iterator
-var Iterators = __webpack_require__(60);
+var Iterators = __webpack_require__(58);
 var ITERATOR = __webpack_require__(4)('iterator');
 var ArrayProto = Array.prototype;
 
@@ -22613,12 +22578,12 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 131 */
+/* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var classof = __webpack_require__(73);
+var classof = __webpack_require__(72);
 var ITERATOR = __webpack_require__(4)('iterator');
-var Iterators = __webpack_require__(60);
+var Iterators = __webpack_require__(58);
 module.exports = __webpack_require__(38).getIteratorMethod = function (it) {
   if (it != undefined) return it[ITERATOR]
     || it['@@iterator']
@@ -22627,7 +22592,7 @@ module.exports = __webpack_require__(38).getIteratorMethod = function (it) {
 
 
 /***/ }),
-/* 132 */
+/* 128 */
 /***/ (function(module, exports) {
 
 module.exports = function (it, Constructor, name, forbiddenField) {
@@ -22638,15 +22603,15 @@ module.exports = function (it, Constructor, name, forbiddenField) {
 
 
 /***/ }),
-/* 133 */
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var ctx = __webpack_require__(36);
-var call = __webpack_require__(129);
-var isArrayIter = __webpack_require__(130);
-var anObject = __webpack_require__(12);
+var call = __webpack_require__(125);
+var isArrayIter = __webpack_require__(126);
+var anObject = __webpack_require__(13);
 var toLength = __webpack_require__(29);
-var getIterFn = __webpack_require__(131);
+var getIterFn = __webpack_require__(127);
 var BREAK = {};
 var RETURN = {};
 var exports = module.exports = function (iterable, entries, fn, that, ITERATOR) {
@@ -22669,12 +22634,12 @@ exports.RETURN = RETURN;
 
 
 /***/ }),
-/* 134 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 7.3.20 SpeciesConstructor(O, defaultConstructor)
-var anObject = __webpack_require__(12);
-var aFunction = __webpack_require__(51);
+var anObject = __webpack_require__(13);
+var aFunction = __webpack_require__(62);
 var SPECIES = __webpack_require__(4)('species');
 module.exports = function (O, D) {
   var C = anObject(O).constructor;
@@ -22684,13 +22649,13 @@ module.exports = function (O, D) {
 
 
 /***/ }),
-/* 135 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var ctx = __webpack_require__(36);
-var invoke = __webpack_require__(167);
-var html = __webpack_require__(126);
-var cel = __webpack_require__(91);
+var invoke = __webpack_require__(186);
+var html = __webpack_require__(124);
+var cel = __webpack_require__(90);
 var global = __webpack_require__(10);
 var process = global.process;
 var setTask = global.setImmediate;
@@ -22774,13 +22739,13 @@ module.exports = {
 
 
 /***/ }),
-/* 136 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 // 25.4.1.5 NewPromiseCapability(C)
-var aFunction = __webpack_require__(51);
+var aFunction = __webpack_require__(62);
 
 function PromiseCapability(C) {
   var resolve, reject;
@@ -22799,10 +22764,10 @@ module.exports.f = function (C) {
 
 
 /***/ }),
-/* 137 */
+/* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var redefine = __webpack_require__(27);
+var redefine = __webpack_require__(26);
 module.exports = function (target, src, safe) {
   for (var key in src) redefine(target, key, src[key], safe);
   return target;
@@ -22810,7 +22775,7 @@ module.exports = function (target, src, safe) {
 
 
 /***/ }),
-/* 138 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22829,27 +22794,61 @@ module.exports = ReactPropTypesSecret;
 
 
 /***/ }),
-/* 139 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(198);
+  module.exports = __webpack_require__(194);
 } else {
-  module.exports = __webpack_require__(199);
+  module.exports = __webpack_require__(195);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6)))
 
 /***/ }),
-/* 140 */
+/* 136 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// most Object methods by ES6 should accept primitives
+var $export = __webpack_require__(8);
+var core = __webpack_require__(38);
+var fails = __webpack_require__(18);
+module.exports = function (KEY, exec) {
+  var fn = (core.Object || {})[KEY] || Object[KEY];
+  var exp = {};
+  exp[KEY] = exec(fn);
+  $export($export.S + $export.F * fails(function () { fn(1); }), 'Object', exp);
+};
+
+
+/***/ }),
+/* 137 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports.f = __webpack_require__(4);
+
+
+/***/ }),
+/* 138 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// 7.2.2 IsArray(argument)
+var cof = __webpack_require__(43);
+module.exports = Array.isArray || function isArray(arg) {
+  return cof(arg) == 'Array';
+};
+
+
+/***/ }),
+/* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // https://github.com/tc39/proposal-object-values-entries
 var $export = __webpack_require__(8);
-var $values = __webpack_require__(168)(false);
+var $values = __webpack_require__(167)(false);
 
 $export($export.S, 'Object', {
   values: function values(it) {
@@ -22859,14 +22858,14 @@ $export($export.S, 'Object', {
 
 
 /***/ }),
-/* 141 */
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.5 Object.freeze(O)
 var isObject = __webpack_require__(15);
-var meta = __webpack_require__(92).onFreeze;
+var meta = __webpack_require__(99).onFreeze;
 
-__webpack_require__(127)('freeze', function ($freeze) {
+__webpack_require__(136)('freeze', function ($freeze) {
   return function freeze(it) {
     return $freeze && isObject(it) ? $freeze(meta(it)) : it;
   };
@@ -22874,7 +22873,7 @@ __webpack_require__(127)('freeze', function ($freeze) {
 
 
 /***/ }),
-/* 142 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 0 -> Array#forEach
@@ -22885,10 +22884,10 @@ __webpack_require__(127)('freeze', function ($freeze) {
 // 5 -> Array#find
 // 6 -> Array#findIndex
 var ctx = __webpack_require__(36);
-var IObject = __webpack_require__(93);
-var toObject = __webpack_require__(34);
+var IObject = __webpack_require__(95);
+var toObject = __webpack_require__(33);
 var toLength = __webpack_require__(29);
-var asc = __webpack_require__(206);
+var asc = __webpack_require__(205);
 module.exports = function (TYPE, $create) {
   var IS_MAP = TYPE == 1;
   var IS_FILTER = TYPE == 2;
@@ -22924,11 +22923,11 @@ module.exports = function (TYPE, $create) {
 
 
 /***/ }),
-/* 143 */
+/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isObject = __webpack_require__(15);
-var setPrototypeOf = __webpack_require__(170).set;
+var setPrototypeOf = __webpack_require__(207).set;
 module.exports = function (that, target, C) {
   var S = target.constructor;
   var P;
@@ -22939,15 +22938,15 @@ module.exports = function (that, target, C) {
 
 
 /***/ }),
-/* 144 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var anObject = __webpack_require__(12);
+var anObject = __webpack_require__(13);
 var sameValue = __webpack_require__(208);
-var regExpExec = __webpack_require__(72);
+var regExpExec = __webpack_require__(71);
 
 // @@search logic
 __webpack_require__(74)('search', 1, function (defined, SEARCH, $search, maybeCallNative) {
@@ -22977,7 +22976,7 @@ __webpack_require__(74)('search', 1, function (defined, SEARCH, $search, maybeCa
 
 
 /***/ }),
-/* 145 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22987,12 +22986,12 @@ var Tokenizer = __webpack_require__(49),
     OpenElementStack = __webpack_require__(213),
     FormattingElementList = __webpack_require__(214),
     LocationInfoParserMixin = __webpack_require__(215),
-    defaultTreeAdapter = __webpack_require__(102),
-    mergeOptions = __webpack_require__(103),
-    doctype = __webpack_require__(104),
-    foreignContent = __webpack_require__(148),
-    UNICODE = __webpack_require__(61),
-    HTML = __webpack_require__(25);
+    defaultTreeAdapter = __webpack_require__(101),
+    mergeOptions = __webpack_require__(102),
+    doctype = __webpack_require__(103),
+    foreignContent = __webpack_require__(147),
+    UNICODE = __webpack_require__(60),
+    HTML = __webpack_require__(24);
 
 //Aliases
 var $ = HTML.TAG_NAMES,
@@ -25803,7 +25802,7 @@ function endTagInForeignContent(p, token) {
 
 
 /***/ }),
-/* 146 */
+/* 145 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25811,7 +25810,7 @@ function endTagInForeignContent(p, token) {
 
 var Mixin = __webpack_require__(77),
     Tokenizer = __webpack_require__(49),
-    PositionTrackingPreprocessorMixin = __webpack_require__(147),
+    PositionTrackingPreprocessorMixin = __webpack_require__(146),
     inherits = __webpack_require__(30).inherits;
 
 var LocationInfoTokenizerMixin = module.exports = function (tokenizer) {
@@ -25927,7 +25926,7 @@ LocationInfoTokenizerMixin.prototype._getOverriddenMethods = function (mxn, orig
 
 
 /***/ }),
-/* 147 */
+/* 146 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25935,7 +25934,7 @@ LocationInfoTokenizerMixin.prototype._getOverriddenMethods = function (mxn, orig
 
 var Mixin = __webpack_require__(77),
     inherits = __webpack_require__(30).inherits,
-    UNICODE = __webpack_require__(61);
+    UNICODE = __webpack_require__(60);
 
 //Aliases
 var $ = UNICODE.CODE_POINTS;
@@ -26006,14 +26005,14 @@ PositionTrackingPreprocessorMixin.prototype._getOverriddenMethods = function (mx
 
 
 /***/ }),
-/* 148 */
+/* 147 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var Tokenizer = __webpack_require__(49),
-    HTML = __webpack_require__(25);
+    HTML = __webpack_require__(24);
 
 //Aliases
 var $ = HTML.TAG_NAMES,
@@ -26273,16 +26272,16 @@ exports.isIntegrationPoint = function (tn, ns, attrs, foreignNS) {
 
 
 /***/ }),
-/* 149 */
+/* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var defaultTreeAdapter = __webpack_require__(102),
-    mergeOptions = __webpack_require__(103),
-    doctype = __webpack_require__(104),
-    HTML = __webpack_require__(25);
+var defaultTreeAdapter = __webpack_require__(101),
+    mergeOptions = __webpack_require__(102),
+    doctype = __webpack_require__(103),
+    HTML = __webpack_require__(24);
 
 //Aliases
 var $ = HTML.TAG_NAMES,
@@ -26442,7 +26441,7 @@ Serializer.prototype._serializeDocumentTypeNode = function (node) {
 
 
 /***/ }),
-/* 150 */
+/* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26450,7 +26449,7 @@ Serializer.prototype._serializeDocumentTypeNode = function (node) {
 
 var WritableStream = __webpack_require__(78).Writable,
     inherits = __webpack_require__(30).inherits,
-    Parser = __webpack_require__(145);
+    Parser = __webpack_require__(144);
 
 var ParserStream = module.exports = function (options) {
     WritableStream.call(this);
@@ -26525,7 +26524,7 @@ ParserStream.prototype._scriptHandler = function (scriptElement) {
 
 
 /***/ }),
-/* 151 */
+/* 150 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26560,7 +26559,7 @@ var pna = __webpack_require__(79);
 module.exports = Readable;
 
 /*<replacement>*/
-var isArray = __webpack_require__(152);
+var isArray = __webpack_require__(151);
 /*</replacement>*/
 
 /*<replacement>*/
@@ -26570,7 +26569,7 @@ var Duplex;
 Readable.ReadableState = ReadableState;
 
 /*<replacement>*/
-var EE = __webpack_require__(105).EventEmitter;
+var EE = __webpack_require__(104).EventEmitter;
 
 var EElistenerCount = function (emitter, type) {
   return emitter.listeners(type).length;
@@ -26578,7 +26577,7 @@ var EElistenerCount = function (emitter, type) {
 /*</replacement>*/
 
 /*<replacement>*/
-var Stream = __webpack_require__(153);
+var Stream = __webpack_require__(152);
 /*</replacement>*/
 
 /*<replacement>*/
@@ -26595,7 +26594,7 @@ function _isUint8Array(obj) {
 /*</replacement>*/
 
 /*<replacement>*/
-var util = __webpack_require__(62);
+var util = __webpack_require__(61);
 util.inherits = __webpack_require__(41);
 /*</replacement>*/
 
@@ -26610,7 +26609,7 @@ if (debugUtil && debugUtil.debuglog) {
 /*</replacement>*/
 
 var BufferList = __webpack_require__(222);
-var destroyImpl = __webpack_require__(154);
+var destroyImpl = __webpack_require__(153);
 var StringDecoder;
 
 util.inherits(Readable, Stream);
@@ -26700,7 +26699,7 @@ function ReadableState(options, stream) {
   this.decoder = null;
   this.encoding = null;
   if (options.encoding) {
-    if (!StringDecoder) StringDecoder = __webpack_require__(155).StringDecoder;
+    if (!StringDecoder) StringDecoder = __webpack_require__(154).StringDecoder;
     this.decoder = new StringDecoder(options.encoding);
     this.encoding = options.encoding;
   }
@@ -26856,7 +26855,7 @@ Readable.prototype.isPaused = function () {
 
 // backwards compatibility.
 Readable.prototype.setEncoding = function (enc) {
-  if (!StringDecoder) StringDecoder = __webpack_require__(155).StringDecoder;
+  if (!StringDecoder) StringDecoder = __webpack_require__(154).StringDecoder;
   this._readableState.decoder = new StringDecoder(enc);
   this._readableState.encoding = enc;
   return this;
@@ -27548,10 +27547,10 @@ function indexOf(xs, x) {
   }
   return -1;
 }
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(18), __webpack_require__(6)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(17), __webpack_require__(6)))
 
 /***/ }),
-/* 152 */
+/* 151 */
 /***/ (function(module, exports) {
 
 var toString = {}.toString;
@@ -27562,14 +27561,14 @@ module.exports = Array.isArray || function (arr) {
 
 
 /***/ }),
-/* 153 */
+/* 152 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(105).EventEmitter;
+module.exports = __webpack_require__(104).EventEmitter;
 
 
 /***/ }),
-/* 154 */
+/* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27649,7 +27648,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 155 */
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27951,7 +27950,7 @@ function simpleEnd(buf) {
 }
 
 /***/ }),
-/* 156 */
+/* 155 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28025,7 +28024,7 @@ module.exports = Transform;
 var Duplex = __webpack_require__(42);
 
 /*<replacement>*/
-var util = __webpack_require__(62);
+var util = __webpack_require__(61);
 util.inherits = __webpack_require__(41);
 /*</replacement>*/
 
@@ -28171,7 +28170,7 @@ function done(stream, er, data) {
 }
 
 /***/ }),
-/* 157 */
+/* 156 */
 /***/ (function(module, exports) {
 
 var charenc = {
@@ -28210,16 +28209,16 @@ module.exports = charenc;
 
 
 /***/ }),
-/* 158 */
+/* 157 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_modules_es7_array_includes__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_modules_es7_array_includes__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_modules_es7_array_includes___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_core_js_modules_es7_array_includes__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__appId__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_storageManager__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__appId__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_storageManager__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_i18n__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__lang__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__lang__ = __webpack_require__(45);
 
  // import { getLanguage } from '../common/lang';
 
@@ -28228,7 +28227,55 @@ module.exports = charenc;
 
 
 var Elevio = function () {
+  var elShellId = 'elevio-shell';
+  var elShell;
+  var elBtnLabel;
+  var accountId = '5bbc2de0b7365';
+  var elevioScript = "https://cdn.elev.io/sdk/bootloader/v4/elevio-bootloader.js?cid=" + accountId;
+
   var init = function init() {
+    elShell = document.getElementById(elShellId);
+    elBtnLabel = elShell.querySelector('span.text');
+    elBtnLabel.innerText = Object(__WEBPACK_IMPORTED_MODULE_3__common_i18n__["c" /* translate */])('NEED HELP?');
+    elShell.classList.remove('invisible');
+    elShell.addEventListener('click', function () {
+      return injectElevio(true);
+    });
+  };
+
+  var injectElevio = function injectElevio(isOpen) {
+    if (isOpen === void 0) {
+      isOpen = false;
+    }
+
+    window._elev = {}; // eslint-disable-line no-underscore-dangle
+
+    window._elev.account_id = accountId; // eslint-disable-line no-underscore-dangle
+
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.async = 1;
+    script.src = elevioScript;
+    script.id = 'loaded-elevio-script';
+    document.body.appendChild(script);
+    window._elev.q = []; // eslint-disable-line no-underscore-dangle
+
+    window._elev.on = function (z, y) {
+      // eslint-disable-line no-underscore-dangle
+      window._elev.q.push([z, y]); // eslint-disable-line no-underscore-dangle
+
+    };
+
+    script.onload = function () {
+      return loadElevio(isOpen);
+    };
+  };
+
+  var loadElevio = function loadElevio(isOpen) {
+    if (isOpen === void 0) {
+      isOpen = false;
+    }
+
     if (!window._elev) return; // eslint-disable-line no-underscore-dangle
     // eslint-disable-next-line no-underscore-dangle
 
@@ -28256,10 +28303,15 @@ var Elevio = function () {
       }
 
       elev.setSettings({
+        disablePushState: true,
         page_url: document.location.protocol + "//" + document.location.hostname + document.location.pathname
       });
       setUserInfo(elev);
       setTranslations(elev);
+
+      if (isOpen) {
+        elev.open();
+      }
     });
   };
 
@@ -28313,6 +28365,7 @@ var Elevio = function () {
 /* harmony default export */ __webpack_exports__["a"] = (Elevio);
 
 /***/ }),
+/* 158 */,
 /* 159 */,
 /* 160 */,
 /* 161 */,
@@ -28342,28 +28395,6 @@ module.exports = function (done, value) {
 
 /***/ }),
 /* 167 */
-/***/ (function(module, exports) {
-
-// fast apply, http://jsperf.lnkit.com/fast-apply/5
-module.exports = function (fn, args, that) {
-  var un = that === undefined;
-  switch (args.length) {
-    case 0: return un ? fn()
-                      : fn.call(that);
-    case 1: return un ? fn(args[0])
-                      : fn.call(that, args[0]);
-    case 2: return un ? fn(args[0], args[1])
-                      : fn.call(that, args[0], args[1]);
-    case 3: return un ? fn(args[0], args[1], args[2])
-                      : fn.call(that, args[0], args[1], args[2]);
-    case 4: return un ? fn(args[0], args[1], args[2], args[3])
-                      : fn.call(that, args[0], args[1], args[2], args[3]);
-  } return fn.apply(that, args);
-};
-
-
-/***/ }),
-/* 168 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var DESCRIPTORS = __webpack_require__(16);
@@ -28390,7 +28421,7 @@ module.exports = function (isEntries) {
 
 
 /***/ }),
-/* 169 */
+/* 168 */
 /***/ (function(module, exports, __webpack_require__) {
 
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -41158,37 +41189,8 @@ module.exports = __webpack_require__(31);
 //# sourceMappingURL=binary-live-api.js.map
 
 /***/ }),
-/* 170 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// Works with __proto__ only. Old v8 can't work with null proto objects.
-/* eslint-disable no-proto */
-var isObject = __webpack_require__(15);
-var anObject = __webpack_require__(12);
-var check = function (O, proto) {
-  anObject(O);
-  if (!isObject(proto) && proto !== null) throw TypeError(proto + ": can't set as prototype!");
-};
-module.exports = {
-  set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
-    function (test, buggy, set) {
-      try {
-        set = __webpack_require__(36)(Function.call, __webpack_require__(110).f(Object.prototype, '__proto__').set, 2);
-        set(test, []);
-        buggy = !(test instanceof Array);
-      } catch (e) { buggy = true; }
-      return function setPrototypeOf(O, proto) {
-        check(O, proto);
-        if (buggy) O.__proto__ = proto;
-        else set(O, proto);
-        return O;
-      };
-    }({}, false) : undefined),
-  check: check
-};
-
-
-/***/ }),
+/* 169 */,
+/* 170 */,
 /* 171 */,
 /* 172 */,
 /* 173 */,
@@ -41198,56 +41200,54 @@ module.exports = {
 /* 177 */,
 /* 178 */,
 /* 179 */,
-/* 180 */,
-/* 181 */,
+/* 180 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var regexpExec = __webpack_require__(92);
+__webpack_require__(8)({
+  target: 'RegExp',
+  proto: true,
+  forced: regexpExec !== /./.exec
+}, {
+  exec: regexpExec
+});
+
+
+/***/ }),
+/* 181 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(73)('native-function-to-string', Function.toString);
+
+
+/***/ }),
 /* 182 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(69)('native-function-to-string', Function.toString);
+"use strict";
+
+var create = __webpack_require__(94);
+var descriptor = __webpack_require__(57);
+var setToStringTag = __webpack_require__(63);
+var IteratorPrototype = {};
+
+// 25.1.2.1.1 %IteratorPrototype%[@@iterator]()
+__webpack_require__(32)(IteratorPrototype, __webpack_require__(4)('iterator'), function () { return this; });
+
+module.exports = function (Constructor, NAME, next) {
+  Constructor.prototype = create(IteratorPrototype, { next: descriptor(1, next) });
+  setToStringTag(Constructor, NAME + ' Iterator');
+};
 
 
 /***/ }),
 /* 183 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var global = __webpack_require__(10);
-var core = __webpack_require__(38);
-var LIBRARY = __webpack_require__(58);
-var wksExt = __webpack_require__(122);
-var defineProperty = __webpack_require__(20).f;
-module.exports = function (name) {
-  var $Symbol = core.Symbol || (core.Symbol = LIBRARY ? {} : global.Symbol || {});
-  if (name.charAt(0) != '_' && !(name in $Symbol)) defineProperty($Symbol, name, { value: wksExt.f(name) });
-};
-
-
-/***/ }),
-/* 184 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// all enumerable object keys, includes symbols
-var getKeys = __webpack_require__(39);
-var gOPS = __webpack_require__(96);
-var pIE = __webpack_require__(59);
-module.exports = function (it) {
-  var result = getKeys(it);
-  var getSymbols = gOPS.f;
-  if (getSymbols) {
-    var symbols = getSymbols(it);
-    var isEnum = pIE.f;
-    var i = 0;
-    var key;
-    while (symbols.length > i) if (isEnum.call(it, key = symbols[i++])) result.push(key);
-  } return result;
-};
-
-
-/***/ }),
-/* 185 */
-/***/ (function(module, exports, __webpack_require__) {
-
 var dP = __webpack_require__(20);
-var anObject = __webpack_require__(12);
+var anObject = __webpack_require__(13);
 var getKeys = __webpack_require__(39);
 
 module.exports = __webpack_require__(16) ? Object.defineProperties : function defineProperties(O, Properties) {
@@ -41262,58 +41262,13 @@ module.exports = __webpack_require__(16) ? Object.defineProperties : function de
 
 
 /***/ }),
-/* 186 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// fallback for IE11 buggy Object.getOwnPropertyNames with iframe and window
-var toIObject = __webpack_require__(40);
-var gOPN = __webpack_require__(83).f;
-var toString = {}.toString;
-
-var windowNames = typeof window == 'object' && window && Object.getOwnPropertyNames
-  ? Object.getOwnPropertyNames(window) : [];
-
-var getWindowNames = function (it) {
-  try {
-    return gOPN(it);
-  } catch (e) {
-    return windowNames.slice();
-  }
-};
-
-module.exports.f = function getOwnPropertyNames(it) {
-  return windowNames && toString.call(it) == '[object Window]' ? getWindowNames(it) : gOPN(toIObject(it));
-};
-
-
-/***/ }),
-/* 187 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var create = __webpack_require__(82);
-var descriptor = __webpack_require__(56);
-var setToStringTag = __webpack_require__(63);
-var IteratorPrototype = {};
-
-// 25.1.2.1.1 %IteratorPrototype%[@@iterator]()
-__webpack_require__(33)(IteratorPrototype, __webpack_require__(4)('iterator'), function () { return this; });
-
-module.exports = function (Constructor, NAME, next) {
-  Constructor.prototype = create(IteratorPrototype, { next: descriptor(1, next) });
-  setToStringTag(Constructor, NAME + ' Iterator');
-};
-
-
-/***/ }),
-/* 188 */
+/* 184 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.9 / 15.2.3.2 Object.getPrototypeOf(O)
 var has = __webpack_require__(35);
-var toObject = __webpack_require__(34);
-var IE_PROTO = __webpack_require__(94)('IE_PROTO');
+var toObject = __webpack_require__(33);
+var IE_PROTO = __webpack_require__(96)('IE_PROTO');
 var ObjectProto = Object.prototype;
 
 module.exports = Object.getPrototypeOf || function (O) {
@@ -41326,29 +41281,13 @@ module.exports = Object.getPrototypeOf || function (O) {
 
 
 /***/ }),
-/* 189 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var regexpExec = __webpack_require__(98);
-__webpack_require__(8)({
-  target: 'RegExp',
-  proto: true,
-  forced: regexpExec !== /./.exec
-}, {
-  exec: regexpExec
-});
-
-
-/***/ }),
-/* 190 */
+/* 185 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var $defineProperty = __webpack_require__(20);
-var createDesc = __webpack_require__(56);
+var createDesc = __webpack_require__(57);
 
 module.exports = function (object, index, value) {
   if (index in object) $defineProperty.f(object, index, createDesc(0, value));
@@ -41357,11 +41296,33 @@ module.exports = function (object, index, value) {
 
 
 /***/ }),
-/* 191 */
+/* 186 */
+/***/ (function(module, exports) {
+
+// fast apply, http://jsperf.lnkit.com/fast-apply/5
+module.exports = function (fn, args, that) {
+  var un = that === undefined;
+  switch (args.length) {
+    case 0: return un ? fn()
+                      : fn.call(that);
+    case 1: return un ? fn(args[0])
+                      : fn.call(that, args[0]);
+    case 2: return un ? fn(args[0], args[1])
+                      : fn.call(that, args[0], args[1]);
+    case 3: return un ? fn(args[0], args[1], args[2])
+                      : fn.call(that, args[0], args[1], args[2]);
+    case 4: return un ? fn(args[0], args[1], args[2], args[3])
+                      : fn.call(that, args[0], args[1], args[2], args[3]);
+  } return fn.apply(that, args);
+};
+
+
+/***/ }),
+/* 187 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var global = __webpack_require__(10);
-var macrotask = __webpack_require__(135).set;
+var macrotask = __webpack_require__(131).set;
 var Observer = global.MutationObserver || global.WebKitMutationObserver;
 var process = global.process;
 var Promise = global.Promise;
@@ -41432,7 +41393,7 @@ module.exports = function () {
 
 
 /***/ }),
-/* 192 */
+/* 188 */
 /***/ (function(module, exports) {
 
 module.exports = function (exec) {
@@ -41445,7 +41406,7 @@ module.exports = function (exec) {
 
 
 /***/ }),
-/* 193 */
+/* 189 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var global = __webpack_require__(10);
@@ -41455,12 +41416,12 @@ module.exports = navigator && navigator.userAgent || '';
 
 
 /***/ }),
-/* 194 */
+/* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var anObject = __webpack_require__(12);
+var anObject = __webpack_require__(13);
 var isObject = __webpack_require__(15);
-var newPromiseCapability = __webpack_require__(136);
+var newPromiseCapability = __webpack_require__(132);
 
 module.exports = function (C, x) {
   anObject(C);
@@ -41473,7 +41434,7 @@ module.exports = function (C, x) {
 
 
 /***/ }),
-/* 195 */
+/* 191 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41505,7 +41466,7 @@ unstable_ConcurrentMode:x,unstable_Profiler:u,__SECRET_INTERNALS_DO_NOT_USE_OR_Y
 
 
 /***/ }),
-/* 196 */
+/* 192 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41527,7 +41488,7 @@ if (process.env.NODE_ENV !== "production") {
 'use strict';
 
 var _assign = __webpack_require__(66);
-var checkPropTypes = __webpack_require__(116);
+var checkPropTypes = __webpack_require__(114);
 
 // TODO: this is special because it gets imported during build.
 
@@ -43414,7 +43375,7 @@ module.exports = react;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6)))
 
 /***/ }),
-/* 197 */
+/* 193 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43430,7 +43391,7 @@ module.exports = react;
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(5),n=__webpack_require__(66),r=__webpack_require__(139);function ba(a,b,c,d,e,f,g,h){if(!a){a=void 0;if(void 0===b)a=Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");else{var l=[c,d,e,f,g,h],k=0;a=Error(b.replace(/%s/g,function(){return l[k++]}));a.name="Invariant Violation"}a.framesToPop=1;throw a;}}
+var aa=__webpack_require__(5),n=__webpack_require__(66),r=__webpack_require__(135);function ba(a,b,c,d,e,f,g,h){if(!a){a=void 0;if(void 0===b)a=Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");else{var l=[c,d,e,f,g,h],k=0;a=Error(b.replace(/%s/g,function(){return l[k++]}));a.name="Invariant Violation"}a.framesToPop=1;throw a;}}
 function x(a){for(var b=arguments.length-1,c="https://reactjs.org/docs/error-decoder.html?invariant="+a,d=0;d<b;d++)c+="&args[]="+encodeURIComponent(arguments[d+1]);ba(!1,"Minified React error #"+a+"; visit %s for the full message or use the non-minified dev environment for full errors and additional helpful warnings. ",c)}aa?void 0:x("227");function ca(a,b,c,d,e,f,g,h,l){var k=Array.prototype.slice.call(arguments,3);try{b.apply(c,k)}catch(m){this.onError(m)}}
 var da=!1,ea=null,fa=!1,ha=null,ia={onError:function(a){da=!0;ea=a}};function ja(a,b,c,d,e,f,g,h,l){da=!1;ea=null;ca.apply(ia,arguments)}function ka(a,b,c,d,e,f,g,h,l){ja.apply(this,arguments);if(da){if(da){var k=ea;da=!1;ea=null}else x("198"),k=void 0;fa||(fa=!0,ha=k)}}var la=null,ma={};
 function na(){if(la)for(var a in ma){var b=ma[a],c=la.indexOf(a);-1<c?void 0:x("96",a);if(!oa[c]){b.extractEvents?void 0:x("97",a);oa[c]=b;c=b.eventTypes;for(var d in c){var e=void 0;var f=c[d],g=b,h=d;pa.hasOwnProperty(h)?x("99",h):void 0;pa[h]=f;var l=f.phasedRegistrationNames;if(l){for(e in l)l.hasOwnProperty(e)&&qa(l[e],g,h);e=!0}else f.registrationName?(qa(f.registrationName,g,h),e=!0):e=!1;e?void 0:x("98",d,a)}}}}
@@ -43690,7 +43651,7 @@ X;X=!0;try{ki(a)}finally{(X=b)||W||Yh(1073741823,!1)}},__SECRET_INTERNALS_DO_NOT
 
 
 /***/ }),
-/* 198 */
+/* 194 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43716,10 +43677,10 @@ exports.unstable_scheduleCallback=function(a,b){var c=-1!==k?k:exports.unstable_
 b=c.previous;b.next=c.previous=a;a.next=c;a.previous=b}return a};exports.unstable_cancelCallback=function(a){var b=a.next;if(null!==b){if(b===a)d=null;else{a===d&&(d=b);var c=a.previous;c.next=b;b.previous=c}a.next=a.previous=null}};exports.unstable_wrapCallback=function(a){var b=g;return function(){var c=g,f=k;g=b;k=exports.unstable_now();try{return a.apply(this,arguments)}finally{g=c,k=f,v()}}};exports.unstable_getCurrentPriorityLevel=function(){return g};
 exports.unstable_shouldYield=function(){return!e&&(null!==d&&d.expirationTime<l||w())};exports.unstable_continueExecution=function(){null!==d&&p()};exports.unstable_pauseExecution=function(){};exports.unstable_getFirstCallbackNode=function(){return d};
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(18)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(17)))
 
 /***/ }),
-/* 199 */
+/* 195 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44423,10 +44384,10 @@ exports.unstable_getFirstCallbackNode = unstable_getFirstCallbackNode;
   })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6), __webpack_require__(18)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6), __webpack_require__(17)))
 
 /***/ }),
-/* 200 */
+/* 196 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44449,9 +44410,9 @@ if (process.env.NODE_ENV !== "production") {
 
 var React = __webpack_require__(5);
 var _assign = __webpack_require__(66);
-var checkPropTypes = __webpack_require__(116);
-var scheduler = __webpack_require__(139);
-var tracing = __webpack_require__(201);
+var checkPropTypes = __webpack_require__(114);
+var scheduler = __webpack_require__(135);
+var tracing = __webpack_require__(197);
 
 /**
  * Use invariant() to assert state which your program assumes to be true.
@@ -65712,22 +65673,22 @@ module.exports = reactDom;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6)))
 
 /***/ }),
-/* 201 */
+/* 197 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(202);
+  module.exports = __webpack_require__(198);
 } else {
-  module.exports = __webpack_require__(203);
+  module.exports = __webpack_require__(199);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6)))
 
 /***/ }),
-/* 202 */
+/* 198 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -65744,7 +65705,7 @@ Object.defineProperty(exports,"__esModule",{value:!0});var b=0;exports.__interac
 
 
 /***/ }),
-/* 203 */
+/* 199 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -66175,7 +66136,68 @@ exports.unstable_unsubscribe = unstable_unsubscribe;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6)))
 
 /***/ }),
-/* 204 */
+/* 200 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var global = __webpack_require__(10);
+var core = __webpack_require__(38);
+var LIBRARY = __webpack_require__(55);
+var wksExt = __webpack_require__(137);
+var defineProperty = __webpack_require__(20).f;
+module.exports = function (name) {
+  var $Symbol = core.Symbol || (core.Symbol = LIBRARY ? {} : global.Symbol || {});
+  if (name.charAt(0) != '_' && !(name in $Symbol)) defineProperty($Symbol, name, { value: wksExt.f(name) });
+};
+
+
+/***/ }),
+/* 201 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// all enumerable object keys, includes symbols
+var getKeys = __webpack_require__(39);
+var gOPS = __webpack_require__(100);
+var pIE = __webpack_require__(59);
+module.exports = function (it) {
+  var result = getKeys(it);
+  var getSymbols = gOPS.f;
+  if (getSymbols) {
+    var symbols = getSymbols(it);
+    var isEnum = pIE.f;
+    var i = 0;
+    var key;
+    while (symbols.length > i) if (isEnum.call(it, key = symbols[i++])) result.push(key);
+  } return result;
+};
+
+
+/***/ }),
+/* 202 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// fallback for IE11 buggy Object.getOwnPropertyNames with iframe and window
+var toIObject = __webpack_require__(40);
+var gOPN = __webpack_require__(82).f;
+var toString = {}.toString;
+
+var windowNames = typeof window == 'object' && window && Object.getOwnPropertyNames
+  ? Object.getOwnPropertyNames(window) : [];
+
+var getWindowNames = function (it) {
+  try {
+    return gOPN(it);
+  } catch (e) {
+    return windowNames.slice();
+  }
+};
+
+module.exports.f = function getOwnPropertyNames(it) {
+  return windowNames && toString.call(it) == '[object Window]' ? getWindowNames(it) : gOPN(toIObject(it));
+};
+
+
+/***/ }),
+/* 203 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -66183,14 +66205,14 @@ exports.unstable_unsubscribe = unstable_unsubscribe;
 // 19.1.2.1 Object.assign(target, source, ...)
 var DESCRIPTORS = __webpack_require__(16);
 var getKeys = __webpack_require__(39);
-var gOPS = __webpack_require__(96);
+var gOPS = __webpack_require__(100);
 var pIE = __webpack_require__(59);
-var toObject = __webpack_require__(34);
-var IObject = __webpack_require__(93);
+var toObject = __webpack_require__(33);
+var IObject = __webpack_require__(95);
 var $assign = Object.assign;
 
 // should work with symbols and should have deterministic property order (V8 bug)
-module.exports = !$assign || __webpack_require__(17)(function () {
+module.exports = !$assign || __webpack_require__(18)(function () {
   var A = {};
   var B = {};
   // eslint-disable-next-line no-undef
@@ -66220,7 +66242,7 @@ module.exports = !$assign || __webpack_require__(17)(function () {
 
 
 /***/ }),
-/* 205 */
+/* 204 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -66228,11 +66250,11 @@ module.exports = !$assign || __webpack_require__(17)(function () {
 
 var $export = __webpack_require__(8);
 var toLength = __webpack_require__(29);
-var context = __webpack_require__(114);
+var context = __webpack_require__(112);
 var STARTS_WITH = 'startsWith';
 var $startsWith = ''[STARTS_WITH];
 
-$export($export.P + $export.F * __webpack_require__(115)(STARTS_WITH), 'String', {
+$export($export.P + $export.F * __webpack_require__(113)(STARTS_WITH), 'String', {
   startsWith: function startsWith(searchString /* , position = 0 */) {
     var that = context(this, searchString, STARTS_WITH);
     var index = toLength(Math.min(arguments.length > 1 ? arguments[1] : undefined, that.length));
@@ -66245,11 +66267,11 @@ $export($export.P + $export.F * __webpack_require__(115)(STARTS_WITH), 'String',
 
 
 /***/ }),
-/* 206 */
+/* 205 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 9.4.2.3 ArraySpeciesCreate(originalArray, length)
-var speciesConstructor = __webpack_require__(207);
+var speciesConstructor = __webpack_require__(206);
 
 module.exports = function (original, length) {
   return new (speciesConstructor(original))(length);
@@ -66257,11 +66279,11 @@ module.exports = function (original, length) {
 
 
 /***/ }),
-/* 207 */
+/* 206 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isObject = __webpack_require__(15);
-var isArray = __webpack_require__(125);
+var isArray = __webpack_require__(138);
 var SPECIES = __webpack_require__(4)('species');
 
 module.exports = function (original) {
@@ -66275,6 +66297,37 @@ module.exports = function (original) {
       if (C === null) C = undefined;
     }
   } return C === undefined ? Array : C;
+};
+
+
+/***/ }),
+/* 207 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Works with __proto__ only. Old v8 can't work with null proto objects.
+/* eslint-disable no-proto */
+var isObject = __webpack_require__(15);
+var anObject = __webpack_require__(13);
+var check = function (O, proto) {
+  anObject(O);
+  if (!isObject(proto) && proto !== null) throw TypeError(proto + ": can't set as prototype!");
+};
+module.exports = {
+  set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
+    function (test, buggy, set) {
+      try {
+        set = __webpack_require__(36)(Function.call, __webpack_require__(115).f(Object.prototype, '__proto__').set, 2);
+        set(test, []);
+        buggy = !(test instanceof Array);
+      } catch (e) { buggy = true; }
+      return function setPrototypeOf(O, proto) {
+        check(O, proto);
+        if (buggy) O.__proto__ = proto;
+        else set(O, proto);
+        return O;
+      };
+    }({}, false) : undefined),
+  check: check
 };
 
 
@@ -66351,8 +66404,8 @@ module.exports = renderHTML;
 "use strict";
 
 
-var Parser = __webpack_require__(145),
-    Serializer = __webpack_require__(149);
+var Parser = __webpack_require__(144),
+    Serializer = __webpack_require__(148);
 
 
 // Shorthands
@@ -66383,13 +66436,13 @@ exports.serialize = function (node, options) {
 
 // Tree adapters
 exports.treeAdapters = {
-    default: __webpack_require__(102),
+    default: __webpack_require__(101),
     htmlparser2: __webpack_require__(218)
 };
 
 
 // Streaming
-exports.ParserStream = __webpack_require__(150);
+exports.ParserStream = __webpack_require__(149);
 exports.PlainTextConversionStream = __webpack_require__(232);
 exports.SerializerStream = __webpack_require__(233);
 exports.SAXParser = __webpack_require__(234);
@@ -66402,7 +66455,7 @@ exports.SAXParser = __webpack_require__(234);
 "use strict";
 
 
-var UNICODE = __webpack_require__(61);
+var UNICODE = __webpack_require__(60);
 
 //Aliases
 var $ = UNICODE.CODE_POINTS;
@@ -66567,7 +66620,7 @@ module.exports = new Uint16Array([4,52,65,66,67,68,69,70,71,72,73,74,75,76,77,78
 "use strict";
 
 
-var HTML = __webpack_require__(25);
+var HTML = __webpack_require__(24);
 
 //Aliases
 var $ = HTML.TAG_NAMES,
@@ -67145,10 +67198,10 @@ FormattingElementList.prototype.getElementEntry = function (element) {
 
 var Mixin = __webpack_require__(77),
     Tokenizer = __webpack_require__(49),
-    LocationInfoTokenizerMixin = __webpack_require__(146),
-    PositionTrackingPreprocessorMixin = __webpack_require__(147),
+    LocationInfoTokenizerMixin = __webpack_require__(145),
+    PositionTrackingPreprocessorMixin = __webpack_require__(146),
     LocationInfoOpenElementStackMixin = __webpack_require__(217),
-    HTML = __webpack_require__(25),
+    HTML = __webpack_require__(24),
     inherits = __webpack_require__(30).inherits;
 
 
@@ -67415,8 +67468,8 @@ LocationInfoOpenElementStackMixin.prototype._getOverriddenMethods = function (mx
 "use strict";
 
 
-var doctype = __webpack_require__(104),
-    DOCUMENT_MODE = __webpack_require__(25).DOCUMENT_MODE;
+var doctype = __webpack_require__(103),
+    DOCUMENT_MODE = __webpack_require__(24).DOCUMENT_MODE;
 
 
 //Conversion tables for DOM Level1 structure emulation
@@ -68166,7 +68219,7 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
                          (typeof global !== "undefined" && global.clearImmediate) ||
                          (this && this.clearImmediate);
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(18)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(17)))
 
 /***/ }),
 /* 225 */
@@ -68359,7 +68412,7 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
     attachTo.clearImmediate = clearImmediate;
 }(typeof self === "undefined" ? typeof global === "undefined" ? this : global : self));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(18), __webpack_require__(6)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(17), __webpack_require__(6)))
 
 /***/ }),
 /* 226 */
@@ -68433,7 +68486,7 @@ function config (name) {
   return String(val).toLowerCase() === 'true';
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(18)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(17)))
 
 /***/ }),
 /* 227 */
@@ -68469,10 +68522,10 @@ function config (name) {
 
 module.exports = PassThrough;
 
-var Transform = __webpack_require__(156);
+var Transform = __webpack_require__(155);
 
 /*<replacement>*/
-var util = __webpack_require__(62);
+var util = __webpack_require__(61);
 util.inherits = __webpack_require__(41);
 /*</replacement>*/
 
@@ -68492,7 +68545,7 @@ PassThrough.prototype._transform = function (chunk, encoding, cb) {
 /* 228 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(107);
+module.exports = __webpack_require__(106);
 
 
 /***/ }),
@@ -68506,14 +68559,14 @@ module.exports = __webpack_require__(42);
 /* 230 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(106).Transform
+module.exports = __webpack_require__(105).Transform
 
 
 /***/ }),
 /* 231 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(106).PassThrough
+module.exports = __webpack_require__(105).PassThrough
 
 
 /***/ }),
@@ -68523,9 +68576,9 @@ module.exports = __webpack_require__(106).PassThrough
 "use strict";
 
 
-var ParserStream = __webpack_require__(150),
+var ParserStream = __webpack_require__(149),
     inherits = __webpack_require__(30).inherits,
-    $ = __webpack_require__(25).TAG_NAMES;
+    $ = __webpack_require__(24).TAG_NAMES;
 
 var PlainTextConversionStream = module.exports = function (options) {
     ParserStream.call(this, options);
@@ -68552,7 +68605,7 @@ inherits(PlainTextConversionStream, ParserStream);
 
 var ReadableStream = __webpack_require__(78).Readable,
     inherits = __webpack_require__(30).inherits,
-    Serializer = __webpack_require__(149);
+    Serializer = __webpack_require__(148);
 
 var SerializerStream = module.exports = function (node, options) {
     ReadableStream.call(this);
@@ -68589,9 +68642,9 @@ var TransformStream = __webpack_require__(78).Transform,
     DevNullStream = __webpack_require__(235),
     inherits = __webpack_require__(30).inherits,
     Tokenizer = __webpack_require__(49),
-    LocationInfoTokenizerMixin = __webpack_require__(146),
+    LocationInfoTokenizerMixin = __webpack_require__(145),
     ParserFeedbackSimulator = __webpack_require__(236),
-    mergeOptions = __webpack_require__(103);
+    mergeOptions = __webpack_require__(102);
 
 var DEFAULT_OPTIONS = {
     locationInfo: false
@@ -68732,9 +68785,9 @@ DevNullStream.prototype._write = function (chunk, encoding, cb) {
 
 
 var Tokenizer = __webpack_require__(49),
-    foreignContent = __webpack_require__(148),
-    UNICODE = __webpack_require__(61),
-    HTML = __webpack_require__(25);
+    foreignContent = __webpack_require__(147),
+    UNICODE = __webpack_require__(60),
+    HTML = __webpack_require__(24);
 
 
 //Aliases
@@ -69413,8 +69466,8 @@ module.exports = function (styleStr) {
 
 /* WEBPACK VAR INJECTION */(function(Buffer) {(function() {
   var crypt = __webpack_require__(240),
-      utf8 = __webpack_require__(157).utf8,
-      bin = __webpack_require__(157).bin,
+      utf8 = __webpack_require__(156).utf8,
+      bin = __webpack_require__(156).bin,
 
   // The core
   sha1 = function (message) {
@@ -69494,7 +69547,7 @@ module.exports = function (styleStr) {
   module.exports = api;
 })();
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(85).Buffer))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(84).Buffer))
 
 /***/ }),
 /* 240 */
@@ -69602,7 +69655,7 @@ module.exports = function (styleStr) {
 /* 241 */
 /***/ (function(module, exports) {
 
-module.exports = {"3d52a6d8fedcc48a65297c07bf5f7e3e41aab5aa":"邏輯","3edf0df49942da6d11a1a217e4d3af4a5a8e64f2":"數學","c3328c39b0e29f78e9ff45db674248b1d245887d":"文本","4d064726954a17487f94e931f5b157b733ec22ed":"高階","a1fffaaafb7cc996685bceb829c053cc4f7de43d":"清單","19de69cb601f53a4ea7af22a65c71ae63251365c":"變數","2b961dea1dc0c60ddf9a2c8e9d090f6f7d082483":"功能","dc7f77b4ccfc9f70a78bd97303bd10ba4c9d70c8":"迴路","66639f7d455dd71faa9147f5d69e5ce885d8bebd":"Binary","0ba66deaab2f2cd3b0793d03f600ee2b8f577fbc":"交易的定義","9201c6ac624e98e168e6ccddbcd5a9b5cdff06b3":"購入前","44ab9a87268d3fd74040ed0b55c04f83294cfdef":"購入時","c415c9399b7ae7285d2c1c880a6a0aa18f62ff8c":"購入後","d07ffc19d51f0973859a0d95c1d15cd9f22388ca":"跳動點分析","8cf71374fa095a64b5295b672daef8507ec7be6a":"指標","4fa8cc860c52b268dc6a3adcde7305e9415db5bb":"工具","6c82e6dd86807ee3db07e3c82bec1ae1ce00b08b":"時間","8d8fd6765e184419cad8b88d1a60c895d79578c2":"蠟燭線","548f449b63ff41eaaff5a2d679ffa56b2015fc20":"雜項","8bf95ea372568c7a254ba9fada5f6f1701ebc5b5":"記錄","12b71c3e0fe5f7c0b8d17cc03186e281412da4a8":"摘要","9feddbabd7e7309e96c590069057158e96baa8f6":"實況簡報","038fe2bdb7ec6ee078f60bdb5bee94654ec6a81d":"二元期權交易就像任何其他活動一樣，過於沉迷可能會上癮。為了避免發生此種風險，我們定期向您提供交易和財務的實況簡報。","4152043e8c670075d2c919677e835edb0d923cab":"請指定您首選的實況調查間隔時間，以分鐘計","d9fff2df19e90f2c7ea6bb30fde4e0da119d13d1":"請輸入10和60之間的數字。","2439f2f199b2a3e798aa9b4feaa9248bdec9bc0b":"繼續交易","a72ca256dc49e55a1a57b9a727fbde9834c9a3f7":"聲明","6e78c91f5a05fc0d4f1a787d38e3d6fe2f856d46":"登出","4832e45812a2724f16a15f9ae87adfc8ae4168cf":"聯繫我們","f7c400ed695f898b8ee9d21664aa17b5bb693828":"登入","5ea75f1605a4bf1db5c39fcc61854627478c0a7d":"將區塊重置成初始狀態","f98595d541778d86f75ef22b3328a031d20aa16b":"載入新區塊(xml檔)","4a1e616226c329a94da7768bc0435a3284478010":"保存現有的區塊（xml 檔）","6b3465ace62f33f0687b4669ac26d95895e9ca52":"將Binary Bot 連接到 Google Drive，以便保存及重新使用區塊","8e4ec2c451ec7b1bf68d72fe9086ec978e41feb7":"復原變更(Ctrl+Z)","937f5055f05be359ddf619744e8af4d643549e80":"復原變更(Ctrl+Shift+Z)","8406d1cce44230835932060649e999ca3283b413":"放大(Ctrl + +)","1109673172af2c173c492622ff8a72c8f29f0e70":"縮小(Ctrl + -)","44c22002c65d2871331263a23c3e09c0a1bfd847":"重設直行","ebd0945359e5578ff9bd3a2ab490ca84c225d8f5":"顯示/隱藏彈出摘要","76bb05950f80f3a88ee05ef3276c5934fd355e8d":"運行bot","ba50a42d8d3228c37a817865fce49fbca692c2ad":"停止自動交易","4f4aa4117318a8ddf8783885d4f3542c5b2733bd":"顯示記錄","91017ef9b165cd0e7475a770f318ea5e705e1321":"顯示圖表","c89e3dd1cafcadcc0312e476ab58b2332209da23":"顯示交易檢視","b02c858e72be118a65c9393930351012b647cb9e":"切換標題","250be77f7605669a0b3d968b9ed381a3d9787ed1":"打開已儲存的 XML 檔並擷取其區塊","ff29ccd7a6c6073cc462ed590d27a91632fdf67e":"Binary Bot","608061fb5aab975013fa70c5c814a1d8ba30c152":"交易效率比您想象的更高","e4ce8dc3e416e69262ba642dc57d3975d6616980":"想要讓您傾向的二元期權交易策略自動化？","f261237ca8beec6f77b76c4121feb8da22818c56":"Binary Bot 是我們尖端的程式設計工具，讓您建立擁有簡單拼圖遊戲式拖放功能的交易應用程式。","f6c85c68616eeaaa15fcd53fdc52f6eb5c886357":"不論是非常簡單的公式，或是極度複雜的算法，請發揮您的想像力，設計出無限量的二元期權交易bot，即使在您睡眠時也可自動為您進行交易。","e6906a0d1c28b202f9bd49da4a6abbddca57399a":"更奇妙的是，一旦您建立好了bot，我們可幫您把它通過","1dd0cf79c572bcdbdfabbd54ee95710a21234d73":"Binary.com商店賣給其他交易者。","abeef9a35ae6256796ba2462e4f64d308de42359":"通過我們的應用程式商店銷售您的bot，您可獲取銷售收入金額的80%。","0606f0b7763ee6e8094a3dab7873d34c08fd3670":"立刻建立Bot","221acaf3a0290adafe08cdcb8c66121c73d8b4a3":"需要幫忙？","d635b53e59c9aad8c5d78458826beffb029b27bf":"謝謝, 我們會在24小時內回覆您","1de91e827ec70ca735abc2c71b0a89cb0cfc4ce1":"未選擇標的市場","50050f06645ad2743165b429a8f7deebd285fd63":"未選擇合約類型","6a7d1a3a17c4e8ae6712cb60d46db1edf0aa2667":"請登入","2f9f9096be1a1c0569a9ce54e57f0420f6b3c2e9":"持續時間必須是正整數","4df6e872792d72aea8a2f6b831d00b554464da23":"金額必須是正數","001e68df3a4b32a4d57148d9d407f44eee3b7436":"無效的蠟型線","04f14ea7c92e0b2b5ae005c696245063ec641d66":"無效的蠟線清單","c1bbfcbb4f57d3a56c1239af0c2138321589efd2":"重試間隔時間為","57b453bb26b1c28dfe362b7cc9f17f0be93dd581":"以下數額已達最大限制","094628ce13fc0e78f07b697d1cc9421bb2edd666":"以下請求已失敗","816c52fd2bdd94a63cd0944823a6c0aa9384c103":"否","5397e0583f14f6c88de06b1ef28f460a1fb5b0ae":"是的","9bb396940adb9705fe57eba6ea8b578e6aafa792":"賠付額","78d7103a319e808455d397513279d99f3b3f3768":"投注資金","bbb930cc426507ed3f6b7c343c75dd0e041494b7":"聲明","e6e886cdcdefeb6d3edb4c31bed06dd183ac4153":"賣價","50e72909992bdc37c7c07769d1b7efac5e52874c":"賠付額","ecb5ba7044417916ba12de5fa9e6fccac3e5d475":"利潤","c980b910204c7babdffe8ff3f7e755f30133383c":"合約類型","a726c6955157f1b8b92f9932652434a7150f80f8":"入市現價","a66d5c7ef2c63dbc9a8f9e6ae4e2bc575e74a36e":"入市值","7674920c033ca14277c577e19c037a6754d4fa80":"退市現價","e8b8bd9f2eabc12875605a37c93e7f04a713fcb8":"退市值","779455ee3bde8494d9629b353e17b19e92357ba8":"障礙","37a5301a88da334dc5afc5b63979daa0f3f45e68":"結果","4973f4c599d5f42cf7bde52d66c3ed8ef77accb1":"贏得","12e24a7d8ac40579e8a0aef4869288afe7ed6745":"損失","563339f82447b4e758ad76d5a0b63b5698594fba":"上升","5c1ae82c29543ac887703776bf3da2c7dcce683d":"下跌","2fc096bb7b6596ab243d0286c9f43fdf2b9b406d":"沒有變化","ecb252044b5ea0f679ee78ec1a12904739e2904d":"字串","53b0a1b2fadf4e040cdc2155a7340de24aca93cb":"數字","bc74f4f071a5a33f00ab88a6d6385b5e6638b86c":"綠色","4c9a82ce72ca2519f38d0af0abbb4cecb9fceca9":"藍色","96de5543d183d7de52ac5fa21c46fc811f673f89":"黃色","78988010b890ce6f4d2136481f392787ec6d6106":"紅色","aa9330a16e5b055de809256dad6b4d1cbd2999e7":"無提示","cf84a98d6cf7f156862a08ba8236467b6f471004":"公告","eee2facd669d1434848c24da5527b3e87d9a12d5":"賺取的錢","9d705578b0f1f0ce3a06dc5e82f9a1e6078f81e1":"完成工作","7f2f6a15cf8da2b27e5a4af47b58e7ad71c0b3d9":"錯誤","a3b1583d377f37ac20de7e089edfa0920a078e57":"嚴重錯誤","66c8b6848eee629c4ac551bf2b5fa591571654be":"上漲同價","5649dce3367d490fa19d563ee9e3d4c4b6f7c642":"下跌同價","062787aa328047e189774b3703d983b83938f6e9":"高於","b91eed4b7a80cd9572a27e65ebdff9caa4b3b9a4":"低於","e3f139abb7a549a1210b36f7dbf89215ad6c9902":"觸及","7d7932bcc2e262ae98cf09dc5445130fb3881769":"未觸及","a16814a48ec58c2e24ba224a80921a5c02361abe":"範圍之內收盤","391d02cd75ebcd6ed26f5f45ddf7d40bf13e9dc5":"範圍之外收盤","534ec5da4e82ec419abc170e1a8448f55a01664f":"保持在範圍之內","98cbe1998effd8b1a8aefdcc538573055e99a5f5":"超出範圍之外","93d13bad1d2c2841db127cb70cc35bfc98059fc9":"亞洲上漲","c098658ce3d3a258e4d155949a60072966b36db7":"亞洲下跌","ee2dbd5d6d82d0833069b07e7dd2848d3bf4d83a":"相符","8444b7ce28bbc3443cc5cf73359b8353989b2a4b":"差異","9e767ad03e5547f251044e0724dc1d9f3e75aeed":"偶數","dc28f5f3c65ec611f0f30022650d24382d27448e":"奇數","18a63f5512afb5573e5b44deba78d629f0635317":"大於","2a268b89b83f8cb38ea48e46e93dd8840db512f9":"小於","2155c8b38181dd2552e84a94049aacd33ef9c607":"高跳動點","1408cfd2b064b923f024fbe590e27db8282941a5":"低跳動點","b86eb15dc4f13e4c2972de158d3038d9f657242f":"重設買權","669a1f3d9a8f601a84da536cfdad1de4092b1926":"重設賣權","844d1a5c99a0a668383340cc095d040eef998c79":"只會持續上漲","87293a146cd481a2b30cf74282ec061dc4cf0735":"只會持續下跌","cf9b77061f7b3126b49d50a6fa68f7ca8c26b7a3":"開盤","b1a5954a483f8f8b0207385095f74aeb409b3f80":"高","a124947cbd2d1d92b47e027274c3269ff0c7a84b":"低","bbfa773e5a63a5ea58c9b6207e608ca0120e592a":"收盤","1173872a4fb205b713702f0eec5cf2c732c828fd":"開盤時間","808d7dca8a74d84af27a2d6602c3d786de45fe1e":"預設值","62957ecfdc50957e8957c11d2eae74d078f0ef1a":"1分鐘","1dd3e663dfa7ac9cb77cfddd2cf8ac700657e2d6":"2分鐘","24e46784cbce32443db5a2638b1a7d3201543e9b":"3分鐘","3aa5819ed8a0b94d0f293db8e9c9598298ddd402":"5分鐘","a6f151883b736f0470d33492e61c72a7d059d065":"10分鐘","899761ff5425abd2ee214fa7aa46e27c6c8b5aae":"15分鐘","31bbe8890d28d183f8f7f2c160fa892c444c0ec7":"30分鐘","f030c3d667652646b86732ad7bc67e226c49cd3a":"1小時","2046e49e33c040e08dbd6fd83df3e1846015e6f1":"2小時","7b47150d431db70d783724007f07ab894eb8ac2e":"4小時","191800b7e9a48680792c0dd77cb6cac00c4514c6":"8小時","2d8a6f7c34468578640b333b8650131de06ac770":"1天","f94510322ecd9b3a2af67a10bd51ecc4ac6a24e7":"上漲/下跌","c1365a35e99d0f9147ebc72f21534cf471fa7d95":"上漲/下跌平價","9c7960c6b11d35ac9d6cdc1ebaad3af43b2065c5":"亞洲期權","2260ce49306460c8a2ef501939f29ad6ddd4e934":"位數","0186aa73a1b75fa8f0eb98bbd9ad01102bb09ec1":"觸及/未觸及","f7de1f66f0979667da275b7e8996e805395025a1":"範圍之內/範圍之外收盤","a431deecd4c2258097adae418d496fe9a8179fee":"範圍內/範圍外","256fe245cb7d3d673095f7faaa8c9ff81b985ad1":"高/低跳動點","12a3f461cdebbc8f335190413ee6c57442743bba":"重設買/賣權","e696144fa588782e6d6b2c97e2d3ed1adf52bd5c":"只會持續上漲/只會持續下跌","91a64e3f83c91acf336c631fba295f297f94c399":"n 秒後運行","024696596f26a4db232fd9e966eadfeb27c0bd1a":"每 n 秒運行","c538c170bdc6b0f3bb98dce44a016a2e2d45a6e7":"上部","85c274929bc0e28eafd3734f2c25046c3b95b36b":"中部","346e3ee198e98146993894d3de8ecab1a86c3e80":"下部","f16459104f92ab6b38aa265adb4ecbfc3768e303":"長條圖","e09f635f4e77476c9ca1c37bc9992e9ace3431c1":"指數平滑異同移動平均線","27bed13a88c60350c3de92ec3820e1cc4f7d6ec3":"訊號","19eabc961735d78f12fc7be906ffcb033853cf85":"時間戳記","68f4145fee7dde76afceb910165924ad14cf0d00":"消息","629777b7d4d610ace6dee24442730f27d7d0853e":"不支持的文件︰","beb040c8fabd007c9cc5ac6a9feb6bdb05d33dac":"任何未儲存的變更都將丟失。","410bf23a3f080def9c7a976a16305bcde7943ed1":"是否確定？","e99811bd3b1ad17e74614060ecb180602be35ad6":"您已被登出！","3b26e990d3acff493ee2cf66d1280bed2625e43f":"連接在收到伺服器反應前已中斷","876f3e0202ca40dedf2e5ab6577eba1ae637fb53":"策略","8ce80462febd4d573cb2f9c1984fdc93b7c21c57":"載入 Google 雲端硬碟庫時出錯","7f412a8cf67f755d3eb36846dd07148ceb8d4c72":"無法載入 Google 雲端硬碟塊","3b6bbab905129dd36b8d4e99947fa30540ed7b2a":"無法識別的檔案格式","3d6b44df6eaf6236b4abc1aadcf8f5b1cda769c1":"從 Google 雲端硬碟檢索資料時出錯","cdfe947b0c089a4a1f78c11299f25c32a124f1a6":"選擇Binary Bot 策略","2db43c69a4b96454914f0b8272bc869984529e6e":"從 Google 雲端硬碟列出檔案時出錯","0dcea5f584938e0fff00084b83156ab31d641ab3":"從 Google 雲端硬碟檢索檔案時出錯","18da95988117ff029393f3f5c881d70ef47f7385":"處理您的請求時出錯","04226bcf91195130e25fe7a8e8ea4d3e058efcb7":"選擇資料夾","aee24f2456ea8516b024a5d3e2b815ae7f2239d9":"無法發送Telegram通知","05754ed14275a070a20a1d5cd65f0cea66f1da7f":"建議還沒有準備好","79222cd9892a434aa61fc7dc01c3839951eb8d1e":"選定的建議並不存在","6ea4a034747d020b1d8ce4848def95d537555dd6":"已買入","89f89c02cf47e091e726a4e07b88af0966806897":"ID","1200c1af2f7bba4e29a34112865662748c9d41df":"此合約不提供轉售。","62d6180e55905f7b996d442c53631981a4ef8b5b":"已售出","ed4978867de1da05b336b724a3fb96222a29ebec":"指標必須是正整數","87e2e01f93d25ba7ed582cc81ef5c9ab2959f4c6":"利潤總額","b2a4553586d1062c21323bca1dc0589f7a9d5cf7":"損失金額","46fc6f27a835486d63d9e927c6687e4508cb3087":"最大達成交易的數目","9202ddae4cea16513e53bbc965d88ed975e59512":"最大損失金額","5f52b397b7e5f538681f0f5717a88aa626349c7a":"未調用Bot.init","85dfa32c97d8618d1bea083609e2c8a29845abe5":"帳戶","d847919a30d31c0be624087f3370492b3fdf80c6":"運行次數","5cd6978d63540c8a490ef76f43219de6362f958e":"總投注金額","17410d7b62b8b1de981cfebada24632987edf186":"總賠付額","b841eeb091f1ff0e14be08e5ea1b93e4cf147ed3":"總損益","90eef613042c5a51f542421065b68b886d473807":"餘額","db1c784524e1b54011a95823026161f7c8517fe0":"引用","4db3e9e4aecd187db9339a10d2629fef46724dc4":"交易類型","1bb4086b66659d8580f9be4beef69931aeea3cad":"入市現價","8bf249c4855e591964bd5bdd35c8ef2ee107342d":"退市現價","ba7be969e7c1bb5f22489e843478e3d721aaa843":"買入價","772fbced18230220d2d9be1456be16fc1b271d25":"利潤/虧損","bae7d5be70820ed56467bd9a63744e23b47bd711":"狀況","96f608c16cef16caa06bf38901fb5f618a35a70b":"待決","7fb3a9b5101bcd45e2dca077191693a5199bafa9":"已結算","82a82f798dd773717ec37d15fd4405510291734e":"自動交易已停止。","6a88e58aa1798626f94cf17f1a91618b405bb289":"Bot 將開始...","624cc7f40b68faace7e78d8e5c5be1d4f15facda":"自動交易正在運行中","788180a6ddbbbcca10f6f49d8e85d557934bae0e":"Bot 將停止...","d907a40a4a15da3c21a6e0f8ace3f987d482f92c":"Bot 已停止。","4f219c17ab9ab76aa1cd431b4e0e5ecf5520e8e4":"試圖購入","4684ee1026d9b4c872d016c3c4588a0c479a451c":"購入金額","ca92c55b9e4233d771d5b6300fe751a9678d1deb":"購買成功","f02760cd2eac28169f0a990c950c3dfe8427f772":"合約已終止","66c7734789e19cbeef3a5ac185ea732139aed213":"圖表","3b662fb2e8bafce29aa98321b18874bb44905488":"Google雲端硬碟集成","7ee0ff5eaa6fa82bd6d83a2f4ca446c663f097cb":"最大連續交易數需是1到100之間","93039e609d94a24f3572b794a31b21525a09af2b":"未設置","ea67c8023c75375484f3a5f1aeb009b20059d5bc":"每日損失限額:","b1946e5b4b78465b7661fd4bc89ff52de6c633e7":"最大連續交易數","952f375412e89ff213a8aca383d18e5691354347":"開始","9f1c61cc03f3ef9324db05502f7f0b61e61e1521":"交易限制","095ba68888b5ace5f4515f5acab76dfa1073544e":"我的電腦","ddcb77ff769ea54ca622848f6bedd4004fa4f4fa":"載入","248e224f533752db28a1aab3519a58569ad96140":"載入程式塊","c7097e97dcc446ca889d3ca6be733a65e2728afe":"已成功上傳到 Google 雲端硬碟","3218e5a460e82d7bdea9ce0f145cab2f47ba9a4b":"另存為集合件","611ebbfb080284312904de925ef0f75f4cb56ad2":"保存您的程式塊和設置, 以便在其他策略中重複使用","efc007a393f66cdb14d57d385822a3d9e36ef873":"儲存","a638caa8ab2b7ff7980a571334217339e6d1d634":"程式塊儲存為","39fca63515c105918f03e4908ec12df675b07f92":"交易檢視","fadc0ef93d1ff13370524ce8481ddc4a71195934":"重設直行","e4458464df6cbb8da1134875ba51519c5d244d9f":"區塊必須位於區塊筒、主要區塊或函數內","e9c45563358e813f157ba81b33143542165ba84e":"警告","31cb6f44d030abeabcc7046555dea851602a87a5":"您的國家不能使用此策略。","9ce3bd4224c8c1780db56b4125ecf3f24bf748b7":"確定","af145748c9cf765a3b059eec20cb1dbb899297d8":"區塊載入成功","a479c9c34e878d07b4d67a73a48f432ad7dc53c8":"下載","f1d8b7b118d6f82f95614d476bc11af650aed3bc":"無法載入程式塊檔","11ee9c5d534cc8d22651092222b532917594161a":"最小持續時間是","5283ac04c9a8ba8a937d1edb4ba986aeefce8bf1":"跳動點數必須介於 5 和 10 之間","ace1342bc3720b77ce510b93074041e7386d209e":"到期時間不能和開始時間相同","fed3e7bd6696fb97a12d720845ab5388456bfc3b":"預測必須是一個數位","d466687f90ba548434d65186d11a80c4204f9ad6":"必須向內新增:","6ddf2b3075ac9ab5d66b40e15ea9a34c087672ea":"必須向內新增","33aa6ff282ee509d37c6f758274c9156b419ff73":"您嘗試匯入的策略無效。","da162a909c2981ed318d23cd9a6be1d66e0a8400":"無法識別的檔案格式。","5e719fa76e1b6cb396376c82ebdd04bec7253229":"遠端區塊載入必須是集合物件。","b0d2de25daf6ba09a5e710c6968ffded29c4dae1":"無法載入區塊檔。","df84a88f38b03b5b342362d72370b0d66afdae35":"目標必須是 xml 檔","cd680fd936e9559ef1d95efac7a71680e2b13a89":"此 url 已經載入","34c59389053701a04127f74d32315e0206e076f8":"試圖載入url時出錯","3ead0b14c72503187691a7a6d7121987299bd401":"這不是官方版本的Binary Bot，使用時您需自擔風險。","27401c9c8e476d659c8382e05c6d70a4a82be468":"官方版本","bc981983e7f547dc62e19a1e383acfe00782a6d5":"下一頁","b52b36b7269fbfc58ec24bb724691951a3decbe8":"返回","e9b450d14bc2363d292c84f17cfad5cfbd58a458":"完成","29cadadfebdd578a50b7b3d1b2c5b33e424d5de7":"快速瀏覽","a48e81d4a8da67637b46725824177a959fe99b21":"準備好學習如何使用 Binary Bot 了嗎？","6f3e6ebf249947cec4f64117253a8fe43335ae79":"不，謝謝","fcb6e90e7223e1d1d735f15dbb7ded9d81bbe7ef":"不要再問我。","4ca0a75c2b7fa7da4364d03b72c46fee1860a2bf":"工作區","5fcf29b9f0b8971c8148e70a150ddc9ac04c94fc":"拖放區塊檔。","ddcbb5361b1a16eba60fca2383fb297bb90ed9b3":"下載示例策略","1758356db21759f7c5a0da9b4dd1db8fd6feab3f":"或","00b581632c1532969a7128ebc8eae936ed8af04e":"製作自己的策略。","d171baee235d4c93f63755a876782dc5be4c3e47":"區塊工具箱","056f19272d96f902c38207cf163ea8dbff7fbd32":"從這裡新增更多區塊到機器人程式。","36bae31694f85bd7a5b0ad45e51ef622b95baadb":"帳戶","f5c47fd3b3553b10441a06054078cea745177dea":"啟用機器人程式前請先登入。每次測試策略時請使用虛擬帳戶。","fd825ae94aa79500a878dd4590a4b360e7162663":"Bot 控制項","6ee7980833e1ed72901b919ffd0fa20e1a251d3f":"控制您的區塊。將游標放在每個按鈕上即可獲得更多資訊。","f5169c84497de3aea74f7da9e7e177d1427e736b":"享受其中樂趣！","4f1b3d682c2a00b393c33637da402463bc11d5ff":"想要報告問題或尋求幫助嗎？","0049f8894e41937ebb9111cd3def6749049fb50f":"請按一下此處","aac1569ccf6b1a11b0ad0fbefdb9ffc777b4c733":"按一下選取","53adebdc2b1cbbedb56395b19a73fe47b87cc554":"跳動點","5fb1db527825d2996e37c655e5dec49d4da80c09":"秒","092f99ea11a34a8490e7a767a83a42fc45634f82":"分鐘","9e25a34e635a123f8958bbe26e7c4843278597fb":"小時","f6bb0f468a8569c67b3d6826e57e62c5500c3681":"日","d1a17af19f5388af9d6596cc0ea7dbb1d739e255":"不可用","db6708630fc646eb98298d9acd701e0a1ac051c2":"將程式塊和策略保存到 Google 雲端硬碟","85538d002a336c5addef8d189d80976cf7758f8c":"您的登入ID是","b65463cb6a42a17de514acc4659f7fd331e0876a":"連接","ed28e0686e1251ba046f582a3e9ec02470a5e78d":"中斷連線","cd5f85b6f187605f82386eacd680f93820af8d11":"結果是","1e38ce3d180cefae485a6986ca7c67841e30376f":"如果結果與選擇匹配，請回答「是」","5c89497fc3c128e2ff865ce8df15356054f2c028":"(4) 獲得交易結果並再次交易","14ea81918758c994cbe3178e695e56afc1ef2b45":"獲得以前的交易資訊和結果，然後再次交易（在交易完成上運行）","5098e2bcc96ee227983c9f7eeddfd226c220ca00":"合約詳細資訊︰","251c830f8f869e0887e8b4dc4c30ba1738c7097e":"從合同詳細資訊清單中讀取所選的選項","b3b543c80063a116ced4965d8537b7b62d14c0b7":"再次交易","a1eeb7c1e92e9a5d9323ed8ebd7ca7ffed8b0232":"再次運行交易區塊","da3105e38c42a481ad7230ed393b0e12bebe9c4f":"賣價","343fda69c73b78b84967055aae97f790c422adfd":"選定建議的賣價","d4d34ce9d9dd7e87213469f88cb7ac43725675d5":"(2) 觀看和購入合約","fb61a3c71f4c488b3b470cb7daf502a3e9b5ad48":"觀看跳動點流向和購入所需的合約（在跳動點更新上運行）","87da93a46d143f6019979b3548414d9d7adabb35":"選定建議的賠付額","160f06d4799c85021a810f68c5b517eea37a2737":"購入","4c2fdde3d9c1950498ed263d6ce21d4bf3d0800b":"購入選定的合約。","ca5586bdb5bdc1a2c0baf53ed0ecd21fafabebe7":"可賣出","03bad10717e183b24829baf483dc715e1a44bf7b":"如果市場上可賣出，請回答「是」","2c71ed279a402e93312dbda173ab18f244d6bf46":"(3) 查看和賣出所購入的合約","17632a9f51611d2579d95b4b1ccb9476566d7ccf":"查看購入的合約資訊，如果可以的話，在市場上賣出（在合約更新上運行）","579607dc4f989ce2b94b558431666a0ab07ac1f3":"在市場上賣出","e20afd5cf3811a42071c9a312abb2afdad4c590b":"在市場上賣出。","4712cbff8e92822fc960ef9c0197293a19675eae":"銷售利潤/虧損","df817b48c7a076561b4f8bedc52d65d2e351ab52":"退回在市場上賣出的利潤。","b44e884c355e447d0da0e6ba45caaff18c84373b":"布林通道","d6a2a207343bd83aacdc80b579ff4419713a256e":"輸入清單","170a28a9db6d27d7212fc6dc249434a57517e7bc":"期間","b833989d69900a4be9e32d1bab65c8f8233f099e":"標準偏差上漲乘法器","1cee82f19c0bedef64f68b32e6b02128efe7c61b":"標準偏差下跌乘法器","974da601086448d0060aeed90e53ddd5acd17b91":"從有期限的清單計算布林通道 (BB)","d5b65cac1f1cf9421ac978eebe532de99040cca6":"布林通道陣列","58de49791c64aba14e36e5887244a5ef088286cd":"從有期限的清單計算布林通道 (BB)","4bd99f76f1104229744455d93df0ff76b9eeed58":"指數移動平均線","ea615c6d6a74e25a6d2f1bc9980b46e73508c2eb":"從有期限的清單中計算指數移動平均線 (EMA)","4082d9379e59b38c891d046312f8d3c4b64ae3b1":"指數移動平均線陣列","562edc102c5dd9e2fbbede1140b8a5461c2d4dc8":"從有期限的數值清單中計算指數移動平均線 (EMA)","a537f4f3c0f6c68bf896fb23cb2ecdc658488ea2":"指數平滑異同移動平均線陣列","b18e572ea14edd48587145f1ef50718adbf256c6":"快速指數移動平均週期","974023bddd6249d0f6404872cfcae205b2599ea2":"慢速指數移動平均週期","5c2adcb3d1bfd6b9f5c2dec13d02a9473e4445a1":"信號EMA週期","6b15ce93fd68d80aeee7f7964c1306044c3c1baf":"從清單計算指數平滑異同移動平均線 (MACD) 清單","95ec92885c855ba9cf734c17a43f081901e4d2cc":"相對強度指標","b033619e108c9e43bfd8a42cd97bf5c5dc86dc65":"從有期限清單獲得的相對強度指標 (RSI)","4034de66995b876b2ba9bfd0274025e39168e05d":"相對強度指標陣列","f9da880c8b0e4cce4431912c24eba939e6bc06e1":"使用有期限的數值清單計算相對強度指標 (RSI)","a9842c95766da40bf4ea6ee263cb5a5985847763":"簡單移動平均線","347775a293c14362d492f019e677c965be1d6e7d":"從有期限的清單中計算簡單移動平均線 (SMA)","4cc7b9e53d082896ad884eb01be16320af65f282":"簡單移動平均線陣列","2c75179a57af3c36581008b65e86ed81c4a4cbea":"從有期限的數值清單中計算簡單移動平均線 (SMA)","39f024cf49724fe7ffdea7773c72ed06eec998e1":"有間隔","e4bed3e67e58b2334ee4b9c6ce59ac7a95d80aaf":"方向是","ad47561efb1dcbd7246d9b64487f615647fda036":"「真」，如方向與選擇匹配","05bef508aadd62bf3967dcf67d769da296f19989":"跳動點方向","d089ab98a846a521b09aad6ff3fefa728bfa8b42":"方向區塊已過時，請改為使用檢查方向區塊","cdb31fc857f01a59f664413498293c714285f46d":"蠟燭圖線清單中","20fd5f86f08796f145d69dedc209a27e459b2f51":"從結束端獲得 #","a96606af8c33ac3428b45abc4782dbf93f458d29":"得到第 n 個最近蠟燭圖線","90ed0e1ea5c1907f8a32d8051a66e845857bb2a4":"最後數字清單","248428facb97408414180d4de74e4db35360fbc4":"返回最後點數值清單","2e4202acde880b7b1c3686f0335ff879fc1e5c7a":"最後數位","e46e0bd2f7fe37217dec8aa26ebce8ffa3608663":"返回最新跳動點的最後數位","d5fde4c9d5edf660f760fc226df4d2678d3334ab":"蠟燭圖線清單","95e552a40d3446c96905cd3ec7e3d123d0246ce8":"返回蠟燭圖線清單","5a0ed227a01b7d30b05dcaf3e1c23b74b9be6ff4":"做個清單","a4220593d385a720886f7af1ed3c478fd0c6339c":"蠟燭清單數值","cd8cdf3d47e921c8a72addae9269e66041d417c5":"返回選定蠟燭圖線數值清單","3e4f335e7a6f79bd1bafd219ddde30acbf16a7ac":"蠟燭清單讀取 ","34037f9452fdb66c9ca27ebcc0afe9d5139e9e24":"從結束端獲得 #","aba43a580daa7f306956ec69b83e6e37e7233126":"讀取最近第 n 個蠟燭圖線的選定蠟燭線值","e04b522218a181cf0223042dd18ae08dcc22d8d3":"最後跳動點","6ee445fc253a55c9ed54c009c3f020ac65200d80":"返回購前區塊收到的跳動點數值","4b2340a890e88d1886757c3f7172e273a1edc31f":"每個跳動點都呼叫這個區塊","b54d7b4590559dad64f02d09aacbf6d9863e2624":"不論是否有交易，您可以使用此區塊分析跳動點","ebffc758056e6b2fc2af99af17fbc6853e5d3583":"跳動點清單","17649cac8739adcae95e641f794880272ad33bd1":"返回跳動點數值清單","802dc02469ae51067ca620ff57dfb5bdb3e524ac":"餘額:","c4ee8e12b2484cd5b47cdf00bfa2c50b83e91d3d":"得到剩餘數字或字串","69280143949fcd59c171dd60f6b6e13d0cc08fe6":"忽略內部區塊","d072c2ceeb5c1217722d14c74de7aeab945b4215":"把區塊放在這裡，以防止被移除","b06acc4158c824231f727a13e1c9811f43d5be42":"從此處載入區塊","661db37251a1ed1afe357ee13895f37a623d7cbf":"從此 url 載入區塊","6c03ee54ad3a51fc92a1d69943e99667847705b6":"通知","b1bec5d06e3672915d81b2fbc2347c8b4947a954":"帶聲音","a2d0c89fdfff3176efd4a443eb0f6607067b93e7":"建立通知","6e0fc122f936f808bc2e3af661121b65712ae855":"通知Telegram %1 存取權杖: %2 聊天 ID: %3 訊息: %4","1aeb6caed9e46edf5d6224adc905ffb8ee3a7708":"給Telegram發送訊息","45ebd38f4c641ebf6f72be8c3a79dfa50cf9f20e":"利潤總計","ffb465875e1ff2b49bcaa7c6b70965ffe39fa59d":"返回總利潤","bc528d26f66fe8c4aa4bb24ec9c99dff12c055e0":"運行次數","bea5756b18644ccfab01c1c0dbd6fa9db7103379":"返回起始至今的運行次數","c67ded6b64019212eb2bc69afd761f5b3f626040":"給數字新增符號，以製作障礙抵消。","569bbd757e1bb8bbccd250b98dc2bb37cb47b787":"市場","74751e67c3e1010c343095eaf543e7cb21ced2ef":"交易類型","1f4698382842477e211eb46de81fa506f01a8c34":"兩個","c1baf816aac5a5cd849768773fc248cd249dc296":"合約類型:","c93025710d1ae6cbaf8e710f63eca8edfa0c9399":"預設蠟燭間隔︰","9693aeaaf68e3929b59b79306feaa0a847d01192":"持續時間︰","10c02649e226d430bd75a5b6315a41c0db9992a2":"障礙","837276742aa90209dde3b4eef07d8e7ab26731ef":"預測","258b49925b41751c6bd790a0848246566ba61440":"重新開啓買/賣出錯","c55ee3445cd391ab299b6f85a6ea9a68a65ea64d":"此功能禁用，以便改善性能","b410994b67e37d9516eb9b866c85a8c639f79e68":"重新開啟最近交易出錯","2260c5a971c2602834ef8feeb5fa522f900b469f":"bot 忽略不成功的交易","cd1495cb4c60266a6abad9024022ae079bf7e416":"(1) 定義交易合約","0745acf92abd7b60598f161717884cc45dab8694":"開機時運行","999e1ade10ff5ee1d115f5a6288bfd2e0d0736e6":"定義交易選項","a43c3299d30a5bc7e31a574cdc87f59cbc8fe585":"定義交易合約和開始交易，在這裡新增初始化。（在開始上運行）","d571f33d957ebcab086ecf38eedd71b6ef0c5820":"交易選項","4d22b565e4253e92a908f216184779679bb1a044":"高障礙","b70c38c6db3127422e05315c30bdf76c7c36c480":"低障礙","a6c5f081b3addee364af1c8cdb84853f49dc8e07":"絕對","0f2ba74929aca6fea950e351dcd576b7cd841fa4":"蠟燭圖線是黑色的？","7cb3b482ab66947d439642ec64dc7f5bd4e065dc":"做個清單","5925d08228e246f07b790b88ad70c1b73a97d2bc":"蠟燭清單數值","852b438f91ad9eb2cdd84419a675a216d543c687":"讀取","67d3b35a0b740127b56bcd44d3bcb1ccc20e0b48":"蠟燭數值","d79d854dcd0829e2177a47beab6a55569e781ab1":"讀取 （從蠟燭圖線清單讀取） 蠟燭圖線的一個欄位","5606b4460ac96063b8a8e5647008f3ec97252fc5":"Epoch以來的秒數","2de20bdeecb1a8c28bd36fe75f028ed4318d0348":"返回epoch時間（epoch以來的秒數）","f43cb41af7ce8a69c7aecbc1c603bb0381270982":"運行每個","4b6fe6898f0f956d48a4c8172c6dfbcb4159ab09":"秒數","2eea87bb804e4e73e3f8e9c41140f7ed83ea8875":"運行每隔 n 秒鐘內的區塊","e0af6ddc8a892704f64680bcb22b30c4bfcefec5":"每秒運行的區塊已被否決。如果有可用的案例，請與我們聯繫。","7b9c76088576a64f32d67ec335162b9f73eaa026":"過後運行","ff56ffac023cf69ca5c7f71d407499536f4f86b5":"n 秒後內部運行區塊"}
+module.exports = {"3d52a6d8fedcc48a65297c07bf5f7e3e41aab5aa":"邏輯","3edf0df49942da6d11a1a217e4d3af4a5a8e64f2":"數學","c3328c39b0e29f78e9ff45db674248b1d245887d":"文本","4d064726954a17487f94e931f5b157b733ec22ed":"高階","a1fffaaafb7cc996685bceb829c053cc4f7de43d":"清單","19de69cb601f53a4ea7af22a65c71ae63251365c":"變數","2b961dea1dc0c60ddf9a2c8e9d090f6f7d082483":"功能","dc7f77b4ccfc9f70a78bd97303bd10ba4c9d70c8":"迴路","66639f7d455dd71faa9147f5d69e5ce885d8bebd":"Binary","0ba66deaab2f2cd3b0793d03f600ee2b8f577fbc":"交易的定義","9201c6ac624e98e168e6ccddbcd5a9b5cdff06b3":"購入前","44ab9a87268d3fd74040ed0b55c04f83294cfdef":"購入時","c415c9399b7ae7285d2c1c880a6a0aa18f62ff8c":"購入後","d07ffc19d51f0973859a0d95c1d15cd9f22388ca":"跳動點分析","8cf71374fa095a64b5295b672daef8507ec7be6a":"指標","4fa8cc860c52b268dc6a3adcde7305e9415db5bb":"工具","6c82e6dd86807ee3db07e3c82bec1ae1ce00b08b":"時間","8d8fd6765e184419cad8b88d1a60c895d79578c2":"蠟燭線","548f449b63ff41eaaff5a2d679ffa56b2015fc20":"雜項","8bf95ea372568c7a254ba9fada5f6f1701ebc5b5":"記錄","12b71c3e0fe5f7c0b8d17cc03186e281412da4a8":"摘要","9feddbabd7e7309e96c590069057158e96baa8f6":"實況簡報","038fe2bdb7ec6ee078f60bdb5bee94654ec6a81d":"二元期權交易就像任何其他活動一樣，過於沉迷可能會上癮。為了避免發生此種風險，我們定期向您提供交易和財務的實況簡報。","4152043e8c670075d2c919677e835edb0d923cab":"請指定您首選的實況調查間隔時間，以分鐘計","d9fff2df19e90f2c7ea6bb30fde4e0da119d13d1":"請輸入10和60之間的數字。","2439f2f199b2a3e798aa9b4feaa9248bdec9bc0b":"繼續交易","a72ca256dc49e55a1a57b9a727fbde9834c9a3f7":"聲明","6e78c91f5a05fc0d4f1a787d38e3d6fe2f856d46":"登出","4832e45812a2724f16a15f9ae87adfc8ae4168cf":"聯繫我們","f7c400ed695f898b8ee9d21664aa17b5bb693828":"登入","5ea75f1605a4bf1db5c39fcc61854627478c0a7d":"將區塊重置成初始狀態","f98595d541778d86f75ef22b3328a031d20aa16b":"載入新區塊(xml檔)","4a1e616226c329a94da7768bc0435a3284478010":"保存現有的區塊（xml 檔）","6b3465ace62f33f0687b4669ac26d95895e9ca52":"將Binary Bot 連接到 Google Drive，以便保存及重新使用區塊","8e4ec2c451ec7b1bf68d72fe9086ec978e41feb7":"復原變更(Ctrl+Z)","937f5055f05be359ddf619744e8af4d643549e80":"復原變更(Ctrl+Shift+Z)","8406d1cce44230835932060649e999ca3283b413":"放大(Ctrl + +)","1109673172af2c173c492622ff8a72c8f29f0e70":"縮小(Ctrl + -)","44c22002c65d2871331263a23c3e09c0a1bfd847":"重設直行","ebd0945359e5578ff9bd3a2ab490ca84c225d8f5":"顯示/隱藏彈出摘要","76bb05950f80f3a88ee05ef3276c5934fd355e8d":"運行bot","ba50a42d8d3228c37a817865fce49fbca692c2ad":"停止自動交易","4f4aa4117318a8ddf8783885d4f3542c5b2733bd":"顯示記錄","91017ef9b165cd0e7475a770f318ea5e705e1321":"顯示圖表","c89e3dd1cafcadcc0312e476ab58b2332209da23":"顯示交易檢視","b02c858e72be118a65c9393930351012b647cb9e":"切換標題","250be77f7605669a0b3d968b9ed381a3d9787ed1":"打開已儲存的 XML 檔並擷取其區塊","ff29ccd7a6c6073cc462ed590d27a91632fdf67e":"Binary Bot","608061fb5aab975013fa70c5c814a1d8ba30c152":"交易效率比您想象的更高","e4ce8dc3e416e69262ba642dc57d3975d6616980":"想要讓您傾向的二元期權交易策略自動化？","f261237ca8beec6f77b76c4121feb8da22818c56":"Binary Bot 是我們尖端的程式設計工具，讓您建立擁有簡單拼圖遊戲式拖放功能的交易應用程式。","f6c85c68616eeaaa15fcd53fdc52f6eb5c886357":"不論是非常簡單的公式，或是極度複雜的算法，請發揮您的想像力，設計出無限量的二元期權交易bot，即使在您睡眠時也可自動為您進行交易。","e6906a0d1c28b202f9bd49da4a6abbddca57399a":"更奇妙的是，一旦您建立好了bot，我們可幫您把它通過","1dd0cf79c572bcdbdfabbd54ee95710a21234d73":"Binary.com商店賣給其他交易者。","abeef9a35ae6256796ba2462e4f64d308de42359":"通過我們的應用程式商店銷售您的bot，您可獲取銷售收入金額的80%。","0606f0b7763ee6e8094a3dab7873d34c08fd3670":"立刻建立Bot","221acaf3a0290adafe08cdcb8c66121c73d8b4a3":"需要幫忙？","d635b53e59c9aad8c5d78458826beffb029b27bf":"謝謝, 我們會在24小時內回覆您","a69a8fc21499d0fd85e87bab467699827547a5bc":"請輸入有效的服務器 URL","1de91e827ec70ca735abc2c71b0a89cb0cfc4ce1":"未選擇標的市場","50050f06645ad2743165b429a8f7deebd285fd63":"未選擇合約類型","6a7d1a3a17c4e8ae6712cb60d46db1edf0aa2667":"請登入","2f9f9096be1a1c0569a9ce54e57f0420f6b3c2e9":"持續時間必須是正整數","4df6e872792d72aea8a2f6b831d00b554464da23":"金額必須是正數","001e68df3a4b32a4d57148d9d407f44eee3b7436":"無效的蠟型線","04f14ea7c92e0b2b5ae005c696245063ec641d66":"無效的蠟線清單","c1bbfcbb4f57d3a56c1239af0c2138321589efd2":"重試間隔時間為","57b453bb26b1c28dfe362b7cc9f17f0be93dd581":"以下數額已達最大限制","094628ce13fc0e78f07b697d1cc9421bb2edd666":"以下請求已失敗","816c52fd2bdd94a63cd0944823a6c0aa9384c103":"否","5397e0583f14f6c88de06b1ef28f460a1fb5b0ae":"是的","bbb930cc426507ed3f6b7c343c75dd0e041494b7":"聲明","e6e886cdcdefeb6d3edb4c31bed06dd183ac4153":"賣價","50e72909992bdc37c7c07769d1b7efac5e52874c":"賠付額","ecb5ba7044417916ba12de5fa9e6fccac3e5d475":"利潤","c980b910204c7babdffe8ff3f7e755f30133383c":"合約類型","a726c6955157f1b8b92f9932652434a7150f80f8":"入市現價","a66d5c7ef2c63dbc9a8f9e6ae4e2bc575e74a36e":"入市值","3905be81561384dc8c43d6127c57ed1e0eb03b74":"入市值字串","7674920c033ca14277c577e19c037a6754d4fa80":"退市現價","e8b8bd9f2eabc12875605a37c93e7f04a713fcb8":"退市值","06ecea26625359f7dcf5ff5c47af6174ff815257":"退市值字串","779455ee3bde8494d9629b353e17b19e92357ba8":"障礙","37a5301a88da334dc5afc5b63979daa0f3f45e68":"結果","4973f4c599d5f42cf7bde52d66c3ed8ef77accb1":"贏得","12e24a7d8ac40579e8a0aef4869288afe7ed6745":"損失","563339f82447b4e758ad76d5a0b63b5698594fba":"上升","5c1ae82c29543ac887703776bf3da2c7dcce683d":"下跌","2fc096bb7b6596ab243d0286c9f43fdf2b9b406d":"沒有變化","ecb252044b5ea0f679ee78ec1a12904739e2904d":"字串","53b0a1b2fadf4e040cdc2155a7340de24aca93cb":"數字","bc74f4f071a5a33f00ab88a6d6385b5e6638b86c":"綠色","4c9a82ce72ca2519f38d0af0abbb4cecb9fceca9":"藍色","96de5543d183d7de52ac5fa21c46fc811f673f89":"黃色","78988010b890ce6f4d2136481f392787ec6d6106":"紅色","aa9330a16e5b055de809256dad6b4d1cbd2999e7":"無提示","cf84a98d6cf7f156862a08ba8236467b6f471004":"公告","eee2facd669d1434848c24da5527b3e87d9a12d5":"賺取的錢","9d705578b0f1f0ce3a06dc5e82f9a1e6078f81e1":"完成工作","7f2f6a15cf8da2b27e5a4af47b58e7ad71c0b3d9":"錯誤","a3b1583d377f37ac20de7e089edfa0920a078e57":"嚴重錯誤","66c8b6848eee629c4ac551bf2b5fa591571654be":"上漲同價","5649dce3367d490fa19d563ee9e3d4c4b6f7c642":"下跌同價","062787aa328047e189774b3703d983b83938f6e9":"高於","b91eed4b7a80cd9572a27e65ebdff9caa4b3b9a4":"低於","e3f139abb7a549a1210b36f7dbf89215ad6c9902":"觸及","7d7932bcc2e262ae98cf09dc5445130fb3881769":"未觸及","a16814a48ec58c2e24ba224a80921a5c02361abe":"範圍之內收盤","391d02cd75ebcd6ed26f5f45ddf7d40bf13e9dc5":"範圍之外收盤","534ec5da4e82ec419abc170e1a8448f55a01664f":"保持在範圍之內","98cbe1998effd8b1a8aefdcc538573055e99a5f5":"超出範圍之外","93d13bad1d2c2841db127cb70cc35bfc98059fc9":"亞洲上漲","c098658ce3d3a258e4d155949a60072966b36db7":"亞洲下跌","ee2dbd5d6d82d0833069b07e7dd2848d3bf4d83a":"相符","8444b7ce28bbc3443cc5cf73359b8353989b2a4b":"差異","9e767ad03e5547f251044e0724dc1d9f3e75aeed":"偶數","dc28f5f3c65ec611f0f30022650d24382d27448e":"奇數","18a63f5512afb5573e5b44deba78d629f0635317":"大於","2a268b89b83f8cb38ea48e46e93dd8840db512f9":"小於","2155c8b38181dd2552e84a94049aacd33ef9c607":"高跳動點","1408cfd2b064b923f024fbe590e27db8282941a5":"低跳動點","b86eb15dc4f13e4c2972de158d3038d9f657242f":"重設買權","669a1f3d9a8f601a84da536cfdad1de4092b1926":"重設賣權","844d1a5c99a0a668383340cc095d040eef998c79":"只會持續上漲","87293a146cd481a2b30cf74282ec061dc4cf0735":"只會持續下跌","cf9b77061f7b3126b49d50a6fa68f7ca8c26b7a3":"開盤","b1a5954a483f8f8b0207385095f74aeb409b3f80":"高","a124947cbd2d1d92b47e027274c3269ff0c7a84b":"低","bbfa773e5a63a5ea58c9b6207e608ca0120e592a":"收盤","1173872a4fb205b713702f0eec5cf2c732c828fd":"開盤時間","808d7dca8a74d84af27a2d6602c3d786de45fe1e":"預設值","62957ecfdc50957e8957c11d2eae74d078f0ef1a":"1分鐘","1dd3e663dfa7ac9cb77cfddd2cf8ac700657e2d6":"2分鐘","24e46784cbce32443db5a2638b1a7d3201543e9b":"3分鐘","3aa5819ed8a0b94d0f293db8e9c9598298ddd402":"5分鐘","a6f151883b736f0470d33492e61c72a7d059d065":"10分鐘","899761ff5425abd2ee214fa7aa46e27c6c8b5aae":"15分鐘","31bbe8890d28d183f8f7f2c160fa892c444c0ec7":"30分鐘","f030c3d667652646b86732ad7bc67e226c49cd3a":"1小時","2046e49e33c040e08dbd6fd83df3e1846015e6f1":"2小時","7b47150d431db70d783724007f07ab894eb8ac2e":"4小時","191800b7e9a48680792c0dd77cb6cac00c4514c6":"8小時","2d8a6f7c34468578640b333b8650131de06ac770":"1天","f94510322ecd9b3a2af67a10bd51ecc4ac6a24e7":"上漲/下跌","c1365a35e99d0f9147ebc72f21534cf471fa7d95":"上漲/下跌平價","9c7960c6b11d35ac9d6cdc1ebaad3af43b2065c5":"亞洲期權","2260ce49306460c8a2ef501939f29ad6ddd4e934":"位數","0186aa73a1b75fa8f0eb98bbd9ad01102bb09ec1":"觸及/未觸及","f7de1f66f0979667da275b7e8996e805395025a1":"範圍之內/範圍之外收盤","a431deecd4c2258097adae418d496fe9a8179fee":"範圍內/範圍外","256fe245cb7d3d673095f7faaa8c9ff81b985ad1":"高/低跳動點","12a3f461cdebbc8f335190413ee6c57442743bba":"重設買/賣權","e696144fa588782e6d6b2c97e2d3ed1adf52bd5c":"只會持續上漲/只會持續下跌","91a64e3f83c91acf336c631fba295f297f94c399":"n 秒後運行","024696596f26a4db232fd9e966eadfeb27c0bd1a":"每 n 秒運行","c538c170bdc6b0f3bb98dce44a016a2e2d45a6e7":"上部","85c274929bc0e28eafd3734f2c25046c3b95b36b":"中部","346e3ee198e98146993894d3de8ecab1a86c3e80":"下部","f16459104f92ab6b38aa265adb4ecbfc3768e303":"長條圖","e09f635f4e77476c9ca1c37bc9992e9ace3431c1":"指數平滑異同移動平均線","27bed13a88c60350c3de92ec3820e1cc4f7d6ec3":"訊號","19eabc961735d78f12fc7be906ffcb033853cf85":"時間戳記","68f4145fee7dde76afceb910165924ad14cf0d00":"消息","629777b7d4d610ace6dee24442730f27d7d0853e":"不支持的文件︰","beb040c8fabd007c9cc5ac6a9feb6bdb05d33dac":"任何未儲存的變更都將丟失。","410bf23a3f080def9c7a976a16305bcde7943ed1":"是否確定？","e99811bd3b1ad17e74614060ecb180602be35ad6":"您已被登出！","876f3e0202ca40dedf2e5ab6577eba1ae637fb53":"策略","8ce80462febd4d573cb2f9c1984fdc93b7c21c57":"載入 Google 雲端硬碟庫時出錯","c4c758b5c8f5b3985f6bf7382c848bb44e0a5b74":"請授予權限，以檢視和管理您的 Google 雲端硬碟檔案","3b6bbab905129dd36b8d4e99947fa30540ed7b2a":"無法識別的檔案格式","3d6b44df6eaf6236b4abc1aadcf8f5b1cda769c1":"從 Google 雲端硬碟檢索資料時出錯","cdfe947b0c089a4a1f78c11299f25c32a124f1a6":"選擇Binary Bot 策略","2db43c69a4b96454914f0b8272bc869984529e6e":"從 Google 雲端硬碟列出檔案時出錯","0dcea5f584938e0fff00084b83156ab31d641ab3":"從 Google 雲端硬碟檢索檔案時出錯","18da95988117ff029393f3f5c881d70ef47f7385":"處理您的請求時出錯","04226bcf91195130e25fe7a8e8ea4d3e058efcb7":"選擇資料夾","aee24f2456ea8516b024a5d3e2b815ae7f2239d9":"無法發送Telegram通知","3f370309b6280eb100f898426d8605c1f45d558d":"無效的時間戳","af6a4e2a5582be89ac930e946eaed86e01cac58b":"無效的日期/時間","49d51398b574e7312d99b18d2b93d2ede416f053":"無法傳送 webhook","05754ed14275a070a20a1d5cd65f0cea66f1da7f":"建議還沒有準備好","79222cd9892a434aa61fc7dc01c3839951eb8d1e":"選定的建議並不存在","6ea4a034747d020b1d8ce4848def95d537555dd6":"已買入","89f89c02cf47e091e726a4e07b88af0966806897":"ID","1200c1af2f7bba4e29a34112865662748c9d41df":"此合約不提供轉售。","62d6180e55905f7b996d442c53631981a4ef8b5b":"已售出","ed4978867de1da05b336b724a3fb96222a29ebec":"指標必須是正整數","87e2e01f93d25ba7ed582cc81ef5c9ab2959f4c6":"利潤總額","b2a4553586d1062c21323bca1dc0589f7a9d5cf7":"損失金額","46fc6f27a835486d63d9e927c6687e4508cb3087":"最大達成交易的數目","9202ddae4cea16513e53bbc965d88ed975e59512":"最大損失金額","5f52b397b7e5f538681f0f5717a88aa626349c7a":"未調用Bot.init","66c7734789e19cbeef3a5ac185ea732139aed213":"圖表","3b662fb2e8bafce29aa98321b18874bb44905488":"Google雲端硬碟集成","7ee0ff5eaa6fa82bd6d83a2f4ca446c663f097cb":"最大連續交易數需是1到100之間","93039e609d94a24f3572b794a31b21525a09af2b":"未設置","ea67c8023c75375484f3a5f1aeb009b20059d5bc":"每日損失限額:","b1946e5b4b78465b7661fd4bc89ff52de6c633e7":"最大連續交易數","952f375412e89ff213a8aca383d18e5691354347":"開始","9f1c61cc03f3ef9324db05502f7f0b61e61e1521":"交易限制","095ba68888b5ace5f4515f5acab76dfa1073544e":"我的電腦","ddcb77ff769ea54ca622848f6bedd4004fa4f4fa":"載入","248e224f533752db28a1aab3519a58569ad96140":"載入程式塊","c7097e97dcc446ca889d3ca6be733a65e2728afe":"已成功上傳到 Google 雲端硬碟","3218e5a460e82d7bdea9ce0f145cab2f47ba9a4b":"另存為集合件","611ebbfb080284312904de925ef0f75f4cb56ad2":"保存您的程式塊和設置, 以便在其他策略中重複使用","efc007a393f66cdb14d57d385822a3d9e36ef873":"儲存","a638caa8ab2b7ff7980a571334217339e6d1d634":"程式塊儲存為","39fca63515c105918f03e4908ec12df675b07f92":"交易檢視","85dfa32c97d8618d1bea083609e2c8a29845abe5":"帳戶","d847919a30d31c0be624087f3370492b3fdf80c6":"運行次數","5cd6978d63540c8a490ef76f43219de6362f958e":"總投注金額","17410d7b62b8b1de981cfebada24632987edf186":"總賠付額","b841eeb091f1ff0e14be08e5ea1b93e4cf147ed3":"總損益","90eef613042c5a51f542421065b68b886d473807":"餘額","db1c784524e1b54011a95823026161f7c8517fe0":"引用","4db3e9e4aecd187db9339a10d2629fef46724dc4":"交易類型","1bb4086b66659d8580f9be4beef69931aeea3cad":"入市現價","8bf249c4855e591964bd5bdd35c8ef2ee107342d":"退市現價","ba7be969e7c1bb5f22489e843478e3d721aaa843":"買入價","772fbced18230220d2d9be1456be16fc1b271d25":"利潤/虧損","bae7d5be70820ed56467bd9a63744e23b47bd711":"狀況","96f608c16cef16caa06bf38901fb5f618a35a70b":"待決","7fb3a9b5101bcd45e2dca077191693a5199bafa9":"已結算","82a82f798dd773717ec37d15fd4405510291734e":"自動交易已停止。","6a88e58aa1798626f94cf17f1a91618b405bb289":"Bot 將開始...","624cc7f40b68faace7e78d8e5c5be1d4f15facda":"自動交易正在運行中","788180a6ddbbbcca10f6f49d8e85d557934bae0e":"Bot 將停止...","d907a40a4a15da3c21a6e0f8ace3f987d482f92c":"Bot 已停止。","4f219c17ab9ab76aa1cd431b4e0e5ecf5520e8e4":"試圖購入","4684ee1026d9b4c872d016c3c4588a0c479a451c":"購入金額","ca92c55b9e4233d771d5b6300fe751a9678d1deb":"購買成功","f02760cd2eac28169f0a990c950c3dfe8427f772":"合約已終止","fadc0ef93d1ff13370524ce8481ddc4a71195934":"重設直行","a479c9c34e878d07b4d67a73a48f432ad7dc53c8":"下載","e4458464df6cbb8da1134875ba51519c5d244d9f":"區塊必須位於區塊筒、主要區塊或函數內","e9c45563358e813f157ba81b33143542165ba84e":"警告","31cb6f44d030abeabcc7046555dea851602a87a5":"您的國家不能使用此策略。","9ce3bd4224c8c1780db56b4125ecf3f24bf748b7":"確定","486d55264892207fef1ed5799e0b213b446d3eaa":"XML文件包含不受支援的元素。請檢查或修改文件。","a594b427eaf0f108d3e9cc20d70e15da811c760c":"不受支援的策略","04a5090686ac7b54822e00a9ff08c38a107601e7":"抱歉，此策略無法在 Binary Bot 使用。僅可在 DBot 使用。","77dfd2135f4db726c47299bb55be26f7f4525a46":"取消","fdaa08aeaee0bf9b78d83ea19ef9e9bd019e8193":"帶我去 DBot","f1d8b7b118d6f82f95614d476bc11af650aed3bc":"無法載入程式塊檔","af145748c9cf765a3b059eec20cb1dbb899297d8":"區塊載入成功","11ee9c5d534cc8d22651092222b532917594161a":"最小持續時間是","5283ac04c9a8ba8a937d1edb4ba986aeefce8bf1":"跳動點數必須介於 5 和 10 之間","ace1342bc3720b77ce510b93074041e7386d209e":"到期時間不能和開始時間相同","fed3e7bd6696fb97a12d720845ab5388456bfc3b":"預測必須是一個數位","d466687f90ba548434d65186d11a80c4204f9ad6":"必須向內新增:","6ddf2b3075ac9ab5d66b40e15ea9a34c087672ea":"必須向內新增","33aa6ff282ee509d37c6f758274c9156b419ff73":"您嘗試匯入的策略無效。","da162a909c2981ed318d23cd9a6be1d66e0a8400":"無法識別的檔案格式。","5e719fa76e1b6cb396376c82ebdd04bec7253229":"遠端區塊載入必須是集合物件。","b0d2de25daf6ba09a5e710c6968ffded29c4dae1":"無法載入區塊檔。","df84a88f38b03b5b342362d72370b0d66afdae35":"目標必須是 xml 檔","cd680fd936e9559ef1d95efac7a71680e2b13a89":"此 url 已經載入","34c59389053701a04127f74d32315e0206e076f8":"試圖載入url時出錯","3ead0b14c72503187691a7a6d7121987299bd401":"這不是官方版本的Binary Bot，使用時您需自擔風險。","27401c9c8e476d659c8382e05c6d70a4a82be468":"官方版本","bc981983e7f547dc62e19a1e383acfe00782a6d5":"下一頁","b52b36b7269fbfc58ec24bb724691951a3decbe8":"返回","e9b450d14bc2363d292c84f17cfad5cfbd58a458":"完成","29cadadfebdd578a50b7b3d1b2c5b33e424d5de7":"快速瀏覽","a48e81d4a8da67637b46725824177a959fe99b21":"準備好學習如何使用 Binary Bot 了嗎？","6f3e6ebf249947cec4f64117253a8fe43335ae79":"不，謝謝","fcb6e90e7223e1d1d735f15dbb7ded9d81bbe7ef":"不要再問我。","4ca0a75c2b7fa7da4364d03b72c46fee1860a2bf":"工作區","5fcf29b9f0b8971c8148e70a150ddc9ac04c94fc":"拖放區塊檔。","ddcbb5361b1a16eba60fca2383fb297bb90ed9b3":"下載示例策略","1758356db21759f7c5a0da9b4dd1db8fd6feab3f":"或","00b581632c1532969a7128ebc8eae936ed8af04e":"製作自己的策略。","d171baee235d4c93f63755a876782dc5be4c3e47":"區塊工具箱","056f19272d96f902c38207cf163ea8dbff7fbd32":"從這裡新增更多區塊到機器人程式。","36bae31694f85bd7a5b0ad45e51ef622b95baadb":"帳戶","f5c47fd3b3553b10441a06054078cea745177dea":"啟用機器人程式前請先登入。每次測試策略時請使用虛擬帳戶。","fd825ae94aa79500a878dd4590a4b360e7162663":"Bot 控制項","6ee7980833e1ed72901b919ffd0fa20e1a251d3f":"控制您的區塊。將游標放在每個按鈕上即可獲得更多資訊。","f5169c84497de3aea74f7da9e7e177d1427e736b":"享受其中樂趣！","4f1b3d682c2a00b393c33637da402463bc11d5ff":"想要報告問題或尋求幫助嗎？","0049f8894e41937ebb9111cd3def6749049fb50f":"請按一下此處","aac1569ccf6b1a11b0ad0fbefdb9ffc777b4c733":"按一下選取","d1a17af19f5388af9d6596cc0ea7dbb1d739e255":"不可用","53adebdc2b1cbbedb56395b19a73fe47b87cc554":"跳動點","5fb1db527825d2996e37c655e5dec49d4da80c09":"秒","092f99ea11a34a8490e7a767a83a42fc45634f82":"分鐘","9e25a34e635a123f8958bbe26e7c4843278597fb":"小時","f6bb0f468a8569c67b3d6826e57e62c5500c3681":"日","db6708630fc646eb98298d9acd701e0a1ac051c2":"將程式塊和策略保存到 Google 雲端硬碟","85538d002a336c5addef8d189d80976cf7758f8c":"您的登入ID是","b65463cb6a42a17de514acc4659f7fd331e0876a":"連接","ed28e0686e1251ba046f582a3e9ec02470a5e78d":"中斷連線","cd5f85b6f187605f82386eacd680f93820af8d11":"結果是","1e38ce3d180cefae485a6986ca7c67841e30376f":"如果結果與選擇匹配，請回答「是」","5c89497fc3c128e2ff865ce8df15356054f2c028":"(4) 獲得交易結果並再次交易","14ea81918758c994cbe3178e695e56afc1ef2b45":"獲得以前的交易資訊和結果，然後再次交易（在交易完成上運行）","5098e2bcc96ee227983c9f7eeddfd226c220ca00":"合約詳細資訊︰","251c830f8f869e0887e8b4dc4c30ba1738c7097e":"從合同詳細資訊清單中讀取所選的選項","b3b543c80063a116ced4965d8537b7b62d14c0b7":"再次交易","a1eeb7c1e92e9a5d9323ed8ebd7ca7ffed8b0232":"再次運行交易區塊","ca5586bdb5bdc1a2c0baf53ed0ecd21fafabebe7":"可賣出","03bad10717e183b24829baf483dc715e1a44bf7b":"如果市場上可賣出，請回答「是」","2c71ed279a402e93312dbda173ab18f244d6bf46":"(3) 查看和賣出所購入的合約","17632a9f51611d2579d95b4b1ccb9476566d7ccf":"查看購入的合約資訊，如果可以的話，在市場上賣出（在合約更新上運行）","579607dc4f989ce2b94b558431666a0ab07ac1f3":"在市場上賣出","e20afd5cf3811a42071c9a312abb2afdad4c590b":"在市場上賣出。","4712cbff8e92822fc960ef9c0197293a19675eae":"銷售利潤/虧損","df817b48c7a076561b4f8bedc52d65d2e351ab52":"退回在市場上賣出的利潤。","da3105e38c42a481ad7230ed393b0e12bebe9c4f":"賣價","343fda69c73b78b84967055aae97f790c422adfd":"選定建議的賣價","d4d34ce9d9dd7e87213469f88cb7ac43725675d5":"(2) 觀看和購入合約","fb61a3c71f4c488b3b470cb7daf502a3e9b5ad48":"觀看跳動點流向和購入所需的合約（在跳動點更新上運行）","9bb396940adb9705fe57eba6ea8b578e6aafa792":"賠付額","87da93a46d143f6019979b3548414d9d7adabb35":"選定建議的賠付額","160f06d4799c85021a810f68c5b517eea37a2737":"購入","4c2fdde3d9c1950498ed263d6ce21d4bf3d0800b":"購入選定的合約。","b44e884c355e447d0da0e6ba45caaff18c84373b":"布林通道","d6a2a207343bd83aacdc80b579ff4419713a256e":"輸入清單","170a28a9db6d27d7212fc6dc249434a57517e7bc":"期間","b833989d69900a4be9e32d1bab65c8f8233f099e":"標準偏差上漲乘法器","1cee82f19c0bedef64f68b32e6b02128efe7c61b":"標準偏差下跌乘法器","974da601086448d0060aeed90e53ddd5acd17b91":"從有期限的清單計算布林通道 (BB)","d5b65cac1f1cf9421ac978eebe532de99040cca6":"布林通道陣列","58de49791c64aba14e36e5887244a5ef088286cd":"從有期限的清單計算布林通道 (BB)","4bd99f76f1104229744455d93df0ff76b9eeed58":"指數移動平均線","ea615c6d6a74e25a6d2f1bc9980b46e73508c2eb":"從有期限的清單中計算指數移動平均線 (EMA)","4082d9379e59b38c891d046312f8d3c4b64ae3b1":"指數移動平均線陣列","562edc102c5dd9e2fbbede1140b8a5461c2d4dc8":"從有期限的數值清單中計算指數移動平均線 (EMA)","a537f4f3c0f6c68bf896fb23cb2ecdc658488ea2":"指數平滑異同移動平均線陣列","b18e572ea14edd48587145f1ef50718adbf256c6":"快速指數移動平均週期","974023bddd6249d0f6404872cfcae205b2599ea2":"慢速指數移動平均週期","5c2adcb3d1bfd6b9f5c2dec13d02a9473e4445a1":"信號EMA週期","6b15ce93fd68d80aeee7f7964c1306044c3c1baf":"從清單計算指數平滑異同移動平均線 (MACD) 清單","95ec92885c855ba9cf734c17a43f081901e4d2cc":"相對強度指標","b033619e108c9e43bfd8a42cd97bf5c5dc86dc65":"從有期限清單獲得的相對強度指標 (RSI)","4034de66995b876b2ba9bfd0274025e39168e05d":"相對強度指標陣列","f9da880c8b0e4cce4431912c24eba939e6bc06e1":"使用有期限的數值清單計算相對強度指標 (RSI)","a9842c95766da40bf4ea6ee263cb5a5985847763":"簡單移動平均線","347775a293c14362d492f019e677c965be1d6e7d":"從有期限的清單中計算簡單移動平均線 (SMA)","4cc7b9e53d082896ad884eb01be16320af65f282":"簡單移動平均線陣列","2c75179a57af3c36581008b65e86ed81c4a4cbea":"從有期限的數值清單中計算簡單移動平均線 (SMA)","39f024cf49724fe7ffdea7773c72ed06eec998e1":"有間隔","e4bed3e67e58b2334ee4b9c6ce59ac7a95d80aaf":"方向是","ad47561efb1dcbd7246d9b64487f615647fda036":"「真」，如方向與選擇匹配","05bef508aadd62bf3967dcf67d769da296f19989":"跳動點方向","d089ab98a846a521b09aad6ff3fefa728bfa8b42":"方向區塊已過時，請改為使用檢查方向區塊","cdb31fc857f01a59f664413498293c714285f46d":"蠟燭圖線清單中","20fd5f86f08796f145d69dedc209a27e459b2f51":"從結束端獲得 #","a96606af8c33ac3428b45abc4782dbf93f458d29":"得到第 n 個最近蠟燭圖線","90ed0e1ea5c1907f8a32d8051a66e845857bb2a4":"最後數字清單","248428facb97408414180d4de74e4db35360fbc4":"返回最後點數值清單","2e4202acde880b7b1c3686f0335ff879fc1e5c7a":"最後數位","e46e0bd2f7fe37217dec8aa26ebce8ffa3608663":"返回最新跳動點的最後數位","d5fde4c9d5edf660f760fc226df4d2678d3334ab":"蠟燭圖線清單","95e552a40d3446c96905cd3ec7e3d123d0246ce8":"返回蠟燭圖線清單","5a0ed227a01b7d30b05dcaf3e1c23b74b9be6ff4":"做個清單","a4220593d385a720886f7af1ed3c478fd0c6339c":"蠟燭清單數值","cd8cdf3d47e921c8a72addae9269e66041d417c5":"返回選定蠟燭圖線數值清單","3e4f335e7a6f79bd1bafd219ddde30acbf16a7ac":"蠟燭清單讀取 ","34037f9452fdb66c9ca27ebcc0afe9d5139e9e24":"從結束端獲得 #","aba43a580daa7f306956ec69b83e6e37e7233126":"讀取最近第 n 個蠟燭圖線的選定蠟燭線值","e04b522218a181cf0223042dd18ae08dcc22d8d3":"最後跳動點","6ee445fc253a55c9ed54c009c3f020ac65200d80":"返回購前區塊收到的跳動點數值","ed44b69176217a1251c04f0c13d23ac789ea60b2":"最新跳動點字串","ea24dd1988c6534a5f0d11b8fbbc6c374fe68766":"返回購前區塊收到的跳動點數值 (字串)","4b2340a890e88d1886757c3f7172e273a1edc31f":"每個跳動點都呼叫這個區塊","b54d7b4590559dad64f02d09aacbf6d9863e2624":"不論是否有交易，您可以使用此區塊分析跳動點","ebffc758056e6b2fc2af99af17fbc6853e5d3583":"跳動點清單","17649cac8739adcae95e641f794880272ad33bd1":"返回跳動點數值清單","46ecdefde6a8dd5872cc6e0e52afb717f1140426":"跳動點字串清單","3bdc75d5d68b05dfd3ce6dcdf7d9773e60ed0a51":"返回跳動點數值清單 (字串)","802dc02469ae51067ca620ff57dfb5bdb3e524ac":"餘額:","c4ee8e12b2484cd5b47cdf00bfa2c50b83e91d3d":"得到剩餘數字或字串","69280143949fcd59c171dd60f6b6e13d0cc08fe6":"忽略內部區塊","d072c2ceeb5c1217722d14c74de7aeab945b4215":"把區塊放在這裡，以防止被移除","e98ea4ac4e2cfd6a4c84386534c5d1acd7ec85d3":"鍵: %1 數值: %2","27305f6365c38dd36f5b5eb781e05b5e2e4e3f6e":"返回鍵值對的字串表示形式","b06acc4158c824231f727a13e1c9811f43d5be42":"從此處載入區塊","661db37251a1ed1afe357ee13895f37a623d7cbf":"從此 url 載入區塊","6c03ee54ad3a51fc92a1d69943e99667847705b6":"通知","b1bec5d06e3672915d81b2fbc2347c8b4947a954":"帶聲音","a2d0c89fdfff3176efd4a443eb0f6607067b93e7":"建立通知","6e0fc122f936f808bc2e3af661121b65712ae855":"通知Telegram %1 存取權杖: %2 聊天 ID: %3 訊息: %4","1aeb6caed9e46edf5d6224adc905ffb8ee3a7708":"給Telegram發送訊息","45ebd38f4c641ebf6f72be8c3a79dfa50cf9f20e":"利潤總計","ffb465875e1ff2b49bcaa7c6b70965ffe39fa59d":"返回總利潤","532e65f6e266db0bb442d1f426d44d7d32962340":"總利潤字串","78e84591ff76f992953a8e19b57c7eab7546d638":"返回總利潤 (字串)","bc528d26f66fe8c4aa4bb24ec9c99dff12c055e0":"運行次數","bea5756b18644ccfab01c1c0dbd6fa9db7103379":"返回起始至今的運行次數","7d500ebe352ccfa932b253e21938813a06fcff8e":"Webhook URL: %1","e770fd2a6b980a0815592b1bd499127c5a5cfe39":"給 URL 傳送 POST 請求","a35646754dbe7a9211ba8b81338a5d64580eb276":"空裝載","69b0648eddd207cd45a9e1ba973dae287b535576":"裝載:","c67ded6b64019212eb2bc69afd761f5b3f626040":"給數字新增符號，以製作障礙抵消。","569bbd757e1bb8bbccd250b98dc2bb37cb47b787":"市場","74751e67c3e1010c343095eaf543e7cb21ced2ef":"交易類型","1f4698382842477e211eb46de81fa506f01a8c34":"兩個","c1baf816aac5a5cd849768773fc248cd249dc296":"合約類型:","c93025710d1ae6cbaf8e710f63eca8edfa0c9399":"預設蠟燭間隔︰","9693aeaaf68e3929b59b79306feaa0a847d01192":"持續時間︰","78d7103a319e808455d397513279d99f3b3f3768":"投注資金","10c02649e226d430bd75a5b6315a41c0db9992a2":"障礙","837276742aa90209dde3b4eef07d8e7ab26731ef":"預測","258b49925b41751c6bd790a0848246566ba61440":"重新開啓買/賣出錯","c55ee3445cd391ab299b6f85a6ea9a68a65ea64d":"此功能禁用，以便改善性能","b410994b67e37d9516eb9b866c85a8c639f79e68":"重新開啟最近交易出錯","2260c5a971c2602834ef8feeb5fa522f900b469f":"bot 忽略不成功的交易","cd1495cb4c60266a6abad9024022ae079bf7e416":"(1) 定義交易合約","0745acf92abd7b60598f161717884cc45dab8694":"開機時運行","999e1ade10ff5ee1d115f5a6288bfd2e0d0736e6":"定義交易選項","a43c3299d30a5bc7e31a574cdc87f59cbc8fe585":"定義交易合約和開始交易，在這裡新增初始化。（在開始上運行）","d571f33d957ebcab086ecf38eedd71b6ef0c5820":"交易選項","4d22b565e4253e92a908f216184779679bb1a044":"高障礙","b70c38c6db3127422e05315c30bdf76c7c36c480":"低障礙","a6c5f081b3addee364af1c8cdb84853f49dc8e07":"絕對","0f2ba74929aca6fea950e351dcd576b7cd841fa4":"蠟燭圖線是黑色的？","7cb3b482ab66947d439642ec64dc7f5bd4e065dc":"做個清單","5925d08228e246f07b790b88ad70c1b73a97d2bc":"蠟燭清單數值","852b438f91ad9eb2cdd84419a675a216d543c687":"讀取","67d3b35a0b740127b56bcd44d3bcb1ccc20e0b48":"蠟燭數值","d79d854dcd0829e2177a47beab6a55569e781ab1":"讀取 （從蠟燭圖線清單讀取） 蠟燭圖線的一個欄位","5606b4460ac96063b8a8e5647008f3ec97252fc5":"Epoch以來的秒數","2de20bdeecb1a8c28bd36fe75f028ed4318d0348":"返回epoch時間（epoch以來的秒數）","f43cb41af7ce8a69c7aecbc1c603bb0381270982":"運行每個","4b6fe6898f0f956d48a4c8172c6dfbcb4159ab09":"秒數","2eea87bb804e4e73e3f8e9c41140f7ed83ea8875":"運行每隔 n 秒鐘內的區塊","e0af6ddc8a892704f64680bcb22b30c4bfcefec5":"每秒運行的區塊已被否決。如果有可用的案例，請與我們聯繫。","7b9c76088576a64f32d67ec335162b9f73eaa026":"過後運行","ff56ffac023cf69ca5c7f71d407499536f4f86b5":"n 秒後內部運行區塊","e9fb732dde76a6977bcaa2818b0f56125b183648":"至日期/時間","1a90ae7cb728e7f25b031d7e844882f75e74ab5c":"至時間戳記"}
 
 /***/ }),
 /* 242 */
@@ -69614,49 +69667,49 @@ module.exports = {"3d52a6d8fedcc48a65297c07bf5f7e3e41aab5aa":"Logik","3edf0df499
 /* 243 */
 /***/ (function(module, exports) {
 
-module.exports = {"3d52a6d8fedcc48a65297c07bf5f7e3e41aab5aa":"逻辑","3edf0df49942da6d11a1a217e4d3af4a5a8e64f2":"数学","c3328c39b0e29f78e9ff45db674248b1d245887d":"文本","4d064726954a17487f94e931f5b157b733ec22ed":"高级","a1fffaaafb7cc996685bceb829c053cc4f7de43d":"列表","19de69cb601f53a4ea7af22a65c71ae63251365c":"变量","2b961dea1dc0c60ddf9a2c8e9d090f6f7d082483":"功能","dc7f77b4ccfc9f70a78bd97303bd10ba4c9d70c8":"回路","66639f7d455dd71faa9147f5d69e5ce885d8bebd":"Binary","0ba66deaab2f2cd3b0793d03f600ee2b8f577fbc":"交易的定义","9201c6ac624e98e168e6ccddbcd5a9b5cdff06b3":"购入前","44ab9a87268d3fd74040ed0b55c04f83294cfdef":"购入时","c415c9399b7ae7285d2c1c880a6a0aa18f62ff8c":"购入后","d07ffc19d51f0973859a0d95c1d15cd9f22388ca":"跳动点分析","8cf71374fa095a64b5295b672daef8507ec7be6a":"指标","4fa8cc860c52b268dc6a3adcde7305e9415db5bb":"工具","6c82e6dd86807ee3db07e3c82bec1ae1ce00b08b":"时间","8d8fd6765e184419cad8b88d1a60c895d79578c2":"蜡烛线","548f449b63ff41eaaff5a2d679ffa56b2015fc20":"杂项","8bf95ea372568c7a254ba9fada5f6f1701ebc5b5":"日志","12b71c3e0fe5f7c0b8d17cc03186e281412da4a8":"摘要","9feddbabd7e7309e96c590069057158e96baa8f6":"实况简报","038fe2bdb7ec6ee078f60bdb5bee94654ec6a81d":"二元期权交易和其他类似活动一样，过于沉迷可能会上瘾。为了避免这种风险，我们会定期向您提供交易和财务的实况简报。","4152043e8c670075d2c919677e835edb0d923cab":"请指定您的优选实况调查间隔时间分钟数","d9fff2df19e90f2c7ea6bb30fde4e0da119d13d1":"请输入10和60之间的数字。","2439f2f199b2a3e798aa9b4feaa9248bdec9bc0b":"继续交易","a72ca256dc49e55a1a57b9a727fbde9834c9a3f7":"声明","6e78c91f5a05fc0d4f1a787d38e3d6fe2f856d46":"注销","4832e45812a2724f16a15f9ae87adfc8ae4168cf":"联系我们","f7c400ed695f898b8ee9d21664aa17b5bb693828":"登录","5ea75f1605a4bf1db5c39fcc61854627478c0a7d":"将程序块重置成初始状态","f98595d541778d86f75ef22b3328a031d20aa16b":"载入新程序块 (xml 文件)","4a1e616226c329a94da7768bc0435a3284478010":"保存现有的程序块（xml 文件）","6b3465ace62f33f0687b4669ac26d95895e9ca52":"将Binary Bot连接到 Google Drive，以便保存及重新使用程序块","8e4ec2c451ec7b1bf68d72fe9086ec978e41feb7":"撤消变更 (Ctrl+Z)","937f5055f05be359ddf619744e8af4d643549e80":"撤消变更 (Ctrl+Shift+Z)","8406d1cce44230835932060649e999ca3283b413":"放大(Ctrl + +)","1109673172af2c173c492622ff8a72c8f29f0e70":"缩小(Ctrl + -)","44c22002c65d2871331263a23c3e09c0a1bfd847":"重设直行","ebd0945359e5578ff9bd3a2ab490ca84c225d8f5":"显示/隐藏弹出摘要","76bb05950f80f3a88ee05ef3276c5934fd355e8d":"运行bot","ba50a42d8d3228c37a817865fce49fbca692c2ad":"停止自动交易","4f4aa4117318a8ddf8783885d4f3542c5b2733bd":"显示日志","91017ef9b165cd0e7475a770f318ea5e705e1321":"显示图表","c89e3dd1cafcadcc0312e476ab58b2332209da23":"显示交易查看","b02c858e72be118a65c9393930351012b647cb9e":"切换标题","250be77f7605669a0b3d968b9ed381a3d9787ed1":"打开已保存的XML文件并取回其程序块","ff29ccd7a6c6073cc462ed590d27a91632fdf67e":"Binary Bot","608061fb5aab975013fa70c5c814a1d8ba30c152":"交易效率比您想象的更高","e4ce8dc3e416e69262ba642dc57d3975d6616980":"想要让您倾向的二元期权交易策略自动化？","f261237ca8beec6f77b76c4121feb8da22818c56":"Binary Bot 是我们尖端的程序设计工具，您可以使用简单“拼图游戏”式拖放功能，构建交易应用程序。","f6c85c68616eeaaa15fcd53fdc52f6eb5c886357":"不论是简单的公式还是复杂的算法，请尽情发挥想象力，设计出无限量的二元期权交易bot，即使在您睡觉时也可自动为您进行交易。","e6906a0d1c28b202f9bd49da4a6abbddca57399a":"更奇妙的是，一旦您建立好了bot，我们可以帮您在","1dd0cf79c572bcdbdfabbd54ee95710a21234d73":"Binary.com商店推广给其他交易者。","abeef9a35ae6256796ba2462e4f64d308de42359":"通过我们的应用程序商店销售您的bot，您可获取销售收入金额的80%。","0606f0b7763ee6e8094a3dab7873d34c08fd3670":"立刻建立Bot","221acaf3a0290adafe08cdcb8c66121c73d8b4a3":"需要帮忙？","d635b53e59c9aad8c5d78458826beffb029b27bf":"谢谢, 我们会在24小时内回复您","1de91e827ec70ca735abc2c71b0a89cb0cfc4ce1":"未选择标的市场","50050f06645ad2743165b429a8f7deebd285fd63":"未选择合约类型","6a7d1a3a17c4e8ae6712cb60d46db1edf0aa2667":"请登录","2f9f9096be1a1c0569a9ce54e57f0420f6b3c2e9":"持续时间必须是正整数","4df6e872792d72aea8a2f6b831d00b554464da23":"金额必须是正数","001e68df3a4b32a4d57148d9d407f44eee3b7436":"无效的烛形线","04f14ea7c92e0b2b5ae005c696245063ec641d66":"无效的烛线列表","c1bbfcbb4f57d3a56c1239af0c2138321589efd2":"重试间隔时间为","57b453bb26b1c28dfe362b7cc9f17f0be93dd581":"以下数额已达最大限制","094628ce13fc0e78f07b697d1cc9421bb2edd666":"以下请求已失败","816c52fd2bdd94a63cd0944823a6c0aa9384c103":"否","5397e0583f14f6c88de06b1ef28f460a1fb5b0ae":"是的","9bb396940adb9705fe57eba6ea8b578e6aafa792":"赔付额","78d7103a319e808455d397513279d99f3b3f3768":"投注资金","bbb930cc426507ed3f6b7c343c75dd0e041494b7":"声明","e6e886cdcdefeb6d3edb4c31bed06dd183ac4153":"卖价","50e72909992bdc37c7c07769d1b7efac5e52874c":"赔付额","ecb5ba7044417916ba12de5fa9e6fccac3e5d475":"利润","c980b910204c7babdffe8ff3f7e755f30133383c":"合约类型","a726c6955157f1b8b92f9932652434a7150f80f8":"入市现价","a66d5c7ef2c63dbc9a8f9e6ae4e2bc575e74a36e":"入市值","7674920c033ca14277c577e19c037a6754d4fa80":"退市现价","e8b8bd9f2eabc12875605a37c93e7f04a713fcb8":"退市值","779455ee3bde8494d9629b353e17b19e92357ba8":"障碍","37a5301a88da334dc5afc5b63979daa0f3f45e68":"结果","4973f4c599d5f42cf7bde52d66c3ed8ef77accb1":"赢得","12e24a7d8ac40579e8a0aef4869288afe7ed6745":"损失","563339f82447b4e758ad76d5a0b63b5698594fba":"上升","5c1ae82c29543ac887703776bf3da2c7dcce683d":"下跌","2fc096bb7b6596ab243d0286c9f43fdf2b9b406d":"没有变化","ecb252044b5ea0f679ee78ec1a12904739e2904d":"字符串","53b0a1b2fadf4e040cdc2155a7340de24aca93cb":"数字","bc74f4f071a5a33f00ab88a6d6385b5e6638b86c":"绿色","4c9a82ce72ca2519f38d0af0abbb4cecb9fceca9":"蓝色","96de5543d183d7de52ac5fa21c46fc811f673f89":"黄色","78988010b890ce6f4d2136481f392787ec6d6106":"红色","aa9330a16e5b055de809256dad6b4d1cbd2999e7":"无提示","cf84a98d6cf7f156862a08ba8236467b6f471004":"公告","eee2facd669d1434848c24da5527b3e87d9a12d5":"赚取的钱","9d705578b0f1f0ce3a06dc5e82f9a1e6078f81e1":"完成工作","7f2f6a15cf8da2b27e5a4af47b58e7ad71c0b3d9":"错误","a3b1583d377f37ac20de7e089edfa0920a078e57":"严重错误","66c8b6848eee629c4ac551bf2b5fa591571654be":"上升同价","5649dce3367d490fa19d563ee9e3d4c4b6f7c642":"下跌同价","062787aa328047e189774b3703d983b83938f6e9":"高于","b91eed4b7a80cd9572a27e65ebdff9caa4b3b9a4":"低于","e3f139abb7a549a1210b36f7dbf89215ad6c9902":"触及","7d7932bcc2e262ae98cf09dc5445130fb3881769":"未触及","a16814a48ec58c2e24ba224a80921a5c02361abe":"范围之内收盘","391d02cd75ebcd6ed26f5f45ddf7d40bf13e9dc5":"范围之外收盘","534ec5da4e82ec419abc170e1a8448f55a01664f":"保持在范围之内","98cbe1998effd8b1a8aefdcc538573055e99a5f5":"超出范围之外","93d13bad1d2c2841db127cb70cc35bfc98059fc9":"亚洲上涨","c098658ce3d3a258e4d155949a60072966b36db7":"亚洲下跌","ee2dbd5d6d82d0833069b07e7dd2848d3bf4d83a":"相符","8444b7ce28bbc3443cc5cf73359b8353989b2a4b":"差异","9e767ad03e5547f251044e0724dc1d9f3e75aeed":"偶数","dc28f5f3c65ec611f0f30022650d24382d27448e":"奇数","18a63f5512afb5573e5b44deba78d629f0635317":"大于","2a268b89b83f8cb38ea48e46e93dd8840db512f9":"小于","2155c8b38181dd2552e84a94049aacd33ef9c607":"高跳动点","1408cfd2b064b923f024fbe590e27db8282941a5":"低跳动点","b86eb15dc4f13e4c2972de158d3038d9f657242f":"重设买权","669a1f3d9a8f601a84da536cfdad1de4092b1926":"重设卖权","844d1a5c99a0a668383340cc095d040eef998c79":"只会持续上涨","87293a146cd481a2b30cf74282ec061dc4cf0735":"只会持续下跌","cf9b77061f7b3126b49d50a6fa68f7ca8c26b7a3":"开盘","b1a5954a483f8f8b0207385095f74aeb409b3f80":"高","a124947cbd2d1d92b47e027274c3269ff0c7a84b":"低","bbfa773e5a63a5ea58c9b6207e608ca0120e592a":"收盘","1173872a4fb205b713702f0eec5cf2c732c828fd":"开盘时间","808d7dca8a74d84af27a2d6602c3d786de45fe1e":"默认","62957ecfdc50957e8957c11d2eae74d078f0ef1a":"1分钟","1dd3e663dfa7ac9cb77cfddd2cf8ac700657e2d6":"2分钟","24e46784cbce32443db5a2638b1a7d3201543e9b":"3分钟","3aa5819ed8a0b94d0f293db8e9c9598298ddd402":"5分钟","a6f151883b736f0470d33492e61c72a7d059d065":"10分钟","899761ff5425abd2ee214fa7aa46e27c6c8b5aae":"15分钟","31bbe8890d28d183f8f7f2c160fa892c444c0ec7":"30分钟","f030c3d667652646b86732ad7bc67e226c49cd3a":"1小时","2046e49e33c040e08dbd6fd83df3e1846015e6f1":"2小时","7b47150d431db70d783724007f07ab894eb8ac2e":"4小时","191800b7e9a48680792c0dd77cb6cac00c4514c6":"8小时","2d8a6f7c34468578640b333b8650131de06ac770":"1天","f94510322ecd9b3a2af67a10bd51ecc4ac6a24e7":"上涨/下跌","c1365a35e99d0f9147ebc72f21534cf471fa7d95":"上涨/下跌平价","9c7960c6b11d35ac9d6cdc1ebaad3af43b2065c5":"亚洲期权","2260ce49306460c8a2ef501939f29ad6ddd4e934":"位数","0186aa73a1b75fa8f0eb98bbd9ad01102bb09ec1":"触及/未触及","f7de1f66f0979667da275b7e8996e805395025a1":"范围之内/范围之外收盘","a431deecd4c2258097adae418d496fe9a8179fee":"范围内/范围外","256fe245cb7d3d673095f7faaa8c9ff81b985ad1":"高/低跳动点","12a3f461cdebbc8f335190413ee6c57442743bba":"重设买/卖权","e696144fa588782e6d6b2c97e2d3ed1adf52bd5c":"只会持续上涨/只会持续下跌","91a64e3f83c91acf336c631fba295f297f94c399":"n 秒后运行","024696596f26a4db232fd9e966eadfeb27c0bd1a":"每n秒运行","c538c170bdc6b0f3bb98dce44a016a2e2d45a6e7":"上部","85c274929bc0e28eafd3734f2c25046c3b95b36b":"中部","346e3ee198e98146993894d3de8ecab1a86c3e80":"下部","f16459104f92ab6b38aa265adb4ecbfc3768e303":"直方图","e09f635f4e77476c9ca1c37bc9992e9ace3431c1":"指数平滑移动平均线","27bed13a88c60350c3de92ec3820e1cc4f7d6ec3":"信号","19eabc961735d78f12fc7be906ffcb033853cf85":"时间戳","68f4145fee7dde76afceb910165924ad14cf0d00":"消息","629777b7d4d610ace6dee24442730f27d7d0853e":"不支持的文件︰","beb040c8fabd007c9cc5ac6a9feb6bdb05d33dac":"任何未保存的更改都将丢失。","410bf23a3f080def9c7a976a16305bcde7943ed1":"是否确定？","e99811bd3b1ad17e74614060ecb180602be35ad6":"您已被注销！","3b26e990d3acff493ee2cf66d1280bed2625e43f":"连接在收到服务器反应前已中断","876f3e0202ca40dedf2e5ab6577eba1ae637fb53":"策略","8ce80462febd4d573cb2f9c1984fdc93b7c21c57":"加载 Google 云端硬盘库时出错","7f412a8cf67f755d3eb36846dd07148ceb8d4c72":"无法加载 Google 云端硬盘块","3b6bbab905129dd36b8d4e99947fa30540ed7b2a":"无法识别的文件格式","3d6b44df6eaf6236b4abc1aadcf8f5b1cda769c1":"从 Google 云端硬盘检索数据时出错","cdfe947b0c089a4a1f78c11299f25c32a124f1a6":"选择Binary Bot策略","2db43c69a4b96454914f0b8272bc869984529e6e":"从 Google 云端硬盘列出文件时出错","0dcea5f584938e0fff00084b83156ab31d641ab3":"从 Google 云端硬盘检索文件时出错","18da95988117ff029393f3f5c881d70ef47f7385":"处理您的请求时出错","04226bcf91195130e25fe7a8e8ea4d3e058efcb7":"选择文件夹","aee24f2456ea8516b024a5d3e2b815ae7f2239d9":"Telegram通知无法发送","05754ed14275a070a20a1d5cd65f0cea66f1da7f":"建议还没有准备好","79222cd9892a434aa61fc7dc01c3839951eb8d1e":"选定的建议并不存在","6ea4a034747d020b1d8ce4848def95d537555dd6":"已买入","89f89c02cf47e091e726a4e07b88af0966806897":"ID","1200c1af2f7bba4e29a34112865662748c9d41df":"此合约不提供转售。","62d6180e55905f7b996d442c53631981a4ef8b5b":"已售出","ed4978867de1da05b336b724a3fb96222a29ebec":"指标必须是正整数","87e2e01f93d25ba7ed582cc81ef5c9ab2959f4c6":"利润总额","b2a4553586d1062c21323bca1dc0589f7a9d5cf7":"损失金额","46fc6f27a835486d63d9e927c6687e4508cb3087":"最大达成交易的数目","9202ddae4cea16513e53bbc965d88ed975e59512":"最大损失金额","5f52b397b7e5f538681f0f5717a88aa626349c7a":"未调用Bot.init","85dfa32c97d8618d1bea083609e2c8a29845abe5":"账户","d847919a30d31c0be624087f3370492b3fdf80c6":"运行次数","5cd6978d63540c8a490ef76f43219de6362f958e":"总投注金额","17410d7b62b8b1de981cfebada24632987edf186":"总赔付额","b841eeb091f1ff0e14be08e5ea1b93e4cf147ed3":"总损益","90eef613042c5a51f542421065b68b886d473807":"余额","db1c784524e1b54011a95823026161f7c8517fe0":"引用","4db3e9e4aecd187db9339a10d2629fef46724dc4":"交易类型","1bb4086b66659d8580f9be4beef69931aeea3cad":"入市现价","8bf249c4855e591964bd5bdd35c8ef2ee107342d":"退市现价","ba7be969e7c1bb5f22489e843478e3d721aaa843":"买入价","772fbced18230220d2d9be1456be16fc1b271d25":"利润/亏损","bae7d5be70820ed56467bd9a63744e23b47bd711":"状况","96f608c16cef16caa06bf38901fb5f618a35a70b":"待定","7fb3a9b5101bcd45e2dca077191693a5199bafa9":"已结算","82a82f798dd773717ec37d15fd4405510291734e":"自动交易已停止。","6a88e58aa1798626f94cf17f1a91618b405bb289":"Bot 将开始...","624cc7f40b68faace7e78d8e5c5be1d4f15facda":"自动交易正在运行中","788180a6ddbbbcca10f6f49d8e85d557934bae0e":"Bot 将停止...","d907a40a4a15da3c21a6e0f8ace3f987d482f92c":"Bot 已停止。","4f219c17ab9ab76aa1cd431b4e0e5ecf5520e8e4":"试图买入","4684ee1026d9b4c872d016c3c4588a0c479a451c":"买入金额","ca92c55b9e4233d771d5b6300fe751a9678d1deb":"购买成功","f02760cd2eac28169f0a990c950c3dfe8427f772":"合约已终止","66c7734789e19cbeef3a5ac185ea732139aed213":"图表","3b662fb2e8bafce29aa98321b18874bb44905488":"Google云端硬盘集成","7ee0ff5eaa6fa82bd6d83a2f4ca446c663f097cb":"最大连续交易数须是1到100之间","93039e609d94a24f3572b794a31b21525a09af2b":"未设置","ea67c8023c75375484f3a5f1aeb009b20059d5bc":"每日损失限额:","b1946e5b4b78465b7661fd4bc89ff52de6c633e7":"最大连续交易数","952f375412e89ff213a8aca383d18e5691354347":"开始","9f1c61cc03f3ef9324db05502f7f0b61e61e1521":"交易限制","095ba68888b5ace5f4515f5acab76dfa1073544e":"我的电脑","ddcb77ff769ea54ca622848f6bedd4004fa4f4fa":"加载","248e224f533752db28a1aab3519a58569ad96140":"加载数据块","c7097e97dcc446ca889d3ca6be733a65e2728afe":"已成功上传到 Google 云端硬盘","3218e5a460e82d7bdea9ce0f145cab2f47ba9a4b":"另存为集合件","611ebbfb080284312904de925ef0f75f4cb56ad2":"保存您的数据块和设置, 以便在其他策略中重复使用","efc007a393f66cdb14d57d385822a3d9e36ef873":"保存","a638caa8ab2b7ff7980a571334217339e6d1d634":"保存程序块为","39fca63515c105918f03e4908ec12df675b07f92":"交易查看","fadc0ef93d1ff13370524ce8481ddc4a71195934":"重设直行","e4458464df6cbb8da1134875ba51519c5d244d9f":"程序块必须位于程序块定位器、主要程序块或函数内","e9c45563358e813f157ba81b33143542165ba84e":"警告","31cb6f44d030abeabcc7046555dea851602a87a5":"您的国家不能使用此策略。","9ce3bd4224c8c1780db56b4125ecf3f24bf748b7":"确定","af145748c9cf765a3b059eec20cb1dbb899297d8":"程序块加载成功","a479c9c34e878d07b4d67a73a48f432ad7dc53c8":"下载","f1d8b7b118d6f82f95614d476bc11af650aed3bc":"无法加载程序块文件","11ee9c5d534cc8d22651092222b532917594161a":"最小持续时间是","5283ac04c9a8ba8a937d1edb4ba986aeefce8bf1":"跳动点数必须在5到10之间","ace1342bc3720b77ce510b93074041e7386d209e":"到期时间不能等于开始时间","fed3e7bd6696fb97a12d720845ab5388456bfc3b":"预测必须是单位数字","d466687f90ba548434d65186d11a80c4204f9ad6":"必须添加进去:","6ddf2b3075ac9ab5d66b40e15ea9a34c087672ea":"必须添加进去","33aa6ff282ee509d37c6f758274c9156b419ff73":"您尝试导入的策略无效。","da162a909c2981ed318d23cd9a6be1d66e0a8400":"无法识别的文件格式。","5e719fa76e1b6cb396376c82ebdd04bec7253229":"远程程序块加载必须是集合件。","b0d2de25daf6ba09a5e710c6968ffded29c4dae1":"无法加载程序块文件。","df84a88f38b03b5b342362d72370b0d66afdae35":"目标必须是 xml 文件","cd680fd936e9559ef1d95efac7a71680e2b13a89":"此 url 已经加载","34c59389053701a04127f74d32315e0206e076f8":"尝试加载 url 时发生错误","3ead0b14c72503187691a7a6d7121987299bd401":"这不是官方版本的Binary Bot，如使用，您需自己承担风险。","27401c9c8e476d659c8382e05c6d70a4a82be468":"官方版本","bc981983e7f547dc62e19a1e383acfe00782a6d5":"下一页","b52b36b7269fbfc58ec24bb724691951a3decbe8":"返回","e9b450d14bc2363d292c84f17cfad5cfbd58a458":"完成","29cadadfebdd578a50b7b3d1b2c5b33e424d5de7":"快速浏览","a48e81d4a8da67637b46725824177a959fe99b21":"准备好学习如何使用Binary Bot 了吗？","6f3e6ebf249947cec4f64117253a8fe43335ae79":"不，谢谢","fcb6e90e7223e1d1d735f15dbb7ded9d81bbe7ef":"不要再问我。","4ca0a75c2b7fa7da4364d03b72c46fee1860a2bf":"工作区","5fcf29b9f0b8971c8148e70a150ddc9ac04c94fc":"拖放程序块文件。","ddcbb5361b1a16eba60fca2383fb297bb90ed9b3":"下载示例策略","1758356db21759f7c5a0da9b4dd1db8fd6feab3f":"或","00b581632c1532969a7128ebc8eae936ed8af04e":"制作自己的策略.","d171baee235d4c93f63755a876782dc5be4c3e47":"程序块工具箱","056f19272d96f902c38207cf163ea8dbff7fbd32":"从这里添加更多程序块到机器人程序。","36bae31694f85bd7a5b0ad45e51ef622b95baadb":"账户","f5c47fd3b3553b10441a06054078cea745177dea":"启用机器人程序前请先登录。每次测试策略时请使用虚拟账户。","fd825ae94aa79500a878dd4590a4b360e7162663":"Bot 控件","6ee7980833e1ed72901b919ffd0fa20e1a251d3f":"控制您的程序块。将光标放在每个按钮上即可获取更多信息。","f5169c84497de3aea74f7da9e7e177d1427e736b":"享受其中乐趣！","4f1b3d682c2a00b393c33637da402463bc11d5ff":"想要报告问题或寻求帮助吗？","0049f8894e41937ebb9111cd3def6749049fb50f":"请单击此处","aac1569ccf6b1a11b0ad0fbefdb9ffc777b4c733":"单击选择","53adebdc2b1cbbedb56395b19a73fe47b87cc554":"跳动点","5fb1db527825d2996e37c655e5dec49d4da80c09":"秒","092f99ea11a34a8490e7a767a83a42fc45634f82":"分钟","9e25a34e635a123f8958bbe26e7c4843278597fb":"小时","f6bb0f468a8569c67b3d6826e57e62c5500c3681":"日","d1a17af19f5388af9d6596cc0ea7dbb1d739e255":"不可用","db6708630fc646eb98298d9acd701e0a1ac051c2":"将程序块和策略保存到 Google 云端硬盘","85538d002a336c5addef8d189d80976cf7758f8c":"您的登录ID是","b65463cb6a42a17de514acc4659f7fd331e0876a":"连接","ed28e0686e1251ba046f582a3e9ec02470a5e78d":"断开","cd5f85b6f187605f82386eacd680f93820af8d11":"结果是","1e38ce3d180cefae485a6986ca7c67841e30376f":"如果结果与选择匹配，请回答“是”","5c89497fc3c128e2ff865ce8df15356054f2c028":"(4) 获得交易结果，并再次交易","14ea81918758c994cbe3178e695e56afc1ef2b45":"获得以前的交易信息和结果，然后再次交易 （在交易完成上运行）","5098e2bcc96ee227983c9f7eeddfd226c220ca00":"合约细节:","251c830f8f869e0887e8b4dc4c30ba1738c7097e":"从合同详细信息列表中读取所选的选项","b3b543c80063a116ced4965d8537b7b62d14c0b7":"再次交易","a1eeb7c1e92e9a5d9323ed8ebd7ca7ffed8b0232":"再次运行交易程序块","da3105e38c42a481ad7230ed393b0e12bebe9c4f":"卖价","343fda69c73b78b84967055aae97f790c422adfd":"选定建议的卖价","d4d34ce9d9dd7e87213469f88cb7ac43725675d5":"(2) 查看并购入合约","fb61a3c71f4c488b3b470cb7daf502a3e9b5ad48":"查看看跳动点流向和购入所需合约（在跳动点更新上运行）","87da93a46d143f6019979b3548414d9d7adabb35":"选定建议的赔付额","160f06d4799c85021a810f68c5b517eea37a2737":"购入","4c2fdde3d9c1950498ed263d6ce21d4bf3d0800b":"购入选定的合约。","ca5586bdb5bdc1a2c0baf53ed0ecd21fafabebe7":"可卖出","03bad10717e183b24829baf483dc715e1a44bf7b":"如果市场上可卖出，请回答“是”","2c71ed279a402e93312dbda173ab18f244d6bf46":"(3) 查看和卖出已购入合约","17632a9f51611d2579d95b4b1ccb9476566d7ccf":"查看已购入合约的信息，如可用，则在市场上卖出（合约更新上运行）","579607dc4f989ce2b94b558431666a0ab07ac1f3":"在市场卖出","e20afd5cf3811a42071c9a312abb2afdad4c590b":"在市场卖出。","4712cbff8e92822fc960ef9c0197293a19675eae":"销售利润/亏损","df817b48c7a076561b4f8bedc52d65d2e351ab52":"返回在市场上卖出的利润。","b44e884c355e447d0da0e6ba45caaff18c84373b":"布林线","d6a2a207343bd83aacdc80b579ff4419713a256e":"输入列表","170a28a9db6d27d7212fc6dc249434a57517e7bc":"期间","b833989d69900a4be9e32d1bab65c8f8233f099e":"标准偏差上涨乘法器","1cee82f19c0bedef64f68b32e6b02128efe7c61b":"标准偏差下跌乘法器","974da601086448d0060aeed90e53ddd5acd17b91":"使用有期限列表计算布林线 (BB)","d5b65cac1f1cf9421ac978eebe532de99040cca6":"布林线数组","58de49791c64aba14e36e5887244a5ef088286cd":"使用有期限列表计算布林线 (BB) 列表","4bd99f76f1104229744455d93df0ff76b9eeed58":"指数移动平均线","ea615c6d6a74e25a6d2f1bc9980b46e73508c2eb":"使用有期限列表计算指数移动平均线 (EMA)","4082d9379e59b38c891d046312f8d3c4b64ae3b1":"指数移动平均线数组","562edc102c5dd9e2fbbede1140b8a5461c2d4dc8":"使用有期限数值列表计算指数移动平均线 (EMA) 列表","a537f4f3c0f6c68bf896fb23cb2ecdc658488ea2":"指数平滑移动平均线数组","b18e572ea14edd48587145f1ef50718adbf256c6":"快速指数平均数指标周期","974023bddd6249d0f6404872cfcae205b2599ea2":"慢速指数平均数指标周期","5c2adcb3d1bfd6b9f5c2dec13d02a9473e4445a1":"信号EMA周期","6b15ce93fd68d80aeee7f7964c1306044c3c1baf":"从列表计算指数平滑移动平均线 (MACD) 列表","95ec92885c855ba9cf734c17a43f081901e4d2cc":"相对强度指标","b033619e108c9e43bfd8a42cd97bf5c5dc86dc65":"从有期限列表获得的相对强度指标 (RSI)","4034de66995b876b2ba9bfd0274025e39168e05d":"相对强度指标数组","f9da880c8b0e4cce4431912c24eba939e6bc06e1":"使用有期限数值列表计算相对强度指标 (RSI)","a9842c95766da40bf4ea6ee263cb5a5985847763":"简单移动平均线","347775a293c14362d492f019e677c965be1d6e7d":"使用有期限列表计算简单移动平均线 (SMA)","4cc7b9e53d082896ad884eb01be16320af65f282":"简单移动平均线数组","2c75179a57af3c36581008b65e86ed81c4a4cbea":"使用有期限数值列表计算简单移动平均线 (SMA) 列表","39f024cf49724fe7ffdea7773c72ed06eec998e1":"有间隔","e4bed3e67e58b2334ee4b9c6ce59ac7a95d80aaf":"方向是","ad47561efb1dcbd7246d9b64487f615647fda036":"如方向与选择匹配，请回答“是”","05bef508aadd62bf3967dcf67d769da296f19989":"跳动点方向","d089ab98a846a521b09aad6ff3fefa728bfa8b42":"方向程序块已过时，请改为使用检查方向程序块","cdb31fc857f01a59f664413498293c714285f46d":"在蜡烛图线列表中","20fd5f86f08796f145d69dedc209a27e459b2f51":"从最终端获得 #","a96606af8c33ac3428b45abc4782dbf93f458d29":"获得第 n 个最近蜡烛图线","90ed0e1ea5c1907f8a32d8051a66e845857bb2a4":"最后数字列表","248428facb97408414180d4de74e4db35360fbc4":"返回最后数字值列表","2e4202acde880b7b1c3686f0335ff879fc1e5c7a":"最后的数字","e46e0bd2f7fe37217dec8aa26ebce8ffa3608663":"返回最新跳动点的最后数字","d5fde4c9d5edf660f760fc226df4d2678d3334ab":"蜡烛图线列表","95e552a40d3446c96905cd3ec7e3d123d0246ce8":"返回蜡烛图线列表","5a0ed227a01b7d30b05dcaf3e1c23b74b9be6ff4":"列个单子","a4220593d385a720886f7af1ed3c478fd0c6339c":"蜡烛列表数值","cd8cdf3d47e921c8a72addae9269e66041d417c5":"返回选定的蜡烛图线值列表","3e4f335e7a6f79bd1bafd219ddde30acbf16a7ac":"蜡烛列表读取 ","34037f9452fdb66c9ca27ebcc0afe9d5139e9e24":"从最终端获得 #","aba43a580daa7f306956ec69b83e6e37e7233126":"读取最近第 n 个蜡烛图线的选定蜡烛线值","e04b522218a181cf0223042dd18ae08dcc22d8d3":"最后的跳动点","6ee445fc253a55c9ed54c009c3f020ac65200d80":"返回购前程序块收到的跳动点值","4b2340a890e88d1886757c3f7172e273a1edc31f":"每个跳动点都呼叫这个程序块","b54d7b4590559dad64f02d09aacbf6d9863e2624":"无论是否有交易，您都可以使用此程序块分析跳动点","ebffc758056e6b2fc2af99af17fbc6853e5d3583":"跳动点列表","17649cac8739adcae95e641f794880272ad33bd1":"返回跳动点值的列表","802dc02469ae51067ca620ff57dfb5bdb3e524ac":"余额：","c4ee8e12b2484cd5b47cdf00bfa2c50b83e91d3d":"获取余额数字或字符串","69280143949fcd59c171dd60f6b6e13d0cc08fe6":"忽略内部程序块","d072c2ceeb5c1217722d14c74de7aeab945b4215":"把您的程序块放在这里，以防止被移除","b06acc4158c824231f727a13e1c9811f43d5be42":"加载程序块自","661db37251a1ed1afe357ee13895f37a623d7cbf":"从 url 加载程序块","6c03ee54ad3a51fc92a1d69943e99667847705b6":"通知","b1bec5d06e3672915d81b2fbc2347c8b4947a954":"带声音","a2d0c89fdfff3176efd4a443eb0f6607067b93e7":"创建通知","6e0fc122f936f808bc2e3af661121b65712ae855":"通知Telegram %1 访问令牌: %2 聊天 ID: %3 消息: %4","1aeb6caed9e46edf5d6224adc905ffb8ee3a7708":"給Telegram發送消息","45ebd38f4c641ebf6f72be8c3a79dfa50cf9f20e":"总利润","ffb465875e1ff2b49bcaa7c6b70965ffe39fa59d":"返回总利润","bc528d26f66fe8c4aa4bb24ec9c99dff12c055e0":"运行次数","bea5756b18644ccfab01c1c0dbd6fa9db7103379":"返回自开始以来的运行数量","c67ded6b64019212eb2bc69afd761f5b3f626040":"给数字添加符号，以制作障碍抵消。","569bbd757e1bb8bbccd250b98dc2bb37cb47b787":"市场","74751e67c3e1010c343095eaf543e7cb21ced2ef":"交易类型","1f4698382842477e211eb46de81fa506f01a8c34":"两个","c1baf816aac5a5cd849768773fc248cd249dc296":"合约类型：","c93025710d1ae6cbaf8e710f63eca8edfa0c9399":"默认蜡烛间隔︰","9693aeaaf68e3929b59b79306feaa0a847d01192":"持续时间︰","10c02649e226d430bd75a5b6315a41c0db9992a2":"障碍","837276742aa90209dde3b4eef07d8e7ab26731ef":"预测","258b49925b41751c6bd790a0848246566ba61440":"重新启动买/卖出错","c55ee3445cd391ab299b6f85a6ea9a68a65ea64d":"此功能禁用，以便改善性能","b410994b67e37d9516eb9b866c85a8c639f79e68":"重新启动最近交易出错","2260c5a971c2602834ef8feeb5fa522f900b469f":"bot 忽略不成功的交易","cd1495cb4c60266a6abad9024022ae079bf7e416":"(1) 定义交易合约","0745acf92abd7b60598f161717884cc45dab8694":"开机时运行","999e1ade10ff5ee1d115f5a6288bfd2e0d0736e6":"定义交易选项","a43c3299d30a5bc7e31a574cdc87f59cbc8fe585":"定义交易合约和开始交易，在这里添加初始化。（在开始上运行）","d571f33d957ebcab086ecf38eedd71b6ef0c5820":"交易选项","4d22b565e4253e92a908f216184779679bb1a044":"高障碍","b70c38c6db3127422e05315c30bdf76c7c36c480":"低障碍","a6c5f081b3addee364af1c8cdb84853f49dc8e07":"绝对","0f2ba74929aca6fea950e351dcd576b7cd841fa4":"黑色的蜡烛图线？","7cb3b482ab66947d439642ec64dc7f5bd4e065dc":"列个单子","5925d08228e246f07b790b88ad70c1b73a97d2bc":"蜡烛列表数值","852b438f91ad9eb2cdd84419a675a216d543c687":"读取","67d3b35a0b740127b56bcd44d3bcb1ccc20e0b48":"蜡烛数值","d79d854dcd0829e2177a47beab6a55569e781ab1":"读取（从蜡烛图线列表读取）蜡烛图线的字段","5606b4460ac96063b8a8e5647008f3ec97252fc5":"自Epoch以来的秒数","2de20bdeecb1a8c28bd36fe75f028ed4318d0348":"返回epoch时间（自epoch以来的秒数）","f43cb41af7ce8a69c7aecbc1c603bb0381270982":"运行每个","4b6fe6898f0f956d48a4c8172c6dfbcb4159ab09":"秒","2eea87bb804e4e73e3f8e9c41140f7ed83ea8875":"在每 n 秒内运行程序块","e0af6ddc8a892704f64680bcb22b30c4bfcefec5":"每秒运行程序块已被否决。如有可用的案例，请与我们联系。","7b9c76088576a64f32d67ec335162b9f73eaa026":"以下时间过后运行","ff56ffac023cf69ca5c7f71d407499536f4f86b5":"在 n 秒后运行内部程序块"}
+module.exports = {"3d52a6d8fedcc48a65297c07bf5f7e3e41aab5aa":"逻辑","3edf0df49942da6d11a1a217e4d3af4a5a8e64f2":"数学","c3328c39b0e29f78e9ff45db674248b1d245887d":"文本","4d064726954a17487f94e931f5b157b733ec22ed":"高级","a1fffaaafb7cc996685bceb829c053cc4f7de43d":"列表","19de69cb601f53a4ea7af22a65c71ae63251365c":"变量","2b961dea1dc0c60ddf9a2c8e9d090f6f7d082483":"功能","dc7f77b4ccfc9f70a78bd97303bd10ba4c9d70c8":"回路","66639f7d455dd71faa9147f5d69e5ce885d8bebd":"Binary","0ba66deaab2f2cd3b0793d03f600ee2b8f577fbc":"交易的定义","9201c6ac624e98e168e6ccddbcd5a9b5cdff06b3":"购入前","44ab9a87268d3fd74040ed0b55c04f83294cfdef":"购入时","c415c9399b7ae7285d2c1c880a6a0aa18f62ff8c":"购入后","d07ffc19d51f0973859a0d95c1d15cd9f22388ca":"跳动点分析","8cf71374fa095a64b5295b672daef8507ec7be6a":"指标","4fa8cc860c52b268dc6a3adcde7305e9415db5bb":"工具","6c82e6dd86807ee3db07e3c82bec1ae1ce00b08b":"时间","8d8fd6765e184419cad8b88d1a60c895d79578c2":"蜡烛线","548f449b63ff41eaaff5a2d679ffa56b2015fc20":"杂项","8bf95ea372568c7a254ba9fada5f6f1701ebc5b5":"日志","12b71c3e0fe5f7c0b8d17cc03186e281412da4a8":"摘要","9feddbabd7e7309e96c590069057158e96baa8f6":"实况简报","038fe2bdb7ec6ee078f60bdb5bee94654ec6a81d":"二元期权交易和其他类似活动一样，过于沉迷可能会上瘾。为了避免这种风险，我们会定期向您提供交易和财务的实况简报。","4152043e8c670075d2c919677e835edb0d923cab":"请指定您的优选实况调查间隔时间分钟数","d9fff2df19e90f2c7ea6bb30fde4e0da119d13d1":"请输入10和60之间的数字。","2439f2f199b2a3e798aa9b4feaa9248bdec9bc0b":"继续交易","a72ca256dc49e55a1a57b9a727fbde9834c9a3f7":"声明","6e78c91f5a05fc0d4f1a787d38e3d6fe2f856d46":"注销","4832e45812a2724f16a15f9ae87adfc8ae4168cf":"联系我们","f7c400ed695f898b8ee9d21664aa17b5bb693828":"登录","5ea75f1605a4bf1db5c39fcc61854627478c0a7d":"将程序块重置成初始状态","f98595d541778d86f75ef22b3328a031d20aa16b":"载入新程序块 (xml 文件)","4a1e616226c329a94da7768bc0435a3284478010":"保存现有的程序块（xml 文件）","6b3465ace62f33f0687b4669ac26d95895e9ca52":"将Binary Bot连接到 Google Drive，以便保存及重新使用程序块","8e4ec2c451ec7b1bf68d72fe9086ec978e41feb7":"撤消变更 (Ctrl+Z)","937f5055f05be359ddf619744e8af4d643549e80":"撤消变更 (Ctrl+Shift+Z)","8406d1cce44230835932060649e999ca3283b413":"放大(Ctrl + +)","1109673172af2c173c492622ff8a72c8f29f0e70":"缩小(Ctrl + -)","44c22002c65d2871331263a23c3e09c0a1bfd847":"重设直行","ebd0945359e5578ff9bd3a2ab490ca84c225d8f5":"显示/隐藏弹出摘要","76bb05950f80f3a88ee05ef3276c5934fd355e8d":"运行bot","ba50a42d8d3228c37a817865fce49fbca692c2ad":"停止自动交易","4f4aa4117318a8ddf8783885d4f3542c5b2733bd":"显示日志","91017ef9b165cd0e7475a770f318ea5e705e1321":"显示图表","c89e3dd1cafcadcc0312e476ab58b2332209da23":"显示交易查看","b02c858e72be118a65c9393930351012b647cb9e":"切换标题","250be77f7605669a0b3d968b9ed381a3d9787ed1":"打开已保存的XML文件并取回其程序块","ff29ccd7a6c6073cc462ed590d27a91632fdf67e":"Binary Bot","608061fb5aab975013fa70c5c814a1d8ba30c152":"交易效率比您想象的更高","e4ce8dc3e416e69262ba642dc57d3975d6616980":"想要让您倾向的二元期权交易策略自动化？","f261237ca8beec6f77b76c4121feb8da22818c56":"Binary Bot 是我们尖端的程序设计工具，您可以使用简单“拼图游戏”式拖放功能，构建交易应用程序。","f6c85c68616eeaaa15fcd53fdc52f6eb5c886357":"不论是简单的公式还是复杂的算法，请尽情发挥想象力，设计出无限量的二元期权交易bot，即使在您睡觉时也可自动为您进行交易。","e6906a0d1c28b202f9bd49da4a6abbddca57399a":"更奇妙的是，一旦您建立好了bot，我们可以帮您在","1dd0cf79c572bcdbdfabbd54ee95710a21234d73":"Binary.com商店推广给其他交易者。","abeef9a35ae6256796ba2462e4f64d308de42359":"通过我们的应用程序商店销售您的bot，您可获取销售收入金额的80%。","0606f0b7763ee6e8094a3dab7873d34c08fd3670":"立刻建立Bot","221acaf3a0290adafe08cdcb8c66121c73d8b4a3":"需要帮忙？","d635b53e59c9aad8c5d78458826beffb029b27bf":"谢谢, 我们会在24小时内回复您","a69a8fc21499d0fd85e87bab467699827547a5bc":"请输入有效的伺服器 URL","1de91e827ec70ca735abc2c71b0a89cb0cfc4ce1":"未选择标的市场","50050f06645ad2743165b429a8f7deebd285fd63":"未选择合约类型","6a7d1a3a17c4e8ae6712cb60d46db1edf0aa2667":"请登录","2f9f9096be1a1c0569a9ce54e57f0420f6b3c2e9":"持续时间必须是正整数","4df6e872792d72aea8a2f6b831d00b554464da23":"金额必须是正数","001e68df3a4b32a4d57148d9d407f44eee3b7436":"无效的烛形线","04f14ea7c92e0b2b5ae005c696245063ec641d66":"无效的烛线列表","c1bbfcbb4f57d3a56c1239af0c2138321589efd2":"重试间隔时间为","57b453bb26b1c28dfe362b7cc9f17f0be93dd581":"以下数额已达最大限制","094628ce13fc0e78f07b697d1cc9421bb2edd666":"以下请求已失败","816c52fd2bdd94a63cd0944823a6c0aa9384c103":"否","5397e0583f14f6c88de06b1ef28f460a1fb5b0ae":"是的","bbb930cc426507ed3f6b7c343c75dd0e041494b7":"声明","e6e886cdcdefeb6d3edb4c31bed06dd183ac4153":"卖价","50e72909992bdc37c7c07769d1b7efac5e52874c":"赔付额","ecb5ba7044417916ba12de5fa9e6fccac3e5d475":"利润","c980b910204c7babdffe8ff3f7e755f30133383c":"合约类型","a726c6955157f1b8b92f9932652434a7150f80f8":"入市现价","a66d5c7ef2c63dbc9a8f9e6ae4e2bc575e74a36e":"入市值","3905be81561384dc8c43d6127c57ed1e0eb03b74":"入市值字符串","7674920c033ca14277c577e19c037a6754d4fa80":"退市现价","e8b8bd9f2eabc12875605a37c93e7f04a713fcb8":"退市值","06ecea26625359f7dcf5ff5c47af6174ff815257":"退市值字符串","779455ee3bde8494d9629b353e17b19e92357ba8":"障碍","37a5301a88da334dc5afc5b63979daa0f3f45e68":"结果","4973f4c599d5f42cf7bde52d66c3ed8ef77accb1":"赢得","12e24a7d8ac40579e8a0aef4869288afe7ed6745":"损失","563339f82447b4e758ad76d5a0b63b5698594fba":"上升","5c1ae82c29543ac887703776bf3da2c7dcce683d":"下跌","2fc096bb7b6596ab243d0286c9f43fdf2b9b406d":"没有变化","ecb252044b5ea0f679ee78ec1a12904739e2904d":"字符串","53b0a1b2fadf4e040cdc2155a7340de24aca93cb":"数字","bc74f4f071a5a33f00ab88a6d6385b5e6638b86c":"绿色","4c9a82ce72ca2519f38d0af0abbb4cecb9fceca9":"蓝色","96de5543d183d7de52ac5fa21c46fc811f673f89":"黄色","78988010b890ce6f4d2136481f392787ec6d6106":"红色","aa9330a16e5b055de809256dad6b4d1cbd2999e7":"无提示","cf84a98d6cf7f156862a08ba8236467b6f471004":"公告","eee2facd669d1434848c24da5527b3e87d9a12d5":"赚取的钱","9d705578b0f1f0ce3a06dc5e82f9a1e6078f81e1":"完成工作","7f2f6a15cf8da2b27e5a4af47b58e7ad71c0b3d9":"错误","a3b1583d377f37ac20de7e089edfa0920a078e57":"严重错误","66c8b6848eee629c4ac551bf2b5fa591571654be":"上升同价","5649dce3367d490fa19d563ee9e3d4c4b6f7c642":"下跌同价","062787aa328047e189774b3703d983b83938f6e9":"高于","b91eed4b7a80cd9572a27e65ebdff9caa4b3b9a4":"低于","e3f139abb7a549a1210b36f7dbf89215ad6c9902":"触及","7d7932bcc2e262ae98cf09dc5445130fb3881769":"未触及","a16814a48ec58c2e24ba224a80921a5c02361abe":"范围之内收盘","391d02cd75ebcd6ed26f5f45ddf7d40bf13e9dc5":"范围之外收盘","534ec5da4e82ec419abc170e1a8448f55a01664f":"保持在范围之内","98cbe1998effd8b1a8aefdcc538573055e99a5f5":"超出范围之外","93d13bad1d2c2841db127cb70cc35bfc98059fc9":"亚洲上涨","c098658ce3d3a258e4d155949a60072966b36db7":"亚洲下跌","ee2dbd5d6d82d0833069b07e7dd2848d3bf4d83a":"相符","8444b7ce28bbc3443cc5cf73359b8353989b2a4b":"差异","9e767ad03e5547f251044e0724dc1d9f3e75aeed":"偶数","dc28f5f3c65ec611f0f30022650d24382d27448e":"奇数","18a63f5512afb5573e5b44deba78d629f0635317":"大于","2a268b89b83f8cb38ea48e46e93dd8840db512f9":"小于","2155c8b38181dd2552e84a94049aacd33ef9c607":"高跳动点","1408cfd2b064b923f024fbe590e27db8282941a5":"低跳动点","b86eb15dc4f13e4c2972de158d3038d9f657242f":"重设买权","669a1f3d9a8f601a84da536cfdad1de4092b1926":"重设卖权","844d1a5c99a0a668383340cc095d040eef998c79":"只会持续上涨","87293a146cd481a2b30cf74282ec061dc4cf0735":"只会持续下跌","cf9b77061f7b3126b49d50a6fa68f7ca8c26b7a3":"开盘","b1a5954a483f8f8b0207385095f74aeb409b3f80":"高","a124947cbd2d1d92b47e027274c3269ff0c7a84b":"低","bbfa773e5a63a5ea58c9b6207e608ca0120e592a":"收盘","1173872a4fb205b713702f0eec5cf2c732c828fd":"开盘时间","808d7dca8a74d84af27a2d6602c3d786de45fe1e":"默认","62957ecfdc50957e8957c11d2eae74d078f0ef1a":"1分钟","1dd3e663dfa7ac9cb77cfddd2cf8ac700657e2d6":"2分钟","24e46784cbce32443db5a2638b1a7d3201543e9b":"3分钟","3aa5819ed8a0b94d0f293db8e9c9598298ddd402":"5分钟","a6f151883b736f0470d33492e61c72a7d059d065":"10分钟","899761ff5425abd2ee214fa7aa46e27c6c8b5aae":"15分钟","31bbe8890d28d183f8f7f2c160fa892c444c0ec7":"30分钟","f030c3d667652646b86732ad7bc67e226c49cd3a":"1小时","2046e49e33c040e08dbd6fd83df3e1846015e6f1":"2小时","7b47150d431db70d783724007f07ab894eb8ac2e":"4小时","191800b7e9a48680792c0dd77cb6cac00c4514c6":"8小时","2d8a6f7c34468578640b333b8650131de06ac770":"1天","f94510322ecd9b3a2af67a10bd51ecc4ac6a24e7":"上涨/下跌","c1365a35e99d0f9147ebc72f21534cf471fa7d95":"上涨/下跌平价","9c7960c6b11d35ac9d6cdc1ebaad3af43b2065c5":"亚洲期权","2260ce49306460c8a2ef501939f29ad6ddd4e934":"位数","0186aa73a1b75fa8f0eb98bbd9ad01102bb09ec1":"触及/未触及","f7de1f66f0979667da275b7e8996e805395025a1":"范围之内/范围之外收盘","a431deecd4c2258097adae418d496fe9a8179fee":"范围内/范围外","256fe245cb7d3d673095f7faaa8c9ff81b985ad1":"高/低跳动点","12a3f461cdebbc8f335190413ee6c57442743bba":"重设买/卖权","e696144fa588782e6d6b2c97e2d3ed1adf52bd5c":"只会持续上涨/只会持续下跌","91a64e3f83c91acf336c631fba295f297f94c399":"n 秒后运行","024696596f26a4db232fd9e966eadfeb27c0bd1a":"每n秒运行","c538c170bdc6b0f3bb98dce44a016a2e2d45a6e7":"上部","85c274929bc0e28eafd3734f2c25046c3b95b36b":"中部","346e3ee198e98146993894d3de8ecab1a86c3e80":"下部","f16459104f92ab6b38aa265adb4ecbfc3768e303":"直方图","e09f635f4e77476c9ca1c37bc9992e9ace3431c1":"指数平滑移动平均线","27bed13a88c60350c3de92ec3820e1cc4f7d6ec3":"信号","19eabc961735d78f12fc7be906ffcb033853cf85":"时间戳","68f4145fee7dde76afceb910165924ad14cf0d00":"消息","629777b7d4d610ace6dee24442730f27d7d0853e":"不支持的文件︰","beb040c8fabd007c9cc5ac6a9feb6bdb05d33dac":"任何未保存的更改都将丢失。","410bf23a3f080def9c7a976a16305bcde7943ed1":"是否确定？","e99811bd3b1ad17e74614060ecb180602be35ad6":"您已被注销！","876f3e0202ca40dedf2e5ab6577eba1ae637fb53":"策略","8ce80462febd4d573cb2f9c1984fdc93b7c21c57":"加载 Google 云端硬盘库时出错","c4c758b5c8f5b3985f6bf7382c848bb44e0a5b74":"请授予权限，以查看和管理您的Google云端硬盘文件","3b6bbab905129dd36b8d4e99947fa30540ed7b2a":"无法识别的文件格式","3d6b44df6eaf6236b4abc1aadcf8f5b1cda769c1":"从 Google 云端硬盘检索数据时出错","cdfe947b0c089a4a1f78c11299f25c32a124f1a6":"选择Binary Bot策略","2db43c69a4b96454914f0b8272bc869984529e6e":"从 Google 云端硬盘列出文件时出错","0dcea5f584938e0fff00084b83156ab31d641ab3":"从 Google 云端硬盘检索文件时出错","18da95988117ff029393f3f5c881d70ef47f7385":"处理您的请求时出错","04226bcf91195130e25fe7a8e8ea4d3e058efcb7":"选择文件夹","aee24f2456ea8516b024a5d3e2b815ae7f2239d9":"Telegram通知无法发送","3f370309b6280eb100f898426d8605c1f45d558d":"无效的时间戳","af6a4e2a5582be89ac930e946eaed86e01cac58b":"无效的日期/时间","49d51398b574e7312d99b18d2b93d2ede416f053":"无法发送 webhook","05754ed14275a070a20a1d5cd65f0cea66f1da7f":"建议还没有准备好","79222cd9892a434aa61fc7dc01c3839951eb8d1e":"选定的建议并不存在","6ea4a034747d020b1d8ce4848def95d537555dd6":"已买入","89f89c02cf47e091e726a4e07b88af0966806897":"ID","1200c1af2f7bba4e29a34112865662748c9d41df":"此合约不提供转售。","62d6180e55905f7b996d442c53631981a4ef8b5b":"已售出","ed4978867de1da05b336b724a3fb96222a29ebec":"指标必须是正整数","87e2e01f93d25ba7ed582cc81ef5c9ab2959f4c6":"利润总额","b2a4553586d1062c21323bca1dc0589f7a9d5cf7":"损失金额","46fc6f27a835486d63d9e927c6687e4508cb3087":"最大达成交易的数目","9202ddae4cea16513e53bbc965d88ed975e59512":"最大损失金额","5f52b397b7e5f538681f0f5717a88aa626349c7a":"未调用Bot.init","66c7734789e19cbeef3a5ac185ea732139aed213":"图表","3b662fb2e8bafce29aa98321b18874bb44905488":"Google云端硬盘集成","7ee0ff5eaa6fa82bd6d83a2f4ca446c663f097cb":"最大连续交易数须是1到100之间","93039e609d94a24f3572b794a31b21525a09af2b":"未设置","ea67c8023c75375484f3a5f1aeb009b20059d5bc":"每日损失限额:","b1946e5b4b78465b7661fd4bc89ff52de6c633e7":"最大连续交易数","952f375412e89ff213a8aca383d18e5691354347":"开始","9f1c61cc03f3ef9324db05502f7f0b61e61e1521":"交易限制","095ba68888b5ace5f4515f5acab76dfa1073544e":"我的电脑","ddcb77ff769ea54ca622848f6bedd4004fa4f4fa":"加载","248e224f533752db28a1aab3519a58569ad96140":"加载数据块","c7097e97dcc446ca889d3ca6be733a65e2728afe":"已成功上传到 Google 云端硬盘","3218e5a460e82d7bdea9ce0f145cab2f47ba9a4b":"另存为集合件","611ebbfb080284312904de925ef0f75f4cb56ad2":"保存您的数据块和设置, 以便在其他策略中重复使用","efc007a393f66cdb14d57d385822a3d9e36ef873":"保存","a638caa8ab2b7ff7980a571334217339e6d1d634":"保存程序块为","39fca63515c105918f03e4908ec12df675b07f92":"交易查看","85dfa32c97d8618d1bea083609e2c8a29845abe5":"账户","d847919a30d31c0be624087f3370492b3fdf80c6":"运行次数","5cd6978d63540c8a490ef76f43219de6362f958e":"总投注金额","17410d7b62b8b1de981cfebada24632987edf186":"总赔付额","b841eeb091f1ff0e14be08e5ea1b93e4cf147ed3":"总损益","90eef613042c5a51f542421065b68b886d473807":"余额","db1c784524e1b54011a95823026161f7c8517fe0":"引用","4db3e9e4aecd187db9339a10d2629fef46724dc4":"交易类型","1bb4086b66659d8580f9be4beef69931aeea3cad":"入市现价","8bf249c4855e591964bd5bdd35c8ef2ee107342d":"退市现价","ba7be969e7c1bb5f22489e843478e3d721aaa843":"买入价","772fbced18230220d2d9be1456be16fc1b271d25":"利润/亏损","bae7d5be70820ed56467bd9a63744e23b47bd711":"状况","96f608c16cef16caa06bf38901fb5f618a35a70b":"待定","7fb3a9b5101bcd45e2dca077191693a5199bafa9":"已结算","82a82f798dd773717ec37d15fd4405510291734e":"自动交易已停止。","6a88e58aa1798626f94cf17f1a91618b405bb289":"Bot 将开始...","624cc7f40b68faace7e78d8e5c5be1d4f15facda":"自动交易正在运行中","788180a6ddbbbcca10f6f49d8e85d557934bae0e":"Bot 将停止...","d907a40a4a15da3c21a6e0f8ace3f987d482f92c":"Bot 已停止。","4f219c17ab9ab76aa1cd431b4e0e5ecf5520e8e4":"试图买入","4684ee1026d9b4c872d016c3c4588a0c479a451c":"买入金额","ca92c55b9e4233d771d5b6300fe751a9678d1deb":"购买成功","f02760cd2eac28169f0a990c950c3dfe8427f772":"合约已终止","fadc0ef93d1ff13370524ce8481ddc4a71195934":"重设直行","a479c9c34e878d07b4d67a73a48f432ad7dc53c8":"下载","e4458464df6cbb8da1134875ba51519c5d244d9f":"程序块必须位于程序块定位器、主要程序块或函数内","e9c45563358e813f157ba81b33143542165ba84e":"警告","31cb6f44d030abeabcc7046555dea851602a87a5":"您的国家不能使用此策略。","9ce3bd4224c8c1780db56b4125ecf3f24bf748b7":"确定","486d55264892207fef1ed5799e0b213b446d3eaa":"XML文件包含不受支持的元素。请检查或修改文件。","a594b427eaf0f108d3e9cc20d70e15da811c760c":"不受支持的策略","04a5090686ac7b54822e00a9ff08c38a107601e7":"抱歉，此策略无法在 Binary Bot 使用。仅可在 DBot 使用。","77dfd2135f4db726c47299bb55be26f7f4525a46":"取消","fdaa08aeaee0bf9b78d83ea19ef9e9bd019e8193":"带我去 DBot","f1d8b7b118d6f82f95614d476bc11af650aed3bc":"无法加载程序块文件","af145748c9cf765a3b059eec20cb1dbb899297d8":"程序块加载成功","11ee9c5d534cc8d22651092222b532917594161a":"最小持续时间是","5283ac04c9a8ba8a937d1edb4ba986aeefce8bf1":"跳动点数必须在5到10之间","ace1342bc3720b77ce510b93074041e7386d209e":"到期时间不能等于开始时间","fed3e7bd6696fb97a12d720845ab5388456bfc3b":"预测必须是单位数字","d466687f90ba548434d65186d11a80c4204f9ad6":"必须添加进去:","6ddf2b3075ac9ab5d66b40e15ea9a34c087672ea":"必须添加进去","33aa6ff282ee509d37c6f758274c9156b419ff73":"您尝试导入的策略无效。","da162a909c2981ed318d23cd9a6be1d66e0a8400":"无法识别的文件格式。","5e719fa76e1b6cb396376c82ebdd04bec7253229":"远程程序块加载必须是集合件。","b0d2de25daf6ba09a5e710c6968ffded29c4dae1":"无法加载程序块文件。","df84a88f38b03b5b342362d72370b0d66afdae35":"目标必须是 xml 文件","cd680fd936e9559ef1d95efac7a71680e2b13a89":"此 url 已经加载","34c59389053701a04127f74d32315e0206e076f8":"尝试加载 url 时发生错误","3ead0b14c72503187691a7a6d7121987299bd401":"这不是官方版本的Binary Bot，如使用，您需自己承担风险。","27401c9c8e476d659c8382e05c6d70a4a82be468":"官方版本","bc981983e7f547dc62e19a1e383acfe00782a6d5":"下一页","b52b36b7269fbfc58ec24bb724691951a3decbe8":"返回","e9b450d14bc2363d292c84f17cfad5cfbd58a458":"完成","29cadadfebdd578a50b7b3d1b2c5b33e424d5de7":"快速浏览","a48e81d4a8da67637b46725824177a959fe99b21":"准备好学习如何使用Binary Bot 了吗？","6f3e6ebf249947cec4f64117253a8fe43335ae79":"不，谢谢","fcb6e90e7223e1d1d735f15dbb7ded9d81bbe7ef":"不要再问我。","4ca0a75c2b7fa7da4364d03b72c46fee1860a2bf":"工作区","5fcf29b9f0b8971c8148e70a150ddc9ac04c94fc":"拖放程序块文件。","ddcbb5361b1a16eba60fca2383fb297bb90ed9b3":"下载示例策略","1758356db21759f7c5a0da9b4dd1db8fd6feab3f":"或","00b581632c1532969a7128ebc8eae936ed8af04e":"制作自己的策略.","d171baee235d4c93f63755a876782dc5be4c3e47":"程序块工具箱","056f19272d96f902c38207cf163ea8dbff7fbd32":"从这里添加更多程序块到机器人程序。","36bae31694f85bd7a5b0ad45e51ef622b95baadb":"账户","f5c47fd3b3553b10441a06054078cea745177dea":"启用机器人程序前请先登录。每次测试策略时请使用虚拟账户。","fd825ae94aa79500a878dd4590a4b360e7162663":"Bot 控件","6ee7980833e1ed72901b919ffd0fa20e1a251d3f":"控制您的程序块。将光标放在每个按钮上即可获取更多信息。","f5169c84497de3aea74f7da9e7e177d1427e736b":"享受其中乐趣！","4f1b3d682c2a00b393c33637da402463bc11d5ff":"想要报告问题或寻求帮助吗？","0049f8894e41937ebb9111cd3def6749049fb50f":"请单击此处","aac1569ccf6b1a11b0ad0fbefdb9ffc777b4c733":"单击选择","d1a17af19f5388af9d6596cc0ea7dbb1d739e255":"不可用","53adebdc2b1cbbedb56395b19a73fe47b87cc554":"跳动点","5fb1db527825d2996e37c655e5dec49d4da80c09":"秒","092f99ea11a34a8490e7a767a83a42fc45634f82":"分钟","9e25a34e635a123f8958bbe26e7c4843278597fb":"小时","f6bb0f468a8569c67b3d6826e57e62c5500c3681":"日","db6708630fc646eb98298d9acd701e0a1ac051c2":"将程序块和策略保存到 Google 云端硬盘","85538d002a336c5addef8d189d80976cf7758f8c":"您的登录ID是","b65463cb6a42a17de514acc4659f7fd331e0876a":"连接","ed28e0686e1251ba046f582a3e9ec02470a5e78d":"断开","cd5f85b6f187605f82386eacd680f93820af8d11":"结果是","1e38ce3d180cefae485a6986ca7c67841e30376f":"如果结果与选择匹配，请回答“是”","5c89497fc3c128e2ff865ce8df15356054f2c028":"(4) 获得交易结果，并再次交易","14ea81918758c994cbe3178e695e56afc1ef2b45":"获得以前的交易信息和结果，然后再次交易 （在交易完成上运行）","5098e2bcc96ee227983c9f7eeddfd226c220ca00":"合约细节:","251c830f8f869e0887e8b4dc4c30ba1738c7097e":"从合同详细信息列表中读取所选的选项","b3b543c80063a116ced4965d8537b7b62d14c0b7":"再次交易","a1eeb7c1e92e9a5d9323ed8ebd7ca7ffed8b0232":"再次运行交易程序块","ca5586bdb5bdc1a2c0baf53ed0ecd21fafabebe7":"可卖出","03bad10717e183b24829baf483dc715e1a44bf7b":"如果市场上可卖出，请回答“是”","2c71ed279a402e93312dbda173ab18f244d6bf46":"(3) 查看和卖出已购入合约","17632a9f51611d2579d95b4b1ccb9476566d7ccf":"查看已购入合约的信息，如可用，则在市场上卖出（合约更新上运行）","579607dc4f989ce2b94b558431666a0ab07ac1f3":"在市场卖出","e20afd5cf3811a42071c9a312abb2afdad4c590b":"在市场卖出。","4712cbff8e92822fc960ef9c0197293a19675eae":"销售利润/亏损","df817b48c7a076561b4f8bedc52d65d2e351ab52":"返回在市场上卖出的利润。","da3105e38c42a481ad7230ed393b0e12bebe9c4f":"卖价","343fda69c73b78b84967055aae97f790c422adfd":"选定建议的卖价","d4d34ce9d9dd7e87213469f88cb7ac43725675d5":"(2) 查看并购入合约","fb61a3c71f4c488b3b470cb7daf502a3e9b5ad48":"查看看跳动点流向和购入所需合约（在跳动点更新上运行）","9bb396940adb9705fe57eba6ea8b578e6aafa792":"赔付额","87da93a46d143f6019979b3548414d9d7adabb35":"选定建议的赔付额","160f06d4799c85021a810f68c5b517eea37a2737":"购入","4c2fdde3d9c1950498ed263d6ce21d4bf3d0800b":"购入选定的合约。","b44e884c355e447d0da0e6ba45caaff18c84373b":"布林线","d6a2a207343bd83aacdc80b579ff4419713a256e":"输入列表","170a28a9db6d27d7212fc6dc249434a57517e7bc":"期间","b833989d69900a4be9e32d1bab65c8f8233f099e":"标准偏差上涨乘法器","1cee82f19c0bedef64f68b32e6b02128efe7c61b":"标准偏差下跌乘法器","974da601086448d0060aeed90e53ddd5acd17b91":"使用有期限列表计算布林线 (BB)","d5b65cac1f1cf9421ac978eebe532de99040cca6":"布林线数组","58de49791c64aba14e36e5887244a5ef088286cd":"使用有期限列表计算布林线 (BB) 列表","4bd99f76f1104229744455d93df0ff76b9eeed58":"指数移动平均线","ea615c6d6a74e25a6d2f1bc9980b46e73508c2eb":"使用有期限列表计算指数移动平均线 (EMA)","4082d9379e59b38c891d046312f8d3c4b64ae3b1":"指数移动平均线数组","562edc102c5dd9e2fbbede1140b8a5461c2d4dc8":"使用有期限数值列表计算指数移动平均线 (EMA) 列表","a537f4f3c0f6c68bf896fb23cb2ecdc658488ea2":"指数平滑移动平均线数组","b18e572ea14edd48587145f1ef50718adbf256c6":"快速指数平均数指标周期","974023bddd6249d0f6404872cfcae205b2599ea2":"慢速指数平均数指标周期","5c2adcb3d1bfd6b9f5c2dec13d02a9473e4445a1":"信号EMA周期","6b15ce93fd68d80aeee7f7964c1306044c3c1baf":"从列表计算指数平滑移动平均线 (MACD) 列表","95ec92885c855ba9cf734c17a43f081901e4d2cc":"相对强度指标","b033619e108c9e43bfd8a42cd97bf5c5dc86dc65":"从有期限列表获得的相对强度指标 (RSI)","4034de66995b876b2ba9bfd0274025e39168e05d":"相对强度指标数组","f9da880c8b0e4cce4431912c24eba939e6bc06e1":"使用有期限数值列表计算相对强度指标 (RSI)","a9842c95766da40bf4ea6ee263cb5a5985847763":"简单移动平均线","347775a293c14362d492f019e677c965be1d6e7d":"使用有期限列表计算简单移动平均线 (SMA)","4cc7b9e53d082896ad884eb01be16320af65f282":"简单移动平均线数组","2c75179a57af3c36581008b65e86ed81c4a4cbea":"使用有期限数值列表计算简单移动平均线 (SMA) 列表","39f024cf49724fe7ffdea7773c72ed06eec998e1":"有间隔","e4bed3e67e58b2334ee4b9c6ce59ac7a95d80aaf":"方向是","ad47561efb1dcbd7246d9b64487f615647fda036":"如方向与选择匹配，请回答“是”","05bef508aadd62bf3967dcf67d769da296f19989":"跳动点方向","d089ab98a846a521b09aad6ff3fefa728bfa8b42":"方向程序块已过时，请改为使用检查方向程序块","cdb31fc857f01a59f664413498293c714285f46d":"在蜡烛图线列表中","20fd5f86f08796f145d69dedc209a27e459b2f51":"从最终端获得 #","a96606af8c33ac3428b45abc4782dbf93f458d29":"获得第 n 个最近蜡烛图线","90ed0e1ea5c1907f8a32d8051a66e845857bb2a4":"最后数字列表","248428facb97408414180d4de74e4db35360fbc4":"返回最后数字值列表","2e4202acde880b7b1c3686f0335ff879fc1e5c7a":"最后的数字","e46e0bd2f7fe37217dec8aa26ebce8ffa3608663":"返回最新跳动点的最后数字","d5fde4c9d5edf660f760fc226df4d2678d3334ab":"蜡烛图线列表","95e552a40d3446c96905cd3ec7e3d123d0246ce8":"返回蜡烛图线列表","5a0ed227a01b7d30b05dcaf3e1c23b74b9be6ff4":"列个单子","a4220593d385a720886f7af1ed3c478fd0c6339c":"蜡烛列表数值","cd8cdf3d47e921c8a72addae9269e66041d417c5":"返回选定的蜡烛图线值列表","3e4f335e7a6f79bd1bafd219ddde30acbf16a7ac":"蜡烛列表读取 ","34037f9452fdb66c9ca27ebcc0afe9d5139e9e24":"从最终端获得 #","aba43a580daa7f306956ec69b83e6e37e7233126":"读取最近第 n 个蜡烛图线的选定蜡烛线值","e04b522218a181cf0223042dd18ae08dcc22d8d3":"最后的跳动点","6ee445fc253a55c9ed54c009c3f020ac65200d80":"返回购前程序块收到的跳动点值","ed44b69176217a1251c04f0c13d23ac789ea60b2":"最新跳动点字符串","ea24dd1988c6534a5f0d11b8fbbc6c374fe68766":"返回购前程序块收到的跳动点值（字符串）","4b2340a890e88d1886757c3f7172e273a1edc31f":"每个跳动点都呼叫这个程序块","b54d7b4590559dad64f02d09aacbf6d9863e2624":"无论是否有交易，您都可以使用此程序块分析跳动点","ebffc758056e6b2fc2af99af17fbc6853e5d3583":"跳动点列表","17649cac8739adcae95e641f794880272ad33bd1":"返回跳动点值的列表","46ecdefde6a8dd5872cc6e0e52afb717f1140426":"跳动点字符串列表","3bdc75d5d68b05dfd3ce6dcdf7d9773e60ed0a51":"返回跳动点值的列表（字符串)","802dc02469ae51067ca620ff57dfb5bdb3e524ac":"余额：","c4ee8e12b2484cd5b47cdf00bfa2c50b83e91d3d":"获取余额数字或字符串","69280143949fcd59c171dd60f6b6e13d0cc08fe6":"忽略内部程序块","d072c2ceeb5c1217722d14c74de7aeab945b4215":"把您的程序块放在这里，以防止被移除","e98ea4ac4e2cfd6a4c84386534c5d1acd7ec85d3":"键：%1 数值: %2","27305f6365c38dd36f5b5eb781e05b5e2e4e3f6e":"返回键值对的字符串表示形式","b06acc4158c824231f727a13e1c9811f43d5be42":"加载程序块自","661db37251a1ed1afe357ee13895f37a623d7cbf":"从 url 加载程序块","6c03ee54ad3a51fc92a1d69943e99667847705b6":"通知","b1bec5d06e3672915d81b2fbc2347c8b4947a954":"带声音","a2d0c89fdfff3176efd4a443eb0f6607067b93e7":"创建通知","6e0fc122f936f808bc2e3af661121b65712ae855":"通知Telegram %1 访问令牌: %2 聊天 ID: %3 消息: %4","1aeb6caed9e46edf5d6224adc905ffb8ee3a7708":"給Telegram發送消息","45ebd38f4c641ebf6f72be8c3a79dfa50cf9f20e":"总利润","ffb465875e1ff2b49bcaa7c6b70965ffe39fa59d":"返回总利润","532e65f6e266db0bb442d1f426d44d7d32962340":"总利润字符串","78e84591ff76f992953a8e19b57c7eab7546d638":"返回总利润（字符串）","bc528d26f66fe8c4aa4bb24ec9c99dff12c055e0":"运行次数","bea5756b18644ccfab01c1c0dbd6fa9db7103379":"返回自开始以来的运行数量","7d500ebe352ccfa932b253e21938813a06fcff8e":"Webhook URL: %1","e770fd2a6b980a0815592b1bd499127c5a5cfe39":"给 URL 发送 POST 请求","a35646754dbe7a9211ba8b81338a5d64580eb276":"空负载","69b0648eddd207cd45a9e1ba973dae287b535576":"负载：","c67ded6b64019212eb2bc69afd761f5b3f626040":"给数字添加符号，以制作障碍抵消。","569bbd757e1bb8bbccd250b98dc2bb37cb47b787":"市场","74751e67c3e1010c343095eaf543e7cb21ced2ef":"交易类型","1f4698382842477e211eb46de81fa506f01a8c34":"两个","c1baf816aac5a5cd849768773fc248cd249dc296":"合约类型：","c93025710d1ae6cbaf8e710f63eca8edfa0c9399":"默认蜡烛间隔︰","9693aeaaf68e3929b59b79306feaa0a847d01192":"持续时间︰","78d7103a319e808455d397513279d99f3b3f3768":"投注资金","10c02649e226d430bd75a5b6315a41c0db9992a2":"障碍","837276742aa90209dde3b4eef07d8e7ab26731ef":"预测","258b49925b41751c6bd790a0848246566ba61440":"重新启动买/卖出错","c55ee3445cd391ab299b6f85a6ea9a68a65ea64d":"此功能禁用，以便改善性能","b410994b67e37d9516eb9b866c85a8c639f79e68":"重新启动最近交易出错","2260c5a971c2602834ef8feeb5fa522f900b469f":"bot 忽略不成功的交易","cd1495cb4c60266a6abad9024022ae079bf7e416":"(1) 定义交易合约","0745acf92abd7b60598f161717884cc45dab8694":"开机时运行","999e1ade10ff5ee1d115f5a6288bfd2e0d0736e6":"定义交易选项","a43c3299d30a5bc7e31a574cdc87f59cbc8fe585":"定义交易合约和开始交易，在这里添加初始化。（在开始上运行）","d571f33d957ebcab086ecf38eedd71b6ef0c5820":"交易选项","4d22b565e4253e92a908f216184779679bb1a044":"高障碍","b70c38c6db3127422e05315c30bdf76c7c36c480":"低障碍","a6c5f081b3addee364af1c8cdb84853f49dc8e07":"绝对","0f2ba74929aca6fea950e351dcd576b7cd841fa4":"黑色的蜡烛图线？","7cb3b482ab66947d439642ec64dc7f5bd4e065dc":"列个单子","5925d08228e246f07b790b88ad70c1b73a97d2bc":"蜡烛列表数值","852b438f91ad9eb2cdd84419a675a216d543c687":"读取","67d3b35a0b740127b56bcd44d3bcb1ccc20e0b48":"蜡烛数值","d79d854dcd0829e2177a47beab6a55569e781ab1":"读取（从蜡烛图线列表读取）蜡烛图线的字段","5606b4460ac96063b8a8e5647008f3ec97252fc5":"自Epoch以来的秒数","2de20bdeecb1a8c28bd36fe75f028ed4318d0348":"返回epoch时间（自epoch以来的秒数）","f43cb41af7ce8a69c7aecbc1c603bb0381270982":"运行每个","4b6fe6898f0f956d48a4c8172c6dfbcb4159ab09":"秒","2eea87bb804e4e73e3f8e9c41140f7ed83ea8875":"在每 n 秒内运行程序块","e0af6ddc8a892704f64680bcb22b30c4bfcefec5":"每秒运行程序块已被否决。如有可用的案例，请与我们联系。","7b9c76088576a64f32d67ec335162b9f73eaa026":"以下时间过后运行","ff56ffac023cf69ca5c7f71d407499536f4f86b5":"在 n 秒后运行内部程序块","e9fb732dde76a6977bcaa2818b0f56125b183648":"至日期/时间","1a90ae7cb728e7f25b031d7e844882f75e74ab5c":"至时间戳"}
 
 /***/ }),
 /* 244 */
 /***/ (function(module, exports) {
 
-module.exports = {"3d52a6d8fedcc48a65297c07bf5f7e3e41aab5aa":"Logica","3edf0df49942da6d11a1a217e4d3af4a5a8e64f2":"Matematica","c3328c39b0e29f78e9ff45db674248b1d245887d":"Testo","4d064726954a17487f94e931f5b157b733ec22ed":"Avanzato","a1fffaaafb7cc996685bceb829c053cc4f7de43d":"Elenco","19de69cb601f53a4ea7af22a65c71ae63251365c":"Variabile","2b961dea1dc0c60ddf9a2c8e9d090f6f7d082483":"Funzioni","dc7f77b4ccfc9f70a78bd97303bd10ba4c9d70c8":"Loop","66639f7d455dd71faa9147f5d69e5ce885d8bebd":"Binario","0ba66deaab2f2cd3b0793d03f600ee2b8f577fbc":"Definizione di trade","9201c6ac624e98e168e6ccddbcd5a9b5cdff06b3":"Prima dell'acquisto","44ab9a87268d3fd74040ed0b55c04f83294cfdef":"Durante l'acquisto","c415c9399b7ae7285d2c1c880a6a0aa18f62ff8c":"Dopo l'acquisto","d07ffc19d51f0973859a0d95c1d15cd9f22388ca":"Analisi dei tick","8cf71374fa095a64b5295b672daef8507ec7be6a":"Indicatori","4fa8cc860c52b268dc6a3adcde7305e9415db5bb":"Strumenti","6c82e6dd86807ee3db07e3c82bec1ae1ce00b08b":"Orario","8d8fd6765e184419cad8b88d1a60c895d79578c2":"Candela","548f449b63ff41eaaff5a2d679ffa56b2015fc20":"Misc.","8bf95ea372568c7a254ba9fada5f6f1701ebc5b5":"Registro","12b71c3e0fe5f7c0b8d17cc03186e281412da4a8":"Riepilogo","9feddbabd7e7309e96c590069057158e96baa8f6":"Controllo della situazione","038fe2bdb7ec6ee078f60bdb5bee94654ec6a81d":"Il trading in opzioni può diventare una vera e propria dipendenza, così come qualsiasi altra attività spinta al limite. Per evitare il pericolo di tale dipendenza, ti forniamo un controllo della situazione in grado di offrirti regolarmente la sintesi dei tuoi trade e dei tuoi account.","4152043e8c670075d2c919677e835edb0d923cab":"Indica l'intervallo di tempo preferito, espresso in minuti, per il controllo della situazione","d9fff2df19e90f2c7ea6bb30fde4e0da119d13d1":"Inserire un numero compreso tra 10 e 60.","2439f2f199b2a3e798aa9b4feaa9248bdec9bc0b":"Continua il trading","a72ca256dc49e55a1a57b9a727fbde9834c9a3f7":"Estratto","6e78c91f5a05fc0d4f1a787d38e3d6fe2f856d46":"Esci","4832e45812a2724f16a15f9ae87adfc8ae4168cf":"Contattaci","f7c400ed695f898b8ee9d21664aa17b5bb693828":"Accedi","5ea75f1605a4bf1db5c39fcc61854627478c0a7d":"Reimpostare i blocchi al loro stato iniziale","f98595d541778d86f75ef22b3328a031d20aa16b":"Carica nuovi blocchi (file xml)","4a1e616226c329a94da7768bc0435a3284478010":"Salva i blocchi esistenti (file xml)","6b3465ace62f33f0687b4669ac26d95895e9ca52":"Collega Binary Bot a Google Drive per salvare e riutilizzare con facilità i tuoi blocchi","8e4ec2c451ec7b1bf68d72fe9086ec978e41feb7":"Annulla le modifiche (Ctrl+Z)","937f5055f05be359ddf619744e8af4d643549e80":"Ripristina le modifiche (Ctrl+Shift+Z)","8406d1cce44230835932060649e999ca3283b413":"Ingrandisci (Ctrl + +)","1109673172af2c173c492622ff8a72c8f29f0e70":"Riduci (Ctrl + -)","44c22002c65d2871331263a23c3e09c0a1bfd847":"Disponi in verticale","ebd0945359e5578ff9bd3a2ab490ca84c225d8f5":"Mostra/nascondi il pop-up con il riassunto","76bb05950f80f3a88ee05ef3276c5934fd355e8d":"Riproduci il bot","ba50a42d8d3228c37a817865fce49fbca692c2ad":"Ferma il bot","4f4aa4117318a8ddf8783885d4f3542c5b2733bd":"Mostra registro","91017ef9b165cd0e7475a770f318ea5e705e1321":"Mostra grafico","c89e3dd1cafcadcc0312e476ab58b2332209da23":"Mostra Vista trading","b02c858e72be118a65c9393930351012b647cb9e":"Mostra/nascondi intestazione","250be77f7605669a0b3d968b9ed381a3d9787ed1":"Apri un file XML già salvato e recuperane i blocchi","ff29ccd7a6c6073cc462ed590d27a91632fdf67e":"Binary Bot","608061fb5aab975013fa70c5c814a1d8ba30c152":"Negozia nel modo in assoluto più efficiente","e4ce8dc3e416e69262ba642dc57d3975d6616980":"Sei interessato ad automatizzare le tue strategie preferite per il trading in opzioni binarie?","f261237ca8beec6f77b76c4121feb8da22818c56":"Binary Bot è il nostro strumento di programmazione all'avanguardia che ti consente di costruire app di trading con una semplice funzione \"trascina e rilascia\" come un puzzle.","f6c85c68616eeaaa15fcd53fdc52f6eb5c886357":"Sogna un qualsiasi numero di robot per il trading binario, da formule incredibilmente semplici ad algoritmi estremamente complessi. A questo punto lascia fare trading per te, anche mentre dormi.","e6906a0d1c28b202f9bd49da4a6abbddca57399a":"La cosa migliore è che dopo che hai creato un robot, possiamo aiutarti a venderlo ad altri trader di","1dd0cf79c572bcdbdfabbd54ee95710a21234d73":"Shop di Binary.com","abeef9a35ae6256796ba2462e4f64d308de42359":"Ricevi l'80% dei ricavi delle vendite da ogni acquisto del tuo bot nel nostro app store.","0606f0b7763ee6e8094a3dab7873d34c08fd3670":"Inizia a costruire un bot ora","221acaf3a0290adafe08cdcb8c66121c73d8b4a3":"Hai bisogno di ulteriore assistenza?","d635b53e59c9aad8c5d78458826beffb029b27bf":"Grazie, ti invieremo una risposta entro 24 ore","1de91e827ec70ca735abc2c71b0a89cb0cfc4ce1":"Il mercato sottostante non è stato selezionato","50050f06645ad2743165b429a8f7deebd285fd63":"Non è stato selezionato il tipo di contratto","6a7d1a3a17c4e8ae6712cb60d46db1edf0aa2667":"Effettua il login","2f9f9096be1a1c0569a9ce54e57f0420f6b3c2e9":"La durata deve essere un numero intero positivo","4df6e872792d72aea8a2f6b831d00b554464da23":"L'importo deve essere un numero positivo","001e68df3a4b32a4d57148d9d407f44eee3b7436":"La candela in questione non è valida","04f14ea7c92e0b2b5ae005c696245063ec641d66":"L'elenco di candele selezionato non è valido","c1bbfcbb4f57d3a56c1239af0c2138321589efd2":"nuovo tentativo tra","57b453bb26b1c28dfe362b7cc9f17f0be93dd581":"Tasso massimo raggiunto per","094628ce13fc0e78f07b697d1cc9421bb2edd666":"Richiesta fallita per","816c52fd2bdd94a63cd0944823a6c0aa9384c103":"No","5397e0583f14f6c88de06b1ef28f460a1fb5b0ae":"Sì","9bb396940adb9705fe57eba6ea8b578e6aafa792":"Payout","78d7103a319e808455d397513279d99f3b3f3768":"Puntata","bbb930cc426507ed3f6b7c343c75dd0e041494b7":"estratto","e6e886cdcdefeb6d3edb4c31bed06dd183ac4153":"chiedi prezzo","50e72909992bdc37c7c07769d1b7efac5e52874c":"payout","ecb5ba7044417916ba12de5fa9e6fccac3e5d475":"profitto","c980b910204c7babdffe8ff3f7e755f30133383c":"tipo di contratto","a726c6955157f1b8b92f9932652434a7150f80f8":"spot d'ingresso","a66d5c7ef2c63dbc9a8f9e6ae4e2bc575e74a36e":"valore iniziale","7674920c033ca14277c577e19c037a6754d4fa80":"spot d'uscita","e8b8bd9f2eabc12875605a37c93e7f04a713fcb8":"valore finale","779455ee3bde8494d9629b353e17b19e92357ba8":"barriera","37a5301a88da334dc5afc5b63979daa0f3f45e68":"risultato","4973f4c599d5f42cf7bde52d66c3ed8ef77accb1":"Vincita","12e24a7d8ac40579e8a0aef4869288afe7ed6745":"Perdita","563339f82447b4e758ad76d5a0b63b5698594fba":"Aumento","5c1ae82c29543ac887703776bf3da2c7dcce683d":"Diminuzione","2fc096bb7b6596ab243d0286c9f43fdf2b9b406d":"Nessuna variazione","ecb252044b5ea0f679ee78ec1a12904739e2904d":"stringa","53b0a1b2fadf4e040cdc2155a7340de24aca93cb":"numero","bc74f4f071a5a33f00ab88a6d6385b5e6638b86c":"verde","4c9a82ce72ca2519f38d0af0abbb4cecb9fceca9":"blu","96de5543d183d7de52ac5fa21c46fc811f673f89":"giallo","78988010b890ce6f4d2136481f392787ec6d6106":"rosso","aa9330a16e5b055de809256dad6b4d1cbd2999e7":"Silenzioso","cf84a98d6cf7f156862a08ba8236467b6f471004":"Annuncio","eee2facd669d1434848c24da5527b3e87d9a12d5":"Soldi guadagnati","9d705578b0f1f0ce3a06dc5e82f9a1e6078f81e1":"Lavoro svolto","7f2f6a15cf8da2b27e5a4af47b58e7ad71c0b3d9":"Errore","a3b1583d377f37ac20de7e089edfa0920a078e57":"Errore grave","66c8b6848eee629c4ac551bf2b5fa591571654be":"Aumento pari a","5649dce3367d490fa19d563ee9e3d4c4b6f7c642":"Calo pari a","062787aa328047e189774b3703d983b83938f6e9":"Superiore","b91eed4b7a80cd9572a27e65ebdff9caa4b3b9a4":"Inferiore","e3f139abb7a549a1210b36f7dbf89215ad6c9902":"Touch","7d7932bcc2e262ae98cf09dc5445130fb3881769":"No Touch","a16814a48ec58c2e24ba224a80921a5c02361abe":"Finisce tra","391d02cd75ebcd6ed26f5f45ddf7d40bf13e9dc5":"Termina fuori","534ec5da4e82ec419abc170e1a8448f55a01664f":"Stays In","98cbe1998effd8b1a8aefdcc538573055e99a5f5":"Goes Out","93d13bad1d2c2841db127cb70cc35bfc98059fc9":"Asian Up","c098658ce3d3a258e4d155949a60072966b36db7":"Asian Down","ee2dbd5d6d82d0833069b07e7dd2848d3bf4d83a":"La cifra combacia","8444b7ce28bbc3443cc5cf73359b8353989b2a4b":"La cifra differisce","9e767ad03e5547f251044e0724dc1d9f3e75aeed":"Pari","dc28f5f3c65ec611f0f30022650d24382d27448e":"Dispari","18a63f5512afb5573e5b44deba78d629f0635317":"Sopra","2a268b89b83f8cb38ea48e46e93dd8840db512f9":"Sotto","2155c8b38181dd2552e84a94049aacd33ef9c607":"Tick alto","1408cfd2b064b923f024fbe590e27db8282941a5":"Tick basso","b86eb15dc4f13e4c2972de158d3038d9f657242f":"Reset Call","669a1f3d9a8f601a84da536cfdad1de4092b1926":"Reset Put","844d1a5c99a0a668383340cc095d040eef998c79":"Solo ascendente","87293a146cd481a2b30cf74282ec061dc4cf0735":"Solo discendente","cf9b77061f7b3126b49d50a6fa68f7ca8c26b7a3":"Apri","b1a5954a483f8f8b0207385095f74aeb409b3f80":"High","a124947cbd2d1d92b47e027274c3269ff0c7a84b":"Low","bbfa773e5a63a5ea58c9b6207e608ca0120e592a":"Chiudi","1173872a4fb205b713702f0eec5cf2c732c828fd":"Orario d'apertura","808d7dca8a74d84af27a2d6602c3d786de45fe1e":"Default","62957ecfdc50957e8957c11d2eae74d078f0ef1a":"1 minuto","1dd3e663dfa7ac9cb77cfddd2cf8ac700657e2d6":"2 minuti","24e46784cbce32443db5a2638b1a7d3201543e9b":"3 minuti","3aa5819ed8a0b94d0f293db8e9c9598298ddd402":"5 minuti","a6f151883b736f0470d33492e61c72a7d059d065":"10 minuti","899761ff5425abd2ee214fa7aa46e27c6c8b5aae":"15 minuti","31bbe8890d28d183f8f7f2c160fa892c444c0ec7":"30 minuti","f030c3d667652646b86732ad7bc67e226c49cd3a":"1 ora","2046e49e33c040e08dbd6fd83df3e1846015e6f1":"2 ore","7b47150d431db70d783724007f07ab894eb8ac2e":"4 ore","191800b7e9a48680792c0dd77cb6cac00c4514c6":"8 ore","2d8a6f7c34468578640b333b8650131de06ac770":"1 giorno","f94510322ecd9b3a2af67a10bd51ecc4ac6a24e7":"Up/Down","c1365a35e99d0f9147ebc72f21534cf471fa7d95":"Alto/basso coincidono","9c7960c6b11d35ac9d6cdc1ebaad3af43b2065c5":"Asiatiche","2260ce49306460c8a2ef501939f29ad6ddd4e934":"Cifre","0186aa73a1b75fa8f0eb98bbd9ad01102bb09ec1":"Touch/No Touch","f7de1f66f0979667da275b7e8996e805395025a1":"Ends In/Out","a431deecd4c2258097adae418d496fe9a8179fee":"Stays In/Goes Out","256fe245cb7d3d673095f7faaa8c9ff81b985ad1":"Tick alti/bassi","12a3f461cdebbc8f335190413ee6c57442743bba":"Reset Call/Reset Put","e696144fa588782e6d6b2c97e2d3ed1adf52bd5c":"Solo ascendenti/Solo discendenti","91a64e3f83c91acf336c631fba295f297f94c399":"Usa dopo n secondi","024696596f26a4db232fd9e966eadfeb27c0bd1a":"Usa ogni n secondi","c538c170bdc6b0f3bb98dce44a016a2e2d45a6e7":"superiore","85c274929bc0e28eafd3734f2c25046c3b95b36b":"intermedio","346e3ee198e98146993894d3de8ecab1a86c3e80":"inferiore","f16459104f92ab6b38aa265adb4ecbfc3768e303":"Istogramma","e09f635f4e77476c9ca1c37bc9992e9ace3431c1":"MACD","27bed13a88c60350c3de92ec3820e1cc4f7d6ec3":"Segnale","19eabc961735d78f12fc7be906ffcb033853cf85":"Timestamp","68f4145fee7dde76afceb910165924ad14cf0d00":"Messaggio","629777b7d4d610ace6dee24442730f27d7d0853e":"Il file non è supportato:","beb040c8fabd007c9cc5ac6a9feb6bdb05d33dac":"Le modifiche non salvate andranno perse.","410bf23a3f080def9c7a976a16305bcde7943ed1":"Sei sicuro?","e99811bd3b1ad17e74614060ecb180602be35ad6":"Sei uscito!","3b26e990d3acff493ee2cf66d1280bed2625e43f":"Connessione persa prima di ricevere la risposta dal server","876f3e0202ca40dedf2e5ab6577eba1ae637fb53":"Strategie","8ce80462febd4d573cb2f9c1984fdc93b7c21c57":"Si è verificato un errore nel caricamento delle librerie di Google Drive","7f412a8cf67f755d3eb36846dd07148ceb8d4c72":"Impossibile caricare i blocchi di Google Drive","3b6bbab905129dd36b8d4e99947fa30540ed7b2a":"Formato file non riconosciuto","3d6b44df6eaf6236b4abc1aadcf8f5b1cda769c1":"Si è verificato un errore nel recupero dei dati da Google Drive","cdfe947b0c089a4a1f78c11299f25c32a124f1a6":"Selezionare una strategia di Binary Bot","2db43c69a4b96454914f0b8272bc869984529e6e":"Si è verificato un errore nella creazione dell'elenco di file da Google Drive","0dcea5f584938e0fff00084b83156ab31d641ab3":"Si è verificato un errore nel recupero dei file da Google Drive","18da95988117ff029393f3f5c881d70ef47f7385":"Si è verificato un errore nell'elaborazione della tua richiesta","04226bcf91195130e25fe7a8e8ea4d3e058efcb7":"Seleziona una cartella","aee24f2456ea8516b024a5d3e2b815ae7f2239d9":"Impossibile inviare la notifica su Telegram","05754ed14275a070a20a1d5cd65f0cea66f1da7f":"Le proposte non sono pronte","79222cd9892a434aa61fc7dc01c3839951eb8d1e":"La proposta selezionata non esiste","6ea4a034747d020b1d8ce4848def95d537555dd6":"Comprato","89f89c02cf47e091e726a4e07b88af0966806897":"ID","1200c1af2f7bba4e29a34112865662748c9d41df":"La rivendita non è disponibile per questo contratto.","62d6180e55905f7b996d442c53631981a4ef8b5b":"Venduto per","ed4978867de1da05b336b724a3fb96222a29ebec":"L'indice deve essere un numero intero positivo","87e2e01f93d25ba7ed582cc81ef5c9ab2959f4c6":"Volume del profitto","b2a4553586d1062c21323bca1dc0589f7a9d5cf7":"Volume della perdita","46fc6f27a835486d63d9e927c6687e4508cb3087":"Numero massimo di trade raggiunto","9202ddae4cea16513e53bbc965d88ed975e59512":"Importo massimo della perdita raggiunto","5f52b397b7e5f538681f0f5717a88aa626349c7a":"Bot.init non viene richiamato","85dfa32c97d8618d1bea083609e2c8a29845abe5":"Account","d847919a30d31c0be624087f3370492b3fdf80c6":"N. di utilizzi","5cd6978d63540c8a490ef76f43219de6362f958e":"Puntata totale","17410d7b62b8b1de981cfebada24632987edf186":"Payout totale","b841eeb091f1ff0e14be08e5ea1b93e4cf147ed3":"Profitto/Perdita totale","90eef613042c5a51f542421065b68b886d473807":"Saldo","db1c784524e1b54011a95823026161f7c8517fe0":"Riferimento","4db3e9e4aecd187db9339a10d2629fef46724dc4":"Tipologia di trade","1bb4086b66659d8580f9be4beef69931aeea3cad":"Prezzo d'ingresso","8bf249c4855e591964bd5bdd35c8ef2ee107342d":"Prezzo di uscita","ba7be969e7c1bb5f22489e843478e3d721aaa843":"Prezzo d'acquisto","772fbced18230220d2d9be1456be16fc1b271d25":"Profitto/Perdita","bae7d5be70820ed56467bd9a63744e23b47bd711":"Stato","96f608c16cef16caa06bf38901fb5f618a35a70b":"In sospeso","7fb3a9b5101bcd45e2dca077191693a5199bafa9":"Concluso","82a82f798dd773717ec37d15fd4405510291734e":"Il bot non è in esecuzione.","6a88e58aa1798626f94cf17f1a91618b405bb289":"Il bot si sta avviando...","624cc7f40b68faace7e78d8e5c5be1d4f15facda":"Il bot è in esecuzione...","788180a6ddbbbcca10f6f49d8e85d557934bae0e":"Il bot si sta interrompendo...","d907a40a4a15da3c21a6e0f8ace3f987d482f92c":"Il bot si è interrotto.","4f219c17ab9ab76aa1cd431b4e0e5ecf5520e8e4":"Tentativo di acquisto in corso","4684ee1026d9b4c872d016c3c4588a0c479a451c":"Acquista corrispettivo","ca92c55b9e4233d771d5b6300fe751a9678d1deb":"Acquisto effettuato","f02760cd2eac28169f0a990c950c3dfe8427f772":"Contratto chiuso","66c7734789e19cbeef3a5ac185ea732139aed213":"Grafico","3b662fb2e8bafce29aa98321b18874bb44905488":"Integrazione di Google Drive","7ee0ff5eaa6fa82bd6d83a2f4ca446c663f097cb":"Il numero massimo di trade consecutivi deve essere compreso tra 1 e 100","93039e609d94a24f3572b794a31b21525a09af2b":"Non impostato","ea67c8023c75375484f3a5f1aeb009b20059d5bc":"Limite giornaliero sulle perdite:","b1946e5b4b78465b7661fd4bc89ff52de6c633e7":"Numero massimo di trade consecutivi","952f375412e89ff213a8aca383d18e5691354347":"Inizio","9f1c61cc03f3ef9324db05502f7f0b61e61e1521":"Limiti del trading","095ba68888b5ace5f4515f5acab76dfa1073544e":"Il mio computer","ddcb77ff769ea54ca622848f6bedd4004fa4f4fa":"Carica","248e224f533752db28a1aab3519a58569ad96140":"Carica blocchi","c7097e97dcc446ca889d3ca6be733a65e2728afe":"Il caricamento su Google Drive è stato effettuato","3218e5a460e82d7bdea9ce0f145cab2f47ba9a4b":"Salva come raccolta","611ebbfb080284312904de925ef0f75f4cb56ad2":"Salva blocchi e impostazioni per utilizzarli in altre strategie","efc007a393f66cdb14d57d385822a3d9e36ef873":"Salva","a638caa8ab2b7ff7980a571334217339e6d1d634":"Salva blocchi","39fca63515c105918f03e4908ec12df675b07f92":"Trading View","fadc0ef93d1ff13370524ce8481ddc4a71195934":"Disponi in verticale","e4458464df6cbb8da1134875ba51519c5d244d9f":"I blocchi devono rimanere all'interno dei contenitori di blocchi, blocchi principali o funzioni","e9c45563358e813f157ba81b33143542165ba84e":"Attenzione","31cb6f44d030abeabcc7046555dea851602a87a5":"Questa strategia non è disponibile nel tuo Paese.","9ce3bd4224c8c1780db56b4125ecf3f24bf748b7":"OK","af145748c9cf765a3b059eec20cb1dbb899297d8":"I blocchi sono stati caricati con successo","a479c9c34e878d07b4d67a73a48f432ad7dc53c8":"Scarica","f1d8b7b118d6f82f95614d476bc11af650aed3bc":"Impossibile caricare il file di blocco","11ee9c5d534cc8d22651092222b532917594161a":"La durata minima è","5283ac04c9a8ba8a937d1edb4ba986aeefce8bf1":"Il numero di tick deve essere compreso tra 5 e 10","ace1342bc3720b77ce510b93074041e7386d209e":"L'orario di scadenza non può essere uguale all'orario di inizio","fed3e7bd6696fb97a12d720845ab5388456bfc3b":"La previsione deve essere una cifra","d466687f90ba548434d65186d11a80c4204f9ad6":"deve essere aggiunto all'interno:","6ddf2b3075ac9ab5d66b40e15ea9a34c087672ea":"deve essere aggiunto all'interno","33aa6ff282ee509d37c6f758274c9156b419ff73":"La strategia selezionata non è valida.","da162a909c2981ed318d23cd9a6be1d66e0a8400":"Formato di file non riconosciuto.","5e719fa76e1b6cb396376c82ebdd04bec7253229":"Per caricare blocchi da remoto devono essere una raccolta.","b0d2de25daf6ba09a5e710c6968ffded29c4dae1":"Impossibile caricare il file di blocco.","df84a88f38b03b5b342362d72370b0d66afdae35":"La destinazione deve essere un file xml","cd680fd936e9559ef1d95efac7a71680e2b13a89":"Questo url è già stato caricato","34c59389053701a04127f74d32315e0206e076f8":"Si è verificato un errore durante il tentativo di caricare l'url","3ead0b14c72503187691a7a6d7121987299bd401":"Non si tratta di una versione ufficiale di Binary Bot, utilizzare a proprio rischio.","27401c9c8e476d659c8382e05c6d70a4a82be468":"Versione ufficiale","bc981983e7f547dc62e19a1e383acfe00782a6d5":"Avanti","b52b36b7269fbfc58ec24bb724691951a3decbe8":"Indietro","e9b450d14bc2363d292c84f17cfad5cfbd58a458":"Fatto","29cadadfebdd578a50b7b3d1b2c5b33e424d5de7":"Fai un tour veloce","a48e81d4a8da67637b46725824177a959fe99b21":"Sei pronto per imparare a utilizzare Binary Bot?","6f3e6ebf249947cec4f64117253a8fe43335ae79":"No, grazie","fcb6e90e7223e1d1d735f15dbb7ded9d81bbe7ef":"Non chiedermelo più.","4ca0a75c2b7fa7da4364d03b72c46fee1860a2bf":"Area di lavoro","5fcf29b9f0b8971c8148e70a150ddc9ac04c94fc":"Trascinare e rilasciare i file di blocco.","ddcbb5361b1a16eba60fca2383fb297bb90ed9b3":"Scarica degli esempi di strategie","1758356db21759f7c5a0da9b4dd1db8fd6feab3f":"o","00b581632c1532969a7128ebc8eae936ed8af04e":"crea le tue strategie.","d171baee235d4c93f63755a876782dc5be4c3e47":"Scatola dei blocchi","056f19272d96f902c38207cf163ea8dbff7fbd32":"Aggiungi più blocchi al tuo robot da qui.","36bae31694f85bd7a5b0ad45e51ef622b95baadb":"Account","f5c47fd3b3553b10441a06054078cea745177dea":"Prima di avviare il tuo robot, effettua il login. Testa sempre le tue strategie con l'account virtuale.","fd825ae94aa79500a878dd4590a4b360e7162663":"Comandi del robot","6ee7980833e1ed72901b919ffd0fa20e1a251d3f":"Controlla i tuoi blocchi. Per ulteriori informazioni, mantieni il cursore su ogni pulsante.","f5169c84497de3aea74f7da9e7e177d1427e736b":"Buon divertimento!","4f1b3d682c2a00b393c33637da402463bc11d5ff":"Desideri segnalare un problema o chiedere aiuto?","0049f8894e41937ebb9111cd3def6749049fb50f":"Clicca qui","aac1569ccf6b1a11b0ad0fbefdb9ffc777b4c733":"Clicca per selezionare","53adebdc2b1cbbedb56395b19a73fe47b87cc554":"Tick","5fb1db527825d2996e37c655e5dec49d4da80c09":"Secondi","092f99ea11a34a8490e7a767a83a42fc45634f82":"Minuti","9e25a34e635a123f8958bbe26e7c4843278597fb":"Ore","f6bb0f468a8569c67b3d6826e57e62c5500c3681":"Giorni","d1a17af19f5388af9d6596cc0ea7dbb1d739e255":"Non disponibile","db6708630fc646eb98298d9acd701e0a1ac051c2":"Salva blocchi e strategie su Google Drive","85538d002a336c5addef8d189d80976cf7758f8c":"Hai effettuato il login come","b65463cb6a42a17de514acc4659f7fd331e0876a":"Connetti","ed28e0686e1251ba046f582a3e9ec02470a5e78d":"Disconnetti","cd5f85b6f187605f82386eacd680f93820af8d11":"Il risultato è","1e38ce3d180cefae485a6986ca7c67841e30376f":"Vero se il risulta corrisponde alla selezione","5c89497fc3c128e2ff865ce8df15356054f2c028":"(4) Ottieni il risultato del tuo trade e negozia di nuovo","14ea81918758c994cbe3178e695e56afc1ef2b45":"Ricevi le informazioni e i risultati dei trade precedenti, poi fai di nuovo trading (Funziona con trade completi)","5098e2bcc96ee227983c9f7eeddfd226c220ca00":"Dettagli del contratto:","251c830f8f869e0887e8b4dc4c30ba1738c7097e":"Leggi un'opzione selezionata dall'elenco dei dettagli dei contratti","b3b543c80063a116ced4965d8537b7b62d14c0b7":"Negozia di nuovo","a1eeb7c1e92e9a5d9323ed8ebd7ca7ffed8b0232":"Esegui nuovamente il blocco dei trade","da3105e38c42a481ad7230ed393b0e12bebe9c4f":"Chiedi prezzo","343fda69c73b78b84967055aae97f790c422adfd":"Chiedi il prezzo per la proposta selezionata","d4d34ce9d9dd7e87213469f88cb7ac43725675d5":"(2) Osserva e acquista il tuo contratto","fb61a3c71f4c488b3b470cb7daf502a3e9b5ad48":"Osserva il flusso di tick e acquista il contratto desiderato (Funziona sull'aggiornamento dei tick)","87da93a46d143f6019979b3548414d9d7adabb35":"Payout per la proposta selezionata","160f06d4799c85021a810f68c5b517eea37a2737":"Acquista","4c2fdde3d9c1950498ed263d6ce21d4bf3d0800b":"Acquista il contratto selezionato.","ca5586bdb5bdc1a2c0baf53ed0ecd21fafabebe7":"La vendita è disponibile","03bad10717e183b24829baf483dc715e1a44bf7b":"Vero se è disponibile la vendita al prezzo di mercato","2c71ed279a402e93312dbda173ab18f244d6bf46":"(3) Osserva e vendi il contratto acquistato","17632a9f51611d2579d95b4b1ccb9476566d7ccf":"Osserva le informazioni del contratto acquistato e vendi sul mercato se disponibile (Funziona sull'aggiornamento del contratto)","579607dc4f989ce2b94b558431666a0ab07ac1f3":"Vendi sul mercato","e20afd5cf3811a42071c9a312abb2afdad4c590b":"Vendi sul mercato.","4712cbff8e92822fc960ef9c0197293a19675eae":"Profitto/perdita della vendita","df817b48c7a076561b4f8bedc52d65d2e351ab52":"Restituisce il profitto di vendere sul mercato.","b44e884c355e447d0da0e6ba45caaff18c84373b":"Bande di Bollinger","d6a2a207343bd83aacdc80b579ff4419713a256e":"Elenco di input","170a28a9db6d27d7212fc6dc249434a57517e7bc":"Periodo","b833989d69900a4be9e32d1bab65c8f8233f099e":"Std. Dev. Up Multiplier","1cee82f19c0bedef64f68b32e6b02128efe7c61b":"Std. Dev. Down Multiplier","974da601086448d0060aeed90e53ddd5acd17b91":"Calcola le Bande di Bollinger (BB) da un elenco con un periodo","d5b65cac1f1cf9421ac978eebe532de99040cca6":"Serie di Bande di Bollinger","58de49791c64aba14e36e5887244a5ef088286cd":"Calcola un elenco di Bande di Bollinger (BB) da un elenco con un periodo","4bd99f76f1104229744455d93df0ff76b9eeed58":"Media mobile esponenziale","ea615c6d6a74e25a6d2f1bc9980b46e73508c2eb":"Calcola la Media mobile esponenziale (EMA) da un elenco con un periodo","4082d9379e59b38c891d046312f8d3c4b64ae3b1":"Serie di medie mobili esponenziali","562edc102c5dd9e2fbbede1140b8a5461c2d4dc8":"Calcola l'elenco della Media mobile esponenziale (EMA) da un elenco di valori con un periodo","a537f4f3c0f6c68bf896fb23cb2ecdc658488ea2":"MACD Array","b18e572ea14edd48587145f1ef50718adbf256c6":"Periodo EMA veloce","974023bddd6249d0f6404872cfcae205b2599ea2":"Periodo EMA lento","5c2adcb3d1bfd6b9f5c2dec13d02a9473e4445a1":"Periodo EMA del segnale","6b15ce93fd68d80aeee7f7964c1306044c3c1baf":"Calcola l'elenco della Moving Average Convergence Divergence (MACD) da un elenco","95ec92885c855ba9cf734c17a43f081901e4d2cc":"Indice di forza relativa","b033619e108c9e43bfd8a42cd97bf5c5dc86dc65":"Indice di forza relativa (RSI) da un elenco con un periodo","4034de66995b876b2ba9bfd0274025e39168e05d":"Serie di Indici di forza relativa","f9da880c8b0e4cce4431912c24eba939e6bc06e1":"Calcola l'elenco dell'Indice di forza relativa (RSI) da un elenco di valori con un periodo","a9842c95766da40bf4ea6ee263cb5a5985847763":"Media mobile semplice","347775a293c14362d492f019e677c965be1d6e7d":"Calcola la Media mobile semplice (SMA) da un elenco con un periodo","4cc7b9e53d082896ad884eb01be16320af65f282":"Serie di Medie mobili semplici","2c75179a57af3c36581008b65e86ed81c4a4cbea":"Calcola la Media mobile semplice (SMA) da un elenco di valori con un periodo","39f024cf49724fe7ffdea7773c72ed06eec998e1":"con intervallo","e4bed3e67e58b2334ee4b9c6ce59ac7a95d80aaf":"La direzione è","ad47561efb1dcbd7246d9b64487f615647fda036":"Vero se la direzione corrisponde alla selezione","05bef508aadd62bf3967dcf67d769da296f19989":"Direzione del tick","d089ab98a846a521b09aad6ff3fefa728bfa8b42":"Il blocco della direzione è obsoleto, si prega di usare invece il blocco di verifica della direzione","cdb31fc857f01a59f664413498293c714285f46d":"nell'elenco delle candele","20fd5f86f08796f145d69dedc209a27e459b2f51":"ottieni # dalla fine","a96606af8c33ac3428b45abc4782dbf93f458d29":"Ottenere l'ennesima candela più recente","90ed0e1ea5c1907f8a32d8051a66e845857bb2a4":"Elenco delle ultime cifre","248428facb97408414180d4de74e4db35360fbc4":"Ritorna all'elenco dei valori delle ultime cifre","2e4202acde880b7b1c3686f0335ff879fc1e5c7a":"Ultima cifra","e46e0bd2f7fe37217dec8aa26ebce8ffa3608663":"Ritorna all'ultima cifra dell'ultimo tick","d5fde4c9d5edf660f760fc226df4d2678d3334ab":"Elenco delle candele","95e552a40d3446c96905cd3ec7e3d123d0246ce8":"Ritorna all'elenco delle candele","5a0ed227a01b7d30b05dcaf3e1c23b74b9be6ff4":"Crea un elenco di","a4220593d385a720886f7af1ed3c478fd0c6339c":"valori nell'elenco delle candele","cd8cdf3d47e921c8a72addae9269e66041d417c5":"Ritorna all'elenco dei valori delle candele selezionate","3e4f335e7a6f79bd1bafd219ddde30acbf16a7ac":"Nell'elenco delle candele si legge ","34037f9452fdb66c9ca27ebcc0afe9d5139e9e24":"dalla fine","aba43a580daa7f306956ec69b83e6e37e7233126":"Leggere il valore delle candele selezionate nell'ennesima candela recente","e04b522218a181cf0223042dd18ae08dcc22d8d3":"Ultimo tick","6ee445fc253a55c9ed54c009c3f020ac65200d80":"Ritorna il valore del tick ricevuto da un blocco prima dell'acquisto","4b2340a890e88d1886757c3f7172e273a1edc31f":"Questo blocco si verifica su ogni tick","b54d7b4590559dad64f02d09aacbf6d9863e2624":"Puoi utilizzare questo blocco per analizzare i tick a prescindere dai tuoi trade","ebffc758056e6b2fc2af99af17fbc6853e5d3583":"Elenco dei tick","17649cac8739adcae95e641f794880272ad33bd1":"Ritorna all'elenco dei valori dei tick","802dc02469ae51067ca620ff57dfb5bdb3e524ac":"Saldo:","c4ee8e12b2484cd5b47cdf00bfa2c50b83e91d3d":"Ottieni il numero del saldo o della stringa","69280143949fcd59c171dd60f6b6e13d0cc08fe6":"I blocchi all'interno vengono ignorati","d072c2ceeb5c1217722d14c74de7aeab945b4215":"Colloca qui i tuoi blocchi per evitare che vengano rimossi","b06acc4158c824231f727a13e1c9811f43d5be42":"Carica il blocco da","661db37251a1ed1afe357ee13895f37a623d7cbf":"Carica i blocchi dall'url","6c03ee54ad3a51fc92a1d69943e99667847705b6":"Notifica","b1bec5d06e3672915d81b2fbc2347c8b4947a954":"con audio","a2d0c89fdfff3176efd4a443eb0f6607067b93e7":"Crea la notifica","6e0fc122f936f808bc2e3af661121b65712ae855":"Notifica Telegram %1 Token accesso: %2 ID chat: %3 Messaggio: %4","1aeb6caed9e46edf5d6224adc905ffb8ee3a7708":"Invia un messaggio a Telegram","45ebd38f4c641ebf6f72be8c3a79dfa50cf9f20e":"Profitto totale","ffb465875e1ff2b49bcaa7c6b70965ffe39fa59d":"Ritorna al profitto totale","bc528d26f66fe8c4aa4bb24ec9c99dff12c055e0":"N. di utilizzi","bea5756b18644ccfab01c1c0dbd6fa9db7103379":"Ritorna al numero di esecuzioni fin dall'inizio","c67ded6b64019212eb2bc69afd761f5b3f626040":"Aggiungi un segnale al numero per creare uno spostamento della barriera.","569bbd757e1bb8bbccd250b98dc2bb37cb47b787":"Mercato","74751e67c3e1010c343095eaf543e7cb21ced2ef":"Tipologia di trade","1f4698382842477e211eb46de81fa506f01a8c34":"Entrambi","c1baf816aac5a5cd849768773fc248cd249dc296":"Tipo di contratto:","c93025710d1ae6cbaf8e710f63eca8edfa0c9399":"Intervallo predefinito delle candele:","9693aeaaf68e3929b59b79306feaa0a847d01192":"Durata:","10c02649e226d430bd75a5b6315a41c0db9992a2":"Barriera","837276742aa90209dde3b4eef07d8e7ab26731ef":"Previsione","258b49925b41751c6bd790a0848246566ba61440":"Riavvia acquisto/vendita in caso di errore","c55ee3445cd391ab299b6f85a6ea9a68a65ea64d":"disattiva per una performance migliore","b410994b67e37d9516eb9b866c85a8c639f79e68":"Riavvia l'ultimo trade in caso di errore","2260c5a971c2602834ef8feeb5fa522f900b469f":"il robot ignora il trade non riuscito","cd1495cb4c60266a6abad9024022ae079bf7e416":"(1) Definisci il contratto del tuo trade","0745acf92abd7b60598f161717884cc45dab8694":"Esegui una volta all'inizio","999e1ade10ff5ee1d115f5a6288bfd2e0d0736e6":"Definisci le opzioni dei trade","a43c3299d30a5bc7e31a574cdc87f59cbc8fe585":"Definisci il contratto del tuo trade e inizia il trade, aggiungi qui le inizializzazioni. (Esegue all'avvio)","d571f33d957ebcab086ecf38eedd71b6ef0c5820":"Opzioni di trade","4d22b565e4253e92a908f216184779679bb1a044":"Barriera superiore","b70c38c6db3127422e05315c30bdf76c7c36c480":"Barriera inferiore","a6c5f081b3addee364af1c8cdb84853f49dc8e07":"Assoluta","0f2ba74929aca6fea950e351dcd576b7cd841fa4":"la candela è nera?","7cb3b482ab66947d439642ec64dc7f5bd4e065dc":"Crea un elenco di","5925d08228e246f07b790b88ad70c1b73a97d2bc":"valori della lista di candele","852b438f91ad9eb2cdd84419a675a216d543c687":"Leggi","67d3b35a0b740127b56bcd44d3bcb1ccc20e0b48":"valore nella candela","d79d854dcd0829e2177a47beab6a55569e781ab1":"Leggi un campo in una candela (leggi dall'elenco delle candele)","5606b4460ac96063b8a8e5647008f3ec97252fc5":"Secondi dall'epoca","2de20bdeecb1a8c28bd36fe75f028ed4318d0348":"Ritorna all'orario epoch (secondi dopo epoch)","f43cb41af7ce8a69c7aecbc1c603bb0381270982":"Usa ogni","4b6fe6898f0f956d48a4c8172c6dfbcb4159ab09":"Secondo(i)","2eea87bb804e4e73e3f8e9c41140f7ed83ea8875":"Usa i blocchi all'interno ogni n secondi","e0af6ddc8a892704f64680bcb22b30c4bfcefec5":"Il blocco dopo ogni secondo è stato disapprovato. Se hai un valido caso per utilizzarlo, contattaci.","7b9c76088576a64f32d67ec335162b9f73eaa026":"Usa dopo","ff56ffac023cf69ca5c7f71d407499536f4f86b5":"Usa i blocchi all'interno dopo n secondi"}
+module.exports = {"3d52a6d8fedcc48a65297c07bf5f7e3e41aab5aa":"Logica","3edf0df49942da6d11a1a217e4d3af4a5a8e64f2":"Matematica","c3328c39b0e29f78e9ff45db674248b1d245887d":"Testo","4d064726954a17487f94e931f5b157b733ec22ed":"Avanzato","a1fffaaafb7cc996685bceb829c053cc4f7de43d":"Elenco","19de69cb601f53a4ea7af22a65c71ae63251365c":"Variabile","2b961dea1dc0c60ddf9a2c8e9d090f6f7d082483":"Funzioni","dc7f77b4ccfc9f70a78bd97303bd10ba4c9d70c8":"Loop","66639f7d455dd71faa9147f5d69e5ce885d8bebd":"Binario","0ba66deaab2f2cd3b0793d03f600ee2b8f577fbc":"Definizione di trade","9201c6ac624e98e168e6ccddbcd5a9b5cdff06b3":"Prima dell'acquisto","44ab9a87268d3fd74040ed0b55c04f83294cfdef":"Durante l'acquisto","c415c9399b7ae7285d2c1c880a6a0aa18f62ff8c":"Dopo l'acquisto","d07ffc19d51f0973859a0d95c1d15cd9f22388ca":"Analisi dei tick","8cf71374fa095a64b5295b672daef8507ec7be6a":"Indicatori","4fa8cc860c52b268dc6a3adcde7305e9415db5bb":"Strumenti","6c82e6dd86807ee3db07e3c82bec1ae1ce00b08b":"Orario","8d8fd6765e184419cad8b88d1a60c895d79578c2":"Candela","548f449b63ff41eaaff5a2d679ffa56b2015fc20":"Misc.","8bf95ea372568c7a254ba9fada5f6f1701ebc5b5":"Registro","12b71c3e0fe5f7c0b8d17cc03186e281412da4a8":"Riepilogo","9feddbabd7e7309e96c590069057158e96baa8f6":"Controllo della situazione","038fe2bdb7ec6ee078f60bdb5bee94654ec6a81d":"Il trading in opzioni può diventare una vera e propria dipendenza, così come qualsiasi altra attività spinta al limite. Per evitare il pericolo di tale dipendenza, ti forniamo un controllo della situazione in grado di offrirti regolarmente la sintesi dei tuoi trade e dei tuoi account.","4152043e8c670075d2c919677e835edb0d923cab":"Indica l'intervallo di tempo preferito, espresso in minuti, per il controllo della situazione","d9fff2df19e90f2c7ea6bb30fde4e0da119d13d1":"Inserire un numero compreso tra 10 e 60.","2439f2f199b2a3e798aa9b4feaa9248bdec9bc0b":"Continua il trading","a72ca256dc49e55a1a57b9a727fbde9834c9a3f7":"Estratto","6e78c91f5a05fc0d4f1a787d38e3d6fe2f856d46":"Esci","4832e45812a2724f16a15f9ae87adfc8ae4168cf":"Contattaci","f7c400ed695f898b8ee9d21664aa17b5bb693828":"Accedi","5ea75f1605a4bf1db5c39fcc61854627478c0a7d":"Reimpostare i blocchi al loro stato iniziale","f98595d541778d86f75ef22b3328a031d20aa16b":"Carica nuovi blocchi (file xml)","4a1e616226c329a94da7768bc0435a3284478010":"Salva i blocchi esistenti (file xml)","6b3465ace62f33f0687b4669ac26d95895e9ca52":"Collega Binary Bot a Google Drive per salvare e riutilizzare con facilità i tuoi blocchi","8e4ec2c451ec7b1bf68d72fe9086ec978e41feb7":"Annulla le modifiche (Ctrl+Z)","937f5055f05be359ddf619744e8af4d643549e80":"Ripristina le modifiche (Ctrl+Shift+Z)","8406d1cce44230835932060649e999ca3283b413":"Ingrandisci (Ctrl + +)","1109673172af2c173c492622ff8a72c8f29f0e70":"Riduci (Ctrl + -)","44c22002c65d2871331263a23c3e09c0a1bfd847":"Disponi in verticale","ebd0945359e5578ff9bd3a2ab490ca84c225d8f5":"Mostra/nascondi pop-up riassuntivo","76bb05950f80f3a88ee05ef3276c5934fd355e8d":"Riproduci il bot","ba50a42d8d3228c37a817865fce49fbca692c2ad":"Ferma il bot","4f4aa4117318a8ddf8783885d4f3542c5b2733bd":"Mostra registro","91017ef9b165cd0e7475a770f318ea5e705e1321":"Mostra grafico","c89e3dd1cafcadcc0312e476ab58b2332209da23":"Mostra Vista trading","b02c858e72be118a65c9393930351012b647cb9e":"Mostra/nascondi intestazione","250be77f7605669a0b3d968b9ed381a3d9787ed1":"Apri un file XML già salvato e recuperane i blocchi","ff29ccd7a6c6073cc462ed590d27a91632fdf67e":"Binary Bot","608061fb5aab975013fa70c5c814a1d8ba30c152":"Negozia nel modo in assoluto più efficiente","e4ce8dc3e416e69262ba642dc57d3975d6616980":"Sei interessato ad automatizzare le tue strategie preferite per il trading in opzioni binarie?","f261237ca8beec6f77b76c4121feb8da22818c56":"Binary Bot è il nostro strumento di programmazione all'avanguardia che ti consente di costruire app di trading con una semplice funzione \"trascina e rilascia\" come un puzzle.","f6c85c68616eeaaa15fcd53fdc52f6eb5c886357":"Sogna un qualsiasi numero di robot per il trading binario, da formule incredibilmente semplici ad algoritmi estremamente complessi. A questo punto lascia fare trading per te, anche mentre dormi.","e6906a0d1c28b202f9bd49da4a6abbddca57399a":"La cosa migliore è che dopo che hai creato un robot, possiamo aiutarti a venderlo ad altri trader di","1dd0cf79c572bcdbdfabbd54ee95710a21234d73":"Shop di Binary.com","abeef9a35ae6256796ba2462e4f64d308de42359":"Ricevi l'80% dei ricavi delle vendite da ogni acquisto del tuo bot nel nostro app store.","0606f0b7763ee6e8094a3dab7873d34c08fd3670":"Inizia a costruire un bot ora","221acaf3a0290adafe08cdcb8c66121c73d8b4a3":"Hai bisogno di ulteriore assistenza?","d635b53e59c9aad8c5d78458826beffb029b27bf":"Grazie, ti invieremo una risposta entro 24 ore","a69a8fc21499d0fd85e87bab467699827547a5bc":"Inserisci un URL del server valido","1de91e827ec70ca735abc2c71b0a89cb0cfc4ce1":"Il mercato sottostante non è stato selezionato","50050f06645ad2743165b429a8f7deebd285fd63":"Non è stato selezionato il tipo di contratto","6a7d1a3a17c4e8ae6712cb60d46db1edf0aa2667":"Effettua il login","2f9f9096be1a1c0569a9ce54e57f0420f6b3c2e9":"La durata deve essere un numero intero positivo","4df6e872792d72aea8a2f6b831d00b554464da23":"L'importo deve essere un numero positivo","001e68df3a4b32a4d57148d9d407f44eee3b7436":"La candela in questione non è valida","04f14ea7c92e0b2b5ae005c696245063ec641d66":"L'elenco di candele selezionato non è valido","c1bbfcbb4f57d3a56c1239af0c2138321589efd2":"nuovo tentativo tra","57b453bb26b1c28dfe362b7cc9f17f0be93dd581":"Tasso massimo raggiunto per","094628ce13fc0e78f07b697d1cc9421bb2edd666":"Richiesta fallita per","816c52fd2bdd94a63cd0944823a6c0aa9384c103":"No","5397e0583f14f6c88de06b1ef28f460a1fb5b0ae":"Sì","bbb930cc426507ed3f6b7c343c75dd0e041494b7":"estratto","e6e886cdcdefeb6d3edb4c31bed06dd183ac4153":"chiedi prezzo","50e72909992bdc37c7c07769d1b7efac5e52874c":"payout","ecb5ba7044417916ba12de5fa9e6fccac3e5d475":"profitto","c980b910204c7babdffe8ff3f7e755f30133383c":"tipo di contratto","a726c6955157f1b8b92f9932652434a7150f80f8":"spot d'ingresso","a66d5c7ef2c63dbc9a8f9e6ae4e2bc575e74a36e":"valore iniziale","3905be81561384dc8c43d6127c57ed1e0eb03b74":"stringa del valore di entrata","7674920c033ca14277c577e19c037a6754d4fa80":"spot d'uscita","e8b8bd9f2eabc12875605a37c93e7f04a713fcb8":"valore finale","06ecea26625359f7dcf5ff5c47af6174ff815257":"stringa del valore di uscita","779455ee3bde8494d9629b353e17b19e92357ba8":"barriera","37a5301a88da334dc5afc5b63979daa0f3f45e68":"risultato","4973f4c599d5f42cf7bde52d66c3ed8ef77accb1":"Vincita","12e24a7d8ac40579e8a0aef4869288afe7ed6745":"Perdita","563339f82447b4e758ad76d5a0b63b5698594fba":"Aumento","5c1ae82c29543ac887703776bf3da2c7dcce683d":"Diminuzione","2fc096bb7b6596ab243d0286c9f43fdf2b9b406d":"Nessuna variazione","ecb252044b5ea0f679ee78ec1a12904739e2904d":"stringa","53b0a1b2fadf4e040cdc2155a7340de24aca93cb":"numero","bc74f4f071a5a33f00ab88a6d6385b5e6638b86c":"verde","4c9a82ce72ca2519f38d0af0abbb4cecb9fceca9":"blu","96de5543d183d7de52ac5fa21c46fc811f673f89":"giallo","78988010b890ce6f4d2136481f392787ec6d6106":"rosso","aa9330a16e5b055de809256dad6b4d1cbd2999e7":"Silenzioso","cf84a98d6cf7f156862a08ba8236467b6f471004":"Annuncio","eee2facd669d1434848c24da5527b3e87d9a12d5":"Soldi guadagnati","9d705578b0f1f0ce3a06dc5e82f9a1e6078f81e1":"Lavoro svolto","7f2f6a15cf8da2b27e5a4af47b58e7ad71c0b3d9":"Errore","a3b1583d377f37ac20de7e089edfa0920a078e57":"Errore grave","66c8b6848eee629c4ac551bf2b5fa591571654be":"Aumento pari a","5649dce3367d490fa19d563ee9e3d4c4b6f7c642":"Calo pari a","062787aa328047e189774b3703d983b83938f6e9":"Superiore","b91eed4b7a80cd9572a27e65ebdff9caa4b3b9a4":"Inferiore","e3f139abb7a549a1210b36f7dbf89215ad6c9902":"Touch","7d7932bcc2e262ae98cf09dc5445130fb3881769":"No Touch","a16814a48ec58c2e24ba224a80921a5c02361abe":"Finisce tra","391d02cd75ebcd6ed26f5f45ddf7d40bf13e9dc5":"Termina fuori","534ec5da4e82ec419abc170e1a8448f55a01664f":"Stays In","98cbe1998effd8b1a8aefdcc538573055e99a5f5":"Goes Out","93d13bad1d2c2841db127cb70cc35bfc98059fc9":"Asian Up","c098658ce3d3a258e4d155949a60072966b36db7":"Asian Down","ee2dbd5d6d82d0833069b07e7dd2848d3bf4d83a":"La cifra combacia","8444b7ce28bbc3443cc5cf73359b8353989b2a4b":"La cifra differisce","9e767ad03e5547f251044e0724dc1d9f3e75aeed":"Pari","dc28f5f3c65ec611f0f30022650d24382d27448e":"Dispari","18a63f5512afb5573e5b44deba78d629f0635317":"Sopra","2a268b89b83f8cb38ea48e46e93dd8840db512f9":"Sotto","2155c8b38181dd2552e84a94049aacd33ef9c607":"Tick alto","1408cfd2b064b923f024fbe590e27db8282941a5":"Tick basso","b86eb15dc4f13e4c2972de158d3038d9f657242f":"Reset Call","669a1f3d9a8f601a84da536cfdad1de4092b1926":"Reset Put","844d1a5c99a0a668383340cc095d040eef998c79":"Solo ascendente","87293a146cd481a2b30cf74282ec061dc4cf0735":"Solo discendente","cf9b77061f7b3126b49d50a6fa68f7ca8c26b7a3":"Apri","b1a5954a483f8f8b0207385095f74aeb409b3f80":"High","a124947cbd2d1d92b47e027274c3269ff0c7a84b":"Low","bbfa773e5a63a5ea58c9b6207e608ca0120e592a":"Chiudi","1173872a4fb205b713702f0eec5cf2c732c828fd":"Orario d'apertura","808d7dca8a74d84af27a2d6602c3d786de45fe1e":"Default","62957ecfdc50957e8957c11d2eae74d078f0ef1a":"1 minuto","1dd3e663dfa7ac9cb77cfddd2cf8ac700657e2d6":"2 minuti","24e46784cbce32443db5a2638b1a7d3201543e9b":"3 minuti","3aa5819ed8a0b94d0f293db8e9c9598298ddd402":"5 minuti","a6f151883b736f0470d33492e61c72a7d059d065":"10 minuti","899761ff5425abd2ee214fa7aa46e27c6c8b5aae":"15 minuti","31bbe8890d28d183f8f7f2c160fa892c444c0ec7":"30 minuti","f030c3d667652646b86732ad7bc67e226c49cd3a":"1 ora","2046e49e33c040e08dbd6fd83df3e1846015e6f1":"2 ore","7b47150d431db70d783724007f07ab894eb8ac2e":"4 ore","191800b7e9a48680792c0dd77cb6cac00c4514c6":"8 ore","2d8a6f7c34468578640b333b8650131de06ac770":"1 giorno","f94510322ecd9b3a2af67a10bd51ecc4ac6a24e7":"Up/Down","c1365a35e99d0f9147ebc72f21534cf471fa7d95":"Alto/basso coincidono","9c7960c6b11d35ac9d6cdc1ebaad3af43b2065c5":"Asiatiche","2260ce49306460c8a2ef501939f29ad6ddd4e934":"Cifre","0186aa73a1b75fa8f0eb98bbd9ad01102bb09ec1":"Touch/No Touch","f7de1f66f0979667da275b7e8996e805395025a1":"Ends In/Out","a431deecd4c2258097adae418d496fe9a8179fee":"Stays In/Goes Out","256fe245cb7d3d673095f7faaa8c9ff81b985ad1":"Tick alti/bassi","12a3f461cdebbc8f335190413ee6c57442743bba":"Reset Call/Reset Put","e696144fa588782e6d6b2c97e2d3ed1adf52bd5c":"Solo ascendenti/Solo discendenti","91a64e3f83c91acf336c631fba295f297f94c399":"Usa dopo n secondi","024696596f26a4db232fd9e966eadfeb27c0bd1a":"Usa ogni n secondi","c538c170bdc6b0f3bb98dce44a016a2e2d45a6e7":"superiore","85c274929bc0e28eafd3734f2c25046c3b95b36b":"intermedio","346e3ee198e98146993894d3de8ecab1a86c3e80":"inferiore","f16459104f92ab6b38aa265adb4ecbfc3768e303":"Istogramma","e09f635f4e77476c9ca1c37bc9992e9ace3431c1":"MACD","27bed13a88c60350c3de92ec3820e1cc4f7d6ec3":"Segnale","19eabc961735d78f12fc7be906ffcb033853cf85":"Timestamp","68f4145fee7dde76afceb910165924ad14cf0d00":"Messaggio","629777b7d4d610ace6dee24442730f27d7d0853e":"Il file non è supportato:","beb040c8fabd007c9cc5ac6a9feb6bdb05d33dac":"Le modifiche non salvate andranno perse.","410bf23a3f080def9c7a976a16305bcde7943ed1":"Sei sicuro?","e99811bd3b1ad17e74614060ecb180602be35ad6":"Sei uscito!","876f3e0202ca40dedf2e5ab6577eba1ae637fb53":"Strategie","8ce80462febd4d573cb2f9c1984fdc93b7c21c57":"Si è verificato un errore nel caricamento delle librerie di Google Drive","c4c758b5c8f5b3985f6bf7382c848bb44e0a5b74":"Concedi autorizzazione a visualizzare e gestire i file di Google Drive","3b6bbab905129dd36b8d4e99947fa30540ed7b2a":"Formato file non riconosciuto","3d6b44df6eaf6236b4abc1aadcf8f5b1cda769c1":"Si è verificato un errore nel recupero dei dati da Google Drive","cdfe947b0c089a4a1f78c11299f25c32a124f1a6":"Selezionare una strategia di Binary Bot","2db43c69a4b96454914f0b8272bc869984529e6e":"Si è verificato un errore nella creazione dell'elenco di file da Google Drive","0dcea5f584938e0fff00084b83156ab31d641ab3":"Si è verificato un errore nel recupero dei file da Google Drive","18da95988117ff029393f3f5c881d70ef47f7385":"Si è verificato un errore nell'elaborazione della tua richiesta","04226bcf91195130e25fe7a8e8ea4d3e058efcb7":"Seleziona una cartella","aee24f2456ea8516b024a5d3e2b815ae7f2239d9":"Impossibile inviare la notifica su Telegram","3f370309b6280eb100f898426d8605c1f45d558d":"Marca temporale non valida","af6a4e2a5582be89ac930e946eaed86e01cac58b":"Data/ora non validi","49d51398b574e7312d99b18d2b93d2ede416f053":"Impossibile inviare webhook","05754ed14275a070a20a1d5cd65f0cea66f1da7f":"Le proposte non sono pronte","79222cd9892a434aa61fc7dc01c3839951eb8d1e":"La proposta selezionata non esiste","6ea4a034747d020b1d8ce4848def95d537555dd6":"Comprato","89f89c02cf47e091e726a4e07b88af0966806897":"ID","1200c1af2f7bba4e29a34112865662748c9d41df":"La rivendita non è disponibile per questo contratto.","62d6180e55905f7b996d442c53631981a4ef8b5b":"Venduto per","ed4978867de1da05b336b724a3fb96222a29ebec":"L'indice deve essere un numero intero positivo","87e2e01f93d25ba7ed582cc81ef5c9ab2959f4c6":"Volume del profitto","b2a4553586d1062c21323bca1dc0589f7a9d5cf7":"Volume della perdita","46fc6f27a835486d63d9e927c6687e4508cb3087":"Numero massimo di trade raggiunto","9202ddae4cea16513e53bbc965d88ed975e59512":"Importo massimo della perdita raggiunto","5f52b397b7e5f538681f0f5717a88aa626349c7a":"Bot.init non viene richiamato","66c7734789e19cbeef3a5ac185ea732139aed213":"Grafico","3b662fb2e8bafce29aa98321b18874bb44905488":"Integrazione di Google Drive","7ee0ff5eaa6fa82bd6d83a2f4ca446c663f097cb":"Il numero massimo di trade consecutivi deve essere compreso tra 1 e 100","93039e609d94a24f3572b794a31b21525a09af2b":"Non impostato","ea67c8023c75375484f3a5f1aeb009b20059d5bc":"Limite giornaliero sulle perdite:","b1946e5b4b78465b7661fd4bc89ff52de6c633e7":"Numero massimo di trade consecutivi","952f375412e89ff213a8aca383d18e5691354347":"Inizio","9f1c61cc03f3ef9324db05502f7f0b61e61e1521":"Limiti del trading","095ba68888b5ace5f4515f5acab76dfa1073544e":"Il mio computer","ddcb77ff769ea54ca622848f6bedd4004fa4f4fa":"Carica","248e224f533752db28a1aab3519a58569ad96140":"Carica blocchi","c7097e97dcc446ca889d3ca6be733a65e2728afe":"Il caricamento su Google Drive è stato effettuato","3218e5a460e82d7bdea9ce0f145cab2f47ba9a4b":"Salva come raccolta","611ebbfb080284312904de925ef0f75f4cb56ad2":"Salva blocchi e impostazioni per utilizzarli in altre strategie","efc007a393f66cdb14d57d385822a3d9e36ef873":"Salva","a638caa8ab2b7ff7980a571334217339e6d1d634":"Salva blocchi","39fca63515c105918f03e4908ec12df675b07f92":"Trading View","85dfa32c97d8618d1bea083609e2c8a29845abe5":"Account","d847919a30d31c0be624087f3370492b3fdf80c6":"N. di utilizzi","5cd6978d63540c8a490ef76f43219de6362f958e":"Puntata totale","17410d7b62b8b1de981cfebada24632987edf186":"Payout totale","b841eeb091f1ff0e14be08e5ea1b93e4cf147ed3":"Profitto/Perdita totale","90eef613042c5a51f542421065b68b886d473807":"Saldo","db1c784524e1b54011a95823026161f7c8517fe0":"Riferimento","4db3e9e4aecd187db9339a10d2629fef46724dc4":"Tipologia di trade","1bb4086b66659d8580f9be4beef69931aeea3cad":"Prezzo d'ingresso","8bf249c4855e591964bd5bdd35c8ef2ee107342d":"Prezzo di uscita","ba7be969e7c1bb5f22489e843478e3d721aaa843":"Prezzo d'acquisto","772fbced18230220d2d9be1456be16fc1b271d25":"Profitto/Perdita","bae7d5be70820ed56467bd9a63744e23b47bd711":"Stato","96f608c16cef16caa06bf38901fb5f618a35a70b":"In sospeso","7fb3a9b5101bcd45e2dca077191693a5199bafa9":"Concluso","82a82f798dd773717ec37d15fd4405510291734e":"Il bot non è in esecuzione.","6a88e58aa1798626f94cf17f1a91618b405bb289":"Il bot si sta avviando...","624cc7f40b68faace7e78d8e5c5be1d4f15facda":"Il bot è in esecuzione...","788180a6ddbbbcca10f6f49d8e85d557934bae0e":"Il bot si sta interrompendo...","d907a40a4a15da3c21a6e0f8ace3f987d482f92c":"Il bot si è interrotto.","4f219c17ab9ab76aa1cd431b4e0e5ecf5520e8e4":"Tentativo di acquisto in corso","4684ee1026d9b4c872d016c3c4588a0c479a451c":"Acquista corrispettivo","ca92c55b9e4233d771d5b6300fe751a9678d1deb":"Acquisto effettuato","f02760cd2eac28169f0a990c950c3dfe8427f772":"Contratto chiuso","fadc0ef93d1ff13370524ce8481ddc4a71195934":"Disponi in verticale","a479c9c34e878d07b4d67a73a48f432ad7dc53c8":"Scarica","e4458464df6cbb8da1134875ba51519c5d244d9f":"I blocchi devono rimanere all'interno dei contenitori di blocchi, blocchi principali o funzioni","e9c45563358e813f157ba81b33143542165ba84e":"Attenzione","31cb6f44d030abeabcc7046555dea851602a87a5":"Questa strategia non è disponibile nel tuo Paese.","9ce3bd4224c8c1780db56b4125ecf3f24bf748b7":"OK","486d55264892207fef1ed5799e0b213b446d3eaa":"Il file XML contiene elementi non supportati. Controlla o modifica il file.","a594b427eaf0f108d3e9cc20d70e15da811c760c":"Strategia non supportata","04a5090686ac7b54822e00a9ff08c38a107601e7":"Siamo spiacenti, questa strategia non può essere usata con Binary Bot, ma soltanto con DBot.","77dfd2135f4db726c47299bb55be26f7f4525a46":"Annulla","fdaa08aeaee0bf9b78d83ea19ef9e9bd019e8193":"Vai su DBot","f1d8b7b118d6f82f95614d476bc11af650aed3bc":"Impossibile caricare il file di blocco","af145748c9cf765a3b059eec20cb1dbb899297d8":"I blocchi sono stati caricati con successo","11ee9c5d534cc8d22651092222b532917594161a":"La durata minima è","5283ac04c9a8ba8a937d1edb4ba986aeefce8bf1":"Il numero di tick deve essere compreso tra 5 e 10","ace1342bc3720b77ce510b93074041e7386d209e":"L'orario di scadenza non può essere uguale all'orario di inizio","fed3e7bd6696fb97a12d720845ab5388456bfc3b":"La previsione deve essere una cifra","d466687f90ba548434d65186d11a80c4204f9ad6":"deve essere aggiunto all'interno:","6ddf2b3075ac9ab5d66b40e15ea9a34c087672ea":"deve essere aggiunto all'interno","33aa6ff282ee509d37c6f758274c9156b419ff73":"La strategia selezionata non è valida.","da162a909c2981ed318d23cd9a6be1d66e0a8400":"Formato di file non riconosciuto.","5e719fa76e1b6cb396376c82ebdd04bec7253229":"Per caricare blocchi da remoto devono essere una raccolta.","b0d2de25daf6ba09a5e710c6968ffded29c4dae1":"Impossibile caricare il file di blocco.","df84a88f38b03b5b342362d72370b0d66afdae35":"La destinazione deve essere un file xml","cd680fd936e9559ef1d95efac7a71680e2b13a89":"Questo url è già stato caricato","34c59389053701a04127f74d32315e0206e076f8":"Si è verificato un errore durante il tentativo di caricare l'url","3ead0b14c72503187691a7a6d7121987299bd401":"Non si tratta di una versione ufficiale di Binary Bot, utilizzare a proprio rischio.","27401c9c8e476d659c8382e05c6d70a4a82be468":"Versione ufficiale","bc981983e7f547dc62e19a1e383acfe00782a6d5":"Avanti","b52b36b7269fbfc58ec24bb724691951a3decbe8":"Indietro","e9b450d14bc2363d292c84f17cfad5cfbd58a458":"Fatto","29cadadfebdd578a50b7b3d1b2c5b33e424d5de7":"Fai un tour veloce","a48e81d4a8da67637b46725824177a959fe99b21":"Sei pronto per imparare a utilizzare Binary Bot?","6f3e6ebf249947cec4f64117253a8fe43335ae79":"No, grazie","fcb6e90e7223e1d1d735f15dbb7ded9d81bbe7ef":"Non chiedermelo più.","4ca0a75c2b7fa7da4364d03b72c46fee1860a2bf":"Area di lavoro","5fcf29b9f0b8971c8148e70a150ddc9ac04c94fc":"Trascinare e rilasciare i file di blocco.","ddcbb5361b1a16eba60fca2383fb297bb90ed9b3":"Scarica degli esempi di strategie","1758356db21759f7c5a0da9b4dd1db8fd6feab3f":"o","00b581632c1532969a7128ebc8eae936ed8af04e":"crea le tue strategie.","d171baee235d4c93f63755a876782dc5be4c3e47":"Scatola dei blocchi","056f19272d96f902c38207cf163ea8dbff7fbd32":"Aggiungi più blocchi al tuo robot da qui.","36bae31694f85bd7a5b0ad45e51ef622b95baadb":"Account","f5c47fd3b3553b10441a06054078cea745177dea":"Prima di avviare il tuo robot, effettua il login. Testa sempre le tue strategie con l'account virtuale.","fd825ae94aa79500a878dd4590a4b360e7162663":"Comandi del robot","6ee7980833e1ed72901b919ffd0fa20e1a251d3f":"Controlla i tuoi blocchi. Per ulteriori informazioni, mantieni il cursore su ogni pulsante.","f5169c84497de3aea74f7da9e7e177d1427e736b":"Buon divertimento!","4f1b3d682c2a00b393c33637da402463bc11d5ff":"Desideri segnalare un problema o chiedere aiuto?","0049f8894e41937ebb9111cd3def6749049fb50f":"Clicca qui","aac1569ccf6b1a11b0ad0fbefdb9ffc777b4c733":"Clicca per selezionare","d1a17af19f5388af9d6596cc0ea7dbb1d739e255":"Non disponibile","53adebdc2b1cbbedb56395b19a73fe47b87cc554":"Tick","5fb1db527825d2996e37c655e5dec49d4da80c09":"Secondi","092f99ea11a34a8490e7a767a83a42fc45634f82":"Minuti","9e25a34e635a123f8958bbe26e7c4843278597fb":"Ore","f6bb0f468a8569c67b3d6826e57e62c5500c3681":"Giorni","db6708630fc646eb98298d9acd701e0a1ac051c2":"Salva blocchi e strategie su Google Drive","85538d002a336c5addef8d189d80976cf7758f8c":"Hai effettuato il login come","b65463cb6a42a17de514acc4659f7fd331e0876a":"Connetti","ed28e0686e1251ba046f582a3e9ec02470a5e78d":"Disconnetti","cd5f85b6f187605f82386eacd680f93820af8d11":"Il risultato è","1e38ce3d180cefae485a6986ca7c67841e30376f":"Vero se il risulta corrisponde alla selezione","5c89497fc3c128e2ff865ce8df15356054f2c028":"(4) Ottieni il risultato del tuo trade e negozia di nuovo","14ea81918758c994cbe3178e695e56afc1ef2b45":"Ricevi le informazioni e i risultati dei trade precedenti, poi fai di nuovo trading (Funziona con trade completi)","5098e2bcc96ee227983c9f7eeddfd226c220ca00":"Dettagli del contratto:","251c830f8f869e0887e8b4dc4c30ba1738c7097e":"Leggi un'opzione selezionata dall'elenco dei dettagli dei contratti","b3b543c80063a116ced4965d8537b7b62d14c0b7":"Negozia di nuovo","a1eeb7c1e92e9a5d9323ed8ebd7ca7ffed8b0232":"Esegui nuovamente il blocco dei trade","ca5586bdb5bdc1a2c0baf53ed0ecd21fafabebe7":"La vendita è disponibile","03bad10717e183b24829baf483dc715e1a44bf7b":"Vero se è disponibile la vendita al prezzo di mercato","2c71ed279a402e93312dbda173ab18f244d6bf46":"(3) Osserva e vendi il contratto acquistato","17632a9f51611d2579d95b4b1ccb9476566d7ccf":"Osserva le informazioni del contratto acquistato e vendi sul mercato se disponibile (Funziona sull'aggiornamento del contratto)","579607dc4f989ce2b94b558431666a0ab07ac1f3":"Vendi sul mercato","e20afd5cf3811a42071c9a312abb2afdad4c590b":"Vendi sul mercato.","4712cbff8e92822fc960ef9c0197293a19675eae":"Profitto/perdita della vendita","df817b48c7a076561b4f8bedc52d65d2e351ab52":"Restituisce il profitto di vendere sul mercato.","da3105e38c42a481ad7230ed393b0e12bebe9c4f":"Chiedi prezzo","343fda69c73b78b84967055aae97f790c422adfd":"Chiedi il prezzo per la proposta selezionata","d4d34ce9d9dd7e87213469f88cb7ac43725675d5":"(2) Osserva e acquista il tuo contratto","fb61a3c71f4c488b3b470cb7daf502a3e9b5ad48":"Osserva il flusso di tick e acquista il contratto desiderato (Funziona sull'aggiornamento dei tick)","9bb396940adb9705fe57eba6ea8b578e6aafa792":"Payout","87da93a46d143f6019979b3548414d9d7adabb35":"Payout per la proposta selezionata","160f06d4799c85021a810f68c5b517eea37a2737":"Acquista","4c2fdde3d9c1950498ed263d6ce21d4bf3d0800b":"Acquista il contratto selezionato.","b44e884c355e447d0da0e6ba45caaff18c84373b":"Bande di Bollinger","d6a2a207343bd83aacdc80b579ff4419713a256e":"Elenco di input","170a28a9db6d27d7212fc6dc249434a57517e7bc":"Periodo","b833989d69900a4be9e32d1bab65c8f8233f099e":"Std. Dev. Up Multiplier","1cee82f19c0bedef64f68b32e6b02128efe7c61b":"Std. Dev. Down Multiplier","974da601086448d0060aeed90e53ddd5acd17b91":"Calcola le Bande di Bollinger (BB) da un elenco con un periodo","d5b65cac1f1cf9421ac978eebe532de99040cca6":"Serie di Bande di Bollinger","58de49791c64aba14e36e5887244a5ef088286cd":"Calcola un elenco di Bande di Bollinger (BB) da un elenco con un periodo","4bd99f76f1104229744455d93df0ff76b9eeed58":"Media mobile esponenziale","ea615c6d6a74e25a6d2f1bc9980b46e73508c2eb":"Calcola la Media mobile esponenziale (EMA) da un elenco con un periodo","4082d9379e59b38c891d046312f8d3c4b64ae3b1":"Serie di medie mobili esponenziali","562edc102c5dd9e2fbbede1140b8a5461c2d4dc8":"Calcola l'elenco della Media mobile esponenziale (EMA) da un elenco di valori con un periodo","a537f4f3c0f6c68bf896fb23cb2ecdc658488ea2":"MACD Array","b18e572ea14edd48587145f1ef50718adbf256c6":"Periodo EMA veloce","974023bddd6249d0f6404872cfcae205b2599ea2":"Periodo EMA lento","5c2adcb3d1bfd6b9f5c2dec13d02a9473e4445a1":"Periodo EMA del segnale","6b15ce93fd68d80aeee7f7964c1306044c3c1baf":"Calcola l'elenco della Moving Average Convergence Divergence (MACD) da un elenco","95ec92885c855ba9cf734c17a43f081901e4d2cc":"Indice di forza relativa","b033619e108c9e43bfd8a42cd97bf5c5dc86dc65":"Indice di forza relativa (RSI) da un elenco con un periodo","4034de66995b876b2ba9bfd0274025e39168e05d":"Serie di Indici di forza relativa","f9da880c8b0e4cce4431912c24eba939e6bc06e1":"Calcola l'elenco dell'Indice di forza relativa (RSI) da un elenco di valori con un periodo","a9842c95766da40bf4ea6ee263cb5a5985847763":"Media mobile semplice","347775a293c14362d492f019e677c965be1d6e7d":"Calcola la Media mobile semplice (SMA) da un elenco con un periodo","4cc7b9e53d082896ad884eb01be16320af65f282":"Serie di Medie mobili semplici","2c75179a57af3c36581008b65e86ed81c4a4cbea":"Calcola la Media mobile semplice (SMA) da un elenco di valori con un periodo","39f024cf49724fe7ffdea7773c72ed06eec998e1":"con intervallo","e4bed3e67e58b2334ee4b9c6ce59ac7a95d80aaf":"La direzione è","ad47561efb1dcbd7246d9b64487f615647fda036":"Vero se la direzione corrisponde alla selezione","05bef508aadd62bf3967dcf67d769da296f19989":"Direzione del tick","d089ab98a846a521b09aad6ff3fefa728bfa8b42":"Il blocco della direzione è obsoleto, si prega di usare invece il blocco di verifica della direzione","cdb31fc857f01a59f664413498293c714285f46d":"nell'elenco delle candele","20fd5f86f08796f145d69dedc209a27e459b2f51":"ottieni # dalla fine","a96606af8c33ac3428b45abc4782dbf93f458d29":"Ottenere l'ennesima candela più recente","90ed0e1ea5c1907f8a32d8051a66e845857bb2a4":"Elenco delle ultime cifre","248428facb97408414180d4de74e4db35360fbc4":"Ritorna all'elenco dei valori delle ultime cifre","2e4202acde880b7b1c3686f0335ff879fc1e5c7a":"Ultima cifra","e46e0bd2f7fe37217dec8aa26ebce8ffa3608663":"Ritorna all'ultima cifra dell'ultimo tick","d5fde4c9d5edf660f760fc226df4d2678d3334ab":"Elenco delle candele","95e552a40d3446c96905cd3ec7e3d123d0246ce8":"Ritorna all'elenco delle candele","5a0ed227a01b7d30b05dcaf3e1c23b74b9be6ff4":"Crea un elenco di","a4220593d385a720886f7af1ed3c478fd0c6339c":"valori nell'elenco delle candele","cd8cdf3d47e921c8a72addae9269e66041d417c5":"Ritorna all'elenco dei valori delle candele selezionate","3e4f335e7a6f79bd1bafd219ddde30acbf16a7ac":"Nell'elenco delle candele si legge ","34037f9452fdb66c9ca27ebcc0afe9d5139e9e24":"dalla fine","aba43a580daa7f306956ec69b83e6e37e7233126":"Leggere il valore delle candele selezionate nell'ennesima candela recente","e04b522218a181cf0223042dd18ae08dcc22d8d3":"Ultimo tick","6ee445fc253a55c9ed54c009c3f020ac65200d80":"Ritorna il valore del tick ricevuto da un blocco prima dell'acquisto","ed44b69176217a1251c04f0c13d23ac789ea60b2":"Stringa dell'ultimo tick","ea24dd1988c6534a5f0d11b8fbbc6c374fe68766":"Ritorna il valore del tick ricevuto da un blocco d'acquisto precedente (stringa)","4b2340a890e88d1886757c3f7172e273a1edc31f":"Questo blocco si verifica su ogni tick","b54d7b4590559dad64f02d09aacbf6d9863e2624":"Puoi utilizzare questo blocco per analizzare i tick a prescindere dai tuoi trade","ebffc758056e6b2fc2af99af17fbc6853e5d3583":"Elenco dei tick","17649cac8739adcae95e641f794880272ad33bd1":"Ritorna all'elenco dei valori dei tick","46ecdefde6a8dd5872cc6e0e52afb717f1140426":"Lista stringhe di tick","3bdc75d5d68b05dfd3ce6dcdf7d9773e60ed0a51":"Restituisce un elenco di valori di tick (stringa)","802dc02469ae51067ca620ff57dfb5bdb3e524ac":"Saldo:","c4ee8e12b2484cd5b47cdf00bfa2c50b83e91d3d":"Ottieni il numero del saldo o della stringa","69280143949fcd59c171dd60f6b6e13d0cc08fe6":"I blocchi all'interno vengono ignorati","d072c2ceeb5c1217722d14c74de7aeab945b4215":"Colloca qui i tuoi blocchi per evitare che vengano rimossi","e98ea4ac4e2cfd6a4c84386534c5d1acd7ec85d3":"Chiave: %1 Valore: %2","27305f6365c38dd36f5b5eb781e05b5e2e4e3f6e":"Restituisce una stringa rappresentativa di una coppia di valori chiave","b06acc4158c824231f727a13e1c9811f43d5be42":"Carica il blocco da","661db37251a1ed1afe357ee13895f37a623d7cbf":"Carica i blocchi dall'url","6c03ee54ad3a51fc92a1d69943e99667847705b6":"Notifica","b1bec5d06e3672915d81b2fbc2347c8b4947a954":"con audio","a2d0c89fdfff3176efd4a443eb0f6607067b93e7":"Crea la notifica","6e0fc122f936f808bc2e3af661121b65712ae855":"Notifica Telegram %1 Token accesso: %2 ID chat: %3 Messaggio: %4","1aeb6caed9e46edf5d6224adc905ffb8ee3a7708":"Invia un messaggio a Telegram","45ebd38f4c641ebf6f72be8c3a79dfa50cf9f20e":"Profitto totale","ffb465875e1ff2b49bcaa7c6b70965ffe39fa59d":"Ritorna al profitto totale","532e65f6e266db0bb442d1f426d44d7d32962340":"Stringa dei profitti totali","78e84591ff76f992953a8e19b57c7eab7546d638":"Restituisce il profitto totale (stringa)","bc528d26f66fe8c4aa4bb24ec9c99dff12c055e0":"N. di utilizzi","bea5756b18644ccfab01c1c0dbd6fa9db7103379":"Ritorna al numero di esecuzioni fin dall'inizio","7d500ebe352ccfa932b253e21938813a06fcff8e":"URL Webhook: %1","e770fd2a6b980a0815592b1bd499127c5a5cfe39":"Invia una richiesta di POST a un URL","a35646754dbe7a9211ba8b81338a5d64580eb276":"Unità dati vuota","69b0648eddd207cd45a9e1ba973dae287b535576":"Unità dati:","c67ded6b64019212eb2bc69afd761f5b3f626040":"Aggiungi un segnale al numero per creare uno spostamento della barriera.","569bbd757e1bb8bbccd250b98dc2bb37cb47b787":"Mercato","74751e67c3e1010c343095eaf543e7cb21ced2ef":"Tipologia di trade","1f4698382842477e211eb46de81fa506f01a8c34":"Entrambi","c1baf816aac5a5cd849768773fc248cd249dc296":"Tipo di contratto:","c93025710d1ae6cbaf8e710f63eca8edfa0c9399":"Intervallo predefinito delle candele:","9693aeaaf68e3929b59b79306feaa0a847d01192":"Durata:","78d7103a319e808455d397513279d99f3b3f3768":"Puntata","10c02649e226d430bd75a5b6315a41c0db9992a2":"Barriera","837276742aa90209dde3b4eef07d8e7ab26731ef":"Previsione","258b49925b41751c6bd790a0848246566ba61440":"Riavvia acquisto/vendita in caso di errore","c55ee3445cd391ab299b6f85a6ea9a68a65ea64d":"disattiva per una performance migliore","b410994b67e37d9516eb9b866c85a8c639f79e68":"Riavvia l'ultimo trade in caso di errore","2260c5a971c2602834ef8feeb5fa522f900b469f":"il robot ignora il trade non riuscito","cd1495cb4c60266a6abad9024022ae079bf7e416":"(1) Definisci il contratto del tuo trade","0745acf92abd7b60598f161717884cc45dab8694":"Esegui una volta all'inizio","999e1ade10ff5ee1d115f5a6288bfd2e0d0736e6":"Definisci le opzioni dei trade","a43c3299d30a5bc7e31a574cdc87f59cbc8fe585":"Definisci il contratto del tuo trade e inizia il trade, aggiungi qui le inizializzazioni. (Esegue all'avvio)","d571f33d957ebcab086ecf38eedd71b6ef0c5820":"Opzioni di trade","4d22b565e4253e92a908f216184779679bb1a044":"Barriera superiore","b70c38c6db3127422e05315c30bdf76c7c36c480":"Barriera inferiore","a6c5f081b3addee364af1c8cdb84853f49dc8e07":"Assoluta","0f2ba74929aca6fea950e351dcd576b7cd841fa4":"la candela è nera?","7cb3b482ab66947d439642ec64dc7f5bd4e065dc":"Crea un elenco di","5925d08228e246f07b790b88ad70c1b73a97d2bc":"valori della lista di candele","852b438f91ad9eb2cdd84419a675a216d543c687":"Leggi","67d3b35a0b740127b56bcd44d3bcb1ccc20e0b48":"valore nella candela","d79d854dcd0829e2177a47beab6a55569e781ab1":"Leggi un campo in una candela (leggi dall'elenco delle candele)","5606b4460ac96063b8a8e5647008f3ec97252fc5":"Secondi dall'epoca","2de20bdeecb1a8c28bd36fe75f028ed4318d0348":"Ritorna all'orario epoch (secondi dopo epoch)","f43cb41af7ce8a69c7aecbc1c603bb0381270982":"Usa ogni","4b6fe6898f0f956d48a4c8172c6dfbcb4159ab09":"Secondo(i)","2eea87bb804e4e73e3f8e9c41140f7ed83ea8875":"Usa i blocchi all'interno ogni n secondi","e0af6ddc8a892704f64680bcb22b30c4bfcefec5":"Il blocco dopo ogni secondo è stato disapprovato. Se hai un valido caso per utilizzarlo, contattaci.","7b9c76088576a64f32d67ec335162b9f73eaa026":"Usa dopo","ff56ffac023cf69ca5c7f71d407499536f4f86b5":"Usa i blocchi all'interno dopo n secondi","e9fb732dde76a6977bcaa2818b0f56125b183648":"Fino a data/ora","1a90ae7cb728e7f25b031d7e844882f75e74ab5c":"Fino a marca temporale"}
 
 /***/ }),
 /* 245 */
 /***/ (function(module, exports) {
 
-module.exports = {"3d52a6d8fedcc48a65297c07bf5f7e3e41aab5aa":"Lý luận","3edf0df49942da6d11a1a217e4d3af4a5a8e64f2":"Toán học","c3328c39b0e29f78e9ff45db674248b1d245887d":"Văn bản","4d064726954a17487f94e931f5b157b733ec22ed":"Nâng cao","a1fffaaafb7cc996685bceb829c053cc4f7de43d":"Danh sách","19de69cb601f53a4ea7af22a65c71ae63251365c":"Biến","2b961dea1dc0c60ddf9a2c8e9d090f6f7d082483":"Chức năng","dc7f77b4ccfc9f70a78bd97303bd10ba4c9d70c8":"Vòng lặp","66639f7d455dd71faa9147f5d69e5ce885d8bebd":"Nhị phân","0ba66deaab2f2cd3b0793d03f600ee2b8f577fbc":"Khái niệm thương mại","9201c6ac624e98e168e6ccddbcd5a9b5cdff06b3":"Trước khi mua hàng","44ab9a87268d3fd74040ed0b55c04f83294cfdef":"Trong quá trình mua hàng","c415c9399b7ae7285d2c1c880a6a0aa18f62ff8c":"Sau khi mua hàng","d07ffc19d51f0973859a0d95c1d15cd9f22388ca":"Phân tích đánh dấu","8cf71374fa095a64b5295b672daef8507ec7be6a":"Chỉ số","4fa8cc860c52b268dc6a3adcde7305e9415db5bb":"Công cụ","6c82e6dd86807ee3db07e3c82bec1ae1ce00b08b":"Thời gian","8d8fd6765e184419cad8b88d1a60c895d79578c2":"Nến","548f449b63ff41eaaff5a2d679ffa56b2015fc20":"Các loại khác","8bf95ea372568c7a254ba9fada5f6f1701ebc5b5":"Lịch sử","12b71c3e0fe5f7c0b8d17cc03186e281412da4a8":"Tổng quát","9feddbabd7e7309e96c590069057158e96baa8f6":"Kiểm lại thực tế","038fe2bdb7ec6ee078f60bdb5bee94654ec6a81d":"Giao dịch các tùy chọn có thể trở thành một cơn nghiện thực sự, như bất kỳ hoạt động nào khác bị đẩy đến giới hạn của nó. Để tránh rủi ro của một cơn nghiện nhu vậy, chúng tôi cung cấp một phương thức kiểm duyệt thực tế cung cấp cho bạn một bản tổng quát những giao dịch và tài khoản của bạn một cách thường xuyên.","4152043e8c670075d2c919677e835edb0d923cab":"Xin vui lòng ghi rõ khoảng thời gian kiểm duyệt thực tế phù hợp với bạn trong vài phút","d9fff2df19e90f2c7ea6bb30fde4e0da119d13d1":"Vui lòng nhập một con số trong khoảng từ 10 đến 60.","2439f2f199b2a3e798aa9b4feaa9248bdec9bc0b":"Tiếp tục giao dịch","a72ca256dc49e55a1a57b9a727fbde9834c9a3f7":"Lời tuyên bố","6e78c91f5a05fc0d4f1a787d38e3d6fe2f856d46":"Đăng xuất","4832e45812a2724f16a15f9ae87adfc8ae4168cf":"Liên hệ với chúng tôi","f7c400ed695f898b8ee9d21664aa17b5bb693828":"Đăng nhập","5ea75f1605a4bf1db5c39fcc61854627478c0a7d":"Phục hồi giao dịch về trạng thái ban đầu","f98595d541778d86f75ef22b3328a031d20aa16b":"Tải các giao dịch mới (tệp xml)","4a1e616226c329a94da7768bc0435a3284478010":"Lưu lại những giao dịch hiện có (tệp xml)","6b3465ace62f33f0687b4669ac26d95895e9ca52":"Liên kết Binary Bot với Google Drive của bạn để dễ dàng lưu và tái sử dụng các khối giao dịch của bạn","8e4ec2c451ec7b1bf68d72fe9086ec978e41feb7":"Hủy thay đổi (Ctrl+Z)","937f5055f05be359ddf619744e8af4d643549e80":"Phục hồi các thay đổi (Ctrl+Shift+Z)","8406d1cce44230835932060649e999ca3283b413":"Phóng to (Ctrl + +)","1109673172af2c173c492622ff8a72c8f29f0e70":"Thu nhỏ (Ctrl + -)","44c22002c65d2871331263a23c3e09c0a1bfd847":"Sắp xếp lại theo chiều dọc","ebd0945359e5578ff9bd3a2ab490ca84c225d8f5":"Hiện/Ẩn các thông báo tổng hợp","76bb05950f80f3a88ee05ef3276c5934fd355e8d":"Chạy bot","ba50a42d8d3228c37a817865fce49fbca692c2ad":"Dừng bot","4f4aa4117318a8ddf8783885d4f3542c5b2733bd":"Hiện lịch sử","91017ef9b165cd0e7475a770f318ea5e705e1321":"Hiển thị biểu đồ","c89e3dd1cafcadcc0312e476ab58b2332209da23":"Xem giao dịch","b02c858e72be118a65c9393930351012b647cb9e":"Hiện tiêu đề","250be77f7605669a0b3d968b9ed381a3d9787ed1":"Mở tệp XML đã được lưu và lấy về các khối giao dịch của nó","ff29ccd7a6c6073cc462ed590d27a91632fdf67e":"Binary Bot","608061fb5aab975013fa70c5c814a1d8ba30c152":"Kinh doanh hiệu quả ngoài sức tưởng tượng","e4ce8dc3e416e69262ba642dc57d3975d6616980":"Quan tâm đến tự động hóa những chiến lược ưa thích của bạn cho việc giao dịch những tùy chọn?","f261237ca8beec6f77b76c4121feb8da22818c56":"Binary Bot là công cụ lập trình tiên tiến của chúng tôi mà giúp bạn xây dựng những ứng dụng giao dịch với 1 một chức năng kéo-và-thả đơn giản \"tương tự trò chơi ghép hình\".","f6c85c68616eeaaa15fcd53fdc52f6eb5c886357":"Mơ đến con số bất kì thuộc những con bot giao dịch những tùy chọn nhị phân, từ những công thức vô cùng đơn giản cho đến những thuật toán quy mô phức tạp. Sau đó để chúng giao dịch cho bạn, ngay cả khi bạn đang ngủ.","e6906a0d1c28b202f9bd49da4a6abbddca57399a":"Điều tuyệt nhất là, khi bạn đã dựng cho mình một con bot, chúng tôi có thể giúp bạn bán nó cho các thương nhân ở các","1dd0cf79c572bcdbdfabbd54ee95710a21234d73":"Cửa hàng Binary.com","abeef9a35ae6256796ba2462e4f64d308de42359":"Nhận được 80% doanh thu từ mỗi 1 đơn hàng mua của bot bạn trong cửa hàng ứng dụng của chúng tôi.","0606f0b7763ee6e8094a3dab7873d34c08fd3670":"Bắt đầu dựng một Bot bây giờ","221acaf3a0290adafe08cdcb8c66121c73d8b4a3":"Cần thêm trợ giúp hơn nữa?","d635b53e59c9aad8c5d78458826beffb029b27bf":"Cảm ơn bạn, chúng tôi sẽ liên hệ lại với bạn trong vòng 24 giờ","1de91e827ec70ca735abc2c71b0a89cb0cfc4ce1":"Thị trường được gạch chân chưa được chọn","50050f06645ad2743165b429a8f7deebd285fd63":"Loại hợp đồng không được lựa chọn","6a7d1a3a17c4e8ae6712cb60d46db1edf0aa2667":"Xin vui lòng đăng nhập","2f9f9096be1a1c0569a9ce54e57f0420f6b3c2e9":"Thời lượng phải là một số nguyên dương","4df6e872792d72aea8a2f6b831d00b554464da23":"Số tiền phải là một số dương","001e68df3a4b32a4d57148d9d407f44eee3b7436":"Nến đã chọn không hợp lệ","04f14ea7c92e0b2b5ae005c696245063ec641d66":"Danh sách nến đã chọn không hợp lệ","c1bbfcbb4f57d3a56c1239af0c2138321589efd2":"thử lại trong","57b453bb26b1c28dfe362b7cc9f17f0be93dd581":"Tỉ lệ tối đa chạm tới","094628ce13fc0e78f07b697d1cc9421bb2edd666":"Yêu cầu không thực hiện được","816c52fd2bdd94a63cd0944823a6c0aa9384c103":"Không","5397e0583f14f6c88de06b1ef28f460a1fb5b0ae":"Có","9bb396940adb9705fe57eba6ea8b578e6aafa792":"Thanh toán","78d7103a319e808455d397513279d99f3b3f3768":"Cổ phần","bbb930cc426507ed3f6b7c343c75dd0e041494b7":"tuyên bố","e6e886cdcdefeb6d3edb4c31bed06dd183ac4153":"hỏi giá","50e72909992bdc37c7c07769d1b7efac5e52874c":"thanh toán","ecb5ba7044417916ba12de5fa9e6fccac3e5d475":"lợi nhuận","c980b910204c7babdffe8ff3f7e755f30133383c":"loại hợp đồng","a726c6955157f1b8b92f9932652434a7150f80f8":"điểm gia nhập","a66d5c7ef2c63dbc9a8f9e6ae4e2bc575e74a36e":"giá trị nhập cảnh","7674920c033ca14277c577e19c037a6754d4fa80":"điểm ra","e8b8bd9f2eabc12875605a37c93e7f04a713fcb8":"giá trị xuất cảnh","779455ee3bde8494d9629b353e17b19e92357ba8":"rào cản","37a5301a88da334dc5afc5b63979daa0f3f45e68":"kết quả","4973f4c599d5f42cf7bde52d66c3ed8ef77accb1":"Thắng","12e24a7d8ac40579e8a0aef4869288afe7ed6745":"Thua","563339f82447b4e758ad76d5a0b63b5698594fba":"Tăng lên","5c1ae82c29543ac887703776bf3da2c7dcce683d":"Sự giảm","2fc096bb7b6596ab243d0286c9f43fdf2b9b406d":"Không có thay đổi","ecb252044b5ea0f679ee78ec1a12904739e2904d":"chuỗi","53b0a1b2fadf4e040cdc2155a7340de24aca93cb":"con số","bc74f4f071a5a33f00ab88a6d6385b5e6638b86c":"xanh lục","4c9a82ce72ca2519f38d0af0abbb4cecb9fceca9":"xanh dương","96de5543d183d7de52ac5fa21c46fc811f673f89":"vàng","78988010b890ce6f4d2136481f392787ec6d6106":"đỏ","aa9330a16e5b055de809256dad6b4d1cbd2999e7":"Yên lặng","cf84a98d6cf7f156862a08ba8236467b6f471004":"Thông báo","eee2facd669d1434848c24da5527b3e87d9a12d5":"Tiền kiếm được","9d705578b0f1f0ce3a06dc5e82f9a1e6078f81e1":"Công việc hoàn thành","7f2f6a15cf8da2b27e5a4af47b58e7ad71c0b3d9":"Lỗi","a3b1583d377f37ac20de7e089edfa0920a078e57":"Lỗi nghiêm trọng","66c8b6848eee629c4ac551bf2b5fa591571654be":"Tăng tương đương","5649dce3367d490fa19d563ee9e3d4c4b6f7c642":"Giảm tương đương","062787aa328047e189774b3703d983b83938f6e9":"Cao hơn","b91eed4b7a80cd9572a27e65ebdff9caa4b3b9a4":"Thấp hơn","e3f139abb7a549a1210b36f7dbf89215ad6c9902":"Liên lạc","7d7932bcc2e262ae98cf09dc5445130fb3881769":"Không liên lạc","a16814a48ec58c2e24ba224a80921a5c02361abe":"Kết thúc vào","391d02cd75ebcd6ed26f5f45ddf7d40bf13e9dc5":"Đầu ra","534ec5da4e82ec419abc170e1a8448f55a01664f":"Ở lại","98cbe1998effd8b1a8aefdcc538573055e99a5f5":"Ra ngoài","93d13bad1d2c2841db127cb70cc35bfc98059fc9":"Châu á tăng","c098658ce3d3a258e4d155949a60072966b36db7":"Châu Á giảm","ee2dbd5d6d82d0833069b07e7dd2848d3bf4d83a":"Những chỉ số khớp","8444b7ce28bbc3443cc5cf73359b8353989b2a4b":"Những điểm khác nhau","9e767ad03e5547f251044e0724dc1d9f3e75aeed":"Chẵn","dc28f5f3c65ec611f0f30022650d24382d27448e":"Lẻ","18a63f5512afb5573e5b44deba78d629f0635317":"Lớn hơn","2a268b89b83f8cb38ea48e46e93dd8840db512f9":"Thấp hơn","2155c8b38181dd2552e84a94049aacd33ef9c607":"Tick cao","1408cfd2b064b923f024fbe590e27db8282941a5":"Tick thấp","b86eb15dc4f13e4c2972de158d3038d9f657242f":"Đặt lại Gọi Biên","669a1f3d9a8f601a84da536cfdad1de4092b1926":"Đặt lại Đặt Biên","844d1a5c99a0a668383340cc095d040eef998c79":"Chỉ Tăng","87293a146cd481a2b30cf74282ec061dc4cf0735":"Chỉ Giảm","cf9b77061f7b3126b49d50a6fa68f7ca8c26b7a3":"Mở","b1a5954a483f8f8b0207385095f74aeb409b3f80":"Cao","a124947cbd2d1d92b47e027274c3269ff0c7a84b":"Thấp","bbfa773e5a63a5ea58c9b6207e608ca0120e592a":"Đóng","1173872a4fb205b713702f0eec5cf2c732c828fd":"Thời gian mở","808d7dca8a74d84af27a2d6602c3d786de45fe1e":"Mặc định","62957ecfdc50957e8957c11d2eae74d078f0ef1a":"1 phút","1dd3e663dfa7ac9cb77cfddd2cf8ac700657e2d6":"2 phút","24e46784cbce32443db5a2638b1a7d3201543e9b":"3 phút","3aa5819ed8a0b94d0f293db8e9c9598298ddd402":"5 phút","a6f151883b736f0470d33492e61c72a7d059d065":"10 phút","899761ff5425abd2ee214fa7aa46e27c6c8b5aae":"15 phút","31bbe8890d28d183f8f7f2c160fa892c444c0ec7":"30 phút","f030c3d667652646b86732ad7bc67e226c49cd3a":"1 giờ","2046e49e33c040e08dbd6fd83df3e1846015e6f1":"2 giờ","7b47150d431db70d783724007f07ab894eb8ac2e":"4 giờ","191800b7e9a48680792c0dd77cb6cac00c4514c6":"8 giờ","2d8a6f7c34468578640b333b8650131de06ac770":"1 ngày","f94510322ecd9b3a2af67a10bd51ecc4ac6a24e7":"Lên/Xuống","c1365a35e99d0f9147ebc72f21534cf471fa7d95":"Lên/xuống tương đương","9c7960c6b11d35ac9d6cdc1ebaad3af43b2065c5":"Châu Á","2260ce49306460c8a2ef501939f29ad6ddd4e934":"Chữ số","0186aa73a1b75fa8f0eb98bbd9ad01102bb09ec1":"Chạm tới/Không chạm tới","f7de1f66f0979667da275b7e8996e805395025a1":"Kết thúc ở trong/ngoài","a431deecd4c2258097adae418d496fe9a8179fee":"Ở trong/Ra ngoài","256fe245cb7d3d673095f7faaa8c9ff81b985ad1":"Tick Cao/Thấp","12a3f461cdebbc8f335190413ee6c57442743bba":"Đặt lại Call/Put","e696144fa588782e6d6b2c97e2d3ed1adf52bd5c":"Chỉ Tăng/Giảm","91a64e3f83c91acf336c631fba295f297f94c399":"Chạy sau n giây","024696596f26a4db232fd9e966eadfeb27c0bd1a":"Chạy mỗi n giây","c538c170bdc6b0f3bb98dce44a016a2e2d45a6e7":"phía trên","85c274929bc0e28eafd3734f2c25046c3b95b36b":"ở giữa","346e3ee198e98146993894d3de8ecab1a86c3e80":"ở dưới","f16459104f92ab6b38aa265adb4ecbfc3768e303":"Biểu đồ","e09f635f4e77476c9ca1c37bc9992e9ace3431c1":"Macd","27bed13a88c60350c3de92ec3820e1cc4f7d6ec3":"Tín hiệu","19eabc961735d78f12fc7be906ffcb033853cf85":"Dấu thời gian","68f4145fee7dde76afceb910165924ad14cf0d00":"Tin nhắn","629777b7d4d610ace6dee24442730f27d7d0853e":"Tệp không được hỗ trợ:","beb040c8fabd007c9cc5ac6a9feb6bdb05d33dac":"Bất kỳ thay đổi nào chưa được lưu sẽ bị xóa.","410bf23a3f080def9c7a976a16305bcde7943ed1":"Bạn có chắc không?","e99811bd3b1ad17e74614060ecb180602be35ad6":"Bạn đã bị đăng xuất!","3b26e990d3acff493ee2cf66d1280bed2625e43f":"Kết nối bị dán đoạn trước khi nhận được phản hồi từ máy chủ","876f3e0202ca40dedf2e5ab6577eba1ae637fb53":"Các chiến lược","8ce80462febd4d573cb2f9c1984fdc93b7c21c57":"Đã có lỗi xảy ra khi tải thư viện Google Drive","7f412a8cf67f755d3eb36846dd07148ceb8d4c72":"Lưu trữ đám mây không thể tải các khối Google Drive","3b6bbab905129dd36b8d4e99947fa30540ed7b2a":"Tệp không thể được nhận dạng","3d6b44df6eaf6236b4abc1aadcf8f5b1cda769c1":"Đã có lỗi khi lấy dữ liệu từ Google Drive","cdfe947b0c089a4a1f78c11299f25c32a124f1a6":"Chọn một chiến lược Bot Binary","2db43c69a4b96454914f0b8272bc869984529e6e":"Đã có lỗi khi liệt kê tệp từ Google Drive","0dcea5f584938e0fff00084b83156ab31d641ab3":"Đã có lỗi khi lấy tệp từ Google Drive","18da95988117ff029393f3f5c881d70ef47f7385":"Đã có lỗi khi xử lý yêu cầu của bạn","04226bcf91195130e25fe7a8e8ea4d3e058efcb7":"Chọn một thư mục","aee24f2456ea8516b024a5d3e2b815ae7f2239d9":"Không thể gửi thông báo điện tử","05754ed14275a070a20a1d5cd65f0cea66f1da7f":"Các đề nghị chưa sẵn sàng","79222cd9892a434aa61fc7dc01c3839951eb8d1e":"Đề nghị đã chọn không tồn tại","6ea4a034747d020b1d8ce4848def95d537555dd6":"Đã được mua","89f89c02cf47e091e726a4e07b88af0966806897":"ID","1200c1af2f7bba4e29a34112865662748c9d41df":"Hợp đồng chưa được đề nghị bán lại.","62d6180e55905f7b996d442c53631981a4ef8b5b":"Đã bán cho","ed4978867de1da05b336b724a3fb96222a29ebec":"Chỉ số phải là một số nguyên dương","87e2e01f93d25ba7ed582cc81ef5c9ab2959f4c6":"Số lợi nhuận","b2a4553586d1062c21323bca1dc0589f7a9d5cf7":"Số lỗ","46fc6f27a835486d63d9e927c6687e4508cb3087":"Số giao dịch tối đa đã đạt tới","9202ddae4cea16513e53bbc965d88ed975e59512":"Số lỗ tối đa đã đạt tới","5f52b397b7e5f538681f0f5717a88aa626349c7a":"Bot.init không được gọi","85dfa32c97d8618d1bea083609e2c8a29845abe5":"Tài khoản","d847919a30d31c0be624087f3370492b3fdf80c6":"Số lần chạy","5cd6978d63540c8a490ef76f43219de6362f958e":"Tổng cổ phần","17410d7b62b8b1de981cfebada24632987edf186":"Tổng thanh toán","b841eeb091f1ff0e14be08e5ea1b93e4cf147ed3":"Tổng lợi nhuận/lỗ","90eef613042c5a51f542421065b68b886d473807":"Số dư","db1c784524e1b54011a95823026161f7c8517fe0":"Tương quan","4db3e9e4aecd187db9339a10d2629fef46724dc4":"Loại giao dịch","1bb4086b66659d8580f9be4beef69931aeea3cad":"Điểm gia nhập","8bf249c4855e591964bd5bdd35c8ef2ee107342d":"Điểm thoát","ba7be969e7c1bb5f22489e843478e3d721aaa843":"Giá mua","772fbced18230220d2d9be1456be16fc1b271d25":"Lãi/Lỗ","bae7d5be70820ed56467bd9a63744e23b47bd711":"Trạng thái","96f608c16cef16caa06bf38901fb5f618a35a70b":"Đang chờ xử lý","7fb3a9b5101bcd45e2dca077191693a5199bafa9":"Đã cài đặt","82a82f798dd773717ec37d15fd4405510291734e":"Bot đang không hoạt động.","6a88e58aa1798626f94cf17f1a91618b405bb289":"Bot đang khởi động...","624cc7f40b68faace7e78d8e5c5be1d4f15facda":"Bot đang hoạt động...","788180a6ddbbbcca10f6f49d8e85d557934bae0e":"Bot đang dừng lại...","d907a40a4a15da3c21a6e0f8ace3f987d482f92c":"Bot đã dừng lại.","4f219c17ab9ab76aa1cd431b4e0e5ecf5520e8e4":"Đang mua","4684ee1026d9b4c872d016c3c4588a0c479a451c":"Số lượng mua","ca92c55b9e4233d771d5b6300fe751a9678d1deb":"Mua thành công","f02760cd2eac28169f0a990c950c3dfe8427f772":"Hợp đồng đã được đóng","66c7734789e19cbeef3a5ac185ea732139aed213":"Biểu đồ","3b662fb2e8bafce29aa98321b18874bb44905488":"Tích hợp Google Drive","7ee0ff5eaa6fa82bd6d83a2f4ca446c663f097cb":"Tối đa các giao dịch liên tiếp nên trong khoảng từ 1 đến 100","93039e609d94a24f3572b794a31b21525a09af2b":"Chưa thiết lập","ea67c8023c75375484f3a5f1aeb009b20059d5bc":"Giới hạn mức thua lỗ hàng ngày:","b1946e5b4b78465b7661fd4bc89ff52de6c633e7":"Tối đa các giao dịch liên tiếp","952f375412e89ff213a8aca383d18e5691354347":"Bắt đầu","9f1c61cc03f3ef9324db05502f7f0b61e61e1521":"Những rào cản về giao dịch","095ba68888b5ace5f4515f5acab76dfa1073544e":"Máy tính của tôi","ddcb77ff769ea54ca622848f6bedd4004fa4f4fa":"Tải","248e224f533752db28a1aab3519a58569ad96140":"Tải các giao dịch","c7097e97dcc446ca889d3ca6be733a65e2728afe":"Tải lên Google Drive thành công","3218e5a460e82d7bdea9ce0f145cab2f47ba9a4b":"Lưu làm bộ sưu tập","611ebbfb080284312904de925ef0f75f4cb56ad2":"Lưu các khối và cài đặt của bạn để sử dụng cho các chiến lược khác","efc007a393f66cdb14d57d385822a3d9e36ef873":"Lưu","a638caa8ab2b7ff7980a571334217339e6d1d634":"Lưu lại giao dịch","39fca63515c105918f03e4908ec12df675b07f92":"Xem giao dịch","fadc0ef93d1ff13370524ce8481ddc4a71195934":"Sắp xếp lại theo chiều dọc","e4458464df6cbb8da1134875ba51519c5d244d9f":"Các khối phải ở trong giữ khối, các khối chính hoặc các chức năng","e9c45563358e813f157ba81b33143542165ba84e":"Cảnh báo","31cb6f44d030abeabcc7046555dea851602a87a5":"Chiến lược này không khả dụng ở quốc gia của bạn.","9ce3bd4224c8c1780db56b4125ecf3f24bf748b7":"Ok","af145748c9cf765a3b059eec20cb1dbb899297d8":"Các khối đã được nạp thành công","a479c9c34e878d07b4d67a73a48f432ad7dc53c8":"Tải xuống","f1d8b7b118d6f82f95614d476bc11af650aed3bc":"Không thể nạp tệp giao dịch","11ee9c5d534cc8d22651092222b532917594161a":"Thời lượng tối thiểu là","5283ac04c9a8ba8a937d1edb4ba986aeefce8bf1":"Số lượng giao động phải ở trong khoảng 5 đến 10","ace1342bc3720b77ce510b93074041e7386d209e":"Thời gian hết hạn không thể bằng thời gian bắt đầu","fed3e7bd6696fb97a12d720845ab5388456bfc3b":"Dự đoán phải là một chữ số","d466687f90ba548434d65186d11a80c4204f9ad6":"phải được thêm ở bên trong:","6ddf2b3075ac9ab5d66b40e15ea9a34c087672ea":"phải được thêm ở bên trong","33aa6ff282ee509d37c6f758274c9156b419ff73":"Chiến lược bạn nhập không hợp lệ.","da162a909c2981ed318d23cd9a6be1d66e0a8400":"Định dạng tệp không nhận dạng được.","5e719fa76e1b6cb396376c82ebdd04bec7253229":"Khối từ xa để tải phải là một bộ sưu tập.","b0d2de25daf6ba09a5e710c6968ffded29c4dae1":"Không thể nạp tệp khối.","df84a88f38b03b5b342362d72370b0d66afdae35":"Mục tiêu phải là một tập tin xml","cd680fd936e9559ef1d95efac7a71680e2b13a89":"Url này đã được nạp xong","34c59389053701a04127f74d32315e0206e076f8":"Lỗi đã xảy ra trong khi tải url","3ead0b14c72503187691a7a6d7121987299bd401":"Đây không phải là một phiên bản chính thức của Binary Bot, sử dụng tại rủi ro của riêng bạn.","27401c9c8e476d659c8382e05c6d70a4a82be468":"Phiên bản chính thức","bc981983e7f547dc62e19a1e383acfe00782a6d5":"Tiếp theo","b52b36b7269fbfc58ec24bb724691951a3decbe8":"Trở lại","e9b450d14bc2363d292c84f17cfad5cfbd58a458":"Hoàn tất","29cadadfebdd578a50b7b3d1b2c5b33e424d5de7":"Làm một chuyến tham quan nhanh chóng","a48e81d4a8da67637b46725824177a959fe99b21":"Đã sẵn sàng để học cách sử dụng Binary Bot?","6f3e6ebf249947cec4f64117253a8fe43335ae79":"Không, cám ơn","fcb6e90e7223e1d1d735f15dbb7ded9d81bbe7ef":"Không hỏi lại tôi lần nữa.","4ca0a75c2b7fa7da4364d03b72c46fee1860a2bf":"Không gian làm việc","5fcf29b9f0b8971c8148e70a150ddc9ac04c94fc":"Kéo và thả tập tin giao dịch.","ddcbb5361b1a16eba60fca2383fb297bb90ed9b3":"Tải về mẫu chiến lược","1758356db21759f7c5a0da9b4dd1db8fd6feab3f":"hoặc","00b581632c1532969a7128ebc8eae936ed8af04e":"tạo chiến lược cho riêng bạn.","d171baee235d4c93f63755a876782dc5be4c3e47":"Công cụ cho các giao dịch","056f19272d96f902c38207cf163ea8dbff7fbd32":"Thêm các giao dịch từ đây tới bot của bạn.","36bae31694f85bd7a5b0ad45e51ef622b95baadb":"Các tài khoản","f5c47fd3b3553b10441a06054078cea745177dea":"Đăng nhập trước khi khởi động bot của bạn. Luôn luôn kiểm tra chiến lược của bạn với tài khoản ảo.","fd825ae94aa79500a878dd4590a4b360e7162663":"Điều khiển bot","6ee7980833e1ed72901b919ffd0fa20e1a251d3f":"Kiểm soát các giao dịch. Giữ con trỏ chuột trên mỗi nút để biết thêm thông tin.","f5169c84497de3aea74f7da9e7e177d1427e736b":"Tận hưởng!","4f1b3d682c2a00b393c33637da402463bc11d5ff":"Muốn báo cáo sự cố hay yêu cầu giúp đỡ?","0049f8894e41937ebb9111cd3def6749049fb50f":"Bấm vào đây","aac1569ccf6b1a11b0ad0fbefdb9ffc777b4c733":"Bấm để chọn","53adebdc2b1cbbedb56395b19a73fe47b87cc554":"Những điểm thay đổi giá","5fb1db527825d2996e37c655e5dec49d4da80c09":"Giây","092f99ea11a34a8490e7a767a83a42fc45634f82":"Phút","9e25a34e635a123f8958bbe26e7c4843278597fb":"Giờ","f6bb0f468a8569c67b3d6826e57e62c5500c3681":"Ngày","d1a17af19f5388af9d6596cc0ea7dbb1d739e255":"Không tồn tại","db6708630fc646eb98298d9acd701e0a1ac051c2":"Lưu các giao dịch và chiến lược của bạn lên Google Drive","85538d002a336c5addef8d189d80976cf7758f8c":"Bạn đăng nhập với tên","b65463cb6a42a17de514acc4659f7fd331e0876a":"Kết nối","ed28e0686e1251ba046f582a3e9ec02470a5e78d":"Ngắt kết nối","cd5f85b6f187605f82386eacd680f93820af8d11":"Kết quả là","1e38ce3d180cefae485a6986ca7c67841e30376f":"Đúng nếu kết quả khớp với lựa chọn","5c89497fc3c128e2ff865ce8df15356054f2c028":"(4) Nhận kết quả giao dịch của bạn và giao dịch lần nữa","14ea81918758c994cbe3178e695e56afc1ef2b45":"Nhận được thông tin giao dịch trước đó và kết quả, sau đó giao dịch lần nữa (Chạy trên điểm kết thúc thương mại)","5098e2bcc96ee227983c9f7eeddfd226c220ca00":"Chi tiết hợp đồng:","251c830f8f869e0887e8b4dc4c30ba1738c7097e":"Đọc một tùy chọn đã được chọn từ danh sách chi tiết hợp đồng","b3b543c80063a116ced4965d8537b7b62d14c0b7":"Giao dịch lần nữa","a1eeb7c1e92e9a5d9323ed8ebd7ca7ffed8b0232":"Chạy lại khối giao dịch","da3105e38c42a481ad7230ed393b0e12bebe9c4f":"Hỏi giá","343fda69c73b78b84967055aae97f790c422adfd":"Hỏi giá cho đề nghị đã chọn","d4d34ce9d9dd7e87213469f88cb7ac43725675d5":"(2) xem và mua các hợp đồng của bạn","fb61a3c71f4c488b3b470cb7daf502a3e9b5ad48":"Xem các dòng dấu tích và mua hợp đồng mong muốn (chạy trên cập nhật tích)","87da93a46d143f6019979b3548414d9d7adabb35":"Thanh toán cho đề nghị đã chọn","160f06d4799c85021a810f68c5b517eea37a2737":"Mua","4c2fdde3d9c1950498ed263d6ce21d4bf3d0800b":"Mua một hợp đồng đã chọn.","ca5586bdb5bdc1a2c0baf53ed0ecd21fafabebe7":"Lựa chọn bán hiện khả dụng","03bad10717e183b24829baf483dc715e1a44bf7b":"Đúng nếu lựa chọn tại thị trường đang khả dụng","2c71ed279a402e93312dbda173ab18f244d6bf46":"(3) Xem và bán hợp đồng đã mua của bạn","17632a9f51611d2579d95b4b1ccb9476566d7ccf":"Xem thông tin hợp đồng đã mua và bán tại thị trường nếu có sẵn (chạy trên cập nhật hợp đồng)","579607dc4f989ce2b94b558431666a0ab07ac1f3":"Bán tại thị trường","e20afd5cf3811a42071c9a312abb2afdad4c590b":"Bán tại thị trường.","4712cbff8e92822fc960ef9c0197293a19675eae":"Bán lợi nhuận/tổn thất","df817b48c7a076561b4f8bedc52d65d2e351ab52":"Trả lại lợi nhuận cho bán tại thị trường.","b44e884c355e447d0da0e6ba45caaff18c84373b":"Bollinger Bands","d6a2a207343bd83aacdc80b579ff4419713a256e":"Danh sách nhập","170a28a9db6d27d7212fc6dc249434a57517e7bc":"Khoảng thời gian","b833989d69900a4be9e32d1bab65c8f8233f099e":"Hệ số Std. Dev. Up","1cee82f19c0bedef64f68b32e6b02128efe7c61b":"Hệ số Std. Dev. Down","974da601086448d0060aeed90e53ddd5acd17b91":"Tính toán Bollinger Bands (BB) từ một danh sách với một khoảng thời gian","d5b65cac1f1cf9421ac978eebe532de99040cca6":"Mảng Bollinger Bands","58de49791c64aba14e36e5887244a5ef088286cd":"Tính toán danh sách Bollinger Bands (BB) với một khoảng thời gian","4bd99f76f1104229744455d93df0ff76b9eeed58":"Trung bình động mũ","ea615c6d6a74e25a6d2f1bc9980b46e73508c2eb":"Tính toán hàm mũ trung bình động (EMA) từ một danh sách với một khoảng thời gian","4082d9379e59b38c891d046312f8d3c4b64ae3b1":"Mảng mũ trung bình động","562edc102c5dd9e2fbbede1140b8a5461c2d4dc8":"Tính toán danh sách hàm mũ trung bình động (EMA) từ một danh sách các hía trị với một khoảng thời gian","a537f4f3c0f6c68bf896fb23cb2ecdc658488ea2":"Mảng MACD","b18e572ea14edd48587145f1ef50718adbf256c6":"Giai đoạn EMA nhanh","974023bddd6249d0f6404872cfcae205b2599ea2":"Giai đoạn EMA chậm","5c2adcb3d1bfd6b9f5c2dec13d02a9473e4445a1":"Chu kỳ tín hiệu EMA","6b15ce93fd68d80aeee7f7964c1306044c3c1baf":"Tính toán danh sách Phân kì hội tụ trung bình động (MACD) từ một danh sách","95ec92885c855ba9cf734c17a43f081901e4d2cc":"Chỉ số tiềm lực tương đương","b033619e108c9e43bfd8a42cd97bf5c5dc86dc65":"Chỉ số tiềm lực tương đương (RSI) từ một danh sách cùng với một giai đoạn","4034de66995b876b2ba9bfd0274025e39168e05d":"Mảng chỉ số tiềm lực tương đối","f9da880c8b0e4cce4431912c24eba939e6bc06e1":"Tính toán danh sách chỉ số tiềm lực tương đối (RSI) từ một danh sách giá trị với một giai đoạn","a9842c95766da40bf4ea6ee263cb5a5985847763":"Trung bình động đơn giản","347775a293c14362d492f019e677c965be1d6e7d":"Tính toán trung bình động đơn giản (SMA) từ một danh sách với một chu kì","4cc7b9e53d082896ad884eb01be16320af65f282":"Mảng Trung bình động đơn giản","2c75179a57af3c36581008b65e86ed81c4a4cbea":"Tính toán danh sách trung bình động đơn giản (SMA) từ một danh sách các giá trị với một chu kì","39f024cf49724fe7ffdea7773c72ed06eec998e1":"với khoảng thời gian","e4bed3e67e58b2334ee4b9c6ce59ac7a95d80aaf":"Hướng là","ad47561efb1dcbd7246d9b64487f615647fda036":"Đúng nếu hướng trùng với lựa chọn","05bef508aadd62bf3967dcf67d769da296f19989":"Hướng giao động","d089ab98a846a521b09aad6ff3fefa728bfa8b42":"Hướng của khối bị từ chối, vui lòng sử dụng khối kiểm tra định hướng","cdb31fc857f01a59f664413498293c714285f46d":"trong danh sách nến","20fd5f86f08796f145d69dedc209a27e459b2f51":"có được # từ điểm kết thúc","a96606af8c33ac3428b45abc4782dbf93f458d29":"Có được ngọn nến gân đây của nth","90ed0e1ea5c1907f8a32d8051a66e845857bb2a4":"Danh sách chữ số cuối","248428facb97408414180d4de74e4db35360fbc4":"Hoàn lại danh sách các giá trị của các chữ số cuối","2e4202acde880b7b1c3686f0335ff879fc1e5c7a":"Số cuối","e46e0bd2f7fe37217dec8aa26ebce8ffa3608663":"Hoàn lại con số cuối của giao động cuối cùng","d5fde4c9d5edf660f760fc226df4d2678d3334ab":"Danh sách nến","95e552a40d3446c96905cd3ec7e3d123d0246ce8":"Hoàn lại danh sách nến","5a0ed227a01b7d30b05dcaf3e1c23b74b9be6ff4":"Làm một danh sách của","a4220593d385a720886f7af1ed3c478fd0c6339c":"các giá trị trong danh sách các nến","cd8cdf3d47e921c8a72addae9269e66041d417c5":"Hoàn lại danh sách những giá trị nến đã được chọn","3e4f335e7a6f79bd1bafd219ddde30acbf16a7ac":"Trong danh sách các nến cho thấy ","34037f9452fdb66c9ca27ebcc0afe9d5139e9e24":"# từ điểm kết thúc","aba43a580daa7f306956ec69b83e6e37e7233126":"Đọc giá trị nến đã chọn trong nến n thứ gần đây","e04b522218a181cf0223042dd18ae08dcc22d8d3":"Giao động cuối","6ee445fc253a55c9ed54c009c3f020ac65200d80":"Hoàn lại giá trị giao động nhận được bởi một giao dịch đã mua trước đó","4b2340a890e88d1886757c3f7172e273a1edc31f":"Giao dịch này xuất hiện trên từng giao động","b54d7b4590559dad64f02d09aacbf6d9863e2624":"Bạn có thể sủ dụng giao dịch này để phân tích những giao động, dù bất kể các giao dịch của bạn","ebffc758056e6b2fc2af99af17fbc6853e5d3583":"Danh sách các giao động","17649cac8739adcae95e641f794880272ad33bd1":"Hoàn lại danh sách các giá trị của giao động","802dc02469ae51067ca620ff57dfb5bdb3e524ac":"Số dư:","c4ee8e12b2484cd5b47cdf00bfa2c50b83e91d3d":"Có được số dư hoặc chuỗi","69280143949fcd59c171dd60f6b6e13d0cc08fe6":"Các khối giao dịch bên trong được bỏ qua","d072c2ceeb5c1217722d14c74de7aeab945b4215":"Đặt các khối giao dịch của bạn ở đây để ngăn chặn chúng khỏi bị gỡ bỏ","b06acc4158c824231f727a13e1c9811f43d5be42":"Tải khối từ","661db37251a1ed1afe357ee13895f37a623d7cbf":"Nạp các khối từ url","6c03ee54ad3a51fc92a1d69943e99667847705b6":"Thông báo cho","b1bec5d06e3672915d81b2fbc2347c8b4947a954":"với âm thanh","a2d0c89fdfff3176efd4a443eb0f6607067b93e7":"Tạo thông báo","6e0fc122f936f808bc2e3af661121b65712ae855":"Thông báo điện tín %1 Token truy cập: %2 ID Chat: %3 Tin nhắn: %4","1aeb6caed9e46edf5d6224adc905ffb8ee3a7708":"Gửi một tin nhắn đến điện tín","45ebd38f4c641ebf6f72be8c3a79dfa50cf9f20e":"Tổng lợi nhuận","ffb465875e1ff2b49bcaa7c6b70965ffe39fa59d":"Hoàn về tổng lợi nhuận","bc528d26f66fe8c4aa4bb24ec9c99dff12c055e0":"Số lần chạy","bea5756b18644ccfab01c1c0dbd6fa9db7103379":"Hoàn về số lần tổng xu hướng dài kể từ lúc bắt đầu","c67ded6b64019212eb2bc69afd761f5b3f626040":"Thêm ký hiệu cho một số để làm một hàng rào bù đắp.","569bbd757e1bb8bbccd250b98dc2bb37cb47b787":"Thị trường","74751e67c3e1010c343095eaf543e7cb21ced2ef":"Loại giao dịch","1f4698382842477e211eb46de81fa506f01a8c34":"Cả hai","c1baf816aac5a5cd849768773fc248cd249dc296":"Loại hợp đồng:","c93025710d1ae6cbaf8e710f63eca8edfa0c9399":"Khoảng thời gian nến mặc định:","9693aeaaf68e3929b59b79306feaa0a847d01192":"Thời lượng:","10c02649e226d430bd75a5b6315a41c0db9992a2":"Rào cản","837276742aa90209dde3b4eef07d8e7ab26731ef":"Dự đoán","258b49925b41751c6bd790a0848246566ba61440":"Khởi động lại mua/bán trên lỗi","c55ee3445cd391ab299b6f85a6ea9a68a65ea64d":"vô hiệu hóa để hiệu suất tốt hơn","b410994b67e37d9516eb9b866c85a8c639f79e68":"Khởi động lại giao dịch cuối nếu có lỗi","2260c5a971c2602834ef8feeb5fa522f900b469f":"bot bỏ qua giao dịch không thành công","cd1495cb4c60266a6abad9024022ae079bf7e416":"(1) xác định hợp đồng giao dịch của bạn","0745acf92abd7b60598f161717884cc45dab8694":"Chạy một lần tại điểm bắt đầu","999e1ade10ff5ee1d115f5a6288bfd2e0d0736e6":"Lựa chọn tùy chọn giao dịch","a43c3299d30a5bc7e31a574cdc87f59cbc8fe585":"Xác định các hợp đồng giao dịch của bạn và bắt đầu giao dịch, thêm khởi tạo ở đây. (Run on start)","d571f33d957ebcab086ecf38eedd71b6ef0c5820":"Các tùy chọn giao dịch","4d22b565e4253e92a908f216184779679bb1a044":"Rào cản cao","b70c38c6db3127422e05315c30bdf76c7c36c480":"Rào cản Thấp","a6c5f081b3addee364af1c8cdb84853f49dc8e07":"Tuyệt đối","0f2ba74929aca6fea950e351dcd576b7cd841fa4":"nến là màu đen?","7cb3b482ab66947d439642ec64dc7f5bd4e065dc":"Làm một danh sách của","5925d08228e246f07b790b88ad70c1b73a97d2bc":"các giá trị từ danh sách các nến","852b438f91ad9eb2cdd84419a675a216d543c687":"Đọc","67d3b35a0b740127b56bcd44d3bcb1ccc20e0b48":"giá trị trong nến","d79d854dcd0829e2177a47beab6a55569e781ab1":"Đọc một mục trong một ngọn nến (đọc từ danh sách nến)","5606b4460ac96063b8a8e5647008f3ec97252fc5":"Thứ hai kể từ Epoch","2de20bdeecb1a8c28bd36fe75f028ed4318d0348":"Trở lại thời gian thời kì (thứ hai kể từ thời kì)","f43cb41af7ce8a69c7aecbc1c603bb0381270982":"Chạy mỗi","4b6fe6898f0f956d48a4c8172c6dfbcb4159ab09":"Giây","2eea87bb804e4e73e3f8e9c41140f7ed83ea8875":"Chạy các khối bên trong mỗi n giây","e0af6ddc8a892704f64680bcb22b30c4bfcefec5":"Chạy mỗi khối thứ hai đã bị từ chối. Vui lòng liên hệ chúng tôi nếu bạn có một trường hợp sử dụng hợp lệ.","7b9c76088576a64f32d67ec335162b9f73eaa026":"Chạy theo","ff56ffac023cf69ca5c7f71d407499536f4f86b5":"Chạy theo các khối bên trong sau n giây"}
+module.exports = {"3d52a6d8fedcc48a65297c07bf5f7e3e41aab5aa":"Lý luận","3edf0df49942da6d11a1a217e4d3af4a5a8e64f2":"Toán học","c3328c39b0e29f78e9ff45db674248b1d245887d":"Văn bản","4d064726954a17487f94e931f5b157b733ec22ed":"Nâng cao","a1fffaaafb7cc996685bceb829c053cc4f7de43d":"Danh sách","19de69cb601f53a4ea7af22a65c71ae63251365c":"Biến số","2b961dea1dc0c60ddf9a2c8e9d090f6f7d082483":"Chức năng","dc7f77b4ccfc9f70a78bd97303bd10ba4c9d70c8":"Vòng lặp","66639f7d455dd71faa9147f5d69e5ce885d8bebd":"Nhị phân","0ba66deaab2f2cd3b0793d03f600ee2b8f577fbc":"Khái niệm thương mại","9201c6ac624e98e168e6ccddbcd5a9b5cdff06b3":"Trước khi mua","44ab9a87268d3fd74040ed0b55c04f83294cfdef":"Trong khi mua","c415c9399b7ae7285d2c1c880a6a0aa18f62ff8c":"Sau khi mua","d07ffc19d51f0973859a0d95c1d15cd9f22388ca":"Phân tích đánh dấu","8cf71374fa095a64b5295b672daef8507ec7be6a":"Chỉ số","4fa8cc860c52b268dc6a3adcde7305e9415db5bb":"Công cụ","6c82e6dd86807ee3db07e3c82bec1ae1ce00b08b":"Thời gian","8d8fd6765e184419cad8b88d1a60c895d79578c2":"Nến","548f449b63ff41eaaff5a2d679ffa56b2015fc20":"Các loại khác","8bf95ea372568c7a254ba9fada5f6f1701ebc5b5":"Lịch sử","12b71c3e0fe5f7c0b8d17cc03186e281412da4a8":"Tổng quát","9feddbabd7e7309e96c590069057158e96baa8f6":"Kiểm lại thực tế","038fe2bdb7ec6ee078f60bdb5bee94654ec6a81d":"Giao dịch các tùy chọn có thể trở thành một cơn nghiện thực sự, như bất kỳ hoạt động nào khác bị đẩy đến giới hạn của nó. Để tránh rủi ro của một cơn nghiện nhu vậy, chúng tôi cung cấp một phương thức kiểm duyệt thực tế cung cấp cho bạn một bản tổng quát những giao dịch và tài khoản của bạn một cách thường xuyên.","4152043e8c670075d2c919677e835edb0d923cab":"Xin vui lòng ghi rõ khoảng thời gian kiểm duyệt thực tế phù hợp với bạn trong vài phút","d9fff2df19e90f2c7ea6bb30fde4e0da119d13d1":"Vui lòng nhập một con số trong khoảng từ 10 đến 60.","2439f2f199b2a3e798aa9b4feaa9248bdec9bc0b":"Tiếp tục giao dịch","a72ca256dc49e55a1a57b9a727fbde9834c9a3f7":"Lời tuyên bố","6e78c91f5a05fc0d4f1a787d38e3d6fe2f856d46":"Đăng xuất","4832e45812a2724f16a15f9ae87adfc8ae4168cf":"Liên hệ với chúng tôi","f7c400ed695f898b8ee9d21664aa17b5bb693828":"Đăng nhập","5ea75f1605a4bf1db5c39fcc61854627478c0a7d":"Phục hồi giao dịch về trạng thái ban đầu","f98595d541778d86f75ef22b3328a031d20aa16b":"Tải các giao dịch mới (tệp xml)","4a1e616226c329a94da7768bc0435a3284478010":"Lưu lại những giao dịch hiện có (tệp xml)","6b3465ace62f33f0687b4669ac26d95895e9ca52":"Liên kết Binary Bot với Google Drive của bạn để dễ dàng lưu và tái sử dụng các khối giao dịch của bạn","8e4ec2c451ec7b1bf68d72fe9086ec978e41feb7":"Hủy thay đổi (Ctrl+Z)","937f5055f05be359ddf619744e8af4d643549e80":"Phục hồi các thay đổi (Ctrl+Shift+Z)","8406d1cce44230835932060649e999ca3283b413":"Phóng to (Ctrl + +)","1109673172af2c173c492622ff8a72c8f29f0e70":"Thu nhỏ (Ctrl + -)","44c22002c65d2871331263a23c3e09c0a1bfd847":"Sắp xếp lại theo chiều dọc","ebd0945359e5578ff9bd3a2ab490ca84c225d8f5":"Hiện/Ẩn các thông báo tổng hợp","76bb05950f80f3a88ee05ef3276c5934fd355e8d":"Chạy bot","ba50a42d8d3228c37a817865fce49fbca692c2ad":"Dừng bot","4f4aa4117318a8ddf8783885d4f3542c5b2733bd":"Hiện lịch sử","91017ef9b165cd0e7475a770f318ea5e705e1321":"Hiển thị biểu đồ","c89e3dd1cafcadcc0312e476ab58b2332209da23":"Xem giao dịch","b02c858e72be118a65c9393930351012b647cb9e":"Hiện tiêu đề","250be77f7605669a0b3d968b9ed381a3d9787ed1":"Mở tệp XML đã được lưu và lấy về các khối giao dịch của nó","ff29ccd7a6c6073cc462ed590d27a91632fdf67e":"Binary Bot","608061fb5aab975013fa70c5c814a1d8ba30c152":"Giao Dịch Hiệu Quả Ngoài Sức Tưởng Tượng","e4ce8dc3e416e69262ba642dc57d3975d6616980":"Quan tâm đến tự động hóa những chiến lược ưa thích của bạn cho việc giao dịch những tùy chọn?","f261237ca8beec6f77b76c4121feb8da22818c56":"Binary Bot là công cụ lập trình tiên tiến của chúng tôi mà giúp bạn xây dựng những ứng dụng giao dịch với 1 một chức năng kéo-và-thả đơn giản \"tương tự trò chơi ghép hình\".","f6c85c68616eeaaa15fcd53fdc52f6eb5c886357":"Mơ đến con số bất kì thuộc những con bot giao dịch những tùy chọn nhị phân, từ những công thức vô cùng đơn giản cho đến những thuật toán quy mô phức tạp. Sau đó để chúng giao dịch cho bạn, ngay cả khi bạn đang ngủ.","e6906a0d1c28b202f9bd49da4a6abbddca57399a":"Điều tuyệt nhất là, khi bạn đã dựng cho mình một con bot, chúng tôi có thể giúp bạn bán nó cho các nhà giao dịch ở các","1dd0cf79c572bcdbdfabbd54ee95710a21234d73":"Cửa hàng Binary.com","abeef9a35ae6256796ba2462e4f64d308de42359":"Nhận được 80% doanh thu từ mỗi 1 đơn hàng mua của bot bạn trong cửa hàng ứng dụng của chúng tôi.","0606f0b7763ee6e8094a3dab7873d34c08fd3670":"Bắt đầu dựng một Bot bây giờ","221acaf3a0290adafe08cdcb8c66121c73d8b4a3":"Cần hỗ trợ thêm?","d635b53e59c9aad8c5d78458826beffb029b27bf":"Cảm ơn bạn, chúng tôi sẽ liên hệ lại với bạn trong vòng 24 giờ","a69a8fc21499d0fd85e87bab467699827547a5bc":"Vui lòng nhập một URL server hợp lệ","1de91e827ec70ca735abc2c71b0a89cb0cfc4ce1":"Thị trường được gạch chân chưa được chọn","50050f06645ad2743165b429a8f7deebd285fd63":"Loại hợp đồng không được lựa chọn","6a7d1a3a17c4e8ae6712cb60d46db1edf0aa2667":"Xin vui lòng đăng nhập","2f9f9096be1a1c0569a9ce54e57f0420f6b3c2e9":"Thời lượng phải là một số nguyên dương","4df6e872792d72aea8a2f6b831d00b554464da23":"Số tiền phải là một số dương","001e68df3a4b32a4d57148d9d407f44eee3b7436":"Nến đã chọn không hợp lệ","04f14ea7c92e0b2b5ae005c696245063ec641d66":"Danh sách nến đã chọn không hợp lệ","c1bbfcbb4f57d3a56c1239af0c2138321589efd2":"thử lại trong","57b453bb26b1c28dfe362b7cc9f17f0be93dd581":"Tỉ lệ tối đa chạm tới","094628ce13fc0e78f07b697d1cc9421bb2edd666":"Yêu cầu không thực hiện được","816c52fd2bdd94a63cd0944823a6c0aa9384c103":"Không","5397e0583f14f6c88de06b1ef28f460a1fb5b0ae":"Có","bbb930cc426507ed3f6b7c343c75dd0e041494b7":"tuyên bố","e6e886cdcdefeb6d3edb4c31bed06dd183ac4153":"hỏi giá","50e72909992bdc37c7c07769d1b7efac5e52874c":"thanh toán","ecb5ba7044417916ba12de5fa9e6fccac3e5d475":"lợi nhuận","c980b910204c7babdffe8ff3f7e755f30133383c":"loại hợp đồng","a726c6955157f1b8b92f9932652434a7150f80f8":"điểm gia nhập","a66d5c7ef2c63dbc9a8f9e6ae4e2bc575e74a36e":"giá trị nhập cảnh","3905be81561384dc8c43d6127c57ed1e0eb03b74":"chuỗi giá trị vào","7674920c033ca14277c577e19c037a6754d4fa80":"điểm ra","e8b8bd9f2eabc12875605a37c93e7f04a713fcb8":"giá trị xuất cảnh","06ecea26625359f7dcf5ff5c47af6174ff815257":"chuỗi giá trị ra","779455ee3bde8494d9629b353e17b19e92357ba8":"rào cản","37a5301a88da334dc5afc5b63979daa0f3f45e68":"kết quả","4973f4c599d5f42cf7bde52d66c3ed8ef77accb1":"Thắng","12e24a7d8ac40579e8a0aef4869288afe7ed6745":"Thua","563339f82447b4e758ad76d5a0b63b5698594fba":"Tăng lên","5c1ae82c29543ac887703776bf3da2c7dcce683d":"Sự giảm","2fc096bb7b6596ab243d0286c9f43fdf2b9b406d":"Không có thay đổi","ecb252044b5ea0f679ee78ec1a12904739e2904d":"chuỗi","53b0a1b2fadf4e040cdc2155a7340de24aca93cb":"con số","bc74f4f071a5a33f00ab88a6d6385b5e6638b86c":"xanh lục","4c9a82ce72ca2519f38d0af0abbb4cecb9fceca9":"xanh dương","96de5543d183d7de52ac5fa21c46fc811f673f89":"vàng","78988010b890ce6f4d2136481f392787ec6d6106":"đỏ","aa9330a16e5b055de809256dad6b4d1cbd2999e7":"Yên lặng","cf84a98d6cf7f156862a08ba8236467b6f471004":"Thông báo","eee2facd669d1434848c24da5527b3e87d9a12d5":"Tiền kiếm được","9d705578b0f1f0ce3a06dc5e82f9a1e6078f81e1":"Công việc hoàn thành","7f2f6a15cf8da2b27e5a4af47b58e7ad71c0b3d9":"Lỗi","a3b1583d377f37ac20de7e089edfa0920a078e57":"Lỗi nghiêm trọng","66c8b6848eee629c4ac551bf2b5fa591571654be":"Tăng tương đương","5649dce3367d490fa19d563ee9e3d4c4b6f7c642":"Giảm tương đương","062787aa328047e189774b3703d983b83938f6e9":"Cao hơn","b91eed4b7a80cd9572a27e65ebdff9caa4b3b9a4":"Thấp hơn","e3f139abb7a549a1210b36f7dbf89215ad6c9902":"Liên lạc","7d7932bcc2e262ae98cf09dc5445130fb3881769":"Không liên lạc","a16814a48ec58c2e24ba224a80921a5c02361abe":"Kết thúc vào","391d02cd75ebcd6ed26f5f45ddf7d40bf13e9dc5":"Đầu ra","534ec5da4e82ec419abc170e1a8448f55a01664f":"Ở lại","98cbe1998effd8b1a8aefdcc538573055e99a5f5":"Ra ngoài","93d13bad1d2c2841db127cb70cc35bfc98059fc9":"Châu á tăng","c098658ce3d3a258e4d155949a60072966b36db7":"Châu Á giảm","ee2dbd5d6d82d0833069b07e7dd2848d3bf4d83a":"Những chỉ số khớp","8444b7ce28bbc3443cc5cf73359b8353989b2a4b":"Những điểm khác nhau","9e767ad03e5547f251044e0724dc1d9f3e75aeed":"Chẵn","dc28f5f3c65ec611f0f30022650d24382d27448e":"Lẻ","18a63f5512afb5573e5b44deba78d629f0635317":"Lớn hơn","2a268b89b83f8cb38ea48e46e93dd8840db512f9":"Thấp hơn","2155c8b38181dd2552e84a94049aacd33ef9c607":"Tick cao","1408cfd2b064b923f024fbe590e27db8282941a5":"Tick thấp","b86eb15dc4f13e4c2972de158d3038d9f657242f":"Đặt lại Gọi Biên","669a1f3d9a8f601a84da536cfdad1de4092b1926":"Đặt lại Đặt Biên","844d1a5c99a0a668383340cc095d040eef998c79":"Chỉ Tăng","87293a146cd481a2b30cf74282ec061dc4cf0735":"Chỉ Giảm","cf9b77061f7b3126b49d50a6fa68f7ca8c26b7a3":"Mở","b1a5954a483f8f8b0207385095f74aeb409b3f80":"Cao","a124947cbd2d1d92b47e027274c3269ff0c7a84b":"Thấp","bbfa773e5a63a5ea58c9b6207e608ca0120e592a":"Đóng","1173872a4fb205b713702f0eec5cf2c732c828fd":"Thời gian mở","808d7dca8a74d84af27a2d6602c3d786de45fe1e":"Mặc định","62957ecfdc50957e8957c11d2eae74d078f0ef1a":"1 phút","1dd3e663dfa7ac9cb77cfddd2cf8ac700657e2d6":"2 phút","24e46784cbce32443db5a2638b1a7d3201543e9b":"3 phút","3aa5819ed8a0b94d0f293db8e9c9598298ddd402":"5 phút","a6f151883b736f0470d33492e61c72a7d059d065":"10 phút","899761ff5425abd2ee214fa7aa46e27c6c8b5aae":"15 phút","31bbe8890d28d183f8f7f2c160fa892c444c0ec7":"30 phút","f030c3d667652646b86732ad7bc67e226c49cd3a":"1 giờ","2046e49e33c040e08dbd6fd83df3e1846015e6f1":"2 giờ","7b47150d431db70d783724007f07ab894eb8ac2e":"4 giờ","191800b7e9a48680792c0dd77cb6cac00c4514c6":"8 giờ","2d8a6f7c34468578640b333b8650131de06ac770":"1 ngày","f94510322ecd9b3a2af67a10bd51ecc4ac6a24e7":"Lên/Xuống","c1365a35e99d0f9147ebc72f21534cf471fa7d95":"Lên/xuống tương đương","9c7960c6b11d35ac9d6cdc1ebaad3af43b2065c5":"Châu Á","2260ce49306460c8a2ef501939f29ad6ddd4e934":"Chữ số","0186aa73a1b75fa8f0eb98bbd9ad01102bb09ec1":"Chạm tới/Không chạm tới","f7de1f66f0979667da275b7e8996e805395025a1":"Kết thúc ở trong/ngoài","a431deecd4c2258097adae418d496fe9a8179fee":"Ở trong/Ra ngoài","256fe245cb7d3d673095f7faaa8c9ff81b985ad1":"Tick Cao/Thấp","12a3f461cdebbc8f335190413ee6c57442743bba":"Đặt lại Call/Put","e696144fa588782e6d6b2c97e2d3ed1adf52bd5c":"Chỉ Tăng/Giảm","91a64e3f83c91acf336c631fba295f297f94c399":"Chạy sau n giây","024696596f26a4db232fd9e966eadfeb27c0bd1a":"Chạy mỗi n giây","c538c170bdc6b0f3bb98dce44a016a2e2d45a6e7":"phía trên","85c274929bc0e28eafd3734f2c25046c3b95b36b":"ở giữa","346e3ee198e98146993894d3de8ecab1a86c3e80":"ở dưới","f16459104f92ab6b38aa265adb4ecbfc3768e303":"Biểu đồ","e09f635f4e77476c9ca1c37bc9992e9ace3431c1":"Macd","27bed13a88c60350c3de92ec3820e1cc4f7d6ec3":"Tín hiệu","19eabc961735d78f12fc7be906ffcb033853cf85":"Dấu thời gian","68f4145fee7dde76afceb910165924ad14cf0d00":"Tin nhắn","629777b7d4d610ace6dee24442730f27d7d0853e":"Tệp không được hỗ trợ:","beb040c8fabd007c9cc5ac6a9feb6bdb05d33dac":"Bất kỳ thay đổi nào chưa được lưu sẽ bị xóa.","410bf23a3f080def9c7a976a16305bcde7943ed1":"Bạn có chắc không?","e99811bd3b1ad17e74614060ecb180602be35ad6":"Bạn đã bị đăng xuất!","876f3e0202ca40dedf2e5ab6577eba1ae637fb53":"Các chiến lược","8ce80462febd4d573cb2f9c1984fdc93b7c21c57":"Đã có lỗi xảy ra khi tải thư viện Google Drive","c4c758b5c8f5b3985f6bf7382c848bb44e0a5b74":"Vui lòng cấp phép để có thể xem và quản lý các tệp của bạn trên Google Drive","3b6bbab905129dd36b8d4e99947fa30540ed7b2a":"Tệp không thể được nhận dạng","3d6b44df6eaf6236b4abc1aadcf8f5b1cda769c1":"Đã có lỗi khi lấy dữ liệu từ Google Drive","cdfe947b0c089a4a1f78c11299f25c32a124f1a6":"Chọn một chiến lược Bot Binary","2db43c69a4b96454914f0b8272bc869984529e6e":"Đã có lỗi khi liệt kê tệp từ Google Drive","0dcea5f584938e0fff00084b83156ab31d641ab3":"Đã có lỗi khi lấy tệp từ Google Drive","18da95988117ff029393f3f5c881d70ef47f7385":"Đã có lỗi khi xử lý yêu cầu của bạn","04226bcf91195130e25fe7a8e8ea4d3e058efcb7":"Chọn một thư mục","aee24f2456ea8516b024a5d3e2b815ae7f2239d9":"Không thể gửi thông báo điện tử","3f370309b6280eb100f898426d8605c1f45d558d":"Mốc thời gian không hợp lệ","af6a4e2a5582be89ac930e946eaed86e01cac58b":"Ngày/giờ không hợp lệ","49d51398b574e7312d99b18d2b93d2ede416f053":"Không thể gửi webhook","05754ed14275a070a20a1d5cd65f0cea66f1da7f":"Các đề nghị chưa sẵn sàng","79222cd9892a434aa61fc7dc01c3839951eb8d1e":"Đề nghị đã chọn không tồn tại","6ea4a034747d020b1d8ce4848def95d537555dd6":"Đã được mua","89f89c02cf47e091e726a4e07b88af0966806897":"ID","1200c1af2f7bba4e29a34112865662748c9d41df":"Hợp đồng chưa được đề nghị bán lại.","62d6180e55905f7b996d442c53631981a4ef8b5b":"Đã bán cho","ed4978867de1da05b336b724a3fb96222a29ebec":"Chỉ số phải là một số nguyên dương","87e2e01f93d25ba7ed582cc81ef5c9ab2959f4c6":"Số lợi nhuận","b2a4553586d1062c21323bca1dc0589f7a9d5cf7":"Số lỗ","46fc6f27a835486d63d9e927c6687e4508cb3087":"Số giao dịch tối đa đã đạt tới","9202ddae4cea16513e53bbc965d88ed975e59512":"Số lỗ tối đa đã đạt tới","5f52b397b7e5f538681f0f5717a88aa626349c7a":"Bot.init không được gọi","66c7734789e19cbeef3a5ac185ea732139aed213":"Biểu đồ","3b662fb2e8bafce29aa98321b18874bb44905488":"Tích hợp Google Drive","7ee0ff5eaa6fa82bd6d83a2f4ca446c663f097cb":"Tối đa các giao dịch liên tiếp nên trong khoảng từ 1 đến 100","93039e609d94a24f3572b794a31b21525a09af2b":"Chưa thiết lập","ea67c8023c75375484f3a5f1aeb009b20059d5bc":"Giới hạn mức thua lỗ hàng ngày:","b1946e5b4b78465b7661fd4bc89ff52de6c633e7":"Tối đa các giao dịch liên tiếp","952f375412e89ff213a8aca383d18e5691354347":"Bắt đầu","9f1c61cc03f3ef9324db05502f7f0b61e61e1521":"Những rào cản về giao dịch","095ba68888b5ace5f4515f5acab76dfa1073544e":"Máy tính của tôi","ddcb77ff769ea54ca622848f6bedd4004fa4f4fa":"Tải","248e224f533752db28a1aab3519a58569ad96140":"Tải các giao dịch","c7097e97dcc446ca889d3ca6be733a65e2728afe":"Tải lên Google Drive thành công","3218e5a460e82d7bdea9ce0f145cab2f47ba9a4b":"Lưu làm bộ sưu tập","611ebbfb080284312904de925ef0f75f4cb56ad2":"Lưu các khối và cài đặt của bạn để sử dụng cho các chiến lược khác","efc007a393f66cdb14d57d385822a3d9e36ef873":"Lưu","a638caa8ab2b7ff7980a571334217339e6d1d634":"Lưu lại giao dịch","39fca63515c105918f03e4908ec12df675b07f92":"Xem giao dịch","85dfa32c97d8618d1bea083609e2c8a29845abe5":"Tài khoản","d847919a30d31c0be624087f3370492b3fdf80c6":"Số lần chạy","5cd6978d63540c8a490ef76f43219de6362f958e":"Tổng cổ phần","17410d7b62b8b1de981cfebada24632987edf186":"Tổng thanh toán","b841eeb091f1ff0e14be08e5ea1b93e4cf147ed3":"Tổng lợi nhuận/lỗ","90eef613042c5a51f542421065b68b886d473807":"Số dư","db1c784524e1b54011a95823026161f7c8517fe0":"Tương quan","4db3e9e4aecd187db9339a10d2629fef46724dc4":"Loại giao dịch","1bb4086b66659d8580f9be4beef69931aeea3cad":"Điểm gia nhập","8bf249c4855e591964bd5bdd35c8ef2ee107342d":"Điểm thoát","ba7be969e7c1bb5f22489e843478e3d721aaa843":"Giá mua","772fbced18230220d2d9be1456be16fc1b271d25":"Lãi/Lỗ","bae7d5be70820ed56467bd9a63744e23b47bd711":"Trạng thái","96f608c16cef16caa06bf38901fb5f618a35a70b":"Đang chờ xử lý","7fb3a9b5101bcd45e2dca077191693a5199bafa9":"Đã cài đặt","82a82f798dd773717ec37d15fd4405510291734e":"Bot đang không hoạt động.","6a88e58aa1798626f94cf17f1a91618b405bb289":"Bot đang khởi động...","624cc7f40b68faace7e78d8e5c5be1d4f15facda":"Bot đang hoạt động...","788180a6ddbbbcca10f6f49d8e85d557934bae0e":"Bot đang dừng lại...","d907a40a4a15da3c21a6e0f8ace3f987d482f92c":"Bot đã dừng lại.","4f219c17ab9ab76aa1cd431b4e0e5ecf5520e8e4":"Đang mua","4684ee1026d9b4c872d016c3c4588a0c479a451c":"Số lượng mua","ca92c55b9e4233d771d5b6300fe751a9678d1deb":"Mua thành công","f02760cd2eac28169f0a990c950c3dfe8427f772":"Hợp đồng đã được đóng","fadc0ef93d1ff13370524ce8481ddc4a71195934":"Sắp xếp lại theo chiều dọc","a479c9c34e878d07b4d67a73a48f432ad7dc53c8":"Tải xuống","e4458464df6cbb8da1134875ba51519c5d244d9f":"Các khối phải ở trong giữ khối, các khối chính hoặc các chức năng","e9c45563358e813f157ba81b33143542165ba84e":"Cảnh báo","31cb6f44d030abeabcc7046555dea851602a87a5":"Chiến lược này không khả dụng ở quốc gia của bạn.","9ce3bd4224c8c1780db56b4125ecf3f24bf748b7":"Ok","486d55264892207fef1ed5799e0b213b446d3eaa":"Tệp XML chứa các yếu tố không được hỗ trợ. Vui lòng kiểm tra hoặc sửa đổi tập tin.","a594b427eaf0f108d3e9cc20d70e15da811c760c":"Chiến lược không được hỗ trợ","04a5090686ac7b54822e00a9ff08c38a107601e7":"Rất tiếc, chiến lược này không thể được sử dụng cho Binary Bot. Bạn chỉ có thể sử dụng chiến lược đó trên DBot.","77dfd2135f4db726c47299bb55be26f7f4525a46":"Hủy bỏ","fdaa08aeaee0bf9b78d83ea19ef9e9bd019e8193":"Đưa tôi đến DBot","f1d8b7b118d6f82f95614d476bc11af650aed3bc":"Không thể nạp tệp giao dịch","af145748c9cf765a3b059eec20cb1dbb899297d8":"Các khối đã được nạp thành công","11ee9c5d534cc8d22651092222b532917594161a":"Thời lượng tối thiểu là","5283ac04c9a8ba8a937d1edb4ba986aeefce8bf1":"Số lượng giao động phải ở trong khoảng 5 đến 10","ace1342bc3720b77ce510b93074041e7386d209e":"Thời gian hết hạn không thể bằng thời gian bắt đầu","fed3e7bd6696fb97a12d720845ab5388456bfc3b":"Dự đoán phải là một chữ số","d466687f90ba548434d65186d11a80c4204f9ad6":"phải được thêm ở bên trong:","6ddf2b3075ac9ab5d66b40e15ea9a34c087672ea":"phải được thêm ở bên trong","33aa6ff282ee509d37c6f758274c9156b419ff73":"Chiến lược bạn nhập không hợp lệ.","da162a909c2981ed318d23cd9a6be1d66e0a8400":"Định dạng tệp không nhận dạng được.","5e719fa76e1b6cb396376c82ebdd04bec7253229":"Khối từ xa để tải phải là một bộ sưu tập.","b0d2de25daf6ba09a5e710c6968ffded29c4dae1":"Không thể nạp tệp khối.","df84a88f38b03b5b342362d72370b0d66afdae35":"Mục tiêu phải là một tập tin xml","cd680fd936e9559ef1d95efac7a71680e2b13a89":"Url này đã được nạp xong","34c59389053701a04127f74d32315e0206e076f8":"Lỗi đã xảy ra trong khi tải url","3ead0b14c72503187691a7a6d7121987299bd401":"Đây không phải là một phiên bản chính thức của Binary Bot, sử dụng tại rủi ro của riêng bạn.","27401c9c8e476d659c8382e05c6d70a4a82be468":"Phiên bản chính thức","bc981983e7f547dc62e19a1e383acfe00782a6d5":"Tiếp theo","b52b36b7269fbfc58ec24bb724691951a3decbe8":"Trở lại","e9b450d14bc2363d292c84f17cfad5cfbd58a458":"Hoàn tất","29cadadfebdd578a50b7b3d1b2c5b33e424d5de7":"Làm một chuyến tham quan nhanh chóng","a48e81d4a8da67637b46725824177a959fe99b21":"Đã sẵn sàng để học cách sử dụng Binary Bot?","6f3e6ebf249947cec4f64117253a8fe43335ae79":"Không, cám ơn","fcb6e90e7223e1d1d735f15dbb7ded9d81bbe7ef":"Không hỏi lại tôi lần nữa.","4ca0a75c2b7fa7da4364d03b72c46fee1860a2bf":"Không gian làm việc","5fcf29b9f0b8971c8148e70a150ddc9ac04c94fc":"Kéo và thả tập tin giao dịch.","ddcbb5361b1a16eba60fca2383fb297bb90ed9b3":"Tải về mẫu chiến lược","1758356db21759f7c5a0da9b4dd1db8fd6feab3f":"hoặc","00b581632c1532969a7128ebc8eae936ed8af04e":"tạo chiến lược cho riêng bạn.","d171baee235d4c93f63755a876782dc5be4c3e47":"Công cụ cho các giao dịch","056f19272d96f902c38207cf163ea8dbff7fbd32":"Thêm các giao dịch từ đây tới bot của bạn.","36bae31694f85bd7a5b0ad45e51ef622b95baadb":"Các tài khoản","f5c47fd3b3553b10441a06054078cea745177dea":"Đăng nhập trước khi khởi động bot của bạn. Luôn luôn kiểm tra chiến lược của bạn với tài khoản ảo.","fd825ae94aa79500a878dd4590a4b360e7162663":"Điều khiển bot","6ee7980833e1ed72901b919ffd0fa20e1a251d3f":"Kiểm soát các giao dịch. Giữ con trỏ chuột trên mỗi nút để biết thêm thông tin.","f5169c84497de3aea74f7da9e7e177d1427e736b":"Tận hưởng!","4f1b3d682c2a00b393c33637da402463bc11d5ff":"Muốn báo cáo sự cố hay yêu cầu giúp đỡ?","0049f8894e41937ebb9111cd3def6749049fb50f":"Bấm vào đây","aac1569ccf6b1a11b0ad0fbefdb9ffc777b4c733":"Bấm để chọn","d1a17af19f5388af9d6596cc0ea7dbb1d739e255":"Không tồn tại","53adebdc2b1cbbedb56395b19a73fe47b87cc554":"Những điểm thay đổi giá","5fb1db527825d2996e37c655e5dec49d4da80c09":"Giây","092f99ea11a34a8490e7a767a83a42fc45634f82":"Phút","9e25a34e635a123f8958bbe26e7c4843278597fb":"Giờ","f6bb0f468a8569c67b3d6826e57e62c5500c3681":"Ngày","db6708630fc646eb98298d9acd701e0a1ac051c2":"Lưu các giao dịch và chiến lược của bạn lên Google Drive","85538d002a336c5addef8d189d80976cf7758f8c":"Bạn đăng nhập với tên","b65463cb6a42a17de514acc4659f7fd331e0876a":"Kết nối","ed28e0686e1251ba046f582a3e9ec02470a5e78d":"Ngắt kết nối","cd5f85b6f187605f82386eacd680f93820af8d11":"Kết quả là","1e38ce3d180cefae485a6986ca7c67841e30376f":"Đúng nếu kết quả khớp với lựa chọn","5c89497fc3c128e2ff865ce8df15356054f2c028":"(4) Nhận kết quả giao dịch của bạn và giao dịch lần nữa","14ea81918758c994cbe3178e695e56afc1ef2b45":"Nhận được thông tin giao dịch trước đó và kết quả, sau đó giao dịch lần nữa (Chạy trên điểm kết thúc thương mại)","5098e2bcc96ee227983c9f7eeddfd226c220ca00":"Chi tiết hợp đồng:","251c830f8f869e0887e8b4dc4c30ba1738c7097e":"Đọc một tùy chọn đã được chọn từ danh sách chi tiết hợp đồng","b3b543c80063a116ced4965d8537b7b62d14c0b7":"Giao dịch lần nữa","a1eeb7c1e92e9a5d9323ed8ebd7ca7ffed8b0232":"Chạy lại khối giao dịch","ca5586bdb5bdc1a2c0baf53ed0ecd21fafabebe7":"Lựa chọn bán hiện khả dụng","03bad10717e183b24829baf483dc715e1a44bf7b":"Đúng nếu lựa chọn tại thị trường đang khả dụng","2c71ed279a402e93312dbda173ab18f244d6bf46":"(3) Xem và bán hợp đồng đã mua của bạn","17632a9f51611d2579d95b4b1ccb9476566d7ccf":"Xem thông tin hợp đồng đã mua và bán tại thị trường nếu có sẵn (chạy trên cập nhật hợp đồng)","579607dc4f989ce2b94b558431666a0ab07ac1f3":"Bán tại thị trường","e20afd5cf3811a42071c9a312abb2afdad4c590b":"Bán tại thị trường.","4712cbff8e92822fc960ef9c0197293a19675eae":"Bán lợi nhuận/tổn thất","df817b48c7a076561b4f8bedc52d65d2e351ab52":"Trả lại lợi nhuận cho bán tại thị trường.","da3105e38c42a481ad7230ed393b0e12bebe9c4f":"Hỏi giá","343fda69c73b78b84967055aae97f790c422adfd":"Hỏi giá cho đề nghị đã chọn","d4d34ce9d9dd7e87213469f88cb7ac43725675d5":"(2) xem và mua các hợp đồng của bạn","fb61a3c71f4c488b3b470cb7daf502a3e9b5ad48":"Xem các dòng dấu tích và mua hợp đồng mong muốn (chạy trên cập nhật tích)","9bb396940adb9705fe57eba6ea8b578e6aafa792":"Thanh toán","87da93a46d143f6019979b3548414d9d7adabb35":"Thanh toán cho đề nghị đã chọn","160f06d4799c85021a810f68c5b517eea37a2737":"Mua","4c2fdde3d9c1950498ed263d6ce21d4bf3d0800b":"Mua một hợp đồng đã chọn.","b44e884c355e447d0da0e6ba45caaff18c84373b":"Bollinger Bands","d6a2a207343bd83aacdc80b579ff4419713a256e":"Danh sách nhập","170a28a9db6d27d7212fc6dc249434a57517e7bc":"Khoảng thời gian","b833989d69900a4be9e32d1bab65c8f8233f099e":"Hệ số Std. Dev. Up","1cee82f19c0bedef64f68b32e6b02128efe7c61b":"Hệ số Std. Dev. Down","974da601086448d0060aeed90e53ddd5acd17b91":"Tính toán Bollinger Bands (BB) từ một danh sách với một khoảng thời gian","d5b65cac1f1cf9421ac978eebe532de99040cca6":"Mảng Bollinger Bands","58de49791c64aba14e36e5887244a5ef088286cd":"Tính toán danh sách Bollinger Bands (BB) với một khoảng thời gian","4bd99f76f1104229744455d93df0ff76b9eeed58":"Trung bình động mũ","ea615c6d6a74e25a6d2f1bc9980b46e73508c2eb":"Tính toán hàm mũ trung bình động (EMA) từ một danh sách với một khoảng thời gian","4082d9379e59b38c891d046312f8d3c4b64ae3b1":"Mảng mũ trung bình động","562edc102c5dd9e2fbbede1140b8a5461c2d4dc8":"Tính toán danh sách hàm mũ trung bình động (EMA) từ một danh sách các hía trị với một khoảng thời gian","a537f4f3c0f6c68bf896fb23cb2ecdc658488ea2":"Mảng MACD","b18e572ea14edd48587145f1ef50718adbf256c6":"Giai đoạn EMA nhanh","974023bddd6249d0f6404872cfcae205b2599ea2":"Giai đoạn EMA chậm","5c2adcb3d1bfd6b9f5c2dec13d02a9473e4445a1":"Chu kỳ tín hiệu EMA","6b15ce93fd68d80aeee7f7964c1306044c3c1baf":"Tính toán danh sách Phân kì hội tụ trung bình động (MACD) từ một danh sách","95ec92885c855ba9cf734c17a43f081901e4d2cc":"Chỉ số tiềm lực tương đương","b033619e108c9e43bfd8a42cd97bf5c5dc86dc65":"Chỉ số tiềm lực tương đương (RSI) từ một danh sách cùng với một giai đoạn","4034de66995b876b2ba9bfd0274025e39168e05d":"Mảng chỉ số tiềm lực tương đối","f9da880c8b0e4cce4431912c24eba939e6bc06e1":"Tính toán danh sách chỉ số tiềm lực tương đối (RSI) từ một danh sách giá trị với một giai đoạn","a9842c95766da40bf4ea6ee263cb5a5985847763":"Trung bình động đơn giản","347775a293c14362d492f019e677c965be1d6e7d":"Tính toán trung bình động đơn giản (SMA) từ một danh sách với một chu kì","4cc7b9e53d082896ad884eb01be16320af65f282":"Mảng Trung bình động đơn giản","2c75179a57af3c36581008b65e86ed81c4a4cbea":"Tính toán danh sách trung bình động đơn giản (SMA) từ một danh sách các giá trị với một chu kì","39f024cf49724fe7ffdea7773c72ed06eec998e1":"với khoảng thời gian","e4bed3e67e58b2334ee4b9c6ce59ac7a95d80aaf":"Hướng là","ad47561efb1dcbd7246d9b64487f615647fda036":"Đúng nếu hướng trùng với lựa chọn","05bef508aadd62bf3967dcf67d769da296f19989":"Hướng giao động","d089ab98a846a521b09aad6ff3fefa728bfa8b42":"Hướng của khối bị từ chối, vui lòng sử dụng khối kiểm tra định hướng","cdb31fc857f01a59f664413498293c714285f46d":"trong danh sách nến","20fd5f86f08796f145d69dedc209a27e459b2f51":"có được # từ điểm kết thúc","a96606af8c33ac3428b45abc4782dbf93f458d29":"Có được ngọn nến gân đây của nth","90ed0e1ea5c1907f8a32d8051a66e845857bb2a4":"Danh sách chữ số cuối","248428facb97408414180d4de74e4db35360fbc4":"Hoàn lại danh sách các giá trị của các chữ số cuối","2e4202acde880b7b1c3686f0335ff879fc1e5c7a":"Số cuối","e46e0bd2f7fe37217dec8aa26ebce8ffa3608663":"Hoàn lại con số cuối của giao động cuối cùng","d5fde4c9d5edf660f760fc226df4d2678d3334ab":"Danh sách nến","95e552a40d3446c96905cd3ec7e3d123d0246ce8":"Hoàn lại danh sách nến","5a0ed227a01b7d30b05dcaf3e1c23b74b9be6ff4":"Làm một danh sách của","a4220593d385a720886f7af1ed3c478fd0c6339c":"các giá trị trong danh sách các nến","cd8cdf3d47e921c8a72addae9269e66041d417c5":"Hoàn lại danh sách những giá trị nến đã được chọn","3e4f335e7a6f79bd1bafd219ddde30acbf16a7ac":"Trong danh sách các nến cho thấy ","34037f9452fdb66c9ca27ebcc0afe9d5139e9e24":"# từ điểm kết thúc","aba43a580daa7f306956ec69b83e6e37e7233126":"Đọc giá trị nến đã chọn trong nến n thứ gần đây","e04b522218a181cf0223042dd18ae08dcc22d8d3":"Giao động cuối","6ee445fc253a55c9ed54c009c3f020ac65200d80":"Hoàn lại giá trị giao động nhận được bởi một giao dịch đã mua trước đó","ed44b69176217a1251c04f0c13d23ac789ea60b2":"Chuỗi tick cuối cùng","ea24dd1988c6534a5f0d11b8fbbc6c374fe68766":"Hoàn lại giá trị tick nhận được bởi một một khối Mua Trước (Chuỗi)","4b2340a890e88d1886757c3f7172e273a1edc31f":"Giao dịch này xuất hiện trên từng giao động","b54d7b4590559dad64f02d09aacbf6d9863e2624":"Bạn có thể sủ dụng giao dịch này để phân tích những giao động, dù bất kể các giao dịch của bạn","ebffc758056e6b2fc2af99af17fbc6853e5d3583":"Danh sách các giao động","17649cac8739adcae95e641f794880272ad33bd1":"Hoàn lại danh sách các giá trị của giao động","46ecdefde6a8dd5872cc6e0e52afb717f1140426":"Danh sách Chuỗi Tick","3bdc75d5d68b05dfd3ce6dcdf7d9773e60ed0a51":"Trả về danh sách các giá trị tick (Chuỗi)","802dc02469ae51067ca620ff57dfb5bdb3e524ac":"Số dư:","c4ee8e12b2484cd5b47cdf00bfa2c50b83e91d3d":"Có được số dư hoặc chuỗi","69280143949fcd59c171dd60f6b6e13d0cc08fe6":"Các khối giao dịch bên trong được bỏ qua","d072c2ceeb5c1217722d14c74de7aeab945b4215":"Đặt các khối giao dịch của bạn ở đây để ngăn chặn chúng khỏi bị gỡ bỏ","e98ea4ac4e2cfd6a4c84386534c5d1acd7ec85d3":"Khóa: %1 Giá trị: %2","27305f6365c38dd36f5b5eb781e05b5e2e4e3f6e":"Trả về một chuỗi đại diện cho một cặp khóa giá trị","b06acc4158c824231f727a13e1c9811f43d5be42":"Tải khối từ","661db37251a1ed1afe357ee13895f37a623d7cbf":"Nạp các khối từ url","6c03ee54ad3a51fc92a1d69943e99667847705b6":"Thông báo cho","b1bec5d06e3672915d81b2fbc2347c8b4947a954":"với âm thanh","a2d0c89fdfff3176efd4a443eb0f6607067b93e7":"Tạo thông báo","6e0fc122f936f808bc2e3af661121b65712ae855":"Thông báo điện tín %1 Token truy cập: %2 ID Chat: %3 Tin nhắn: %4","1aeb6caed9e46edf5d6224adc905ffb8ee3a7708":"Gửi một tin nhắn đến điện tín","45ebd38f4c641ebf6f72be8c3a79dfa50cf9f20e":"Tổng lợi nhuận","ffb465875e1ff2b49bcaa7c6b70965ffe39fa59d":"Hoàn về tổng lợi nhuận","532e65f6e266db0bb442d1f426d44d7d32962340":"Chuỗi Tổng Lợi nhuận","78e84591ff76f992953a8e19b57c7eab7546d638":"Trả về tổng lợi nhuận (Chuỗi)","bc528d26f66fe8c4aa4bb24ec9c99dff12c055e0":"Số lần chạy","bea5756b18644ccfab01c1c0dbd6fa9db7103379":"Hoàn về số lần tổng xu hướng dài kể từ lúc bắt đầu","7d500ebe352ccfa932b253e21938813a06fcff8e":"URL Webhook: %1","e770fd2a6b980a0815592b1bd499127c5a5cfe39":"Gửi một yêu cầu POST đến một URL","a35646754dbe7a9211ba8b81338a5d64580eb276":"Khối tải trống","69b0648eddd207cd45a9e1ba973dae287b535576":"Khối tải:","c67ded6b64019212eb2bc69afd761f5b3f626040":"Thêm ký hiệu cho một số để làm một hàng rào bù đắp.","569bbd757e1bb8bbccd250b98dc2bb37cb47b787":"Thị trường","74751e67c3e1010c343095eaf543e7cb21ced2ef":"Loại giao dịch","1f4698382842477e211eb46de81fa506f01a8c34":"Cả hai","c1baf816aac5a5cd849768773fc248cd249dc296":"Loại hợp đồng:","c93025710d1ae6cbaf8e710f63eca8edfa0c9399":"Khoảng thời gian nến mặc định:","9693aeaaf68e3929b59b79306feaa0a847d01192":"Thời lượng:","78d7103a319e808455d397513279d99f3b3f3768":"Cổ phần","10c02649e226d430bd75a5b6315a41c0db9992a2":"Rào cản","837276742aa90209dde3b4eef07d8e7ab26731ef":"Dự đoán","258b49925b41751c6bd790a0848246566ba61440":"Khởi động lại mua/bán trên lỗi","c55ee3445cd391ab299b6f85a6ea9a68a65ea64d":"vô hiệu hóa để hiệu suất tốt hơn","b410994b67e37d9516eb9b866c85a8c639f79e68":"Khởi động lại giao dịch cuối nếu có lỗi","2260c5a971c2602834ef8feeb5fa522f900b469f":"bot bỏ qua giao dịch không thành công","cd1495cb4c60266a6abad9024022ae079bf7e416":"(1) xác định hợp đồng giao dịch của bạn","0745acf92abd7b60598f161717884cc45dab8694":"Chạy một lần tại điểm bắt đầu","999e1ade10ff5ee1d115f5a6288bfd2e0d0736e6":"Lựa chọn tùy chọn giao dịch","a43c3299d30a5bc7e31a574cdc87f59cbc8fe585":"Xác định các hợp đồng giao dịch của bạn và bắt đầu giao dịch, thêm khởi tạo ở đây. (Run on start)","d571f33d957ebcab086ecf38eedd71b6ef0c5820":"Các tùy chọn giao dịch","4d22b565e4253e92a908f216184779679bb1a044":"Rào cản cao","b70c38c6db3127422e05315c30bdf76c7c36c480":"Rào cản Thấp","a6c5f081b3addee364af1c8cdb84853f49dc8e07":"Tuyệt đối","0f2ba74929aca6fea950e351dcd576b7cd841fa4":"nến là màu đen?","7cb3b482ab66947d439642ec64dc7f5bd4e065dc":"Làm một danh sách của","5925d08228e246f07b790b88ad70c1b73a97d2bc":"các giá trị từ danh sách các nến","852b438f91ad9eb2cdd84419a675a216d543c687":"Đọc","67d3b35a0b740127b56bcd44d3bcb1ccc20e0b48":"giá trị trong nến","d79d854dcd0829e2177a47beab6a55569e781ab1":"Đọc một mục trong một ngọn nến (đọc từ danh sách nến)","5606b4460ac96063b8a8e5647008f3ec97252fc5":"Thứ hai kể từ Epoch","2de20bdeecb1a8c28bd36fe75f028ed4318d0348":"Trở lại thời gian thời kì (thứ hai kể từ thời kì)","f43cb41af7ce8a69c7aecbc1c603bb0381270982":"Chạy mỗi","4b6fe6898f0f956d48a4c8172c6dfbcb4159ab09":"Giây","2eea87bb804e4e73e3f8e9c41140f7ed83ea8875":"Chạy các khối bên trong mỗi n giây","e0af6ddc8a892704f64680bcb22b30c4bfcefec5":"Chạy mỗi khối thứ hai đã bị từ chối. Vui lòng liên hệ chúng tôi nếu bạn có một trường hợp sử dụng hợp lệ.","7b9c76088576a64f32d67ec335162b9f73eaa026":"Chạy theo","ff56ffac023cf69ca5c7f71d407499536f4f86b5":"Chạy theo các khối bên trong sau n giây","e9fb732dde76a6977bcaa2818b0f56125b183648":"Tới ngày/giờ","1a90ae7cb728e7f25b031d7e844882f75e74ab5c":"Tới mốc thời gian"}
 
 /***/ }),
 /* 246 */
 /***/ (function(module, exports) {
 
-module.exports = {"3d52a6d8fedcc48a65297c07bf5f7e3e41aab5aa":"Logika","3edf0df49942da6d11a1a217e4d3af4a5a8e64f2":"Matematyka","c3328c39b0e29f78e9ff45db674248b1d245887d":"Tekst","4d064726954a17487f94e931f5b157b733ec22ed":"Zaawansowane","a1fffaaafb7cc996685bceb829c053cc4f7de43d":"Lista","19de69cb601f53a4ea7af22a65c71ae63251365c":"Zmienne","2b961dea1dc0c60ddf9a2c8e9d090f6f7d082483":"Funkcje","dc7f77b4ccfc9f70a78bd97303bd10ba4c9d70c8":"Pętla","66639f7d455dd71faa9147f5d69e5ce885d8bebd":"Binary","0ba66deaab2f2cd3b0793d03f600ee2b8f577fbc":"Definicja zakładu","9201c6ac624e98e168e6ccddbcd5a9b5cdff06b3":"Przed zakupem","44ab9a87268d3fd74040ed0b55c04f83294cfdef":"Podczas zakupu","c415c9399b7ae7285d2c1c880a6a0aa18f62ff8c":"Po zakupie","d07ffc19d51f0973859a0d95c1d15cd9f22388ca":"Analiza najmniejszych zmian ceny","8cf71374fa095a64b5295b672daef8507ec7be6a":"Wskaźniki","4fa8cc860c52b268dc6a3adcde7305e9415db5bb":"Narzędzia","6c82e6dd86807ee3db07e3c82bec1ae1ce00b08b":"Czas","8d8fd6765e184419cad8b88d1a60c895d79578c2":"Świeca","548f449b63ff41eaaff5a2d679ffa56b2015fc20":"Różne","8bf95ea372568c7a254ba9fada5f6f1701ebc5b5":"Dziennik","12b71c3e0fe5f7c0b8d17cc03186e281412da4a8":"Podsumowanie","9feddbabd7e7309e96c590069057158e96baa8f6":"Bieżąca kontrola konta","038fe2bdb7ec6ee078f60bdb5bee94654ec6a81d":"Handel opcjami może stać się poważnym uzależnieniem, tak jak wszystkie inne czynności, którym poświęcamy zbyt wiele czasu. Aby zapobiec niebezpieczeństwu takiego uzależnienia, umożliwiamy sprawdzanie rzeczywistej sytuacji na bieżąco, co zapewnia Ci regularne zestawienie Twoich zakładów i kont.","4152043e8c670075d2c919677e835edb0d923cab":"Proszę określić w minutach preferowany odstęp czasu pomiędzy kontrolami konta","d9fff2df19e90f2c7ea6bb30fde4e0da119d13d1":"Proszę wpisać liczbę z przedziału od 10 do 60.","2439f2f199b2a3e798aa9b4feaa9248bdec9bc0b":"Kontynuuj handlowanie","a72ca256dc49e55a1a57b9a727fbde9834c9a3f7":"Oświadczenie","6e78c91f5a05fc0d4f1a787d38e3d6fe2f856d46":"Wyloguj","4832e45812a2724f16a15f9ae87adfc8ae4168cf":"Skontaktuj się z nami","f7c400ed695f898b8ee9d21664aa17b5bb693828":"Zaloguj","5ea75f1605a4bf1db5c39fcc61854627478c0a7d":"Resetuj bloki do ich stanu początkowego","f98595d541778d86f75ef22b3328a031d20aa16b":"Załaduj nowe bloki (plik xml)","4a1e616226c329a94da7768bc0435a3284478010":"Zapisz istniejące bloki (plik xml)","6b3465ace62f33f0687b4669ac26d95895e9ca52":"Połącz Binary Bot ze swoim Dyskiem Google, aby w prosty sposób zapisywać bloki i używać ich ponownie","8e4ec2c451ec7b1bf68d72fe9086ec978e41feb7":"Cofnij zmiany (Ctrl+Z)","937f5055f05be359ddf619744e8af4d643549e80":"Ponów zmiany (Ctrl+Shift+Z)","8406d1cce44230835932060649e999ca3283b413":"Powiększ (Ctrl + +)","1109673172af2c173c492622ff8a72c8f29f0e70":"Pomniejsz (Ctrl + -)","44c22002c65d2871331263a23c3e09c0a1bfd847":"Przestaw pionowo","ebd0945359e5578ff9bd3a2ab490ca84c225d8f5":"Pokaż/ukryj okienko z podsumowaniem","76bb05950f80f3a88ee05ef3276c5934fd355e8d":"Uruchom bot","ba50a42d8d3228c37a817865fce49fbca692c2ad":"Zatrzymaj bot","4f4aa4117318a8ddf8783885d4f3542c5b2733bd":"Pokaż dziennik","91017ef9b165cd0e7475a770f318ea5e705e1321":"Pokaż wykres","c89e3dd1cafcadcc0312e476ab58b2332209da23":"Pokaż widok handlowy","b02c858e72be118a65c9393930351012b647cb9e":"Przełącz nagłówek","250be77f7605669a0b3d968b9ed381a3d9787ed1":"Otwórz zapisany plik XML i pobierz jego bloki","ff29ccd7a6c6073cc462ed590d27a91632fdf67e":"Bot Binary","608061fb5aab975013fa70c5c814a1d8ba30c152":"Jeszcze wygodniejsze handlowanie","e4ce8dc3e416e69262ba642dc57d3975d6616980":"Czy interesuje Cię zautomatyzowanie swoich ulubionych strategii handlu opcjami binarnymi?","f261237ca8beec6f77b76c4121feb8da22818c56":"Bot Binary to najnowocześniejsze narzędzie programistyczne pozwalające tworzyć aplikacje handlowe przy użyciu prostej funkcji „przeciągnij i upuść”.","f6c85c68616eeaaa15fcd53fdc52f6eb5c886357":"Wymyśl dowolną liczbę botów do handlu opcjami binarnymi – od najprostszych formuł po niezwykle skomplikowane algorytmy – i pozwól, by handlowały za Ciebie, nawet gdy śpisz.","e6906a0d1c28b202f9bd49da4a6abbddca57399a":"A co najważniejsze, po stworzeniu bota możemy pomóc Ci go sprzedać innym graczom w","1dd0cf79c572bcdbdfabbd54ee95710a21234d73":"Sklepie Binary.com","abeef9a35ae6256796ba2462e4f64d308de42359":"Otrzymasz 80% kwoty sprzedaży każdego ze swoich botów w naszym sklepie.","0606f0b7763ee6e8094a3dab7873d34c08fd3670":"Rozpocznij tworzenie bota już teraz","221acaf3a0290adafe08cdcb8c66121c73d8b4a3":"Potrzebujesz pomocy?","d635b53e59c9aad8c5d78458826beffb029b27bf":"Dziękujemy, skontaktujemy się w ciągu 24 godzin","1de91e827ec70ca735abc2c71b0a89cb0cfc4ce1":"Nie wybrano rynku bazowego","50050f06645ad2743165b429a8f7deebd285fd63":"Nie wybrano rodzaju kontraktu","6a7d1a3a17c4e8ae6712cb60d46db1edf0aa2667":"Proszę się zalogować","2f9f9096be1a1c0569a9ce54e57f0420f6b3c2e9":"Czas trwania musi być dodatnią liczbą całkowitą","4df6e872792d72aea8a2f6b831d00b554464da23":"Kwota musi być liczbą dodatnią","001e68df3a4b32a4d57148d9d407f44eee3b7436":"Ta świeca nie jest prawidłowa","04f14ea7c92e0b2b5ae005c696245063ec641d66":"Ta lista świec nie jest prawidłowa","c1bbfcbb4f57d3a56c1239af0c2138321589efd2":"ponowna próba za","57b453bb26b1c28dfe362b7cc9f17f0be93dd581":"Limit stawki został osiągnięty dla","094628ce13fc0e78f07b697d1cc9421bb2edd666":"Żądanie nie powiodło się dla","816c52fd2bdd94a63cd0944823a6c0aa9384c103":"Nie","5397e0583f14f6c88de06b1ef28f460a1fb5b0ae":"Tak","9bb396940adb9705fe57eba6ea8b578e6aafa792":"Wypłata","78d7103a319e808455d397513279d99f3b3f3768":"Stawka","bbb930cc426507ed3f6b7c343c75dd0e041494b7":"stan konta","e6e886cdcdefeb6d3edb4c31bed06dd183ac4153":"cena ofertowa","50e72909992bdc37c7c07769d1b7efac5e52874c":"wypłata","ecb5ba7044417916ba12de5fa9e6fccac3e5d475":"zysk","c980b910204c7babdffe8ff3f7e755f30133383c":"typ kontraktu","a726c6955157f1b8b92f9932652434a7150f80f8":"pozycja wejściowa","a66d5c7ef2c63dbc9a8f9e6ae4e2bc575e74a36e":"wartość wejściowa","7674920c033ca14277c577e19c037a6754d4fa80":"pozycja wyjściowa","e8b8bd9f2eabc12875605a37c93e7f04a713fcb8":"wartość wyjściowa","779455ee3bde8494d9629b353e17b19e92357ba8":"limit","37a5301a88da334dc5afc5b63979daa0f3f45e68":"wynik","4973f4c599d5f42cf7bde52d66c3ed8ef77accb1":"Wygrana","12e24a7d8ac40579e8a0aef4869288afe7ed6745":"Przegrana","563339f82447b4e758ad76d5a0b63b5698594fba":"Wzrost","5c1ae82c29543ac887703776bf3da2c7dcce683d":"Spadek","2fc096bb7b6596ab243d0286c9f43fdf2b9b406d":"Bez zmian","ecb252044b5ea0f679ee78ec1a12904739e2904d":"ciąg","53b0a1b2fadf4e040cdc2155a7340de24aca93cb":"liczba","bc74f4f071a5a33f00ab88a6d6385b5e6638b86c":"zielony","4c9a82ce72ca2519f38d0af0abbb4cecb9fceca9":"niebieski","96de5543d183d7de52ac5fa21c46fc811f673f89":"żółty","78988010b890ce6f4d2136481f392787ec6d6106":"czerwony","aa9330a16e5b055de809256dad6b4d1cbd2999e7":"Wyciszony","cf84a98d6cf7f156862a08ba8236467b6f471004":"Zawiadomienie","eee2facd669d1434848c24da5527b3e87d9a12d5":"Zarobiono pieniądze","9d705578b0f1f0ce3a06dc5e82f9a1e6078f81e1":"Zrealizowano zakład","7f2f6a15cf8da2b27e5a4af47b58e7ad71c0b3d9":"Błąd","a3b1583d377f37ac20de7e089edfa0920a078e57":"Poważny błąd","66c8b6848eee629c4ac551bf2b5fa591571654be":"Wzrost Równa się","5649dce3367d490fa19d563ee9e3d4c4b6f7c642":"Spadek Równa się","062787aa328047e189774b3703d983b83938f6e9":"Wyższe","b91eed4b7a80cd9572a27e65ebdff9caa4b3b9a4":"Niższe","e3f139abb7a549a1210b36f7dbf89215ad6c9902":"Osiągnie","7d7932bcc2e262ae98cf09dc5445130fb3881769":"Nie osiągnie","a16814a48ec58c2e24ba224a80921a5c02361abe":"Zakończy się w","391d02cd75ebcd6ed26f5f45ddf7d40bf13e9dc5":"Zakończy się poza","534ec5da4e82ec419abc170e1a8448f55a01664f":"Pozostanie na danym poziomie","98cbe1998effd8b1a8aefdcc538573055e99a5f5":"Przekroczy","93d13bad1d2c2841db127cb70cc35bfc98059fc9":"Azjatycki – Wzrost","c098658ce3d3a258e4d155949a60072966b36db7":"Azjatycki – Spadek","ee2dbd5d6d82d0833069b07e7dd2848d3bf4d83a":"Zgadza się","8444b7ce28bbc3443cc5cf73359b8353989b2a4b":"Różni się","9e767ad03e5547f251044e0724dc1d9f3e75aeed":"Parzysta","dc28f5f3c65ec611f0f30022650d24382d27448e":"Nieparzysta","18a63f5512afb5573e5b44deba78d629f0635317":"Powyżej","2a268b89b83f8cb38ea48e46e93dd8840db512f9":"Poniżej","2155c8b38181dd2552e84a94049aacd33ef9c607":"Duża zmiana ceny","1408cfd2b064b923f024fbe590e27db8282941a5":"Mała zmiana ceny","b86eb15dc4f13e4c2972de158d3038d9f657242f":"Reset Call","669a1f3d9a8f601a84da536cfdad1de4092b1926":"Reset Put","844d1a5c99a0a668383340cc095d040eef998c79":"Tylko wzrosty","87293a146cd481a2b30cf74282ec061dc4cf0735":"Tylko spadki","cf9b77061f7b3126b49d50a6fa68f7ca8c26b7a3":"Otwórz","b1a5954a483f8f8b0207385095f74aeb409b3f80":"Wysoki","a124947cbd2d1d92b47e027274c3269ff0c7a84b":"Niski","bbfa773e5a63a5ea58c9b6207e608ca0120e592a":"Zamknij","1173872a4fb205b713702f0eec5cf2c732c828fd":"Godziny otwarcia","808d7dca8a74d84af27a2d6602c3d786de45fe1e":"Domyślny","62957ecfdc50957e8957c11d2eae74d078f0ef1a":"1 minuta","1dd3e663dfa7ac9cb77cfddd2cf8ac700657e2d6":"2 minuty","24e46784cbce32443db5a2638b1a7d3201543e9b":"3 minuty","3aa5819ed8a0b94d0f293db8e9c9598298ddd402":"5 minut","a6f151883b736f0470d33492e61c72a7d059d065":"10 minut","899761ff5425abd2ee214fa7aa46e27c6c8b5aae":"15 minut","31bbe8890d28d183f8f7f2c160fa892c444c0ec7":"30 minut","f030c3d667652646b86732ad7bc67e226c49cd3a":"1 godzina","2046e49e33c040e08dbd6fd83df3e1846015e6f1":"2 godziny","7b47150d431db70d783724007f07ab894eb8ac2e":"4 godziny","191800b7e9a48680792c0dd77cb6cac00c4514c6":"8 godzin","2d8a6f7c34468578640b333b8650131de06ac770":"1 dzień","f94510322ecd9b3a2af67a10bd51ecc4ac6a24e7":"Góra/dół","c1365a35e99d0f9147ebc72f21534cf471fa7d95":"Góra/dół Równa się","9c7960c6b11d35ac9d6cdc1ebaad3af43b2065c5":"Azjatyckie","2260ce49306460c8a2ef501939f29ad6ddd4e934":"Cyfry","0186aa73a1b75fa8f0eb98bbd9ad01102bb09ec1":"Osiągnie/nie osiągnie","f7de1f66f0979667da275b7e8996e805395025a1":"Zakończy się w/poza","a431deecd4c2258097adae418d496fe9a8179fee":"Pozostanie w/poza","256fe245cb7d3d673095f7faaa8c9ff81b985ad1":"Duże/małe zmiany ceny","12a3f461cdebbc8f335190413ee6c57442743bba":"Reset Call/Reset Put","e696144fa588782e6d6b2c97e2d3ed1adf52bd5c":"Tylko wzrosty/ Tylko spadki","91a64e3f83c91acf336c631fba295f297f94c399":"Uruchom po n sek.","024696596f26a4db232fd9e966eadfeb27c0bd1a":"Uruchamiaj co n sek.","c538c170bdc6b0f3bb98dce44a016a2e2d45a6e7":"wyższy","85c274929bc0e28eafd3734f2c25046c3b95b36b":"średni","346e3ee198e98146993894d3de8ecab1a86c3e80":"niższy","f16459104f92ab6b38aa265adb4ecbfc3768e303":"Histogram","e09f635f4e77476c9ca1c37bc9992e9ace3431c1":"MACD","27bed13a88c60350c3de92ec3820e1cc4f7d6ec3":"Sygnał","19eabc961735d78f12fc7be906ffcb033853cf85":"Znacznik czasu","68f4145fee7dde76afceb910165924ad14cf0d00":"Wiadomość","629777b7d4d610ace6dee24442730f27d7d0853e":"Nieobsługiwany plik:","beb040c8fabd007c9cc5ac6a9feb6bdb05d33dac":"Wszelkie niezapisane zmiany zostaną utracone.","410bf23a3f080def9c7a976a16305bcde7943ed1":"Czy na pewno?","e99811bd3b1ad17e74614060ecb180602be35ad6":"Wylogowano!","3b26e990d3acff493ee2cf66d1280bed2625e43f":"Utracono połączenie zanim uzyskano odpowiedź z serwera","876f3e0202ca40dedf2e5ab6577eba1ae637fb53":"Strategie","8ce80462febd4d573cb2f9c1984fdc93b7c21c57":"Podczas ładowania bibliotek Dysku Google wystąpił błąd","7f412a8cf67f755d3eb36846dd07148ceb8d4c72":"Nie udało się załadować bloków Dysku Google","3b6bbab905129dd36b8d4e99947fa30540ed7b2a":"Nieznany format pliku","3d6b44df6eaf6236b4abc1aadcf8f5b1cda769c1":"Podczas pobierania danych z Dysku Google wystąpił błąd","cdfe947b0c089a4a1f78c11299f25c32a124f1a6":"Wybierz strategię Binary Bot","2db43c69a4b96454914f0b8272bc869984529e6e":"Podczas wyświetlania plików z Dysku Google wystąpił błąd","0dcea5f584938e0fff00084b83156ab31d641ab3":"Podczas pobierania plików z Dysku Google wystąpił błąd","18da95988117ff029393f3f5c881d70ef47f7385":"Podczas przetwarzania Twojego żądania wystąpił błąd","04226bcf91195130e25fe7a8e8ea4d3e058efcb7":"Wybierz folder","aee24f2456ea8516b024a5d3e2b815ae7f2239d9":"Nie udało się wysłać powiadomienia Telegram","05754ed14275a070a20a1d5cd65f0cea66f1da7f":"Propozycje nie są gotowe","79222cd9892a434aa61fc7dc01c3839951eb8d1e":"Wybrana propozycja nie istnieje","6ea4a034747d020b1d8ce4848def95d537555dd6":"Kupiono","89f89c02cf47e091e726a4e07b88af0966806897":"Identyfikator","1200c1af2f7bba4e29a34112865662748c9d41df":"Nie można odsprzedać tego kontraktu.","62d6180e55905f7b996d442c53631981a4ef8b5b":"Sprzedano za","ed4978867de1da05b336b724a3fb96222a29ebec":"Indeks musi być dodatnią liczbą całkowitą","87e2e01f93d25ba7ed582cc81ef5c9ab2959f4c6":"Kwota zysku","b2a4553586d1062c21323bca1dc0589f7a9d5cf7":"Kwota straty","46fc6f27a835486d63d9e927c6687e4508cb3087":"Zawarto już maksymalną liczbę zakładów","9202ddae4cea16513e53bbc965d88ed975e59512":"Została osiągnięta maksymalna kwota straty","5f52b397b7e5f538681f0f5717a88aa626349c7a":"Nie wywołano Bot.init","85dfa32c97d8618d1bea083609e2c8a29845abe5":"Konto","d847919a30d31c0be624087f3370492b3fdf80c6":"Liczba uruchomień","5cd6978d63540c8a490ef76f43219de6362f958e":"Całkowita stawka","17410d7b62b8b1de981cfebada24632987edf186":"Całkowita wypłata","b841eeb091f1ff0e14be08e5ea1b93e4cf147ed3":"Całkowity zysk/ całkowita strata","90eef613042c5a51f542421065b68b886d473807":"Saldo","db1c784524e1b54011a95823026161f7c8517fe0":"Odwołanie","4db3e9e4aecd187db9339a10d2629fef46724dc4":"Rodzaj zakładu","1bb4086b66659d8580f9be4beef69931aeea3cad":"Pozycja wejściowa","8bf249c4855e591964bd5bdd35c8ef2ee107342d":"Pozycja wyjściowa","ba7be969e7c1bb5f22489e843478e3d721aaa843":"Cena zakupu","772fbced18230220d2d9be1456be16fc1b271d25":"Zysk/strata","bae7d5be70820ed56467bd9a63744e23b47bd711":"Status","96f608c16cef16caa06bf38901fb5f618a35a70b":"Oczekujące","7fb3a9b5101bcd45e2dca077191693a5199bafa9":"Gotowe","82a82f798dd773717ec37d15fd4405510291734e":"Bot nie jest uruchomiony.","6a88e58aa1798626f94cf17f1a91618b405bb289":"Zatrzymywanie bota...","624cc7f40b68faace7e78d8e5c5be1d4f15facda":"Bot jest uruchomiony...","788180a6ddbbbcca10f6f49d8e85d557934bae0e":"Zatrzymywanie bota...","d907a40a4a15da3c21a6e0f8ace3f987d482f92c":"Bot został zatrzymany.","4f219c17ab9ab76aa1cd431b4e0e5ecf5520e8e4":"Próba dokonania zakupu","4684ee1026d9b4c872d016c3c4588a0c479a451c":"Kwota zakupu","ca92c55b9e4233d771d5b6300fe751a9678d1deb":"Dokonano zakupu","f02760cd2eac28169f0a990c950c3dfe8427f772":"Kontrakt został zamknięty","66c7734789e19cbeef3a5ac185ea732139aed213":"Wykres","3b662fb2e8bafce29aa98321b18874bb44905488":"Integracja z Dyskiem Google","7ee0ff5eaa6fa82bd6d83a2f4ca446c663f097cb":"Maksymalna liczba zakładów następujących po sobie powinna wynosić od 1 do 100","93039e609d94a24f3572b794a31b21525a09af2b":"Nie ustawiono","ea67c8023c75375484f3a5f1aeb009b20059d5bc":"Dzienny limit strat:","b1946e5b4b78465b7661fd4bc89ff52de6c633e7":"Maksymalna liczba zakładów następujących po sobie","952f375412e89ff213a8aca383d18e5691354347":"Start","9f1c61cc03f3ef9324db05502f7f0b61e61e1521":"Ograniczenia dot. zakładów","095ba68888b5ace5f4515f5acab76dfa1073544e":"Mój komputer","ddcb77ff769ea54ca622848f6bedd4004fa4f4fa":"Załaduj","248e224f533752db28a1aab3519a58569ad96140":"Załaduj bloki","c7097e97dcc446ca889d3ca6be733a65e2728afe":"Pomyślnie przesłano na Dysk Google","3218e5a460e82d7bdea9ce0f145cab2f47ba9a4b":"Zapisz jako kolekcję","611ebbfb080284312904de925ef0f75f4cb56ad2":"Zapisz swoje bloki i ustawienia do ponownego użycia w innych strategiach","efc007a393f66cdb14d57d385822a3d9e36ef873":"Zapisz","a638caa8ab2b7ff7980a571334217339e6d1d634":"Zapisz bloki","39fca63515c105918f03e4908ec12df675b07f92":"Widok handlowy","fadc0ef93d1ff13370524ce8481ddc4a71195934":"Przestaw pionowo","e4458464df6cbb8da1134875ba51519c5d244d9f":"Bloki muszą znajdować się między symbolami bloków, głównymi blokami lub funkcjami","e9c45563358e813f157ba81b33143542165ba84e":"Ostrzeżenie","31cb6f44d030abeabcc7046555dea851602a87a5":"Ta strategia jest niedostępna w Twoim kraju.","9ce3bd4224c8c1780db56b4125ecf3f24bf748b7":"OK","af145748c9cf765a3b059eec20cb1dbb899297d8":"Załadowano bloki","a479c9c34e878d07b4d67a73a48f432ad7dc53c8":"Pobierz","f1d8b7b118d6f82f95614d476bc11af650aed3bc":"Nie można załadować pliku bloku","11ee9c5d534cc8d22651092222b532917594161a":"Minimalny czas trwania to","5283ac04c9a8ba8a937d1edb4ba986aeefce8bf1":"Liczba zmian ceny musi mieścić się w przedziale od 5 do 10","ace1342bc3720b77ce510b93074041e7386d209e":"Czas wygaśnięcia nie może być taki sam jak czas rozpoczęcia","fed3e7bd6696fb97a12d720845ab5388456bfc3b":"Przewidywanie musi mieć wartość jednej cyfry","d466687f90ba548434d65186d11a80c4204f9ad6":"musi zostać dodany wewnątrz:","6ddf2b3075ac9ab5d66b40e15ea9a34c087672ea":"musi zostać dodany wewnątrz","33aa6ff282ee509d37c6f758274c9156b419ff73":"Strategia, którą próbujesz importować jest nieprawidłowa.","da162a909c2981ed318d23cd9a6be1d66e0a8400":"Nieznany format pliku.","5e719fa76e1b6cb396376c82ebdd04bec7253229":"Zdalne bloki do załadowania muszę być zbiorem.","b0d2de25daf6ba09a5e710c6968ffded29c4dae1":"Nie można załadować pliku bloku.","df84a88f38b03b5b342362d72370b0d66afdae35":"Plik docelowy musi być plikiem xml","cd680fd936e9559ef1d95efac7a71680e2b13a89":"Ten adres URL jest już załadowany","34c59389053701a04127f74d32315e0206e076f8":"Podczas próby załadowania adresu URL wystąpił błąd","3ead0b14c72503187691a7a6d7121987299bd401":"To nie jest oficjalna wersja Binary Bot, używasz jej na własne ryzyko.","27401c9c8e476d659c8382e05c6d70a4a82be468":"Oficjalna wersja","bc981983e7f547dc62e19a1e383acfe00782a6d5":"Dalej","b52b36b7269fbfc58ec24bb724691951a3decbe8":"Wstecz","e9b450d14bc2363d292c84f17cfad5cfbd58a458":"Gotowe","29cadadfebdd578a50b7b3d1b2c5b33e424d5de7":"Zobacz krótki przewodnik","a48e81d4a8da67637b46725824177a959fe99b21":"Chcesz nauczyć się, jak korzystać z Binary Bot?","6f3e6ebf249947cec4f64117253a8fe43335ae79":"Nie, dziękuję","fcb6e90e7223e1d1d735f15dbb7ded9d81bbe7ef":"Nie pytaj ponownie.","4ca0a75c2b7fa7da4364d03b72c46fee1860a2bf":"Obszar roboczy","5fcf29b9f0b8971c8148e70a150ddc9ac04c94fc":"Przeciągnij i upuść pliki bloku.","ddcbb5361b1a16eba60fca2383fb297bb90ed9b3":"Pobierz przykładowe strategie","1758356db21759f7c5a0da9b4dd1db8fd6feab3f":"lub","00b581632c1532969a7128ebc8eae936ed8af04e":"stwórz własne strategie.","d171baee235d4c93f63755a876782dc5be4c3e47":"Zestaw narzędzi do tworzenia bloków","056f19272d96f902c38207cf163ea8dbff7fbd32":"Dodaj stąd więcej bloków do swojego bota.","36bae31694f85bd7a5b0ad45e51ef622b95baadb":"Konta","f5c47fd3b3553b10441a06054078cea745177dea":"Zaloguj się przed uruchomieniem bota. Zawsze testuj strategie, korzystając z konta wirtualnego.","fd825ae94aa79500a878dd4590a4b360e7162663":"Kontrola bota","6ee7980833e1ed72901b919ffd0fa20e1a251d3f":"Kontroluj swoje bloki. Zatrzymaj kursor na poszczególnych przyciskach, aby uzyskać więcej informacji.","f5169c84497de3aea74f7da9e7e177d1427e736b":"Powodzenia!","4f1b3d682c2a00b393c33637da402463bc11d5ff":"Chcesz zgłosić problem lub poprosić o pomoc?","0049f8894e41937ebb9111cd3def6749049fb50f":"Kliknij tutaj","aac1569ccf6b1a11b0ad0fbefdb9ffc777b4c733":"Kliknij, aby wybrać","53adebdc2b1cbbedb56395b19a73fe47b87cc554":"Najmniejsze zmiany ceny","5fb1db527825d2996e37c655e5dec49d4da80c09":"Sekundy","092f99ea11a34a8490e7a767a83a42fc45634f82":"Minuty","9e25a34e635a123f8958bbe26e7c4843278597fb":"Godziny","f6bb0f468a8569c67b3d6826e57e62c5500c3681":"Dni","d1a17af19f5388af9d6596cc0ea7dbb1d739e255":"Niedostępne","db6708630fc646eb98298d9acd701e0a1ac051c2":"Zapisz swoje bloki i strategie na Dysku Google","85538d002a336c5addef8d189d80976cf7758f8c":"Jesteś zalogowany jako","b65463cb6a42a17de514acc4659f7fd331e0876a":"Połącz","ed28e0686e1251ba046f582a3e9ec02470a5e78d":"Rozłącz","cd5f85b6f187605f82386eacd680f93820af8d11":"Wynik","1e38ce3d180cefae485a6986ca7c67841e30376f":"Prawda, jeśli wynik jest zgodny z wyborem","5c89497fc3c128e2ff865ce8df15356054f2c028":"(4) Uzyskaj wynik swojego zakładu i handluj ponownie","14ea81918758c994cbe3178e695e56afc1ef2b45":"Uzyskaj informacje o poprzednim zakładzie i jego wynik, po czym handluj ponownie (Uruchamia się w momencie zakończenia zakładu)","5098e2bcc96ee227983c9f7eeddfd226c220ca00":"Szczegóły kontraktu:","251c830f8f869e0887e8b4dc4c30ba1738c7097e":"Wczytuje wybraną opcję z listy szczegółów kontraktu","b3b543c80063a116ced4965d8537b7b62d14c0b7":"Handluj ponownie","a1eeb7c1e92e9a5d9323ed8ebd7ca7ffed8b0232":"Uruchamia ponownie blok handlowy","da3105e38c42a481ad7230ed393b0e12bebe9c4f":"Cena ofertowa","343fda69c73b78b84967055aae97f790c422adfd":"Cena ofertowa dla wybranej propozycji","d4d34ce9d9dd7e87213469f88cb7ac43725675d5":"(2) Obserwuj i dokonaj zakupu swojego kontraktu","fb61a3c71f4c488b3b470cb7daf502a3e9b5ad48":"Obserwuj strumień zmian cen i dokonaj zakupu wybranego kontraktu (Uruchamia się przy aktualizacji najmniejszych zmian cen)","87da93a46d143f6019979b3548414d9d7adabb35":"Wypłata dla wybranej propozycji","160f06d4799c85021a810f68c5b517eea37a2737":"Zakup","4c2fdde3d9c1950498ed263d6ce21d4bf3d0800b":"Kupuje wybrany kontrakt.","ca5586bdb5bdc1a2c0baf53ed0ecd21fafabebe7":"Dostępna jest opcja sprzedaży","03bad10717e183b24829baf483dc715e1a44bf7b":"Prawda, jeśli opcja sprzedaży na rynku jest dostępna","2c71ed279a402e93312dbda173ab18f244d6bf46":"(3) Obserwuj i sprzedaj swój zakupiony kontrakt","17632a9f51611d2579d95b4b1ccb9476566d7ccf":"Zobacz informacje o zakupionym kontrakcie i sprzedaj go na rynku, jeśli taka opcja jest dostępna (Uruchamia się w momencie aktualizacji kontraktu)","579607dc4f989ce2b94b558431666a0ab07ac1f3":"Sprzedaj na rynku","e20afd5cf3811a42071c9a312abb2afdad4c590b":"Sprzedaj na rynku.","4712cbff8e92822fc960ef9c0197293a19675eae":"Zysk/strata ze sprzedaży","df817b48c7a076561b4f8bedc52d65d2e351ab52":"Zwraca zysk w przypadku bloku Sprzedaj na rynku.","b44e884c355e447d0da0e6ba45caaff18c84373b":"Wstęgi Bollingera","d6a2a207343bd83aacdc80b579ff4419713a256e":"Lista wejściowa","170a28a9db6d27d7212fc6dc249434a57517e7bc":"Okres","b833989d69900a4be9e32d1bab65c8f8233f099e":"Mnożnik odch. stand. w górę","1cee82f19c0bedef64f68b32e6b02128efe7c61b":"Mnożnik odch. stand. w dół","974da601086448d0060aeed90e53ddd5acd17b91":"Oblicza wstęgę Bollingera (BB) z listy z okresem","d5b65cac1f1cf9421ac978eebe532de99040cca6":"Szereg wstęgi Bollingera","58de49791c64aba14e36e5887244a5ef088286cd":"Oblicza listę wstęg Bollingera (BB) z listy z poprawnym okresem","4bd99f76f1104229744455d93df0ff76b9eeed58":"Wykładnicza średnia krocząca","ea615c6d6a74e25a6d2f1bc9980b46e73508c2eb":"Oblicza wykładniczą średnią kroczącą (EMA) z listy z okresem","4082d9379e59b38c891d046312f8d3c4b64ae3b1":"Szereg wykładniczej średniej kroczącej","562edc102c5dd9e2fbbede1140b8a5461c2d4dc8":"Oblicza wykładniczą średnią kroczącą (EMA) z listy wartości z okresem","a537f4f3c0f6c68bf896fb23cb2ecdc658488ea2":"Szereg MACD","b18e572ea14edd48587145f1ef50718adbf256c6":"Okres szybkiej EMA","974023bddd6249d0f6404872cfcae205b2599ea2":"Okres wolnej EMA","5c2adcb3d1bfd6b9f5c2dec13d02a9473e4445a1":"Sygnał okresu średniej kroczącej","6b15ce93fd68d80aeee7f7964c1306044c3c1baf":"Oblicza listę wskaźnika MACD z listy","95ec92885c855ba9cf734c17a43f081901e4d2cc":"Wskaźnik względnej siły","b033619e108c9e43bfd8a42cd97bf5c5dc86dc65":"Wskaźnik względnej siły (RSI) z listy z okresem","4034de66995b876b2ba9bfd0274025e39168e05d":"Szereg wskaźnika względnej siły","f9da880c8b0e4cce4431912c24eba939e6bc06e1":"Oblicza listę wskaźnika RSI (wskaźnik względnej siły) z listy wartości z okresem","a9842c95766da40bf4ea6ee263cb5a5985847763":"Prosta średnia krocząca","347775a293c14362d492f019e677c965be1d6e7d":"Oblicza prostą średnią kroczącą (EMA) z listy z okresem","4cc7b9e53d082896ad884eb01be16320af65f282":"Szereg prostej średniej wykładniczej","2c75179a57af3c36581008b65e86ed81c4a4cbea":"Oblicza prostą średnią kroczącą (SMA) z listy wartości z okresem","39f024cf49724fe7ffdea7773c72ed06eec998e1":"z interwałem","e4bed3e67e58b2334ee4b9c6ce59ac7a95d80aaf":"Kierunek","ad47561efb1dcbd7246d9b64487f615647fda036":"Prawda, jeśli kierunek jest zgodny z wyborem","05bef508aadd62bf3967dcf67d769da296f19989":"Kierunek zmiany ceny","d089ab98a846a521b09aad6ff3fefa728bfa8b42":"Blok kierunku nie jest już w użyciu, użyj bloku sprawdzania kierunku","cdb31fc857f01a59f664413498293c714285f46d":"na liście świec","20fd5f86f08796f145d69dedc209a27e459b2f51":"uzyskaj # od końca","a96606af8c33ac3428b45abc4782dbf93f458d29":"Pokaż ostatnią świecę: nth","90ed0e1ea5c1907f8a32d8051a66e845857bb2a4":"Lista ostatnich cyfr","248428facb97408414180d4de74e4db35360fbc4":"Zwraca listę wartości ostatnich cyfr","2e4202acde880b7b1c3686f0335ff879fc1e5c7a":"Ostatnia cyfra","e46e0bd2f7fe37217dec8aa26ebce8ffa3608663":"Zwraca ostatnią cyfrę ostatniej najmniejszej zmiany ceny","d5fde4c9d5edf660f760fc226df4d2678d3334ab":"Lista świec","95e552a40d3446c96905cd3ec7e3d123d0246ce8":"Zwraca listę świec","5a0ed227a01b7d30b05dcaf3e1c23b74b9be6ff4":"Stwórz listę","a4220593d385a720886f7af1ed3c478fd0c6339c":"wartości na liście świec","cd8cdf3d47e921c8a72addae9269e66041d417c5":"Zwraca listę wybranych wartości świecy","3e4f335e7a6f79bd1bafd219ddde30acbf16a7ac":"Na liście świec odczytaj:","34037f9452fdb66c9ca27ebcc0afe9d5139e9e24":"# od końca","aba43a580daa7f306956ec69b83e6e37e7233126":"Zapoznaj się z wybranymi wartościami ostatniej świecy: nth","e04b522218a181cf0223042dd18ae08dcc22d8d3":"Ostatnia najmniejsza zmiana ceny","6ee445fc253a55c9ed54c009c3f020ac65200d80":"Zwraca wartość najmniejszej zmiany ceny otrzymaną przez blok Przed zakupem","4b2340a890e88d1886757c3f7172e273a1edc31f":"Blok jest wywoływany przy każdej najmniejszej zmianie ceny","b54d7b4590559dad64f02d09aacbf6d9863e2624":"Możesz korzystać z tego bloku w celu analizowania najmniejszych zmian ceny bez względu na twoje zakłady","ebffc758056e6b2fc2af99af17fbc6853e5d3583":"Lista zmian ceny","17649cac8739adcae95e641f794880272ad33bd1":"Zwraca listę wartości najmniejszej zmiany ceny","802dc02469ae51067ca620ff57dfb5bdb3e524ac":"Saldo:","c4ee8e12b2484cd5b47cdf00bfa2c50b83e91d3d":"Uzyskaj numer salda lub ciąg","69280143949fcd59c171dd60f6b6e13d0cc08fe6":"Bloki wewnętrzne są ignorowane","d072c2ceeb5c1217722d14c74de7aeab945b4215":"Umieść tu swoje bloki, aby mieć pewność, że nie zostaną usunięte","b06acc4158c824231f727a13e1c9811f43d5be42":"Załaduj bloki z","661db37251a1ed1afe357ee13895f37a623d7cbf":"Załaduj bloki z adresu URL","6c03ee54ad3a51fc92a1d69943e99667847705b6":"Powiadom","b1bec5d06e3672915d81b2fbc2347c8b4947a954":"z dźwiękiem","a2d0c89fdfff3176efd4a443eb0f6607067b93e7":"Tworzy powiadomienia","6e0fc122f936f808bc2e3af661121b65712ae855":"Powiadom Telegram %1 Token dostępu: %2 ID czatu: %3 Wiadomość: %4","1aeb6caed9e46edf5d6224adc905ffb8ee3a7708":"Wysyła wiadomość do Telegram","45ebd38f4c641ebf6f72be8c3a79dfa50cf9f20e":"Całkowity zysk","ffb465875e1ff2b49bcaa7c6b70965ffe39fa59d":"Zwraca całkowity zysk","bc528d26f66fe8c4aa4bb24ec9c99dff12c055e0":"Liczba uruchomień","bea5756b18644ccfab01c1c0dbd6fa9db7103379":"Zwraca liczbę uruchomień od początku funkcjonowania","c67ded6b64019212eb2bc69afd761f5b3f626040":"Dodaj znak do liczby, aby utworzyć wyrównanie limitu.","569bbd757e1bb8bbccd250b98dc2bb37cb47b787":"Rynek","74751e67c3e1010c343095eaf543e7cb21ced2ef":"Rodzaj zakładu","1f4698382842477e211eb46de81fa506f01a8c34":"Oba","c1baf816aac5a5cd849768773fc248cd249dc296":"Rodzaj kontraktu:","c93025710d1ae6cbaf8e710f63eca8edfa0c9399":"Domyślny interwał świecy:","9693aeaaf68e3929b59b79306feaa0a847d01192":"Czas trwania:","10c02649e226d430bd75a5b6315a41c0db9992a2":"Limit","837276742aa90209dde3b4eef07d8e7ab26731ef":"Przewidywanie","258b49925b41751c6bd790a0848246566ba61440":"Restartuj polecenie kup/sprzedaj z błędem","c55ee3445cd391ab299b6f85a6ea9a68a65ea64d":"wyłącz, aby zapewnić lepsze działanie","b410994b67e37d9516eb9b866c85a8c639f79e68":"Restartuj ostatni zakład z błędem","2260c5a971c2602834ef8feeb5fa522f900b469f":"bot ignoruje zakład z błędem","cd1495cb4c60266a6abad9024022ae079bf7e416":"(1) Zdefiniuj swój kontrakt","0745acf92abd7b60598f161717884cc45dab8694":"Uruchom raz przy starcie","999e1ade10ff5ee1d115f5a6288bfd2e0d0736e6":"Zdefiniuj opcje zakładu","a43c3299d30a5bc7e31a574cdc87f59cbc8fe585":"Określ swój kontrakt i rozpocznij zakład, dodaj dane inicjowania tutaj. (Uruchamia się przy starcie)","d571f33d957ebcab086ecf38eedd71b6ef0c5820":"Opcje zakładu","4d22b565e4253e92a908f216184779679bb1a044":"Górny limit","b70c38c6db3127422e05315c30bdf76c7c36c480":"Dolny limit","a6c5f081b3addee364af1c8cdb84853f49dc8e07":"Nieograniczony","0f2ba74929aca6fea950e351dcd576b7cd841fa4":"czy świeca jest czarna?","7cb3b482ab66947d439642ec64dc7f5bd4e065dc":"Wykonaj listę","5925d08228e246f07b790b88ad70c1b73a97d2bc":"wartości z listy świec","852b438f91ad9eb2cdd84419a675a216d543c687":"Przeczytaj","67d3b35a0b740127b56bcd44d3bcb1ccc20e0b48":"wartość w świecy","d79d854dcd0829e2177a47beab6a55569e781ab1":"Przeczytaj pole w świecy (przeczytaj z listy świecy)","5606b4460ac96063b8a8e5647008f3ec97252fc5":"Sekundy od epoki","2de20bdeecb1a8c28bd36fe75f028ed4318d0348":"Zwraca czas epoki (sekundy od epoki)","f43cb41af7ce8a69c7aecbc1c603bb0381270982":"Uruchom co","4b6fe6898f0f956d48a4c8172c6dfbcb4159ab09":"Sek.","2eea87bb804e4e73e3f8e9c41140f7ed83ea8875":"Uruchamiaj bloki wewnątrz co n sek.","e0af6ddc8a892704f64680bcb22b30c4bfcefec5":"Blok uruchamiania co n sekund został zaniechany. Skontaktuj się z nami, jeśli posiadasz prawidłowy przypadek użycia.","7b9c76088576a64f32d67ec335162b9f73eaa026":"Uruchom po","ff56ffac023cf69ca5c7f71d407499536f4f86b5":"Uruchom bloki wewnątrz po n sek."}
+module.exports = {"3d52a6d8fedcc48a65297c07bf5f7e3e41aab5aa":"Logika","3edf0df49942da6d11a1a217e4d3af4a5a8e64f2":"Matematyka","c3328c39b0e29f78e9ff45db674248b1d245887d":"Tekst","4d064726954a17487f94e931f5b157b733ec22ed":"Zaawansowane","a1fffaaafb7cc996685bceb829c053cc4f7de43d":"Lista","19de69cb601f53a4ea7af22a65c71ae63251365c":"Zmienne","2b961dea1dc0c60ddf9a2c8e9d090f6f7d082483":"Funkcje","dc7f77b4ccfc9f70a78bd97303bd10ba4c9d70c8":"Pętla","66639f7d455dd71faa9147f5d69e5ce885d8bebd":"Binary","0ba66deaab2f2cd3b0793d03f600ee2b8f577fbc":"Definicja zakładu","9201c6ac624e98e168e6ccddbcd5a9b5cdff06b3":"Przed zakupem","44ab9a87268d3fd74040ed0b55c04f83294cfdef":"Podczas zakupu","c415c9399b7ae7285d2c1c880a6a0aa18f62ff8c":"Po zakupie","d07ffc19d51f0973859a0d95c1d15cd9f22388ca":"Analiza najmniejszych zmian ceny","8cf71374fa095a64b5295b672daef8507ec7be6a":"Wskaźniki","4fa8cc860c52b268dc6a3adcde7305e9415db5bb":"Narzędzia","6c82e6dd86807ee3db07e3c82bec1ae1ce00b08b":"Czas","8d8fd6765e184419cad8b88d1a60c895d79578c2":"Świeca","548f449b63ff41eaaff5a2d679ffa56b2015fc20":"Różne","8bf95ea372568c7a254ba9fada5f6f1701ebc5b5":"Dziennik","12b71c3e0fe5f7c0b8d17cc03186e281412da4a8":"Podsumowanie","9feddbabd7e7309e96c590069057158e96baa8f6":"Bieżąca kontrola konta","038fe2bdb7ec6ee078f60bdb5bee94654ec6a81d":"Handel opcjami może stać się poważnym uzależnieniem, tak jak wszystkie inne czynności, którym poświęcamy zbyt wiele czasu. Aby zapobiec niebezpieczeństwu takiego uzależnienia, umożliwiamy sprawdzanie rzeczywistej sytuacji na bieżąco, co zapewnia Ci regularne zestawienie Twoich zakładów i kont.","4152043e8c670075d2c919677e835edb0d923cab":"Proszę określić w minutach preferowany odstęp czasu pomiędzy kontrolami konta","d9fff2df19e90f2c7ea6bb30fde4e0da119d13d1":"Proszę wpisać liczbę z przedziału od 10 do 60.","2439f2f199b2a3e798aa9b4feaa9248bdec9bc0b":"Kontynuuj handlowanie","a72ca256dc49e55a1a57b9a727fbde9834c9a3f7":"Oświadczenie","6e78c91f5a05fc0d4f1a787d38e3d6fe2f856d46":"Wyloguj","4832e45812a2724f16a15f9ae87adfc8ae4168cf":"Skontaktuj się z nami","f7c400ed695f898b8ee9d21664aa17b5bb693828":"Zaloguj","5ea75f1605a4bf1db5c39fcc61854627478c0a7d":"Resetuj bloki do ich stanu początkowego","f98595d541778d86f75ef22b3328a031d20aa16b":"Załaduj nowe bloki (plik xml)","4a1e616226c329a94da7768bc0435a3284478010":"Zapisz istniejące bloki (plik xml)","6b3465ace62f33f0687b4669ac26d95895e9ca52":"Połącz Binary Bot ze swoim Dyskiem Google, aby w prosty sposób zapisywać bloki i używać ich ponownie","8e4ec2c451ec7b1bf68d72fe9086ec978e41feb7":"Cofnij zmiany (Ctrl+Z)","937f5055f05be359ddf619744e8af4d643549e80":"Ponów zmiany (Ctrl+Shift+Z)","8406d1cce44230835932060649e999ca3283b413":"Powiększ (Ctrl + +)","1109673172af2c173c492622ff8a72c8f29f0e70":"Pomniejsz (Ctrl + -)","44c22002c65d2871331263a23c3e09c0a1bfd847":"Przestaw pionowo","ebd0945359e5578ff9bd3a2ab490ca84c225d8f5":"Pokaż/ukryj okienko z podsumowaniem","76bb05950f80f3a88ee05ef3276c5934fd355e8d":"Uruchom bot","ba50a42d8d3228c37a817865fce49fbca692c2ad":"Zatrzymaj bot","4f4aa4117318a8ddf8783885d4f3542c5b2733bd":"Pokaż dziennik","91017ef9b165cd0e7475a770f318ea5e705e1321":"Pokaż wykres","c89e3dd1cafcadcc0312e476ab58b2332209da23":"Pokaż widok handlowy","b02c858e72be118a65c9393930351012b647cb9e":"Przełącz nagłówek","250be77f7605669a0b3d968b9ed381a3d9787ed1":"Otwórz zapisany plik XML i pobierz jego bloki","ff29ccd7a6c6073cc462ed590d27a91632fdf67e":"Bot Binary","608061fb5aab975013fa70c5c814a1d8ba30c152":"Jeszcze wygodniejsze handlowanie","e4ce8dc3e416e69262ba642dc57d3975d6616980":"Czy interesuje Cię zautomatyzowanie swoich ulubionych strategii handlu opcjami binarnymi?","f261237ca8beec6f77b76c4121feb8da22818c56":"Bot Binary to najnowocześniejsze narzędzie programistyczne pozwalające tworzyć aplikacje handlowe przy użyciu prostej funkcji „przeciągnij i upuść”.","f6c85c68616eeaaa15fcd53fdc52f6eb5c886357":"Wymyśl dowolną liczbę botów do handlu opcjami binarnymi – od najprostszych formuł po niezwykle skomplikowane algorytmy – i pozwól, by handlowały za Ciebie, nawet gdy śpisz.","e6906a0d1c28b202f9bd49da4a6abbddca57399a":"A co najważniejsze, po stworzeniu bota możemy pomóc Ci go sprzedać innym graczom w","1dd0cf79c572bcdbdfabbd54ee95710a21234d73":"Sklepie Binary.com","abeef9a35ae6256796ba2462e4f64d308de42359":"Otrzymasz 80% kwoty sprzedaży każdego ze swoich botów w naszym sklepie.","0606f0b7763ee6e8094a3dab7873d34c08fd3670":"Rozpocznij tworzenie bota już teraz","221acaf3a0290adafe08cdcb8c66121c73d8b4a3":"Potrzebujesz pomocy?","d635b53e59c9aad8c5d78458826beffb029b27bf":"Dziękujemy, skontaktujemy się w ciągu 24 godzin","a69a8fc21499d0fd85e87bab467699827547a5bc":"Proszę podać poprawne URL serwera","1de91e827ec70ca735abc2c71b0a89cb0cfc4ce1":"Nie wybrano rynku bazowego","50050f06645ad2743165b429a8f7deebd285fd63":"Nie wybrano rodzaju kontraktu","6a7d1a3a17c4e8ae6712cb60d46db1edf0aa2667":"Proszę się zalogować","2f9f9096be1a1c0569a9ce54e57f0420f6b3c2e9":"Czas trwania musi być dodatnią liczbą całkowitą","4df6e872792d72aea8a2f6b831d00b554464da23":"Kwota musi być liczbą dodatnią","001e68df3a4b32a4d57148d9d407f44eee3b7436":"Ta świeca nie jest prawidłowa","04f14ea7c92e0b2b5ae005c696245063ec641d66":"Ta lista świec nie jest prawidłowa","c1bbfcbb4f57d3a56c1239af0c2138321589efd2":"ponowna próba za","57b453bb26b1c28dfe362b7cc9f17f0be93dd581":"Limit stawki został osiągnięty dla","094628ce13fc0e78f07b697d1cc9421bb2edd666":"Żądanie nie powiodło się dla","816c52fd2bdd94a63cd0944823a6c0aa9384c103":"Nie","5397e0583f14f6c88de06b1ef28f460a1fb5b0ae":"Tak","bbb930cc426507ed3f6b7c343c75dd0e041494b7":"stan konta","e6e886cdcdefeb6d3edb4c31bed06dd183ac4153":"cena ofertowa","50e72909992bdc37c7c07769d1b7efac5e52874c":"wypłata","ecb5ba7044417916ba12de5fa9e6fccac3e5d475":"zysk","c980b910204c7babdffe8ff3f7e755f30133383c":"typ kontraktu","a726c6955157f1b8b92f9932652434a7150f80f8":"pozycja wejściowa","a66d5c7ef2c63dbc9a8f9e6ae4e2bc575e74a36e":"wartość wejściowa","3905be81561384dc8c43d6127c57ed1e0eb03b74":"ciąg wejściowych wartości","7674920c033ca14277c577e19c037a6754d4fa80":"pozycja wyjściowa","e8b8bd9f2eabc12875605a37c93e7f04a713fcb8":"wartość wyjściowa","06ecea26625359f7dcf5ff5c47af6174ff815257":"ciąg wyjściowych wartości","779455ee3bde8494d9629b353e17b19e92357ba8":"limit","37a5301a88da334dc5afc5b63979daa0f3f45e68":"wynik","4973f4c599d5f42cf7bde52d66c3ed8ef77accb1":"Wygrana","12e24a7d8ac40579e8a0aef4869288afe7ed6745":"Przegrana","563339f82447b4e758ad76d5a0b63b5698594fba":"Wzrost","5c1ae82c29543ac887703776bf3da2c7dcce683d":"Spadek","2fc096bb7b6596ab243d0286c9f43fdf2b9b406d":"Bez zmian","ecb252044b5ea0f679ee78ec1a12904739e2904d":"ciąg","53b0a1b2fadf4e040cdc2155a7340de24aca93cb":"liczba","bc74f4f071a5a33f00ab88a6d6385b5e6638b86c":"zielony","4c9a82ce72ca2519f38d0af0abbb4cecb9fceca9":"niebieski","96de5543d183d7de52ac5fa21c46fc811f673f89":"żółty","78988010b890ce6f4d2136481f392787ec6d6106":"czerwony","aa9330a16e5b055de809256dad6b4d1cbd2999e7":"Wyciszony","cf84a98d6cf7f156862a08ba8236467b6f471004":"Zawiadomienie","eee2facd669d1434848c24da5527b3e87d9a12d5":"Zarobiono pieniądze","9d705578b0f1f0ce3a06dc5e82f9a1e6078f81e1":"Zrealizowano zakład","7f2f6a15cf8da2b27e5a4af47b58e7ad71c0b3d9":"Błąd","a3b1583d377f37ac20de7e089edfa0920a078e57":"Poważny błąd","66c8b6848eee629c4ac551bf2b5fa591571654be":"Wzrost Równa się","5649dce3367d490fa19d563ee9e3d4c4b6f7c642":"Spadek Równa się","062787aa328047e189774b3703d983b83938f6e9":"Wyższe","b91eed4b7a80cd9572a27e65ebdff9caa4b3b9a4":"Niższe","e3f139abb7a549a1210b36f7dbf89215ad6c9902":"Osiągnie","7d7932bcc2e262ae98cf09dc5445130fb3881769":"Nie osiągnie","a16814a48ec58c2e24ba224a80921a5c02361abe":"Zakończy się w","391d02cd75ebcd6ed26f5f45ddf7d40bf13e9dc5":"Zakończy się poza","534ec5da4e82ec419abc170e1a8448f55a01664f":"Pozostanie na danym poziomie","98cbe1998effd8b1a8aefdcc538573055e99a5f5":"Przekroczy","93d13bad1d2c2841db127cb70cc35bfc98059fc9":"Azjatycki – Wzrost","c098658ce3d3a258e4d155949a60072966b36db7":"Azjatycki – Spadek","ee2dbd5d6d82d0833069b07e7dd2848d3bf4d83a":"Zgadza się","8444b7ce28bbc3443cc5cf73359b8353989b2a4b":"Różni się","9e767ad03e5547f251044e0724dc1d9f3e75aeed":"Parzysta","dc28f5f3c65ec611f0f30022650d24382d27448e":"Nieparzysta","18a63f5512afb5573e5b44deba78d629f0635317":"Powyżej","2a268b89b83f8cb38ea48e46e93dd8840db512f9":"Poniżej","2155c8b38181dd2552e84a94049aacd33ef9c607":"Duża zmiana ceny","1408cfd2b064b923f024fbe590e27db8282941a5":"Mała zmiana ceny","b86eb15dc4f13e4c2972de158d3038d9f657242f":"Reset Call","669a1f3d9a8f601a84da536cfdad1de4092b1926":"Reset Put","844d1a5c99a0a668383340cc095d040eef998c79":"Tylko wzrosty","87293a146cd481a2b30cf74282ec061dc4cf0735":"Tylko spadki","cf9b77061f7b3126b49d50a6fa68f7ca8c26b7a3":"Otwórz","b1a5954a483f8f8b0207385095f74aeb409b3f80":"Wysoki","a124947cbd2d1d92b47e027274c3269ff0c7a84b":"Niski","bbfa773e5a63a5ea58c9b6207e608ca0120e592a":"Zamknij","1173872a4fb205b713702f0eec5cf2c732c828fd":"Godziny otwarcia","808d7dca8a74d84af27a2d6602c3d786de45fe1e":"Domyślny","62957ecfdc50957e8957c11d2eae74d078f0ef1a":"1 minuta","1dd3e663dfa7ac9cb77cfddd2cf8ac700657e2d6":"2 minuty","24e46784cbce32443db5a2638b1a7d3201543e9b":"3 minuty","3aa5819ed8a0b94d0f293db8e9c9598298ddd402":"5 minut","a6f151883b736f0470d33492e61c72a7d059d065":"10 minut","899761ff5425abd2ee214fa7aa46e27c6c8b5aae":"15 minut","31bbe8890d28d183f8f7f2c160fa892c444c0ec7":"30 minut","f030c3d667652646b86732ad7bc67e226c49cd3a":"1 godzina","2046e49e33c040e08dbd6fd83df3e1846015e6f1":"2 godziny","7b47150d431db70d783724007f07ab894eb8ac2e":"4 godziny","191800b7e9a48680792c0dd77cb6cac00c4514c6":"8 godzin","2d8a6f7c34468578640b333b8650131de06ac770":"1 dzień","f94510322ecd9b3a2af67a10bd51ecc4ac6a24e7":"Góra/dół","c1365a35e99d0f9147ebc72f21534cf471fa7d95":"Góra/dół Równa się","9c7960c6b11d35ac9d6cdc1ebaad3af43b2065c5":"Azjatyckie","2260ce49306460c8a2ef501939f29ad6ddd4e934":"Cyfry","0186aa73a1b75fa8f0eb98bbd9ad01102bb09ec1":"Osiągnie/nie osiągnie","f7de1f66f0979667da275b7e8996e805395025a1":"Zakończy się w/poza","a431deecd4c2258097adae418d496fe9a8179fee":"Pozostanie w/poza","256fe245cb7d3d673095f7faaa8c9ff81b985ad1":"Duże/małe zmiany ceny","12a3f461cdebbc8f335190413ee6c57442743bba":"Reset Call/Reset Put","e696144fa588782e6d6b2c97e2d3ed1adf52bd5c":"Tylko wzrosty/ Tylko spadki","91a64e3f83c91acf336c631fba295f297f94c399":"Uruchom po n sek.","024696596f26a4db232fd9e966eadfeb27c0bd1a":"Uruchamiaj co n sek.","c538c170bdc6b0f3bb98dce44a016a2e2d45a6e7":"wyższy","85c274929bc0e28eafd3734f2c25046c3b95b36b":"średni","346e3ee198e98146993894d3de8ecab1a86c3e80":"niższy","f16459104f92ab6b38aa265adb4ecbfc3768e303":"Histogram","e09f635f4e77476c9ca1c37bc9992e9ace3431c1":"MACD","27bed13a88c60350c3de92ec3820e1cc4f7d6ec3":"Sygnał","19eabc961735d78f12fc7be906ffcb033853cf85":"Znacznik czasu","68f4145fee7dde76afceb910165924ad14cf0d00":"Wiadomość","629777b7d4d610ace6dee24442730f27d7d0853e":"Nieobsługiwany plik:","beb040c8fabd007c9cc5ac6a9feb6bdb05d33dac":"Wszelkie niezapisane zmiany zostaną utracone.","410bf23a3f080def9c7a976a16305bcde7943ed1":"Czy na pewno?","e99811bd3b1ad17e74614060ecb180602be35ad6":"Wylogowano!","876f3e0202ca40dedf2e5ab6577eba1ae637fb53":"Strategie","8ce80462febd4d573cb2f9c1984fdc93b7c21c57":"Podczas ładowania bibliotek Dysku Google wystąpił błąd","c4c758b5c8f5b3985f6bf7382c848bb44e0a5b74":"Udziel pozwolenia na podgląd Twoich plików na Google Drive i zarządzanie nimi","3b6bbab905129dd36b8d4e99947fa30540ed7b2a":"Nieznany format pliku","3d6b44df6eaf6236b4abc1aadcf8f5b1cda769c1":"Podczas pobierania danych z Dysku Google wystąpił błąd","cdfe947b0c089a4a1f78c11299f25c32a124f1a6":"Wybierz strategię Binary Bot","2db43c69a4b96454914f0b8272bc869984529e6e":"Podczas wyświetlania plików z Dysku Google wystąpił błąd","0dcea5f584938e0fff00084b83156ab31d641ab3":"Podczas pobierania plików z Dysku Google wystąpił błąd","18da95988117ff029393f3f5c881d70ef47f7385":"Podczas przetwarzania Twojego żądania wystąpił błąd","04226bcf91195130e25fe7a8e8ea4d3e058efcb7":"Wybierz folder","aee24f2456ea8516b024a5d3e2b815ae7f2239d9":"Nie udało się wysłać powiadomienia Telegram","3f370309b6280eb100f898426d8605c1f45d558d":"Nieprawidłowy znacznik czasu","af6a4e2a5582be89ac930e946eaed86e01cac58b":"Nieprawidłowa data/czas","49d51398b574e7312d99b18d2b93d2ede416f053":"Nie udało się wysłać webhook","05754ed14275a070a20a1d5cd65f0cea66f1da7f":"Propozycje nie są gotowe","79222cd9892a434aa61fc7dc01c3839951eb8d1e":"Wybrana propozycja nie istnieje","6ea4a034747d020b1d8ce4848def95d537555dd6":"Kupiono","89f89c02cf47e091e726a4e07b88af0966806897":"Identyfikator","1200c1af2f7bba4e29a34112865662748c9d41df":"Nie można odsprzedać tego kontraktu.","62d6180e55905f7b996d442c53631981a4ef8b5b":"Sprzedano za","ed4978867de1da05b336b724a3fb96222a29ebec":"Indeks musi być dodatnią liczbą całkowitą","87e2e01f93d25ba7ed582cc81ef5c9ab2959f4c6":"Kwota zysku","b2a4553586d1062c21323bca1dc0589f7a9d5cf7":"Kwota straty","46fc6f27a835486d63d9e927c6687e4508cb3087":"Zawarto już maksymalną liczbę zakładów","9202ddae4cea16513e53bbc965d88ed975e59512":"Została osiągnięta maksymalna kwota straty","5f52b397b7e5f538681f0f5717a88aa626349c7a":"Nie wywołano Bot.init","66c7734789e19cbeef3a5ac185ea732139aed213":"Wykres","3b662fb2e8bafce29aa98321b18874bb44905488":"Integracja z Dyskiem Google","7ee0ff5eaa6fa82bd6d83a2f4ca446c663f097cb":"Maksymalna liczba zakładów następujących po sobie powinna wynosić od 1 do 100","93039e609d94a24f3572b794a31b21525a09af2b":"Nie ustawiono","ea67c8023c75375484f3a5f1aeb009b20059d5bc":"Dzienny limit strat:","b1946e5b4b78465b7661fd4bc89ff52de6c633e7":"Maksymalna liczba zakładów następujących po sobie","952f375412e89ff213a8aca383d18e5691354347":"Start","9f1c61cc03f3ef9324db05502f7f0b61e61e1521":"Ograniczenia dot. zakładów","095ba68888b5ace5f4515f5acab76dfa1073544e":"Mój komputer","ddcb77ff769ea54ca622848f6bedd4004fa4f4fa":"Załaduj","248e224f533752db28a1aab3519a58569ad96140":"Załaduj bloki","c7097e97dcc446ca889d3ca6be733a65e2728afe":"Pomyślnie przesłano na Dysk Google","3218e5a460e82d7bdea9ce0f145cab2f47ba9a4b":"Zapisz jako kolekcję","611ebbfb080284312904de925ef0f75f4cb56ad2":"Zapisz swoje bloki i ustawienia do ponownego użycia w innych strategiach","efc007a393f66cdb14d57d385822a3d9e36ef873":"Zapisz","a638caa8ab2b7ff7980a571334217339e6d1d634":"Zapisz bloki","39fca63515c105918f03e4908ec12df675b07f92":"Widok handlowy","85dfa32c97d8618d1bea083609e2c8a29845abe5":"Konto","d847919a30d31c0be624087f3370492b3fdf80c6":"Liczba uruchomień","5cd6978d63540c8a490ef76f43219de6362f958e":"Całkowita stawka","17410d7b62b8b1de981cfebada24632987edf186":"Całkowita wypłata","b841eeb091f1ff0e14be08e5ea1b93e4cf147ed3":"Całkowity zysk/ całkowita strata","90eef613042c5a51f542421065b68b886d473807":"Saldo","db1c784524e1b54011a95823026161f7c8517fe0":"Odwołanie","4db3e9e4aecd187db9339a10d2629fef46724dc4":"Rodzaj zakładu","1bb4086b66659d8580f9be4beef69931aeea3cad":"Pozycja wejściowa","8bf249c4855e591964bd5bdd35c8ef2ee107342d":"Pozycja wyjściowa","ba7be969e7c1bb5f22489e843478e3d721aaa843":"Cena zakupu","772fbced18230220d2d9be1456be16fc1b271d25":"Zysk/strata","bae7d5be70820ed56467bd9a63744e23b47bd711":"Status","96f608c16cef16caa06bf38901fb5f618a35a70b":"Oczekujące","7fb3a9b5101bcd45e2dca077191693a5199bafa9":"Gotowe","82a82f798dd773717ec37d15fd4405510291734e":"Bot nie jest uruchomiony.","6a88e58aa1798626f94cf17f1a91618b405bb289":"Zatrzymywanie bota...","624cc7f40b68faace7e78d8e5c5be1d4f15facda":"Bot jest uruchomiony...","788180a6ddbbbcca10f6f49d8e85d557934bae0e":"Zatrzymywanie bota...","d907a40a4a15da3c21a6e0f8ace3f987d482f92c":"Bot został zatrzymany.","4f219c17ab9ab76aa1cd431b4e0e5ecf5520e8e4":"Próba dokonania zakupu","4684ee1026d9b4c872d016c3c4588a0c479a451c":"Kwota zakupu","ca92c55b9e4233d771d5b6300fe751a9678d1deb":"Dokonano zakupu","f02760cd2eac28169f0a990c950c3dfe8427f772":"Kontrakt został zamknięty","fadc0ef93d1ff13370524ce8481ddc4a71195934":"Przestaw pionowo","a479c9c34e878d07b4d67a73a48f432ad7dc53c8":"Pobierz","e4458464df6cbb8da1134875ba51519c5d244d9f":"Bloki muszą znajdować się między symbolami bloków, głównymi blokami lub funkcjami","e9c45563358e813f157ba81b33143542165ba84e":"Ostrzeżenie","31cb6f44d030abeabcc7046555dea851602a87a5":"Ta strategia jest niedostępna w Twoim kraju.","9ce3bd4224c8c1780db56b4125ecf3f24bf748b7":"OK","486d55264892207fef1ed5799e0b213b446d3eaa":"Plik XML zawiera nieobsługiwane elementy. Sprawdź lub zmień plik.","a594b427eaf0f108d3e9cc20d70e15da811c760c":"Nieobsługiwana strategia","04a5090686ac7b54822e00a9ff08c38a107601e7":"Przepraszamy, tej strategii nie można użyć w Binary Bot. Możesz jej użyć tylko w DBot.","77dfd2135f4db726c47299bb55be26f7f4525a46":"Anuluj","fdaa08aeaee0bf9b78d83ea19ef9e9bd019e8193":"Przejdź do DBot","f1d8b7b118d6f82f95614d476bc11af650aed3bc":"Nie można załadować pliku bloku","af145748c9cf765a3b059eec20cb1dbb899297d8":"Załadowano bloki","11ee9c5d534cc8d22651092222b532917594161a":"Minimalny czas trwania to","5283ac04c9a8ba8a937d1edb4ba986aeefce8bf1":"Liczba zmian ceny musi mieścić się w przedziale od 5 do 10","ace1342bc3720b77ce510b93074041e7386d209e":"Czas wygaśnięcia nie może być taki sam jak czas rozpoczęcia","fed3e7bd6696fb97a12d720845ab5388456bfc3b":"Przewidywanie musi mieć wartość jednej cyfry","d466687f90ba548434d65186d11a80c4204f9ad6":"musi zostać dodany wewnątrz:","6ddf2b3075ac9ab5d66b40e15ea9a34c087672ea":"musi zostać dodany wewnątrz","33aa6ff282ee509d37c6f758274c9156b419ff73":"Strategia, którą próbujesz importować jest nieprawidłowa.","da162a909c2981ed318d23cd9a6be1d66e0a8400":"Nieznany format pliku.","5e719fa76e1b6cb396376c82ebdd04bec7253229":"Zdalne bloki do załadowania muszę być zbiorem.","b0d2de25daf6ba09a5e710c6968ffded29c4dae1":"Nie można załadować pliku bloku.","df84a88f38b03b5b342362d72370b0d66afdae35":"Plik docelowy musi być plikiem xml","cd680fd936e9559ef1d95efac7a71680e2b13a89":"Ten adres URL jest już załadowany","34c59389053701a04127f74d32315e0206e076f8":"Podczas próby załadowania adresu URL wystąpił błąd","3ead0b14c72503187691a7a6d7121987299bd401":"To nie jest oficjalna wersja Binary Bot, używasz jej na własne ryzyko.","27401c9c8e476d659c8382e05c6d70a4a82be468":"Oficjalna wersja","bc981983e7f547dc62e19a1e383acfe00782a6d5":"Dalej","b52b36b7269fbfc58ec24bb724691951a3decbe8":"Wstecz","e9b450d14bc2363d292c84f17cfad5cfbd58a458":"Gotowe","29cadadfebdd578a50b7b3d1b2c5b33e424d5de7":"Zobacz krótki przewodnik","a48e81d4a8da67637b46725824177a959fe99b21":"Chcesz nauczyć się, jak korzystać z Binary Bot?","6f3e6ebf249947cec4f64117253a8fe43335ae79":"Nie, dziękuję","fcb6e90e7223e1d1d735f15dbb7ded9d81bbe7ef":"Nie pytaj ponownie.","4ca0a75c2b7fa7da4364d03b72c46fee1860a2bf":"Obszar roboczy","5fcf29b9f0b8971c8148e70a150ddc9ac04c94fc":"Przeciągnij i upuść pliki bloku.","ddcbb5361b1a16eba60fca2383fb297bb90ed9b3":"Pobierz przykładowe strategie","1758356db21759f7c5a0da9b4dd1db8fd6feab3f":"lub","00b581632c1532969a7128ebc8eae936ed8af04e":"stwórz własne strategie.","d171baee235d4c93f63755a876782dc5be4c3e47":"Zestaw narzędzi do tworzenia bloków","056f19272d96f902c38207cf163ea8dbff7fbd32":"Dodaj stąd więcej bloków do swojego bota.","36bae31694f85bd7a5b0ad45e51ef622b95baadb":"Konta","f5c47fd3b3553b10441a06054078cea745177dea":"Zaloguj się przed uruchomieniem bota. Zawsze testuj strategie, korzystając z konta wirtualnego.","fd825ae94aa79500a878dd4590a4b360e7162663":"Kontrola bota","6ee7980833e1ed72901b919ffd0fa20e1a251d3f":"Kontroluj swoje bloki. Zatrzymaj kursor na poszczególnych przyciskach, aby uzyskać więcej informacji.","f5169c84497de3aea74f7da9e7e177d1427e736b":"Powodzenia!","4f1b3d682c2a00b393c33637da402463bc11d5ff":"Chcesz zgłosić problem lub poprosić o pomoc?","0049f8894e41937ebb9111cd3def6749049fb50f":"Kliknij tutaj","aac1569ccf6b1a11b0ad0fbefdb9ffc777b4c733":"Kliknij, aby wybrać","d1a17af19f5388af9d6596cc0ea7dbb1d739e255":"Niedostępne","53adebdc2b1cbbedb56395b19a73fe47b87cc554":"Najmniejsze zmiany ceny","5fb1db527825d2996e37c655e5dec49d4da80c09":"Sekundy","092f99ea11a34a8490e7a767a83a42fc45634f82":"Minuty","9e25a34e635a123f8958bbe26e7c4843278597fb":"Godziny","f6bb0f468a8569c67b3d6826e57e62c5500c3681":"Dni","db6708630fc646eb98298d9acd701e0a1ac051c2":"Zapisz swoje bloki i strategie na Dysku Google","85538d002a336c5addef8d189d80976cf7758f8c":"Jesteś zalogowany jako","b65463cb6a42a17de514acc4659f7fd331e0876a":"Połącz","ed28e0686e1251ba046f582a3e9ec02470a5e78d":"Rozłącz","cd5f85b6f187605f82386eacd680f93820af8d11":"Wynik","1e38ce3d180cefae485a6986ca7c67841e30376f":"Prawda, jeśli wynik jest zgodny z wyborem","5c89497fc3c128e2ff865ce8df15356054f2c028":"(4) Uzyskaj wynik swojego zakładu i handluj ponownie","14ea81918758c994cbe3178e695e56afc1ef2b45":"Uzyskaj informacje o poprzednim zakładzie i jego wynik, po czym handluj ponownie (Uruchamia się w momencie zakończenia zakładu)","5098e2bcc96ee227983c9f7eeddfd226c220ca00":"Szczegóły kontraktu:","251c830f8f869e0887e8b4dc4c30ba1738c7097e":"Wczytuje wybraną opcję z listy szczegółów kontraktu","b3b543c80063a116ced4965d8537b7b62d14c0b7":"Handluj ponownie","a1eeb7c1e92e9a5d9323ed8ebd7ca7ffed8b0232":"Uruchamia ponownie blok handlowy","ca5586bdb5bdc1a2c0baf53ed0ecd21fafabebe7":"Dostępna jest opcja sprzedaży","03bad10717e183b24829baf483dc715e1a44bf7b":"Prawda, jeśli opcja sprzedaży na rynku jest dostępna","2c71ed279a402e93312dbda173ab18f244d6bf46":"(3) Obserwuj i sprzedaj swój zakupiony kontrakt","17632a9f51611d2579d95b4b1ccb9476566d7ccf":"Zobacz informacje o zakupionym kontrakcie i sprzedaj go na rynku, jeśli taka opcja jest dostępna (Uruchamia się w momencie aktualizacji kontraktu)","579607dc4f989ce2b94b558431666a0ab07ac1f3":"Sprzedaj na rynku","e20afd5cf3811a42071c9a312abb2afdad4c590b":"Sprzedaj na rynku.","4712cbff8e92822fc960ef9c0197293a19675eae":"Zysk/strata ze sprzedaży","df817b48c7a076561b4f8bedc52d65d2e351ab52":"Zwraca zysk w przypadku bloku Sprzedaj na rynku.","da3105e38c42a481ad7230ed393b0e12bebe9c4f":"Cena ofertowa","343fda69c73b78b84967055aae97f790c422adfd":"Cena ofertowa dla wybranej propozycji","d4d34ce9d9dd7e87213469f88cb7ac43725675d5":"(2) Obserwuj i dokonaj zakupu swojego kontraktu","fb61a3c71f4c488b3b470cb7daf502a3e9b5ad48":"Obserwuj strumień zmian cen i dokonaj zakupu wybranego kontraktu (Uruchamia się przy aktualizacji najmniejszych zmian cen)","9bb396940adb9705fe57eba6ea8b578e6aafa792":"Wypłata","87da93a46d143f6019979b3548414d9d7adabb35":"Wypłata dla wybranej propozycji","160f06d4799c85021a810f68c5b517eea37a2737":"Zakup","4c2fdde3d9c1950498ed263d6ce21d4bf3d0800b":"Kupuje wybrany kontrakt.","b44e884c355e447d0da0e6ba45caaff18c84373b":"Wstęgi Bollingera","d6a2a207343bd83aacdc80b579ff4419713a256e":"Lista wejściowa","170a28a9db6d27d7212fc6dc249434a57517e7bc":"Okres","b833989d69900a4be9e32d1bab65c8f8233f099e":"Mnożnik odch. stand. w górę","1cee82f19c0bedef64f68b32e6b02128efe7c61b":"Mnożnik odch. stand. w dół","974da601086448d0060aeed90e53ddd5acd17b91":"Oblicza wstęgę Bollingera (BB) z listy z okresem","d5b65cac1f1cf9421ac978eebe532de99040cca6":"Szereg wstęgi Bollingera","58de49791c64aba14e36e5887244a5ef088286cd":"Oblicza listę wstęg Bollingera (BB) z listy z poprawnym okresem","4bd99f76f1104229744455d93df0ff76b9eeed58":"Wykładnicza średnia krocząca","ea615c6d6a74e25a6d2f1bc9980b46e73508c2eb":"Oblicza wykładniczą średnią kroczącą (EMA) z listy z okresem","4082d9379e59b38c891d046312f8d3c4b64ae3b1":"Szereg wykładniczej średniej kroczącej","562edc102c5dd9e2fbbede1140b8a5461c2d4dc8":"Oblicza wykładniczą średnią kroczącą (EMA) z listy wartości z okresem","a537f4f3c0f6c68bf896fb23cb2ecdc658488ea2":"Szereg MACD","b18e572ea14edd48587145f1ef50718adbf256c6":"Okres szybkiej EMA","974023bddd6249d0f6404872cfcae205b2599ea2":"Okres wolnej EMA","5c2adcb3d1bfd6b9f5c2dec13d02a9473e4445a1":"Sygnał okresu średniej kroczącej","6b15ce93fd68d80aeee7f7964c1306044c3c1baf":"Oblicza listę wskaźnika MACD z listy","95ec92885c855ba9cf734c17a43f081901e4d2cc":"Wskaźnik względnej siły","b033619e108c9e43bfd8a42cd97bf5c5dc86dc65":"Wskaźnik względnej siły (RSI) z listy z okresem","4034de66995b876b2ba9bfd0274025e39168e05d":"Szereg wskaźnika względnej siły","f9da880c8b0e4cce4431912c24eba939e6bc06e1":"Oblicza listę wskaźnika RSI (wskaźnik względnej siły) z listy wartości z okresem","a9842c95766da40bf4ea6ee263cb5a5985847763":"Prosta średnia krocząca","347775a293c14362d492f019e677c965be1d6e7d":"Oblicza prostą średnią kroczącą (EMA) z listy z okresem","4cc7b9e53d082896ad884eb01be16320af65f282":"Szereg prostej średniej wykładniczej","2c75179a57af3c36581008b65e86ed81c4a4cbea":"Oblicza prostą średnią kroczącą (SMA) z listy wartości z okresem","39f024cf49724fe7ffdea7773c72ed06eec998e1":"z interwałem","e4bed3e67e58b2334ee4b9c6ce59ac7a95d80aaf":"Kierunek","ad47561efb1dcbd7246d9b64487f615647fda036":"Prawda, jeśli kierunek jest zgodny z wyborem","05bef508aadd62bf3967dcf67d769da296f19989":"Kierunek zmiany ceny","d089ab98a846a521b09aad6ff3fefa728bfa8b42":"Blok kierunku nie jest już w użyciu, użyj bloku sprawdzania kierunku","cdb31fc857f01a59f664413498293c714285f46d":"na liście świec","20fd5f86f08796f145d69dedc209a27e459b2f51":"uzyskaj # od końca","a96606af8c33ac3428b45abc4782dbf93f458d29":"Pokaż ostatnią świecę: nth","90ed0e1ea5c1907f8a32d8051a66e845857bb2a4":"Lista ostatnich cyfr","248428facb97408414180d4de74e4db35360fbc4":"Zwraca listę wartości ostatnich cyfr","2e4202acde880b7b1c3686f0335ff879fc1e5c7a":"Ostatnia cyfra","e46e0bd2f7fe37217dec8aa26ebce8ffa3608663":"Zwraca ostatnią cyfrę ostatniej najmniejszej zmiany ceny","d5fde4c9d5edf660f760fc226df4d2678d3334ab":"Lista świec","95e552a40d3446c96905cd3ec7e3d123d0246ce8":"Zwraca listę świec","5a0ed227a01b7d30b05dcaf3e1c23b74b9be6ff4":"Stwórz listę","a4220593d385a720886f7af1ed3c478fd0c6339c":"wartości na liście świec","cd8cdf3d47e921c8a72addae9269e66041d417c5":"Zwraca listę wybranych wartości świecy","3e4f335e7a6f79bd1bafd219ddde30acbf16a7ac":"Na liście świec odczytaj:","34037f9452fdb66c9ca27ebcc0afe9d5139e9e24":"# od końca","aba43a580daa7f306956ec69b83e6e37e7233126":"Zapoznaj się z wybranymi wartościami ostatniej świecy: nth","e04b522218a181cf0223042dd18ae08dcc22d8d3":"Ostatnia najmniejsza zmiana ceny","6ee445fc253a55c9ed54c009c3f020ac65200d80":"Zwraca wartość najmniejszej zmiany ceny otrzymaną przez blok Przed zakupem","ed44b69176217a1251c04f0c13d23ac789ea60b2":"Ciąg ostatniego ticku","ea24dd1988c6534a5f0d11b8fbbc6c374fe68766":"Zwraca wartość najmniejszej zmiany ceny otrzymaną przez blok Przed zakupem (Ciąg)","4b2340a890e88d1886757c3f7172e273a1edc31f":"Blok jest wywoływany przy każdej najmniejszej zmianie ceny","b54d7b4590559dad64f02d09aacbf6d9863e2624":"Możesz korzystać z tego bloku w celu analizowania najmniejszych zmian ceny bez względu na twoje zakłady","ebffc758056e6b2fc2af99af17fbc6853e5d3583":"Lista zmian ceny","17649cac8739adcae95e641f794880272ad33bd1":"Zwraca listę wartości najmniejszej zmiany ceny","46ecdefde6a8dd5872cc6e0e52afb717f1140426":"Lista ciągu ticków","3bdc75d5d68b05dfd3ce6dcdf7d9773e60ed0a51":"Zwraca listę wartości najmniejszej zmiany ceny (Ciąg)","802dc02469ae51067ca620ff57dfb5bdb3e524ac":"Saldo:","c4ee8e12b2484cd5b47cdf00bfa2c50b83e91d3d":"Uzyskaj numer salda lub ciąg","69280143949fcd59c171dd60f6b6e13d0cc08fe6":"Bloki wewnętrzne są ignorowane","d072c2ceeb5c1217722d14c74de7aeab945b4215":"Umieść tu swoje bloki, aby mieć pewność, że nie zostaną usunięte","e98ea4ac4e2cfd6a4c84386534c5d1acd7ec85d3":"Klucz: %1 Wartość: %2","27305f6365c38dd36f5b5eb781e05b5e2e4e3f6e":"Zwraca parę głównych wartości w postaci ciągu","b06acc4158c824231f727a13e1c9811f43d5be42":"Załaduj bloki z","661db37251a1ed1afe357ee13895f37a623d7cbf":"Załaduj bloki z adresu URL","6c03ee54ad3a51fc92a1d69943e99667847705b6":"Powiadom","b1bec5d06e3672915d81b2fbc2347c8b4947a954":"z dźwiękiem","a2d0c89fdfff3176efd4a443eb0f6607067b93e7":"Tworzy powiadomienia","6e0fc122f936f808bc2e3af661121b65712ae855":"Powiadom Telegram %1 Token dostępu: %2 ID czatu: %3 Wiadomość: %4","1aeb6caed9e46edf5d6224adc905ffb8ee3a7708":"Wysyła wiadomość do Telegram","45ebd38f4c641ebf6f72be8c3a79dfa50cf9f20e":"Całkowity zysk","ffb465875e1ff2b49bcaa7c6b70965ffe39fa59d":"Zwraca całkowity zysk","532e65f6e266db0bb442d1f426d44d7d32962340":"Ciąg całkowitego zysku","78e84591ff76f992953a8e19b57c7eab7546d638":"Zwraca całkowity zysk (Ciąg)","bc528d26f66fe8c4aa4bb24ec9c99dff12c055e0":"Liczba uruchomień","bea5756b18644ccfab01c1c0dbd6fa9db7103379":"Zwraca liczbę uruchomień od początku funkcjonowania","7d500ebe352ccfa932b253e21938813a06fcff8e":"URL Webhook: %1","e770fd2a6b980a0815592b1bd499127c5a5cfe39":"Wysyła żądanie PUBLIKUJ do URL","a35646754dbe7a9211ba8b81338a5d64580eb276":"Pusty ładunek","69b0648eddd207cd45a9e1ba973dae287b535576":"Ładunek:","c67ded6b64019212eb2bc69afd761f5b3f626040":"Dodaj znak do liczby, aby utworzyć wyrównanie limitu.","569bbd757e1bb8bbccd250b98dc2bb37cb47b787":"Rynek","74751e67c3e1010c343095eaf543e7cb21ced2ef":"Rodzaj zakładu","1f4698382842477e211eb46de81fa506f01a8c34":"Oba","c1baf816aac5a5cd849768773fc248cd249dc296":"Rodzaj kontraktu:","c93025710d1ae6cbaf8e710f63eca8edfa0c9399":"Domyślny interwał świecy:","9693aeaaf68e3929b59b79306feaa0a847d01192":"Czas trwania:","78d7103a319e808455d397513279d99f3b3f3768":"Stawka","10c02649e226d430bd75a5b6315a41c0db9992a2":"Limit","837276742aa90209dde3b4eef07d8e7ab26731ef":"Przewidywanie","258b49925b41751c6bd790a0848246566ba61440":"Restartuj polecenie kup/sprzedaj z błędem","c55ee3445cd391ab299b6f85a6ea9a68a65ea64d":"wyłącz, aby zapewnić lepsze działanie","b410994b67e37d9516eb9b866c85a8c639f79e68":"Restartuj ostatni zakład z błędem","2260c5a971c2602834ef8feeb5fa522f900b469f":"bot ignoruje zakład z błędem","cd1495cb4c60266a6abad9024022ae079bf7e416":"(1) Zdefiniuj swój kontrakt","0745acf92abd7b60598f161717884cc45dab8694":"Uruchom raz przy starcie","999e1ade10ff5ee1d115f5a6288bfd2e0d0736e6":"Zdefiniuj opcje zakładu","a43c3299d30a5bc7e31a574cdc87f59cbc8fe585":"Określ swój kontrakt i rozpocznij zakład, dodaj dane inicjowania tutaj. (Uruchamia się przy starcie)","d571f33d957ebcab086ecf38eedd71b6ef0c5820":"Opcje zakładu","4d22b565e4253e92a908f216184779679bb1a044":"Górny limit","b70c38c6db3127422e05315c30bdf76c7c36c480":"Dolny limit","a6c5f081b3addee364af1c8cdb84853f49dc8e07":"Nieograniczony","0f2ba74929aca6fea950e351dcd576b7cd841fa4":"czy świeca jest czarna?","7cb3b482ab66947d439642ec64dc7f5bd4e065dc":"Wykonaj listę","5925d08228e246f07b790b88ad70c1b73a97d2bc":"wartości z listy świec","852b438f91ad9eb2cdd84419a675a216d543c687":"Przeczytaj","67d3b35a0b740127b56bcd44d3bcb1ccc20e0b48":"wartość w świecy","d79d854dcd0829e2177a47beab6a55569e781ab1":"Przeczytaj pole w świecy (przeczytaj z listy świecy)","5606b4460ac96063b8a8e5647008f3ec97252fc5":"Sekundy od epoki","2de20bdeecb1a8c28bd36fe75f028ed4318d0348":"Zwraca czas epoki (sekundy od epoki)","f43cb41af7ce8a69c7aecbc1c603bb0381270982":"Uruchom co","4b6fe6898f0f956d48a4c8172c6dfbcb4159ab09":"Sek.","2eea87bb804e4e73e3f8e9c41140f7ed83ea8875":"Uruchamiaj bloki wewnątrz co n sek.","e0af6ddc8a892704f64680bcb22b30c4bfcefec5":"Blok uruchamiania co n sekund został zaniechany. Skontaktuj się z nami, jeśli posiadasz prawidłowy przypadek użycia.","7b9c76088576a64f32d67ec335162b9f73eaa026":"Uruchom po","ff56ffac023cf69ca5c7f71d407499536f4f86b5":"Uruchom bloki wewnątrz po n sek.","e9fb732dde76a6977bcaa2818b0f56125b183648":"Do daty/godziny","1a90ae7cb728e7f25b031d7e844882f75e74ab5c":"Na znacznik czasu"}
 
 /***/ }),
 /* 247 */
 /***/ (function(module, exports) {
 
-module.exports = {"3d52a6d8fedcc48a65297c07bf5f7e3e41aab5aa":"Логика","3edf0df49942da6d11a1a217e4d3af4a5a8e64f2":"Математика","c3328c39b0e29f78e9ff45db674248b1d245887d":"Текст","4d064726954a17487f94e931f5b157b733ec22ed":"Расширенные","a1fffaaafb7cc996685bceb829c053cc4f7de43d":"Список","19de69cb601f53a4ea7af22a65c71ae63251365c":"Переменная","2b961dea1dc0c60ddf9a2c8e9d090f6f7d082483":"Функции","dc7f77b4ccfc9f70a78bd97303bd10ba4c9d70c8":"Цикл","66639f7d455dd71faa9147f5d69e5ce885d8bebd":"Binary","0ba66deaab2f2cd3b0793d03f600ee2b8f577fbc":"Определение контракта","9201c6ac624e98e168e6ccddbcd5a9b5cdff06b3":"До покупки","44ab9a87268d3fd74040ed0b55c04f83294cfdef":"Во время покупки","c415c9399b7ae7285d2c1c880a6a0aa18f62ff8c":"После покупки","d07ffc19d51f0973859a0d95c1d15cd9f22388ca":"Анализ тиков","8cf71374fa095a64b5295b672daef8507ec7be6a":"Индикаторы","4fa8cc860c52b268dc6a3adcde7305e9415db5bb":"Инструменты","6c82e6dd86807ee3db07e3c82bec1ae1ce00b08b":"Время","8d8fd6765e184419cad8b88d1a60c895d79578c2":"Свечи","548f449b63ff41eaaff5a2d679ffa56b2015fc20":"Разное","8bf95ea372568c7a254ba9fada5f6f1701ebc5b5":"Журнал","12b71c3e0fe5f7c0b8d17cc03186e281412da4a8":"Детали","9feddbabd7e7309e96c590069057158e96baa8f6":"Проверка реальности","038fe2bdb7ec6ee078f60bdb5bee94654ec6a81d":"Торговля бинарными опционами может вызывать зависимость, как и любая другая деятельность, доведенная до крайности. Чтобы избежать опасности возникновения подобной зависимости, мы проводим проверку реальности и предоставляем регулярный отчёт о Ваших сделках и счетах.","4152043e8c670075d2c919677e835edb0d923cab":"Пожалуйста, укажите желаемый интервал для проверки реальности (в минутах)","d9fff2df19e90f2c7ea6bb30fde4e0da119d13d1":"Пожалуйста, введите число от 10 до 60.","2439f2f199b2a3e798aa9b4feaa9248bdec9bc0b":"Продолжить торговлю","a72ca256dc49e55a1a57b9a727fbde9834c9a3f7":"История счёта","6e78c91f5a05fc0d4f1a787d38e3d6fe2f856d46":"Выход","4832e45812a2724f16a15f9ae87adfc8ae4168cf":"Свяжитесь с нами","f7c400ed695f898b8ee9d21664aa17b5bb693828":"Вход","5ea75f1605a4bf1db5c39fcc61854627478c0a7d":"Вернуть исходное состояние блоков","f98595d541778d86f75ef22b3328a031d20aa16b":"Загрузить новые блоки (xml файл)","4a1e616226c329a94da7768bc0435a3284478010":"Сохранить существующие блоки (xml файл)","6b3465ace62f33f0687b4669ac26d95895e9ca52":"Подключите Binary Bot к Google Drive, чтобы легче сохранять и повторно использовать блоки","8e4ec2c451ec7b1bf68d72fe9086ec978e41feb7":"Отменить изменения (Ctrl+Z)","937f5055f05be359ddf619744e8af4d643549e80":"Вернуть изменения (Ctrl+Shift+Z)","8406d1cce44230835932060649e999ca3283b413":"Увеличить (Ctrl + +)","1109673172af2c173c492622ff8a72c8f29f0e70":"Уменьшить (Ctrl + -)","44c22002c65d2871331263a23c3e09c0a1bfd847":"Упорядочить по вертикали","ebd0945359e5578ff9bd3a2ab490ca84c225d8f5":"Показать/скрыть окно деталей","76bb05950f80f3a88ee05ef3276c5934fd355e8d":"Запустить робота","ba50a42d8d3228c37a817865fce49fbca692c2ad":"Остановить бота","4f4aa4117318a8ddf8783885d4f3542c5b2733bd":"Показать журнал","91017ef9b165cd0e7475a770f318ea5e705e1321":"Показать график","c89e3dd1cafcadcc0312e476ab58b2332209da23":"Показать TradingView","b02c858e72be118a65c9393930351012b647cb9e":"Изменить заголовок","250be77f7605669a0b3d968b9ed381a3d9787ed1":"Открыть сохранённый XML файл и извлечь блоки","ff29ccd7a6c6073cc462ed590d27a91632fdf67e":"Binary Bot","608061fb5aab975013fa70c5c814a1d8ba30c152":"Торгуйте ещё лучше и эффективнее","e4ce8dc3e416e69262ba642dc57d3975d6616980":"Хотите автоматизировать свои любимые стратегии для торговли бинарными опционами?","f261237ca8beec6f77b76c4121feb8da22818c56":"Робот Binary — революционно-новый инструмент, позволяющий создавать торговые приложения, благодаря простой функции \"перетащить и отпустить,\" похожей на паззл.","f6c85c68616eeaaa15fcd53fdc52f6eb5c886357":"Создавайте любое количество роботов для торговли бинарными опционами, закладывая в них простые формулы или сложнейшие алгоритмы. Позвольте роботам торговать за Вас, даже когда Вы спите.","e6906a0d1c28b202f9bd49da4a6abbddca57399a":"Когда Вы создадите своего робота, мы можем помочь Вам продать его другим трейдерам через","1dd0cf79c572bcdbdfabbd54ee95710a21234d73":"Магазин Binary.com","abeef9a35ae6256796ba2462e4f64d308de42359":"Получайте доход от продаж в размере до 80% от каждой покупки Вашего робота в нашем магазине приложений.","0606f0b7763ee6e8094a3dab7873d34c08fd3670":"Начните создавать робота","221acaf3a0290adafe08cdcb8c66121c73d8b4a3":"Нужна помощь?","d635b53e59c9aad8c5d78458826beffb029b27bf":"Спасибо! Мы свяжемся с Вами в течение 24 часов","1de91e827ec70ca735abc2c71b0a89cb0cfc4ce1":"Не выбран актив","50050f06645ad2743165b429a8f7deebd285fd63":"Не указан тип контракта","6a7d1a3a17c4e8ae6712cb60d46db1edf0aa2667":"Пожалуйста, войдите","2f9f9096be1a1c0569a9ce54e57f0420f6b3c2e9":"Длительность должна быть положительным целым числом","4df6e872792d72aea8a2f6b831d00b554464da23":"Сумма должна быть целым числом","001e68df3a4b32a4d57148d9d407f44eee3b7436":"Данная свеча недоступна","04f14ea7c92e0b2b5ae005c696245063ec641d66":"Данные свечи недоступны","c1bbfcbb4f57d3a56c1239af0c2138321589efd2":"повторная попытка через","57b453bb26b1c28dfe362b7cc9f17f0be93dd581":"Достигнут предел ставки для","094628ce13fc0e78f07b697d1cc9421bb2edd666":"Не удалось выполнить запрос для","816c52fd2bdd94a63cd0944823a6c0aa9384c103":"Нет","5397e0583f14f6c88de06b1ef28f460a1fb5b0ae":"Да","9bb396940adb9705fe57eba6ea8b578e6aafa792":"Выплата","78d7103a319e808455d397513279d99f3b3f3768":"Ставка","bbb930cc426507ed3f6b7c343c75dd0e041494b7":"история счёта","e6e886cdcdefeb6d3edb4c31bed06dd183ac4153":"цена аск","50e72909992bdc37c7c07769d1b7efac5e52874c":"выплата","ecb5ba7044417916ba12de5fa9e6fccac3e5d475":"прибыль","c980b910204c7babdffe8ff3f7e755f30133383c":"тип контракта","a726c6955157f1b8b92f9932652434a7150f80f8":"входная котировка","a66d5c7ef2c63dbc9a8f9e6ae4e2bc575e74a36e":"значение на входе","7674920c033ca14277c577e19c037a6754d4fa80":"выходная котировка","e8b8bd9f2eabc12875605a37c93e7f04a713fcb8":"значение на выходе","779455ee3bde8494d9629b353e17b19e92357ba8":"барьер","37a5301a88da334dc5afc5b63979daa0f3f45e68":"результат","4973f4c599d5f42cf7bde52d66c3ed8ef77accb1":"Прибыль","12e24a7d8ac40579e8a0aef4869288afe7ed6745":"Убыток","563339f82447b4e758ad76d5a0b63b5698594fba":"Повышение","5c1ae82c29543ac887703776bf3da2c7dcce683d":"Падение","2fc096bb7b6596ab243d0286c9f43fdf2b9b406d":"Без изменений","ecb252044b5ea0f679ee78ec1a12904739e2904d":"строка","53b0a1b2fadf4e040cdc2155a7340de24aca93cb":"номер","bc74f4f071a5a33f00ab88a6d6385b5e6638b86c":"зелёный","4c9a82ce72ca2519f38d0af0abbb4cecb9fceca9":"синий","96de5543d183d7de52ac5fa21c46fc811f673f89":"жёлтый","78988010b890ce6f4d2136481f392787ec6d6106":"красный","aa9330a16e5b055de809256dad6b4d1cbd2999e7":"Беззвучный","cf84a98d6cf7f156862a08ba8236467b6f471004":"Оповещение","eee2facd669d1434848c24da5527b3e87d9a12d5":"Получение прибыли","9d705578b0f1f0ce3a06dc5e82f9a1e6078f81e1":"Задание выполнено","7f2f6a15cf8da2b27e5a4af47b58e7ad71c0b3d9":"Ошибка","a3b1583d377f37ac20de7e089edfa0920a078e57":"Серьёзная ошибка","66c8b6848eee629c4ac551bf2b5fa591571654be":"Повышение равно","5649dce3367d490fa19d563ee9e3d4c4b6f7c642":"Падение равно","062787aa328047e189774b3703d983b83938f6e9":"Выше","b91eed4b7a80cd9572a27e65ebdff9caa4b3b9a4":"Ниже","e3f139abb7a549a1210b36f7dbf89215ad6c9902":"Касание","7d7932bcc2e262ae98cf09dc5445130fb3881769":"Нет касания","a16814a48ec58c2e24ba224a80921a5c02361abe":"Заканчивается внутри","391d02cd75ebcd6ed26f5f45ddf7d40bf13e9dc5":"Заканчивается вне","534ec5da4e82ec419abc170e1a8448f55a01664f":"Останется внутри","98cbe1998effd8b1a8aefdcc538573055e99a5f5":"Выйдет за пределы","93d13bad1d2c2841db127cb70cc35bfc98059fc9":"Азиатские вверх","c098658ce3d3a258e4d155949a60072966b36db7":"Азиатские вниз","ee2dbd5d6d82d0833069b07e7dd2848d3bf4d83a":"Совпадёт","8444b7ce28bbc3443cc5cf73359b8353989b2a4b":"Отличается","9e767ad03e5547f251044e0724dc1d9f3e75aeed":"Чётное","dc28f5f3c65ec611f0f30022650d24382d27448e":"Нечётное","18a63f5512afb5573e5b44deba78d629f0635317":"Над","2a268b89b83f8cb38ea48e46e93dd8840db512f9":"Под","2155c8b38181dd2552e84a94049aacd33ef9c607":"Высокий тик","1408cfd2b064b923f024fbe590e27db8282941a5":"Низкий тик","b86eb15dc4f13e4c2972de158d3038d9f657242f":"Reset Колл","669a1f3d9a8f601a84da536cfdad1de4092b1926":"Reset Пут","844d1a5c99a0a668383340cc095d040eef998c79":"Только вверх","87293a146cd481a2b30cf74282ec061dc4cf0735":"Только вниз","cf9b77061f7b3126b49d50a6fa68f7ca8c26b7a3":"Открытие","b1a5954a483f8f8b0207385095f74aeb409b3f80":"Верхн.","a124947cbd2d1d92b47e027274c3269ff0c7a84b":"Нижн.","bbfa773e5a63a5ea58c9b6207e608ca0120e592a":"Закрытие","1173872a4fb205b713702f0eec5cf2c732c828fd":"Время открытия","808d7dca8a74d84af27a2d6602c3d786de45fe1e":"По умолчанию","62957ecfdc50957e8957c11d2eae74d078f0ef1a":"1 минута","1dd3e663dfa7ac9cb77cfddd2cf8ac700657e2d6":"2 минуты","24e46784cbce32443db5a2638b1a7d3201543e9b":"3 минуты","3aa5819ed8a0b94d0f293db8e9c9598298ddd402":"5 минут","a6f151883b736f0470d33492e61c72a7d059d065":"10 минут","899761ff5425abd2ee214fa7aa46e27c6c8b5aae":"15 минут","31bbe8890d28d183f8f7f2c160fa892c444c0ec7":"30 минут","f030c3d667652646b86732ad7bc67e226c49cd3a":"1 час","2046e49e33c040e08dbd6fd83df3e1846015e6f1":"2 часа","7b47150d431db70d783724007f07ab894eb8ac2e":"4 часа","191800b7e9a48680792c0dd77cb6cac00c4514c6":"8 часов","2d8a6f7c34468578640b333b8650131de06ac770":"1 день","f94510322ecd9b3a2af67a10bd51ecc4ac6a24e7":"Вверх/Вниз","c1365a35e99d0f9147ebc72f21534cf471fa7d95":"Вверх/Вниз равно","9c7960c6b11d35ac9d6cdc1ebaad3af43b2065c5":"Азиатские","2260ce49306460c8a2ef501939f29ad6ddd4e934":"Цифровые","0186aa73a1b75fa8f0eb98bbd9ad01102bb09ec1":"Касание/Нет касания","f7de1f66f0979667da275b7e8996e805395025a1":"Закончится внутри/вне","a431deecd4c2258097adae418d496fe9a8179fee":"Останется внутри/вне","256fe245cb7d3d673095f7faaa8c9ff81b985ad1":"Наибольш./наименьш. тик","12a3f461cdebbc8f335190413ee6c57442743bba":"Reset колл/Reset пут","e696144fa588782e6d6b2c97e2d3ed1adf52bd5c":"Только вверх/вниз","91a64e3f83c91acf336c631fba295f297f94c399":"Запустить после n секунд","024696596f26a4db232fd9e966eadfeb27c0bd1a":"Запускать через каждые n секунд","c538c170bdc6b0f3bb98dce44a016a2e2d45a6e7":"верхн.","85c274929bc0e28eafd3734f2c25046c3b95b36b":"средн.","346e3ee198e98146993894d3de8ecab1a86c3e80":"нижн.","f16459104f92ab6b38aa265adb4ecbfc3768e303":"Гистограмма","e09f635f4e77476c9ca1c37bc9992e9ace3431c1":"MACD","27bed13a88c60350c3de92ec3820e1cc4f7d6ec3":"Сигнал","19eabc961735d78f12fc7be906ffcb033853cf85":"Временная метка","68f4145fee7dde76afceb910165924ad14cf0d00":"Сообщение","629777b7d4d610ace6dee24442730f27d7d0853e":"Файл не поддерживается:","beb040c8fabd007c9cc5ac6a9feb6bdb05d33dac":"Все несохранённые изменения будут утеряны.","410bf23a3f080def9c7a976a16305bcde7943ed1":"Вы уверены?","e99811bd3b1ad17e74614060ecb180602be35ad6":"Вы успешно вышли!","3b26e990d3acff493ee2cf66d1280bed2625e43f":"Соединение прервано до получения ответа сервера","876f3e0202ca40dedf2e5ab6577eba1ae637fb53":"Стратегии","8ce80462febd4d573cb2f9c1984fdc93b7c21c57":"Возникла ошибка при загрузке библиотек Google Drive","7f412a8cf67f755d3eb36846dd07148ceb8d4c72":"Не удалось загрузить блоки из Google Drive","3b6bbab905129dd36b8d4e99947fa30540ed7b2a":"Неизвестный формат файла","3d6b44df6eaf6236b4abc1aadcf8f5b1cda769c1":"Возникла ошибка при извлечении данных из Google Drive","cdfe947b0c089a4a1f78c11299f25c32a124f1a6":"Выберите стратегию Binary Bot","2db43c69a4b96454914f0b8272bc869984529e6e":"Возникла ошибка при регистрации файлов из Google Drive","0dcea5f584938e0fff00084b83156ab31d641ab3":"Возникла ошибка при извлечении файлов из Google Drive","18da95988117ff029393f3f5c881d70ef47f7385":"Возникла ошибка при обработке Вашего запроса","04226bcf91195130e25fe7a8e8ea4d3e058efcb7":"Выберите папку","aee24f2456ea8516b024a5d3e2b815ae7f2239d9":"The Telegram notification could not be sent","05754ed14275a070a20a1d5cd65f0cea66f1da7f":"Предложения не готовы","79222cd9892a434aa61fc7dc01c3839951eb8d1e":"Выбранное предложение не существует","6ea4a034747d020b1d8ce4848def95d537555dd6":"Куплено","89f89c02cf47e091e726a4e07b88af0966806897":"ID","1200c1af2f7bba4e29a34112865662748c9d41df":"Resale of this contract is not offered.","62d6180e55905f7b996d442c53631981a4ef8b5b":"Продано по","ed4978867de1da05b336b724a3fb96222a29ebec":"Индекс должен быть положительным целым числом","87e2e01f93d25ba7ed582cc81ef5c9ab2959f4c6":"Сумма прибыли","b2a4553586d1062c21323bca1dc0589f7a9d5cf7":"Сумма убытка","46fc6f27a835486d63d9e927c6687e4508cb3087":"Вы достигли максимального количества сделок","9202ddae4cea16513e53bbc965d88ed975e59512":"Вы достигли максимальной суммы убытка","5f52b397b7e5f538681f0f5717a88aa626349c7a":"Bot.init не названо","85dfa32c97d8618d1bea083609e2c8a29845abe5":"Счёт","d847919a30d31c0be624087f3370492b3fdf80c6":"Кол-во выполнений","5cd6978d63540c8a490ef76f43219de6362f958e":"Общая ставка","17410d7b62b8b1de981cfebada24632987edf186":"Общая выплата","b841eeb091f1ff0e14be08e5ea1b93e4cf147ed3":"Общая прибыль/убыток","90eef613042c5a51f542421065b68b886d473807":"Баланс","db1c784524e1b54011a95823026161f7c8517fe0":"Ссылка","4db3e9e4aecd187db9339a10d2629fef46724dc4":"Тип контракта","1bb4086b66659d8580f9be4beef69931aeea3cad":"Входная котировка","8bf249c4855e591964bd5bdd35c8ef2ee107342d":"Выходная котировка","ba7be969e7c1bb5f22489e843478e3d721aaa843":"Цена покупки","772fbced18230220d2d9be1456be16fc1b271d25":"Прибыль/убыток","bae7d5be70820ed56467bd9a63744e23b47bd711":"Статус","96f608c16cef16caa06bf38901fb5f618a35a70b":"В процессе","7fb3a9b5101bcd45e2dca077191693a5199bafa9":"Завершен","82a82f798dd773717ec37d15fd4405510291734e":"Бот не запущен.","6a88e58aa1798626f94cf17f1a91618b405bb289":"Запуск бота...","624cc7f40b68faace7e78d8e5c5be1d4f15facda":"Бот включен...","788180a6ddbbbcca10f6f49d8e85d557934bae0e":"Бот выключается...","d907a40a4a15da3c21a6e0f8ace3f987d482f92c":"Бот остановлен.","4f219c17ab9ab76aa1cd431b4e0e5ecf5520e8e4":"Попытка купить","4684ee1026d9b4c872d016c3c4588a0c479a451c":"Сумма покупки","ca92c55b9e4233d771d5b6300fe751a9678d1deb":"Покупка прошла успешно","f02760cd2eac28169f0a990c950c3dfe8427f772":"Контракт закрыт","66c7734789e19cbeef3a5ac185ea732139aed213":"График","3b662fb2e8bafce29aa98321b18874bb44905488":"Интеграция Google Drive","7ee0ff5eaa6fa82bd6d83a2f4ca446c663f097cb":"Максимальное число последовательных контрактов должно составлять от 1 до 100","93039e609d94a24f3572b794a31b21525a09af2b":"Не задано","ea67c8023c75375484f3a5f1aeb009b20059d5bc":"Дневной лимит на убытки:","b1946e5b4b78465b7661fd4bc89ff52de6c633e7":"Максимальное число последовательных контрактов","952f375412e89ff213a8aca383d18e5691354347":"Начать","9f1c61cc03f3ef9324db05502f7f0b61e61e1521":"Торговые ограничения","095ba68888b5ace5f4515f5acab76dfa1073544e":"Мой компьютер","ddcb77ff769ea54ca622848f6bedd4004fa4f4fa":"Загрузить","248e224f533752db28a1aab3519a58569ad96140":"Загрузить блоки","c7097e97dcc446ca889d3ca6be733a65e2728afe":"Успешно загружено на Google Drive","3218e5a460e82d7bdea9ce0f145cab2f47ba9a4b":"Сохранить как коллекцию","611ebbfb080284312904de925ef0f75f4cb56ad2":"Сохраните блоки и настройки для повторного использования в других стратегиях","efc007a393f66cdb14d57d385822a3d9e36ef873":"Сохранить","a638caa8ab2b7ff7980a571334217339e6d1d634":"Сохранить блоки","39fca63515c105918f03e4908ec12df675b07f92":"TradingView","fadc0ef93d1ff13370524ce8481ddc4a71195934":"Упорядочить по вертикали","e4458464df6cbb8da1134875ba51519c5d244d9f":"Блоки должны быть внутри контейнера для блоков, основных блоков или функций","e9c45563358e813f157ba81b33143542165ba84e":"Предупреждение","31cb6f44d030abeabcc7046555dea851602a87a5":"Данная стратегия недоступна в Вашей стране.","9ce3bd4224c8c1780db56b4125ecf3f24bf748b7":"OK","af145748c9cf765a3b059eec20cb1dbb899297d8":"Блоки загружены успешно","a479c9c34e878d07b4d67a73a48f432ad7dc53c8":"Загрузить","f1d8b7b118d6f82f95614d476bc11af650aed3bc":"Не удалось загрузить файл блока","11ee9c5d534cc8d22651092222b532917594161a":"Минимальная длительность","5283ac04c9a8ba8a937d1edb4ba986aeefce8bf1":"Число тиков должно быть от 5 до 10","ace1342bc3720b77ce510b93074041e7386d209e":"Время окончания не может совпадать со временем начала","fed3e7bd6696fb97a12d720845ab5388456bfc3b":"Прогноз должен быть одной цифрой","d466687f90ba548434d65186d11a80c4204f9ad6":"должно быть добавлено внутри:","6ddf2b3075ac9ab5d66b40e15ea9a34c087672ea":"должно быть добавлено внутри","33aa6ff282ee509d37c6f758274c9156b419ff73":"Вы попытались внедрить неразрешенную стратегию.","da162a909c2981ed318d23cd9a6be1d66e0a8400":"Нераспознанный формат файла.","5e719fa76e1b6cb396376c82ebdd04bec7253229":"Удалённые блоки для загрузки должны относиться к коллекции.","b0d2de25daf6ba09a5e710c6968ffded29c4dae1":"Не удалось загрузить файл блока.","df84a88f38b03b5b342362d72370b0d66afdae35":"Целью должен быть файл xml","cd680fd936e9559ef1d95efac7a71680e2b13a89":"Данный url уже загружен","34c59389053701a04127f74d32315e0206e076f8":"Возникла ошибка при загрузке url","3ead0b14c72503187691a7a6d7121987299bd401":"Данная версия не является официальной версией Binary Bot. Вы используете её на свой страх и риск.","27401c9c8e476d659c8382e05c6d70a4a82be468":"Официальная версия","bc981983e7f547dc62e19a1e383acfe00782a6d5":"Далее","b52b36b7269fbfc58ec24bb724691951a3decbe8":"Назад","e9b450d14bc2363d292c84f17cfad5cfbd58a458":"Готово","29cadadfebdd578a50b7b3d1b2c5b33e424d5de7":"Быстрый обзор","a48e81d4a8da67637b46725824177a959fe99b21":"Хотите узнать, как пользоваться Binary Bot?","6f3e6ebf249947cec4f64117253a8fe43335ae79":"Нет, спасибо","fcb6e90e7223e1d1d735f15dbb7ded9d81bbe7ef":"Не спрашивайте меня снова.","4ca0a75c2b7fa7da4364d03b72c46fee1860a2bf":"Рабочая область","5fcf29b9f0b8971c8148e70a150ddc9ac04c94fc":"Перетащите блочные файлы.","ddcbb5361b1a16eba60fca2383fb297bb90ed9b3":"Загрузить примеры стратегий","1758356db21759f7c5a0da9b4dd1db8fd6feab3f":"или","00b581632c1532969a7128ebc8eae936ed8af04e":"создать собственные стратегии.","d171baee235d4c93f63755a876782dc5be4c3e47":"Инструменты для блоков","056f19272d96f902c38207cf163ea8dbff7fbd32":"Добавьте больше блоков для Вашего робота.","36bae31694f85bd7a5b0ad45e51ef622b95baadb":"Счета","f5c47fd3b3553b10441a06054078cea745177dea":"Войдите перед тем, как запустить робота. Всегда тестируйте свои стратегии на виртуальном счету.","fd825ae94aa79500a878dd4590a4b360e7162663":"Управление роботом","6ee7980833e1ed72901b919ffd0fa20e1a251d3f":"Управляйте своими блоками. Направьте курсор на каждую кнопку для получения дополнительной информации.","f5169c84497de3aea74f7da9e7e177d1427e736b":"Удачи!","4f1b3d682c2a00b393c33637da402463bc11d5ff":"Хотите обратиться за помощью или сообщить об ошибке?","0049f8894e41937ebb9111cd3def6749049fb50f":"Нажмите здесь","aac1569ccf6b1a11b0ad0fbefdb9ffc777b4c733":"Нажмите, чтобы выбрать","53adebdc2b1cbbedb56395b19a73fe47b87cc554":"Тики","5fb1db527825d2996e37c655e5dec49d4da80c09":"Секунды","092f99ea11a34a8490e7a767a83a42fc45634f82":"Минуты","9e25a34e635a123f8958bbe26e7c4843278597fb":"Часы","f6bb0f468a8569c67b3d6826e57e62c5500c3681":"Дни","d1a17af19f5388af9d6596cc0ea7dbb1d739e255":"Недоступно","db6708630fc646eb98298d9acd701e0a1ac051c2":"Сохраните блоки и стратегии на Google Drive","85538d002a336c5addef8d189d80976cf7758f8c":"Вы вошли как","b65463cb6a42a17de514acc4659f7fd331e0876a":"Подключить","ed28e0686e1251ba046f582a3e9ec02470a5e78d":"Отключить","cd5f85b6f187605f82386eacd680f93820af8d11":"Результат","1e38ce3d180cefae485a6986ca7c67841e30376f":"Значение верно, если результат соответствует выбору","5c89497fc3c128e2ff865ce8df15356054f2c028":"(4) Узнайте результат и торгуйте снова","14ea81918758c994cbe3178e695e56afc1ef2b45":"Получите информацию о предыдущем контракте, узнайте результат и торгуйте снова. (Запускается после завершения сделки)","5098e2bcc96ee227983c9f7eeddfd226c220ca00":"Подробности контракта:","251c830f8f869e0887e8b4dc4c30ba1738c7097e":"Считывает выбранный параметр из списка Подробностей контракта","b3b543c80063a116ced4965d8537b7b62d14c0b7":"Торговать снова","a1eeb7c1e92e9a5d9323ed8ebd7ca7ffed8b0232":"Повторно запускает блок торговли","da3105e38c42a481ad7230ed393b0e12bebe9c4f":"Цена аск","343fda69c73b78b84967055aae97f790c422adfd":"Цена аск для выбранного предложения","d4d34ce9d9dd7e87213469f88cb7ac43725675d5":"(2) Просм. и купите контракт","fb61a3c71f4c488b3b470cb7daf502a3e9b5ad48":"Проследите за потоком тиков и купите нужный контракт. (Запускается при обновлении тиков)","87da93a46d143f6019979b3548414d9d7adabb35":"Выплата для выбранного предложения","160f06d4799c85021a810f68c5b517eea37a2737":"Покупка","4c2fdde3d9c1950498ed263d6ce21d4bf3d0800b":"Покупает выбранный контракт.","ca5586bdb5bdc1a2c0baf53ed0ecd21fafabebe7":"Продажа доступна","03bad10717e183b24829baf483dc715e1a44bf7b":"Значение верно, если доступна продажа по рыночной цене","2c71ed279a402e93312dbda173ab18f244d6bf46":"(3) Следите и продайте контракт","17632a9f51611d2579d95b4b1ccb9476566d7ccf":"Следите за результатом купленного контракта и, по возможности, продайте его по рыночной цене. (Запускается при обновлении контракта)","579607dc4f989ce2b94b558431666a0ab07ac1f3":"Продать по рыночной цене","e20afd5cf3811a42071c9a312abb2afdad4c590b":"Продать по рыночной цене.","4712cbff8e92822fc960ef9c0197293a19675eae":"Продать прибыль/убыток","df817b48c7a076561b4f8bedc52d65d2e351ab52":"Возвращает прибыль для продажи по рыночной цене.","b44e884c355e447d0da0e6ba45caaff18c84373b":"Полосы Боллинджера","d6a2a207343bd83aacdc80b579ff4419713a256e":"Список ввода","170a28a9db6d27d7212fc6dc249434a57517e7bc":"Период","b833989d69900a4be9e32d1bab65c8f8233f099e":"Станд. коэффициент Dev. Вверх","1cee82f19c0bedef64f68b32e6b02128efe7c61b":"Станд. коэффициент Dev. Вниз","974da601086448d0060aeed90e53ddd5acd17b91":"Рассчитывает список полос Боллинджера (ПБ) из списка с периодом","d5b65cac1f1cf9421ac978eebe532de99040cca6":"Список полос Боллинджера","58de49791c64aba14e36e5887244a5ef088286cd":"Рассчитывает список Полос Боллинджера (ПБ) из списка с периодом","4bd99f76f1104229744455d93df0ff76b9eeed58":"Экспоненциальная СС","ea615c6d6a74e25a6d2f1bc9980b46e73508c2eb":"Рассчитывает экспоненциальную скользящую среднюю (ЭСС) из списка с периодом","4082d9379e59b38c891d046312f8d3c4b64ae3b1":"Массив экспоненциальных СС","562edc102c5dd9e2fbbede1140b8a5461c2d4dc8":"Рассчитывает список экспоненциальных скользящих средних (ЭСС) из списка значений с периодом","a537f4f3c0f6c68bf896fb23cb2ecdc658488ea2":"Линейка MACD","b18e572ea14edd48587145f1ef50718adbf256c6":"Период быстрой ЭСС","974023bddd6249d0f6404872cfcae205b2599ea2":"Период медленной ЭСС","5c2adcb3d1bfd6b9f5c2dec13d02a9473e4445a1":"Период сигнала ЭСС","6b15ce93fd68d80aeee7f7964c1306044c3c1baf":"Вычисляет список схождения-расхождения скользящих средних (MACD) из списка","95ec92885c855ba9cf734c17a43f081901e4d2cc":"Индекс относительной силы","b033619e108c9e43bfd8a42cd97bf5c5dc86dc65":"Индекс относительной силы (RSI) из списка с периодом","4034de66995b876b2ba9bfd0274025e39168e05d":"Группа индексов относительной силы","f9da880c8b0e4cce4431912c24eba939e6bc06e1":"Рассчитывает список индексов относительной силы (RSI) из списка значений с периодом","a9842c95766da40bf4ea6ee263cb5a5985847763":"Простая скользящая средняя","347775a293c14362d492f019e677c965be1d6e7d":"Рассчитывает простую скользящую среднюю (ПСС) из списка с периодом","4cc7b9e53d082896ad884eb01be16320af65f282":"Массив простых СС","2c75179a57af3c36581008b65e86ed81c4a4cbea":"Вычисляет список простых скользящих средних (ПСС) из списка значений с периодом","39f024cf49724fe7ffdea7773c72ed06eec998e1":"с интервалом","e4bed3e67e58b2334ee4b9c6ce59ac7a95d80aaf":"Направление","ad47561efb1dcbd7246d9b64487f615647fda036":"Значение верно, если направление соответствует выбранному","05bef508aadd62bf3967dcf67d769da296f19989":"Направление тика","d089ab98a846a521b09aad6ff3fefa728bfa8b42":"Данный блок не рекомендуется; воспользуйтесь блоком направления","cdb31fc857f01a59f664413498293c714285f46d":"в списке свечей","20fd5f86f08796f145d69dedc209a27e459b2f51":"получить # с конца","a96606af8c33ac3428b45abc4782dbf93f458d29":"Получить последнюю n-ю свечу","90ed0e1ea5c1907f8a32d8051a66e845857bb2a4":"Список последних тиков","248428facb97408414180d4de74e4db35360fbc4":"Возвращает список последних тиков","2e4202acde880b7b1c3686f0335ff879fc1e5c7a":"Последняя десятичная","e46e0bd2f7fe37217dec8aa26ebce8ffa3608663":"Возвращает последнюю десятичную последнего тика","d5fde4c9d5edf660f760fc226df4d2678d3334ab":"Список свечей","95e552a40d3446c96905cd3ec7e3d123d0246ce8":"Возвращает список свечей","5a0ed227a01b7d30b05dcaf3e1c23b74b9be6ff4":"Составить список из","a4220593d385a720886f7af1ed3c478fd0c6339c":"значений в списке свечей","cd8cdf3d47e921c8a72addae9269e66041d417c5":"Возвращает список выбранных значений свеч","3e4f335e7a6f79bd1bafd219ddde30acbf16a7ac":"В списке свечей читайте ","34037f9452fdb66c9ca27ebcc0afe9d5139e9e24":"# с конца","aba43a580daa7f306956ec69b83e6e37e7233126":"Прочитать значение выбранной свечи в последней n-й свече","e04b522218a181cf0223042dd18ae08dcc22d8d3":"Последний тик","6ee445fc253a55c9ed54c009c3f020ac65200d80":"Возвращает значение тика, полученное блоком До покупки","4b2340a890e88d1886757c3f7172e273a1edc31f":"Этот блок вызывается при каждом тике","b54d7b4590559dad64f02d09aacbf6d9863e2624":"Вы можете использовать данный блок для анализа тиков, независимо от Ваших контрактов","ebffc758056e6b2fc2af99af17fbc6853e5d3583":"Список тиков","17649cac8739adcae95e641f794880272ad33bd1":"Возвращает список значений тиков","802dc02469ae51067ca620ff57dfb5bdb3e524ac":"Баланс:","c4ee8e12b2484cd5b47cdf00bfa2c50b83e91d3d":"Получить баланс или строку","69280143949fcd59c171dd60f6b6e13d0cc08fe6":"Внутренние блоки игнорируются","d072c2ceeb5c1217722d14c74de7aeab945b4215":"Поместите свои блоки здесь, чтобы не удалять их","b06acc4158c824231f727a13e1c9811f43d5be42":"Загрузить блок из","661db37251a1ed1afe357ee13895f37a623d7cbf":"Загрузить блоки через url","6c03ee54ad3a51fc92a1d69943e99667847705b6":"Уведомить","b1bec5d06e3672915d81b2fbc2347c8b4947a954":"со звуком","a2d0c89fdfff3176efd4a443eb0f6607067b93e7":"Создаёт уведомление","6e0fc122f936f808bc2e3af661121b65712ae855":"Notify Telegram %1 Access Token: %2 Chat ID: %3 Message: %4","1aeb6caed9e46edf5d6224adc905ffb8ee3a7708":"Sends a message to Telegram","45ebd38f4c641ebf6f72be8c3a79dfa50cf9f20e":"Общая прибыль","ffb465875e1ff2b49bcaa7c6b70965ffe39fa59d":"Возвращает общую прибыль","bc528d26f66fe8c4aa4bb24ec9c99dff12c055e0":"Кол-во выполнений","bea5756b18644ccfab01c1c0dbd6fa9db7103379":"Возвращает количество выполнений с самого начала","c67ded6b64019212eb2bc69afd761f5b3f626040":"Добавить символ к числу, чтобы установить оффсет барьера.","569bbd757e1bb8bbccd250b98dc2bb37cb47b787":"Рынок","74751e67c3e1010c343095eaf543e7cb21ced2ef":"Тип контракта","1f4698382842477e211eb46de81fa506f01a8c34":"Оба","c1baf816aac5a5cd849768773fc248cd249dc296":"Тип контракта:","c93025710d1ae6cbaf8e710f63eca8edfa0c9399":"Интервал по умолчанию:","9693aeaaf68e3929b59b79306feaa0a847d01192":"Длительность:","10c02649e226d430bd75a5b6315a41c0db9992a2":"Барьер","837276742aa90209dde3b4eef07d8e7ab26731ef":"Прогноз","258b49925b41751c6bd790a0848246566ba61440":"Перезапустить покупку/продажу в случ. ошибки","c55ee3445cd391ab299b6f85a6ea9a68a65ea64d":"отключить для улучшения работы","b410994b67e37d9516eb9b866c85a8c639f79e68":"Перезапустить последн. контракт в случ. ошибки","2260c5a971c2602834ef8feeb5fa522f900b469f":"робот проигнорирует неудачн. контракт","cd1495cb4c60266a6abad9024022ae079bf7e416":"(1) Выберите нужный контракт","0745acf92abd7b60598f161717884cc45dab8694":"Запустить один раз в начале","999e1ade10ff5ee1d115f5a6288bfd2e0d0736e6":"Укажите параметры торговли","a43c3299d30a5bc7e31a574cdc87f59cbc8fe585":"Выберите нужный контракт и начните торговлю; добавьте инициализацию. (Запускается в начале контракта)","d571f33d957ebcab086ecf38eedd71b6ef0c5820":"Параметры торговли","4d22b565e4253e92a908f216184779679bb1a044":"Верхний барьер","b70c38c6db3127422e05315c30bdf76c7c36c480":"Нижний барьер","a6c5f081b3addee364af1c8cdb84853f49dc8e07":"Абсолютно","0f2ba74929aca6fea950e351dcd576b7cd841fa4":"свеча чёрная?","7cb3b482ab66947d439642ec64dc7f5bd4e065dc":"Составить список","5925d08228e246f07b790b88ad70c1b73a97d2bc":"значений в списке свечей","852b438f91ad9eb2cdd84419a675a216d543c687":"Прочитать","67d3b35a0b740127b56bcd44d3bcb1ccc20e0b48":"значение свечи","d79d854dcd0829e2177a47beab6a55569e781ab1":"Прочитать поле на свечах (прочитать в Списке свечей)","5606b4460ac96063b8a8e5647008f3ec97252fc5":"Секунд с начала отсчёта","2de20bdeecb1a8c28bd36fe75f028ed4318d0348":"Возвращает время начала отсчёта (секунды с начала отсчёта)","f43cb41af7ce8a69c7aecbc1c603bb0381270982":"Выполнять каждые","4b6fe6898f0f956d48a4c8172c6dfbcb4159ab09":"Секунд(ы)","2eea87bb804e4e73e3f8e9c41140f7ed83ea8875":"Выполнять внутренние блоки каждые n секунд(ы)","e0af6ddc8a892704f64680bcb22b30c4bfcefec5":"Запуск каждого секундного блока больше не используется. Свяжитесь с нами, если Вам нужна данная опция.","7b9c76088576a64f32d67ec335162b9f73eaa026":"Выполнить после","ff56ffac023cf69ca5c7f71d407499536f4f86b5":"Выполнить внутренние блоки после n секунд"}
+module.exports = {"3d52a6d8fedcc48a65297c07bf5f7e3e41aab5aa":"Логика","3edf0df49942da6d11a1a217e4d3af4a5a8e64f2":"Математика","c3328c39b0e29f78e9ff45db674248b1d245887d":"Текст","4d064726954a17487f94e931f5b157b733ec22ed":"Расширенные","a1fffaaafb7cc996685bceb829c053cc4f7de43d":"Список","19de69cb601f53a4ea7af22a65c71ae63251365c":"Переменная","2b961dea1dc0c60ddf9a2c8e9d090f6f7d082483":"Функции","dc7f77b4ccfc9f70a78bd97303bd10ba4c9d70c8":"Цикл","66639f7d455dd71faa9147f5d69e5ce885d8bebd":"Binary","0ba66deaab2f2cd3b0793d03f600ee2b8f577fbc":"Определение контракта","9201c6ac624e98e168e6ccddbcd5a9b5cdff06b3":"До покупки","44ab9a87268d3fd74040ed0b55c04f83294cfdef":"Во время покупки","c415c9399b7ae7285d2c1c880a6a0aa18f62ff8c":"После покупки","d07ffc19d51f0973859a0d95c1d15cd9f22388ca":"Анализ тиков","8cf71374fa095a64b5295b672daef8507ec7be6a":"Индикаторы","4fa8cc860c52b268dc6a3adcde7305e9415db5bb":"Инструменты","6c82e6dd86807ee3db07e3c82bec1ae1ce00b08b":"Время","8d8fd6765e184419cad8b88d1a60c895d79578c2":"Свечи","548f449b63ff41eaaff5a2d679ffa56b2015fc20":"Разное","8bf95ea372568c7a254ba9fada5f6f1701ebc5b5":"Журнал","12b71c3e0fe5f7c0b8d17cc03186e281412da4a8":"Детали","9feddbabd7e7309e96c590069057158e96baa8f6":"Проверка реальности","038fe2bdb7ec6ee078f60bdb5bee94654ec6a81d":"Торговля опционами может перерасти в зависимость, как и любая другая деятельность, доведенная до крайности. Чтобы избежать опасности возникновения подобной зависимости, мы проводим проверку реальности и предоставляем регулярный отчёт о ваших сделках и счетах.","4152043e8c670075d2c919677e835edb0d923cab":"Пожалуйста, укажите желаемый интервал для проверки реальности (в минутах)","d9fff2df19e90f2c7ea6bb30fde4e0da119d13d1":"Пожалуйста, введите число от 10 до 60.","2439f2f199b2a3e798aa9b4feaa9248bdec9bc0b":"Продолжить торговлю","a72ca256dc49e55a1a57b9a727fbde9834c9a3f7":"История счёта","6e78c91f5a05fc0d4f1a787d38e3d6fe2f856d46":"Выход","4832e45812a2724f16a15f9ae87adfc8ae4168cf":"Свяжитесь с нами","f7c400ed695f898b8ee9d21664aa17b5bb693828":"Вход","5ea75f1605a4bf1db5c39fcc61854627478c0a7d":"Вернуть исходное состояние блоков","f98595d541778d86f75ef22b3328a031d20aa16b":"Загрузить новые блоки (xml файл)","4a1e616226c329a94da7768bc0435a3284478010":"Сохранить существующие блоки (xml файл)","6b3465ace62f33f0687b4669ac26d95895e9ca52":"Подключите Binary Bot к Google Drive, чтобы легче сохранять и повторно использовать блоки","8e4ec2c451ec7b1bf68d72fe9086ec978e41feb7":"Отменить изменения (Ctrl+Z)","937f5055f05be359ddf619744e8af4d643549e80":"Вернуть изменения (Ctrl+Shift+Z)","8406d1cce44230835932060649e999ca3283b413":"Увеличить (Ctrl + +)","1109673172af2c173c492622ff8a72c8f29f0e70":"Уменьшить (Ctrl + -)","44c22002c65d2871331263a23c3e09c0a1bfd847":"Упорядочить по вертикали","ebd0945359e5578ff9bd3a2ab490ca84c225d8f5":"Показать/скрыть окно деталей","76bb05950f80f3a88ee05ef3276c5934fd355e8d":"Запустить робота","ba50a42d8d3228c37a817865fce49fbca692c2ad":"Остановить бота","4f4aa4117318a8ddf8783885d4f3542c5b2733bd":"Показать журнал","91017ef9b165cd0e7475a770f318ea5e705e1321":"Показать график","c89e3dd1cafcadcc0312e476ab58b2332209da23":"Показать TradingView","b02c858e72be118a65c9393930351012b647cb9e":"Изменить заголовок","250be77f7605669a0b3d968b9ed381a3d9787ed1":"Открыть сохранённый XML файл и извлечь блоки","ff29ccd7a6c6073cc462ed590d27a91632fdf67e":"Binary Bot","608061fb5aab975013fa70c5c814a1d8ba30c152":"Торгуйте ещё лучше и эффективнее","e4ce8dc3e416e69262ba642dc57d3975d6616980":"Хотите автоматизировать свои любимые стратегии для торговли бинарными опционами?","f261237ca8beec6f77b76c4121feb8da22818c56":"Робот Binary — революционно-новый инструмент, позволяющий создавать торговые приложения, благодаря простой функции \"перетащить и отпустить,\" похожей на паззл.","f6c85c68616eeaaa15fcd53fdc52f6eb5c886357":"Создавайте любое количество роботов для торговли бинарными опционами, закладывая в них простые формулы или сложнейшие алгоритмы. Позвольте роботам торговать за вас, даже когда вы спите.","e6906a0d1c28b202f9bd49da4a6abbddca57399a":"Когда вы создадите своего робота, мы можем помочь вам продать его другим трейдерам через","1dd0cf79c572bcdbdfabbd54ee95710a21234d73":"Магазин Binary.com","abeef9a35ae6256796ba2462e4f64d308de42359":"Получайте доход от продаж в размере до 80% от каждой покупки вашего робота в нашем магазине приложений.","0606f0b7763ee6e8094a3dab7873d34c08fd3670":"Начните создавать робота","221acaf3a0290adafe08cdcb8c66121c73d8b4a3":"Нужна помощь?","d635b53e59c9aad8c5d78458826beffb029b27bf":"Спасибо! Мы свяжемся с вами в течение 24 часов","a69a8fc21499d0fd85e87bab467699827547a5bc":"Пожалуйста, введите действительный URL сервера","1de91e827ec70ca735abc2c71b0a89cb0cfc4ce1":"Не выбран актив","50050f06645ad2743165b429a8f7deebd285fd63":"Не указан тип контракта","6a7d1a3a17c4e8ae6712cb60d46db1edf0aa2667":"Пожалуйста, войдите","2f9f9096be1a1c0569a9ce54e57f0420f6b3c2e9":"Длительность должна быть положительным целым числом","4df6e872792d72aea8a2f6b831d00b554464da23":"Сумма должна быть целым числом","001e68df3a4b32a4d57148d9d407f44eee3b7436":"Данная свеча недействительна","04f14ea7c92e0b2b5ae005c696245063ec641d66":"Заданный список свечей недействителен","c1bbfcbb4f57d3a56c1239af0c2138321589efd2":"повторная попытка через","57b453bb26b1c28dfe362b7cc9f17f0be93dd581":"Достигнут предел ставки для","094628ce13fc0e78f07b697d1cc9421bb2edd666":"Не удалось выполнить запрос для","816c52fd2bdd94a63cd0944823a6c0aa9384c103":"Нет","5397e0583f14f6c88de06b1ef28f460a1fb5b0ae":"Да","bbb930cc426507ed3f6b7c343c75dd0e041494b7":"история счёта","e6e886cdcdefeb6d3edb4c31bed06dd183ac4153":"цена аск","50e72909992bdc37c7c07769d1b7efac5e52874c":"выплата","ecb5ba7044417916ba12de5fa9e6fccac3e5d475":"прибыль","c980b910204c7babdffe8ff3f7e755f30133383c":"тип контракта","a726c6955157f1b8b92f9932652434a7150f80f8":"входная котировка","a66d5c7ef2c63dbc9a8f9e6ae4e2bc575e74a36e":"значение на входе","3905be81561384dc8c43d6127c57ed1e0eb03b74":"входное значение строка","7674920c033ca14277c577e19c037a6754d4fa80":"выходная котировка","e8b8bd9f2eabc12875605a37c93e7f04a713fcb8":"значение на выходе","06ecea26625359f7dcf5ff5c47af6174ff815257":"выходное значение строка","779455ee3bde8494d9629b353e17b19e92357ba8":"барьер","37a5301a88da334dc5afc5b63979daa0f3f45e68":"результат","4973f4c599d5f42cf7bde52d66c3ed8ef77accb1":"Прибыль","12e24a7d8ac40579e8a0aef4869288afe7ed6745":"Убыток","563339f82447b4e758ad76d5a0b63b5698594fba":"Повышение","5c1ae82c29543ac887703776bf3da2c7dcce683d":"Падение","2fc096bb7b6596ab243d0286c9f43fdf2b9b406d":"Без изменений","ecb252044b5ea0f679ee78ec1a12904739e2904d":"строка","53b0a1b2fadf4e040cdc2155a7340de24aca93cb":"номер","bc74f4f071a5a33f00ab88a6d6385b5e6638b86c":"зелёный","4c9a82ce72ca2519f38d0af0abbb4cecb9fceca9":"синий","96de5543d183d7de52ac5fa21c46fc811f673f89":"жёлтый","78988010b890ce6f4d2136481f392787ec6d6106":"красный","aa9330a16e5b055de809256dad6b4d1cbd2999e7":"Беззвучный","cf84a98d6cf7f156862a08ba8236467b6f471004":"Оповещение","eee2facd669d1434848c24da5527b3e87d9a12d5":"Получение прибыли","9d705578b0f1f0ce3a06dc5e82f9a1e6078f81e1":"Задание выполнено","7f2f6a15cf8da2b27e5a4af47b58e7ad71c0b3d9":"Ошибка","a3b1583d377f37ac20de7e089edfa0920a078e57":"Серьёзная ошибка","66c8b6848eee629c4ac551bf2b5fa591571654be":"Повышение равно","5649dce3367d490fa19d563ee9e3d4c4b6f7c642":"Падение равно","062787aa328047e189774b3703d983b83938f6e9":"Выше","b91eed4b7a80cd9572a27e65ebdff9caa4b3b9a4":"Ниже","e3f139abb7a549a1210b36f7dbf89215ad6c9902":"Касание","7d7932bcc2e262ae98cf09dc5445130fb3881769":"Нет касания","a16814a48ec58c2e24ba224a80921a5c02361abe":"Заканчивается внутри","391d02cd75ebcd6ed26f5f45ddf7d40bf13e9dc5":"Заканчивается вне","534ec5da4e82ec419abc170e1a8448f55a01664f":"Останется внутри","98cbe1998effd8b1a8aefdcc538573055e99a5f5":"Выйдет за пределы","93d13bad1d2c2841db127cb70cc35bfc98059fc9":"Азиатские вверх","c098658ce3d3a258e4d155949a60072966b36db7":"Азиатские вниз","ee2dbd5d6d82d0833069b07e7dd2848d3bf4d83a":"Совпадёт","8444b7ce28bbc3443cc5cf73359b8353989b2a4b":"Отличается","9e767ad03e5547f251044e0724dc1d9f3e75aeed":"Чётное","dc28f5f3c65ec611f0f30022650d24382d27448e":"Нечётное","18a63f5512afb5573e5b44deba78d629f0635317":"Над","2a268b89b83f8cb38ea48e46e93dd8840db512f9":"Под","2155c8b38181dd2552e84a94049aacd33ef9c607":"Высокий тик","1408cfd2b064b923f024fbe590e27db8282941a5":"Низкий тик","b86eb15dc4f13e4c2972de158d3038d9f657242f":"Reset Колл","669a1f3d9a8f601a84da536cfdad1de4092b1926":"Reset Пут","844d1a5c99a0a668383340cc095d040eef998c79":"Только вверх","87293a146cd481a2b30cf74282ec061dc4cf0735":"Только вниз","cf9b77061f7b3126b49d50a6fa68f7ca8c26b7a3":"Открытие","b1a5954a483f8f8b0207385095f74aeb409b3f80":"Верхн.","a124947cbd2d1d92b47e027274c3269ff0c7a84b":"Нижн.","bbfa773e5a63a5ea58c9b6207e608ca0120e592a":"Закрытие","1173872a4fb205b713702f0eec5cf2c732c828fd":"Время открытия","808d7dca8a74d84af27a2d6602c3d786de45fe1e":"По умолчанию","62957ecfdc50957e8957c11d2eae74d078f0ef1a":"1 минута","1dd3e663dfa7ac9cb77cfddd2cf8ac700657e2d6":"2 минуты","24e46784cbce32443db5a2638b1a7d3201543e9b":"3 минуты","3aa5819ed8a0b94d0f293db8e9c9598298ddd402":"5 минут","a6f151883b736f0470d33492e61c72a7d059d065":"10 минут","899761ff5425abd2ee214fa7aa46e27c6c8b5aae":"15 минут","31bbe8890d28d183f8f7f2c160fa892c444c0ec7":"30 минут","f030c3d667652646b86732ad7bc67e226c49cd3a":"1 час","2046e49e33c040e08dbd6fd83df3e1846015e6f1":"2 часа","7b47150d431db70d783724007f07ab894eb8ac2e":"4 часа","191800b7e9a48680792c0dd77cb6cac00c4514c6":"8 часов","2d8a6f7c34468578640b333b8650131de06ac770":"1 день","f94510322ecd9b3a2af67a10bd51ecc4ac6a24e7":"Вверх/Вниз","c1365a35e99d0f9147ebc72f21534cf471fa7d95":"Вверх/Вниз равно","9c7960c6b11d35ac9d6cdc1ebaad3af43b2065c5":"Азиатские","2260ce49306460c8a2ef501939f29ad6ddd4e934":"Цифровые","0186aa73a1b75fa8f0eb98bbd9ad01102bb09ec1":"Касание/Нет касания","f7de1f66f0979667da275b7e8996e805395025a1":"Закончится внутри/вне","a431deecd4c2258097adae418d496fe9a8179fee":"Останется внутри/вне","256fe245cb7d3d673095f7faaa8c9ff81b985ad1":"Наибольш./наименьш. тик","12a3f461cdebbc8f335190413ee6c57442743bba":"Reset колл/Reset пут","e696144fa588782e6d6b2c97e2d3ed1adf52bd5c":"Только вверх/вниз","91a64e3f83c91acf336c631fba295f297f94c399":"Запустить после n секунд","024696596f26a4db232fd9e966eadfeb27c0bd1a":"Запускать через каждые n секунд","c538c170bdc6b0f3bb98dce44a016a2e2d45a6e7":"верхн.","85c274929bc0e28eafd3734f2c25046c3b95b36b":"средн.","346e3ee198e98146993894d3de8ecab1a86c3e80":"нижн.","f16459104f92ab6b38aa265adb4ecbfc3768e303":"Гистограмма","e09f635f4e77476c9ca1c37bc9992e9ace3431c1":"MACD","27bed13a88c60350c3de92ec3820e1cc4f7d6ec3":"Сигнал","19eabc961735d78f12fc7be906ffcb033853cf85":"Временная метка","68f4145fee7dde76afceb910165924ad14cf0d00":"Сообщение","629777b7d4d610ace6dee24442730f27d7d0853e":"Файл не поддерживается:","beb040c8fabd007c9cc5ac6a9feb6bdb05d33dac":"Все несохранённые изменения будут утеряны.","410bf23a3f080def9c7a976a16305bcde7943ed1":"Вы уверены?","e99811bd3b1ad17e74614060ecb180602be35ad6":"Вы успешно вышли!","876f3e0202ca40dedf2e5ab6577eba1ae637fb53":"Стратегии","8ce80462febd4d573cb2f9c1984fdc93b7c21c57":"Возникла ошибка при загрузке библиотек Google Drive","c4c758b5c8f5b3985f6bf7382c848bb44e0a5b74":"Предоставьте разрешение на просмотр и управление файлами на Google Диске","3b6bbab905129dd36b8d4e99947fa30540ed7b2a":"Неизвестный формат файла","3d6b44df6eaf6236b4abc1aadcf8f5b1cda769c1":"Возникла ошибка при извлечении данных из Google Drive","cdfe947b0c089a4a1f78c11299f25c32a124f1a6":"Выберите стратегию Binary Bot","2db43c69a4b96454914f0b8272bc869984529e6e":"Возникла ошибка при регистрации файлов из Google Drive","0dcea5f584938e0fff00084b83156ab31d641ab3":"Возникла ошибка при извлечении файлов из Google Drive","18da95988117ff029393f3f5c881d70ef47f7385":"При обработке вашего запроса возникла ошибка","04226bcf91195130e25fe7a8e8ea4d3e058efcb7":"Выберите папку","aee24f2456ea8516b024a5d3e2b815ae7f2239d9":"Произошла ошибка при отправке сообщения через Telegram","3f370309b6280eb100f898426d8605c1f45d558d":"Неверная временная метка","af6a4e2a5582be89ac930e946eaed86e01cac58b":"Неправильная дата/время","49d51398b574e7312d99b18d2b93d2ede416f053":"Не удалось отправить webhook","05754ed14275a070a20a1d5cd65f0cea66f1da7f":"Предложения не готовы","79222cd9892a434aa61fc7dc01c3839951eb8d1e":"Выбранное предложение не существует","6ea4a034747d020b1d8ce4848def95d537555dd6":"Куплено","89f89c02cf47e091e726a4e07b88af0966806897":"ID","1200c1af2f7bba4e29a34112865662748c9d41df":"Перепродажа этого контракта невозможна.","62d6180e55905f7b996d442c53631981a4ef8b5b":"Продано по","ed4978867de1da05b336b724a3fb96222a29ebec":"Индекс должен быть положительным целым числом","87e2e01f93d25ba7ed582cc81ef5c9ab2959f4c6":"Сумма прибыли","b2a4553586d1062c21323bca1dc0589f7a9d5cf7":"Сумма убытка","46fc6f27a835486d63d9e927c6687e4508cb3087":"Вы достигли максимального количества сделок","9202ddae4cea16513e53bbc965d88ed975e59512":"Вы достигли максимальной суммы убытка","5f52b397b7e5f538681f0f5717a88aa626349c7a":"Bot.init не вызывается","66c7734789e19cbeef3a5ac185ea732139aed213":"График","3b662fb2e8bafce29aa98321b18874bb44905488":"Интеграция Google Drive","7ee0ff5eaa6fa82bd6d83a2f4ca446c663f097cb":"Максимальное число последовательных контрактов должно составлять от 1 до 100","93039e609d94a24f3572b794a31b21525a09af2b":"Не задано","ea67c8023c75375484f3a5f1aeb009b20059d5bc":"Дневной лимит на убытки:","b1946e5b4b78465b7661fd4bc89ff52de6c633e7":"Максимальное число последовательных контрактов","952f375412e89ff213a8aca383d18e5691354347":"Начать","9f1c61cc03f3ef9324db05502f7f0b61e61e1521":"Торговые ограничения","095ba68888b5ace5f4515f5acab76dfa1073544e":"Мой компьютер","ddcb77ff769ea54ca622848f6bedd4004fa4f4fa":"Загрузить","248e224f533752db28a1aab3519a58569ad96140":"Загрузить блоки","c7097e97dcc446ca889d3ca6be733a65e2728afe":"Успешно загружено на Google Drive","3218e5a460e82d7bdea9ce0f145cab2f47ba9a4b":"Сохранить как коллекцию","611ebbfb080284312904de925ef0f75f4cb56ad2":"Сохраните блоки и настройки для повторного использования в других стратегиях","efc007a393f66cdb14d57d385822a3d9e36ef873":"Сохранить","a638caa8ab2b7ff7980a571334217339e6d1d634":"Сохранить блоки","39fca63515c105918f03e4908ec12df675b07f92":"TradingView","85dfa32c97d8618d1bea083609e2c8a29845abe5":"Счёт","d847919a30d31c0be624087f3370492b3fdf80c6":"Кол-во выполнений","5cd6978d63540c8a490ef76f43219de6362f958e":"Общая ставка","17410d7b62b8b1de981cfebada24632987edf186":"Общая выплата","b841eeb091f1ff0e14be08e5ea1b93e4cf147ed3":"Общая прибыль/убыток","90eef613042c5a51f542421065b68b886d473807":"Баланс","db1c784524e1b54011a95823026161f7c8517fe0":"Ссылка","4db3e9e4aecd187db9339a10d2629fef46724dc4":"Тип контракта","1bb4086b66659d8580f9be4beef69931aeea3cad":"Входная котировка","8bf249c4855e591964bd5bdd35c8ef2ee107342d":"Выходная котировка","ba7be969e7c1bb5f22489e843478e3d721aaa843":"Цена покупки","772fbced18230220d2d9be1456be16fc1b271d25":"Прибыль/убыток","bae7d5be70820ed56467bd9a63744e23b47bd711":"Статус","96f608c16cef16caa06bf38901fb5f618a35a70b":"В процессе","7fb3a9b5101bcd45e2dca077191693a5199bafa9":"Завершен","82a82f798dd773717ec37d15fd4405510291734e":"Бот не запущен.","6a88e58aa1798626f94cf17f1a91618b405bb289":"Запуск бота...","624cc7f40b68faace7e78d8e5c5be1d4f15facda":"Бот включен...","788180a6ddbbbcca10f6f49d8e85d557934bae0e":"Бот выключается...","d907a40a4a15da3c21a6e0f8ace3f987d482f92c":"Бот остановлен.","4f219c17ab9ab76aa1cd431b4e0e5ecf5520e8e4":"Попытка купить","4684ee1026d9b4c872d016c3c4588a0c479a451c":"Сумма покупки","ca92c55b9e4233d771d5b6300fe751a9678d1deb":"Покупка прошла успешно","f02760cd2eac28169f0a990c950c3dfe8427f772":"Контракт закрыт","fadc0ef93d1ff13370524ce8481ddc4a71195934":"Упорядочить по вертикали","a479c9c34e878d07b4d67a73a48f432ad7dc53c8":"Загрузить","e4458464df6cbb8da1134875ba51519c5d244d9f":"Блоки должны быть внутри контейнера для блоков, основных блоков или функций","e9c45563358e813f157ba81b33143542165ba84e":"Предупреждение","31cb6f44d030abeabcc7046555dea851602a87a5":"Эта стратегия недоступна в вашей стране.","9ce3bd4224c8c1780db56b4125ecf3f24bf748b7":"OK","486d55264892207fef1ed5799e0b213b446d3eaa":"XML-файл содержит неподдерживаемые элементы. Пожалуйста, перепроверьте или отредактируйте файл.","a594b427eaf0f108d3e9cc20d70e15da811c760c":"Неподдерживаемая стратегия","04a5090686ac7b54822e00a9ff08c38a107601e7":"Извините, эту стратегию нельзя использовать на Binary Bot. Вы можете использовать ее только на DBot.","77dfd2135f4db726c47299bb55be26f7f4525a46":"Отмена","fdaa08aeaee0bf9b78d83ea19ef9e9bd019e8193":"Перейти на DBot","f1d8b7b118d6f82f95614d476bc11af650aed3bc":"Не удалось загрузить файл блока","af145748c9cf765a3b059eec20cb1dbb899297d8":"Блоки загружены успешно","11ee9c5d534cc8d22651092222b532917594161a":"Минимальная длительность","5283ac04c9a8ba8a937d1edb4ba986aeefce8bf1":"Число тиков должно быть от 5 до 10","ace1342bc3720b77ce510b93074041e7386d209e":"Время окончания не может совпадать со временем начала","fed3e7bd6696fb97a12d720845ab5388456bfc3b":"Прогноз должен быть одной цифрой","d466687f90ba548434d65186d11a80c4204f9ad6":"должно быть добавлено внутри:","6ddf2b3075ac9ab5d66b40e15ea9a34c087672ea":"должно быть добавлено внутри","33aa6ff282ee509d37c6f758274c9156b419ff73":"Вы попытались внедрить неразрешенную стратегию.","da162a909c2981ed318d23cd9a6be1d66e0a8400":"Нераспознанный формат файла.","5e719fa76e1b6cb396376c82ebdd04bec7253229":"Удалённые блоки для загрузки должны относиться к коллекции.","b0d2de25daf6ba09a5e710c6968ffded29c4dae1":"Не удалось загрузить файл блока.","df84a88f38b03b5b342362d72370b0d66afdae35":"Целью должен быть файл xml","cd680fd936e9559ef1d95efac7a71680e2b13a89":"Этот url уже загружен","34c59389053701a04127f74d32315e0206e076f8":"Возникла ошибка при загрузке url","3ead0b14c72503187691a7a6d7121987299bd401":"Данная версия не является официальной версией Binary Bot. Вы используете её на свой страх и риск.","27401c9c8e476d659c8382e05c6d70a4a82be468":"Официальная версия","bc981983e7f547dc62e19a1e383acfe00782a6d5":"Далее","b52b36b7269fbfc58ec24bb724691951a3decbe8":"Назад","e9b450d14bc2363d292c84f17cfad5cfbd58a458":"Готово","29cadadfebdd578a50b7b3d1b2c5b33e424d5de7":"Быстрый обзор","a48e81d4a8da67637b46725824177a959fe99b21":"Хотите узнать, как пользоваться Binary Bot?","6f3e6ebf249947cec4f64117253a8fe43335ae79":"Нет, спасибо","fcb6e90e7223e1d1d735f15dbb7ded9d81bbe7ef":"Не спрашивайте меня снова.","4ca0a75c2b7fa7da4364d03b72c46fee1860a2bf":"Рабочая область","5fcf29b9f0b8971c8148e70a150ddc9ac04c94fc":"Перетащите блочные файлы.","ddcbb5361b1a16eba60fca2383fb297bb90ed9b3":"Загрузить примеры стратегий","1758356db21759f7c5a0da9b4dd1db8fd6feab3f":"или","00b581632c1532969a7128ebc8eae936ed8af04e":"создать собственные стратегии.","d171baee235d4c93f63755a876782dc5be4c3e47":"Инструменты для блоков","056f19272d96f902c38207cf163ea8dbff7fbd32":"Добавьте больше блоков для вашего робота.","36bae31694f85bd7a5b0ad45e51ef622b95baadb":"Счета","f5c47fd3b3553b10441a06054078cea745177dea":"Войдите в систему перед тем, как запустить робота. Всегда тестируйте свои стратегии на демо-счете.","fd825ae94aa79500a878dd4590a4b360e7162663":"Управление роботом","6ee7980833e1ed72901b919ffd0fa20e1a251d3f":"Управляйте своими блоками. Направьте курсор на каждую кнопку для получения дополнительной информации.","f5169c84497de3aea74f7da9e7e177d1427e736b":"Удачи!","4f1b3d682c2a00b393c33637da402463bc11d5ff":"Хотите обратиться за помощью или сообщить об ошибке?","0049f8894e41937ebb9111cd3def6749049fb50f":"Нажмите здесь","aac1569ccf6b1a11b0ad0fbefdb9ffc777b4c733":"Нажмите, чтобы выбрать","d1a17af19f5388af9d6596cc0ea7dbb1d739e255":"Недоступно","53adebdc2b1cbbedb56395b19a73fe47b87cc554":"Тики","5fb1db527825d2996e37c655e5dec49d4da80c09":"Секунды","092f99ea11a34a8490e7a767a83a42fc45634f82":"Минуты","9e25a34e635a123f8958bbe26e7c4843278597fb":"Часы","f6bb0f468a8569c67b3d6826e57e62c5500c3681":"Дни","db6708630fc646eb98298d9acd701e0a1ac051c2":"Сохраните блоки и стратегии на Google Drive","85538d002a336c5addef8d189d80976cf7758f8c":"Вы вошли как","b65463cb6a42a17de514acc4659f7fd331e0876a":"Подключить","ed28e0686e1251ba046f582a3e9ec02470a5e78d":"Отключить","cd5f85b6f187605f82386eacd680f93820af8d11":"Результат","1e38ce3d180cefae485a6986ca7c67841e30376f":"Значение верно, если результат соответствует выбору","5c89497fc3c128e2ff865ce8df15356054f2c028":"(4) Узнайте результат и торгуйте снова","14ea81918758c994cbe3178e695e56afc1ef2b45":"Получите информацию о предыдущем контракте, узнайте результат и торгуйте снова. (Запускается после завершения сделки)","5098e2bcc96ee227983c9f7eeddfd226c220ca00":"Подробности контракта:","251c830f8f869e0887e8b4dc4c30ba1738c7097e":"Считывает выбранный параметр из списка Подробностей контракта","b3b543c80063a116ced4965d8537b7b62d14c0b7":"Торговать снова","a1eeb7c1e92e9a5d9323ed8ebd7ca7ffed8b0232":"Повторно запускает блок торговли","ca5586bdb5bdc1a2c0baf53ed0ecd21fafabebe7":"Продажа доступна","03bad10717e183b24829baf483dc715e1a44bf7b":"Значение верно, если доступна продажа по рыночной цене","2c71ed279a402e93312dbda173ab18f244d6bf46":"(3) Следите и продайте контракт","17632a9f51611d2579d95b4b1ccb9476566d7ccf":"Следите за результатом купленного контракта и, по возможности, продайте его по рыночной цене. (Запускается при обновлении контракта)","579607dc4f989ce2b94b558431666a0ab07ac1f3":"Продать по рыночной цене","e20afd5cf3811a42071c9a312abb2afdad4c590b":"Продать по рыночной цене.","4712cbff8e92822fc960ef9c0197293a19675eae":"Продать прибыль/убыток","df817b48c7a076561b4f8bedc52d65d2e351ab52":"Возвращает прибыль для продажи по рыночной цене.","da3105e38c42a481ad7230ed393b0e12bebe9c4f":"Цена аск","343fda69c73b78b84967055aae97f790c422adfd":"Цена аск для выбранного предложения","d4d34ce9d9dd7e87213469f88cb7ac43725675d5":"(2) Просм. и купите контракт","fb61a3c71f4c488b3b470cb7daf502a3e9b5ad48":"Проследите за потоком тиков и купите нужный контракт. (Запускается при обновлении тиков)","9bb396940adb9705fe57eba6ea8b578e6aafa792":"Выплата","87da93a46d143f6019979b3548414d9d7adabb35":"Выплата для выбранного предложения","160f06d4799c85021a810f68c5b517eea37a2737":"Покупка","4c2fdde3d9c1950498ed263d6ce21d4bf3d0800b":"Покупает выбранный контракт.","b44e884c355e447d0da0e6ba45caaff18c84373b":"Полосы Боллинджера","d6a2a207343bd83aacdc80b579ff4419713a256e":"Список ввода","170a28a9db6d27d7212fc6dc249434a57517e7bc":"Период","b833989d69900a4be9e32d1bab65c8f8233f099e":"Станд. коэффициент Dev. Вверх","1cee82f19c0bedef64f68b32e6b02128efe7c61b":"Станд. коэффициент Dev. Вниз","974da601086448d0060aeed90e53ddd5acd17b91":"Рассчитывает список полос Боллинджера (ПБ) из списка с периодом","d5b65cac1f1cf9421ac978eebe532de99040cca6":"Список полос Боллинджера","58de49791c64aba14e36e5887244a5ef088286cd":"Рассчитывает список Полос Боллинджера (ПБ) из списка с периодом","4bd99f76f1104229744455d93df0ff76b9eeed58":"Экспоненциальная СС","ea615c6d6a74e25a6d2f1bc9980b46e73508c2eb":"Рассчитывает экспоненциальную скользящую среднюю (ЭСС) из списка с периодом","4082d9379e59b38c891d046312f8d3c4b64ae3b1":"Массив экспоненциальных СС","562edc102c5dd9e2fbbede1140b8a5461c2d4dc8":"Рассчитывает список экспоненциальных скользящих средних (ЭСС) из списка значений с периодом","a537f4f3c0f6c68bf896fb23cb2ecdc658488ea2":"Линейка MACD","b18e572ea14edd48587145f1ef50718adbf256c6":"Период быстрой ЭСС","974023bddd6249d0f6404872cfcae205b2599ea2":"Период медленной ЭСС","5c2adcb3d1bfd6b9f5c2dec13d02a9473e4445a1":"Период сигнальной ЭСС","6b15ce93fd68d80aeee7f7964c1306044c3c1baf":"Вычисляет список схождения-расхождения скользящих средних (MACD) из списка","95ec92885c855ba9cf734c17a43f081901e4d2cc":"Индекс относительной силы","b033619e108c9e43bfd8a42cd97bf5c5dc86dc65":"Индекс относительной силы (RSI) из списка с периодом","4034de66995b876b2ba9bfd0274025e39168e05d":"Группа индексов относительной силы","f9da880c8b0e4cce4431912c24eba939e6bc06e1":"Рассчитывает список индексов относительной силы (RSI) из списка значений с периодом","a9842c95766da40bf4ea6ee263cb5a5985847763":"Простая скользящая средняя","347775a293c14362d492f019e677c965be1d6e7d":"Рассчитывает простую скользящую среднюю (ПСС) из списка с периодом","4cc7b9e53d082896ad884eb01be16320af65f282":"Массив простых СС","2c75179a57af3c36581008b65e86ed81c4a4cbea":"Вычисляет список простых скользящих средних (ПСС) из списка значений с периодом","39f024cf49724fe7ffdea7773c72ed06eec998e1":"с интервалом","e4bed3e67e58b2334ee4b9c6ce59ac7a95d80aaf":"Направление","ad47561efb1dcbd7246d9b64487f615647fda036":"Значение верно, если направление соответствует выбранному","05bef508aadd62bf3967dcf67d769da296f19989":"Направление тика","d089ab98a846a521b09aad6ff3fefa728bfa8b42":"Блок направления устарел, используйте вместо него блок проверки направления","cdb31fc857f01a59f664413498293c714285f46d":"в списке свечей","20fd5f86f08796f145d69dedc209a27e459b2f51":"получить # с конца","a96606af8c33ac3428b45abc4782dbf93f458d29":"Получить последнюю n-ю свечу","90ed0e1ea5c1907f8a32d8051a66e845857bb2a4":"Список последних тиков","248428facb97408414180d4de74e4db35360fbc4":"Возвращает список последних тиков","2e4202acde880b7b1c3686f0335ff879fc1e5c7a":"Последняя десятичная","e46e0bd2f7fe37217dec8aa26ebce8ffa3608663":"Возвращает последнюю десятичную последнего тика","d5fde4c9d5edf660f760fc226df4d2678d3334ab":"Список свечей","95e552a40d3446c96905cd3ec7e3d123d0246ce8":"Возвращает список свечей","5a0ed227a01b7d30b05dcaf3e1c23b74b9be6ff4":"Составить список из","a4220593d385a720886f7af1ed3c478fd0c6339c":"значений в списке свечей","cd8cdf3d47e921c8a72addae9269e66041d417c5":"Возвращает список выбранных значений свеч","3e4f335e7a6f79bd1bafd219ddde30acbf16a7ac":"В списке свечей читайте ","34037f9452fdb66c9ca27ebcc0afe9d5139e9e24":"# с конца","aba43a580daa7f306956ec69b83e6e37e7233126":"Прочитать значение выбранной свечи в последней n-й свече","e04b522218a181cf0223042dd18ae08dcc22d8d3":"Последний тик","6ee445fc253a55c9ed54c009c3f020ac65200d80":"Возвращает значение тика, полученное блоком До покупки","ed44b69176217a1251c04f0c13d23ac789ea60b2":"Последний тик Строка","ea24dd1988c6534a5f0d11b8fbbc6c374fe68766":"Возвращает значение тика, полученное блоком 'до покупки' (строкой)","4b2340a890e88d1886757c3f7172e273a1edc31f":"Этот блок вызывается при каждом тике","b54d7b4590559dad64f02d09aacbf6d9863e2624":"Вы можете использовать этот блок для анализа тиков, независимо от ваших контрактов","ebffc758056e6b2fc2af99af17fbc6853e5d3583":"Список тиков","17649cac8739adcae95e641f794880272ad33bd1":"Возвращает список значений тиков","46ecdefde6a8dd5872cc6e0e52afb717f1140426":"Строка тиков Список","3bdc75d5d68b05dfd3ce6dcdf7d9773e60ed0a51":"Возвращает список значений тиков (строкой)","802dc02469ae51067ca620ff57dfb5bdb3e524ac":"Баланс:","c4ee8e12b2484cd5b47cdf00bfa2c50b83e91d3d":"Получить баланс или строку","69280143949fcd59c171dd60f6b6e13d0cc08fe6":"Внутренние блоки игнорируются","d072c2ceeb5c1217722d14c74de7aeab945b4215":"Поместите свои блоки здесь, чтобы не удалять их","e98ea4ac4e2cfd6a4c84386534c5d1acd7ec85d3":"Ключ: %1 Значение: %2","27305f6365c38dd36f5b5eb781e05b5e2e4e3f6e":"Возвращает строковое отображение пары ключ-значение","b06acc4158c824231f727a13e1c9811f43d5be42":"Загрузить блок из","661db37251a1ed1afe357ee13895f37a623d7cbf":"Загрузить блоки через url","6c03ee54ad3a51fc92a1d69943e99667847705b6":"Уведомить","b1bec5d06e3672915d81b2fbc2347c8b4947a954":"со звуком","a2d0c89fdfff3176efd4a443eb0f6607067b93e7":"Создаёт уведомление","6e0fc122f936f808bc2e3af661121b65712ae855":"Уведомить в Telegram %1 Код доступа: %2 Чат: %3 Сообщение: %4","1aeb6caed9e46edf5d6224adc905ffb8ee3a7708":"Отправить сообщение через Telegram","45ebd38f4c641ebf6f72be8c3a79dfa50cf9f20e":"Общая прибыль","ffb465875e1ff2b49bcaa7c6b70965ffe39fa59d":"Возвращает общую прибыль","532e65f6e266db0bb442d1f426d44d7d32962340":"Общая прибыль Строка","78e84591ff76f992953a8e19b57c7eab7546d638":"Возвращает общую прибыль (строкой)","bc528d26f66fe8c4aa4bb24ec9c99dff12c055e0":"Кол-во выполнений","bea5756b18644ccfab01c1c0dbd6fa9db7103379":"Возвращает количество выполнений с самого начала","7d500ebe352ccfa932b253e21938813a06fcff8e":"Webhook URL: %1","e770fd2a6b980a0815592b1bd499127c5a5cfe39":"Отправляет POST запрос на URL","a35646754dbe7a9211ba8b81338a5d64580eb276":"Полезная нагрузка пуста","69b0648eddd207cd45a9e1ba973dae287b535576":"Полезная нагрузка:","c67ded6b64019212eb2bc69afd761f5b3f626040":"Добавить символ к числу, чтобы установить оффсет барьера.","569bbd757e1bb8bbccd250b98dc2bb37cb47b787":"Рынок","74751e67c3e1010c343095eaf543e7cb21ced2ef":"Тип контракта","1f4698382842477e211eb46de81fa506f01a8c34":"Оба","c1baf816aac5a5cd849768773fc248cd249dc296":"Тип контракта:","c93025710d1ae6cbaf8e710f63eca8edfa0c9399":"Интервал по умолчанию:","9693aeaaf68e3929b59b79306feaa0a847d01192":"Длительность:","78d7103a319e808455d397513279d99f3b3f3768":"Ставка","10c02649e226d430bd75a5b6315a41c0db9992a2":"Барьер","837276742aa90209dde3b4eef07d8e7ab26731ef":"Прогноз","258b49925b41751c6bd790a0848246566ba61440":"Перезапустить покупку/продажу в случ. ошибки","c55ee3445cd391ab299b6f85a6ea9a68a65ea64d":"отключить для улучшения работы","b410994b67e37d9516eb9b866c85a8c639f79e68":"Перезапустить последн. контракт в случ. ошибки","2260c5a971c2602834ef8feeb5fa522f900b469f":"робот проигнорирует неудачн. контракт","cd1495cb4c60266a6abad9024022ae079bf7e416":"(1) Выберите нужный контракт","0745acf92abd7b60598f161717884cc45dab8694":"Запустить один раз в начале","999e1ade10ff5ee1d115f5a6288bfd2e0d0736e6":"Задайте параметры контракта","a43c3299d30a5bc7e31a574cdc87f59cbc8fe585":"Выберите нужный контракт и начните торговлю; добавьте инициализацию. (Запускается в начале контракта)","d571f33d957ebcab086ecf38eedd71b6ef0c5820":"Параметры контракта","4d22b565e4253e92a908f216184779679bb1a044":"Верхний барьер","b70c38c6db3127422e05315c30bdf76c7c36c480":"Нижний барьер","a6c5f081b3addee364af1c8cdb84853f49dc8e07":"Абсолютный","0f2ba74929aca6fea950e351dcd576b7cd841fa4":"свеча чёрная?","7cb3b482ab66947d439642ec64dc7f5bd4e065dc":"Составить список","5925d08228e246f07b790b88ad70c1b73a97d2bc":"значений в списке свечей","852b438f91ad9eb2cdd84419a675a216d543c687":"Прочитать","67d3b35a0b740127b56bcd44d3bcb1ccc20e0b48":"значение свечи","d79d854dcd0829e2177a47beab6a55569e781ab1":"Прочитать поле на свечах (прочитать в Списке свечей)","5606b4460ac96063b8a8e5647008f3ec97252fc5":"Секунд с начала отсчёта","2de20bdeecb1a8c28bd36fe75f028ed4318d0348":"Возвращает время начала отсчёта (секунды с начала отсчёта)","f43cb41af7ce8a69c7aecbc1c603bb0381270982":"Выполнять каждые","4b6fe6898f0f956d48a4c8172c6dfbcb4159ab09":"Секунд(ы)","2eea87bb804e4e73e3f8e9c41140f7ed83ea8875":"Выполнять внутренние блоки каждые n секунд(ы)","e0af6ddc8a892704f64680bcb22b30c4bfcefec5":"Блок 'Запускать каждую секунду' устарел. Свяжитесь с нами, если у вас есть допустимый вариант использования.","7b9c76088576a64f32d67ec335162b9f73eaa026":"Выполнить после","ff56ffac023cf69ca5c7f71d407499536f4f86b5":"Выполнить внутренние блоки после n секунд","e9fb732dde76a6977bcaa2818b0f56125b183648":"В дату/время","1a90ae7cb728e7f25b031d7e844882f75e74ab5c":"Во временную метку"}
 
 /***/ }),
 /* 248 */
 /***/ (function(module, exports) {
 
-module.exports = {"3d52a6d8fedcc48a65297c07bf5f7e3e41aab5aa":"Lógica","3edf0df49942da6d11a1a217e4d3af4a5a8e64f2":"Matemática","c3328c39b0e29f78e9ff45db674248b1d245887d":"Texto","4d064726954a17487f94e931f5b157b733ec22ed":"Avançado","a1fffaaafb7cc996685bceb829c053cc4f7de43d":"Lista","19de69cb601f53a4ea7af22a65c71ae63251365c":"Variável","2b961dea1dc0c60ddf9a2c8e9d090f6f7d082483":"Funções","dc7f77b4ccfc9f70a78bd97303bd10ba4c9d70c8":"Loop","66639f7d455dd71faa9147f5d69e5ce885d8bebd":"Binary","0ba66deaab2f2cd3b0793d03f600ee2b8f577fbc":"Definição da negociação","9201c6ac624e98e168e6ccddbcd5a9b5cdff06b3":"Antes da aquisição","44ab9a87268d3fd74040ed0b55c04f83294cfdef":"Durante a aquisição","c415c9399b7ae7285d2c1c880a6a0aa18f62ff8c":"Depois da aquisição","d07ffc19d51f0973859a0d95c1d15cd9f22388ca":"Análise de tique-taques","8cf71374fa095a64b5295b672daef8507ec7be6a":"Indicadores","4fa8cc860c52b268dc6a3adcde7305e9415db5bb":"Ferramentas","6c82e6dd86807ee3db07e3c82bec1ae1ce00b08b":"Tempo","8d8fd6765e184419cad8b88d1a60c895d79578c2":"Vela","548f449b63ff41eaaff5a2d679ffa56b2015fc20":"Diversos","8bf95ea372568c7a254ba9fada5f6f1701ebc5b5":"Registro","12b71c3e0fe5f7c0b8d17cc03186e281412da4a8":"Resumo","9feddbabd7e7309e96c590069057158e96baa8f6":"Verificação da realidade","038fe2bdb7ec6ee078f60bdb5bee94654ec6a81d":"A negociação de opções pode se tornar um verdadeiro vício, tal como qualquer outra atividade levada até ao limite. Para evitar os perigos de tal vício, fornecemos uma verificação de realidade que lhe proporciona um resumo de todas as suas negociações e conta regularmente.","4152043e8c670075d2c919677e835edb0d923cab":"Especifique o seu intervalo preferido, em minutos, para a verificação da realidade","d9fff2df19e90f2c7ea6bb30fde4e0da119d13d1":"Insira um número entre 10 e 60.","2439f2f199b2a3e798aa9b4feaa9248bdec9bc0b":"Continue a negociar","a72ca256dc49e55a1a57b9a727fbde9834c9a3f7":"Extrato","6e78c91f5a05fc0d4f1a787d38e3d6fe2f856d46":"Sair","4832e45812a2724f16a15f9ae87adfc8ae4168cf":"Contate-nos","f7c400ed695f898b8ee9d21664aa17b5bb693828":"Conectar-se","5ea75f1605a4bf1db5c39fcc61854627478c0a7d":"Redefinir os blocos para o seu estado inicial","f98595d541778d86f75ef22b3328a031d20aa16b":"Carregar novos blocos (arquivo xml)","4a1e616226c329a94da7768bc0435a3284478010":"Salvar os blocos existentes (arquivo xml)","6b3465ace62f33f0687b4669ac26d95895e9ca52":"Conecte Binary Bot à sua conta do Google Drive para poder salvar e reutilizar os seus blocos com facilidade","8e4ec2c451ec7b1bf68d72fe9086ec978e41feb7":"Desfazer as alterações (Ctrl+Z)","937f5055f05be359ddf619744e8af4d643549e80":"Refazer as alterações (Ctrl+Shift+Z)","8406d1cce44230835932060649e999ca3283b413":"Ampliar (Ctrl + +)","1109673172af2c173c492622ff8a72c8f29f0e70":"Reduzir (Ctrl + -)","44c22002c65d2871331263a23c3e09c0a1bfd847":"Reorganizar verticalmente","ebd0945359e5578ff9bd3a2ab490ca84c225d8f5":"Mostrar/Ocultar o pop-up do resumo","76bb05950f80f3a88ee05ef3276c5934fd355e8d":"Reproduzir o bot","ba50a42d8d3228c37a817865fce49fbca692c2ad":"Parar o robô","4f4aa4117318a8ddf8783885d4f3542c5b2733bd":"Mostrar registro","91017ef9b165cd0e7475a770f318ea5e705e1321":"Mostrar gráfico","c89e3dd1cafcadcc0312e476ab58b2332209da23":"Mostrar vista de negociação","b02c858e72be118a65c9393930351012b647cb9e":"Ativar/Desativar cabeçalho","250be77f7605669a0b3d968b9ed381a3d9787ed1":"Abrir um arquivo XML já salvo e recuperar os seus blocos","ff29ccd7a6c6073cc462ed590d27a91632fdf67e":"Robô Binary","608061fb5aab975013fa70c5c814a1d8ba30c152":"Negocie de forma mais eficiente do que você alguma vez imaginou ser possível","e4ce8dc3e416e69262ba642dc57d3975d6616980":"Está interessado em automatizar as suas estratégias preferidas para a negociação de opções binárias?","f261237ca8beec6f77b76c4121feb8da22818c56":"O robô Binary é a nossa ferramenta de programação de ponta que lhe permite criar aplicativos de negociação com uma função simples de arrastar e soltar no estilo quebra cabeças.","f6c85c68616eeaaa15fcd53fdc52f6eb5c886357":"Invente qualquer número de robôs de negociação Binary, desde fórmulas simples a algoritmos complexos. Depois deixe-os negociar por você, mesmo enquanto dorme.","e6906a0d1c28b202f9bd49da4a6abbddca57399a":"O melhor de tudo é que, uma vez que você construiu o robô, podemos ajudá-lo a vendê-lo a outros negociadores na","1dd0cf79c572bcdbdfabbd54ee95710a21234d73":"loja Binary.com","abeef9a35ae6256796ba2462e4f64d308de42359":"Receba 80% da receita de vendas de cada compra do seu robô na nossa loja de aplicativos.","0606f0b7763ee6e8094a3dab7873d34c08fd3670":"Comece a desenvolver um novo robô já","221acaf3a0290adafe08cdcb8c66121c73d8b4a3":"Precisa de mais assistência?","d635b53e59c9aad8c5d78458826beffb029b27bf":"Obrigado, responderemos dentro de 24 horas","1de91e827ec70ca735abc2c71b0a89cb0cfc4ce1":"Mercado subjacente não está selecionado","50050f06645ad2743165b429a8f7deebd285fd63":"Tipo de contrato não está selecionado","6a7d1a3a17c4e8ae6712cb60d46db1edf0aa2667":"Conecte-se","2f9f9096be1a1c0569a9ce54e57f0420f6b3c2e9":"A duração deve ser um número inteiro positivo","4df6e872792d72aea8a2f6b831d00b554464da23":"Valor deve ser um número positivo","001e68df3a4b32a4d57148d9d407f44eee3b7436":"A vela atual não é válida","04f14ea7c92e0b2b5ae005c696245063ec641d66":"A lista de velas atual não é válida","c1bbfcbb4f57d3a56c1239af0c2138321589efd2":"tentar novamente em","57b453bb26b1c28dfe362b7cc9f17f0be93dd581":"Limite de taxa alcançado para","094628ce13fc0e78f07b697d1cc9421bb2edd666":"Solicitação falhou para","816c52fd2bdd94a63cd0944823a6c0aa9384c103":"Não","5397e0583f14f6c88de06b1ef28f460a1fb5b0ae":"Sim","9bb396940adb9705fe57eba6ea8b578e6aafa792":"Prêmio","78d7103a319e808455d397513279d99f3b3f3768":"Aposta","bbb930cc426507ed3f6b7c343c75dd0e041494b7":"extrato","e6e886cdcdefeb6d3edb4c31bed06dd183ac4153":"preço de venda","50e72909992bdc37c7c07769d1b7efac5e52874c":"prêmio","ecb5ba7044417916ba12de5fa9e6fccac3e5d475":"lucro","c980b910204c7babdffe8ff3f7e755f30133383c":"tipo de contrato","a726c6955157f1b8b92f9932652434a7150f80f8":"preço de entrada","a66d5c7ef2c63dbc9a8f9e6ae4e2bc575e74a36e":"valor de entrada","7674920c033ca14277c577e19c037a6754d4fa80":"preço de saída","e8b8bd9f2eabc12875605a37c93e7f04a713fcb8":"valor de saída","779455ee3bde8494d9629b353e17b19e92357ba8":"barreira","37a5301a88da334dc5afc5b63979daa0f3f45e68":"resultado","4973f4c599d5f42cf7bde52d66c3ed8ef77accb1":"Ganho","12e24a7d8ac40579e8a0aef4869288afe7ed6745":"Perda","563339f82447b4e758ad76d5a0b63b5698594fba":"Sobe","5c1ae82c29543ac887703776bf3da2c7dcce683d":"Desce","2fc096bb7b6596ab243d0286c9f43fdf2b9b406d":"Sem alteração","ecb252044b5ea0f679ee78ec1a12904739e2904d":"string","53b0a1b2fadf4e040cdc2155a7340de24aca93cb":"número","bc74f4f071a5a33f00ab88a6d6385b5e6638b86c":"verde","4c9a82ce72ca2519f38d0af0abbb4cecb9fceca9":"azul","96de5543d183d7de52ac5fa21c46fc811f673f89":"amarelo","78988010b890ce6f4d2136481f392787ec6d6106":"vermelho","aa9330a16e5b055de809256dad6b4d1cbd2999e7":"Silencioso","cf84a98d6cf7f156862a08ba8236467b6f471004":"Anúncio","eee2facd669d1434848c24da5527b3e87d9a12d5":"Ganhou dinheiro","9d705578b0f1f0ce3a06dc5e82f9a1e6078f81e1":"Trabalho feito","7f2f6a15cf8da2b27e5a4af47b58e7ad71c0b3d9":"Erro","a3b1583d377f37ac20de7e089edfa0920a078e57":"Erro grave","66c8b6848eee629c4ac551bf2b5fa591571654be":"Sobe-Equivalentes","5649dce3367d490fa19d563ee9e3d4c4b6f7c642":"Desce-Equivalentes","062787aa328047e189774b3703d983b83938f6e9":"Acima","b91eed4b7a80cd9572a27e65ebdff9caa4b3b9a4":"Abaixo","e3f139abb7a549a1210b36f7dbf89215ad6c9902":"Toca","7d7932bcc2e262ae98cf09dc5445130fb3881769":"Não toca","a16814a48ec58c2e24ba224a80921a5c02361abe":"Termina dentro","391d02cd75ebcd6ed26f5f45ddf7d40bf13e9dc5":"Termina fora","534ec5da4e82ec419abc170e1a8448f55a01664f":"Fica dentro","98cbe1998effd8b1a8aefdcc538573055e99a5f5":"Sai fora","93d13bad1d2c2841db127cb70cc35bfc98059fc9":"Asiático acima","c098658ce3d3a258e4d155949a60072966b36db7":"Asiático abaixo","ee2dbd5d6d82d0833069b07e7dd2848d3bf4d83a":"Combina","8444b7ce28bbc3443cc5cf73359b8353989b2a4b":"Difere","9e767ad03e5547f251044e0724dc1d9f3e75aeed":"Par","dc28f5f3c65ec611f0f30022650d24382d27448e":"Ímpar","18a63f5512afb5573e5b44deba78d629f0635317":"Superior","2a268b89b83f8cb38ea48e46e93dd8840db512f9":"Inferior","2155c8b38181dd2552e84a94049aacd33ef9c607":"Tick alto","1408cfd2b064b923f024fbe590e27db8282941a5":"Tick baixo","b86eb15dc4f13e4c2972de158d3038d9f657242f":"Redefinição - Compra","669a1f3d9a8f601a84da536cfdad1de4092b1926":"Redefinição - Venda","844d1a5c99a0a668383340cc095d040eef998c79":"Sempre acima","87293a146cd481a2b30cf74282ec061dc4cf0735":"Sempre abaixo","cf9b77061f7b3126b49d50a6fa68f7ca8c26b7a3":"Abertura","b1a5954a483f8f8b0207385095f74aeb409b3f80":"Alta","a124947cbd2d1d92b47e027274c3269ff0c7a84b":"Baixa","bbfa773e5a63a5ea58c9b6207e608ca0120e592a":"Fechamento","1173872a4fb205b713702f0eec5cf2c732c828fd":"Hora de abertura","808d7dca8a74d84af27a2d6602c3d786de45fe1e":"Padrão","62957ecfdc50957e8957c11d2eae74d078f0ef1a":"1 minuto","1dd3e663dfa7ac9cb77cfddd2cf8ac700657e2d6":"2 minutos","24e46784cbce32443db5a2638b1a7d3201543e9b":"3 minutos","3aa5819ed8a0b94d0f293db8e9c9598298ddd402":"5 minutos","a6f151883b736f0470d33492e61c72a7d059d065":"10 minutos","899761ff5425abd2ee214fa7aa46e27c6c8b5aae":"15 minutos","31bbe8890d28d183f8f7f2c160fa892c444c0ec7":"30 minutos","f030c3d667652646b86732ad7bc67e226c49cd3a":"1 hora","2046e49e33c040e08dbd6fd83df3e1846015e6f1":"2 horas","7b47150d431db70d783724007f07ab894eb8ac2e":"4 horas","191800b7e9a48680792c0dd77cb6cac00c4514c6":"8 horas","2d8a6f7c34468578640b333b8650131de06ac770":"1 dia","f94510322ecd9b3a2af67a10bd51ecc4ac6a24e7":"Acima/Abaixo","c1365a35e99d0f9147ebc72f21534cf471fa7d95":"Igualdades Acima/Abaixo","9c7960c6b11d35ac9d6cdc1ebaad3af43b2065c5":"Asiáticos","2260ce49306460c8a2ef501939f29ad6ddd4e934":"Dígitos","0186aa73a1b75fa8f0eb98bbd9ad01102bb09ec1":"Toca/Não toca","f7de1f66f0979667da275b7e8996e805395025a1":"Termina Dentro/Fora","a431deecd4c2258097adae418d496fe9a8179fee":"Fica dentro/Sai fora","256fe245cb7d3d673095f7faaa8c9ff81b985ad1":"Ticks Altos/Baixos","12a3f461cdebbc8f335190413ee6c57442743bba":"Redefinição — Compra/Venda","e696144fa588782e6d6b2c97e2d3ed1adf52bd5c":"Sempre acima/Sempre abaixo","91a64e3f83c91acf336c631fba295f297f94c399":"Executar-se após n segundos","024696596f26a4db232fd9e966eadfeb27c0bd1a":"Executar-se a cada n segundos","c538c170bdc6b0f3bb98dce44a016a2e2d45a6e7":"superior","85c274929bc0e28eafd3734f2c25046c3b95b36b":"do meio","346e3ee198e98146993894d3de8ecab1a86c3e80":"inferior","f16459104f92ab6b38aa265adb4ecbfc3768e303":"Histograma","e09f635f4e77476c9ca1c37bc9992e9ace3431c1":"MACD","27bed13a88c60350c3de92ec3820e1cc4f7d6ec3":"Sinal","19eabc961735d78f12fc7be906ffcb033853cf85":"Carimbo de data/hora","68f4145fee7dde76afceb910165924ad14cf0d00":"Mensagem","629777b7d4d610ace6dee24442730f27d7d0853e":"Arquivo não é suportado:","beb040c8fabd007c9cc5ac6a9feb6bdb05d33dac":"Quaisquer alterações não salvas serão perdidas.","410bf23a3f080def9c7a976a16305bcde7943ed1":"Tem certeza?","e99811bd3b1ad17e74614060ecb180602be35ad6":"Desconectou você!","3b26e990d3acff493ee2cf66d1280bed2625e43f":"Conexão perdida antes de receber resposta do servidor","876f3e0202ca40dedf2e5ab6577eba1ae637fb53":"Estratégias","8ce80462febd4d573cb2f9c1984fdc93b7c21c57":"Houve um erro ao carregar as bibliotecas do Google Drive","7f412a8cf67f755d3eb36846dd07148ceb8d4c72":"Não foi possível carregar os blocos do Google Drive","3b6bbab905129dd36b8d4e99947fa30540ed7b2a":"Formato de arquivo não reconhecido","3d6b44df6eaf6236b4abc1aadcf8f5b1cda769c1":"Houve um erro ao recuperar dados de Google Drive","cdfe947b0c089a4a1f78c11299f25c32a124f1a6":"Selecione uma estratégia do Binary Bot","2db43c69a4b96454914f0b8272bc869984529e6e":"Houve um erro ao listar arquivos de Google Drive","0dcea5f584938e0fff00084b83156ab31d641ab3":"Houve um erro ao recuperar arquivos de Google Drive","18da95988117ff029393f3f5c881d70ef47f7385":"Houve um erro ao processar o seu pedido","04226bcf91195130e25fe7a8e8ea4d3e058efcb7":"Selecione uma pasta","aee24f2456ea8516b024a5d3e2b815ae7f2239d9":"Não foi possível enviar esta notificação do Telegram","05754ed14275a070a20a1d5cd65f0cea66f1da7f":"As propostas não estão prontas","79222cd9892a434aa61fc7dc01c3839951eb8d1e":"A proposta selecionada não existe","6ea4a034747d020b1d8ce4848def95d537555dd6":"Comprado","89f89c02cf47e091e726a4e07b88af0966806897":"ID","1200c1af2f7bba4e29a34112865662748c9d41df":"Não permitimos a revenda deste contrato.","62d6180e55905f7b996d442c53631981a4ef8b5b":"Vendido por","ed4978867de1da05b336b724a3fb96222a29ebec":"Índice deve ser um número inteiro positivo","87e2e01f93d25ba7ed582cc81ef5c9ab2959f4c6":"Valor do lucro","b2a4553586d1062c21323bca1dc0589f7a9d5cf7":"Valor da perda","46fc6f27a835486d63d9e927c6687e4508cb3087":"Número máximo de negociações atingido","9202ddae4cea16513e53bbc965d88ed975e59512":"Valor máximo de perdas atingido","5f52b397b7e5f538681f0f5717a88aa626349c7a":"Bot.init não foi chamado","85dfa32c97d8618d1bea083609e2c8a29845abe5":"Conta","d847919a30d31c0be624087f3370492b3fdf80c6":"Nº de execuções","5cd6978d63540c8a490ef76f43219de6362f958e":"Aposta total","17410d7b62b8b1de981cfebada24632987edf186":"Prêmio total","b841eeb091f1ff0e14be08e5ea1b93e4cf147ed3":"Lucro/Perda total","90eef613042c5a51f542421065b68b886d473807":"Saldo","db1c784524e1b54011a95823026161f7c8517fe0":"Referência","4db3e9e4aecd187db9339a10d2629fef46724dc4":"Tipo de negociação","1bb4086b66659d8580f9be4beef69931aeea3cad":"Preço de entrada","8bf249c4855e591964bd5bdd35c8ef2ee107342d":"Preço de saída","ba7be969e7c1bb5f22489e843478e3d721aaa843":"Preço de compra","772fbced18230220d2d9be1456be16fc1b271d25":"Lucro/Perda","bae7d5be70820ed56467bd9a63744e23b47bd711":"Status","96f608c16cef16caa06bf38901fb5f618a35a70b":"Pendente","7fb3a9b5101bcd45e2dca077191693a5199bafa9":"Liquidado","82a82f798dd773717ec37d15fd4405510291734e":"O robô não está em execução.","6a88e58aa1798626f94cf17f1a91618b405bb289":"O bot está iniciando...","624cc7f40b68faace7e78d8e5c5be1d4f15facda":"O robô está em execução...","788180a6ddbbbcca10f6f49d8e85d557934bae0e":"O robô vai parar...","d907a40a4a15da3c21a6e0f8ace3f987d482f92c":"O robô parou.","4f219c17ab9ab76aa1cd431b4e0e5ecf5520e8e4":"Tentando comprar","4684ee1026d9b4c872d016c3c4588a0c479a451c":"Valor de compra","ca92c55b9e4233d771d5b6300fe751a9678d1deb":"Compra bem-sucedida","f02760cd2eac28169f0a990c950c3dfe8427f772":"Contrato fechado","66c7734789e19cbeef3a5ac185ea732139aed213":"Gráfico","3b662fb2e8bafce29aa98321b18874bb44905488":"Integração com Google Drive","7ee0ff5eaa6fa82bd6d83a2f4ca446c663f097cb":"Máximo de negociações consecutivas deve ser entre 1 e 100","93039e609d94a24f3572b794a31b21525a09af2b":"Não definido","ea67c8023c75375484f3a5f1aeb009b20059d5bc":"Limite diário de perdas:","b1946e5b4b78465b7661fd4bc89ff52de6c633e7":"Máximo de negociações consecutivas","952f375412e89ff213a8aca383d18e5691354347":"Iniciar","9f1c61cc03f3ef9324db05502f7f0b61e61e1521":"Limitações de negociação","095ba68888b5ace5f4515f5acab76dfa1073544e":"Meu computador","ddcb77ff769ea54ca622848f6bedd4004fa4f4fa":"Carregar","248e224f533752db28a1aab3519a58569ad96140":"Carregar blocos","c7097e97dcc446ca889d3ca6be733a65e2728afe":"Carregado com sucesso para o Google Drive","3218e5a460e82d7bdea9ce0f145cab2f47ba9a4b":"Salvar como coleção","611ebbfb080284312904de925ef0f75f4cb56ad2":"Salvar os seus blocos e as suas configurações para reutiliação em outras estratégias","efc007a393f66cdb14d57d385822a3d9e36ef873":"Salvar","a638caa8ab2b7ff7980a571334217339e6d1d634":"Salvar blocos","39fca63515c105918f03e4908ec12df675b07f92":"Trading View","fadc0ef93d1ff13370524ce8481ddc4a71195934":"Reorganizar verticalmente","e4458464df6cbb8da1134875ba51519c5d244d9f":"Blocos devem estar dentro de contentores de blocos, blocos principais ou funções","e9c45563358e813f157ba81b33143542165ba84e":"Aviso","31cb6f44d030abeabcc7046555dea851602a87a5":"Esta estratégia não está disponível no seu país.","9ce3bd4224c8c1780db56b4125ecf3f24bf748b7":"OK","af145748c9cf765a3b059eec20cb1dbb899297d8":"Os blocos foram carregados com sucesso","a479c9c34e878d07b4d67a73a48f432ad7dc53c8":"Baixar","f1d8b7b118d6f82f95614d476bc11af650aed3bc":"Não foi possível carregar o arquivo de bloco","11ee9c5d534cc8d22651092222b532917594161a":"A duração mínima é","5283ac04c9a8ba8a937d1edb4ba986aeefce8bf1":"O número de tique-taques deve ser entre 5 e 10","ace1342bc3720b77ce510b93074041e7386d209e":"A hora de expiração não pode ser igual à hora de início","fed3e7bd6696fb97a12d720845ab5388456bfc3b":"A previsão deve ser de um dígito","d466687f90ba548434d65186d11a80c4204f9ad6":"deve ser adicionado dentro de:","6ddf2b3075ac9ab5d66b40e15ea9a34c087672ea":"deve ser adicionado dentro","33aa6ff282ee509d37c6f758274c9156b419ff73":"A estratégia que você tentou importar é inválida.","da162a909c2981ed318d23cd9a6be1d66e0a8400":"Formato de arquivo não reconhecido.","5e719fa76e1b6cb396376c82ebdd04bec7253229":"Blocos remotos a serem carregados devem ser uma coleção.","b0d2de25daf6ba09a5e710c6968ffded29c4dae1":"Não foi possível carregar o arquivo de bloco.","df84a88f38b03b5b342362d72370b0d66afdae35":"O destino deve ser um arquivo xml","cd680fd936e9559ef1d95efac7a71680e2b13a89":"Este URL já foi carregado","34c59389053701a04127f74d32315e0206e076f8":"Ocorreu um erro ao tentar carregar o url","3ead0b14c72503187691a7a6d7121987299bd401":"Isto não é uma versão oficial do Binary Bot. Use por sua conta e risco.","27401c9c8e476d659c8382e05c6d70a4a82be468":"Versão oficial","bc981983e7f547dc62e19a1e383acfe00782a6d5":"Próximo","b52b36b7269fbfc58ec24bb724691951a3decbe8":"Voltar","e9b450d14bc2363d292c84f17cfad5cfbd58a458":"Concluído","29cadadfebdd578a50b7b3d1b2c5b33e424d5de7":"Faça uma rápida visita","a48e81d4a8da67637b46725824177a959fe99b21":"Pronto para aprender como usar o Binary Bot?","6f3e6ebf249947cec4f64117253a8fe43335ae79":"Não obrigado","fcb6e90e7223e1d1d735f15dbb7ded9d81bbe7ef":"Não me pergunte novamente.","4ca0a75c2b7fa7da4364d03b72c46fee1860a2bf":"Espaço de trabalho","5fcf29b9f0b8971c8148e70a150ddc9ac04c94fc":"Arrastar e soltar arquivos de bloco.","ddcbb5361b1a16eba60fca2383fb297bb90ed9b3":"Baixar estratégias de amostra","1758356db21759f7c5a0da9b4dd1db8fd6feab3f":"ou","00b581632c1532969a7128ebc8eae936ed8af04e":"crie as suas próprias estratégias.","d171baee235d4c93f63755a876782dc5be4c3e47":"Caixa de ferramentas de blocos","056f19272d96f902c38207cf163ea8dbff7fbd32":"Adicione mais blocos daqui ao seu bot.","36bae31694f85bd7a5b0ad45e51ef622b95baadb":"Contas","f5c47fd3b3553b10441a06054078cea745177dea":"Conecte-se antes de iniciar o seu bot. Teste sempre as suas estratégias com a conta virtual.","fd825ae94aa79500a878dd4590a4b360e7162663":"Controles do bot","6ee7980833e1ed72901b919ffd0fa20e1a251d3f":"Controle os seus blocos. Mantenha o cursos sobre cada botão para ver mais informações.","f5169c84497de3aea74f7da9e7e177d1427e736b":"Divirta-se!","4f1b3d682c2a00b393c33637da402463bc11d5ff":"Deseja relatar um problema ou pedir ajuda?","0049f8894e41937ebb9111cd3def6749049fb50f":"Clique aqui","aac1569ccf6b1a11b0ad0fbefdb9ffc777b4c733":"Clique para selecionar","53adebdc2b1cbbedb56395b19a73fe47b87cc554":"Tique-taques","5fb1db527825d2996e37c655e5dec49d4da80c09":"Segundos","092f99ea11a34a8490e7a767a83a42fc45634f82":"Minutos","9e25a34e635a123f8958bbe26e7c4843278597fb":"Horas","f6bb0f468a8569c67b3d6826e57e62c5500c3681":"Dias","d1a17af19f5388af9d6596cc0ea7dbb1d739e255":"Não disponível","db6708630fc646eb98298d9acd701e0a1ac051c2":"Salvar os seus blocos e as suas estratégias no Google Drive","85538d002a336c5addef8d189d80976cf7758f8c":"Você está conectado como","b65463cb6a42a17de514acc4659f7fd331e0876a":"Conectar-se","ed28e0686e1251ba046f582a3e9ec02470a5e78d":"Desconectar-se","cd5f85b6f187605f82386eacd680f93820af8d11":"O resultado é","1e38ce3d180cefae485a6986ca7c67841e30376f":"Verdadeiro se o resultado corresponder à seleção","5c89497fc3c128e2ff865ce8df15356054f2c028":"(4) Receba o resultado da sua negociação e negocie novamente","14ea81918758c994cbe3178e695e56afc1ef2b45":"Receba as informações e o resultado da última negociação e depois negocie novamente (Executa-se no final da negociação)","5098e2bcc96ee227983c9f7eeddfd226c220ca00":"Dado do contrato:","251c830f8f869e0887e8b4dc4c30ba1738c7097e":"Lê uma opção selecionada da lista de dados do contrato","b3b543c80063a116ced4965d8537b7b62d14c0b7":"Negocie novamente","a1eeb7c1e92e9a5d9323ed8ebd7ca7ffed8b0232":"Executa o bloco de negociação novamente","da3105e38c42a481ad7230ed393b0e12bebe9c4f":"Preço de venda","343fda69c73b78b84967055aae97f790c422adfd":"Preço de venda da proposta selecionada","d4d34ce9d9dd7e87213469f88cb7ac43725675d5":"(2) Acompanhe e compre o seu contrato","fb61a3c71f4c488b3b470cb7daf502a3e9b5ad48":"Acompanhe o fluxo de tique-taques e compre o contrato desejado (Executa-se na atualização dos tique-taques)","87da93a46d143f6019979b3548414d9d7adabb35":"Prêmio da proposta selecionada","160f06d4799c85021a810f68c5b517eea37a2737":"Comprar","4c2fdde3d9c1950498ed263d6ce21d4bf3d0800b":"Compra um contrato selecionado.","ca5586bdb5bdc1a2c0baf53ed0ecd21fafabebe7":"Venda disponível","03bad10717e183b24829baf483dc715e1a44bf7b":"Verdadeiro se venda no mercado estiver disponível","2c71ed279a402e93312dbda173ab18f244d6bf46":"(3) Acompanhe e venda o seu contrato adquirido","17632a9f51611d2579d95b4b1ccb9476566d7ccf":"Acompanhe as informações do contrato adquirido e venda no mercado caso disponível (Executa-se na atualização do contrato)","579607dc4f989ce2b94b558431666a0ab07ac1f3":"Vender no mercado","e20afd5cf3811a42071c9a312abb2afdad4c590b":"Vender no mercado.","4712cbff8e92822fc960ef9c0197293a19675eae":"Vender lucro/perda","df817b48c7a076561b4f8bedc52d65d2e351ab52":"Retorna o lucro de vender no mercado.","b44e884c355e447d0da0e6ba45caaff18c84373b":"Bandas de Bollinger","d6a2a207343bd83aacdc80b579ff4419713a256e":"Lista de entradas","170a28a9db6d27d7212fc6dc249434a57517e7bc":"Período","b833989d69900a4be9e32d1bab65c8f8233f099e":"Multiplicador de desvio padrão para cima","1cee82f19c0bedef64f68b32e6b02128efe7c61b":"Multiplicador de desvio padrão para baixo","974da601086448d0060aeed90e53ddd5acd17b91":"Calcula Bandas de Bollinger (BB) a partir de uma lista com um período","d5b65cac1f1cf9421ac978eebe532de99040cca6":"Série de Bandas de Bollinger","58de49791c64aba14e36e5887244a5ef088286cd":"Calcula Bandas de Bollinger (BB) a partir de uma lista com um período","4bd99f76f1104229744455d93df0ff76b9eeed58":"Média Móvel Exponencial","ea615c6d6a74e25a6d2f1bc9980b46e73508c2eb":"Calcula uma Média Móvel Exponencial (EMA - Exponential Moving Average) a partir de uma lista com um período","4082d9379e59b38c891d046312f8d3c4b64ae3b1":"Série de média móvel exponencial","562edc102c5dd9e2fbbede1140b8a5461c2d4dc8":"Calcula uma lista de Médias Móveis Exponenciais (EMA - Exponential Moving Average) a partir de uma lista de valores com um período","a537f4f3c0f6c68bf896fb23cb2ecdc658488ea2":"Série MACD","b18e572ea14edd48587145f1ef50718adbf256c6":"Período de rápida MME","974023bddd6249d0f6404872cfcae205b2599ea2":"Período de lenta MME","5c2adcb3d1bfd6b9f5c2dec13d02a9473e4445a1":"Período de sinalização de MME","6b15ce93fd68d80aeee7f7964c1306044c3c1baf":"Calcula a lista de Convergência e Divergência de Médias Móveis (MACD - Moving Average Convergence / Divergence) a partir de uma lista","95ec92885c855ba9cf734c17a43f081901e4d2cc":"Índice de Força Relativa","b033619e108c9e43bfd8a42cd97bf5c5dc86dc65":"Índice de Força Relativa (RSI) de uma lista com um período","4034de66995b876b2ba9bfd0274025e39168e05d":"Série do Índice de Força Relativa","f9da880c8b0e4cce4431912c24eba939e6bc06e1":"Calcula a lista do Índice de Força Relativa (RSI) de uma lista de valores com um período","a9842c95766da40bf4ea6ee263cb5a5985847763":"Média Móvel Simples","347775a293c14362d492f019e677c965be1d6e7d":"Calcula uma Média Móvel Simples (SMA - Simple Moving Average) a partir de uma lista com um período","4cc7b9e53d082896ad884eb01be16320af65f282":"Série de Médias Móveis Simples","2c75179a57af3c36581008b65e86ed81c4a4cbea":"Calcula uma lista de Médias Móveis Simples (SMA - Simple Moving Average) a partir de uma lista de valores dentro de um período de tempo","39f024cf49724fe7ffdea7773c72ed06eec998e1":"com intervalo","e4bed3e67e58b2334ee4b9c6ce59ac7a95d80aaf":"Direção é","ad47561efb1dcbd7246d9b64487f615647fda036":"Verdadeiro se a direção combina com a seleção","05bef508aadd62bf3967dcf67d769da296f19989":"Direção dos tique-taques","d089ab98a846a521b09aad6ff3fefa728bfa8b42":"Bloco de direção foi preterido, por favor, use a verificação de bloco de direção em vez","cdb31fc857f01a59f664413498293c714285f46d":"na lista de velas","20fd5f86f08796f145d69dedc209a27e459b2f51":"obter n.º do fim","a96606af8c33ac3428b45abc4782dbf93f458d29":"Obter a n-ésima vela mais recente","90ed0e1ea5c1907f8a32d8051a66e845857bb2a4":"Lista de últimos dígitos","248428facb97408414180d4de74e4db35360fbc4":"Retorna a lista de valores de últimos dígitos","2e4202acde880b7b1c3686f0335ff879fc1e5c7a":"Último dígito","e46e0bd2f7fe37217dec8aa26ebce8ffa3608663":"Devolve o último dígito do tique-taque mais recente","d5fde4c9d5edf660f760fc226df4d2678d3334ab":"Lista de velas","95e552a40d3446c96905cd3ec7e3d123d0246ce8":"Devolve a lista de velas","5a0ed227a01b7d30b05dcaf3e1c23b74b9be6ff4":"Fazer lista de","a4220593d385a720886f7af1ed3c478fd0c6339c":"valores na lista de velas","cd8cdf3d47e921c8a72addae9269e66041d417c5":"Devolve uma lista de valores das velas selecionadas","3e4f335e7a6f79bd1bafd219ddde30acbf16a7ac":"Ler na lista de velas ","34037f9452fdb66c9ca27ebcc0afe9d5139e9e24":"N.º do fim","aba43a580daa7f306956ec69b83e6e37e7233126":"Ler o valor da vela selecionada na enésima vela mais recente","e04b522218a181cf0223042dd18ae08dcc22d8d3":"Último tique-taque","6ee445fc253a55c9ed54c009c3f020ac65200d80":"Devolve o valor do tique-taque recebido por um bloco de pré-compra","4b2340a890e88d1886757c3f7172e273a1edc31f":"Este bloco é chamado em todos os tique-taques","b54d7b4590559dad64f02d09aacbf6d9863e2624":"É possível usar este bloco para analisar os tique-taques, independentemente das suas negociações","ebffc758056e6b2fc2af99af17fbc6853e5d3583":"Lista de tique-taques","17649cac8739adcae95e641f794880272ad33bd1":"Devolve a lista de valores de tique-taques","802dc02469ae51067ca620ff57dfb5bdb3e524ac":"Saldo:","c4ee8e12b2484cd5b47cdf00bfa2c50b83e91d3d":"Obter número do saldo ou o string","69280143949fcd59c171dd60f6b6e13d0cc08fe6":"Os blocos no interior são ignorados","d072c2ceeb5c1217722d14c74de7aeab945b4215":"Coloque os seus blocos aqui dentro para prevenir que sejam removidos","b06acc4158c824231f727a13e1c9811f43d5be42":"Carregar blocos de","661db37251a1ed1afe357ee13895f37a623d7cbf":"Carregar blocos do URL","6c03ee54ad3a51fc92a1d69943e99667847705b6":"Notificar","b1bec5d06e3672915d81b2fbc2347c8b4947a954":"com som","a2d0c89fdfff3176efd4a443eb0f6607067b93e7":"Cria notificação","6e0fc122f936f808bc2e3af661121b65712ae855":"Notify Telegram %1 Access Token: %2 Chat ID: %3 Message: %4","1aeb6caed9e46edf5d6224adc905ffb8ee3a7708":"Enviar mensagem ao Telegram","45ebd38f4c641ebf6f72be8c3a79dfa50cf9f20e":"Lucro total","ffb465875e1ff2b49bcaa7c6b70965ffe39fa59d":"Devolve o lucro total","bc528d26f66fe8c4aa4bb24ec9c99dff12c055e0":"N.º de execuções","bea5756b18644ccfab01c1c0dbd6fa9db7103379":"Devolve o número de execuções desde o início","c67ded6b64019212eb2bc69afd761f5b3f626040":"Adicionar sinal a um número para criar uma deslocação de barreira.","569bbd757e1bb8bbccd250b98dc2bb37cb47b787":"Mercado","74751e67c3e1010c343095eaf543e7cb21ced2ef":"Tipo de negociação","1f4698382842477e211eb46de81fa506f01a8c34":"Ambos","c1baf816aac5a5cd849768773fc248cd249dc296":"Tipo de contrato:","c93025710d1ae6cbaf8e710f63eca8edfa0c9399":"Intervalo padrão de velas:","9693aeaaf68e3929b59b79306feaa0a847d01192":"Duração:","10c02649e226d430bd75a5b6315a41c0db9992a2":"Barreira","837276742aa90209dde3b4eef07d8e7ab26731ef":"Previsão","258b49925b41751c6bd790a0848246566ba61440":"Reiniciar compra/venda no caso de erro","c55ee3445cd391ab299b6f85a6ea9a68a65ea64d":"desativar para melhor desempenho","b410994b67e37d9516eb9b866c85a8c639f79e68":"Reiniciar última negociação em caso de erro","2260c5a971c2602834ef8feeb5fa522f900b469f":"robô ignora a negociação mal-sucedida","cd1495cb4c60266a6abad9024022ae079bf7e416":"(1) Defina o contrato da sua negociação","0745acf92abd7b60598f161717884cc45dab8694":"Executar uma vez ao iniciar","999e1ade10ff5ee1d115f5a6288bfd2e0d0736e6":"Definir opções de negociação","a43c3299d30a5bc7e31a574cdc87f59cbc8fe585":"Defina o contrato da sua negociação e inicie a negociação. Adicione inicializações aqui. (Executa-se ao iniciar)","d571f33d957ebcab086ecf38eedd71b6ef0c5820":"Opções de negociação","4d22b565e4253e92a908f216184779679bb1a044":"Barreira alta","b70c38c6db3127422e05315c30bdf76c7c36c480":"Barreira baixa","a6c5f081b3addee364af1c8cdb84853f49dc8e07":"Absoluto","0f2ba74929aca6fea950e351dcd576b7cd841fa4":"a vela é preta?","7cb3b482ab66947d439642ec64dc7f5bd4e065dc":"Faze lista de","5925d08228e246f07b790b88ad70c1b73a97d2bc":"valores da lista de velas","852b438f91ad9eb2cdd84419a675a216d543c687":"Ler","67d3b35a0b740127b56bcd44d3bcb1ccc20e0b48":"valor na vela","d79d854dcd0829e2177a47beab6a55569e781ab1":"Leia um campo numa vela (ler da lista de velas)","5606b4460ac96063b8a8e5647008f3ec97252fc5":"Segundos desde o epoch","2de20bdeecb1a8c28bd36fe75f028ed4318d0348":"Devolve o horário epoch (segundos desde o epoch)","f43cb41af7ce8a69c7aecbc1c603bb0381270982":"Executar a cada","4b6fe6898f0f956d48a4c8172c6dfbcb4159ab09":"Segundo(s)","2eea87bb804e4e73e3f8e9c41140f7ed83ea8875":"Executar os blocos no interior a cada n segundos","e0af6ddc8a892704f64680bcb22b30c4bfcefec5":"Bloco executar a cada segunda foi preterido. Contate-nos caso tenha um válido caso para uso.","7b9c76088576a64f32d67ec335162b9f73eaa026":"Executar depois de","ff56ffac023cf69ca5c7f71d407499536f4f86b5":"Executar os blocos no interior após n segundos"}
+module.exports = {"3d52a6d8fedcc48a65297c07bf5f7e3e41aab5aa":"Lógica","3edf0df49942da6d11a1a217e4d3af4a5a8e64f2":"Matemática","c3328c39b0e29f78e9ff45db674248b1d245887d":"Texto","4d064726954a17487f94e931f5b157b733ec22ed":"Avançado","a1fffaaafb7cc996685bceb829c053cc4f7de43d":"Lista","19de69cb601f53a4ea7af22a65c71ae63251365c":"Variável","2b961dea1dc0c60ddf9a2c8e9d090f6f7d082483":"Funções","dc7f77b4ccfc9f70a78bd97303bd10ba4c9d70c8":"Loop","66639f7d455dd71faa9147f5d69e5ce885d8bebd":"Binary","0ba66deaab2f2cd3b0793d03f600ee2b8f577fbc":"Definição de negociação","9201c6ac624e98e168e6ccddbcd5a9b5cdff06b3":"Antes da aquisição","44ab9a87268d3fd74040ed0b55c04f83294cfdef":"Durante a aquisição","c415c9399b7ae7285d2c1c880a6a0aa18f62ff8c":"Depois da aquisição","d07ffc19d51f0973859a0d95c1d15cd9f22388ca":"Análise de tique-taques","8cf71374fa095a64b5295b672daef8507ec7be6a":"Indicadores","4fa8cc860c52b268dc6a3adcde7305e9415db5bb":"Ferramentas","6c82e6dd86807ee3db07e3c82bec1ae1ce00b08b":"Tempo","8d8fd6765e184419cad8b88d1a60c895d79578c2":"Vela","548f449b63ff41eaaff5a2d679ffa56b2015fc20":"Diversos","8bf95ea372568c7a254ba9fada5f6f1701ebc5b5":"Registro","12b71c3e0fe5f7c0b8d17cc03186e281412da4a8":"Resumo","9feddbabd7e7309e96c590069057158e96baa8f6":"Verificação da realidade","038fe2bdb7ec6ee078f60bdb5bee94654ec6a81d":"A negociação de opções pode se tornar um verdadeiro vício, tal como qualquer outra atividade levada até ao limite. Para evitar os perigos de tal vício, fornecemos uma verificação de realidade que lhe proporciona um resumo de todas as suas negociações e conta regularmente.","4152043e8c670075d2c919677e835edb0d923cab":"Especifique o seu intervalo preferido, em minutos, para a verificação da realidade","d9fff2df19e90f2c7ea6bb30fde4e0da119d13d1":"Insira um número entre 10 e 60.","2439f2f199b2a3e798aa9b4feaa9248bdec9bc0b":"Continue a negociar","a72ca256dc49e55a1a57b9a727fbde9834c9a3f7":"Extrato","6e78c91f5a05fc0d4f1a787d38e3d6fe2f856d46":"Sair","4832e45812a2724f16a15f9ae87adfc8ae4168cf":"Contate-nos","f7c400ed695f898b8ee9d21664aa17b5bb693828":"Conectar-se","5ea75f1605a4bf1db5c39fcc61854627478c0a7d":"Redefinir os blocos para o seu estado inicial","f98595d541778d86f75ef22b3328a031d20aa16b":"Carregar novos blocos (arquivo xml)","4a1e616226c329a94da7768bc0435a3284478010":"Salvar os blocos existentes (arquivo xml)","6b3465ace62f33f0687b4669ac26d95895e9ca52":"Conecte Binary Bot à sua conta do Google Drive para poder salvar e reutilizar os seus blocos com facilidade","8e4ec2c451ec7b1bf68d72fe9086ec978e41feb7":"Desfazer as alterações (Ctrl+Z)","937f5055f05be359ddf619744e8af4d643549e80":"Refazer as alterações (Ctrl+Shift+Z)","8406d1cce44230835932060649e999ca3283b413":"Ampliar (Ctrl + +)","1109673172af2c173c492622ff8a72c8f29f0e70":"Reduzir (Ctrl + -)","44c22002c65d2871331263a23c3e09c0a1bfd847":"Reorganizar verticalmente","ebd0945359e5578ff9bd3a2ab490ca84c225d8f5":"Mostrar/Ocultar o pop-up do resumo","76bb05950f80f3a88ee05ef3276c5934fd355e8d":"Reproduzir o bot","ba50a42d8d3228c37a817865fce49fbca692c2ad":"Parar o robô","4f4aa4117318a8ddf8783885d4f3542c5b2733bd":"Mostrar registro","91017ef9b165cd0e7475a770f318ea5e705e1321":"Mostrar gráfico","c89e3dd1cafcadcc0312e476ab58b2332209da23":"Mostrar vista de negociação","b02c858e72be118a65c9393930351012b647cb9e":"Ativar/Desativar cabeçalho","250be77f7605669a0b3d968b9ed381a3d9787ed1":"Abrir um arquivo XML já salvo e recuperar os seus blocos","ff29ccd7a6c6073cc462ed590d27a91632fdf67e":"Robô Binary","608061fb5aab975013fa70c5c814a1d8ba30c152":"Negocie de forma mais eficiente do que você alguma vez imaginou ser possível","e4ce8dc3e416e69262ba642dc57d3975d6616980":"Está interessado em automatizar as suas estratégias preferidas para a negociação de opções binárias?","f261237ca8beec6f77b76c4121feb8da22818c56":"O robô Binary é a nossa ferramenta de programação de ponta que lhe permite criar aplicativos de negociação com uma função simples de arrastar e soltar no estilo quebra cabeças.","f6c85c68616eeaaa15fcd53fdc52f6eb5c886357":"Invente qualquer número de robôs de negociação Binary, desde fórmulas simples a algoritmos complexos. Depois deixe-os negociar por você, mesmo enquanto dorme.","e6906a0d1c28b202f9bd49da4a6abbddca57399a":"O melhor de tudo é que, uma vez que você construiu o robô, podemos ajudá-lo a vendê-lo a outros negociadores na","1dd0cf79c572bcdbdfabbd54ee95710a21234d73":"loja Binary.com","abeef9a35ae6256796ba2462e4f64d308de42359":"Receba 80% da receita de vendas de cada compra do seu robô na nossa loja de aplicativos.","0606f0b7763ee6e8094a3dab7873d34c08fd3670":"Comece a desenvolver um novo robô já","221acaf3a0290adafe08cdcb8c66121c73d8b4a3":"Precisa de mais assistência?","d635b53e59c9aad8c5d78458826beffb029b27bf":"Obrigado, responderemos dentro de 24 horas","a69a8fc21499d0fd85e87bab467699827547a5bc":"Digite uma URL de servidor válido","1de91e827ec70ca735abc2c71b0a89cb0cfc4ce1":"Mercado subjacente não está selecionado","50050f06645ad2743165b429a8f7deebd285fd63":"Tipo de contrato não está selecionado","6a7d1a3a17c4e8ae6712cb60d46db1edf0aa2667":"Conecte-se","2f9f9096be1a1c0569a9ce54e57f0420f6b3c2e9":"A duração deve ser um número inteiro positivo","4df6e872792d72aea8a2f6b831d00b554464da23":"Valor deve ser um número positivo","001e68df3a4b32a4d57148d9d407f44eee3b7436":"A vela atual não é válida","04f14ea7c92e0b2b5ae005c696245063ec641d66":"A lista de velas atual não é válida","c1bbfcbb4f57d3a56c1239af0c2138321589efd2":"tentar novamente em","57b453bb26b1c28dfe362b7cc9f17f0be93dd581":"Limite de taxa alcançado para","094628ce13fc0e78f07b697d1cc9421bb2edd666":"Solicitação falhou para","816c52fd2bdd94a63cd0944823a6c0aa9384c103":"Não","5397e0583f14f6c88de06b1ef28f460a1fb5b0ae":"Sim","bbb930cc426507ed3f6b7c343c75dd0e041494b7":"extrato","e6e886cdcdefeb6d3edb4c31bed06dd183ac4153":"preço de venda","50e72909992bdc37c7c07769d1b7efac5e52874c":"prêmio","ecb5ba7044417916ba12de5fa9e6fccac3e5d475":"lucro","c980b910204c7babdffe8ff3f7e755f30133383c":"tipo de contrato","a726c6955157f1b8b92f9932652434a7150f80f8":"preço de entrada","a66d5c7ef2c63dbc9a8f9e6ae4e2bc575e74a36e":"valor de entrada","3905be81561384dc8c43d6127c57ed1e0eb03b74":"string valor de entrada","7674920c033ca14277c577e19c037a6754d4fa80":"preço de saída","e8b8bd9f2eabc12875605a37c93e7f04a713fcb8":"valor de saída","06ecea26625359f7dcf5ff5c47af6174ff815257":"string valor de saída","779455ee3bde8494d9629b353e17b19e92357ba8":"barreira","37a5301a88da334dc5afc5b63979daa0f3f45e68":"resultado","4973f4c599d5f42cf7bde52d66c3ed8ef77accb1":"Ganho","12e24a7d8ac40579e8a0aef4869288afe7ed6745":"Perda","563339f82447b4e758ad76d5a0b63b5698594fba":"Sobe","5c1ae82c29543ac887703776bf3da2c7dcce683d":"Desce","2fc096bb7b6596ab243d0286c9f43fdf2b9b406d":"Sem alteração","ecb252044b5ea0f679ee78ec1a12904739e2904d":"string","53b0a1b2fadf4e040cdc2155a7340de24aca93cb":"número","bc74f4f071a5a33f00ab88a6d6385b5e6638b86c":"verde","4c9a82ce72ca2519f38d0af0abbb4cecb9fceca9":"azul","96de5543d183d7de52ac5fa21c46fc811f673f89":"amarelo","78988010b890ce6f4d2136481f392787ec6d6106":"vermelho","aa9330a16e5b055de809256dad6b4d1cbd2999e7":"Silencioso","cf84a98d6cf7f156862a08ba8236467b6f471004":"Anúncio","eee2facd669d1434848c24da5527b3e87d9a12d5":"Ganhou dinheiro","9d705578b0f1f0ce3a06dc5e82f9a1e6078f81e1":"Trabalho feito","7f2f6a15cf8da2b27e5a4af47b58e7ad71c0b3d9":"Erro","a3b1583d377f37ac20de7e089edfa0920a078e57":"Erro grave","66c8b6848eee629c4ac551bf2b5fa591571654be":"Sobe-Equivalentes","5649dce3367d490fa19d563ee9e3d4c4b6f7c642":"Desce-Equivalentes","062787aa328047e189774b3703d983b83938f6e9":"Acima","b91eed4b7a80cd9572a27e65ebdff9caa4b3b9a4":"Abaixo","e3f139abb7a549a1210b36f7dbf89215ad6c9902":"Toca","7d7932bcc2e262ae98cf09dc5445130fb3881769":"Não toca","a16814a48ec58c2e24ba224a80921a5c02361abe":"Termina dentro","391d02cd75ebcd6ed26f5f45ddf7d40bf13e9dc5":"Termina fora","534ec5da4e82ec419abc170e1a8448f55a01664f":"Fica dentro","98cbe1998effd8b1a8aefdcc538573055e99a5f5":"Sai fora","93d13bad1d2c2841db127cb70cc35bfc98059fc9":"Asiático acima","c098658ce3d3a258e4d155949a60072966b36db7":"Asiático abaixo","ee2dbd5d6d82d0833069b07e7dd2848d3bf4d83a":"Combina","8444b7ce28bbc3443cc5cf73359b8353989b2a4b":"Difere","9e767ad03e5547f251044e0724dc1d9f3e75aeed":"Par","dc28f5f3c65ec611f0f30022650d24382d27448e":"Ímpar","18a63f5512afb5573e5b44deba78d629f0635317":"Superior","2a268b89b83f8cb38ea48e46e93dd8840db512f9":"Inferior","2155c8b38181dd2552e84a94049aacd33ef9c607":"Tick alto","1408cfd2b064b923f024fbe590e27db8282941a5":"Tick baixo","b86eb15dc4f13e4c2972de158d3038d9f657242f":"Redefinição - Compra","669a1f3d9a8f601a84da536cfdad1de4092b1926":"Redefinição - Venda","844d1a5c99a0a668383340cc095d040eef998c79":"Sempre acima","87293a146cd481a2b30cf74282ec061dc4cf0735":"Sempre abaixo","cf9b77061f7b3126b49d50a6fa68f7ca8c26b7a3":"Abertura","b1a5954a483f8f8b0207385095f74aeb409b3f80":"Alta","a124947cbd2d1d92b47e027274c3269ff0c7a84b":"Baixa","bbfa773e5a63a5ea58c9b6207e608ca0120e592a":"Fechamento","1173872a4fb205b713702f0eec5cf2c732c828fd":"Hora de abertura","808d7dca8a74d84af27a2d6602c3d786de45fe1e":"Padrão","62957ecfdc50957e8957c11d2eae74d078f0ef1a":"1 minuto","1dd3e663dfa7ac9cb77cfddd2cf8ac700657e2d6":"2 minutos","24e46784cbce32443db5a2638b1a7d3201543e9b":"3 minutos","3aa5819ed8a0b94d0f293db8e9c9598298ddd402":"5 minutos","a6f151883b736f0470d33492e61c72a7d059d065":"10 minutos","899761ff5425abd2ee214fa7aa46e27c6c8b5aae":"15 minutos","31bbe8890d28d183f8f7f2c160fa892c444c0ec7":"30 minutos","f030c3d667652646b86732ad7bc67e226c49cd3a":"1 hora","2046e49e33c040e08dbd6fd83df3e1846015e6f1":"2 horas","7b47150d431db70d783724007f07ab894eb8ac2e":"4 horas","191800b7e9a48680792c0dd77cb6cac00c4514c6":"8 horas","2d8a6f7c34468578640b333b8650131de06ac770":"1 dia","f94510322ecd9b3a2af67a10bd51ecc4ac6a24e7":"Acima/Abaixo","c1365a35e99d0f9147ebc72f21534cf471fa7d95":"Igualdades Acima/Abaixo","9c7960c6b11d35ac9d6cdc1ebaad3af43b2065c5":"Asiáticos","2260ce49306460c8a2ef501939f29ad6ddd4e934":"Dígitos","0186aa73a1b75fa8f0eb98bbd9ad01102bb09ec1":"Toca/Não toca","f7de1f66f0979667da275b7e8996e805395025a1":"Termina Dentro/Fora","a431deecd4c2258097adae418d496fe9a8179fee":"Fica dentro/Sai fora","256fe245cb7d3d673095f7faaa8c9ff81b985ad1":"Ticks Altos/Baixos","12a3f461cdebbc8f335190413ee6c57442743bba":"Redefinição — Compra/Venda","e696144fa588782e6d6b2c97e2d3ed1adf52bd5c":"Sempre acima/Sempre abaixo","91a64e3f83c91acf336c631fba295f297f94c399":"Executar-se após n segundos","024696596f26a4db232fd9e966eadfeb27c0bd1a":"Executar-se a cada n segundos","c538c170bdc6b0f3bb98dce44a016a2e2d45a6e7":"superior","85c274929bc0e28eafd3734f2c25046c3b95b36b":"do meio","346e3ee198e98146993894d3de8ecab1a86c3e80":"inferior","f16459104f92ab6b38aa265adb4ecbfc3768e303":"Histograma","e09f635f4e77476c9ca1c37bc9992e9ace3431c1":"MACD","27bed13a88c60350c3de92ec3820e1cc4f7d6ec3":"Sinal","19eabc961735d78f12fc7be906ffcb033853cf85":"Carimbo de data/hora","68f4145fee7dde76afceb910165924ad14cf0d00":"Mensagem","629777b7d4d610ace6dee24442730f27d7d0853e":"Arquivo não é suportado:","beb040c8fabd007c9cc5ac6a9feb6bdb05d33dac":"Quaisquer alterações não salvas serão perdidas.","410bf23a3f080def9c7a976a16305bcde7943ed1":"Tem certeza?","e99811bd3b1ad17e74614060ecb180602be35ad6":"Desconectou você!","876f3e0202ca40dedf2e5ab6577eba1ae637fb53":"Estratégias","8ce80462febd4d573cb2f9c1984fdc93b7c21c57":"Houve um erro ao carregar as bibliotecas do Google Drive","c4c758b5c8f5b3985f6bf7382c848bb44e0a5b74":"Conceda permissão para visualizar e gerenciar seus arquivos do Google Drive","3b6bbab905129dd36b8d4e99947fa30540ed7b2a":"Formato de arquivo não reconhecido","3d6b44df6eaf6236b4abc1aadcf8f5b1cda769c1":"Houve um erro ao recuperar dados de Google Drive","cdfe947b0c089a4a1f78c11299f25c32a124f1a6":"Selecione uma estratégia do Binary Bot","2db43c69a4b96454914f0b8272bc869984529e6e":"Houve um erro ao listar arquivos de Google Drive","0dcea5f584938e0fff00084b83156ab31d641ab3":"Houve um erro ao recuperar arquivos de Google Drive","18da95988117ff029393f3f5c881d70ef47f7385":"Houve um erro ao processar o seu pedido","04226bcf91195130e25fe7a8e8ea4d3e058efcb7":"Selecione uma pasta","aee24f2456ea8516b024a5d3e2b815ae7f2239d9":"Não foi possível enviar esta notificação do Telegram","3f370309b6280eb100f898426d8605c1f45d558d":"Registro de data e hora inválido","af6a4e2a5582be89ac930e946eaed86e01cac58b":"Data/hora inválida","49d51398b574e7312d99b18d2b93d2ede416f053":"Não foi possível enviar o webhook","05754ed14275a070a20a1d5cd65f0cea66f1da7f":"As propostas não estão prontas","79222cd9892a434aa61fc7dc01c3839951eb8d1e":"A proposta selecionada não existe","6ea4a034747d020b1d8ce4848def95d537555dd6":"Comprado","89f89c02cf47e091e726a4e07b88af0966806897":"ID","1200c1af2f7bba4e29a34112865662748c9d41df":"Não permitimos a revenda deste contrato.","62d6180e55905f7b996d442c53631981a4ef8b5b":"Vendido por","ed4978867de1da05b336b724a3fb96222a29ebec":"Índice deve ser um número inteiro positivo","87e2e01f93d25ba7ed582cc81ef5c9ab2959f4c6":"Valor do lucro","b2a4553586d1062c21323bca1dc0589f7a9d5cf7":"Valor da perda","46fc6f27a835486d63d9e927c6687e4508cb3087":"Número máximo de negociações atingido","9202ddae4cea16513e53bbc965d88ed975e59512":"Valor máximo de perdas atingido","5f52b397b7e5f538681f0f5717a88aa626349c7a":"Bot.init não foi chamado","66c7734789e19cbeef3a5ac185ea732139aed213":"Gráfico","3b662fb2e8bafce29aa98321b18874bb44905488":"Integração com Google Drive","7ee0ff5eaa6fa82bd6d83a2f4ca446c663f097cb":"Máximo de negociações consecutivas deve ser entre 1 e 100","93039e609d94a24f3572b794a31b21525a09af2b":"Não definido","ea67c8023c75375484f3a5f1aeb009b20059d5bc":"Limite diário de perdas:","b1946e5b4b78465b7661fd4bc89ff52de6c633e7":"Máximo de negociações consecutivas","952f375412e89ff213a8aca383d18e5691354347":"Iniciar","9f1c61cc03f3ef9324db05502f7f0b61e61e1521":"Limitações de negociação","095ba68888b5ace5f4515f5acab76dfa1073544e":"Meu computador","ddcb77ff769ea54ca622848f6bedd4004fa4f4fa":"Carregar","248e224f533752db28a1aab3519a58569ad96140":"Carregar blocos","c7097e97dcc446ca889d3ca6be733a65e2728afe":"Carregado com sucesso para o Google Drive","3218e5a460e82d7bdea9ce0f145cab2f47ba9a4b":"Salvar como coleção","611ebbfb080284312904de925ef0f75f4cb56ad2":"Salvar os seus blocos e as suas configurações para reutiliação em outras estratégias","efc007a393f66cdb14d57d385822a3d9e36ef873":"Salvar","a638caa8ab2b7ff7980a571334217339e6d1d634":"Salvar blocos","39fca63515c105918f03e4908ec12df675b07f92":"Trading View","85dfa32c97d8618d1bea083609e2c8a29845abe5":"Conta","d847919a30d31c0be624087f3370492b3fdf80c6":"Nº de execuções","5cd6978d63540c8a490ef76f43219de6362f958e":"Aposta total","17410d7b62b8b1de981cfebada24632987edf186":"Prêmio total","b841eeb091f1ff0e14be08e5ea1b93e4cf147ed3":"Lucro/Perda total","90eef613042c5a51f542421065b68b886d473807":"Saldo","db1c784524e1b54011a95823026161f7c8517fe0":"Referência","4db3e9e4aecd187db9339a10d2629fef46724dc4":"Tipo de negociação","1bb4086b66659d8580f9be4beef69931aeea3cad":"Preço de entrada","8bf249c4855e591964bd5bdd35c8ef2ee107342d":"Preço de saída","ba7be969e7c1bb5f22489e843478e3d721aaa843":"Preço de compra","772fbced18230220d2d9be1456be16fc1b271d25":"Lucro/Perda","bae7d5be70820ed56467bd9a63744e23b47bd711":"Status","96f608c16cef16caa06bf38901fb5f618a35a70b":"Pendente","7fb3a9b5101bcd45e2dca077191693a5199bafa9":"Liquidado","82a82f798dd773717ec37d15fd4405510291734e":"O robô não está em execução.","6a88e58aa1798626f94cf17f1a91618b405bb289":"O bot está iniciando...","624cc7f40b68faace7e78d8e5c5be1d4f15facda":"O robô está em execução...","788180a6ddbbbcca10f6f49d8e85d557934bae0e":"O robô vai parar...","d907a40a4a15da3c21a6e0f8ace3f987d482f92c":"O robô parou.","4f219c17ab9ab76aa1cd431b4e0e5ecf5520e8e4":"Tentando comprar","4684ee1026d9b4c872d016c3c4588a0c479a451c":"Valor de compra","ca92c55b9e4233d771d5b6300fe751a9678d1deb":"Compra bem-sucedida","f02760cd2eac28169f0a990c950c3dfe8427f772":"Contrato fechado","fadc0ef93d1ff13370524ce8481ddc4a71195934":"Reorganizar verticalmente","a479c9c34e878d07b4d67a73a48f432ad7dc53c8":"Baixar","e4458464df6cbb8da1134875ba51519c5d244d9f":"Blocos devem estar dentro de contentores de blocos, blocos principais ou funções","e9c45563358e813f157ba81b33143542165ba84e":"Aviso","31cb6f44d030abeabcc7046555dea851602a87a5":"Esta estratégia não está disponível no seu país.","9ce3bd4224c8c1780db56b4125ecf3f24bf748b7":"OK","486d55264892207fef1ed5799e0b213b446d3eaa":"O arquivo XML contém elementos não suportados. Por favor, verifique ou modifique o arquivo.","a594b427eaf0f108d3e9cc20d70e15da811c760c":"Estratégia não suportada","04a5090686ac7b54822e00a9ff08c38a107601e7":"Desculpe, esta estratégia não pode ser usada com o Binary Bot. Você pode usá-lo apenas com o DBot.","77dfd2135f4db726c47299bb55be26f7f4525a46":"Cancelar","fdaa08aeaee0bf9b78d83ea19ef9e9bd019e8193":"Abrir o DBot","f1d8b7b118d6f82f95614d476bc11af650aed3bc":"Não foi possível carregar o arquivo de bloco","af145748c9cf765a3b059eec20cb1dbb899297d8":"Os blocos foram carregados com sucesso","11ee9c5d534cc8d22651092222b532917594161a":"A duração mínima é","5283ac04c9a8ba8a937d1edb4ba986aeefce8bf1":"O número de tique-taques deve ser entre 5 e 10","ace1342bc3720b77ce510b93074041e7386d209e":"A hora de expiração não pode ser igual à hora de início","fed3e7bd6696fb97a12d720845ab5388456bfc3b":"A previsão deve ser de um dígito","d466687f90ba548434d65186d11a80c4204f9ad6":"deve ser adicionado dentro de:","6ddf2b3075ac9ab5d66b40e15ea9a34c087672ea":"deve ser adicionado dentro","33aa6ff282ee509d37c6f758274c9156b419ff73":"A estratégia que você tentou importar é inválida.","da162a909c2981ed318d23cd9a6be1d66e0a8400":"Formato de arquivo não reconhecido.","5e719fa76e1b6cb396376c82ebdd04bec7253229":"Blocos remotos a serem carregados devem ser uma coleção.","b0d2de25daf6ba09a5e710c6968ffded29c4dae1":"Não foi possível carregar o arquivo de bloco.","df84a88f38b03b5b342362d72370b0d66afdae35":"O destino deve ser um arquivo xml","cd680fd936e9559ef1d95efac7a71680e2b13a89":"Este URL já foi carregado","34c59389053701a04127f74d32315e0206e076f8":"Ocorreu um erro ao tentar carregar o url","3ead0b14c72503187691a7a6d7121987299bd401":"Isto não é uma versão oficial do Binary Bot. Use por sua conta e risco.","27401c9c8e476d659c8382e05c6d70a4a82be468":"Versão oficial","bc981983e7f547dc62e19a1e383acfe00782a6d5":"Próximo","b52b36b7269fbfc58ec24bb724691951a3decbe8":"Voltar","e9b450d14bc2363d292c84f17cfad5cfbd58a458":"Concluído","29cadadfebdd578a50b7b3d1b2c5b33e424d5de7":"Faça uma rápida visita","a48e81d4a8da67637b46725824177a959fe99b21":"Pronto para aprender como usar o Binary Bot?","6f3e6ebf249947cec4f64117253a8fe43335ae79":"Não obrigado","fcb6e90e7223e1d1d735f15dbb7ded9d81bbe7ef":"Não me pergunte novamente.","4ca0a75c2b7fa7da4364d03b72c46fee1860a2bf":"Espaço de trabalho","5fcf29b9f0b8971c8148e70a150ddc9ac04c94fc":"Arrastar e soltar arquivos de bloco.","ddcbb5361b1a16eba60fca2383fb297bb90ed9b3":"Baixar estratégias de amostra","1758356db21759f7c5a0da9b4dd1db8fd6feab3f":"ou","00b581632c1532969a7128ebc8eae936ed8af04e":"crie as suas próprias estratégias.","d171baee235d4c93f63755a876782dc5be4c3e47":"Caixa de ferramentas de blocos","056f19272d96f902c38207cf163ea8dbff7fbd32":"Adicione mais blocos daqui ao seu bot.","36bae31694f85bd7a5b0ad45e51ef622b95baadb":"Contas","f5c47fd3b3553b10441a06054078cea745177dea":"Conecte-se antes de iniciar o seu bot. Teste sempre as suas estratégias com a conta virtual.","fd825ae94aa79500a878dd4590a4b360e7162663":"Controles do bot","6ee7980833e1ed72901b919ffd0fa20e1a251d3f":"Controle os seus blocos. Mantenha o cursor sobre cada botão para ver mais informações.","f5169c84497de3aea74f7da9e7e177d1427e736b":"Divirta-se!","4f1b3d682c2a00b393c33637da402463bc11d5ff":"Deseja relatar um problema ou pedir ajuda?","0049f8894e41937ebb9111cd3def6749049fb50f":"Clique aqui","aac1569ccf6b1a11b0ad0fbefdb9ffc777b4c733":"Clique para selecionar","d1a17af19f5388af9d6596cc0ea7dbb1d739e255":"Não disponível","53adebdc2b1cbbedb56395b19a73fe47b87cc554":"Tique-taques","5fb1db527825d2996e37c655e5dec49d4da80c09":"Segundos","092f99ea11a34a8490e7a767a83a42fc45634f82":"Minutos","9e25a34e635a123f8958bbe26e7c4843278597fb":"Horas","f6bb0f468a8569c67b3d6826e57e62c5500c3681":"Dias","db6708630fc646eb98298d9acd701e0a1ac051c2":"Salvar os seus blocos e as suas estratégias no Google Drive","85538d002a336c5addef8d189d80976cf7758f8c":"Você está conectado como","b65463cb6a42a17de514acc4659f7fd331e0876a":"Conectar-se","ed28e0686e1251ba046f582a3e9ec02470a5e78d":"Desconectar-se","cd5f85b6f187605f82386eacd680f93820af8d11":"O resultado é","1e38ce3d180cefae485a6986ca7c67841e30376f":"Verdadeiro se o resultado corresponder à seleção","5c89497fc3c128e2ff865ce8df15356054f2c028":"(4) Receba o resultado da sua negociação e negocie novamente","14ea81918758c994cbe3178e695e56afc1ef2b45":"Receba as informações e o resultado da última negociação e depois negocie novamente (Executa-se no final da negociação)","5098e2bcc96ee227983c9f7eeddfd226c220ca00":"Dado do contrato:","251c830f8f869e0887e8b4dc4c30ba1738c7097e":"Lê uma opção selecionada da lista de dados do contrato","b3b543c80063a116ced4965d8537b7b62d14c0b7":"Negocie novamente","a1eeb7c1e92e9a5d9323ed8ebd7ca7ffed8b0232":"Executa o bloco de negociação novamente","ca5586bdb5bdc1a2c0baf53ed0ecd21fafabebe7":"Venda disponível","03bad10717e183b24829baf483dc715e1a44bf7b":"Verdadeiro se venda no mercado estiver disponível","2c71ed279a402e93312dbda173ab18f244d6bf46":"(3) Acompanhe e venda o seu contrato adquirido","17632a9f51611d2579d95b4b1ccb9476566d7ccf":"Acompanhe as informações do contrato adquirido e venda no mercado caso disponível (Executa-se na atualização do contrato)","579607dc4f989ce2b94b558431666a0ab07ac1f3":"Vender no mercado","e20afd5cf3811a42071c9a312abb2afdad4c590b":"Vender no mercado.","4712cbff8e92822fc960ef9c0197293a19675eae":"Vender lucro/perda","df817b48c7a076561b4f8bedc52d65d2e351ab52":"Retorna o lucro de vender no mercado.","da3105e38c42a481ad7230ed393b0e12bebe9c4f":"Preço de venda","343fda69c73b78b84967055aae97f790c422adfd":"Preço de venda da proposta selecionada","d4d34ce9d9dd7e87213469f88cb7ac43725675d5":"(2) Acompanhe e compre o seu contrato","fb61a3c71f4c488b3b470cb7daf502a3e9b5ad48":"Acompanhe o fluxo de tique-taques e compre o contrato desejado (Executa-se na atualização dos tique-taques)","9bb396940adb9705fe57eba6ea8b578e6aafa792":"Prêmio","87da93a46d143f6019979b3548414d9d7adabb35":"Prêmio da proposta selecionada","160f06d4799c85021a810f68c5b517eea37a2737":"Comprar","4c2fdde3d9c1950498ed263d6ce21d4bf3d0800b":"Compra um contrato selecionado.","b44e884c355e447d0da0e6ba45caaff18c84373b":"Bandas de Bollinger","d6a2a207343bd83aacdc80b579ff4419713a256e":"Lista de entradas","170a28a9db6d27d7212fc6dc249434a57517e7bc":"Período","b833989d69900a4be9e32d1bab65c8f8233f099e":"Multiplicador de desvio padrão para cima","1cee82f19c0bedef64f68b32e6b02128efe7c61b":"Multiplicador de desvio padrão para baixo","974da601086448d0060aeed90e53ddd5acd17b91":"Calcula Bandas de Bollinger (BB) a partir de uma lista com um período","d5b65cac1f1cf9421ac978eebe532de99040cca6":"Série de Bandas de Bollinger","58de49791c64aba14e36e5887244a5ef088286cd":"Calcula Bandas de Bollinger (BB) a partir de uma lista com um período","4bd99f76f1104229744455d93df0ff76b9eeed58":"Média Móvel Exponencial","ea615c6d6a74e25a6d2f1bc9980b46e73508c2eb":"Calcula uma Média Móvel Exponencial (EMA - Exponential Moving Average) a partir de uma lista com um período","4082d9379e59b38c891d046312f8d3c4b64ae3b1":"Série de média móvel exponencial","562edc102c5dd9e2fbbede1140b8a5461c2d4dc8":"Calcula uma lista de Médias Móveis Exponenciais (EMA - Exponential Moving Average) a partir de uma lista de valores com um período","a537f4f3c0f6c68bf896fb23cb2ecdc658488ea2":"Série MACD","b18e572ea14edd48587145f1ef50718adbf256c6":"Período de rápida MME","974023bddd6249d0f6404872cfcae205b2599ea2":"Período de lenta MME","5c2adcb3d1bfd6b9f5c2dec13d02a9473e4445a1":"Período de sinalização de MME","6b15ce93fd68d80aeee7f7964c1306044c3c1baf":"Calcula a lista de Convergência e Divergência de Médias Móveis (MACD - Moving Average Convergence / Divergence) a partir de uma lista","95ec92885c855ba9cf734c17a43f081901e4d2cc":"Índice de Força Relativa","b033619e108c9e43bfd8a42cd97bf5c5dc86dc65":"Índice de Força Relativa (RSI) de uma lista com um período","4034de66995b876b2ba9bfd0274025e39168e05d":"Série do Índice de Força Relativa","f9da880c8b0e4cce4431912c24eba939e6bc06e1":"Calcula a lista do Índice de Força Relativa (RSI) de uma lista de valores com um período","a9842c95766da40bf4ea6ee263cb5a5985847763":"Média Móvel Simples","347775a293c14362d492f019e677c965be1d6e7d":"Calcula uma Média Móvel Simples (SMA - Simple Moving Average) a partir de uma lista com um período","4cc7b9e53d082896ad884eb01be16320af65f282":"Série de Médias Móveis Simples","2c75179a57af3c36581008b65e86ed81c4a4cbea":"Calcula uma lista de Médias Móveis Simples (SMA - Simple Moving Average) a partir de uma lista de valores dentro de um período de tempo","39f024cf49724fe7ffdea7773c72ed06eec998e1":"com intervalo","e4bed3e67e58b2334ee4b9c6ce59ac7a95d80aaf":"Direção é","ad47561efb1dcbd7246d9b64487f615647fda036":"Verdadeiro se a direção combina com a seleção","05bef508aadd62bf3967dcf67d769da296f19989":"Direção dos tique-taques","d089ab98a846a521b09aad6ff3fefa728bfa8b42":"Bloco de direção foi preterido, por favor, use a verificação de bloco de direção em vez","cdb31fc857f01a59f664413498293c714285f46d":"na lista de velas","20fd5f86f08796f145d69dedc209a27e459b2f51":"obter n.º do fim","a96606af8c33ac3428b45abc4782dbf93f458d29":"Obter a n-ésima vela mais recente","90ed0e1ea5c1907f8a32d8051a66e845857bb2a4":"Lista de últimos dígitos","248428facb97408414180d4de74e4db35360fbc4":"Retorna a lista de valores de últimos dígitos","2e4202acde880b7b1c3686f0335ff879fc1e5c7a":"Último dígito","e46e0bd2f7fe37217dec8aa26ebce8ffa3608663":"Devolve o último dígito do tique-taque mais recente","d5fde4c9d5edf660f760fc226df4d2678d3334ab":"Lista de velas","95e552a40d3446c96905cd3ec7e3d123d0246ce8":"Devolve a lista de velas","5a0ed227a01b7d30b05dcaf3e1c23b74b9be6ff4":"Fazer lista de","a4220593d385a720886f7af1ed3c478fd0c6339c":"valores na lista de velas","cd8cdf3d47e921c8a72addae9269e66041d417c5":"Devolve uma lista de valores das velas selecionadas","3e4f335e7a6f79bd1bafd219ddde30acbf16a7ac":"Ler na lista de velas ","34037f9452fdb66c9ca27ebcc0afe9d5139e9e24":"N.º do fim","aba43a580daa7f306956ec69b83e6e37e7233126":"Ler o valor da vela selecionada na enésima vela mais recente","e04b522218a181cf0223042dd18ae08dcc22d8d3":"Último tique-taque","6ee445fc253a55c9ed54c009c3f020ac65200d80":"Devolve o valor do tique-taque recebido por um bloco de pré-compra","ed44b69176217a1251c04f0c13d23ac789ea60b2":"String Último Tique-Taque","ea24dd1988c6534a5f0d11b8fbbc6c374fe68766":"Retorna o valor do tique-taque recebido por um bloco antes da compra (String)","4b2340a890e88d1886757c3f7172e273a1edc31f":"Este bloco é chamado em todos os tique-taques","b54d7b4590559dad64f02d09aacbf6d9863e2624":"É possível usar este bloco para analisar os tique-taques, independentemente das suas negociações","ebffc758056e6b2fc2af99af17fbc6853e5d3583":"Lista de tique-taques","17649cac8739adcae95e641f794880272ad33bd1":"Devolve a lista de valores de tique-taques","46ecdefde6a8dd5872cc6e0e52afb717f1140426":"Lista String Tique-Taques","3bdc75d5d68b05dfd3ce6dcdf7d9773e60ed0a51":"Retorna a lista de valores de tique-taques (String)","802dc02469ae51067ca620ff57dfb5bdb3e524ac":"Saldo:","c4ee8e12b2484cd5b47cdf00bfa2c50b83e91d3d":"Obter número do saldo ou o string","69280143949fcd59c171dd60f6b6e13d0cc08fe6":"Os blocos no interior são ignorados","d072c2ceeb5c1217722d14c74de7aeab945b4215":"Coloque os seus blocos aqui dentro para prevenir que sejam removidos","e98ea4ac4e2cfd6a4c84386534c5d1acd7ec85d3":"Chave: %1 Valor: %2","27305f6365c38dd36f5b5eb781e05b5e2e4e3f6e":"Retorna uma representação de string de um par de valores-chave","b06acc4158c824231f727a13e1c9811f43d5be42":"Carregar blocos de","661db37251a1ed1afe357ee13895f37a623d7cbf":"Carregar blocos da Url","6c03ee54ad3a51fc92a1d69943e99667847705b6":"Notificar","b1bec5d06e3672915d81b2fbc2347c8b4947a954":"com som","a2d0c89fdfff3176efd4a443eb0f6607067b93e7":"Cria notificação","6e0fc122f936f808bc2e3af661121b65712ae855":"Notificar Telegram %1 Token de acesso: %2 ID de chat: %3 Mensagem: %4","1aeb6caed9e46edf5d6224adc905ffb8ee3a7708":"Enviar mensagem ao Telegram","45ebd38f4c641ebf6f72be8c3a79dfa50cf9f20e":"Lucro total","ffb465875e1ff2b49bcaa7c6b70965ffe39fa59d":"Devolve o lucro total","532e65f6e266db0bb442d1f426d44d7d32962340":"String Lucro Total","78e84591ff76f992953a8e19b57c7eab7546d638":"Retorna o lucro total (String)","bc528d26f66fe8c4aa4bb24ec9c99dff12c055e0":"N.º de execuções","bea5756b18644ccfab01c1c0dbd6fa9db7103379":"Devolve o número de execuções desde o início","7d500ebe352ccfa932b253e21938813a06fcff8e":"Webhook URL: %1","e770fd2a6b980a0815592b1bd499127c5a5cfe39":"Envia uma solicitação POST para uma URL","a35646754dbe7a9211ba8b81338a5d64580eb276":"Carga útil vazia","69b0648eddd207cd45a9e1ba973dae287b535576":"Carga útil:","c67ded6b64019212eb2bc69afd761f5b3f626040":"Adicionar sinal a um número para criar uma deslocação de barreira.","569bbd757e1bb8bbccd250b98dc2bb37cb47b787":"Mercado","74751e67c3e1010c343095eaf543e7cb21ced2ef":"Tipo de negociação","1f4698382842477e211eb46de81fa506f01a8c34":"Ambos","c1baf816aac5a5cd849768773fc248cd249dc296":"Tipo de contrato:","c93025710d1ae6cbaf8e710f63eca8edfa0c9399":"Intervalo padrão de velas:","9693aeaaf68e3929b59b79306feaa0a847d01192":"Duração:","78d7103a319e808455d397513279d99f3b3f3768":"Aposta","10c02649e226d430bd75a5b6315a41c0db9992a2":"Barreira","837276742aa90209dde3b4eef07d8e7ab26731ef":"Previsão","258b49925b41751c6bd790a0848246566ba61440":"Reiniciar compra/venda no caso de erro","c55ee3445cd391ab299b6f85a6ea9a68a65ea64d":"desativar para melhor desempenho","b410994b67e37d9516eb9b866c85a8c639f79e68":"Reiniciar última negociação em caso de erro","2260c5a971c2602834ef8feeb5fa522f900b469f":"robô ignora a negociação mal-sucedida","cd1495cb4c60266a6abad9024022ae079bf7e416":"(1) Defina o contrato da sua negociação","0745acf92abd7b60598f161717884cc45dab8694":"Executar uma vez ao iniciar","999e1ade10ff5ee1d115f5a6288bfd2e0d0736e6":"Definir opções de negociação","a43c3299d30a5bc7e31a574cdc87f59cbc8fe585":"Defina o contrato da sua negociação e inicie a negociação. Adicione inicializações aqui. (Executa-se ao iniciar)","d571f33d957ebcab086ecf38eedd71b6ef0c5820":"Opções de negociação","4d22b565e4253e92a908f216184779679bb1a044":"Barreira alta","b70c38c6db3127422e05315c30bdf76c7c36c480":"Barreira baixa","a6c5f081b3addee364af1c8cdb84853f49dc8e07":"Absoluto","0f2ba74929aca6fea950e351dcd576b7cd841fa4":"a vela é preta?","7cb3b482ab66947d439642ec64dc7f5bd4e065dc":"Faze lista de","5925d08228e246f07b790b88ad70c1b73a97d2bc":"valores da lista de velas","852b438f91ad9eb2cdd84419a675a216d543c687":"Ler","67d3b35a0b740127b56bcd44d3bcb1ccc20e0b48":"valor na vela","d79d854dcd0829e2177a47beab6a55569e781ab1":"Leia um campo numa vela (ler da lista de velas)","5606b4460ac96063b8a8e5647008f3ec97252fc5":"Segundos desde o epoch","2de20bdeecb1a8c28bd36fe75f028ed4318d0348":"Devolve o horário epoch (segundos desde o epoch)","f43cb41af7ce8a69c7aecbc1c603bb0381270982":"Executar a cada","4b6fe6898f0f956d48a4c8172c6dfbcb4159ab09":"Segundo(s)","2eea87bb804e4e73e3f8e9c41140f7ed83ea8875":"Executar os blocos no interior a cada n segundos","e0af6ddc8a892704f64680bcb22b30c4bfcefec5":"Bloco executar a cada segunda foi preterido. Contate-nos caso tenha um válido caso para uso.","7b9c76088576a64f32d67ec335162b9f73eaa026":"Executar depois de","ff56ffac023cf69ca5c7f71d407499536f4f86b5":"Executar os blocos no interior após n segundos","e9fb732dde76a6977bcaa2818b0f56125b183648":"Até a Data/Hora","1a90ae7cb728e7f25b031d7e844882f75e74ab5c":"Para Timestamp"}
 
 /***/ }),
 /* 249 */
 /***/ (function(module, exports) {
 
-module.exports = {"3d52a6d8fedcc48a65297c07bf5f7e3e41aab5aa":"Lógica","3edf0df49942da6d11a1a217e4d3af4a5a8e64f2":"Matemáticas","c3328c39b0e29f78e9ff45db674248b1d245887d":"Texto","4d064726954a17487f94e931f5b157b733ec22ed":"Avanzado","a1fffaaafb7cc996685bceb829c053cc4f7de43d":"Lista","19de69cb601f53a4ea7af22a65c71ae63251365c":"Variable","2b961dea1dc0c60ddf9a2c8e9d090f6f7d082483":"Funciones","dc7f77b4ccfc9f70a78bd97303bd10ba4c9d70c8":"Loop","66639f7d455dd71faa9147f5d69e5ce885d8bebd":"Binary","0ba66deaab2f2cd3b0793d03f600ee2b8f577fbc":"Definición de negociación","9201c6ac624e98e168e6ccddbcd5a9b5cdff06b3":"Antes de la adquisición","44ab9a87268d3fd74040ed0b55c04f83294cfdef":"Durante la adquisición","c415c9399b7ae7285d2c1c880a6a0aa18f62ff8c":"Después de la adquisición","d07ffc19d51f0973859a0d95c1d15cd9f22388ca":"Análisis de los intervalos","8cf71374fa095a64b5295b672daef8507ec7be6a":"Indicadores","4fa8cc860c52b268dc6a3adcde7305e9415db5bb":"Herramientas","6c82e6dd86807ee3db07e3c82bec1ae1ce00b08b":"Tiempo","8d8fd6765e184419cad8b88d1a60c895d79578c2":"Vela","548f449b63ff41eaaff5a2d679ffa56b2015fc20":"Misc.","8bf95ea372568c7a254ba9fada5f6f1701ebc5b5":"Log","12b71c3e0fe5f7c0b8d17cc03186e281412da4a8":"Resumen","9feddbabd7e7309e96c590069057158e96baa8f6":"Verificación de la realidad","038fe2bdb7ec6ee078f60bdb5bee94654ec6a81d":"El comercio con opciones binarias puede convertirse en una adicción real, al igual que cualquier otra actividad llevada al extremo. Para evitar el peligro de una adicción así, le ofrecemos una verificación de la realidad que le da un resumen de sus transacciones y cuentas de forma regular.","4152043e8c670075d2c919677e835edb0d923cab":"Por favor indique su intervalo de verificación de realidad preferido en minutos","d9fff2df19e90f2c7ea6bb30fde4e0da119d13d1":"Por favor, introduzca un número entre 10 y 60.","2439f2f199b2a3e798aa9b4feaa9248bdec9bc0b":"Seguir operando","a72ca256dc49e55a1a57b9a727fbde9834c9a3f7":"Extracto","6e78c91f5a05fc0d4f1a787d38e3d6fe2f856d46":"Cerrar sesión","4832e45812a2724f16a15f9ae87adfc8ae4168cf":"Contáctenos","f7c400ed695f898b8ee9d21664aa17b5bb693828":"Iniciar sesión","5ea75f1605a4bf1db5c39fcc61854627478c0a7d":"Restablecer los bloques a su estado inicial","f98595d541778d86f75ef22b3328a031d20aa16b":"Cargar nuevos bloques (archivo xml)","4a1e616226c329a94da7768bc0435a3284478010":"Guardar los bloques existentes (archivo xml)","6b3465ace62f33f0687b4669ac26d95895e9ca52":"Conectar Binary Bot a su Google Drive para guardar y reutilizar fácilmente sus bloques","8e4ec2c451ec7b1bf68d72fe9086ec978e41feb7":"Deshacer los cambios (Ctrl + Z)","937f5055f05be359ddf619744e8af4d643549e80":"Rehacer los cambios (Ctrl + Shift + Z)","8406d1cce44230835932060649e999ca3283b413":"Zoom In (Ctrl + +)","1109673172af2c173c492622ff8a72c8f29f0e70":"Zoom Out (Ctrl + -)","44c22002c65d2871331263a23c3e09c0a1bfd847":"Reorganizar verticalmente","ebd0945359e5578ff9bd3a2ab490ca84c225d8f5":"Mostrar / ocultar el resumen emergente","76bb05950f80f3a88ee05ef3276c5934fd355e8d":"Ejecutar el bot","ba50a42d8d3228c37a817865fce49fbca692c2ad":"Detener el bot","4f4aa4117318a8ddf8783885d4f3542c5b2733bd":"Mostrar log","91017ef9b165cd0e7475a770f318ea5e705e1321":"Mostrar gráfico","c89e3dd1cafcadcc0312e476ab58b2332209da23":"Mostrar Trading View","b02c858e72be118a65c9393930351012b647cb9e":"Encabezado conmutador","250be77f7605669a0b3d968b9ed381a3d9787ed1":"Abra un archivo XML ya guardado y recupere sus bloques","ff29ccd7a6c6073cc462ed590d27a91632fdf67e":"Binary Bot","608061fb5aab975013fa70c5c814a1d8ba30c152":"Negocie más eficientemente de lo que jamás pensó posible","e4ce8dc3e416e69262ba642dc57d3975d6616980":"¿Interesado en automatizar sus estrategias preferidas para negociar opciones binarias?","f261237ca8beec6f77b76c4121feb8da22818c56":"Binary Bot es nuestra herramienta de programación de vanguardia que le permite crear aplicaciones de comercialización a través de una función sencilla estilo \"arrastrar y soltar\", como en un rompecabezas.","f6c85c68616eeaaa15fcd53fdc52f6eb5c886357":"Invente cualquier tipo y número de bots negociadores de opciones binarias, desde fórmulas increíblemente simples a algoritmos altamente complejos. Luego, déjelos negociar por usted, incluso mientras duerma.","e6906a0d1c28b202f9bd49da4a6abbddca57399a":"Lo mejor de todo, una vez que haya construido un bot, le podemos ayudar a venderlo a otros operadores en la","1dd0cf79c572bcdbdfabbd54ee95710a21234d73":"Tienda Binary.com","abeef9a35ae6256796ba2462e4f64d308de42359":"Reciba 80% de los ingresos por cada venta de su bot en nuestra tienda de aplicaciones.","0606f0b7763ee6e8094a3dab7873d34c08fd3670":"Comience a construir un bot ahora","221acaf3a0290adafe08cdcb8c66121c73d8b4a3":"¿Necesita ayuda adicional?","d635b53e59c9aad8c5d78458826beffb029b27bf":"Gracias, le responderemos en 24 horas","1de91e827ec70ca735abc2c71b0a89cb0cfc4ce1":"No ha seleccionado el mercado subyacente","50050f06645ad2743165b429a8f7deebd285fd63":"No ha seleccionado el tipo de contrato","6a7d1a3a17c4e8ae6712cb60d46db1edf0aa2667":"Por favor, inicie sesión","2f9f9096be1a1c0569a9ce54e57f0420f6b3c2e9":"La duración debe ser un número entero positivo","4df6e872792d72aea8a2f6b831d00b554464da23":"El monto debe ser un número positivo","001e68df3a4b32a4d57148d9d407f44eee3b7436":"La vela actual no es válida","04f14ea7c92e0b2b5ae005c696245063ec641d66":"La lista actual de velas no es válida","c1bbfcbb4f57d3a56c1239af0c2138321589efd2":"intentar nuevamente en","57b453bb26b1c28dfe362b7cc9f17f0be93dd581":"Alcanzado el límite de tasa para","094628ce13fc0e78f07b697d1cc9421bb2edd666":"Error en la solicitud para","816c52fd2bdd94a63cd0944823a6c0aa9384c103":"No","5397e0583f14f6c88de06b1ef28f460a1fb5b0ae":"Sí","9bb396940adb9705fe57eba6ea8b578e6aafa792":"Pago","78d7103a319e808455d397513279d99f3b3f3768":"Apuesta","bbb930cc426507ed3f6b7c343c75dd0e041494b7":"extracto","e6e886cdcdefeb6d3edb4c31bed06dd183ac4153":"precio de venta","50e72909992bdc37c7c07769d1b7efac5e52874c":"pago","ecb5ba7044417916ba12de5fa9e6fccac3e5d475":"ganancia","c980b910204c7babdffe8ff3f7e755f30133383c":"tipo de contrato","a726c6955157f1b8b92f9932652434a7150f80f8":"punto de entrada","a66d5c7ef2c63dbc9a8f9e6ae4e2bc575e74a36e":"valor de entrada","7674920c033ca14277c577e19c037a6754d4fa80":"punto de salida","e8b8bd9f2eabc12875605a37c93e7f04a713fcb8":"valor de salida","779455ee3bde8494d9629b353e17b19e92357ba8":"barrera","37a5301a88da334dc5afc5b63979daa0f3f45e68":"resultado","4973f4c599d5f42cf7bde52d66c3ed8ef77accb1":"Ganar","12e24a7d8ac40579e8a0aef4869288afe7ed6745":"Pérdida","563339f82447b4e758ad76d5a0b63b5698594fba":"Aumento","5c1ae82c29543ac887703776bf3da2c7dcce683d":"Baja","2fc096bb7b6596ab243d0286c9f43fdf2b9b406d":"Sin cambios","ecb252044b5ea0f679ee78ec1a12904739e2904d":"cadena","53b0a1b2fadf4e040cdc2155a7340de24aca93cb":"número","bc74f4f071a5a33f00ab88a6d6385b5e6638b86c":"verde","4c9a82ce72ca2519f38d0af0abbb4cecb9fceca9":"azul","96de5543d183d7de52ac5fa21c46fc811f673f89":"amarillo","78988010b890ce6f4d2136481f392787ec6d6106":"rojo","aa9330a16e5b055de809256dad6b4d1cbd2999e7":"Silencioso","cf84a98d6cf7f156862a08ba8236467b6f471004":"Anuncio","eee2facd669d1434848c24da5527b3e87d9a12d5":"Dinero ganado","9d705578b0f1f0ce3a06dc5e82f9a1e6078f81e1":"Trabajo hecho","7f2f6a15cf8da2b27e5a4af47b58e7ad71c0b3d9":"Error","a3b1583d377f37ac20de7e089edfa0920a078e57":"Error grave","66c8b6848eee629c4ac551bf2b5fa591571654be":"Rise Equals","5649dce3367d490fa19d563ee9e3d4c4b6f7c642":"Fall Equals","062787aa328047e189774b3703d983b83938f6e9":"Más alto","b91eed4b7a80cd9572a27e65ebdff9caa4b3b9a4":"Inferior","e3f139abb7a549a1210b36f7dbf89215ad6c9902":"Toca","7d7932bcc2e262ae98cf09dc5445130fb3881769":"No toca","a16814a48ec58c2e24ba224a80921a5c02361abe":"Finaliza dentro","391d02cd75ebcd6ed26f5f45ddf7d40bf13e9dc5":"Finaliza fuera","534ec5da4e82ec419abc170e1a8448f55a01664f":"Queda dentro","98cbe1998effd8b1a8aefdcc538573055e99a5f5":"Sale","93d13bad1d2c2841db127cb70cc35bfc98059fc9":"Asiáticas arriba","c098658ce3d3a258e4d155949a60072966b36db7":"Asiáticas abajo","ee2dbd5d6d82d0833069b07e7dd2848d3bf4d83a":"Coincide","8444b7ce28bbc3443cc5cf73359b8353989b2a4b":"Difiere","9e767ad03e5547f251044e0724dc1d9f3e75aeed":"Par","dc28f5f3c65ec611f0f30022650d24382d27448e":"Impar","18a63f5512afb5573e5b44deba78d629f0635317":"Sobre","2a268b89b83f8cb38ea48e46e93dd8840db512f9":"Bajo","2155c8b38181dd2552e84a94049aacd33ef9c607":"Tick alto","1408cfd2b064b923f024fbe590e27db8282941a5":"Tick bajo","b86eb15dc4f13e4c2972de158d3038d9f657242f":"Reset Call","669a1f3d9a8f601a84da536cfdad1de4092b1926":"Reset Put","844d1a5c99a0a668383340cc095d040eef998c79":"Solo Arriba","87293a146cd481a2b30cf74282ec061dc4cf0735":"Solo Abajo","cf9b77061f7b3126b49d50a6fa68f7ca8c26b7a3":"Abierto","b1a5954a483f8f8b0207385095f74aeb409b3f80":"Máximo","a124947cbd2d1d92b47e027274c3269ff0c7a84b":"Mínimo","bbfa773e5a63a5ea58c9b6207e608ca0120e592a":"Cerrar","1173872a4fb205b713702f0eec5cf2c732c828fd":"Hora de apertura","808d7dca8a74d84af27a2d6602c3d786de45fe1e":"Predeterminado","62957ecfdc50957e8957c11d2eae74d078f0ef1a":"1 minuto","1dd3e663dfa7ac9cb77cfddd2cf8ac700657e2d6":"2 minutos","24e46784cbce32443db5a2638b1a7d3201543e9b":"3 minutos","3aa5819ed8a0b94d0f293db8e9c9598298ddd402":"5 minutos","a6f151883b736f0470d33492e61c72a7d059d065":"10 minutos","899761ff5425abd2ee214fa7aa46e27c6c8b5aae":"15 minutos","31bbe8890d28d183f8f7f2c160fa892c444c0ec7":"30 minutos","f030c3d667652646b86732ad7bc67e226c49cd3a":"1 hora","2046e49e33c040e08dbd6fd83df3e1846015e6f1":"2 horas","7b47150d431db70d783724007f07ab894eb8ac2e":"4 horas","191800b7e9a48680792c0dd77cb6cac00c4514c6":"8 horas","2d8a6f7c34468578640b333b8650131de06ac770":"1 día","f94510322ecd9b3a2af67a10bd51ecc4ac6a24e7":"Arriba/Abajo","c1365a35e99d0f9147ebc72f21534cf471fa7d95":"Arriba/Abajo Iguales","9c7960c6b11d35ac9d6cdc1ebaad3af43b2065c5":"Asiáticos","2260ce49306460c8a2ef501939f29ad6ddd4e934":"Dígitos","0186aa73a1b75fa8f0eb98bbd9ad01102bb09ec1":"Toque/No Toque","f7de1f66f0979667da275b7e8996e805395025a1":"Termina Dentro/Fuera","a431deecd4c2258097adae418d496fe9a8179fee":"Queda Dentro/Sale Fuera","256fe245cb7d3d673095f7faaa8c9ff81b985ad1":"Ticks Altos/Bajos","12a3f461cdebbc8f335190413ee6c57442743bba":"Reset Call/Reset Put","e696144fa588782e6d6b2c97e2d3ed1adf52bd5c":"Solo Arriba/Solo Abajo","91a64e3f83c91acf336c631fba295f297f94c399":"Ejecutar luego de n segundos","024696596f26a4db232fd9e966eadfeb27c0bd1a":"Ejecutar cada n segundos","c538c170bdc6b0f3bb98dce44a016a2e2d45a6e7":"superior","85c274929bc0e28eafd3734f2c25046c3b95b36b":"intermedio","346e3ee198e98146993894d3de8ecab1a86c3e80":"inferior","f16459104f92ab6b38aa265adb4ecbfc3768e303":"Histograma","e09f635f4e77476c9ca1c37bc9992e9ace3431c1":"MACD","27bed13a88c60350c3de92ec3820e1cc4f7d6ec3":"Señal","19eabc961735d78f12fc7be906ffcb033853cf85":"Marca de tiempo","68f4145fee7dde76afceb910165924ad14cf0d00":"Mensaje","629777b7d4d610ace6dee24442730f27d7d0853e":"Archivo no compatible:","beb040c8fabd007c9cc5ac6a9feb6bdb05d33dac":"Los cambios no guardados se perderán.","410bf23a3f080def9c7a976a16305bcde7943ed1":"¿Está seguro?","e99811bd3b1ad17e74614060ecb180602be35ad6":"¡Se ha desconectado!","3b26e990d3acff493ee2cf66d1280bed2625e43f":"Conexión perdida antes de recibir respuesta del servidor","876f3e0202ca40dedf2e5ab6577eba1ae637fb53":"Estrategias","8ce80462febd4d573cb2f9c1984fdc93b7c21c57":"Se ha producido un error al cargar la biblioteca de Google Drive","7f412a8cf67f755d3eb36846dd07148ceb8d4c72":"No se pudieron cargar los bloques de Google Drive","3b6bbab905129dd36b8d4e99947fa30540ed7b2a":"Formato de archivo no reconocido","3d6b44df6eaf6236b4abc1aadcf8f5b1cda769c1":"Se ha producido un error al recuperar los datos de Google Drive","cdfe947b0c089a4a1f78c11299f25c32a124f1a6":"Seleccione una estrategia de Binary Bot","2db43c69a4b96454914f0b8272bc869984529e6e":"Se ha producido un error al listar archivos de Google Drive","0dcea5f584938e0fff00084b83156ab31d641ab3":"Se ha producido un error al recuperar archivos de Google Drive","18da95988117ff029393f3f5c881d70ef47f7385":"Se ha producido un error al procesar su solicitud","04226bcf91195130e25fe7a8e8ea4d3e058efcb7":"Seleccione una carpeta","aee24f2456ea8516b024a5d3e2b815ae7f2239d9":"La notificación de Telegram no se pudo enviar","05754ed14275a070a20a1d5cd65f0cea66f1da7f":"Las propuestas no están listas","79222cd9892a434aa61fc7dc01c3839951eb8d1e":"La propuesta seleccionada no existe","6ea4a034747d020b1d8ce4848def95d537555dd6":"Comprado","89f89c02cf47e091e726a4e07b88af0966806897":"ID","1200c1af2f7bba4e29a34112865662748c9d41df":"No se ofrece reventa de este contrato.","62d6180e55905f7b996d442c53631981a4ef8b5b":"Vendido por","ed4978867de1da05b336b724a3fb96222a29ebec":"El índice debe ser un número entero positivo","87e2e01f93d25ba7ed582cc81ef5c9ab2959f4c6":"Volumen de ganancias","b2a4553586d1062c21323bca1dc0589f7a9d5cf7":"Volumen de pérdidas","46fc6f27a835486d63d9e927c6687e4508cb3087":"Número máximo de transacciones alcanzado","9202ddae4cea16513e53bbc965d88ed975e59512":"Valor máximo de pérdidas alcanzado","5f52b397b7e5f538681f0f5717a88aa626349c7a":"Bot.init no fue llamado","85dfa32c97d8618d1bea083609e2c8a29845abe5":"Cuenta","d847919a30d31c0be624087f3370492b3fdf80c6":"Nº de ejecuciones","5cd6978d63540c8a490ef76f43219de6362f958e":"Total apostado","17410d7b62b8b1de981cfebada24632987edf186":"Pago total","b841eeb091f1ff0e14be08e5ea1b93e4cf147ed3":"Ganancia/Pérdida Total","90eef613042c5a51f542421065b68b886d473807":"Saldo","db1c784524e1b54011a95823026161f7c8517fe0":"Referencia","4db3e9e4aecd187db9339a10d2629fef46724dc4":"Tipo de contrato","1bb4086b66659d8580f9be4beef69931aeea3cad":"Punto de entrada","8bf249c4855e591964bd5bdd35c8ef2ee107342d":"Punto de salida","ba7be969e7c1bb5f22489e843478e3d721aaa843":"Precio de compra","772fbced18230220d2d9be1456be16fc1b271d25":"Ganancias/Pérdidas","bae7d5be70820ed56467bd9a63744e23b47bd711":"Estado","96f608c16cef16caa06bf38901fb5f618a35a70b":"Pendiente","7fb3a9b5101bcd45e2dca077191693a5199bafa9":"Resuelto","82a82f798dd773717ec37d15fd4405510291734e":"Bot no está funcionando.","6a88e58aa1798626f94cf17f1a91618b405bb289":"Bot está arrancando...","624cc7f40b68faace7e78d8e5c5be1d4f15facda":"Bot está funcionando...","788180a6ddbbbcca10f6f49d8e85d557934bae0e":"Bot se está deteniendo...","d907a40a4a15da3c21a6e0f8ace3f987d482f92c":"Bot se ha detenido.","4f219c17ab9ab76aa1cd431b4e0e5ecf5520e8e4":"Intentando comprar","4684ee1026d9b4c872d016c3c4588a0c479a451c":"Comprar cantidad","ca92c55b9e4233d771d5b6300fe751a9678d1deb":"Compra conseguida","f02760cd2eac28169f0a990c950c3dfe8427f772":"Contrato cerrado","66c7734789e19cbeef3a5ac185ea732139aed213":"Gráfico","3b662fb2e8bafce29aa98321b18874bb44905488":"Integración de Google Drive","7ee0ff5eaa6fa82bd6d83a2f4ca446c663f097cb":"El máximo de operaciones consecutivas debe estar entre 1 y 100","93039e609d94a24f3572b794a31b21525a09af2b":"No está ajustado","ea67c8023c75375484f3a5f1aeb009b20059d5bc":"Límite diario de pérdidas:","b1946e5b4b78465b7661fd4bc89ff52de6c633e7":"El máximo de operaciones consecutivas","952f375412e89ff213a8aca383d18e5691354347":"Comenzar","9f1c61cc03f3ef9324db05502f7f0b61e61e1521":"Limitaciones de negociación","095ba68888b5ace5f4515f5acab76dfa1073544e":"Mi ordenador","ddcb77ff769ea54ca622848f6bedd4004fa4f4fa":"Cargar","248e224f533752db28a1aab3519a58569ad96140":"Bloques de carga","c7097e97dcc446ca889d3ca6be733a65e2728afe":"Subido con éxito a Google Drive","3218e5a460e82d7bdea9ce0f145cab2f47ba9a4b":"Guardar como colección","611ebbfb080284312904de925ef0f75f4cb56ad2":"Guarde sus bloques y configuraciones para reutilizarlos en otras estrategias","efc007a393f66cdb14d57d385822a3d9e36ef873":"Guardar","a638caa8ab2b7ff7980a571334217339e6d1d634":"Guardar bloques","39fca63515c105918f03e4908ec12df675b07f92":"Trading View","fadc0ef93d1ff13370524ce8481ddc4a71195934":"Reorganizar verticalmente","e4458464df6cbb8da1134875ba51519c5d244d9f":"Los bloques deben estar dentro de los contenedores de bloques, bloques principales o funciones","e9c45563358e813f157ba81b33143542165ba84e":"Aviso","31cb6f44d030abeabcc7046555dea851602a87a5":"Esta estrategia no está disponible en su país.","9ce3bd4224c8c1780db56b4125ecf3f24bf748b7":"OK","af145748c9cf765a3b059eec20cb1dbb899297d8":"Los bloques fueron cargados con éxito","a479c9c34e878d07b4d67a73a48f432ad7dc53c8":"Descargar","f1d8b7b118d6f82f95614d476bc11af650aed3bc":"No se puede cargar el archivo de bloque","11ee9c5d534cc8d22651092222b532917594161a":"La duración mínima es","5283ac04c9a8ba8a937d1edb4ba986aeefce8bf1":"El número de intervalos debe ser entre 5 y 10","ace1342bc3720b77ce510b93074041e7386d209e":"El tiempo de expiración no puede ser igual al tiempo de inicio","fed3e7bd6696fb97a12d720845ab5388456bfc3b":"La predicción debe ser un dígito","d466687f90ba548434d65186d11a80c4204f9ad6":"debe agregarse dentro de:","6ddf2b3075ac9ab5d66b40e15ea9a34c087672ea":"debe agregarse dentro de","33aa6ff282ee509d37c6f758274c9156b419ff73":"La estrategia que intentó importar no es válida.","da162a909c2981ed318d23cd9a6be1d66e0a8400":"Formato de archivo no reconocido.","5e719fa76e1b6cb396376c82ebdd04bec7253229":"Bloques remotos para cargar deben ser una colección.","b0d2de25daf6ba09a5e710c6968ffded29c4dae1":"No fue posible cargar el archivo de bloque.","df84a88f38b03b5b342362d72370b0d66afdae35":"El destino debe ser un archivo xml","cd680fd936e9559ef1d95efac7a71680e2b13a89":"Esta Url ya está cargada","34c59389053701a04127f74d32315e0206e076f8":"Se ha producido un error al intentar cargar la url","3ead0b14c72503187691a7a6d7121987299bd401":"Esta no es una versión oficial de Binary Bot. Úsela bajo su propio riesgo.","27401c9c8e476d659c8382e05c6d70a4a82be468":"Versión oficial","bc981983e7f547dc62e19a1e383acfe00782a6d5":"Siguiente","b52b36b7269fbfc58ec24bb724691951a3decbe8":"Atrás","e9b450d14bc2363d292c84f17cfad5cfbd58a458":"Concluido","29cadadfebdd578a50b7b3d1b2c5b33e424d5de7":"Hacer una visita rápida","a48e81d4a8da67637b46725824177a959fe99b21":"¿Listo para aprender a usar Binary Bot?","6f3e6ebf249947cec4f64117253a8fe43335ae79":"No, gracias","fcb6e90e7223e1d1d735f15dbb7ded9d81bbe7ef":"No preguntar de nuevo.","4ca0a75c2b7fa7da4364d03b72c46fee1860a2bf":"Espacio de trabajo","5fcf29b9f0b8971c8148e70a150ddc9ac04c94fc":"Arrastre y suelte archivos de bloque.","ddcbb5361b1a16eba60fca2383fb297bb90ed9b3":"Descargar estrategias de muestra","1758356db21759f7c5a0da9b4dd1db8fd6feab3f":"o","00b581632c1532969a7128ebc8eae936ed8af04e":"cree sus propias estrategias.","d171baee235d4c93f63755a876782dc5be4c3e47":"Caja de herramientas de bloques","056f19272d96f902c38207cf163ea8dbff7fbd32":"Añadir más bloques de aquí a su bot.","36bae31694f85bd7a5b0ad45e51ef622b95baadb":"Cuentas","f5c47fd3b3553b10441a06054078cea745177dea":"Inicie sesión antes de ejecutar el bot. Siempre pruebe sus estrategias en la cuenta virtual.","fd825ae94aa79500a878dd4590a4b360e7162663":"Controles del bot","6ee7980833e1ed72901b919ffd0fa20e1a251d3f":"Controle sus bloques. Mantenga el cursos sobre cada botón para obtener más información.","f5169c84497de3aea74f7da9e7e177d1427e736b":"¡Disfrute!","4f1b3d682c2a00b393c33637da402463bc11d5ff":"¿Quiere reportar un problema o pedir ayuda?","0049f8894e41937ebb9111cd3def6749049fb50f":"Haga clic aquí","aac1569ccf6b1a11b0ad0fbefdb9ffc777b4c733":"Haga clic para seleccionar","53adebdc2b1cbbedb56395b19a73fe47b87cc554":"Intervalos","5fb1db527825d2996e37c655e5dec49d4da80c09":"Segundos","092f99ea11a34a8490e7a767a83a42fc45634f82":"Minutos","9e25a34e635a123f8958bbe26e7c4843278597fb":"Horas","f6bb0f468a8569c67b3d6826e57e62c5500c3681":"Días","d1a17af19f5388af9d6596cc0ea7dbb1d739e255":"No disponible","db6708630fc646eb98298d9acd701e0a1ac051c2":"Guarde sus bloques y estrategias en Google Drive","85538d002a336c5addef8d189d80976cf7758f8c":"Ha iniciado sesión como","b65463cb6a42a17de514acc4659f7fd331e0876a":"Conectar","ed28e0686e1251ba046f582a3e9ec02470a5e78d":"Desconectar","cd5f85b6f187605f82386eacd680f93820af8d11":"El resultado es","1e38ce3d180cefae485a6986ca7c67841e30376f":"Verdadero si el resultado corresponde a la selección","5c89497fc3c128e2ff865ce8df15356054f2c028":"(4) Reciba el resultado de su transacción y negocie nuevamente","14ea81918758c994cbe3178e695e56afc1ef2b45":"Obtenga la información y el resultado de la transacción anterior, luego negocie nuevamente (se ejecuta al final de la transacción)","5098e2bcc96ee227983c9f7eeddfd226c220ca00":"Detalles del contrato:","251c830f8f869e0887e8b4dc4c30ba1738c7097e":"Lee una opción seleccionada de la lista de detalles del contrato","b3b543c80063a116ced4965d8537b7b62d14c0b7":"Negocie nuevamente","a1eeb7c1e92e9a5d9323ed8ebd7ca7ffed8b0232":"Ejecuta el bloque de negociación nuevamente","da3105e38c42a481ad7230ed393b0e12bebe9c4f":"Precio de venta","343fda69c73b78b84967055aae97f790c422adfd":"Precio de venta de la propuesta seleccionada","d4d34ce9d9dd7e87213469f88cb7ac43725675d5":"(2) Ver y comprar su contrato","fb61a3c71f4c488b3b470cb7daf502a3e9b5ad48":"Observe el flujo de intervalos y compre el contrato deseado (se ejecuta en la actualización de los intervalos)","87da93a46d143f6019979b3548414d9d7adabb35":"Pago de la propuesta seleccionada","160f06d4799c85021a810f68c5b517eea37a2737":"Comprar","4c2fdde3d9c1950498ed263d6ce21d4bf3d0800b":"Compra un contrato elegido.","ca5586bdb5bdc1a2c0baf53ed0ecd21fafabebe7":"Venta disponible","03bad10717e183b24829baf483dc715e1a44bf7b":"Verdadero si venta en el mercado está disponible","2c71ed279a402e93312dbda173ab18f244d6bf46":"(3) Ver y vender su contrato adquirido","17632a9f51611d2579d95b4b1ccb9476566d7ccf":"Ver la información del contrato adquirido y vender en el mercado si está disponible (se ejecuta en la actualización del contrato)","579607dc4f989ce2b94b558431666a0ab07ac1f3":"Vender en el mercado","e20afd5cf3811a42071c9a312abb2afdad4c590b":"Vender en el mercado.","4712cbff8e92822fc960ef9c0197293a19675eae":"Vender ganancias/pérdidas","df817b48c7a076561b4f8bedc52d65d2e351ab52":"Devuelve las ganancias de vender en el mercado.","b44e884c355e447d0da0e6ba45caaff18c84373b":"Bandas de Bollinger","d6a2a207343bd83aacdc80b579ff4419713a256e":"Lista de entradas","170a28a9db6d27d7212fc6dc249434a57517e7bc":"Período","b833989d69900a4be9e32d1bab65c8f8233f099e":"Multiplicador Std. Dev. Up","1cee82f19c0bedef64f68b32e6b02128efe7c61b":"Multiplicador Std. Dev. Down","974da601086448d0060aeed90e53ddd5acd17b91":"Calcula las Bandas de Bollinger (BB) a partir de una lista con un período","d5b65cac1f1cf9421ac978eebe532de99040cca6":"Array de Bandas de Bollinger","58de49791c64aba14e36e5887244a5ef088286cd":"Calcula la lista de Bandas de Bollinger (BB) a partir de una lista con un período","4bd99f76f1104229744455d93df0ff76b9eeed58":"Media móvil exponencial","ea615c6d6a74e25a6d2f1bc9980b46e73508c2eb":"Calcula la media móvil exponencial (EMA) a partir de una lista con un período","4082d9379e59b38c891d046312f8d3c4b64ae3b1":"Array de medias móviles exponenciales","562edc102c5dd9e2fbbede1140b8a5461c2d4dc8":"Calcula la lista de media móvil exponencial (EMA) a partir de una lista con un período","a537f4f3c0f6c68bf896fb23cb2ecdc658488ea2":"Array MACD","b18e572ea14edd48587145f1ef50718adbf256c6":"Período de EMA rápida","974023bddd6249d0f6404872cfcae205b2599ea2":"Período de EMA lenta","5c2adcb3d1bfd6b9f5c2dec13d02a9473e4445a1":"Periodo de señal EMA","6b15ce93fd68d80aeee7f7964c1306044c3c1baf":"Calcula la lista de Media Móvil Convergencia/Divergencia (MACD) de una lista","95ec92885c855ba9cf734c17a43f081901e4d2cc":"Índice de fuerza relativa","b033619e108c9e43bfd8a42cd97bf5c5dc86dc65":"Índice de fuera relativa (RSI) a partir de una lista con un período","4034de66995b876b2ba9bfd0274025e39168e05d":"Array de índice de fuerza relativa","f9da880c8b0e4cce4431912c24eba939e6bc06e1":"Calcula la lista del índice de fuerza relativa (RSI) a partir de una lista de valores con un período","a9842c95766da40bf4ea6ee263cb5a5985847763":"Media móvil simple","347775a293c14362d492f019e677c965be1d6e7d":"Calcula la media móvil simple (SMA) a partir de una lista con un período","4cc7b9e53d082896ad884eb01be16320af65f282":"Array de medias móviles simples","2c75179a57af3c36581008b65e86ed81c4a4cbea":"Calcula la lista de media móvil simple (SMA) a partir de una lista con un período","39f024cf49724fe7ffdea7773c72ed06eec998e1":"con intervalo","e4bed3e67e58b2334ee4b9c6ce59ac7a95d80aaf":"La dirección es","ad47561efb1dcbd7246d9b64487f615647fda036":"Verdadero si la dirección corresponde a la selección","05bef508aadd62bf3967dcf67d769da296f19989":"Dirección del intervalo","d089ab98a846a521b09aad6ff3fefa728bfa8b42":"El bloque de dirección está obsoleto. Por favor, utilice el bloque de verificación de dirección en su lugar","cdb31fc857f01a59f664413498293c714285f46d":"en lista de velas","20fd5f86f08796f145d69dedc209a27e459b2f51":"obtenga # desde final","a96606af8c33ac3428b45abc4782dbf93f458d29":"Obtener la enésima vela más reciente","90ed0e1ea5c1907f8a32d8051a66e845857bb2a4":"Lista del último dígito","248428facb97408414180d4de74e4db35360fbc4":"Devuelve la lista de valores del último dígito","2e4202acde880b7b1c3686f0335ff879fc1e5c7a":"Último dígito","e46e0bd2f7fe37217dec8aa26ebce8ffa3608663":"Devuelve el último dígito del último intervalo","d5fde4c9d5edf660f760fc226df4d2678d3334ab":"Lista de velas","95e552a40d3446c96905cd3ec7e3d123d0246ce8":"Devuelve la lista de velas","5a0ed227a01b7d30b05dcaf3e1c23b74b9be6ff4":"Haga una lista de","a4220593d385a720886f7af1ed3c478fd0c6339c":"valores en una lista de velas","cd8cdf3d47e921c8a72addae9269e66041d417c5":"Devuelve una lista de los valores de la velas seleccionados","3e4f335e7a6f79bd1bafd219ddde30acbf16a7ac":"Leer en la lista de velas ","34037f9452fdb66c9ca27ebcc0afe9d5139e9e24":"# desde final","aba43a580daa7f306956ec69b83e6e37e7233126":"Lea el valor de la vela seleccionada en la enésima vela más reciente","e04b522218a181cf0223042dd18ae08dcc22d8d3":"Último intervalo","6ee445fc253a55c9ed54c009c3f020ac65200d80":"Devuelve el valor del intervalo recibido por un bloque previo a la compra","4b2340a890e88d1886757c3f7172e273a1edc31f":"Este bloque es activado con cada tick","b54d7b4590559dad64f02d09aacbf6d9863e2624":"Puede utilizar este bloque para analizar los intervalos, independientemente de sus operaciones","ebffc758056e6b2fc2af99af17fbc6853e5d3583":"Lista de intervalos","17649cac8739adcae95e641f794880272ad33bd1":"Devuelve la lista de valores de intervalos","802dc02469ae51067ca620ff57dfb5bdb3e524ac":"Saldo:","c4ee8e12b2484cd5b47cdf00bfa2c50b83e91d3d":"Obtener el número de saldo o string","69280143949fcd59c171dd60f6b6e13d0cc08fe6":"Los bloques en el interior son ignorados","d072c2ceeb5c1217722d14c74de7aeab945b4215":"Ponga sus bloques aquí para prevenir que sean removidos","b06acc4158c824231f727a13e1c9811f43d5be42":"Cargar bloques desde","661db37251a1ed1afe357ee13895f37a623d7cbf":"Cargar bloques desde Url","6c03ee54ad3a51fc92a1d69943e99667847705b6":"Notificar","b1bec5d06e3672915d81b2fbc2347c8b4947a954":"con sonido","a2d0c89fdfff3176efd4a443eb0f6607067b93e7":"Crea la notificación","6e0fc122f936f808bc2e3af661121b65712ae855":"Notificar a Telegram %1 Token de acceso: %2 ID de chat: %3 Mensaje: %4","1aeb6caed9e46edf5d6224adc905ffb8ee3a7708":"Envía un mensaje a Telegram","45ebd38f4c641ebf6f72be8c3a79dfa50cf9f20e":"Ganancia total","ffb465875e1ff2b49bcaa7c6b70965ffe39fa59d":"Devuelve la ganancia total","bc528d26f66fe8c4aa4bb24ec9c99dff12c055e0":"Nº de ejecuciones","bea5756b18644ccfab01c1c0dbd6fa9db7103379":"Devuelve el número de ejecuciones desde el principio","c67ded6b64019212eb2bc69afd761f5b3f626040":"Añadir una señal al número para realizar un desplazamiento de barrera.","569bbd757e1bb8bbccd250b98dc2bb37cb47b787":"Mercado","74751e67c3e1010c343095eaf543e7cb21ced2ef":"Tipo de contrato","1f4698382842477e211eb46de81fa506f01a8c34":"Ambos","c1baf816aac5a5cd849768773fc248cd249dc296":"Tipo de contrato:","c93025710d1ae6cbaf8e710f63eca8edfa0c9399":"Intervalo de vela predeterminado:","9693aeaaf68e3929b59b79306feaa0a847d01192":"Duración:","10c02649e226d430bd75a5b6315a41c0db9992a2":"Barrera","837276742aa90209dde3b4eef07d8e7ab26731ef":"Predicción","258b49925b41751c6bd790a0848246566ba61440":"Reiniciar compra/venta en caso de error","c55ee3445cd391ab299b6f85a6ea9a68a65ea64d":"desactivar para un mejor rendimiento","b410994b67e37d9516eb9b866c85a8c639f79e68":"Reiniciar última negociación en caso de error","2260c5a971c2602834ef8feeb5fa522f900b469f":"bot ignora la operación fallida","cd1495cb4c60266a6abad9024022ae079bf7e416":"(1) Defina su contrato de negociación","0745acf92abd7b60598f161717884cc45dab8694":"Ejecutar una vez al iniciar","999e1ade10ff5ee1d115f5a6288bfd2e0d0736e6":"Definir opciones de negociación","a43c3299d30a5bc7e31a574cdc87f59cbc8fe585":"Defina su contrato de negociación y comience a operar. Agregue inicializaciones aquí (se ejecuta al principio).","d571f33d957ebcab086ecf38eedd71b6ef0c5820":"Opciones de negociación","4d22b565e4253e92a908f216184779679bb1a044":"Barrera alta","b70c38c6db3127422e05315c30bdf76c7c36c480":"Barrera baja","a6c5f081b3addee364af1c8cdb84853f49dc8e07":"Absoluto","0f2ba74929aca6fea950e351dcd576b7cd841fa4":"¿la vela es negra?","7cb3b482ab66947d439642ec64dc7f5bd4e065dc":"Haga una lista de","5925d08228e246f07b790b88ad70c1b73a97d2bc":"valores a partir de una lista de velas","852b438f91ad9eb2cdd84419a675a216d543c687":"Leer","67d3b35a0b740127b56bcd44d3bcb1ccc20e0b48":"valor en la vela","d79d854dcd0829e2177a47beab6a55569e781ab1":"Lea un campo en la vela (leer de la lista de velas)","5606b4460ac96063b8a8e5647008f3ec97252fc5":"Segundos desde el epoch","2de20bdeecb1a8c28bd36fe75f028ed4318d0348":"Devuelve el tiempo epoch (segundos desde el epoch)","f43cb41af7ce8a69c7aecbc1c603bb0381270982":"Ejecutar cada","4b6fe6898f0f956d48a4c8172c6dfbcb4159ab09":"Segundo(s)","2eea87bb804e4e73e3f8e9c41140f7ed83ea8875":"Ejecuta los bloques en el interior cada n segundos","e0af6ddc8a892704f64680bcb22b30c4bfcefec5":"Bloque ejecutar a cada segundo ha quedado obsoleto. Por favor, contáctenos si posee un caso de uso válido.","7b9c76088576a64f32d67ec335162b9f73eaa026":"Ejecutar después de","ff56ffac023cf69ca5c7f71d407499536f4f86b5":"Ejecuta los bloques en el interior después de n segundos"}
+module.exports = {"3d52a6d8fedcc48a65297c07bf5f7e3e41aab5aa":"Lógica","3edf0df49942da6d11a1a217e4d3af4a5a8e64f2":"Matemáticas","c3328c39b0e29f78e9ff45db674248b1d245887d":"Texto","4d064726954a17487f94e931f5b157b733ec22ed":"Avanzado","a1fffaaafb7cc996685bceb829c053cc4f7de43d":"Lista","19de69cb601f53a4ea7af22a65c71ae63251365c":"Variable","2b961dea1dc0c60ddf9a2c8e9d090f6f7d082483":"Funciones","dc7f77b4ccfc9f70a78bd97303bd10ba4c9d70c8":"Loop","66639f7d455dd71faa9147f5d69e5ce885d8bebd":"Binary","0ba66deaab2f2cd3b0793d03f600ee2b8f577fbc":"Definición de la operación","9201c6ac624e98e168e6ccddbcd5a9b5cdff06b3":"Antes de la compra","44ab9a87268d3fd74040ed0b55c04f83294cfdef":"Durante la compra","c415c9399b7ae7285d2c1c880a6a0aa18f62ff8c":"Después de la compra","d07ffc19d51f0973859a0d95c1d15cd9f22388ca":"Análisis de los ticks","8cf71374fa095a64b5295b672daef8507ec7be6a":"Indicadores","4fa8cc860c52b268dc6a3adcde7305e9415db5bb":"Herramientas","6c82e6dd86807ee3db07e3c82bec1ae1ce00b08b":"Tiempo","8d8fd6765e184419cad8b88d1a60c895d79578c2":"Vela","548f449b63ff41eaaff5a2d679ffa56b2015fc20":"Misc.","8bf95ea372568c7a254ba9fada5f6f1701ebc5b5":"Log","12b71c3e0fe5f7c0b8d17cc03186e281412da4a8":"Resumen","9feddbabd7e7309e96c590069057158e96baa8f6":"Verificación de realidad","038fe2bdb7ec6ee078f60bdb5bee94654ec6a81d":"El comercio con opciones binarias puede convertirse en una adicción real, al igual que cualquier otra actividad llevada al extremo. Para evitar el peligro de una adicción así, le ofrecemos una verificación de realidad que le da un resumen de sus transacciones y cuentas de forma regular.","4152043e8c670075d2c919677e835edb0d923cab":"Por favor indique su intervalo de verificación de realidad preferido en minutos","d9fff2df19e90f2c7ea6bb30fde4e0da119d13d1":"Por favor, introduzca un número entre 10 y 60.","2439f2f199b2a3e798aa9b4feaa9248bdec9bc0b":"Seguir operando","a72ca256dc49e55a1a57b9a727fbde9834c9a3f7":"Extracto","6e78c91f5a05fc0d4f1a787d38e3d6fe2f856d46":"Cerrar sesión","4832e45812a2724f16a15f9ae87adfc8ae4168cf":"Contáctenos","f7c400ed695f898b8ee9d21664aa17b5bb693828":"Iniciar sesión","5ea75f1605a4bf1db5c39fcc61854627478c0a7d":"Restablecer los bloques a su estado inicial","f98595d541778d86f75ef22b3328a031d20aa16b":"Cargar nuevos bloques (archivo xml)","4a1e616226c329a94da7768bc0435a3284478010":"Guardar los bloques existentes (archivo xml)","6b3465ace62f33f0687b4669ac26d95895e9ca52":"Conectar Binary Bot a su Google Drive para guardar y reutilizar sus bloques fácilmente","8e4ec2c451ec7b1bf68d72fe9086ec978e41feb7":"Deshacer los cambios (Ctrl + Z)","937f5055f05be359ddf619744e8af4d643549e80":"Rehacer los cambios (Ctrl + Shift + Z)","8406d1cce44230835932060649e999ca3283b413":"Zoom In (Ctrl + +)","1109673172af2c173c492622ff8a72c8f29f0e70":"Zoom Out (Ctrl + -)","44c22002c65d2871331263a23c3e09c0a1bfd847":"Reorganizar verticalmente","ebd0945359e5578ff9bd3a2ab490ca84c225d8f5":"Mostrar / ocultar el resumen emergente","76bb05950f80f3a88ee05ef3276c5934fd355e8d":"Ejecutar el bot","ba50a42d8d3228c37a817865fce49fbca692c2ad":"Detener el bot","4f4aa4117318a8ddf8783885d4f3542c5b2733bd":"Mostrar log","91017ef9b165cd0e7475a770f318ea5e705e1321":"Mostrar gráfico","c89e3dd1cafcadcc0312e476ab58b2332209da23":"Mostrar Trading View","b02c858e72be118a65c9393930351012b647cb9e":"Ocultar encabezado","250be77f7605669a0b3d968b9ed381a3d9787ed1":"Abra un archivo XML ya guardado y recupere sus bloques","ff29ccd7a6c6073cc462ed590d27a91632fdf67e":"Binary Bot","608061fb5aab975013fa70c5c814a1d8ba30c152":"Opere más eficientemente de lo que jamás pensó posible","e4ce8dc3e416e69262ba642dc57d3975d6616980":"¿Interesado en automatizar sus estrategias preferidas para operar opciones binarias?","f261237ca8beec6f77b76c4121feb8da22818c56":"Binary Bot es nuestra herramienta de programación de vanguardia que le permite crear aplicaciones de trading a través de una función sencilla estilo \"arrastrar y soltar\", como en un rompecabezas.","f6c85c68616eeaaa15fcd53fdc52f6eb5c886357":"Invente cualquier tipo y número de bots negociadores de opciones binarias, desde fórmulas increíblemente simples a algoritmos altamente complejos. Luego, déjelos negociar por usted, incluso mientras duerma.","e6906a0d1c28b202f9bd49da4a6abbddca57399a":"Lo mejor de todo, una vez que haya construido un bot, le podemos ayudar a venderlo a otros operadores en la","1dd0cf79c572bcdbdfabbd54ee95710a21234d73":"Tienda Binary.com","abeef9a35ae6256796ba2462e4f64d308de42359":"Reciba 80% de los ingresos por cada venta de su bot en nuestra tienda de aplicaciones.","0606f0b7763ee6e8094a3dab7873d34c08fd3670":"Comience a construir un bot ahora","221acaf3a0290adafe08cdcb8c66121c73d8b4a3":"¿Necesita más ayuda?","d635b53e59c9aad8c5d78458826beffb029b27bf":"Gracias, le responderemos en 24 horas","a69a8fc21499d0fd85e87bab467699827547a5bc":"Por favor ingrese una URL de servidor válida","1de91e827ec70ca735abc2c71b0a89cb0cfc4ce1":"No ha seleccionado el mercado subyacente","50050f06645ad2743165b429a8f7deebd285fd63":"No ha seleccionado el tipo de contrato","6a7d1a3a17c4e8ae6712cb60d46db1edf0aa2667":"Por favor, inicie sesión","2f9f9096be1a1c0569a9ce54e57f0420f6b3c2e9":"La duración debe ser un número entero positivo","4df6e872792d72aea8a2f6b831d00b554464da23":"El monto debe ser un número positivo","001e68df3a4b32a4d57148d9d407f44eee3b7436":"La vela actual no es válida","04f14ea7c92e0b2b5ae005c696245063ec641d66":"La lista actual de velas no es válida","c1bbfcbb4f57d3a56c1239af0c2138321589efd2":"intentar nuevamente en","57b453bb26b1c28dfe362b7cc9f17f0be93dd581":"Alcanzado el límite de tasa para","094628ce13fc0e78f07b697d1cc9421bb2edd666":"Error en la solicitud para","816c52fd2bdd94a63cd0944823a6c0aa9384c103":"No","5397e0583f14f6c88de06b1ef28f460a1fb5b0ae":"Sí","bbb930cc426507ed3f6b7c343c75dd0e041494b7":"extracto","e6e886cdcdefeb6d3edb4c31bed06dd183ac4153":"precio de venta","50e72909992bdc37c7c07769d1b7efac5e52874c":"pago","ecb5ba7044417916ba12de5fa9e6fccac3e5d475":"ganancia","c980b910204c7babdffe8ff3f7e755f30133383c":"tipo de contrato","a726c6955157f1b8b92f9932652434a7150f80f8":"punto de entrada","a66d5c7ef2c63dbc9a8f9e6ae4e2bc575e74a36e":"valor de entrada","3905be81561384dc8c43d6127c57ed1e0eb03b74":"cadena de valor de entrada","7674920c033ca14277c577e19c037a6754d4fa80":"punto de salida","e8b8bd9f2eabc12875605a37c93e7f04a713fcb8":"valor de salida","06ecea26625359f7dcf5ff5c47af6174ff815257":"cadena de valor de salida","779455ee3bde8494d9629b353e17b19e92357ba8":"barrera","37a5301a88da334dc5afc5b63979daa0f3f45e68":"resultado","4973f4c599d5f42cf7bde52d66c3ed8ef77accb1":"Ganar","12e24a7d8ac40579e8a0aef4869288afe7ed6745":"Pérdida","563339f82447b4e758ad76d5a0b63b5698594fba":"Aumento","5c1ae82c29543ac887703776bf3da2c7dcce683d":"Baja","2fc096bb7b6596ab243d0286c9f43fdf2b9b406d":"Sin cambios","ecb252044b5ea0f679ee78ec1a12904739e2904d":"cadena","53b0a1b2fadf4e040cdc2155a7340de24aca93cb":"número","bc74f4f071a5a33f00ab88a6d6385b5e6638b86c":"verde","4c9a82ce72ca2519f38d0af0abbb4cecb9fceca9":"azul","96de5543d183d7de52ac5fa21c46fc811f673f89":"amarillo","78988010b890ce6f4d2136481f392787ec6d6106":"rojo","aa9330a16e5b055de809256dad6b4d1cbd2999e7":"Silencioso","cf84a98d6cf7f156862a08ba8236467b6f471004":"Anuncio","eee2facd669d1434848c24da5527b3e87d9a12d5":"Dinero ganado","9d705578b0f1f0ce3a06dc5e82f9a1e6078f81e1":"Trabajo hecho","7f2f6a15cf8da2b27e5a4af47b58e7ad71c0b3d9":"Error","a3b1583d377f37ac20de7e089edfa0920a078e57":"Error grave","66c8b6848eee629c4ac551bf2b5fa591571654be":"Rise Equals","5649dce3367d490fa19d563ee9e3d4c4b6f7c642":"Fall Equals","062787aa328047e189774b3703d983b83938f6e9":"Más alto","b91eed4b7a80cd9572a27e65ebdff9caa4b3b9a4":"Inferior","e3f139abb7a549a1210b36f7dbf89215ad6c9902":"Toca","7d7932bcc2e262ae98cf09dc5445130fb3881769":"No toca","a16814a48ec58c2e24ba224a80921a5c02361abe":"Finaliza dentro","391d02cd75ebcd6ed26f5f45ddf7d40bf13e9dc5":"Finaliza fuera","534ec5da4e82ec419abc170e1a8448f55a01664f":"Queda dentro","98cbe1998effd8b1a8aefdcc538573055e99a5f5":"Sale","93d13bad1d2c2841db127cb70cc35bfc98059fc9":"Asiáticas arriba","c098658ce3d3a258e4d155949a60072966b36db7":"Asiáticas abajo","ee2dbd5d6d82d0833069b07e7dd2848d3bf4d83a":"Coincide","8444b7ce28bbc3443cc5cf73359b8353989b2a4b":"Difiere","9e767ad03e5547f251044e0724dc1d9f3e75aeed":"Par","dc28f5f3c65ec611f0f30022650d24382d27448e":"Impar","18a63f5512afb5573e5b44deba78d629f0635317":"Sobre","2a268b89b83f8cb38ea48e46e93dd8840db512f9":"Bajo","2155c8b38181dd2552e84a94049aacd33ef9c607":"Tick alto","1408cfd2b064b923f024fbe590e27db8282941a5":"Tick bajo","b86eb15dc4f13e4c2972de158d3038d9f657242f":"Reset Call","669a1f3d9a8f601a84da536cfdad1de4092b1926":"Reset Put","844d1a5c99a0a668383340cc095d040eef998c79":"Solo Arriba","87293a146cd481a2b30cf74282ec061dc4cf0735":"Solo Abajo","cf9b77061f7b3126b49d50a6fa68f7ca8c26b7a3":"Abierto","b1a5954a483f8f8b0207385095f74aeb409b3f80":"Máximo","a124947cbd2d1d92b47e027274c3269ff0c7a84b":"Mínimo","bbfa773e5a63a5ea58c9b6207e608ca0120e592a":"Cerrar","1173872a4fb205b713702f0eec5cf2c732c828fd":"Hora de apertura","808d7dca8a74d84af27a2d6602c3d786de45fe1e":"Predeterminado","62957ecfdc50957e8957c11d2eae74d078f0ef1a":"1 minuto","1dd3e663dfa7ac9cb77cfddd2cf8ac700657e2d6":"2 minutos","24e46784cbce32443db5a2638b1a7d3201543e9b":"3 minutos","3aa5819ed8a0b94d0f293db8e9c9598298ddd402":"5 minutos","a6f151883b736f0470d33492e61c72a7d059d065":"10 minutos","899761ff5425abd2ee214fa7aa46e27c6c8b5aae":"15 minutos","31bbe8890d28d183f8f7f2c160fa892c444c0ec7":"30 minutos","f030c3d667652646b86732ad7bc67e226c49cd3a":"1 hora","2046e49e33c040e08dbd6fd83df3e1846015e6f1":"2 horas","7b47150d431db70d783724007f07ab894eb8ac2e":"4 horas","191800b7e9a48680792c0dd77cb6cac00c4514c6":"8 horas","2d8a6f7c34468578640b333b8650131de06ac770":"1 día","f94510322ecd9b3a2af67a10bd51ecc4ac6a24e7":"Arriba/Abajo","c1365a35e99d0f9147ebc72f21534cf471fa7d95":"Arriba/Abajo Iguales","9c7960c6b11d35ac9d6cdc1ebaad3af43b2065c5":"Asiáticos","2260ce49306460c8a2ef501939f29ad6ddd4e934":"Dígitos","0186aa73a1b75fa8f0eb98bbd9ad01102bb09ec1":"Toque/No Toque","f7de1f66f0979667da275b7e8996e805395025a1":"Termina Dentro/Fuera","a431deecd4c2258097adae418d496fe9a8179fee":"Queda Dentro/Sale Fuera","256fe245cb7d3d673095f7faaa8c9ff81b985ad1":"Ticks Altos/Bajos","12a3f461cdebbc8f335190413ee6c57442743bba":"Reset Call/Reset Put","e696144fa588782e6d6b2c97e2d3ed1adf52bd5c":"Solo Arriba/Solo Abajo","91a64e3f83c91acf336c631fba295f297f94c399":"Ejecutar luego de n segundos","024696596f26a4db232fd9e966eadfeb27c0bd1a":"Ejecutar cada n segundos","c538c170bdc6b0f3bb98dce44a016a2e2d45a6e7":"superior","85c274929bc0e28eafd3734f2c25046c3b95b36b":"intermedio","346e3ee198e98146993894d3de8ecab1a86c3e80":"inferior","f16459104f92ab6b38aa265adb4ecbfc3768e303":"Histograma","e09f635f4e77476c9ca1c37bc9992e9ace3431c1":"MACD","27bed13a88c60350c3de92ec3820e1cc4f7d6ec3":"Señal","19eabc961735d78f12fc7be906ffcb033853cf85":"Marca de tiempo","68f4145fee7dde76afceb910165924ad14cf0d00":"Mensaje","629777b7d4d610ace6dee24442730f27d7d0853e":"Archivo no compatible:","beb040c8fabd007c9cc5ac6a9feb6bdb05d33dac":"Los cambios no guardados se perderán.","410bf23a3f080def9c7a976a16305bcde7943ed1":"¿Está seguro?","e99811bd3b1ad17e74614060ecb180602be35ad6":"¡Se ha desconectado!","876f3e0202ca40dedf2e5ab6577eba1ae637fb53":"Estrategias","8ce80462febd4d573cb2f9c1984fdc93b7c21c57":"Se ha producido un error al cargar la biblioteca de Google Drive","c4c758b5c8f5b3985f6bf7382c848bb44e0a5b74":"Otorgue permiso para ver y administrar sus archivos de Google Drive","3b6bbab905129dd36b8d4e99947fa30540ed7b2a":"Formato de archivo no reconocido","3d6b44df6eaf6236b4abc1aadcf8f5b1cda769c1":"Se ha producido un error al recuperar los datos de Google Drive","cdfe947b0c089a4a1f78c11299f25c32a124f1a6":"Seleccione una estrategia de Binary Bot","2db43c69a4b96454914f0b8272bc869984529e6e":"Se ha producido un error al listar archivos de Google Drive","0dcea5f584938e0fff00084b83156ab31d641ab3":"Se ha producido un error al recuperar archivos de Google Drive","18da95988117ff029393f3f5c881d70ef47f7385":"Se ha producido un error al procesar su solicitud","04226bcf91195130e25fe7a8e8ea4d3e058efcb7":"Seleccione una carpeta","aee24f2456ea8516b024a5d3e2b815ae7f2239d9":"La notificación de Telegram no se pudo enviar","3f370309b6280eb100f898426d8605c1f45d558d":"Marca de tiempo inválida","af6a4e2a5582be89ac930e946eaed86e01cac58b":"Fecha / hora inválida","49d51398b574e7312d99b18d2b93d2ede416f053":"No se pudo enviar el webhook","05754ed14275a070a20a1d5cd65f0cea66f1da7f":"Las propuestas no están listas","79222cd9892a434aa61fc7dc01c3839951eb8d1e":"La propuesta seleccionada no existe","6ea4a034747d020b1d8ce4848def95d537555dd6":"Comprado","89f89c02cf47e091e726a4e07b88af0966806897":"ID","1200c1af2f7bba4e29a34112865662748c9d41df":"No se ofrece reventa de este contrato.","62d6180e55905f7b996d442c53631981a4ef8b5b":"Vendido por","ed4978867de1da05b336b724a3fb96222a29ebec":"El índice debe ser un número entero positivo","87e2e01f93d25ba7ed582cc81ef5c9ab2959f4c6":"Volumen de ganancias","b2a4553586d1062c21323bca1dc0589f7a9d5cf7":"Volumen de pérdidas","46fc6f27a835486d63d9e927c6687e4508cb3087":"Número máximo de transacciones alcanzado","9202ddae4cea16513e53bbc965d88ed975e59512":"Valor máximo de pérdidas alcanzado","5f52b397b7e5f538681f0f5717a88aa626349c7a":"Bot.init no fue llamado","66c7734789e19cbeef3a5ac185ea732139aed213":"Gráfico","3b662fb2e8bafce29aa98321b18874bb44905488":"Integración de Google Drive","7ee0ff5eaa6fa82bd6d83a2f4ca446c663f097cb":"El máximo de operaciones consecutivas debe estar entre 1 y 100","93039e609d94a24f3572b794a31b21525a09af2b":"No está ajustado","ea67c8023c75375484f3a5f1aeb009b20059d5bc":"Límite diario de pérdidas:","b1946e5b4b78465b7661fd4bc89ff52de6c633e7":"El máximo de operaciones consecutivas","952f375412e89ff213a8aca383d18e5691354347":"Comenzar","9f1c61cc03f3ef9324db05502f7f0b61e61e1521":"Limitaciones de negociación","095ba68888b5ace5f4515f5acab76dfa1073544e":"Mi dispositivo","ddcb77ff769ea54ca622848f6bedd4004fa4f4fa":"Cargar","248e224f533752db28a1aab3519a58569ad96140":"Bloques de carga","c7097e97dcc446ca889d3ca6be733a65e2728afe":"Subido con éxito a Google Drive","3218e5a460e82d7bdea9ce0f145cab2f47ba9a4b":"Guardar como colección","611ebbfb080284312904de925ef0f75f4cb56ad2":"Guarde sus bloques y configuraciones para reutilizarlos en otras estrategias","efc007a393f66cdb14d57d385822a3d9e36ef873":"Guardar","a638caa8ab2b7ff7980a571334217339e6d1d634":"Guardar bloques","39fca63515c105918f03e4908ec12df675b07f92":"Trading View","85dfa32c97d8618d1bea083609e2c8a29845abe5":"Cuenta","d847919a30d31c0be624087f3370492b3fdf80c6":"Nº de ejecuciones","5cd6978d63540c8a490ef76f43219de6362f958e":"Inversión total","17410d7b62b8b1de981cfebada24632987edf186":"Pago total","b841eeb091f1ff0e14be08e5ea1b93e4cf147ed3":"Ganancia/Pérdida total","90eef613042c5a51f542421065b68b886d473807":"Saldo","db1c784524e1b54011a95823026161f7c8517fe0":"Referencia","4db3e9e4aecd187db9339a10d2629fef46724dc4":"Tipo de contrato","1bb4086b66659d8580f9be4beef69931aeea3cad":"Punto de entrada","8bf249c4855e591964bd5bdd35c8ef2ee107342d":"Punto de salida","ba7be969e7c1bb5f22489e843478e3d721aaa843":"Precio de compra","772fbced18230220d2d9be1456be16fc1b271d25":"Ganancias/Pérdidas","bae7d5be70820ed56467bd9a63744e23b47bd711":"Estado","96f608c16cef16caa06bf38901fb5f618a35a70b":"Pendiente","7fb3a9b5101bcd45e2dca077191693a5199bafa9":"Resuelto","82a82f798dd773717ec37d15fd4405510291734e":"El bot no está funcionando.","6a88e58aa1798626f94cf17f1a91618b405bb289":"El bot está arrancando...","624cc7f40b68faace7e78d8e5c5be1d4f15facda":"El bot está funcionando...","788180a6ddbbbcca10f6f49d8e85d557934bae0e":"El bot se está deteniendo...","d907a40a4a15da3c21a6e0f8ace3f987d482f92c":"El bot se ha detenido.","4f219c17ab9ab76aa1cd431b4e0e5ecf5520e8e4":"Intentando comprar","4684ee1026d9b4c872d016c3c4588a0c479a451c":"Comprar cantidad","ca92c55b9e4233d771d5b6300fe751a9678d1deb":"Compra exitosa","f02760cd2eac28169f0a990c950c3dfe8427f772":"Contrato cerrado","fadc0ef93d1ff13370524ce8481ddc4a71195934":"Reordenar verticalmente","a479c9c34e878d07b4d67a73a48f432ad7dc53c8":"Descargar","e4458464df6cbb8da1134875ba51519c5d244d9f":"Los bloques deben estar dentro de los contenedores de bloques, bloques principales o funciones","e9c45563358e813f157ba81b33143542165ba84e":"Advertencia","31cb6f44d030abeabcc7046555dea851602a87a5":"Esta estrategia no está disponible en su país.","9ce3bd4224c8c1780db56b4125ecf3f24bf748b7":"OK","486d55264892207fef1ed5799e0b213b446d3eaa":"El archivo XML contiene elementos no soportados. Por favor, revise o modifique el archivo.","a594b427eaf0f108d3e9cc20d70e15da811c760c":"Estrategia no compatible","04a5090686ac7b54822e00a9ff08c38a107601e7":"Lo sentimos, esta estrategia no se puede usar con Binary Bot. Solo puede usarla con DBot.","77dfd2135f4db726c47299bb55be26f7f4525a46":"Cancelar","fdaa08aeaee0bf9b78d83ea19ef9e9bd019e8193":"Ir a DBot","f1d8b7b118d6f82f95614d476bc11af650aed3bc":"No se puede cargar el archivo de bloque","af145748c9cf765a3b059eec20cb1dbb899297d8":"Los bloques fueron cargados con éxito","11ee9c5d534cc8d22651092222b532917594161a":"La duración mínima es","5283ac04c9a8ba8a937d1edb4ba986aeefce8bf1":"El número de intervalos debe ser entre 5 y 10","ace1342bc3720b77ce510b93074041e7386d209e":"El tiempo de expiración no puede ser igual al tiempo de inicio","fed3e7bd6696fb97a12d720845ab5388456bfc3b":"La predicción debe ser un dígito","d466687f90ba548434d65186d11a80c4204f9ad6":"debe agregarse dentro de:","6ddf2b3075ac9ab5d66b40e15ea9a34c087672ea":"debe agregarse dentro de","33aa6ff282ee509d37c6f758274c9156b419ff73":"La estrategia que intentó importar no es válida.","da162a909c2981ed318d23cd9a6be1d66e0a8400":"Formato de archivo no reconocido.","5e719fa76e1b6cb396376c82ebdd04bec7253229":"Bloques remotos para cargar deben ser una colección.","b0d2de25daf6ba09a5e710c6968ffded29c4dae1":"No fue posible cargar el archivo de bloque.","df84a88f38b03b5b342362d72370b0d66afdae35":"El destino debe ser un archivo xml","cd680fd936e9559ef1d95efac7a71680e2b13a89":"Esta URL ya está cargada","34c59389053701a04127f74d32315e0206e076f8":"Se ha producido un error al intentar cargar la URL","3ead0b14c72503187691a7a6d7121987299bd401":"Esta no es una versión oficial de Binary Bot. Úsela bajo su propio riesgo.","27401c9c8e476d659c8382e05c6d70a4a82be468":"Versión oficial","bc981983e7f547dc62e19a1e383acfe00782a6d5":"Siguiente","b52b36b7269fbfc58ec24bb724691951a3decbe8":"Atrás","e9b450d14bc2363d292c84f17cfad5cfbd58a458":"Concluido","29cadadfebdd578a50b7b3d1b2c5b33e424d5de7":"Hacer una visita rápida","a48e81d4a8da67637b46725824177a959fe99b21":"¿Listo para aprender a usar Binary Bot?","6f3e6ebf249947cec4f64117253a8fe43335ae79":"No, gracias","fcb6e90e7223e1d1d735f15dbb7ded9d81bbe7ef":"No preguntar de nuevo.","4ca0a75c2b7fa7da4364d03b72c46fee1860a2bf":"Espacio de trabajo","5fcf29b9f0b8971c8148e70a150ddc9ac04c94fc":"Arrastre y suelte archivos de bloque.","ddcbb5361b1a16eba60fca2383fb297bb90ed9b3":"Descargar estrategias de muestra","1758356db21759f7c5a0da9b4dd1db8fd6feab3f":"o","00b581632c1532969a7128ebc8eae936ed8af04e":"cree sus propias estrategias.","d171baee235d4c93f63755a876782dc5be4c3e47":"Caja de herramientas de bloques","056f19272d96f902c38207cf163ea8dbff7fbd32":"Añadir más bloques de aquí a su bot.","36bae31694f85bd7a5b0ad45e51ef622b95baadb":"Cuentas","f5c47fd3b3553b10441a06054078cea745177dea":"Inicie sesión antes de ejecutar el bot. Siempre pruebe sus estrategias en la cuenta virtual.","fd825ae94aa79500a878dd4590a4b360e7162663":"Controles del bot","6ee7980833e1ed72901b919ffd0fa20e1a251d3f":"Controle sus bloques. Mantenga el cursos sobre cada botón para obtener más información.","f5169c84497de3aea74f7da9e7e177d1427e736b":"¡Disfrute!","4f1b3d682c2a00b393c33637da402463bc11d5ff":"¿Quiere reportar un problema o pedir ayuda?","0049f8894e41937ebb9111cd3def6749049fb50f":"Haga clic aquí","aac1569ccf6b1a11b0ad0fbefdb9ffc777b4c733":"Haga clic para seleccionar","d1a17af19f5388af9d6596cc0ea7dbb1d739e255":"No disponible","53adebdc2b1cbbedb56395b19a73fe47b87cc554":"Intervalos","5fb1db527825d2996e37c655e5dec49d4da80c09":"Segundos","092f99ea11a34a8490e7a767a83a42fc45634f82":"Minutos","9e25a34e635a123f8958bbe26e7c4843278597fb":"Horas","f6bb0f468a8569c67b3d6826e57e62c5500c3681":"Días","db6708630fc646eb98298d9acd701e0a1ac051c2":"Guarde sus bloques y estrategias en Google Drive","85538d002a336c5addef8d189d80976cf7758f8c":"Ha iniciado sesión como","b65463cb6a42a17de514acc4659f7fd331e0876a":"Conectar","ed28e0686e1251ba046f582a3e9ec02470a5e78d":"Desconectar","cd5f85b6f187605f82386eacd680f93820af8d11":"El resultado es","1e38ce3d180cefae485a6986ca7c67841e30376f":"Verdadero si el resultado corresponde a la selección","5c89497fc3c128e2ff865ce8df15356054f2c028":"(4) Reciba el resultado de su transacción y negocie nuevamente","14ea81918758c994cbe3178e695e56afc1ef2b45":"Obtenga la información y el resultado de la transacción anterior, luego negocie nuevamente (se ejecuta al final de la transacción)","5098e2bcc96ee227983c9f7eeddfd226c220ca00":"Detalles del contrato:","251c830f8f869e0887e8b4dc4c30ba1738c7097e":"Lee una opción seleccionada de la lista de detalles del contrato","b3b543c80063a116ced4965d8537b7b62d14c0b7":"Negocie nuevamente","a1eeb7c1e92e9a5d9323ed8ebd7ca7ffed8b0232":"Ejecuta el bloque de negociación nuevamente","ca5586bdb5bdc1a2c0baf53ed0ecd21fafabebe7":"Venta disponible","03bad10717e183b24829baf483dc715e1a44bf7b":"Verdadero si venta en el mercado está disponible","2c71ed279a402e93312dbda173ab18f244d6bf46":"(3) Ver y vender su contrato adquirido","17632a9f51611d2579d95b4b1ccb9476566d7ccf":"Ver la información del contrato adquirido y vender en el mercado si está disponible (se ejecuta en la actualización del contrato)","579607dc4f989ce2b94b558431666a0ab07ac1f3":"Vender en el mercado","e20afd5cf3811a42071c9a312abb2afdad4c590b":"Vender en el mercado.","4712cbff8e92822fc960ef9c0197293a19675eae":"Vender ganancias/pérdidas","df817b48c7a076561b4f8bedc52d65d2e351ab52":"Devuelve las ganancias de vender en el mercado.","da3105e38c42a481ad7230ed393b0e12bebe9c4f":"Precio de venta","343fda69c73b78b84967055aae97f790c422adfd":"Precio de venta de la propuesta seleccionada","d4d34ce9d9dd7e87213469f88cb7ac43725675d5":"(2) Ver y comprar su contrato","fb61a3c71f4c488b3b470cb7daf502a3e9b5ad48":"Observe el flujo de intervalos y compre el contrato deseado (se ejecuta en la actualización de los intervalos)","9bb396940adb9705fe57eba6ea8b578e6aafa792":"Pago","87da93a46d143f6019979b3548414d9d7adabb35":"Pago de la propuesta seleccionada","160f06d4799c85021a810f68c5b517eea37a2737":"Compra","4c2fdde3d9c1950498ed263d6ce21d4bf3d0800b":"Compra un contrato elegido.","b44e884c355e447d0da0e6ba45caaff18c84373b":"Bandas de Bollinger","d6a2a207343bd83aacdc80b579ff4419713a256e":"Lista de entradas","170a28a9db6d27d7212fc6dc249434a57517e7bc":"Período","b833989d69900a4be9e32d1bab65c8f8233f099e":"Multiplicador Std. Dev. Up","1cee82f19c0bedef64f68b32e6b02128efe7c61b":"Multiplicador Std. Dev. Down","974da601086448d0060aeed90e53ddd5acd17b91":"Calcula las Bandas de Bollinger (BB) a partir de una lista con un período","d5b65cac1f1cf9421ac978eebe532de99040cca6":"Conjunto de bandas de Bollinger","58de49791c64aba14e36e5887244a5ef088286cd":"Calcula la lista de Bandas de Bollinger (BB) a partir de una lista con un período","4bd99f76f1104229744455d93df0ff76b9eeed58":"Media móvil exponencial","ea615c6d6a74e25a6d2f1bc9980b46e73508c2eb":"Calcula la media móvil exponencial (EMA) a partir de una lista con un período","4082d9379e59b38c891d046312f8d3c4b64ae3b1":"Array de medias móviles exponenciales","562edc102c5dd9e2fbbede1140b8a5461c2d4dc8":"Calcula la lista de media móvil exponencial (EMA) a partir de una lista con un período","a537f4f3c0f6c68bf896fb23cb2ecdc658488ea2":"Array MACD","b18e572ea14edd48587145f1ef50718adbf256c6":"Período de EMA rápida","974023bddd6249d0f6404872cfcae205b2599ea2":"Período de EMA lenta","5c2adcb3d1bfd6b9f5c2dec13d02a9473e4445a1":"Periodo de señal EMA","6b15ce93fd68d80aeee7f7964c1306044c3c1baf":"Calcula la lista de Media Móvil Convergencia/Divergencia (MACD) de una lista","95ec92885c855ba9cf734c17a43f081901e4d2cc":"Índice de fuerza relativa","b033619e108c9e43bfd8a42cd97bf5c5dc86dc65":"Índice de fuera relativa (RSI) a partir de una lista con un período","4034de66995b876b2ba9bfd0274025e39168e05d":"Array de índice de fuerza relativa","f9da880c8b0e4cce4431912c24eba939e6bc06e1":"Calcula la lista del índice de fuerza relativa (RSI) a partir de una lista de valores con un período","a9842c95766da40bf4ea6ee263cb5a5985847763":"Media móvil simple","347775a293c14362d492f019e677c965be1d6e7d":"Calcula la media móvil simple (SMA) a partir de una lista con un período","4cc7b9e53d082896ad884eb01be16320af65f282":"Array de medias móviles simples","2c75179a57af3c36581008b65e86ed81c4a4cbea":"Calcula la lista de media móvil simple (SMA) a partir de una lista con un período","39f024cf49724fe7ffdea7773c72ed06eec998e1":"con intervalo","e4bed3e67e58b2334ee4b9c6ce59ac7a95d80aaf":"La dirección es","ad47561efb1dcbd7246d9b64487f615647fda036":"Verdadero si la dirección corresponde a la selección","05bef508aadd62bf3967dcf67d769da296f19989":"Dirección del intervalo","d089ab98a846a521b09aad6ff3fefa728bfa8b42":"El bloque de dirección está obsoleto. Por favor, utilice el bloque de verificación de dirección en su lugar","cdb31fc857f01a59f664413498293c714285f46d":"en lista de velas","20fd5f86f08796f145d69dedc209a27e459b2f51":"obtenga # desde final","a96606af8c33ac3428b45abc4782dbf93f458d29":"Obtener la enésima vela más reciente","90ed0e1ea5c1907f8a32d8051a66e845857bb2a4":"Lista del último dígito","248428facb97408414180d4de74e4db35360fbc4":"Devuelve la lista de valores del último dígito","2e4202acde880b7b1c3686f0335ff879fc1e5c7a":"Último dígito","e46e0bd2f7fe37217dec8aa26ebce8ffa3608663":"Devuelve el último dígito del último intervalo","d5fde4c9d5edf660f760fc226df4d2678d3334ab":"Lista de velas","95e552a40d3446c96905cd3ec7e3d123d0246ce8":"Devuelve la lista de velas","5a0ed227a01b7d30b05dcaf3e1c23b74b9be6ff4":"Haga una lista de","a4220593d385a720886f7af1ed3c478fd0c6339c":"valores en una lista de velas","cd8cdf3d47e921c8a72addae9269e66041d417c5":"Devuelve una lista de los valores de la velas seleccionados","3e4f335e7a6f79bd1bafd219ddde30acbf16a7ac":"Leer en la lista de velas ","34037f9452fdb66c9ca27ebcc0afe9d5139e9e24":"# desde final","aba43a580daa7f306956ec69b83e6e37e7233126":"Lea el valor de la vela seleccionada en la enésima vela más reciente","e04b522218a181cf0223042dd18ae08dcc22d8d3":"Último intervalo","6ee445fc253a55c9ed54c009c3f020ac65200d80":"Devuelve el valor del intervalo recibido por un bloque previo a la compra","ed44b69176217a1251c04f0c13d23ac789ea60b2":"Cadena del último tick","ea24dd1988c6534a5f0d11b8fbbc6c374fe68766":"Devuelve el valor de tick recibido por un bloque antes de la compra (Cadena)","4b2340a890e88d1886757c3f7172e273a1edc31f":"Este bloque es activado con cada tick","b54d7b4590559dad64f02d09aacbf6d9863e2624":"Puede utilizar este bloque para analizar los intervalos, independientemente de sus operaciones","ebffc758056e6b2fc2af99af17fbc6853e5d3583":"Lista de intervalos","17649cac8739adcae95e641f794880272ad33bd1":"Devuelve la lista de valores de intervalos","46ecdefde6a8dd5872cc6e0e52afb717f1140426":"Lista de cadenas de ticks","3bdc75d5d68b05dfd3ce6dcdf7d9773e60ed0a51":"Devuelve la lista de valores de tick (Cadena)","802dc02469ae51067ca620ff57dfb5bdb3e524ac":"Saldo:","c4ee8e12b2484cd5b47cdf00bfa2c50b83e91d3d":"Obtener el número de saldo o string","69280143949fcd59c171dd60f6b6e13d0cc08fe6":"Los bloques en el interior son ignorados","d072c2ceeb5c1217722d14c74de7aeab945b4215":"Ponga sus bloques aquí para prevenir que sean removidos","e98ea4ac4e2cfd6a4c84386534c5d1acd7ec85d3":"Clave: %1 Valor: %2","27305f6365c38dd36f5b5eb781e05b5e2e4e3f6e":"Devuelve una representación de cadena de un par de valores clave","b06acc4158c824231f727a13e1c9811f43d5be42":"Cargar bloques desde","661db37251a1ed1afe357ee13895f37a623d7cbf":"Cargar bloques desde Url","6c03ee54ad3a51fc92a1d69943e99667847705b6":"Notificar","b1bec5d06e3672915d81b2fbc2347c8b4947a954":"con sonido","a2d0c89fdfff3176efd4a443eb0f6607067b93e7":"Crea la notificación","6e0fc122f936f808bc2e3af661121b65712ae855":"Notificar a Telegram %1 Token de acceso: %2 ID de chat: %3 Mensaje: %4","1aeb6caed9e46edf5d6224adc905ffb8ee3a7708":"Envía un mensaje a Telegram","45ebd38f4c641ebf6f72be8c3a79dfa50cf9f20e":"Ganancia total","ffb465875e1ff2b49bcaa7c6b70965ffe39fa59d":"Devuelve la ganancia total","532e65f6e266db0bb442d1f426d44d7d32962340":"Cadena de ganancia total","78e84591ff76f992953a8e19b57c7eab7546d638":"Devuelve la ganancia total (Cadena)","bc528d26f66fe8c4aa4bb24ec9c99dff12c055e0":"Nº de ejecuciones","bea5756b18644ccfab01c1c0dbd6fa9db7103379":"Devuelve el número de ejecuciones desde el principio","7d500ebe352ccfa932b253e21938813a06fcff8e":"Webhook URL: %1","e770fd2a6b980a0815592b1bd499127c5a5cfe39":"Envía una solicitud POST a una URL","a35646754dbe7a9211ba8b81338a5d64580eb276":"Carga vacía","69b0648eddd207cd45a9e1ba973dae287b535576":"Carga:","c67ded6b64019212eb2bc69afd761f5b3f626040":"Añadir una señal al número para realizar un desplazamiento de barrera.","569bbd757e1bb8bbccd250b98dc2bb37cb47b787":"Mercado","74751e67c3e1010c343095eaf543e7cb21ced2ef":"Tipo de contrato","1f4698382842477e211eb46de81fa506f01a8c34":"Ambos","c1baf816aac5a5cd849768773fc248cd249dc296":"Tipo de contrato:","c93025710d1ae6cbaf8e710f63eca8edfa0c9399":"Intervalo de vela predeterminado:","9693aeaaf68e3929b59b79306feaa0a847d01192":"Duración:","78d7103a319e808455d397513279d99f3b3f3768":"Apuesta","10c02649e226d430bd75a5b6315a41c0db9992a2":"Barrera","837276742aa90209dde3b4eef07d8e7ab26731ef":"Predicción","258b49925b41751c6bd790a0848246566ba61440":"Reiniciar compra/venta en caso de error","c55ee3445cd391ab299b6f85a6ea9a68a65ea64d":"desactivar para un mejor rendimiento","b410994b67e37d9516eb9b866c85a8c639f79e68":"Reiniciar última negociación en caso de error","2260c5a971c2602834ef8feeb5fa522f900b469f":"bot ignora la operación fallida","cd1495cb4c60266a6abad9024022ae079bf7e416":"(1) Defina su contrato de negociación","0745acf92abd7b60598f161717884cc45dab8694":"Ejecutar una vez al iniciar","999e1ade10ff5ee1d115f5a6288bfd2e0d0736e6":"Definir opciones de negociación","a43c3299d30a5bc7e31a574cdc87f59cbc8fe585":"Defina su contrato de negociación y comience a operar. Agregue inicializaciones aquí (se ejecuta al principio).","d571f33d957ebcab086ecf38eedd71b6ef0c5820":"Opciones de negociación","4d22b565e4253e92a908f216184779679bb1a044":"Barrera alta","b70c38c6db3127422e05315c30bdf76c7c36c480":"Barrera baja","a6c5f081b3addee364af1c8cdb84853f49dc8e07":"Absoluto","0f2ba74929aca6fea950e351dcd576b7cd841fa4":"¿la vela es negra?","7cb3b482ab66947d439642ec64dc7f5bd4e065dc":"Haga una lista de","5925d08228e246f07b790b88ad70c1b73a97d2bc":"valores a partir de una lista de velas","852b438f91ad9eb2cdd84419a675a216d543c687":"Leer","67d3b35a0b740127b56bcd44d3bcb1ccc20e0b48":"valor en la vela","d79d854dcd0829e2177a47beab6a55569e781ab1":"Lea un campo en la vela (leer de la lista de velas)","5606b4460ac96063b8a8e5647008f3ec97252fc5":"Segundos desde el epoch","2de20bdeecb1a8c28bd36fe75f028ed4318d0348":"Devuelve el tiempo epoch (segundos desde el epoch)","f43cb41af7ce8a69c7aecbc1c603bb0381270982":"Ejecutar cada","4b6fe6898f0f956d48a4c8172c6dfbcb4159ab09":"Segundo(s)","2eea87bb804e4e73e3f8e9c41140f7ed83ea8875":"Ejecuta los bloques en el interior cada n segundos","e0af6ddc8a892704f64680bcb22b30c4bfcefec5":"Bloque ejecutar a cada segundo ha quedado obsoleto. Por favor, contáctenos si posee un caso de uso válido.","7b9c76088576a64f32d67ec335162b9f73eaa026":"Ejecutar después de","ff56ffac023cf69ca5c7f71d407499536f4f86b5":"Ejecuta los bloques en el interior después de n segundos","e9fb732dde76a6977bcaa2818b0f56125b183648":"Hasta la fecha / hora","1a90ae7cb728e7f25b031d7e844882f75e74ab5c":"A la marca horaria"}
 
 /***/ }),
 /* 250 */
 /***/ (function(module, exports) {
 
-module.exports = {"3d52a6d8fedcc48a65297c07bf5f7e3e41aab5aa":"Logique","3edf0df49942da6d11a1a217e4d3af4a5a8e64f2":"Mathématique","c3328c39b0e29f78e9ff45db674248b1d245887d":"Texte","4d064726954a17487f94e931f5b157b733ec22ed":"Options avancées","a1fffaaafb7cc996685bceb829c053cc4f7de43d":"Liste","19de69cb601f53a4ea7af22a65c71ae63251365c":"Variable","2b961dea1dc0c60ddf9a2c8e9d090f6f7d082483":"Fonctions","dc7f77b4ccfc9f70a78bd97303bd10ba4c9d70c8":"Boucle","66639f7d455dd71faa9147f5d69e5ce885d8bebd":"Binaire","0ba66deaab2f2cd3b0793d03f600ee2b8f577fbc":"Définition de l'option","9201c6ac624e98e168e6ccddbcd5a9b5cdff06b3":"Avant l'achat","44ab9a87268d3fd74040ed0b55c04f83294cfdef":"Pendant l'achat","c415c9399b7ae7285d2c1c880a6a0aa18f62ff8c":"Après l'achat","d07ffc19d51f0973859a0d95c1d15cd9f22388ca":"Analyse des ticks","8cf71374fa095a64b5295b672daef8507ec7be6a":"Indicateurs","4fa8cc860c52b268dc6a3adcde7305e9415db5bb":"Outils","6c82e6dd86807ee3db07e3c82bec1ae1ce00b08b":"Périodicité","8d8fd6765e184419cad8b88d1a60c895d79578c2":"Chandeliers","548f449b63ff41eaaff5a2d679ffa56b2015fc20":"Divers","8bf95ea372568c7a254ba9fada5f6f1701ebc5b5":"Log","12b71c3e0fe5f7c0b8d17cc03186e281412da4a8":"Synthèse","9feddbabd7e7309e96c590069057158e96baa8f6":"Relevé d'activité","038fe2bdb7ec6ee078f60bdb5bee94654ec6a81d":"Le trading d'options binaires peut devenir une véritable addiction, au même titre que toute autre activité pratiquée de façon trop intensive. Pour éviter le danger d'une telle addiction, nous mettons en œuvre suivi réaliste de votre situation en vous fournissant régulièrement un relevé de vos opérations et de vos comptes.","4152043e8c670075d2c919677e835edb0d923cab":"Veuillez indiquer la périodicité souhaitée en minutes pour les relevés d'activité","d9fff2df19e90f2c7ea6bb30fde4e0da119d13d1":"Veuillez saisir un chiffre entre 10 et 60.","2439f2f199b2a3e798aa9b4feaa9248bdec9bc0b":"Poursuivre les opérations de trading","a72ca256dc49e55a1a57b9a727fbde9834c9a3f7":"Relevé","6e78c91f5a05fc0d4f1a787d38e3d6fe2f856d46":"Déconnexion","4832e45812a2724f16a15f9ae87adfc8ae4168cf":"Contactez-nous","f7c400ed695f898b8ee9d21664aa17b5bb693828":"Connexion","5ea75f1605a4bf1db5c39fcc61854627478c0a7d":"Réinitialiser les blocs à leur état initial","f98595d541778d86f75ef22b3328a031d20aa16b":"Charger de nouveaux blocs (fichier xml)","4a1e616226c329a94da7768bc0435a3284478010":"Sauvegarder les blocs existants (fichier xml)","6b3465ace62f33f0687b4669ac26d95895e9ca52":"Connectez Binary Bot à votre Google Drive pour sauvegarder et réutiliser facilement vos blocs","8e4ec2c451ec7b1bf68d72fe9086ec978e41feb7":"Annuler les modifications (Ctrl+Z)","937f5055f05be359ddf619744e8af4d643549e80":"Refaire les modifications (Ctrl+Shift+Z)","8406d1cce44230835932060649e999ca3283b413":"Zoom Avant (Ctrl + + )","1109673172af2c173c492622ff8a72c8f29f0e70":"Zoom Arrière (Ctrl + -)","44c22002c65d2871331263a23c3e09c0a1bfd847":"Réorganiser Verticalement","ebd0945359e5578ff9bd3a2ab490ca84c225d8f5":"Afficher/masquer la fenêtre récapitulative","76bb05950f80f3a88ee05ef3276c5934fd355e8d":"Lancer le bot","ba50a42d8d3228c37a817865fce49fbca692c2ad":"Arrêter le bot","4f4aa4117318a8ddf8783885d4f3542c5b2733bd":"Afficher log","91017ef9b165cd0e7475a770f318ea5e705e1321":"Afficher graphique","c89e3dd1cafcadcc0312e476ab58b2332209da23":"Afficher Trading View","b02c858e72be118a65c9393930351012b647cb9e":"Basculer l'en-tête","250be77f7605669a0b3d968b9ed381a3d9787ed1":"Ouvrir un fichier XML déjà sauvegardé et récupérer ses blocs","ff29ccd7a6c6073cc462ed590d27a91632fdf67e":"Binary Bot","608061fb5aab975013fa70c5c814a1d8ba30c152":"Gérez vos opérations de trading plus efficacement que jamais","e4ce8dc3e416e69262ba642dc57d3975d6616980":"Vous envisagez d'automatiser vos meilleures stratégies de trading d'options binaires ?","f261237ca8beec6f77b76c4121feb8da22818c56":"Binary Bot, notre outil de programmation de pointe, vous permet de développer des applications de trading sur un modèle en « puzzle », en ajoutant chaque « pièce » à l'aide d'une simple fonction de glisser-déposer.","f6c85c68616eeaaa15fcd53fdc52f6eb5c886357":"Inventez autant de robots de trading d'options binaires que vous le souhaitez, des formules les plus simples aux algorithmes les plus complexes. Ensuite, laissez-les gérer vos opérations pour vous, même lorsque vous dormez.","e6906a0d1c28b202f9bd49da4a6abbddca57399a":"Encore mieux : une fois votre robot terminé, nous pouvons vous aider à le vendre à d'autres traders sur la","1dd0cf79c572bcdbdfabbd54ee95710a21234d73":"Boutique Binary.com","abeef9a35ae6256796ba2462e4f64d308de42359":"Vous percevrez 80 % des recettes de vente pour chaque achat de votre robot sur notre marché d'applications.","0606f0b7763ee6e8094a3dab7873d34c08fd3670":"Commencez dès maintenant la création de votre robot","221acaf3a0290adafe08cdcb8c66121c73d8b4a3":"Besoin de renseignements supplémentaires ?","d635b53e59c9aad8c5d78458826beffb029b27bf":"Merci, nous vous répondrons dans les 24 heures","1de91e827ec70ca735abc2c71b0a89cb0cfc4ce1":"Le marché sous-jacent n'est pas sélectionné","50050f06645ad2743165b429a8f7deebd285fd63":"Le type de contrat n'est pas sélectionné","6a7d1a3a17c4e8ae6712cb60d46db1edf0aa2667":"Veuillez vous connecter","2f9f9096be1a1c0569a9ce54e57f0420f6b3c2e9":"La durée doit être un nombre entier positif","4df6e872792d72aea8a2f6b831d00b554464da23":"Le montant doit être un nombre positif","001e68df3a4b32a4d57148d9d407f44eee3b7436":"La bougie en question n'est pas valide","04f14ea7c92e0b2b5ae005c696245063ec641d66":"La liste de la bougie en question n'est pas valide","c1bbfcbb4f57d3a56c1239af0c2138321589efd2":"nouvelle tentative dans","57b453bb26b1c28dfe362b7cc9f17f0be93dd581":"Taux maximal atteint pour","094628ce13fc0e78f07b697d1cc9421bb2edd666":"Échec de la requête pour","816c52fd2bdd94a63cd0944823a6c0aa9384c103":"Non","5397e0583f14f6c88de06b1ef28f460a1fb5b0ae":"Oui","9bb396940adb9705fe57eba6ea8b578e6aafa792":"Paiement","78d7103a319e808455d397513279d99f3b3f3768":"Investissement","bbb930cc426507ed3f6b7c343c75dd0e041494b7":"relevé","e6e886cdcdefeb6d3edb4c31bed06dd183ac4153":"prix de demande","50e72909992bdc37c7c07769d1b7efac5e52874c":"paiement","ecb5ba7044417916ba12de5fa9e6fccac3e5d475":"profits","c980b910204c7babdffe8ff3f7e755f30133383c":"type de contrat","a726c6955157f1b8b92f9932652434a7150f80f8":"point d'entrée","a66d5c7ef2c63dbc9a8f9e6ae4e2bc575e74a36e":"valeur d'entrée","7674920c033ca14277c577e19c037a6754d4fa80":"point de sortie","e8b8bd9f2eabc12875605a37c93e7f04a713fcb8":"valeur de sortie","779455ee3bde8494d9629b353e17b19e92357ba8":"barrière","37a5301a88da334dc5afc5b63979daa0f3f45e68":"résultat","4973f4c599d5f42cf7bde52d66c3ed8ef77accb1":"Gain","12e24a7d8ac40579e8a0aef4869288afe7ed6745":"Perte","563339f82447b4e758ad76d5a0b63b5698594fba":"Hausse","5c1ae82c29543ac887703776bf3da2c7dcce683d":"Baisse","2fc096bb7b6596ab243d0286c9f43fdf2b9b406d":"Pas de changement","ecb252044b5ea0f679ee78ec1a12904739e2904d":"chaîne comme dans un type chaîne en langage informatique. Cela fait référence à une séquence de caractères.","53b0a1b2fadf4e040cdc2155a7340de24aca93cb":"nombre","bc74f4f071a5a33f00ab88a6d6385b5e6638b86c":"vert","4c9a82ce72ca2519f38d0af0abbb4cecb9fceca9":"bleu","96de5543d183d7de52ac5fa21c46fc811f673f89":"jaune","78988010b890ce6f4d2136481f392787ec6d6106":"rouge","aa9330a16e5b055de809256dad6b4d1cbd2999e7":"Silencieux","cf84a98d6cf7f156862a08ba8236467b6f471004":"Annonce","eee2facd669d1434848c24da5527b3e87d9a12d5":"Gagner de l’argent","9d705578b0f1f0ce3a06dc5e82f9a1e6078f81e1":"Travail accompli","7f2f6a15cf8da2b27e5a4af47b58e7ad71c0b3d9":"Erreur","a3b1583d377f37ac20de7e089edfa0920a078e57":"Erreur grave","66c8b6848eee629c4ac551bf2b5fa591571654be":"La hausse est égale à","5649dce3367d490fa19d563ee9e3d4c4b6f7c642":"La baisse est égale à","062787aa328047e189774b3703d983b83938f6e9":"Supérieur","b91eed4b7a80cd9572a27e65ebdff9caa4b3b9a4":"Inférieur","e3f139abb7a549a1210b36f7dbf89215ad6c9902":"Touche","7d7932bcc2e262ae98cf09dc5445130fb3881769":"Ne touche pas","a16814a48ec58c2e24ba224a80921a5c02361abe":"Termine dans la zone","391d02cd75ebcd6ed26f5f45ddf7d40bf13e9dc5":"Termine hors de la zone","534ec5da4e82ec419abc170e1a8448f55a01664f":"Reste dans la zone","98cbe1998effd8b1a8aefdcc538573055e99a5f5":"Sort de la zone","93d13bad1d2c2841db127cb70cc35bfc98059fc9":"Asiatique/hausse","c098658ce3d3a258e4d155949a60072966b36db7":"Asiatique/baisse","ee2dbd5d6d82d0833069b07e7dd2848d3bf4d83a":"Égal","8444b7ce28bbc3443cc5cf73359b8353989b2a4b":"Différent","9e767ad03e5547f251044e0724dc1d9f3e75aeed":"Pair","dc28f5f3c65ec611f0f30022650d24382d27448e":"Impair","18a63f5512afb5573e5b44deba78d629f0635317":"Au dessus","2a268b89b83f8cb38ea48e46e93dd8840db512f9":"En dessous","2155c8b38181dd2552e84a94049aacd33ef9c607":"Tick Haut","1408cfd2b064b923f024fbe590e27db8282941a5":"Tick Bas","b86eb15dc4f13e4c2972de158d3038d9f657242f":"Reset Call","669a1f3d9a8f601a84da536cfdad1de4092b1926":"Reset Put","844d1a5c99a0a668383340cc095d040eef998c79":"Que des Montées","87293a146cd481a2b30cf74282ec061dc4cf0735":"Que des Descentes","cf9b77061f7b3126b49d50a6fa68f7ca8c26b7a3":"Ouverture","b1a5954a483f8f8b0207385095f74aeb409b3f80":"Haut","a124947cbd2d1d92b47e027274c3269ff0c7a84b":"Bas","bbfa773e5a63a5ea58c9b6207e608ca0120e592a":"Fermeture","1173872a4fb205b713702f0eec5cf2c732c828fd":"Heure d'ouverture","808d7dca8a74d84af27a2d6602c3d786de45fe1e":"Par défaut","62957ecfdc50957e8957c11d2eae74d078f0ef1a":"1 minute","1dd3e663dfa7ac9cb77cfddd2cf8ac700657e2d6":"2 minutes","24e46784cbce32443db5a2638b1a7d3201543e9b":"3 minutes","3aa5819ed8a0b94d0f293db8e9c9598298ddd402":"5 minutes","a6f151883b736f0470d33492e61c72a7d059d065":"10 minutes","899761ff5425abd2ee214fa7aa46e27c6c8b5aae":"15 minutes","31bbe8890d28d183f8f7f2c160fa892c444c0ec7":"30 minutes","f030c3d667652646b86732ad7bc67e226c49cd3a":"1 heure","2046e49e33c040e08dbd6fd83df3e1846015e6f1":"2 heures","7b47150d431db70d783724007f07ab894eb8ac2e":"4 heures","191800b7e9a48680792c0dd77cb6cac00c4514c6":"8 heures","2d8a6f7c34468578640b333b8650131de06ac770":"1 jour","f94510322ecd9b3a2af67a10bd51ecc4ac6a24e7":"Hausse/Baisse","c1365a35e99d0f9147ebc72f21534cf471fa7d95":"Hausse/Baisse Égale","9c7960c6b11d35ac9d6cdc1ebaad3af43b2065c5":"Asiatiques","2260ce49306460c8a2ef501939f29ad6ddd4e934":"Chiffres","0186aa73a1b75fa8f0eb98bbd9ad01102bb09ec1":"Touche/Ne touche pas","f7de1f66f0979667da275b7e8996e805395025a1":"Termine dans/hors de la zone","a431deecd4c2258097adae418d496fe9a8179fee":"Reste dans/Sort de la zone","256fe245cb7d3d673095f7faaa8c9ff81b985ad1":"Ticks Haut/Bas","12a3f461cdebbc8f335190413ee6c57442743bba":"Reset Call/Reset Put","e696144fa588782e6d6b2c97e2d3ed1adf52bd5c":"Que des Montées/Que des Descentes","91a64e3f83c91acf336c631fba295f297f94c399":"Exécuter après n secondes","024696596f26a4db232fd9e966eadfeb27c0bd1a":"Exécuter toutes les n secondes","c538c170bdc6b0f3bb98dce44a016a2e2d45a6e7":"supérieur","85c274929bc0e28eafd3734f2c25046c3b95b36b":"médian","346e3ee198e98146993894d3de8ecab1a86c3e80":"inférieur","f16459104f92ab6b38aa265adb4ecbfc3768e303":"Histogramme","e09f635f4e77476c9ca1c37bc9992e9ace3431c1":"MACD","27bed13a88c60350c3de92ec3820e1cc4f7d6ec3":"Signal","19eabc961735d78f12fc7be906ffcb033853cf85":"Marquage temporel","68f4145fee7dde76afceb910165924ad14cf0d00":"Message","629777b7d4d610ace6dee24442730f27d7d0853e":"Format non pris en charge :","beb040c8fabd007c9cc5ac6a9feb6bdb05d33dac":"Toutes les modifications non enregistrées seront perdues.","410bf23a3f080def9c7a976a16305bcde7943ed1":"Êtes-vous sûr ?","e99811bd3b1ad17e74614060ecb180602be35ad6":"Vous avez été déconnecté !","3b26e990d3acff493ee2cf66d1280bed2625e43f":"Connexion perdue avant réception de la réponse du serveur","876f3e0202ca40dedf2e5ab6577eba1ae637fb53":"Stratégies","8ce80462febd4d573cb2f9c1984fdc93b7c21c57":"Une erreur s'est produite lors du chargement des bibliothèques de Google Drive","7f412a8cf67f755d3eb36846dd07148ceb8d4c72":"Impossible de charger les blocs de Google Drive","3b6bbab905129dd36b8d4e99947fa30540ed7b2a":"Format de fichier non reconnu","3d6b44df6eaf6236b4abc1aadcf8f5b1cda769c1":"Une erreur s'est produite lors de l'extraction des données de Google Drive","cdfe947b0c089a4a1f78c11299f25c32a124f1a6":"Sélectionnez une stratégie de Binary Bot","2db43c69a4b96454914f0b8272bc869984529e6e":"Il y a eu une erreur en listant les fichiers de Google Drive","0dcea5f584938e0fff00084b83156ab31d641ab3":"Une erreur s'est produite lors de la récupération des fichiers de Google Drive","18da95988117ff029393f3f5c881d70ef47f7385":"Une erreur s'est produite lors du traitement de votre demande","04226bcf91195130e25fe7a8e8ea4d3e058efcb7":"Sélectionnez un dossier","aee24f2456ea8516b024a5d3e2b815ae7f2239d9":"La notification par Telegram n'a pas pu être envoyée","05754ed14275a070a20a1d5cd65f0cea66f1da7f":"Les propositions ne sont pas prêtes","79222cd9892a434aa61fc7dc01c3839951eb8d1e":"La proposition retenue n’existe pas","6ea4a034747d020b1d8ce4848def95d537555dd6":"Acheté","89f89c02cf47e091e726a4e07b88af0966806897":"ID","1200c1af2f7bba4e29a34112865662748c9d41df":"La revente de ce contrat n’est pas offert.","62d6180e55905f7b996d442c53631981a4ef8b5b":"Vendu pour","ed4978867de1da05b336b724a3fb96222a29ebec":"L'index doit être un nombre entier positif","87e2e01f93d25ba7ed582cc81ef5c9ab2959f4c6":"Le montant du profit","b2a4553586d1062c21323bca1dc0589f7a9d5cf7":"Le montant des pertes","46fc6f27a835486d63d9e927c6687e4508cb3087":"Nombre maximal de transactions atteint","9202ddae4cea16513e53bbc965d88ed975e59512":"Montant maximal de perte atteint","5f52b397b7e5f538681f0f5717a88aa626349c7a":"Bot.init n’est pas appelé","85dfa32c97d8618d1bea083609e2c8a29845abe5":"Compte","d847919a30d31c0be624087f3370492b3fdf80c6":"Nb. d'exécutions","5cd6978d63540c8a490ef76f43219de6362f958e":"Mise totale","17410d7b62b8b1de981cfebada24632987edf186":"Versement total","b841eeb091f1ff0e14be08e5ea1b93e4cf147ed3":"Total des profits/pertes","90eef613042c5a51f542421065b68b886d473807":"Solde","db1c784524e1b54011a95823026161f7c8517fe0":"Référence","4db3e9e4aecd187db9339a10d2629fef46724dc4":"Types de transaction","1bb4086b66659d8580f9be4beef69931aeea3cad":"Point d'entrée","8bf249c4855e591964bd5bdd35c8ef2ee107342d":"Point de sortie","ba7be969e7c1bb5f22489e843478e3d721aaa843":"Prix d'achat","772fbced18230220d2d9be1456be16fc1b271d25":"Profits/pertes","bae7d5be70820ed56467bd9a63744e23b47bd711":"Statut","96f608c16cef16caa06bf38901fb5f618a35a70b":"En attente","7fb3a9b5101bcd45e2dca077191693a5199bafa9":"Réglée","82a82f798dd773717ec37d15fd4405510291734e":"Le bot n'est pas en marche.","6a88e58aa1798626f94cf17f1a91618b405bb289":"Le robot se met en marche...","624cc7f40b68faace7e78d8e5c5be1d4f15facda":"Le bot est en marche...","788180a6ddbbbcca10f6f49d8e85d557934bae0e":"Le Bot est en train de s'arrêter...","d907a40a4a15da3c21a6e0f8ace3f987d482f92c":"Le bot s'est arrêté.","4f219c17ab9ab76aa1cd431b4e0e5ecf5520e8e4":"Tentative d'achat","4684ee1026d9b4c872d016c3c4588a0c479a451c":"Acheter le montant","ca92c55b9e4233d771d5b6300fe751a9678d1deb":"Achat réussi","f02760cd2eac28169f0a990c950c3dfe8427f772":"Contrat fermé","66c7734789e19cbeef3a5ac185ea732139aed213":"Graphique","3b662fb2e8bafce29aa98321b18874bb44905488":"Intégration de Google Drive","7ee0ff5eaa6fa82bd6d83a2f4ca446c663f097cb":"Le nombre maximum de trades consécutifs doit être compris entre 1 et 100","93039e609d94a24f3572b794a31b21525a09af2b":"Non défini","ea67c8023c75375484f3a5f1aeb009b20059d5bc":"Limite journalière des pertes :","b1946e5b4b78465b7661fd4bc89ff52de6c633e7":"Nombre maximum de trades consécutifs","952f375412e89ff213a8aca383d18e5691354347":"Début","9f1c61cc03f3ef9324db05502f7f0b61e61e1521":"Limites de trading","095ba68888b5ace5f4515f5acab76dfa1073544e":"Mon ordinateur","ddcb77ff769ea54ca622848f6bedd4004fa4f4fa":"Chargez","248e224f533752db28a1aab3519a58569ad96140":"Chargez les blocs","c7097e97dcc446ca889d3ca6be733a65e2728afe":"Téléchargé avec succès sur Google Drive","3218e5a460e82d7bdea9ce0f145cab2f47ba9a4b":"Enregistrez en tant que collection","611ebbfb080284312904de925ef0f75f4cb56ad2":"Sauvegardez vos blocs et paramètres pour les réutiliser dans d'autres stratégies","efc007a393f66cdb14d57d385822a3d9e36ef873":"Enregistrer","a638caa8ab2b7ff7980a571334217339e6d1d634":"Sauvegarder les blocs","39fca63515c105918f03e4908ec12df675b07f92":"Affichage en mode trading","fadc0ef93d1ff13370524ce8481ddc4a71195934":"Réorganiser verticalement","e4458464df6cbb8da1134875ba51519c5d244d9f":"Les blocs doivent être à l'intérieur des porte-blocs, des blocs principaux ou des fonctions principales","e9c45563358e813f157ba81b33143542165ba84e":"Avertissement","31cb6f44d030abeabcc7046555dea851602a87a5":"Cette stratégie n’est pas disponible dans votre pays.","9ce3bd4224c8c1780db56b4125ecf3f24bf748b7":"OK","af145748c9cf765a3b059eec20cb1dbb899297d8":"Les blocs ont bien été chargés","a479c9c34e878d07b4d67a73a48f432ad7dc53c8":"Télécharger","f1d8b7b118d6f82f95614d476bc11af650aed3bc":"Impossible de charger le fichier bloc","11ee9c5d534cc8d22651092222b532917594161a":"La durée minimale est","5283ac04c9a8ba8a937d1edb4ba986aeefce8bf1":"Le nombre de ticks doit se situer entre 5 et 10","ace1342bc3720b77ce510b93074041e7386d209e":"L'heure d'expiration ne peut être identique à l'heure de début","fed3e7bd6696fb97a12d720845ab5388456bfc3b":"La prédiction doit être un chiffre","d466687f90ba548434d65186d11a80c4204f9ad6":"doit être ajouté à l’intérieur de :","6ddf2b3075ac9ab5d66b40e15ea9a34c087672ea":"doit être ajouté dans","33aa6ff282ee509d37c6f758274c9156b419ff73":"La stratégie que vous avez essayé d’importer est invalide.","da162a909c2981ed318d23cd9a6be1d66e0a8400":"Format de fichier non reconnu.","5e719fa76e1b6cb396376c82ebdd04bec7253229":"Les blocs distants à télécharger doivent être une collection.","b0d2de25daf6ba09a5e710c6968ffded29c4dae1":"Impossible de charger le fichier bloc.","df84a88f38b03b5b342362d72370b0d66afdae35":"La cible doit être un fichier xml","cd680fd936e9559ef1d95efac7a71680e2b13a89":"Cette URL est déjà chargée","34c59389053701a04127f74d32315e0206e076f8":"Une erreur est survenue lors de la tentative de chargement de l'Url","3ead0b14c72503187691a7a6d7121987299bd401":"Ce n’est pas une version officielle du Bot binaire, utilisez à vos propres risques.","27401c9c8e476d659c8382e05c6d70a4a82be468":"Version officielle","bc981983e7f547dc62e19a1e383acfe00782a6d5":"Suivant","b52b36b7269fbfc58ec24bb724691951a3decbe8":"Retour","e9b450d14bc2363d292c84f17cfad5cfbd58a458":"Terminé","29cadadfebdd578a50b7b3d1b2c5b33e424d5de7":"Accédez à un aperçu rapide","a48e81d4a8da67637b46725824177a959fe99b21":"Êtes-vous prêt(e) à apprendre à comment utiliser Binary Bot ?","6f3e6ebf249947cec4f64117253a8fe43335ae79":"Non merci","fcb6e90e7223e1d1d735f15dbb7ded9d81bbe7ef":"Ne plus me le demander.","4ca0a75c2b7fa7da4364d03b72c46fee1860a2bf":"Espace de travail","5fcf29b9f0b8971c8148e70a150ddc9ac04c94fc":"Utilisez le glisser-déposer pour ajouter des fichiers de bloc.","ddcbb5361b1a16eba60fca2383fb297bb90ed9b3":"Téléchargez des exemples de stratégies","1758356db21759f7c5a0da9b4dd1db8fd6feab3f":"ou","00b581632c1532969a7128ebc8eae936ed8af04e":"élaborez vos propres stratégies.","d171baee235d4c93f63755a876782dc5be4c3e47":"Boîte à outils des blocs","056f19272d96f902c38207cf163ea8dbff7fbd32":"Ajoutez des blocs à votre robot à partir d'ici.","36bae31694f85bd7a5b0ad45e51ef622b95baadb":"Comptes","f5c47fd3b3553b10441a06054078cea745177dea":"Connectez-vous avant de démarrer votre robot. Veillez à toujours tester vos stratégies avec un compte virtuel.","fd825ae94aa79500a878dd4590a4b360e7162663":"Commandes robot","6ee7980833e1ed72901b919ffd0fa20e1a251d3f":"Contrôlez vos blocs. Pour obtenir des informations supplémentaires, maintenez le curseur sur chaque bouton.","f5169c84497de3aea74f7da9e7e177d1427e736b":"Nous vous souhaitons un agréable moment !","4f1b3d682c2a00b393c33637da402463bc11d5ff":"Vous souhaitez signaler un problème ou demander de l’aide ?","0049f8894e41937ebb9111cd3def6749049fb50f":"Cliquez ici","aac1569ccf6b1a11b0ad0fbefdb9ffc777b4c733":"Cliquez pour sélectionner","53adebdc2b1cbbedb56395b19a73fe47b87cc554":"Ticks","5fb1db527825d2996e37c655e5dec49d4da80c09":"Secondes","092f99ea11a34a8490e7a767a83a42fc45634f82":"Minutes","9e25a34e635a123f8958bbe26e7c4843278597fb":"Heures","f6bb0f468a8569c67b3d6826e57e62c5500c3681":"Jours","d1a17af19f5388af9d6596cc0ea7dbb1d739e255":"Non disponible","db6708630fc646eb98298d9acd701e0a1ac051c2":"Sauvegardez vos blocs et stratégies sur Google Drive","85538d002a336c5addef8d189d80976cf7758f8c":"Vous êtes connecté en tant que","b65463cb6a42a17de514acc4659f7fd331e0876a":"Connecter","ed28e0686e1251ba046f582a3e9ec02470a5e78d":"Déconnecter","cd5f85b6f187605f82386eacd680f93820af8d11":"Le résultat est","1e38ce3d180cefae485a6986ca7c67841e30376f":"Vrai si le résultat correspond à la sélection","5c89497fc3c128e2ff865ce8df15356054f2c028":"(4) Obtenir le résultat de votre opération et effectuer à nouveau une opération","14ea81918758c994cbe3178e695e56afc1ef2b45":"Obtenir les informations et le résultat de l'opération précédente, puis effectuer à nouveau une opération (s'exécute à la clôture de l'opération)","5098e2bcc96ee227983c9f7eeddfd226c220ca00":"Détail du contrat :","251c830f8f869e0887e8b4dc4c30ba1738c7097e":"Affiche une option sélectionnée dans la liste des détails du contrat","b3b543c80063a116ced4965d8537b7b62d14c0b7":"Exécuter à nouveau l'opération","a1eeb7c1e92e9a5d9323ed8ebd7ca7ffed8b0232":"Exécute à nouveau le bloc de trading","da3105e38c42a481ad7230ed393b0e12bebe9c4f":"Prix de la demande","343fda69c73b78b84967055aae97f790c422adfd":"Prix de demande pour la proposition sélectionnée","d4d34ce9d9dd7e87213469f88cb7ac43725675d5":"(2) Suivre et acheter votre contrat","fb61a3c71f4c488b3b470cb7daf502a3e9b5ad48":"Suivre le flux des ticks et acheter le contrat souhaité (s'exécute à la mise à jour des ticks)","87da93a46d143f6019979b3548414d9d7adabb35":"Paiement pour la proposition sélectionnée","160f06d4799c85021a810f68c5b517eea37a2737":"Acheter","4c2fdde3d9c1950498ed263d6ce21d4bf3d0800b":"Achète le contrat sélectionné.","ca5586bdb5bdc1a2c0baf53ed0ecd21fafabebe7":"Une option de vente est disponible","03bad10717e183b24829baf483dc715e1a44bf7b":"Vrai si la vente au prix du marché est disponible","2c71ed279a402e93312dbda173ab18f244d6bf46":"(3) Suivre et vendre le contrat acheté","17632a9f51611d2579d95b4b1ccb9476566d7ccf":"Suivre les informations relatives au contrat acheté et vendre au prix du marché sicette option est disponible (s'exécute à la mise à jour du contrat)","579607dc4f989ce2b94b558431666a0ab07ac1f3":"Vendre au marché","e20afd5cf3811a42071c9a312abb2afdad4c590b":"Vendre au marché.","4712cbff8e92822fc960ef9c0197293a19675eae":"Profits/pertes de vente","df817b48c7a076561b4f8bedc52d65d2e351ab52":"Indique les profits pour une vente au prix du marché.","b44e884c355e447d0da0e6ba45caaff18c84373b":"Bandes de Bollinger","d6a2a207343bd83aacdc80b579ff4419713a256e":"Liste d'entrée","170a28a9db6d27d7212fc6dc249434a57517e7bc":"Période","b833989d69900a4be9e32d1bab65c8f8233f099e":"Multiplicateur de l’Écart Type à la Hausse","1cee82f19c0bedef64f68b32e6b02128efe7c61b":"Multiplicateur de l’Écart Type à la Baisse","974da601086448d0060aeed90e53ddd5acd17b91":"Calcule les Bandes de Bolliger (BB) à partir d'une liste avec une période","d5b65cac1f1cf9421ac978eebe532de99040cca6":"Tableau des Bandes de Bollinger","58de49791c64aba14e36e5887244a5ef088286cd":"Calcule la liste des Bandes de Bolliger (BB) à partir d'une liste avec une période","4bd99f76f1104229744455d93df0ff76b9eeed58":"Moyenne Mobile Exponentielle","ea615c6d6a74e25a6d2f1bc9980b46e73508c2eb":"Calcule la Moyenne Mobile Exponentielle (MME) à partir d'une liste avec une période","4082d9379e59b38c891d046312f8d3c4b64ae3b1":"Tableau de la Moyenne Mobile Exponentielle","562edc102c5dd9e2fbbede1140b8a5461c2d4dc8":"Calcule la liste de moyenne mobile exponentielle (MME) à partir d'une liste de valeurs avec une période","a537f4f3c0f6c68bf896fb23cb2ecdc658488ea2":"Tableau MACD","b18e572ea14edd48587145f1ef50718adbf256c6":"Période EMA rapide","974023bddd6249d0f6404872cfcae205b2599ea2":"Période EMA lente","5c2adcb3d1bfd6b9f5c2dec13d02a9473e4445a1":"Période du signal EMA","6b15ce93fd68d80aeee7f7964c1306044c3c1baf":"Calcule la liste de convergence/divergence de la moyenne mobile (MACD) à partir d'une liste","95ec92885c855ba9cf734c17a43f081901e4d2cc":"Indice de Force Relative","b033619e108c9e43bfd8a42cd97bf5c5dc86dc65":"Index de force relative (RSI en anglais) d’une liste avec une période","4034de66995b876b2ba9bfd0274025e39168e05d":"Tableau d’Indice de Force Relative","f9da880c8b0e4cce4431912c24eba939e6bc06e1":"Calcule la liste de l'Indice de force Relative (RSI en anglais) d’une liste de valeurs avec une période","a9842c95766da40bf4ea6ee263cb5a5985847763":"Moyenne mobile simple","347775a293c14362d492f019e677c965be1d6e7d":"Calcule la moyenne mobile simple (MMS) à partir d'une liste avec une période","4cc7b9e53d082896ad884eb01be16320af65f282":"Tableau de la Moyenne Mobile Simple","2c75179a57af3c36581008b65e86ed81c4a4cbea":"Calcule la liste de Moyenne Mobile Simple (MMS) à partir d'une liste de valeurs avec une période","39f024cf49724fe7ffdea7773c72ed06eec998e1":"avec intervalle","e4bed3e67e58b2334ee4b9c6ce59ac7a95d80aaf":"La direction est","ad47561efb1dcbd7246d9b64487f615647fda036":"Vrai si la direction correspond à la sélection","05bef508aadd62bf3967dcf67d769da296f19989":"Direction du tick","d089ab98a846a521b09aad6ff3fefa728bfa8b42":"Le bloc de direction est obsolète, utilisez plutôt le bloc de direction contrôle","cdb31fc857f01a59f664413498293c714285f46d":"dans la liste de la bougie","20fd5f86f08796f145d69dedc209a27e459b2f51":"obtenir le numéro à partir de la fin","a96606af8c33ac3428b45abc4782dbf93f458d29":"Obtenir la énième récente bougie","90ed0e1ea5c1907f8a32d8051a66e845857bb2a4":"Liste du dernier chiffre","248428facb97408414180d4de74e4db35360fbc4":"Retourne la liste des valeurs du dernier chiffre","2e4202acde880b7b1c3686f0335ff879fc1e5c7a":"Dernier chiffre","e46e0bd2f7fe37217dec8aa26ebce8ffa3608663":"Indique le dernier chiffre du dernier tick","d5fde4c9d5edf660f760fc226df4d2678d3334ab":"Liste des bougies","95e552a40d3446c96905cd3ec7e3d123d0246ce8":"Retourne la liste de la bougie","5a0ed227a01b7d30b05dcaf3e1c23b74b9be6ff4":"Faites une Liste de","a4220593d385a720886f7af1ed3c478fd0c6339c":"valeurs dans la liste de bougies","cd8cdf3d47e921c8a72addae9269e66041d417c5":"Retourne une liste des valeurs de bougie sélectionnées","3e4f335e7a6f79bd1bafd219ddde30acbf16a7ac":"Lire la liste des bougies ","34037f9452fdb66c9ca27ebcc0afe9d5139e9e24":"# à partir de la fin","aba43a580daa7f306956ec69b83e6e37e7233126":"Lire la valeur sélectionnée de bougie dans la nième récente bougie","e04b522218a181cf0223042dd18ae08dcc22d8d3":"Dernier tick","6ee445fc253a55c9ed54c009c3f020ac65200d80":"Retourne la valeur tick reçue par un achat avant bloc","4b2340a890e88d1886757c3f7172e273a1edc31f":"Ce bloc est appelé pour chaque tick","b54d7b4590559dad64f02d09aacbf6d9863e2624":"Vous pouvez utiliser ce bloc pour analyser les ticks indépendamment de vos transactions","ebffc758056e6b2fc2af99af17fbc6853e5d3583":"Liste des ticks","17649cac8739adcae95e641f794880272ad33bd1":"Retourne la liste des valeurs tick","802dc02469ae51067ca620ff57dfb5bdb3e524ac":"Solde :","c4ee8e12b2484cd5b47cdf00bfa2c50b83e91d3d":"Obtenir le numéro du solde ou chaîne","69280143949fcd59c171dd60f6b6e13d0cc08fe6":"Les blocs situés à l'intérieur sont ignorés","d072c2ceeb5c1217722d14c74de7aeab945b4215":"Placez vos blocs ici pour empêcher leur suppression","b06acc4158c824231f727a13e1c9811f43d5be42":"Télécharger bloc à partir de","661db37251a1ed1afe357ee13895f37a623d7cbf":"Télécharger des blocs à partir de l'URL","6c03ee54ad3a51fc92a1d69943e99667847705b6":"Notifier","b1bec5d06e3672915d81b2fbc2347c8b4947a954":"avec du son","a2d0c89fdfff3176efd4a443eb0f6607067b93e7":"Crée une notification","6e0fc122f936f808bc2e3af661121b65712ae855":"Alerter Telegram %1 Jeton d'Accès : %2 ID de Conversation : %3 Message : %4","1aeb6caed9e46edf5d6224adc905ffb8ee3a7708":"Envoie un message à Telegram","45ebd38f4c641ebf6f72be8c3a79dfa50cf9f20e":"Total des profits","ffb465875e1ff2b49bcaa7c6b70965ffe39fa59d":"Retourne le total des profits","bc528d26f66fe8c4aa4bb24ec9c99dff12c055e0":"Nb. d'exécutions","bea5756b18644ccfab01c1c0dbd6fa9db7103379":"Retourne le nombre d'exécutions depuis le début","c67ded6b64019212eb2bc69afd761f5b3f626040":"Ajouter un signe à un nombre pour définir une Marge de barrière.","569bbd757e1bb8bbccd250b98dc2bb37cb47b787":"Marché","74751e67c3e1010c343095eaf543e7cb21ced2ef":"Type d'option","1f4698382842477e211eb46de81fa506f01a8c34":"Les deux","c1baf816aac5a5cd849768773fc248cd249dc296":"Type de contrat :","c93025710d1ae6cbaf8e710f63eca8edfa0c9399":"Intervalle de bougie par défaut :","9693aeaaf68e3929b59b79306feaa0a847d01192":"Durée :","10c02649e226d430bd75a5b6315a41c0db9992a2":"Barrière","837276742aa90209dde3b4eef07d8e7ab26731ef":"Prédiction ","258b49925b41751c6bd790a0848246566ba61440":"Redémarrer la procédure Acheter/vendre en cas d’erreur","c55ee3445cd391ab299b6f85a6ea9a68a65ea64d":"désactiver pour améliorer les performances","b410994b67e37d9516eb9b866c85a8c639f79e68":"Redémarrez le dernier trade en cas d’erreur","2260c5a971c2602834ef8feeb5fa522f900b469f":"le bot ignore les trades infructueux","cd1495cb4c60266a6abad9024022ae079bf7e416":"(1) Définir votre contrat binaire","0745acf92abd7b60598f161717884cc45dab8694":"Exécuter une fois au démarrage","999e1ade10ff5ee1d115f5a6288bfd2e0d0736e6":"Définir les Options de Transaction","a43c3299d30a5bc7e31a574cdc87f59cbc8fe585":"Définissez votre contrat de trading et initiez la transaction, ajoutez des initialisations ici. (Exécution à l'initialisation)","d571f33d957ebcab086ecf38eedd71b6ef0c5820":"Négocier des Options","4d22b565e4253e92a908f216184779679bb1a044":"Barrière supérieure","b70c38c6db3127422e05315c30bdf76c7c36c480":"Barrière inférieure","a6c5f081b3addee364af1c8cdb84853f49dc8e07":"Absolue","0f2ba74929aca6fea950e351dcd576b7cd841fa4":"la bougie est-elle noire ?","7cb3b482ab66947d439642ec64dc7f5bd4e065dc":"Faites une liste de","5925d08228e246f07b790b88ad70c1b73a97d2bc":"valeurs dans la liste de bougies","852b438f91ad9eb2cdd84419a675a216d543c687":"Lire","67d3b35a0b740127b56bcd44d3bcb1ccc20e0b48":"valeur en bougie","d79d854dcd0829e2177a47beab6a55569e781ab1":"Lire un champ dans une bougie (lire à partir de la liste des bougies)","5606b4460ac96063b8a8e5647008f3ec97252fc5":"Secondes depuis Époque","2de20bdeecb1a8c28bd36fe75f028ed4318d0348":"Indique le temps d'époque (secondes depuis époque)","f43cb41af7ce8a69c7aecbc1c603bb0381270982":"Exécuter toutes les","4b6fe6898f0f956d48a4c8172c6dfbcb4159ab09":"Seconde(s)","2eea87bb804e4e73e3f8e9c41140f7ed83ea8875":"Exécuter les blocs inclus toutes les n secondes","e0af6ddc8a892704f64680bcb22b30c4bfcefec5":"L’exécution des bloc secondes est obsolète. S’il vous plaît contactez nous si vous avez un cas d’utilisation valide.","7b9c76088576a64f32d67ec335162b9f73eaa026":"Exécuter après","ff56ffac023cf69ca5c7f71d407499536f4f86b5":"Exécuter les blocs inclus après n secondes"}
+module.exports = {"3d52a6d8fedcc48a65297c07bf5f7e3e41aab5aa":"Logique","3edf0df49942da6d11a1a217e4d3af4a5a8e64f2":"Mathématique","c3328c39b0e29f78e9ff45db674248b1d245887d":"Texte","4d064726954a17487f94e931f5b157b733ec22ed":"Options avancées","a1fffaaafb7cc996685bceb829c053cc4f7de43d":"Liste","19de69cb601f53a4ea7af22a65c71ae63251365c":"Variable","2b961dea1dc0c60ddf9a2c8e9d090f6f7d082483":"Fonctions","dc7f77b4ccfc9f70a78bd97303bd10ba4c9d70c8":"Boucle","66639f7d455dd71faa9147f5d69e5ce885d8bebd":"Binaire","0ba66deaab2f2cd3b0793d03f600ee2b8f577fbc":"Définition de l'option","9201c6ac624e98e168e6ccddbcd5a9b5cdff06b3":"Avant l'achat","44ab9a87268d3fd74040ed0b55c04f83294cfdef":"Pendant l'achat","c415c9399b7ae7285d2c1c880a6a0aa18f62ff8c":"Après l'achat","d07ffc19d51f0973859a0d95c1d15cd9f22388ca":"Analyse des ticks","8cf71374fa095a64b5295b672daef8507ec7be6a":"Indicateurs","4fa8cc860c52b268dc6a3adcde7305e9415db5bb":"Outils","6c82e6dd86807ee3db07e3c82bec1ae1ce00b08b":"Périodicité","8d8fd6765e184419cad8b88d1a60c895d79578c2":"Chandeliers","548f449b63ff41eaaff5a2d679ffa56b2015fc20":"Divers","8bf95ea372568c7a254ba9fada5f6f1701ebc5b5":"Log","12b71c3e0fe5f7c0b8d17cc03186e281412da4a8":"Synthèse","9feddbabd7e7309e96c590069057158e96baa8f6":"Relevé d'activité","038fe2bdb7ec6ee078f60bdb5bee94654ec6a81d":"Le trading d'options binaires peut devenir une véritable addiction, au même titre que toute autre activité pratiquée de façon trop intensive. Pour éviter le danger d'une telle addiction, nous mettons en œuvre suivi réaliste de votre situation en vous fournissant régulièrement un relevé de vos opérations et de vos comptes.","4152043e8c670075d2c919677e835edb0d923cab":"Veuillez indiquer la périodicité souhaitée en minutes pour les relevés d'activité","d9fff2df19e90f2c7ea6bb30fde4e0da119d13d1":"Veuillez saisir un chiffre entre 10 et 60.","2439f2f199b2a3e798aa9b4feaa9248bdec9bc0b":"Poursuivre les opérations de trading","a72ca256dc49e55a1a57b9a727fbde9834c9a3f7":"Relevé","6e78c91f5a05fc0d4f1a787d38e3d6fe2f856d46":"Déconnexion","4832e45812a2724f16a15f9ae87adfc8ae4168cf":"Contactez-nous","f7c400ed695f898b8ee9d21664aa17b5bb693828":"Connexion","5ea75f1605a4bf1db5c39fcc61854627478c0a7d":"Réinitialiser les blocs à leur état initial","f98595d541778d86f75ef22b3328a031d20aa16b":"Charger de nouveaux blocs (fichier xml)","4a1e616226c329a94da7768bc0435a3284478010":"Sauvegarder les blocs existants (fichier xml)","6b3465ace62f33f0687b4669ac26d95895e9ca52":"Connectez Binary Bot à votre Google Drive pour sauvegarder et réutiliser facilement vos blocs","8e4ec2c451ec7b1bf68d72fe9086ec978e41feb7":"Annuler les modifications (Ctrl+Z)","937f5055f05be359ddf619744e8af4d643549e80":"Refaire les modifications (Ctrl+Shift+Z)","8406d1cce44230835932060649e999ca3283b413":"Zoom Avant (Ctrl + + )","1109673172af2c173c492622ff8a72c8f29f0e70":"Zoom Arrière (Ctrl + -)","44c22002c65d2871331263a23c3e09c0a1bfd847":"Réorganiser Verticalement","ebd0945359e5578ff9bd3a2ab490ca84c225d8f5":"Afficher/masquer la fenêtre récapitulative","76bb05950f80f3a88ee05ef3276c5934fd355e8d":"Lancer le bot","ba50a42d8d3228c37a817865fce49fbca692c2ad":"Arrêter le bot","4f4aa4117318a8ddf8783885d4f3542c5b2733bd":"Afficher log","91017ef9b165cd0e7475a770f318ea5e705e1321":"Afficher graphique","c89e3dd1cafcadcc0312e476ab58b2332209da23":"Afficher Trading View","b02c858e72be118a65c9393930351012b647cb9e":"Basculer l'en-tête","250be77f7605669a0b3d968b9ed381a3d9787ed1":"Ouvrir un fichier XML déjà sauvegardé et récupérer ses blocs","ff29ccd7a6c6073cc462ed590d27a91632fdf67e":"Binary Bot","608061fb5aab975013fa70c5c814a1d8ba30c152":"Gérez vos opérations de trading plus efficacement que jamais","e4ce8dc3e416e69262ba642dc57d3975d6616980":"Vous envisagez d'automatiser vos meilleures stratégies de trading d'options binaires ?","f261237ca8beec6f77b76c4121feb8da22818c56":"Binary Bot, notre outil de programmation de pointe, vous permet de développer des applications de trading sur un modèle en « puzzle », en ajoutant chaque « pièce » à l'aide d'une simple fonction de glisser-déposer.","f6c85c68616eeaaa15fcd53fdc52f6eb5c886357":"Inventez autant de robots de trading d'options binaires que vous le souhaitez, des formules les plus simples aux algorithmes les plus complexes. Ensuite, laissez-les gérer vos opérations pour vous, même lorsque vous dormez.","e6906a0d1c28b202f9bd49da4a6abbddca57399a":"Encore mieux : une fois votre robot terminé, nous pouvons vous aider à le vendre à d'autres traders sur la","1dd0cf79c572bcdbdfabbd54ee95710a21234d73":"Boutique Binary.com","abeef9a35ae6256796ba2462e4f64d308de42359":"Vous percevrez 80 % des recettes de vente pour chaque achat de votre robot sur notre marché d'applications.","0606f0b7763ee6e8094a3dab7873d34c08fd3670":"Commencez dès maintenant la création de votre robot","221acaf3a0290adafe08cdcb8c66121c73d8b4a3":"Besoin de renseignements supplémentaires ?","d635b53e59c9aad8c5d78458826beffb029b27bf":"Merci, nous vous répondrons dans les 24 heures","a69a8fc21499d0fd85e87bab467699827547a5bc":"Veuillez saisir une URL de serveur valide","1de91e827ec70ca735abc2c71b0a89cb0cfc4ce1":"Le marché sous-jacent n'est pas sélectionné","50050f06645ad2743165b429a8f7deebd285fd63":"Le type de contrat n'est pas sélectionné","6a7d1a3a17c4e8ae6712cb60d46db1edf0aa2667":"Veuillez vous connecter","2f9f9096be1a1c0569a9ce54e57f0420f6b3c2e9":"La durée doit être un nombre entier positif","4df6e872792d72aea8a2f6b831d00b554464da23":"Le montant doit être un nombre positif","001e68df3a4b32a4d57148d9d407f44eee3b7436":"La bougie en question n'est pas valide","04f14ea7c92e0b2b5ae005c696245063ec641d66":"La liste de la bougie en question n'est pas valide","c1bbfcbb4f57d3a56c1239af0c2138321589efd2":"nouvelle tentative dans","57b453bb26b1c28dfe362b7cc9f17f0be93dd581":"Taux maximal atteint pour","094628ce13fc0e78f07b697d1cc9421bb2edd666":"Échec de la requête pour","816c52fd2bdd94a63cd0944823a6c0aa9384c103":"Non","5397e0583f14f6c88de06b1ef28f460a1fb5b0ae":"Oui","bbb930cc426507ed3f6b7c343c75dd0e041494b7":"relevé","e6e886cdcdefeb6d3edb4c31bed06dd183ac4153":"prix de demande","50e72909992bdc37c7c07769d1b7efac5e52874c":"paiement","ecb5ba7044417916ba12de5fa9e6fccac3e5d475":"profits","c980b910204c7babdffe8ff3f7e755f30133383c":"type de contrat","a726c6955157f1b8b92f9932652434a7150f80f8":"point d'entrée","a66d5c7ef2c63dbc9a8f9e6ae4e2bc575e74a36e":"valeur d'entrée","3905be81561384dc8c43d6127c57ed1e0eb03b74":"valeur d'entrée de chaîne","7674920c033ca14277c577e19c037a6754d4fa80":"point de sortie","e8b8bd9f2eabc12875605a37c93e7f04a713fcb8":"valeur de sortie","06ecea26625359f7dcf5ff5c47af6174ff815257":"valeur de sortie de chaîne","779455ee3bde8494d9629b353e17b19e92357ba8":"barrière","37a5301a88da334dc5afc5b63979daa0f3f45e68":"résultat","4973f4c599d5f42cf7bde52d66c3ed8ef77accb1":"Gain","12e24a7d8ac40579e8a0aef4869288afe7ed6745":"Perte","563339f82447b4e758ad76d5a0b63b5698594fba":"Hausse","5c1ae82c29543ac887703776bf3da2c7dcce683d":"Baisse","2fc096bb7b6596ab243d0286c9f43fdf2b9b406d":"Pas de changement","ecb252044b5ea0f679ee78ec1a12904739e2904d":"chaîne comme dans un type chaîne en langage informatique. Cela fait référence à une séquence de caractères.","53b0a1b2fadf4e040cdc2155a7340de24aca93cb":"nombre","bc74f4f071a5a33f00ab88a6d6385b5e6638b86c":"vert","4c9a82ce72ca2519f38d0af0abbb4cecb9fceca9":"bleu","96de5543d183d7de52ac5fa21c46fc811f673f89":"jaune","78988010b890ce6f4d2136481f392787ec6d6106":"rouge","aa9330a16e5b055de809256dad6b4d1cbd2999e7":"Silencieux","cf84a98d6cf7f156862a08ba8236467b6f471004":"Annonce","eee2facd669d1434848c24da5527b3e87d9a12d5":"Gagner de l’argent","9d705578b0f1f0ce3a06dc5e82f9a1e6078f81e1":"Travail accompli","7f2f6a15cf8da2b27e5a4af47b58e7ad71c0b3d9":"Erreur","a3b1583d377f37ac20de7e089edfa0920a078e57":"Erreur grave","66c8b6848eee629c4ac551bf2b5fa591571654be":"La hausse est égale à","5649dce3367d490fa19d563ee9e3d4c4b6f7c642":"La baisse est égale à","062787aa328047e189774b3703d983b83938f6e9":"Supérieur","b91eed4b7a80cd9572a27e65ebdff9caa4b3b9a4":"Inférieur","e3f139abb7a549a1210b36f7dbf89215ad6c9902":"Touche","7d7932bcc2e262ae98cf09dc5445130fb3881769":"Ne touche pas","a16814a48ec58c2e24ba224a80921a5c02361abe":"Termine dans la zone","391d02cd75ebcd6ed26f5f45ddf7d40bf13e9dc5":"Termine hors de la zone","534ec5da4e82ec419abc170e1a8448f55a01664f":"Reste dans la zone","98cbe1998effd8b1a8aefdcc538573055e99a5f5":"Sort de la zone","93d13bad1d2c2841db127cb70cc35bfc98059fc9":"Asiatique/hausse","c098658ce3d3a258e4d155949a60072966b36db7":"Asiatique/baisse","ee2dbd5d6d82d0833069b07e7dd2848d3bf4d83a":"Égal","8444b7ce28bbc3443cc5cf73359b8353989b2a4b":"Différent","9e767ad03e5547f251044e0724dc1d9f3e75aeed":"Pair","dc28f5f3c65ec611f0f30022650d24382d27448e":"Impair","18a63f5512afb5573e5b44deba78d629f0635317":"Au dessus","2a268b89b83f8cb38ea48e46e93dd8840db512f9":"En dessous","2155c8b38181dd2552e84a94049aacd33ef9c607":"Tick Haut","1408cfd2b064b923f024fbe590e27db8282941a5":"Tick Bas","b86eb15dc4f13e4c2972de158d3038d9f657242f":"Reset Call","669a1f3d9a8f601a84da536cfdad1de4092b1926":"Reset Put","844d1a5c99a0a668383340cc095d040eef998c79":"Que des Montées","87293a146cd481a2b30cf74282ec061dc4cf0735":"Que des Descentes","cf9b77061f7b3126b49d50a6fa68f7ca8c26b7a3":"Ouverture","b1a5954a483f8f8b0207385095f74aeb409b3f80":"Haut","a124947cbd2d1d92b47e027274c3269ff0c7a84b":"Bas","bbfa773e5a63a5ea58c9b6207e608ca0120e592a":"Fermeture","1173872a4fb205b713702f0eec5cf2c732c828fd":"Heure d'ouverture","808d7dca8a74d84af27a2d6602c3d786de45fe1e":"Par défaut","62957ecfdc50957e8957c11d2eae74d078f0ef1a":"1 minute","1dd3e663dfa7ac9cb77cfddd2cf8ac700657e2d6":"2 minutes","24e46784cbce32443db5a2638b1a7d3201543e9b":"3 minutes","3aa5819ed8a0b94d0f293db8e9c9598298ddd402":"5 minutes","a6f151883b736f0470d33492e61c72a7d059d065":"10 minutes","899761ff5425abd2ee214fa7aa46e27c6c8b5aae":"15 minutes","31bbe8890d28d183f8f7f2c160fa892c444c0ec7":"30 minutes","f030c3d667652646b86732ad7bc67e226c49cd3a":"1 heure","2046e49e33c040e08dbd6fd83df3e1846015e6f1":"2 heures","7b47150d431db70d783724007f07ab894eb8ac2e":"4 heures","191800b7e9a48680792c0dd77cb6cac00c4514c6":"8 heures","2d8a6f7c34468578640b333b8650131de06ac770":"1 jour","f94510322ecd9b3a2af67a10bd51ecc4ac6a24e7":"Hausse/Baisse","c1365a35e99d0f9147ebc72f21534cf471fa7d95":"Hausse/Baisse Égale","9c7960c6b11d35ac9d6cdc1ebaad3af43b2065c5":"Asiatiques","2260ce49306460c8a2ef501939f29ad6ddd4e934":"Chiffres","0186aa73a1b75fa8f0eb98bbd9ad01102bb09ec1":"Touche/Ne touche pas","f7de1f66f0979667da275b7e8996e805395025a1":"Termine dans/hors de la zone","a431deecd4c2258097adae418d496fe9a8179fee":"Reste dans/Sort de la zone","256fe245cb7d3d673095f7faaa8c9ff81b985ad1":"Ticks Haut/Bas","12a3f461cdebbc8f335190413ee6c57442743bba":"Reset Call/Reset Put","e696144fa588782e6d6b2c97e2d3ed1adf52bd5c":"Que des Montées/Que des Descentes","91a64e3f83c91acf336c631fba295f297f94c399":"Exécuter après n secondes","024696596f26a4db232fd9e966eadfeb27c0bd1a":"Exécuter toutes les n secondes","c538c170bdc6b0f3bb98dce44a016a2e2d45a6e7":"supérieur","85c274929bc0e28eafd3734f2c25046c3b95b36b":"médian","346e3ee198e98146993894d3de8ecab1a86c3e80":"inférieur","f16459104f92ab6b38aa265adb4ecbfc3768e303":"Histogramme","e09f635f4e77476c9ca1c37bc9992e9ace3431c1":"MACD","27bed13a88c60350c3de92ec3820e1cc4f7d6ec3":"Signal","19eabc961735d78f12fc7be906ffcb033853cf85":"Marquage temporel","68f4145fee7dde76afceb910165924ad14cf0d00":"Message","629777b7d4d610ace6dee24442730f27d7d0853e":"Format non pris en charge :","beb040c8fabd007c9cc5ac6a9feb6bdb05d33dac":"Toutes les modifications non enregistrées seront perdues.","410bf23a3f080def9c7a976a16305bcde7943ed1":"Êtes-vous sûr ?","e99811bd3b1ad17e74614060ecb180602be35ad6":"Vous avez été déconnecté !","876f3e0202ca40dedf2e5ab6577eba1ae637fb53":"Stratégies","8ce80462febd4d573cb2f9c1984fdc93b7c21c57":"Une erreur s'est produite lors du chargement des bibliothèques de Google Drive","c4c758b5c8f5b3985f6bf7382c848bb44e0a5b74":"Veuillez accorder l'autorisation d'afficher et de gérer vos fichiers Google Drive","3b6bbab905129dd36b8d4e99947fa30540ed7b2a":"Format de fichier non reconnu","3d6b44df6eaf6236b4abc1aadcf8f5b1cda769c1":"Une erreur s'est produite lors de l'extraction des données de Google Drive","cdfe947b0c089a4a1f78c11299f25c32a124f1a6":"Sélectionnez une stratégie de Binary Bot","2db43c69a4b96454914f0b8272bc869984529e6e":"Il y a eu une erreur en listant les fichiers de Google Drive","0dcea5f584938e0fff00084b83156ab31d641ab3":"Une erreur s'est produite lors de la récupération des fichiers de Google Drive","18da95988117ff029393f3f5c881d70ef47f7385":"Une erreur s'est produite lors du traitement de votre demande","04226bcf91195130e25fe7a8e8ea4d3e058efcb7":"Sélectionnez un dossier","aee24f2456ea8516b024a5d3e2b815ae7f2239d9":"La notification par Telegram n'a pas pu être envoyée","3f370309b6280eb100f898426d8605c1f45d558d":"Horodatage non valide","af6a4e2a5582be89ac930e946eaed86e01cac58b":"Date/heure invalide","49d51398b574e7312d99b18d2b93d2ede416f053":"Impossible d'envoyer le webhook","05754ed14275a070a20a1d5cd65f0cea66f1da7f":"Les propositions ne sont pas prêtes","79222cd9892a434aa61fc7dc01c3839951eb8d1e":"La proposition retenue n’existe pas","6ea4a034747d020b1d8ce4848def95d537555dd6":"Acheté","89f89c02cf47e091e726a4e07b88af0966806897":"ID","1200c1af2f7bba4e29a34112865662748c9d41df":"La revente de ce contrat n’est pas offert.","62d6180e55905f7b996d442c53631981a4ef8b5b":"Vendu pour","ed4978867de1da05b336b724a3fb96222a29ebec":"L'index doit être un nombre entier positif","87e2e01f93d25ba7ed582cc81ef5c9ab2959f4c6":"Le montant du profit","b2a4553586d1062c21323bca1dc0589f7a9d5cf7":"Le montant des pertes","46fc6f27a835486d63d9e927c6687e4508cb3087":"Nombre maximal de transactions atteint","9202ddae4cea16513e53bbc965d88ed975e59512":"Montant maximal de perte atteint","5f52b397b7e5f538681f0f5717a88aa626349c7a":"Bot.init n’est pas appelé","66c7734789e19cbeef3a5ac185ea732139aed213":"Graphique","3b662fb2e8bafce29aa98321b18874bb44905488":"Intégration de Google Drive","7ee0ff5eaa6fa82bd6d83a2f4ca446c663f097cb":"Le nombre maximum de trades consécutifs doit être compris entre 1 et 100","93039e609d94a24f3572b794a31b21525a09af2b":"Non défini","ea67c8023c75375484f3a5f1aeb009b20059d5bc":"Limite journalière des pertes :","b1946e5b4b78465b7661fd4bc89ff52de6c633e7":"Nombre maximum de trades consécutifs","952f375412e89ff213a8aca383d18e5691354347":"Début","9f1c61cc03f3ef9324db05502f7f0b61e61e1521":"Limites de trading","095ba68888b5ace5f4515f5acab76dfa1073544e":"Mon ordinateur","ddcb77ff769ea54ca622848f6bedd4004fa4f4fa":"Chargez","248e224f533752db28a1aab3519a58569ad96140":"Chargez les blocs","c7097e97dcc446ca889d3ca6be733a65e2728afe":"Téléchargé avec succès sur Google Drive","3218e5a460e82d7bdea9ce0f145cab2f47ba9a4b":"Enregistrez en tant que collection","611ebbfb080284312904de925ef0f75f4cb56ad2":"Sauvegardez vos blocs et paramètres pour les réutiliser dans d'autres stratégies","efc007a393f66cdb14d57d385822a3d9e36ef873":"Enregistrer","a638caa8ab2b7ff7980a571334217339e6d1d634":"Sauvegarder les blocs","39fca63515c105918f03e4908ec12df675b07f92":"Affichage en mode trading","85dfa32c97d8618d1bea083609e2c8a29845abe5":"Compte","d847919a30d31c0be624087f3370492b3fdf80c6":"Nb. d'exécutions","5cd6978d63540c8a490ef76f43219de6362f958e":"Mise totale","17410d7b62b8b1de981cfebada24632987edf186":"Versement total","b841eeb091f1ff0e14be08e5ea1b93e4cf147ed3":"Total des profits/pertes","90eef613042c5a51f542421065b68b886d473807":"Solde","db1c784524e1b54011a95823026161f7c8517fe0":"Référence","4db3e9e4aecd187db9339a10d2629fef46724dc4":"Types de transaction","1bb4086b66659d8580f9be4beef69931aeea3cad":"Point d'entrée","8bf249c4855e591964bd5bdd35c8ef2ee107342d":"Point de sortie","ba7be969e7c1bb5f22489e843478e3d721aaa843":"Prix d'achat","772fbced18230220d2d9be1456be16fc1b271d25":"Profits/pertes","bae7d5be70820ed56467bd9a63744e23b47bd711":"Statut","96f608c16cef16caa06bf38901fb5f618a35a70b":"En attente","7fb3a9b5101bcd45e2dca077191693a5199bafa9":"Réglée","82a82f798dd773717ec37d15fd4405510291734e":"Le bot n'est pas en marche.","6a88e58aa1798626f94cf17f1a91618b405bb289":"Le robot se met en marche...","624cc7f40b68faace7e78d8e5c5be1d4f15facda":"Le bot est en marche...","788180a6ddbbbcca10f6f49d8e85d557934bae0e":"Le Bot est en train de s'arrêter...","d907a40a4a15da3c21a6e0f8ace3f987d482f92c":"Le bot s'est arrêté.","4f219c17ab9ab76aa1cd431b4e0e5ecf5520e8e4":"Tentative d'achat","4684ee1026d9b4c872d016c3c4588a0c479a451c":"Acheter le montant","ca92c55b9e4233d771d5b6300fe751a9678d1deb":"Achat réussi","f02760cd2eac28169f0a990c950c3dfe8427f772":"Contrat fermé","fadc0ef93d1ff13370524ce8481ddc4a71195934":"Réorganiser verticalement","a479c9c34e878d07b4d67a73a48f432ad7dc53c8":"Télécharger","e4458464df6cbb8da1134875ba51519c5d244d9f":"Les blocs doivent être à l'intérieur des porte-blocs, des blocs principaux ou des fonctions principales","e9c45563358e813f157ba81b33143542165ba84e":"Avertissement","31cb6f44d030abeabcc7046555dea851602a87a5":"Cette stratégie n’est pas disponible dans votre pays.","9ce3bd4224c8c1780db56b4125ecf3f24bf748b7":"OK","486d55264892207fef1ed5799e0b213b446d3eaa":"Le fichier XML contient des éléments non pris en charge. Veuillez vérifier ou modifier le fichier.","a594b427eaf0f108d3e9cc20d70e15da811c760c":"Stratégie non prise en charge","04a5090686ac7b54822e00a9ff08c38a107601e7":"Désolé, cette stratégie ne peut pas être utilisée avec Binary Bot. Vous ne pouvez l'utiliser qu'avec DBot.","77dfd2135f4db726c47299bb55be26f7f4525a46":"Annuler","fdaa08aeaee0bf9b78d83ea19ef9e9bd019e8193":"Aller vers DBot","f1d8b7b118d6f82f95614d476bc11af650aed3bc":"Impossible de charger le fichier bloc","af145748c9cf765a3b059eec20cb1dbb899297d8":"Les blocs ont bien été chargés","11ee9c5d534cc8d22651092222b532917594161a":"La durée minimale est","5283ac04c9a8ba8a937d1edb4ba986aeefce8bf1":"Le nombre de ticks doit se situer entre 5 et 10","ace1342bc3720b77ce510b93074041e7386d209e":"L'heure d'expiration ne peut être identique à l'heure de début","fed3e7bd6696fb97a12d720845ab5388456bfc3b":"La prédiction doit être un chiffre","d466687f90ba548434d65186d11a80c4204f9ad6":"doit être ajouté à l’intérieur de :","6ddf2b3075ac9ab5d66b40e15ea9a34c087672ea":"doit être ajouté dans","33aa6ff282ee509d37c6f758274c9156b419ff73":"La stratégie que vous avez essayé d’importer est invalide.","da162a909c2981ed318d23cd9a6be1d66e0a8400":"Format de fichier non reconnu.","5e719fa76e1b6cb396376c82ebdd04bec7253229":"Les blocs distants à télécharger doivent être une collection.","b0d2de25daf6ba09a5e710c6968ffded29c4dae1":"Impossible de charger le fichier bloc.","df84a88f38b03b5b342362d72370b0d66afdae35":"La cible doit être un fichier xml","cd680fd936e9559ef1d95efac7a71680e2b13a89":"Cette URL est déjà chargée","34c59389053701a04127f74d32315e0206e076f8":"Une erreur est survenue lors de la tentative de chargement de l'Url","3ead0b14c72503187691a7a6d7121987299bd401":"Ce n’est pas une version officielle du Bot binaire, utilisez à vos propres risques.","27401c9c8e476d659c8382e05c6d70a4a82be468":"Version officielle","bc981983e7f547dc62e19a1e383acfe00782a6d5":"Suivant","b52b36b7269fbfc58ec24bb724691951a3decbe8":"Retour","e9b450d14bc2363d292c84f17cfad5cfbd58a458":"Terminé","29cadadfebdd578a50b7b3d1b2c5b33e424d5de7":"Accédez à un aperçu rapide","a48e81d4a8da67637b46725824177a959fe99b21":"Êtes-vous prêt(e) à apprendre à comment utiliser Binary Bot ?","6f3e6ebf249947cec4f64117253a8fe43335ae79":"Non merci","fcb6e90e7223e1d1d735f15dbb7ded9d81bbe7ef":"Ne plus me le demander.","4ca0a75c2b7fa7da4364d03b72c46fee1860a2bf":"Espace de travail","5fcf29b9f0b8971c8148e70a150ddc9ac04c94fc":"Utilisez le glisser-déposer pour ajouter des fichiers de bloc.","ddcbb5361b1a16eba60fca2383fb297bb90ed9b3":"Téléchargez des exemples de stratégies","1758356db21759f7c5a0da9b4dd1db8fd6feab3f":"ou","00b581632c1532969a7128ebc8eae936ed8af04e":"élaborez vos propres stratégies.","d171baee235d4c93f63755a876782dc5be4c3e47":"Boîte à outils des blocs","056f19272d96f902c38207cf163ea8dbff7fbd32":"Ajoutez des blocs à votre robot à partir d'ici.","36bae31694f85bd7a5b0ad45e51ef622b95baadb":"Comptes","f5c47fd3b3553b10441a06054078cea745177dea":"Connectez-vous avant de démarrer votre robot. Veillez à toujours tester vos stratégies avec un compte virtuel.","fd825ae94aa79500a878dd4590a4b360e7162663":"Commandes robot","6ee7980833e1ed72901b919ffd0fa20e1a251d3f":"Contrôlez vos blocs. Pour obtenir des informations supplémentaires, maintenez le curseur sur chaque bouton.","f5169c84497de3aea74f7da9e7e177d1427e736b":"Nous vous souhaitons un agréable moment !","4f1b3d682c2a00b393c33637da402463bc11d5ff":"Vous souhaitez signaler un problème ou demander de l’aide ?","0049f8894e41937ebb9111cd3def6749049fb50f":"Cliquez ici","aac1569ccf6b1a11b0ad0fbefdb9ffc777b4c733":"Cliquez pour sélectionner","d1a17af19f5388af9d6596cc0ea7dbb1d739e255":"Non disponible","53adebdc2b1cbbedb56395b19a73fe47b87cc554":"Ticks","5fb1db527825d2996e37c655e5dec49d4da80c09":"Secondes","092f99ea11a34a8490e7a767a83a42fc45634f82":"Minutes","9e25a34e635a123f8958bbe26e7c4843278597fb":"Heures","f6bb0f468a8569c67b3d6826e57e62c5500c3681":"Jours","db6708630fc646eb98298d9acd701e0a1ac051c2":"Sauvegardez vos blocs et stratégies sur Google Drive","85538d002a336c5addef8d189d80976cf7758f8c":"Vous êtes connecté en tant que","b65463cb6a42a17de514acc4659f7fd331e0876a":"Connecter","ed28e0686e1251ba046f582a3e9ec02470a5e78d":"Déconnecter","cd5f85b6f187605f82386eacd680f93820af8d11":"Le résultat est","1e38ce3d180cefae485a6986ca7c67841e30376f":"Vrai si le résultat correspond à la sélection","5c89497fc3c128e2ff865ce8df15356054f2c028":"(4) Obtenir le résultat de votre opération et effectuer à nouveau une opération","14ea81918758c994cbe3178e695e56afc1ef2b45":"Obtenir les informations et le résultat de l'opération précédente, puis effectuer à nouveau une opération (s'exécute à la clôture de l'opération)","5098e2bcc96ee227983c9f7eeddfd226c220ca00":"Détail du contrat :","251c830f8f869e0887e8b4dc4c30ba1738c7097e":"Affiche une option sélectionnée dans la liste des détails du contrat","b3b543c80063a116ced4965d8537b7b62d14c0b7":"Exécuter à nouveau l'opération","a1eeb7c1e92e9a5d9323ed8ebd7ca7ffed8b0232":"Exécute à nouveau le bloc de trading","ca5586bdb5bdc1a2c0baf53ed0ecd21fafabebe7":"Une option de vente est disponible","03bad10717e183b24829baf483dc715e1a44bf7b":"Vrai si la vente au prix du marché est disponible","2c71ed279a402e93312dbda173ab18f244d6bf46":"(3) Suivre et vendre le contrat acheté","17632a9f51611d2579d95b4b1ccb9476566d7ccf":"Suivre les informations relatives au contrat acheté et vendre au prix du marché sicette option est disponible (s'exécute à la mise à jour du contrat)","579607dc4f989ce2b94b558431666a0ab07ac1f3":"Vendre au marché","e20afd5cf3811a42071c9a312abb2afdad4c590b":"Vendre au marché.","4712cbff8e92822fc960ef9c0197293a19675eae":"Profits/pertes de vente","df817b48c7a076561b4f8bedc52d65d2e351ab52":"Indique les profits pour une vente au prix du marché.","da3105e38c42a481ad7230ed393b0e12bebe9c4f":"Prix de la demande","343fda69c73b78b84967055aae97f790c422adfd":"Prix de demande pour la proposition sélectionnée","d4d34ce9d9dd7e87213469f88cb7ac43725675d5":"(2) Suivre et acheter votre contrat","fb61a3c71f4c488b3b470cb7daf502a3e9b5ad48":"Suivre le flux des ticks et acheter le contrat souhaité (s'exécute à la mise à jour des ticks)","9bb396940adb9705fe57eba6ea8b578e6aafa792":"Paiement","87da93a46d143f6019979b3548414d9d7adabb35":"Paiement pour la proposition sélectionnée","160f06d4799c85021a810f68c5b517eea37a2737":"Acheter","4c2fdde3d9c1950498ed263d6ce21d4bf3d0800b":"Achète le contrat sélectionné.","b44e884c355e447d0da0e6ba45caaff18c84373b":"Bandes de Bollinger","d6a2a207343bd83aacdc80b579ff4419713a256e":"Liste d'entrée","170a28a9db6d27d7212fc6dc249434a57517e7bc":"Période","b833989d69900a4be9e32d1bab65c8f8233f099e":"Multiplicateur de l’Écart Type à la Hausse","1cee82f19c0bedef64f68b32e6b02128efe7c61b":"Multiplicateur de l’Écart Type à la Baisse","974da601086448d0060aeed90e53ddd5acd17b91":"Calcule les Bandes de Bolliger (BB) à partir d'une liste avec une période","d5b65cac1f1cf9421ac978eebe532de99040cca6":"Tableau des Bandes de Bollinger","58de49791c64aba14e36e5887244a5ef088286cd":"Calcule la liste des Bandes de Bolliger (BB) à partir d'une liste avec une période","4bd99f76f1104229744455d93df0ff76b9eeed58":"Moyenne Mobile Exponentielle","ea615c6d6a74e25a6d2f1bc9980b46e73508c2eb":"Calcule la Moyenne Mobile Exponentielle (MME) à partir d'une liste avec une période","4082d9379e59b38c891d046312f8d3c4b64ae3b1":"Tableau de la Moyenne Mobile Exponentielle","562edc102c5dd9e2fbbede1140b8a5461c2d4dc8":"Calcule la liste de moyenne mobile exponentielle (MME) à partir d'une liste de valeurs avec une période","a537f4f3c0f6c68bf896fb23cb2ecdc658488ea2":"Tableau MACD","b18e572ea14edd48587145f1ef50718adbf256c6":"Période EMA rapide","974023bddd6249d0f6404872cfcae205b2599ea2":"Période EMA lente","5c2adcb3d1bfd6b9f5c2dec13d02a9473e4445a1":"Période du signal EMA","6b15ce93fd68d80aeee7f7964c1306044c3c1baf":"Calcule la liste de convergence/divergence de la moyenne mobile (MACD) à partir d'une liste","95ec92885c855ba9cf734c17a43f081901e4d2cc":"Indice de Force Relative","b033619e108c9e43bfd8a42cd97bf5c5dc86dc65":"Index de force relative (RSI en anglais) d’une liste avec une période","4034de66995b876b2ba9bfd0274025e39168e05d":"Tableau d’Indice de Force Relative","f9da880c8b0e4cce4431912c24eba939e6bc06e1":"Calcule la liste de l'Indice de force Relative (RSI en anglais) d’une liste de valeurs avec une période","a9842c95766da40bf4ea6ee263cb5a5985847763":"Moyenne mobile simple","347775a293c14362d492f019e677c965be1d6e7d":"Calcule la moyenne mobile simple (MMS) à partir d'une liste avec une période","4cc7b9e53d082896ad884eb01be16320af65f282":"Tableau de la Moyenne Mobile Simple","2c75179a57af3c36581008b65e86ed81c4a4cbea":"Calcule la liste de Moyenne Mobile Simple (MMS) à partir d'une liste de valeurs avec une période","39f024cf49724fe7ffdea7773c72ed06eec998e1":"avec intervalle","e4bed3e67e58b2334ee4b9c6ce59ac7a95d80aaf":"La direction est","ad47561efb1dcbd7246d9b64487f615647fda036":"Vrai si la direction correspond à la sélection","05bef508aadd62bf3967dcf67d769da296f19989":"Direction du tick","d089ab98a846a521b09aad6ff3fefa728bfa8b42":"Le bloc de direction est obsolète, utilisez plutôt le bloc de direction contrôle","cdb31fc857f01a59f664413498293c714285f46d":"dans la liste de la bougie","20fd5f86f08796f145d69dedc209a27e459b2f51":"obtenir le numéro à partir de la fin","a96606af8c33ac3428b45abc4782dbf93f458d29":"Obtenir la énième récente bougie","90ed0e1ea5c1907f8a32d8051a66e845857bb2a4":"Liste du dernier chiffre","248428facb97408414180d4de74e4db35360fbc4":"Retourne la liste des valeurs du dernier chiffre","2e4202acde880b7b1c3686f0335ff879fc1e5c7a":"Dernier chiffre","e46e0bd2f7fe37217dec8aa26ebce8ffa3608663":"Indique le dernier chiffre du dernier tick","d5fde4c9d5edf660f760fc226df4d2678d3334ab":"Liste des bougies","95e552a40d3446c96905cd3ec7e3d123d0246ce8":"Retourne la liste de la bougie","5a0ed227a01b7d30b05dcaf3e1c23b74b9be6ff4":"Faites une Liste de","a4220593d385a720886f7af1ed3c478fd0c6339c":"valeurs dans la liste de bougies","cd8cdf3d47e921c8a72addae9269e66041d417c5":"Retourne une liste des valeurs de bougie sélectionnées","3e4f335e7a6f79bd1bafd219ddde30acbf16a7ac":"Lire la liste des bougies ","34037f9452fdb66c9ca27ebcc0afe9d5139e9e24":"# à partir de la fin","aba43a580daa7f306956ec69b83e6e37e7233126":"Lire la valeur sélectionnée de bougie dans la nième récente bougie","e04b522218a181cf0223042dd18ae08dcc22d8d3":"Dernier tick","6ee445fc253a55c9ed54c009c3f020ac65200d80":"Retourne la valeur tick reçue par un achat avant bloc","ed44b69176217a1251c04f0c13d23ac789ea60b2":"Dernière chaîne de tick","ea24dd1988c6534a5f0d11b8fbbc6c374fe68766":"Renvoie la valeur de tick reçue par un bloc avant achat (chaîne)","4b2340a890e88d1886757c3f7172e273a1edc31f":"Ce bloc est appelé pour chaque tick","b54d7b4590559dad64f02d09aacbf6d9863e2624":"Vous pouvez utiliser ce bloc pour analyser les ticks indépendamment de vos transactions","ebffc758056e6b2fc2af99af17fbc6853e5d3583":"Liste des ticks","17649cac8739adcae95e641f794880272ad33bd1":"Retourne la liste des valeurs tick","46ecdefde6a8dd5872cc6e0e52afb717f1140426":"Liste des chaînes de tiques","3bdc75d5d68b05dfd3ce6dcdf7d9773e60ed0a51":"Renvoie la liste des valeurs de tick (chaîne)","802dc02469ae51067ca620ff57dfb5bdb3e524ac":"Solde :","c4ee8e12b2484cd5b47cdf00bfa2c50b83e91d3d":"Obtenir le numéro du solde ou chaîne","69280143949fcd59c171dd60f6b6e13d0cc08fe6":"Les blocs situés à l'intérieur sont ignorés","d072c2ceeb5c1217722d14c74de7aeab945b4215":"Placez vos blocs ici pour empêcher leur suppression","e98ea4ac4e2cfd6a4c84386534c5d1acd7ec85d3":"Clé: %1 Valeur: %2","27305f6365c38dd36f5b5eb781e05b5e2e4e3f6e":"Renvoie une représentation sous forme de chaîne d'une paire clé/valeur","b06acc4158c824231f727a13e1c9811f43d5be42":"Télécharger bloc à partir de","661db37251a1ed1afe357ee13895f37a623d7cbf":"Télécharger des blocs à partir de l'URL","6c03ee54ad3a51fc92a1d69943e99667847705b6":"Notifier","b1bec5d06e3672915d81b2fbc2347c8b4947a954":"avec du son","a2d0c89fdfff3176efd4a443eb0f6607067b93e7":"Crée une notification","6e0fc122f936f808bc2e3af661121b65712ae855":"Alerter Telegram %1 Jeton d'Accès : %2 ID de Conversation : %3 Message : %4","1aeb6caed9e46edf5d6224adc905ffb8ee3a7708":"Envoie un message à Telegram","45ebd38f4c641ebf6f72be8c3a79dfa50cf9f20e":"Total des profits","ffb465875e1ff2b49bcaa7c6b70965ffe39fa59d":"Retourne le total des profits","532e65f6e266db0bb442d1f426d44d7d32962340":"Chaîne de profit total","78e84591ff76f992953a8e19b57c7eab7546d638":"Renvoyer le profit total (chaîne)","bc528d26f66fe8c4aa4bb24ec9c99dff12c055e0":"Nb. d'exécutions","bea5756b18644ccfab01c1c0dbd6fa9db7103379":"Retourne le nombre d'exécutions depuis le début","7d500ebe352ccfa932b253e21938813a06fcff8e":"Webhook URL: %1","e770fd2a6b980a0815592b1bd499127c5a5cfe39":"Envoie une requête POST à ​​une URL","a35646754dbe7a9211ba8b81338a5d64580eb276":"Payload vide","69b0648eddd207cd45a9e1ba973dae287b535576":"Payload:","c67ded6b64019212eb2bc69afd761f5b3f626040":"Ajouter un signe à un nombre pour définir une Marge de barrière.","569bbd757e1bb8bbccd250b98dc2bb37cb47b787":"Marché","74751e67c3e1010c343095eaf543e7cb21ced2ef":"Type d'option","1f4698382842477e211eb46de81fa506f01a8c34":"Les deux","c1baf816aac5a5cd849768773fc248cd249dc296":"Type de contrat :","c93025710d1ae6cbaf8e710f63eca8edfa0c9399":"Intervalle de bougie par défaut :","9693aeaaf68e3929b59b79306feaa0a847d01192":"Durée :","78d7103a319e808455d397513279d99f3b3f3768":"Investissement","10c02649e226d430bd75a5b6315a41c0db9992a2":"Barrière","837276742aa90209dde3b4eef07d8e7ab26731ef":"Prédiction ","258b49925b41751c6bd790a0848246566ba61440":"Redémarrer la procédure Acheter/vendre en cas d’erreur","c55ee3445cd391ab299b6f85a6ea9a68a65ea64d":"désactiver pour améliorer les performances","b410994b67e37d9516eb9b866c85a8c639f79e68":"Redémarrez le dernier trade en cas d’erreur","2260c5a971c2602834ef8feeb5fa522f900b469f":"le bot ignore les trades infructueux","cd1495cb4c60266a6abad9024022ae079bf7e416":"(1) Définir votre contrat binaire","0745acf92abd7b60598f161717884cc45dab8694":"Exécuter une fois au démarrage","999e1ade10ff5ee1d115f5a6288bfd2e0d0736e6":"Définir les Options de Transaction","a43c3299d30a5bc7e31a574cdc87f59cbc8fe585":"Définissez votre contrat de trading et initiez la transaction, ajoutez des initialisations ici. (Exécution à l'initialisation)","d571f33d957ebcab086ecf38eedd71b6ef0c5820":"Négocier des Options","4d22b565e4253e92a908f216184779679bb1a044":"Barrière supérieure","b70c38c6db3127422e05315c30bdf76c7c36c480":"Barrière inférieure","a6c5f081b3addee364af1c8cdb84853f49dc8e07":"Absolue","0f2ba74929aca6fea950e351dcd576b7cd841fa4":"la bougie est-elle noire ?","7cb3b482ab66947d439642ec64dc7f5bd4e065dc":"Faites une liste de","5925d08228e246f07b790b88ad70c1b73a97d2bc":"valeurs dans la liste de bougies","852b438f91ad9eb2cdd84419a675a216d543c687":"Lire","67d3b35a0b740127b56bcd44d3bcb1ccc20e0b48":"valeur en bougie","d79d854dcd0829e2177a47beab6a55569e781ab1":"Lire un champ dans une bougie (lire à partir de la liste des bougies)","5606b4460ac96063b8a8e5647008f3ec97252fc5":"Secondes depuis Époque","2de20bdeecb1a8c28bd36fe75f028ed4318d0348":"Indique le temps d'époque (secondes depuis époque)","f43cb41af7ce8a69c7aecbc1c603bb0381270982":"Exécuter toutes les","4b6fe6898f0f956d48a4c8172c6dfbcb4159ab09":"Seconde(s)","2eea87bb804e4e73e3f8e9c41140f7ed83ea8875":"Exécuter les blocs inclus toutes les n secondes","e0af6ddc8a892704f64680bcb22b30c4bfcefec5":"L’exécution des bloc secondes est obsolète. S’il vous plaît contactez nous si vous avez un cas d’utilisation valide.","7b9c76088576a64f32d67ec335162b9f73eaa026":"Exécuter après","ff56ffac023cf69ca5c7f71d407499536f4f86b5":"Exécuter les blocs inclus après n secondes","e9fb732dde76a6977bcaa2818b0f56125b183648":"À ce jour/heure","1a90ae7cb728e7f25b031d7e844882f75e74ab5c":"A marquage temporel"}
 
 /***/ }),
 /* 251 */
@@ -69668,13 +69721,13 @@ module.exports = {"3d52a6d8fedcc48a65297c07bf5f7e3e41aab5aa":"Logic","3edf0df499
 /* 252 */
 /***/ (function(module, exports) {
 
-module.exports = {"3d52a6d8fedcc48a65297c07bf5f7e3e41aab5aa":"crwdns18731:0crwdne18731:0","3edf0df49942da6d11a1a217e4d3af4a5a8e64f2":"crwdns18732:0crwdne18732:0","c3328c39b0e29f78e9ff45db674248b1d245887d":"crwdns18733:0crwdne18733:0","4d064726954a17487f94e931f5b157b733ec22ed":"crwdns18734:0crwdne18734:0","a1fffaaafb7cc996685bceb829c053cc4f7de43d":"crwdns18735:0crwdne18735:0","19de69cb601f53a4ea7af22a65c71ae63251365c":"crwdns18736:0crwdne18736:0","2b961dea1dc0c60ddf9a2c8e9d090f6f7d082483":"crwdns18737:0crwdne18737:0","dc7f77b4ccfc9f70a78bd97303bd10ba4c9d70c8":"crwdns18738:0crwdne18738:0","66639f7d455dd71faa9147f5d69e5ce885d8bebd":"crwdns18739:0crwdne18739:0","0ba66deaab2f2cd3b0793d03f600ee2b8f577fbc":"crwdns18740:0crwdne18740:0","9201c6ac624e98e168e6ccddbcd5a9b5cdff06b3":"crwdns18741:0crwdne18741:0","44ab9a87268d3fd74040ed0b55c04f83294cfdef":"crwdns18742:0crwdne18742:0","c415c9399b7ae7285d2c1c880a6a0aa18f62ff8c":"crwdns18743:0crwdne18743:0","d07ffc19d51f0973859a0d95c1d15cd9f22388ca":"crwdns18744:0crwdne18744:0","8cf71374fa095a64b5295b672daef8507ec7be6a":"crwdns18749:0crwdne18749:0","4fa8cc860c52b268dc6a3adcde7305e9415db5bb":"crwdns18745:0crwdne18745:0","6c82e6dd86807ee3db07e3c82bec1ae1ce00b08b":"crwdns18746:0crwdne18746:0","8d8fd6765e184419cad8b88d1a60c895d79578c2":"crwdns18747:0crwdne18747:0","548f449b63ff41eaaff5a2d679ffa56b2015fc20":"crwdns18748:0crwdne18748:0","8bf95ea372568c7a254ba9fada5f6f1701ebc5b5":"crwdns53898:0crwdne53898:0","12b71c3e0fe5f7c0b8d17cc03186e281412da4a8":"crwdns53900:0crwdne53900:0","9feddbabd7e7309e96c590069057158e96baa8f6":"crwdns18750:0crwdne18750:0","038fe2bdb7ec6ee078f60bdb5bee94654ec6a81d":"crwdns18751:0crwdne18751:0","4152043e8c670075d2c919677e835edb0d923cab":"crwdns18752:0crwdne18752:0","d9fff2df19e90f2c7ea6bb30fde4e0da119d13d1":"crwdns43091:0crwdne43091:0","2439f2f199b2a3e798aa9b4feaa9248bdec9bc0b":"crwdns18756:0crwdne18756:0","a72ca256dc49e55a1a57b9a727fbde9834c9a3f7":"crwdns18755:0crwdne18755:0","6e78c91f5a05fc0d4f1a787d38e3d6fe2f856d46":"crwdns18754:0crwdne18754:0","4832e45812a2724f16a15f9ae87adfc8ae4168cf":"crwdns18790:0crwdne18790:0","f7c400ed695f898b8ee9d21664aa17b5bb693828":"crwdns18761:0crwdne18761:0","5ea75f1605a4bf1db5c39fcc61854627478c0a7d":"crwdns53902:0crwdne53902:0","f98595d541778d86f75ef22b3328a031d20aa16b":"crwdns53904:0crwdne53904:0","4a1e616226c329a94da7768bc0435a3284478010":"crwdns53906:0crwdne53906:0","6b3465ace62f33f0687b4669ac26d95895e9ca52":"crwdns53908:0crwdne53908:0","8e4ec2c451ec7b1bf68d72fe9086ec978e41feb7":"crwdns53910:0crwdne53910:0","937f5055f05be359ddf619744e8af4d643549e80":"crwdns53912:0crwdne53912:0","8406d1cce44230835932060649e999ca3283b413":"crwdns53914:0crwdne53914:0","1109673172af2c173c492622ff8a72c8f29f0e70":"crwdns53916:0crwdne53916:0","44c22002c65d2871331263a23c3e09c0a1bfd847":"crwdns53918:0crwdne53918:0","ebd0945359e5578ff9bd3a2ab490ca84c225d8f5":"crwdns53920:0crwdne53920:0","76bb05950f80f3a88ee05ef3276c5934fd355e8d":"crwdns53922:0crwdne53922:0","ba50a42d8d3228c37a817865fce49fbca692c2ad":"crwdns52880:0crwdne52880:0","4f4aa4117318a8ddf8783885d4f3542c5b2733bd":"crwdns53924:0crwdne53924:0","91017ef9b165cd0e7475a770f318ea5e705e1321":"crwdns53926:0crwdne53926:0","c89e3dd1cafcadcc0312e476ab58b2332209da23":"crwdns53928:0crwdne53928:0","b02c858e72be118a65c9393930351012b647cb9e":"crwdns53930:0crwdne53930:0","250be77f7605669a0b3d968b9ed381a3d9787ed1":"crwdns53932:0crwdne53932:0","ff29ccd7a6c6073cc462ed590d27a91632fdf67e":"crwdns18780:0crwdne18780:0","608061fb5aab975013fa70c5c814a1d8ba30c152":"crwdns18781:0crwdne18781:0","e4ce8dc3e416e69262ba642dc57d3975d6616980":"crwdns18782:0crwdne18782:0","f261237ca8beec6f77b76c4121feb8da22818c56":"crwdns18783:0crwdne18783:0","f6c85c68616eeaaa15fcd53fdc52f6eb5c886357":"crwdns18784:0crwdne18784:0","e6906a0d1c28b202f9bd49da4a6abbddca57399a":"crwdns18785:0crwdne18785:0","1dd0cf79c572bcdbdfabbd54ee95710a21234d73":"crwdns18786:0crwdne18786:0","abeef9a35ae6256796ba2462e4f64d308de42359":"crwdns18787:0crwdne18787:0","0606f0b7763ee6e8094a3dab7873d34c08fd3670":"crwdns18788:0crwdne18788:0","221acaf3a0290adafe08cdcb8c66121c73d8b4a3":"crwdns18789:0crwdne18789:0","d635b53e59c9aad8c5d78458826beffb029b27bf":"crwdns52840:0crwdne52840:0","1de91e827ec70ca735abc2c71b0a89cb0cfc4ce1":"crwdns19751:0crwdne19751:0","50050f06645ad2743165b429a8f7deebd285fd63":"crwdns19752:0crwdne19752:0","6a7d1a3a17c4e8ae6712cb60d46db1edf0aa2667":"crwdns19753:0crwdne19753:0","2f9f9096be1a1c0569a9ce54e57f0420f6b3c2e9":"crwdns18871:0crwdne18871:0","4df6e872792d72aea8a2f6b831d00b554464da23":"crwdns19755:0crwdne19755:0","001e68df3a4b32a4d57148d9d407f44eee3b7436":"crwdns19756:0crwdne19756:0","04f14ea7c92e0b2b5ae005c696245063ec641d66":"crwdns19757:0crwdne19757:0","c1bbfcbb4f57d3a56c1239af0c2138321589efd2":"crwdns19758:0crwdne19758:0","57b453bb26b1c28dfe362b7cc9f17f0be93dd581":"crwdns19759:0crwdne19759:0","094628ce13fc0e78f07b697d1cc9421bb2edd666":"crwdns19760:0crwdne19760:0","816c52fd2bdd94a63cd0944823a6c0aa9384c103":"crwdns45980:0crwdne45980:0","5397e0583f14f6c88de06b1ef28f460a1fb5b0ae":"crwdns19079:0crwdne19079:0","9bb396940adb9705fe57eba6ea8b578e6aafa792":"crwdns18791:0crwdne18791:0","78d7103a319e808455d397513279d99f3b3f3768":"crwdns18792:0crwdne18792:0","bbb930cc426507ed3f6b7c343c75dd0e041494b7":"crwdns18793:0crwdne18793:0","e6e886cdcdefeb6d3edb4c31bed06dd183ac4153":"crwdns18794:0crwdne18794:0","50e72909992bdc37c7c07769d1b7efac5e52874c":"crwdns18795:0crwdne18795:0","ecb5ba7044417916ba12de5fa9e6fccac3e5d475":"crwdns18796:0crwdne18796:0","c980b910204c7babdffe8ff3f7e755f30133383c":"crwdns18797:0crwdne18797:0","a726c6955157f1b8b92f9932652434a7150f80f8":"crwdns18798:0crwdne18798:0","a66d5c7ef2c63dbc9a8f9e6ae4e2bc575e74a36e":"crwdns18799:0crwdne18799:0","7674920c033ca14277c577e19c037a6754d4fa80":"crwdns18800:0crwdne18800:0","e8b8bd9f2eabc12875605a37c93e7f04a713fcb8":"crwdns18801:0crwdne18801:0","779455ee3bde8494d9629b353e17b19e92357ba8":"crwdns18802:0crwdne18802:0","37a5301a88da334dc5afc5b63979daa0f3f45e68":"crwdns18803:0crwdne18803:0","4973f4c599d5f42cf7bde52d66c3ed8ef77accb1":"crwdns18767:0crwdne18767:0","12e24a7d8ac40579e8a0aef4869288afe7ed6745":"crwdns18768:0crwdne18768:0","563339f82447b4e758ad76d5a0b63b5698594fba":"crwdns18804:0crwdne18804:0","5c1ae82c29543ac887703776bf3da2c7dcce683d":"crwdns18805:0crwdne18805:0","2fc096bb7b6596ab243d0286c9f43fdf2b9b406d":"crwdns18806:0crwdne18806:0","ecb252044b5ea0f679ee78ec1a12904739e2904d":"crwdns18807:0crwdne18807:0","53b0a1b2fadf4e040cdc2155a7340de24aca93cb":"crwdns18808:0crwdne18808:0","bc74f4f071a5a33f00ab88a6d6385b5e6638b86c":"crwdns18809:0crwdne18809:0","4c9a82ce72ca2519f38d0af0abbb4cecb9fceca9":"crwdns18810:0crwdne18810:0","96de5543d183d7de52ac5fa21c46fc811f673f89":"crwdns18811:0crwdne18811:0","78988010b890ce6f4d2136481f392787ec6d6106":"crwdns18812:0crwdne18812:0","aa9330a16e5b055de809256dad6b4d1cbd2999e7":"crwdns29876:0crwdne29876:0","cf84a98d6cf7f156862a08ba8236467b6f471004":"crwdns29877:0crwdne29877:0","eee2facd669d1434848c24da5527b3e87d9a12d5":"crwdns29878:0crwdne29878:0","9d705578b0f1f0ce3a06dc5e82f9a1e6078f81e1":"crwdns29879:0crwdne29879:0","7f2f6a15cf8da2b27e5a4af47b58e7ad71c0b3d9":"crwdns29880:0crwdne29880:0","a3b1583d377f37ac20de7e089edfa0920a078e57":"crwdns29881:0crwdne29881:0","66c8b6848eee629c4ac551bf2b5fa591571654be":"crwdns46213:0crwdne46213:0","5649dce3367d490fa19d563ee9e3d4c4b6f7c642":"crwdns46214:0crwdne46214:0","062787aa328047e189774b3703d983b83938f6e9":"crwdns18813:0crwdne18813:0","b91eed4b7a80cd9572a27e65ebdff9caa4b3b9a4":"crwdns18814:0crwdne18814:0","e3f139abb7a549a1210b36f7dbf89215ad6c9902":"crwdns18815:0crwdne18815:0","7d7932bcc2e262ae98cf09dc5445130fb3881769":"crwdns18816:0crwdne18816:0","a16814a48ec58c2e24ba224a80921a5c02361abe":"crwdns18817:0crwdne18817:0","391d02cd75ebcd6ed26f5f45ddf7d40bf13e9dc5":"crwdns18818:0crwdne18818:0","534ec5da4e82ec419abc170e1a8448f55a01664f":"crwdns18819:0crwdne18819:0","98cbe1998effd8b1a8aefdcc538573055e99a5f5":"crwdns18820:0crwdne18820:0","93d13bad1d2c2841db127cb70cc35bfc98059fc9":"crwdns18821:0crwdne18821:0","c098658ce3d3a258e4d155949a60072966b36db7":"crwdns18822:0crwdne18822:0","ee2dbd5d6d82d0833069b07e7dd2848d3bf4d83a":"crwdns18823:0crwdne18823:0","8444b7ce28bbc3443cc5cf73359b8353989b2a4b":"crwdns18824:0crwdne18824:0","9e767ad03e5547f251044e0724dc1d9f3e75aeed":"crwdns18825:0crwdne18825:0","dc28f5f3c65ec611f0f30022650d24382d27448e":"crwdns18826:0crwdne18826:0","18a63f5512afb5573e5b44deba78d629f0635317":"crwdns18827:0crwdne18827:0","2a268b89b83f8cb38ea48e46e93dd8840db512f9":"crwdns18828:0crwdne18828:0","2155c8b38181dd2552e84a94049aacd33ef9c607":"crwdns52842:0crwdne52842:0","1408cfd2b064b923f024fbe590e27db8282941a5":"crwdns52844:0crwdne52844:0","b86eb15dc4f13e4c2972de158d3038d9f657242f":"crwdns52846:0crwdne52846:0","669a1f3d9a8f601a84da536cfdad1de4092b1926":"crwdns52848:0crwdne52848:0","844d1a5c99a0a668383340cc095d040eef998c79":"crwdns53186:0crwdne53186:0","87293a146cd481a2b30cf74282ec061dc4cf0735":"crwdns53188:0crwdne53188:0","cf9b77061f7b3126b49d50a6fa68f7ca8c26b7a3":"crwdns18829:0crwdne18829:0","b1a5954a483f8f8b0207385095f74aeb409b3f80":"crwdns18830:0crwdne18830:0","a124947cbd2d1d92b47e027274c3269ff0c7a84b":"crwdns18831:0crwdne18831:0","bbfa773e5a63a5ea58c9b6207e608ca0120e592a":"crwdns18832:0crwdne18832:0","1173872a4fb205b713702f0eec5cf2c732c828fd":"crwdns18833:0crwdne18833:0","808d7dca8a74d84af27a2d6602c3d786de45fe1e":"crwdns29883:0crwdne29883:0","62957ecfdc50957e8957c11d2eae74d078f0ef1a":"crwdns52850:0crwdne52850:0","1dd3e663dfa7ac9cb77cfddd2cf8ac700657e2d6":"crwdns52852:0crwdne52852:0","24e46784cbce32443db5a2638b1a7d3201543e9b":"crwdns52854:0crwdne52854:0","3aa5819ed8a0b94d0f293db8e9c9598298ddd402":"crwdns52856:0crwdne52856:0","a6f151883b736f0470d33492e61c72a7d059d065":"crwdns52858:0crwdne52858:0","899761ff5425abd2ee214fa7aa46e27c6c8b5aae":"crwdns52860:0crwdne52860:0","31bbe8890d28d183f8f7f2c160fa892c444c0ec7":"crwdns52862:0crwdne52862:0","f030c3d667652646b86732ad7bc67e226c49cd3a":"crwdns52864:0crwdne52864:0","2046e49e33c040e08dbd6fd83df3e1846015e6f1":"crwdns52866:0crwdne52866:0","7b47150d431db70d783724007f07ab894eb8ac2e":"crwdns52868:0crwdne52868:0","191800b7e9a48680792c0dd77cb6cac00c4514c6":"crwdns52870:0crwdne52870:0","2d8a6f7c34468578640b333b8650131de06ac770":"crwdns52872:0crwdne52872:0","f94510322ecd9b3a2af67a10bd51ecc4ac6a24e7":"crwdns18838:0crwdne18838:0","c1365a35e99d0f9147ebc72f21534cf471fa7d95":"crwdns52874:0crwdne52874:0","9c7960c6b11d35ac9d6cdc1ebaad3af43b2065c5":"crwdns18839:0crwdne18839:0","2260ce49306460c8a2ef501939f29ad6ddd4e934":"crwdns18840:0crwdne18840:0","0186aa73a1b75fa8f0eb98bbd9ad01102bb09ec1":"crwdns18841:0crwdne18841:0","f7de1f66f0979667da275b7e8996e805395025a1":"crwdns18842:0crwdne18842:0","a431deecd4c2258097adae418d496fe9a8179fee":"crwdns18843:0crwdne18843:0","256fe245cb7d3d673095f7faaa8c9ff81b985ad1":"crwdns52876:0crwdne52876:0","12a3f461cdebbc8f335190413ee6c57442743bba":"crwdns52878:0crwdne52878:0","e696144fa588782e6d6b2c97e2d3ed1adf52bd5c":"crwdns53190:0crwdne53190:0","91a64e3f83c91acf336c631fba295f297f94c399":"crwdns18844:0crwdne18844:0","024696596f26a4db232fd9e966eadfeb27c0bd1a":"crwdns18845:0crwdne18845:0","c538c170bdc6b0f3bb98dce44a016a2e2d45a6e7":"crwdns18846:0crwdne18846:0","85c274929bc0e28eafd3734f2c25046c3b95b36b":"crwdns18847:0crwdne18847:0","346e3ee198e98146993894d3de8ecab1a86c3e80":"crwdns18848:0crwdne18848:0","f16459104f92ab6b38aa265adb4ecbfc3768e303":"crwdns19104:0crwdne19104:0","e09f635f4e77476c9ca1c37bc9992e9ace3431c1":"crwdns19105:0crwdne19105:0","27bed13a88c60350c3de92ec3820e1cc4f7d6ec3":"crwdns19106:0crwdne19106:0","19eabc961735d78f12fc7be906ffcb033853cf85":"crwdns27131:0crwdne27131:0","68f4145fee7dde76afceb910165924ad14cf0d00":"crwdns27132:0crwdne27132:0","629777b7d4d610ace6dee24442730f27d7d0853e":"crwdns18863:0crwdne18863:0","beb040c8fabd007c9cc5ac6a9feb6bdb05d33dac":"crwdns52832:0crwdne52832:0","410bf23a3f080def9c7a976a16305bcde7943ed1":"crwdns53192:0crwdne53192:0","e99811bd3b1ad17e74614060ecb180602be35ad6":"crwdns18864:0crwdne18864:0","3b26e990d3acff493ee2cf66d1280bed2625e43f":"crwdns18865:0crwdne18865:0","876f3e0202ca40dedf2e5ab6577eba1ae637fb53":"crwdns53564:0crwdne53564:0","8ce80462febd4d573cb2f9c1984fdc93b7c21c57":"crwdns53566:0crwdne53566:0","7f412a8cf67f755d3eb36846dd07148ceb8d4c72":"crwdns53568:0crwdne53568:0","3b6bbab905129dd36b8d4e99947fa30540ed7b2a":"crwdns53570:0crwdne53570:0","3d6b44df6eaf6236b4abc1aadcf8f5b1cda769c1":"crwdns53572:0crwdne53572:0","cdfe947b0c089a4a1f78c11299f25c32a124f1a6":"crwdns53574:0crwdne53574:0","2db43c69a4b96454914f0b8272bc869984529e6e":"crwdns53576:0crwdne53576:0","0dcea5f584938e0fff00084b83156ab31d641ab3":"crwdns53578:0crwdne53578:0","18da95988117ff029393f3f5c881d70ef47f7385":"crwdns53580:0crwdne53580:0","04226bcf91195130e25fe7a8e8ea4d3e058efcb7":"crwdns53582:0crwdne53582:0","aee24f2456ea8516b024a5d3e2b815ae7f2239d9":"crwdns67006:0crwdne67006:0","05754ed14275a070a20a1d5cd65f0cea66f1da7f":"crwdns19761:0crwdne19761:0","79222cd9892a434aa61fc7dc01c3839951eb8d1e":"crwdns19762:0crwdne19762:0","6ea4a034747d020b1d8ce4848def95d537555dd6":"crwdns19763:0crwdne19763:0","89f89c02cf47e091e726a4e07b88af0966806897":"crwdns45814:0crwdne45814:0","1200c1af2f7bba4e29a34112865662748c9d41df":"crwdns67008:0crwdne67008:0","62d6180e55905f7b996d442c53631981a4ef8b5b":"crwdns19765:0crwdne19765:0","ed4978867de1da05b336b724a3fb96222a29ebec":"crwdns19766:0crwdne19766:0","87e2e01f93d25ba7ed582cc81ef5c9ab2959f4c6":"crwdns19767:0crwdne19767:0","b2a4553586d1062c21323bca1dc0589f7a9d5cf7":"crwdns19768:0crwdne19768:0","46fc6f27a835486d63d9e927c6687e4508cb3087":"crwdns18861:0crwdne18861:0","9202ddae4cea16513e53bbc965d88ed975e59512":"crwdns18862:0crwdne18862:0","5f52b397b7e5f538681f0f5717a88aa626349c7a":"crwdns19769:0crwdne19769:0","85dfa32c97d8618d1bea083609e2c8a29845abe5":"crwdns33427:0crwdne33427:0","d847919a30d31c0be624087f3370492b3fdf80c6":"crwdns18764:0crwdne18764:0","5cd6978d63540c8a490ef76f43219de6362f958e":"crwdns19668:0crwdne19668:0","17410d7b62b8b1de981cfebada24632987edf186":"crwdns19669:0crwdne19669:0","b841eeb091f1ff0e14be08e5ea1b93e4cf147ed3":"crwdns19670:0crwdne19670:0","90eef613042c5a51f542421065b68b886d473807":"crwdns18770:0crwdne18770:0","db1c784524e1b54011a95823026161f7c8517fe0":"crwdns18773:0crwdne18773:0","4db3e9e4aecd187db9339a10d2629fef46724dc4":"crwdns19671:0crwdne19671:0","1bb4086b66659d8580f9be4beef69931aeea3cad":"crwdns19672:0crwdne19672:0","8bf249c4855e591964bd5bdd35c8ef2ee107342d":"crwdns19673:0crwdne19673:0","ba7be969e7c1bb5f22489e843478e3d721aaa843":"crwdns19674:0crwdne19674:0","772fbced18230220d2d9be1456be16fc1b271d25":"crwdns18779:0crwdne18779:0","bae7d5be70820ed56467bd9a63744e23b47bd711":"crwdns53934:0crwdne53934:0","96f608c16cef16caa06bf38901fb5f618a35a70b":"crwdns53936:0crwdne53936:0","7fb3a9b5101bcd45e2dca077191693a5199bafa9":"crwdns53938:0crwdne53938:0","82a82f798dd773717ec37d15fd4405510291734e":"crwdns52882:0crwdne52882:0","6a88e58aa1798626f94cf17f1a91618b405bb289":"crwdns53600:0crwdne53600:0","624cc7f40b68faace7e78d8e5c5be1d4f15facda":"crwdns52884:0crwdne52884:0","788180a6ddbbbcca10f6f49d8e85d557934bae0e":"crwdns52886:0crwdne52886:0","d907a40a4a15da3c21a6e0f8ace3f987d482f92c":"crwdns52888:0crwdne52888:0","4f219c17ab9ab76aa1cd431b4e0e5ecf5520e8e4":"crwdns46217:0crwdne46217:0","4684ee1026d9b4c872d016c3c4588a0c479a451c":"crwdns46218:0crwdne46218:0","ca92c55b9e4233d771d5b6300fe751a9678d1deb":"crwdns46219:0crwdne46219:0","f02760cd2eac28169f0a990c950c3dfe8427f772":"crwdns46220:0crwdne46220:0","66c7734789e19cbeef3a5ac185ea732139aed213":"crwdns27129:0crwdne27129:0","3b662fb2e8bafce29aa98321b18874bb44905488":"crwdns53584:0crwdne53584:0","7ee0ff5eaa6fa82bd6d83a2f4ca446c663f097cb":"crwdns53698:0crwdne53698:0","93039e609d94a24f3572b794a31b21525a09af2b":"crwdns53700:0crwdne53700:0","ea67c8023c75375484f3a5f1aeb009b20059d5bc":"crwdns53702:0crwdne53702:0","b1946e5b4b78465b7661fd4bc89ff52de6c633e7":"crwdns53704:0crwdne53704:0","952f375412e89ff213a8aca383d18e5691354347":"crwdns18892:0crwdne18892:0","9f1c61cc03f3ef9324db05502f7f0b61e61e1521":"crwdns18889:0crwdne18889:0","095ba68888b5ace5f4515f5acab76dfa1073544e":"crwdns53586:0crwdne53586:0","ddcb77ff769ea54ca622848f6bedd4004fa4f4fa":"crwdns53588:0crwdne53588:0","248e224f533752db28a1aab3519a58569ad96140":"crwdns53590:0crwdne53590:0","c7097e97dcc446ca889d3ca6be733a65e2728afe":"crwdns53592:0crwdne53592:0","3218e5a460e82d7bdea9ce0f145cab2f47ba9a4b":"crwdns53594:0crwdne53594:0","611ebbfb080284312904de925ef0f75f4cb56ad2":"crwdns53596:0crwdne53596:0","efc007a393f66cdb14d57d385822a3d9e36ef873":"crwdns18899:0crwdne18899:0","a638caa8ab2b7ff7980a571334217339e6d1d634":"crwdns53598:0crwdne53598:0","39fca63515c105918f03e4908ec12df675b07f92":"crwdns27130:0crwdne27130:0","fadc0ef93d1ff13370524ce8481ddc4a71195934":"crwdns52892:0crwdne52892:0","e4458464df6cbb8da1134875ba51519c5d244d9f":"crwdns18867:0crwdne18867:0","e9c45563358e813f157ba81b33143542165ba84e":"crwdns53194:0crwdne53194:0","31cb6f44d030abeabcc7046555dea851602a87a5":"crwdns52838:0crwdne52838:0","9ce3bd4224c8c1780db56b4125ecf3f24bf748b7":"crwdns52890:0crwdne52890:0","af145748c9cf765a3b059eec20cb1dbb899297d8":"crwdns18868:0crwdne18868:0","a479c9c34e878d07b4d67a73a48f432ad7dc53c8":"crwdns18869:0crwdne18869:0","f1d8b7b118d6f82f95614d476bc11af650aed3bc":"crwdns53602:0crwdne53602:0","11ee9c5d534cc8d22651092222b532917594161a":"crwdns18872:0crwdne18872:0","5283ac04c9a8ba8a937d1edb4ba986aeefce8bf1":"crwdns18873:0crwdne18873:0","ace1342bc3720b77ce510b93074041e7386d209e":"crwdns18874:0crwdne18874:0","fed3e7bd6696fb97a12d720845ab5388456bfc3b":"crwdns18875:0crwdne18875:0","d466687f90ba548434d65186d11a80c4204f9ad6":"crwdns19676:0crwdne19676:0","6ddf2b3075ac9ab5d66b40e15ea9a34c087672ea":"crwdns19057:0crwdne19057:0","33aa6ff282ee509d37c6f758274c9156b419ff73":"crwdns52894:0crwdne52894:0","da162a909c2981ed318d23cd9a6be1d66e0a8400":"crwdns18870:0crwdne18870:0","5e719fa76e1b6cb396376c82ebdd04bec7253229":"crwdns18882:0crwdne18882:0","b0d2de25daf6ba09a5e710c6968ffded29c4dae1":"crwdns19770:0crwdne19770:0","df84a88f38b03b5b342362d72370b0d66afdae35":"crwdns18883:0crwdne18883:0","cd680fd936e9559ef1d95efac7a71680e2b13a89":"crwdns18884:0crwdne18884:0","34c59389053701a04127f74d32315e0206e076f8":"crwdns43092:0crwdne43092:0","3ead0b14c72503187691a7a6d7121987299bd401":"crwdns19771:0crwdne19771:0","27401c9c8e476d659c8382e05c6d70a4a82be468":"crwdns19677:0crwdne19677:0","bc981983e7f547dc62e19a1e383acfe00782a6d5":"crwdns19072:0crwdne19072:0","b52b36b7269fbfc58ec24bb724691951a3decbe8":"crwdns19073:0crwdne19073:0","e9b450d14bc2363d292c84f17cfad5cfbd58a458":"crwdns19074:0crwdne19074:0","29cadadfebdd578a50b7b3d1b2c5b33e424d5de7":"crwdns19075:0crwdne19075:0","a48e81d4a8da67637b46725824177a959fe99b21":"crwdns19076:0crwdne19076:0","6f3e6ebf249947cec4f64117253a8fe43335ae79":"crwdns19078:0crwdne19078:0","fcb6e90e7223e1d1d735f15dbb7ded9d81bbe7ef":"crwdns19077:0crwdne19077:0","4ca0a75c2b7fa7da4364d03b72c46fee1860a2bf":"crwdns19080:0crwdne19080:0","5fcf29b9f0b8971c8148e70a150ddc9ac04c94fc":"crwdns19081:0crwdne19081:0","ddcbb5361b1a16eba60fca2383fb297bb90ed9b3":"crwdns19082:0crwdne19082:0","1758356db21759f7c5a0da9b4dd1db8fd6feab3f":"crwdns33429:0crwdne33429:0","00b581632c1532969a7128ebc8eae936ed8af04e":"crwdns52896:0crwdne52896:0","d171baee235d4c93f63755a876782dc5be4c3e47":"crwdns19084:0crwdne19084:0","056f19272d96f902c38207cf163ea8dbff7fbd32":"crwdns19085:0crwdne19085:0","36bae31694f85bd7a5b0ad45e51ef622b95baadb":"crwdns19086:0crwdne19086:0","f5c47fd3b3553b10441a06054078cea745177dea":"crwdns19087:0crwdne19087:0","fd825ae94aa79500a878dd4590a4b360e7162663":"crwdns19088:0crwdne19088:0","6ee7980833e1ed72901b919ffd0fa20e1a251d3f":"crwdns19089:0crwdne19089:0","f5169c84497de3aea74f7da9e7e177d1427e736b":"crwdns19090:0crwdne19090:0","4f1b3d682c2a00b393c33637da402463bc11d5ff":"crwdns19091:0crwdne19091:0","0049f8894e41937ebb9111cd3def6749049fb50f":"crwdns19092:0crwdne19092:0","aac1569ccf6b1a11b0ad0fbefdb9ffc777b4c733":"crwdns18881:0crwdne18881:0","53adebdc2b1cbbedb56395b19a73fe47b87cc554":"crwdns18834:0crwdne18834:0","5fb1db527825d2996e37c655e5dec49d4da80c09":"crwdns18835:0crwdne18835:0","092f99ea11a34a8490e7a767a83a42fc45634f82":"crwdns18836:0crwdne18836:0","9e25a34e635a123f8958bbe26e7c4843278597fb":"crwdns18837:0crwdne18837:0","f6bb0f468a8569c67b3d6826e57e62c5500c3681":"crwdns52898:0crwdne52898:0","d1a17af19f5388af9d6596cc0ea7dbb1d739e255":"crwdns52904:0crwdne52904:0","db6708630fc646eb98298d9acd701e0a1ac051c2":"crwdns53604:0crwdne53604:0","85538d002a336c5addef8d189d80976cf7758f8c":"crwdns53606:0crwdne53606:0","b65463cb6a42a17de514acc4659f7fd331e0876a":"crwdns53608:0crwdne53608:0","ed28e0686e1251ba046f582a3e9ec02470a5e78d":"crwdns53610:0crwdne53610:0","cd5f85b6f187605f82386eacd680f93820af8d11":"crwdns18949:0crwdne18949:0","1e38ce3d180cefae485a6986ca7c67841e30376f":"crwdns18950:0crwdne18950:0","5c89497fc3c128e2ff865ce8df15356054f2c028":"crwdns18953:0crwdne18953:0","14ea81918758c994cbe3178e695e56afc1ef2b45":"crwdns18954:0crwdne18954:0","5098e2bcc96ee227983c9f7eeddfd226c220ca00":"crwdns18955:0crwdne18955:0","251c830f8f869e0887e8b4dc4c30ba1738c7097e":"crwdns18956:0crwdne18956:0","b3b543c80063a116ced4965d8537b7b62d14c0b7":"crwdns18959:0crwdne18959:0","a1eeb7c1e92e9a5d9323ed8ebd7ca7ffed8b0232":"crwdns18960:0crwdne18960:0","da3105e38c42a481ad7230ed393b0e12bebe9c4f":"crwdns18961:0crwdne18961:0","343fda69c73b78b84967055aae97f790c422adfd":"crwdns18962:0crwdne18962:0","d4d34ce9d9dd7e87213469f88cb7ac43725675d5":"crwdns18963:0crwdne18963:0","fb61a3c71f4c488b3b470cb7daf502a3e9b5ad48":"crwdns18964:0crwdne18964:0","87da93a46d143f6019979b3548414d9d7adabb35":"crwdns18965:0crwdne18965:0","160f06d4799c85021a810f68c5b517eea37a2737":"crwdns18966:0crwdne18966:0","4c2fdde3d9c1950498ed263d6ce21d4bf3d0800b":"crwdns18967:0crwdne18967:0","ca5586bdb5bdc1a2c0baf53ed0ecd21fafabebe7":"crwdns18968:0crwdne18968:0","03bad10717e183b24829baf483dc715e1a44bf7b":"crwdns18969:0crwdne18969:0","2c71ed279a402e93312dbda173ab18f244d6bf46":"crwdns18970:0crwdne18970:0","17632a9f51611d2579d95b4b1ccb9476566d7ccf":"crwdns18971:0crwdne18971:0","579607dc4f989ce2b94b558431666a0ab07ac1f3":"crwdns18972:0crwdne18972:0","e20afd5cf3811a42071c9a312abb2afdad4c590b":"crwdns18973:0crwdne18973:0","4712cbff8e92822fc960ef9c0197293a19675eae":"crwdns18974:0crwdne18974:0","df817b48c7a076561b4f8bedc52d65d2e351ab52":"crwdns18975:0crwdne18975:0","b44e884c355e447d0da0e6ba45caaff18c84373b":"crwdns19030:0crwdne19030:0","d6a2a207343bd83aacdc80b579ff4419713a256e":"crwdns19031:0crwdne19031:0","170a28a9db6d27d7212fc6dc249434a57517e7bc":"crwdns19032:0crwdne19032:0","b833989d69900a4be9e32d1bab65c8f8233f099e":"crwdns19033:0crwdne19033:0","1cee82f19c0bedef64f68b32e6b02128efe7c61b":"crwdns19034:0crwdne19034:0","974da601086448d0060aeed90e53ddd5acd17b91":"crwdns19035:0crwdne19035:0","d5b65cac1f1cf9421ac978eebe532de99040cca6":"crwdns19036:0crwdne19036:0","58de49791c64aba14e36e5887244a5ef088286cd":"crwdns19037:0crwdne19037:0","4bd99f76f1104229744455d93df0ff76b9eeed58":"crwdns19038:0crwdne19038:0","ea615c6d6a74e25a6d2f1bc9980b46e73508c2eb":"crwdns19039:0crwdne19039:0","4082d9379e59b38c891d046312f8d3c4b64ae3b1":"crwdns19040:0crwdne19040:0","562edc102c5dd9e2fbbede1140b8a5461c2d4dc8":"crwdns19041:0crwdne19041:0","a537f4f3c0f6c68bf896fb23cb2ecdc658488ea2":"crwdns19107:0crwdne19107:0","b18e572ea14edd48587145f1ef50718adbf256c6":"crwdns19108:0crwdne19108:0","974023bddd6249d0f6404872cfcae205b2599ea2":"crwdns19109:0crwdne19109:0","5c2adcb3d1bfd6b9f5c2dec13d02a9473e4445a1":"crwdns52900:0crwdne52900:0","6b15ce93fd68d80aeee7f7964c1306044c3c1baf":"crwdns19111:0crwdne19111:0","95ec92885c855ba9cf734c17a43f081901e4d2cc":"crwdns19042:0crwdne19042:0","b033619e108c9e43bfd8a42cd97bf5c5dc86dc65":"crwdns19043:0crwdne19043:0","4034de66995b876b2ba9bfd0274025e39168e05d":"crwdns19044:0crwdne19044:0","f9da880c8b0e4cce4431912c24eba939e6bc06e1":"crwdns19045:0crwdne19045:0","a9842c95766da40bf4ea6ee263cb5a5985847763":"crwdns19046:0crwdne19046:0","347775a293c14362d492f019e677c965be1d6e7d":"crwdns19047:0crwdne19047:0","4cc7b9e53d082896ad884eb01be16320af65f282":"crwdns19048:0crwdne19048:0","2c75179a57af3c36581008b65e86ed81c4a4cbea":"crwdns19049:0crwdne19049:0","39f024cf49724fe7ffdea7773c72ed06eec998e1":"crwdns29884:0crwdne29884:0","e4bed3e67e58b2334ee4b9c6ce59ac7a95d80aaf":"crwdns18980:0crwdne18980:0","ad47561efb1dcbd7246d9b64487f615647fda036":"crwdns18981:0crwdne18981:0","05bef508aadd62bf3967dcf67d769da296f19989":"crwdns18982:0crwdne18982:0","d089ab98a846a521b09aad6ff3fefa728bfa8b42":"crwdns19678:0crwdne19678:0","cdb31fc857f01a59f664413498293c714285f46d":"crwdns18984:0crwdne18984:0","20fd5f86f08796f145d69dedc209a27e459b2f51":"crwdns18985:0crwdne18985:0","a96606af8c33ac3428b45abc4782dbf93f458d29":"crwdns18986:0crwdne18986:0","90ed0e1ea5c1907f8a32d8051a66e845857bb2a4":"crwdns33430:0crwdne33430:0","248428facb97408414180d4de74e4db35360fbc4":"crwdns33431:0crwdne33431:0","2e4202acde880b7b1c3686f0335ff879fc1e5c7a":"crwdns18987:0crwdne18987:0","e46e0bd2f7fe37217dec8aa26ebce8ffa3608663":"crwdns18988:0crwdne18988:0","d5fde4c9d5edf660f760fc226df4d2678d3334ab":"crwdns18989:0crwdne18989:0","95e552a40d3446c96905cd3ec7e3d123d0246ce8":"crwdns18990:0crwdne18990:0","5a0ed227a01b7d30b05dcaf3e1c23b74b9be6ff4":"crwdns19772:0crwdne19772:0","a4220593d385a720886f7af1ed3c478fd0c6339c":"crwdns19773:0crwdne19773:0","cd8cdf3d47e921c8a72addae9269e66041d417c5":"crwdns18992:0crwdne18992:0","3e4f335e7a6f79bd1bafd219ddde30acbf16a7ac":"crwdns19774:0crwdne19774:0","34037f9452fdb66c9ca27ebcc0afe9d5139e9e24":"crwdns19775:0crwdne19775:0","aba43a580daa7f306956ec69b83e6e37e7233126":"crwdns18979:0crwdne18979:0","e04b522218a181cf0223042dd18ae08dcc22d8d3":"crwdns18993:0crwdne18993:0","6ee445fc253a55c9ed54c009c3f020ac65200d80":"crwdns18994:0crwdne18994:0","4b2340a890e88d1886757c3f7172e273a1edc31f":"crwdns18995:0crwdne18995:0","b54d7b4590559dad64f02d09aacbf6d9863e2624":"crwdns29885:0crwdne29885:0","ebffc758056e6b2fc2af99af17fbc6853e5d3583":"crwdns18997:0crwdne18997:0","17649cac8739adcae95e641f794880272ad33bd1":"crwdns18998:0crwdne18998:0","802dc02469ae51067ca620ff57dfb5bdb3e524ac":"crwdns18999:0crwdne18999:0","c4ee8e12b2484cd5b47cdf00bfa2c50b83e91d3d":"crwdns19000:0crwdne19000:0","69280143949fcd59c171dd60f6b6e13d0cc08fe6":"crwdns19061:0crwdne19061:0","d072c2ceeb5c1217722d14c74de7aeab945b4215":"crwdns19002:0crwdne19002:0","b06acc4158c824231f727a13e1c9811f43d5be42":"crwdns19003:0crwdne19003:0","661db37251a1ed1afe357ee13895f37a623d7cbf":"crwdns19004:0crwdne19004:0","6c03ee54ad3a51fc92a1d69943e99667847705b6":"crwdns19005:0crwdne19005:0","b1bec5d06e3672915d81b2fbc2347c8b4947a954":"crwdns29882:0crwdne29882:0","a2d0c89fdfff3176efd4a443eb0f6607067b93e7":"crwdns19006:0crwdne19006:0","6e0fc122f936f808bc2e3af661121b65712ae855":"crwdns67010:0%1crwdnd67010:0%2crwdnd67010:0%3crwdnd67010:0%4crwdne67010:0","1aeb6caed9e46edf5d6224adc905ffb8ee3a7708":"crwdns67012:0crwdne67012:0","45ebd38f4c641ebf6f72be8c3a79dfa50cf9f20e":"crwdns19007:0crwdne19007:0","ffb465875e1ff2b49bcaa7c6b70965ffe39fa59d":"crwdns19008:0crwdne19008:0","bc528d26f66fe8c4aa4bb24ec9c99dff12c055e0":"crwdns19009:0crwdne19009:0","bea5756b18644ccfab01c1c0dbd6fa9db7103379":"crwdns19010:0crwdne19010:0","c67ded6b64019212eb2bc69afd761f5b3f626040":"crwdns19011:0crwdne19011:0","569bbd757e1bb8bbccd250b98dc2bb37cb47b787":"crwdns19012:0crwdne19012:0","74751e67c3e1010c343095eaf543e7cb21ced2ef":"crwdns18774:0crwdne18774:0","1f4698382842477e211eb46de81fa506f01a8c34":"crwdns19014:0crwdne19014:0","c1baf816aac5a5cd849768773fc248cd249dc296":"crwdns19015:0crwdne19015:0","c93025710d1ae6cbaf8e710f63eca8edfa0c9399":"crwdns19776:0crwdne19776:0","9693aeaaf68e3929b59b79306feaa0a847d01192":"crwdns19017:0crwdne19017:0","10c02649e226d430bd75a5b6315a41c0db9992a2":"crwdns53196:0crwdne53196:0","837276742aa90209dde3b4eef07d8e7ab26731ef":"crwdns53198:0crwdne53198:0","258b49925b41751c6bd790a0848246566ba61440":"crwdns27133:0crwdne27133:0","c55ee3445cd391ab299b6f85a6ea9a68a65ea64d":"crwdns27134:0crwdne27134:0","b410994b67e37d9516eb9b866c85a8c639f79e68":"crwdns27135:0crwdne27135:0","2260c5a971c2602834ef8feeb5fa522f900b469f":"crwdns27136:0crwdne27136:0","cd1495cb4c60266a6abad9024022ae079bf7e416":"crwdns19022:0crwdne19022:0","0745acf92abd7b60598f161717884cc45dab8694":"crwdns19777:0crwdne19777:0","999e1ade10ff5ee1d115f5a6288bfd2e0d0736e6":"crwdns19778:0crwdne19778:0","a43c3299d30a5bc7e31a574cdc87f59cbc8fe585":"crwdns19023:0crwdne19023:0","d571f33d957ebcab086ecf38eedd71b6ef0c5820":"crwdns19779:0crwdne19779:0","4d22b565e4253e92a908f216184779679bb1a044":"crwdns53200:0crwdne53200:0","b70c38c6db3127422e05315c30bdf76c7c36c480":"crwdns53202:0crwdne53202:0","a6c5f081b3addee364af1c8cdb84853f49dc8e07":"crwdns53204:0crwdne53204:0","0f2ba74929aca6fea950e351dcd576b7cd841fa4":"crwdns19026:0crwdne19026:0","7cb3b482ab66947d439642ec64dc7f5bd4e065dc":"crwdns19780:0crwdne19780:0","5925d08228e246f07b790b88ad70c1b73a97d2bc":"crwdns19781:0crwdne19781:0","852b438f91ad9eb2cdd84419a675a216d543c687":"crwdns18976:0crwdne18976:0","67d3b35a0b740127b56bcd44d3bcb1ccc20e0b48":"crwdns19782:0crwdne19782:0","d79d854dcd0829e2177a47beab6a55569e781ab1":"crwdns19029:0crwdne19029:0","5606b4460ac96063b8a8e5647008f3ec97252fc5":"crwdns19050:0crwdne19050:0","2de20bdeecb1a8c28bd36fe75f028ed4318d0348":"crwdns19051:0crwdne19051:0","f43cb41af7ce8a69c7aecbc1c603bb0381270982":"crwdns19052:0crwdne19052:0","4b6fe6898f0f956d48a4c8172c6dfbcb4159ab09":"crwdns19053:0crwdne19053:0","2eea87bb804e4e73e3f8e9c41140f7ed83ea8875":"crwdns19054:0crwdne19054:0","e0af6ddc8a892704f64680bcb22b30c4bfcefec5":"crwdns19783:0crwdne19783:0","7b9c76088576a64f32d67ec335162b9f73eaa026":"crwdns19055:0crwdne19055:0","ff56ffac023cf69ca5c7f71d407499536f4f86b5":"crwdns19056:0crwdne19056:0"}
+module.exports = {"3d52a6d8fedcc48a65297c07bf5f7e3e41aab5aa":"crwdns18731:0crwdne18731:0","3edf0df49942da6d11a1a217e4d3af4a5a8e64f2":"crwdns18732:0crwdne18732:0","c3328c39b0e29f78e9ff45db674248b1d245887d":"crwdns18733:0crwdne18733:0","4d064726954a17487f94e931f5b157b733ec22ed":"crwdns18734:0crwdne18734:0","a1fffaaafb7cc996685bceb829c053cc4f7de43d":"crwdns18735:0crwdne18735:0","19de69cb601f53a4ea7af22a65c71ae63251365c":"crwdns18736:0crwdne18736:0","2b961dea1dc0c60ddf9a2c8e9d090f6f7d082483":"crwdns18737:0crwdne18737:0","dc7f77b4ccfc9f70a78bd97303bd10ba4c9d70c8":"crwdns18738:0crwdne18738:0","66639f7d455dd71faa9147f5d69e5ce885d8bebd":"crwdns18739:0crwdne18739:0","0ba66deaab2f2cd3b0793d03f600ee2b8f577fbc":"crwdns18740:0crwdne18740:0","9201c6ac624e98e168e6ccddbcd5a9b5cdff06b3":"crwdns18741:0crwdne18741:0","44ab9a87268d3fd74040ed0b55c04f83294cfdef":"crwdns18742:0crwdne18742:0","c415c9399b7ae7285d2c1c880a6a0aa18f62ff8c":"crwdns18743:0crwdne18743:0","d07ffc19d51f0973859a0d95c1d15cd9f22388ca":"crwdns18744:0crwdne18744:0","8cf71374fa095a64b5295b672daef8507ec7be6a":"crwdns18749:0crwdne18749:0","4fa8cc860c52b268dc6a3adcde7305e9415db5bb":"crwdns18745:0crwdne18745:0","6c82e6dd86807ee3db07e3c82bec1ae1ce00b08b":"crwdns18746:0crwdne18746:0","8d8fd6765e184419cad8b88d1a60c895d79578c2":"crwdns18747:0crwdne18747:0","548f449b63ff41eaaff5a2d679ffa56b2015fc20":"crwdns18748:0crwdne18748:0","8bf95ea372568c7a254ba9fada5f6f1701ebc5b5":"crwdns53898:0crwdne53898:0","12b71c3e0fe5f7c0b8d17cc03186e281412da4a8":"crwdns53900:0crwdne53900:0","9feddbabd7e7309e96c590069057158e96baa8f6":"crwdns18750:0crwdne18750:0","038fe2bdb7ec6ee078f60bdb5bee94654ec6a81d":"crwdns18751:0crwdne18751:0","4152043e8c670075d2c919677e835edb0d923cab":"crwdns18752:0crwdne18752:0","d9fff2df19e90f2c7ea6bb30fde4e0da119d13d1":"crwdns43091:0crwdne43091:0","2439f2f199b2a3e798aa9b4feaa9248bdec9bc0b":"crwdns18756:0crwdne18756:0","a72ca256dc49e55a1a57b9a727fbde9834c9a3f7":"crwdns18755:0crwdne18755:0","6e78c91f5a05fc0d4f1a787d38e3d6fe2f856d46":"crwdns18754:0crwdne18754:0","4832e45812a2724f16a15f9ae87adfc8ae4168cf":"crwdns18790:0crwdne18790:0","f7c400ed695f898b8ee9d21664aa17b5bb693828":"crwdns18761:0crwdne18761:0","5ea75f1605a4bf1db5c39fcc61854627478c0a7d":"crwdns53902:0crwdne53902:0","f98595d541778d86f75ef22b3328a031d20aa16b":"crwdns53904:0crwdne53904:0","4a1e616226c329a94da7768bc0435a3284478010":"crwdns53906:0crwdne53906:0","6b3465ace62f33f0687b4669ac26d95895e9ca52":"crwdns53908:0crwdne53908:0","8e4ec2c451ec7b1bf68d72fe9086ec978e41feb7":"crwdns53910:0crwdne53910:0","937f5055f05be359ddf619744e8af4d643549e80":"crwdns53912:0crwdne53912:0","8406d1cce44230835932060649e999ca3283b413":"crwdns53914:0crwdne53914:0","1109673172af2c173c492622ff8a72c8f29f0e70":"crwdns53916:0crwdne53916:0","44c22002c65d2871331263a23c3e09c0a1bfd847":"crwdns53918:0crwdne53918:0","ebd0945359e5578ff9bd3a2ab490ca84c225d8f5":"crwdns53920:0crwdne53920:0","76bb05950f80f3a88ee05ef3276c5934fd355e8d":"crwdns53922:0crwdne53922:0","ba50a42d8d3228c37a817865fce49fbca692c2ad":"crwdns52880:0crwdne52880:0","4f4aa4117318a8ddf8783885d4f3542c5b2733bd":"crwdns53924:0crwdne53924:0","91017ef9b165cd0e7475a770f318ea5e705e1321":"crwdns53926:0crwdne53926:0","c89e3dd1cafcadcc0312e476ab58b2332209da23":"crwdns53928:0crwdne53928:0","b02c858e72be118a65c9393930351012b647cb9e":"crwdns53930:0crwdne53930:0","250be77f7605669a0b3d968b9ed381a3d9787ed1":"crwdns53932:0crwdne53932:0","ff29ccd7a6c6073cc462ed590d27a91632fdf67e":"crwdns18780:0crwdne18780:0","608061fb5aab975013fa70c5c814a1d8ba30c152":"crwdns18781:0crwdne18781:0","e4ce8dc3e416e69262ba642dc57d3975d6616980":"crwdns18782:0crwdne18782:0","f261237ca8beec6f77b76c4121feb8da22818c56":"crwdns18783:0crwdne18783:0","f6c85c68616eeaaa15fcd53fdc52f6eb5c886357":"crwdns18784:0crwdne18784:0","e6906a0d1c28b202f9bd49da4a6abbddca57399a":"crwdns18785:0crwdne18785:0","1dd0cf79c572bcdbdfabbd54ee95710a21234d73":"crwdns18786:0crwdne18786:0","abeef9a35ae6256796ba2462e4f64d308de42359":"crwdns18787:0crwdne18787:0","0606f0b7763ee6e8094a3dab7873d34c08fd3670":"crwdns18788:0crwdne18788:0","221acaf3a0290adafe08cdcb8c66121c73d8b4a3":"crwdns18789:0crwdne18789:0","d635b53e59c9aad8c5d78458826beffb029b27bf":"crwdns52840:0crwdne52840:0","a69a8fc21499d0fd85e87bab467699827547a5bc":"crwdns121040:0crwdne121040:0","1de91e827ec70ca735abc2c71b0a89cb0cfc4ce1":"crwdns19751:0crwdne19751:0","50050f06645ad2743165b429a8f7deebd285fd63":"crwdns19752:0crwdne19752:0","6a7d1a3a17c4e8ae6712cb60d46db1edf0aa2667":"crwdns19753:0crwdne19753:0","2f9f9096be1a1c0569a9ce54e57f0420f6b3c2e9":"crwdns18871:0crwdne18871:0","4df6e872792d72aea8a2f6b831d00b554464da23":"crwdns19755:0crwdne19755:0","001e68df3a4b32a4d57148d9d407f44eee3b7436":"crwdns19756:0crwdne19756:0","04f14ea7c92e0b2b5ae005c696245063ec641d66":"crwdns19757:0crwdne19757:0","c1bbfcbb4f57d3a56c1239af0c2138321589efd2":"crwdns19758:0crwdne19758:0","57b453bb26b1c28dfe362b7cc9f17f0be93dd581":"crwdns19759:0crwdne19759:0","094628ce13fc0e78f07b697d1cc9421bb2edd666":"crwdns19760:0crwdne19760:0","816c52fd2bdd94a63cd0944823a6c0aa9384c103":"crwdns45980:0crwdne45980:0","5397e0583f14f6c88de06b1ef28f460a1fb5b0ae":"crwdns19079:0crwdne19079:0","bbb930cc426507ed3f6b7c343c75dd0e041494b7":"crwdns18793:0crwdne18793:0","e6e886cdcdefeb6d3edb4c31bed06dd183ac4153":"crwdns18794:0crwdne18794:0","50e72909992bdc37c7c07769d1b7efac5e52874c":"crwdns18795:0crwdne18795:0","ecb5ba7044417916ba12de5fa9e6fccac3e5d475":"crwdns18796:0crwdne18796:0","c980b910204c7babdffe8ff3f7e755f30133383c":"crwdns18797:0crwdne18797:0","a726c6955157f1b8b92f9932652434a7150f80f8":"crwdns18798:0crwdne18798:0","a66d5c7ef2c63dbc9a8f9e6ae4e2bc575e74a36e":"crwdns18799:0crwdne18799:0","3905be81561384dc8c43d6127c57ed1e0eb03b74":"crwdns121042:0crwdne121042:0","7674920c033ca14277c577e19c037a6754d4fa80":"crwdns18800:0crwdne18800:0","e8b8bd9f2eabc12875605a37c93e7f04a713fcb8":"crwdns18801:0crwdne18801:0","06ecea26625359f7dcf5ff5c47af6174ff815257":"crwdns121044:0crwdne121044:0","779455ee3bde8494d9629b353e17b19e92357ba8":"crwdns18802:0crwdne18802:0","37a5301a88da334dc5afc5b63979daa0f3f45e68":"crwdns18803:0crwdne18803:0","4973f4c599d5f42cf7bde52d66c3ed8ef77accb1":"crwdns18767:0crwdne18767:0","12e24a7d8ac40579e8a0aef4869288afe7ed6745":"crwdns18768:0crwdne18768:0","563339f82447b4e758ad76d5a0b63b5698594fba":"crwdns18804:0crwdne18804:0","5c1ae82c29543ac887703776bf3da2c7dcce683d":"crwdns18805:0crwdne18805:0","2fc096bb7b6596ab243d0286c9f43fdf2b9b406d":"crwdns18806:0crwdne18806:0","ecb252044b5ea0f679ee78ec1a12904739e2904d":"crwdns18807:0crwdne18807:0","53b0a1b2fadf4e040cdc2155a7340de24aca93cb":"crwdns18808:0crwdne18808:0","bc74f4f071a5a33f00ab88a6d6385b5e6638b86c":"crwdns18809:0crwdne18809:0","4c9a82ce72ca2519f38d0af0abbb4cecb9fceca9":"crwdns18810:0crwdne18810:0","96de5543d183d7de52ac5fa21c46fc811f673f89":"crwdns18811:0crwdne18811:0","78988010b890ce6f4d2136481f392787ec6d6106":"crwdns18812:0crwdne18812:0","aa9330a16e5b055de809256dad6b4d1cbd2999e7":"crwdns29876:0crwdne29876:0","cf84a98d6cf7f156862a08ba8236467b6f471004":"crwdns29877:0crwdne29877:0","eee2facd669d1434848c24da5527b3e87d9a12d5":"crwdns29878:0crwdne29878:0","9d705578b0f1f0ce3a06dc5e82f9a1e6078f81e1":"crwdns29879:0crwdne29879:0","7f2f6a15cf8da2b27e5a4af47b58e7ad71c0b3d9":"crwdns29880:0crwdne29880:0","a3b1583d377f37ac20de7e089edfa0920a078e57":"crwdns29881:0crwdne29881:0","66c8b6848eee629c4ac551bf2b5fa591571654be":"crwdns46213:0crwdne46213:0","5649dce3367d490fa19d563ee9e3d4c4b6f7c642":"crwdns46214:0crwdne46214:0","062787aa328047e189774b3703d983b83938f6e9":"crwdns18813:0crwdne18813:0","b91eed4b7a80cd9572a27e65ebdff9caa4b3b9a4":"crwdns18814:0crwdne18814:0","e3f139abb7a549a1210b36f7dbf89215ad6c9902":"crwdns18815:0crwdne18815:0","7d7932bcc2e262ae98cf09dc5445130fb3881769":"crwdns18816:0crwdne18816:0","a16814a48ec58c2e24ba224a80921a5c02361abe":"crwdns18817:0crwdne18817:0","391d02cd75ebcd6ed26f5f45ddf7d40bf13e9dc5":"crwdns18818:0crwdne18818:0","534ec5da4e82ec419abc170e1a8448f55a01664f":"crwdns18819:0crwdne18819:0","98cbe1998effd8b1a8aefdcc538573055e99a5f5":"crwdns18820:0crwdne18820:0","93d13bad1d2c2841db127cb70cc35bfc98059fc9":"crwdns18821:0crwdne18821:0","c098658ce3d3a258e4d155949a60072966b36db7":"crwdns18822:0crwdne18822:0","ee2dbd5d6d82d0833069b07e7dd2848d3bf4d83a":"crwdns18823:0crwdne18823:0","8444b7ce28bbc3443cc5cf73359b8353989b2a4b":"crwdns18824:0crwdne18824:0","9e767ad03e5547f251044e0724dc1d9f3e75aeed":"crwdns18825:0crwdne18825:0","dc28f5f3c65ec611f0f30022650d24382d27448e":"crwdns18826:0crwdne18826:0","18a63f5512afb5573e5b44deba78d629f0635317":"crwdns18827:0crwdne18827:0","2a268b89b83f8cb38ea48e46e93dd8840db512f9":"crwdns18828:0crwdne18828:0","2155c8b38181dd2552e84a94049aacd33ef9c607":"crwdns52842:0crwdne52842:0","1408cfd2b064b923f024fbe590e27db8282941a5":"crwdns52844:0crwdne52844:0","b86eb15dc4f13e4c2972de158d3038d9f657242f":"crwdns52846:0crwdne52846:0","669a1f3d9a8f601a84da536cfdad1de4092b1926":"crwdns52848:0crwdne52848:0","844d1a5c99a0a668383340cc095d040eef998c79":"crwdns53186:0crwdne53186:0","87293a146cd481a2b30cf74282ec061dc4cf0735":"crwdns53188:0crwdne53188:0","cf9b77061f7b3126b49d50a6fa68f7ca8c26b7a3":"crwdns18829:0crwdne18829:0","b1a5954a483f8f8b0207385095f74aeb409b3f80":"crwdns18830:0crwdne18830:0","a124947cbd2d1d92b47e027274c3269ff0c7a84b":"crwdns18831:0crwdne18831:0","bbfa773e5a63a5ea58c9b6207e608ca0120e592a":"crwdns18832:0crwdne18832:0","1173872a4fb205b713702f0eec5cf2c732c828fd":"crwdns18833:0crwdne18833:0","808d7dca8a74d84af27a2d6602c3d786de45fe1e":"crwdns29883:0crwdne29883:0","62957ecfdc50957e8957c11d2eae74d078f0ef1a":"crwdns52850:0crwdne52850:0","1dd3e663dfa7ac9cb77cfddd2cf8ac700657e2d6":"crwdns52852:0crwdne52852:0","24e46784cbce32443db5a2638b1a7d3201543e9b":"crwdns52854:0crwdne52854:0","3aa5819ed8a0b94d0f293db8e9c9598298ddd402":"crwdns52856:0crwdne52856:0","a6f151883b736f0470d33492e61c72a7d059d065":"crwdns52858:0crwdne52858:0","899761ff5425abd2ee214fa7aa46e27c6c8b5aae":"crwdns52860:0crwdne52860:0","31bbe8890d28d183f8f7f2c160fa892c444c0ec7":"crwdns52862:0crwdne52862:0","f030c3d667652646b86732ad7bc67e226c49cd3a":"crwdns52864:0crwdne52864:0","2046e49e33c040e08dbd6fd83df3e1846015e6f1":"crwdns52866:0crwdne52866:0","7b47150d431db70d783724007f07ab894eb8ac2e":"crwdns52868:0crwdne52868:0","191800b7e9a48680792c0dd77cb6cac00c4514c6":"crwdns52870:0crwdne52870:0","2d8a6f7c34468578640b333b8650131de06ac770":"crwdns52872:0crwdne52872:0","f94510322ecd9b3a2af67a10bd51ecc4ac6a24e7":"crwdns18838:0crwdne18838:0","c1365a35e99d0f9147ebc72f21534cf471fa7d95":"crwdns52874:0crwdne52874:0","9c7960c6b11d35ac9d6cdc1ebaad3af43b2065c5":"crwdns18839:0crwdne18839:0","2260ce49306460c8a2ef501939f29ad6ddd4e934":"crwdns18840:0crwdne18840:0","0186aa73a1b75fa8f0eb98bbd9ad01102bb09ec1":"crwdns18841:0crwdne18841:0","f7de1f66f0979667da275b7e8996e805395025a1":"crwdns18842:0crwdne18842:0","a431deecd4c2258097adae418d496fe9a8179fee":"crwdns18843:0crwdne18843:0","256fe245cb7d3d673095f7faaa8c9ff81b985ad1":"crwdns52876:0crwdne52876:0","12a3f461cdebbc8f335190413ee6c57442743bba":"crwdns52878:0crwdne52878:0","e696144fa588782e6d6b2c97e2d3ed1adf52bd5c":"crwdns53190:0crwdne53190:0","91a64e3f83c91acf336c631fba295f297f94c399":"crwdns18844:0crwdne18844:0","024696596f26a4db232fd9e966eadfeb27c0bd1a":"crwdns18845:0crwdne18845:0","c538c170bdc6b0f3bb98dce44a016a2e2d45a6e7":"crwdns18846:0crwdne18846:0","85c274929bc0e28eafd3734f2c25046c3b95b36b":"crwdns18847:0crwdne18847:0","346e3ee198e98146993894d3de8ecab1a86c3e80":"crwdns18848:0crwdne18848:0","f16459104f92ab6b38aa265adb4ecbfc3768e303":"crwdns19104:0crwdne19104:0","e09f635f4e77476c9ca1c37bc9992e9ace3431c1":"crwdns19105:0crwdne19105:0","27bed13a88c60350c3de92ec3820e1cc4f7d6ec3":"crwdns19106:0crwdne19106:0","19eabc961735d78f12fc7be906ffcb033853cf85":"crwdns27131:0crwdne27131:0","68f4145fee7dde76afceb910165924ad14cf0d00":"crwdns27132:0crwdne27132:0","629777b7d4d610ace6dee24442730f27d7d0853e":"crwdns18863:0crwdne18863:0","beb040c8fabd007c9cc5ac6a9feb6bdb05d33dac":"crwdns52832:0crwdne52832:0","410bf23a3f080def9c7a976a16305bcde7943ed1":"crwdns53192:0crwdne53192:0","e99811bd3b1ad17e74614060ecb180602be35ad6":"crwdns18864:0crwdne18864:0","876f3e0202ca40dedf2e5ab6577eba1ae637fb53":"crwdns53564:0crwdne53564:0","8ce80462febd4d573cb2f9c1984fdc93b7c21c57":"crwdns53566:0crwdne53566:0","c4c758b5c8f5b3985f6bf7382c848bb44e0a5b74":"crwdns121046:0crwdne121046:0","3b6bbab905129dd36b8d4e99947fa30540ed7b2a":"crwdns53570:0crwdne53570:0","3d6b44df6eaf6236b4abc1aadcf8f5b1cda769c1":"crwdns53572:0crwdne53572:0","cdfe947b0c089a4a1f78c11299f25c32a124f1a6":"crwdns53574:0crwdne53574:0","2db43c69a4b96454914f0b8272bc869984529e6e":"crwdns53576:0crwdne53576:0","0dcea5f584938e0fff00084b83156ab31d641ab3":"crwdns53578:0crwdne53578:0","18da95988117ff029393f3f5c881d70ef47f7385":"crwdns53580:0crwdne53580:0","04226bcf91195130e25fe7a8e8ea4d3e058efcb7":"crwdns53582:0crwdne53582:0","aee24f2456ea8516b024a5d3e2b815ae7f2239d9":"crwdns67006:0crwdne67006:0","3f370309b6280eb100f898426d8605c1f45d558d":"crwdns121048:0crwdne121048:0","af6a4e2a5582be89ac930e946eaed86e01cac58b":"crwdns121050:0crwdne121050:0","49d51398b574e7312d99b18d2b93d2ede416f053":"crwdns121052:0crwdne121052:0","05754ed14275a070a20a1d5cd65f0cea66f1da7f":"crwdns19761:0crwdne19761:0","79222cd9892a434aa61fc7dc01c3839951eb8d1e":"crwdns19762:0crwdne19762:0","6ea4a034747d020b1d8ce4848def95d537555dd6":"crwdns19763:0crwdne19763:0","89f89c02cf47e091e726a4e07b88af0966806897":"crwdns45814:0crwdne45814:0","1200c1af2f7bba4e29a34112865662748c9d41df":"crwdns67008:0crwdne67008:0","62d6180e55905f7b996d442c53631981a4ef8b5b":"crwdns19765:0crwdne19765:0","ed4978867de1da05b336b724a3fb96222a29ebec":"crwdns19766:0crwdne19766:0","87e2e01f93d25ba7ed582cc81ef5c9ab2959f4c6":"crwdns19767:0crwdne19767:0","b2a4553586d1062c21323bca1dc0589f7a9d5cf7":"crwdns19768:0crwdne19768:0","46fc6f27a835486d63d9e927c6687e4508cb3087":"crwdns18861:0crwdne18861:0","9202ddae4cea16513e53bbc965d88ed975e59512":"crwdns18862:0crwdne18862:0","5f52b397b7e5f538681f0f5717a88aa626349c7a":"crwdns19769:0crwdne19769:0","66c7734789e19cbeef3a5ac185ea732139aed213":"crwdns27129:0crwdne27129:0","3b662fb2e8bafce29aa98321b18874bb44905488":"crwdns53584:0crwdne53584:0","7ee0ff5eaa6fa82bd6d83a2f4ca446c663f097cb":"crwdns53698:0crwdne53698:0","93039e609d94a24f3572b794a31b21525a09af2b":"crwdns53700:0crwdne53700:0","ea67c8023c75375484f3a5f1aeb009b20059d5bc":"crwdns53702:0crwdne53702:0","b1946e5b4b78465b7661fd4bc89ff52de6c633e7":"crwdns53704:0crwdne53704:0","952f375412e89ff213a8aca383d18e5691354347":"crwdns18892:0crwdne18892:0","9f1c61cc03f3ef9324db05502f7f0b61e61e1521":"crwdns18889:0crwdne18889:0","095ba68888b5ace5f4515f5acab76dfa1073544e":"crwdns53586:0crwdne53586:0","ddcb77ff769ea54ca622848f6bedd4004fa4f4fa":"crwdns53588:0crwdne53588:0","248e224f533752db28a1aab3519a58569ad96140":"crwdns53590:0crwdne53590:0","c7097e97dcc446ca889d3ca6be733a65e2728afe":"crwdns53592:0crwdne53592:0","3218e5a460e82d7bdea9ce0f145cab2f47ba9a4b":"crwdns53594:0crwdne53594:0","611ebbfb080284312904de925ef0f75f4cb56ad2":"crwdns53596:0crwdne53596:0","efc007a393f66cdb14d57d385822a3d9e36ef873":"crwdns18899:0crwdne18899:0","a638caa8ab2b7ff7980a571334217339e6d1d634":"crwdns53598:0crwdne53598:0","39fca63515c105918f03e4908ec12df675b07f92":"crwdns27130:0crwdne27130:0","85dfa32c97d8618d1bea083609e2c8a29845abe5":"crwdns33427:0crwdne33427:0","d847919a30d31c0be624087f3370492b3fdf80c6":"crwdns18764:0crwdne18764:0","5cd6978d63540c8a490ef76f43219de6362f958e":"crwdns19668:0crwdne19668:0","17410d7b62b8b1de981cfebada24632987edf186":"crwdns19669:0crwdne19669:0","b841eeb091f1ff0e14be08e5ea1b93e4cf147ed3":"crwdns19670:0crwdne19670:0","90eef613042c5a51f542421065b68b886d473807":"crwdns18770:0crwdne18770:0","db1c784524e1b54011a95823026161f7c8517fe0":"crwdns18773:0crwdne18773:0","4db3e9e4aecd187db9339a10d2629fef46724dc4":"crwdns19671:0crwdne19671:0","1bb4086b66659d8580f9be4beef69931aeea3cad":"crwdns19672:0crwdne19672:0","8bf249c4855e591964bd5bdd35c8ef2ee107342d":"crwdns19673:0crwdne19673:0","ba7be969e7c1bb5f22489e843478e3d721aaa843":"crwdns19674:0crwdne19674:0","772fbced18230220d2d9be1456be16fc1b271d25":"crwdns18779:0crwdne18779:0","bae7d5be70820ed56467bd9a63744e23b47bd711":"crwdns53934:0crwdne53934:0","96f608c16cef16caa06bf38901fb5f618a35a70b":"crwdns53936:0crwdne53936:0","7fb3a9b5101bcd45e2dca077191693a5199bafa9":"crwdns53938:0crwdne53938:0","82a82f798dd773717ec37d15fd4405510291734e":"crwdns52882:0crwdne52882:0","6a88e58aa1798626f94cf17f1a91618b405bb289":"crwdns53600:0crwdne53600:0","624cc7f40b68faace7e78d8e5c5be1d4f15facda":"crwdns52884:0crwdne52884:0","788180a6ddbbbcca10f6f49d8e85d557934bae0e":"crwdns52886:0crwdne52886:0","d907a40a4a15da3c21a6e0f8ace3f987d482f92c":"crwdns52888:0crwdne52888:0","4f219c17ab9ab76aa1cd431b4e0e5ecf5520e8e4":"crwdns46217:0crwdne46217:0","4684ee1026d9b4c872d016c3c4588a0c479a451c":"crwdns46218:0crwdne46218:0","ca92c55b9e4233d771d5b6300fe751a9678d1deb":"crwdns46219:0crwdne46219:0","f02760cd2eac28169f0a990c950c3dfe8427f772":"crwdns46220:0crwdne46220:0","fadc0ef93d1ff13370524ce8481ddc4a71195934":"crwdns52892:0crwdne52892:0","a479c9c34e878d07b4d67a73a48f432ad7dc53c8":"crwdns18869:0crwdne18869:0","e4458464df6cbb8da1134875ba51519c5d244d9f":"crwdns18867:0crwdne18867:0","e9c45563358e813f157ba81b33143542165ba84e":"crwdns53194:0crwdne53194:0","31cb6f44d030abeabcc7046555dea851602a87a5":"crwdns52838:0crwdne52838:0","9ce3bd4224c8c1780db56b4125ecf3f24bf748b7":"crwdns52890:0crwdne52890:0","486d55264892207fef1ed5799e0b213b446d3eaa":"crwdns121054:0crwdne121054:0","a594b427eaf0f108d3e9cc20d70e15da811c760c":"crwdns121056:0crwdne121056:0","04a5090686ac7b54822e00a9ff08c38a107601e7":"crwdns121058:0crwdne121058:0","77dfd2135f4db726c47299bb55be26f7f4525a46":"crwdns121060:0crwdne121060:0","fdaa08aeaee0bf9b78d83ea19ef9e9bd019e8193":"crwdns121062:0crwdne121062:0","f1d8b7b118d6f82f95614d476bc11af650aed3bc":"crwdns53602:0crwdne53602:0","af145748c9cf765a3b059eec20cb1dbb899297d8":"crwdns18868:0crwdne18868:0","11ee9c5d534cc8d22651092222b532917594161a":"crwdns18872:0crwdne18872:0","5283ac04c9a8ba8a937d1edb4ba986aeefce8bf1":"crwdns18873:0crwdne18873:0","ace1342bc3720b77ce510b93074041e7386d209e":"crwdns18874:0crwdne18874:0","fed3e7bd6696fb97a12d720845ab5388456bfc3b":"crwdns18875:0crwdne18875:0","d466687f90ba548434d65186d11a80c4204f9ad6":"crwdns19676:0crwdne19676:0","6ddf2b3075ac9ab5d66b40e15ea9a34c087672ea":"crwdns19057:0crwdne19057:0","33aa6ff282ee509d37c6f758274c9156b419ff73":"crwdns52894:0crwdne52894:0","da162a909c2981ed318d23cd9a6be1d66e0a8400":"crwdns18870:0crwdne18870:0","5e719fa76e1b6cb396376c82ebdd04bec7253229":"crwdns18882:0crwdne18882:0","b0d2de25daf6ba09a5e710c6968ffded29c4dae1":"crwdns19770:0crwdne19770:0","df84a88f38b03b5b342362d72370b0d66afdae35":"crwdns18883:0crwdne18883:0","cd680fd936e9559ef1d95efac7a71680e2b13a89":"crwdns18884:0crwdne18884:0","34c59389053701a04127f74d32315e0206e076f8":"crwdns43092:0crwdne43092:0","3ead0b14c72503187691a7a6d7121987299bd401":"crwdns19771:0crwdne19771:0","27401c9c8e476d659c8382e05c6d70a4a82be468":"crwdns19677:0crwdne19677:0","bc981983e7f547dc62e19a1e383acfe00782a6d5":"crwdns19072:0crwdne19072:0","b52b36b7269fbfc58ec24bb724691951a3decbe8":"crwdns19073:0crwdne19073:0","e9b450d14bc2363d292c84f17cfad5cfbd58a458":"crwdns19074:0crwdne19074:0","29cadadfebdd578a50b7b3d1b2c5b33e424d5de7":"crwdns19075:0crwdne19075:0","a48e81d4a8da67637b46725824177a959fe99b21":"crwdns19076:0crwdne19076:0","6f3e6ebf249947cec4f64117253a8fe43335ae79":"crwdns19078:0crwdne19078:0","fcb6e90e7223e1d1d735f15dbb7ded9d81bbe7ef":"crwdns19077:0crwdne19077:0","4ca0a75c2b7fa7da4364d03b72c46fee1860a2bf":"crwdns19080:0crwdne19080:0","5fcf29b9f0b8971c8148e70a150ddc9ac04c94fc":"crwdns19081:0crwdne19081:0","ddcbb5361b1a16eba60fca2383fb297bb90ed9b3":"crwdns19082:0crwdne19082:0","1758356db21759f7c5a0da9b4dd1db8fd6feab3f":"crwdns33429:0crwdne33429:0","00b581632c1532969a7128ebc8eae936ed8af04e":"crwdns52896:0crwdne52896:0","d171baee235d4c93f63755a876782dc5be4c3e47":"crwdns19084:0crwdne19084:0","056f19272d96f902c38207cf163ea8dbff7fbd32":"crwdns19085:0crwdne19085:0","36bae31694f85bd7a5b0ad45e51ef622b95baadb":"crwdns19086:0crwdne19086:0","f5c47fd3b3553b10441a06054078cea745177dea":"crwdns19087:0crwdne19087:0","fd825ae94aa79500a878dd4590a4b360e7162663":"crwdns19088:0crwdne19088:0","6ee7980833e1ed72901b919ffd0fa20e1a251d3f":"crwdns19089:0crwdne19089:0","f5169c84497de3aea74f7da9e7e177d1427e736b":"crwdns19090:0crwdne19090:0","4f1b3d682c2a00b393c33637da402463bc11d5ff":"crwdns19091:0crwdne19091:0","0049f8894e41937ebb9111cd3def6749049fb50f":"crwdns19092:0crwdne19092:0","aac1569ccf6b1a11b0ad0fbefdb9ffc777b4c733":"crwdns18881:0crwdne18881:0","d1a17af19f5388af9d6596cc0ea7dbb1d739e255":"crwdns52904:0crwdne52904:0","53adebdc2b1cbbedb56395b19a73fe47b87cc554":"crwdns18834:0crwdne18834:0","5fb1db527825d2996e37c655e5dec49d4da80c09":"crwdns18835:0crwdne18835:0","092f99ea11a34a8490e7a767a83a42fc45634f82":"crwdns18836:0crwdne18836:0","9e25a34e635a123f8958bbe26e7c4843278597fb":"crwdns18837:0crwdne18837:0","f6bb0f468a8569c67b3d6826e57e62c5500c3681":"crwdns52898:0crwdne52898:0","db6708630fc646eb98298d9acd701e0a1ac051c2":"crwdns53604:0crwdne53604:0","85538d002a336c5addef8d189d80976cf7758f8c":"crwdns53606:0crwdne53606:0","b65463cb6a42a17de514acc4659f7fd331e0876a":"crwdns53608:0crwdne53608:0","ed28e0686e1251ba046f582a3e9ec02470a5e78d":"crwdns53610:0crwdne53610:0","cd5f85b6f187605f82386eacd680f93820af8d11":"crwdns18949:0crwdne18949:0","1e38ce3d180cefae485a6986ca7c67841e30376f":"crwdns18950:0crwdne18950:0","5c89497fc3c128e2ff865ce8df15356054f2c028":"crwdns18953:0crwdne18953:0","14ea81918758c994cbe3178e695e56afc1ef2b45":"crwdns18954:0crwdne18954:0","5098e2bcc96ee227983c9f7eeddfd226c220ca00":"crwdns18955:0crwdne18955:0","251c830f8f869e0887e8b4dc4c30ba1738c7097e":"crwdns18956:0crwdne18956:0","b3b543c80063a116ced4965d8537b7b62d14c0b7":"crwdns18959:0crwdne18959:0","a1eeb7c1e92e9a5d9323ed8ebd7ca7ffed8b0232":"crwdns18960:0crwdne18960:0","ca5586bdb5bdc1a2c0baf53ed0ecd21fafabebe7":"crwdns18968:0crwdne18968:0","03bad10717e183b24829baf483dc715e1a44bf7b":"crwdns18969:0crwdne18969:0","2c71ed279a402e93312dbda173ab18f244d6bf46":"crwdns18970:0crwdne18970:0","17632a9f51611d2579d95b4b1ccb9476566d7ccf":"crwdns18971:0crwdne18971:0","579607dc4f989ce2b94b558431666a0ab07ac1f3":"crwdns18972:0crwdne18972:0","e20afd5cf3811a42071c9a312abb2afdad4c590b":"crwdns18973:0crwdne18973:0","4712cbff8e92822fc960ef9c0197293a19675eae":"crwdns18974:0crwdne18974:0","df817b48c7a076561b4f8bedc52d65d2e351ab52":"crwdns18975:0crwdne18975:0","da3105e38c42a481ad7230ed393b0e12bebe9c4f":"crwdns18961:0crwdne18961:0","343fda69c73b78b84967055aae97f790c422adfd":"crwdns18962:0crwdne18962:0","d4d34ce9d9dd7e87213469f88cb7ac43725675d5":"crwdns18963:0crwdne18963:0","fb61a3c71f4c488b3b470cb7daf502a3e9b5ad48":"crwdns18964:0crwdne18964:0","9bb396940adb9705fe57eba6ea8b578e6aafa792":"crwdns18791:0crwdne18791:0","87da93a46d143f6019979b3548414d9d7adabb35":"crwdns18965:0crwdne18965:0","160f06d4799c85021a810f68c5b517eea37a2737":"crwdns18966:0crwdne18966:0","4c2fdde3d9c1950498ed263d6ce21d4bf3d0800b":"crwdns18967:0crwdne18967:0","b44e884c355e447d0da0e6ba45caaff18c84373b":"crwdns19030:0crwdne19030:0","d6a2a207343bd83aacdc80b579ff4419713a256e":"crwdns19031:0crwdne19031:0","170a28a9db6d27d7212fc6dc249434a57517e7bc":"crwdns19032:0crwdne19032:0","b833989d69900a4be9e32d1bab65c8f8233f099e":"crwdns19033:0crwdne19033:0","1cee82f19c0bedef64f68b32e6b02128efe7c61b":"crwdns19034:0crwdne19034:0","974da601086448d0060aeed90e53ddd5acd17b91":"crwdns19035:0crwdne19035:0","d5b65cac1f1cf9421ac978eebe532de99040cca6":"crwdns19036:0crwdne19036:0","58de49791c64aba14e36e5887244a5ef088286cd":"crwdns19037:0crwdne19037:0","4bd99f76f1104229744455d93df0ff76b9eeed58":"crwdns19038:0crwdne19038:0","ea615c6d6a74e25a6d2f1bc9980b46e73508c2eb":"crwdns19039:0crwdne19039:0","4082d9379e59b38c891d046312f8d3c4b64ae3b1":"crwdns19040:0crwdne19040:0","562edc102c5dd9e2fbbede1140b8a5461c2d4dc8":"crwdns19041:0crwdne19041:0","a537f4f3c0f6c68bf896fb23cb2ecdc658488ea2":"crwdns19107:0crwdne19107:0","b18e572ea14edd48587145f1ef50718adbf256c6":"crwdns19108:0crwdne19108:0","974023bddd6249d0f6404872cfcae205b2599ea2":"crwdns19109:0crwdne19109:0","5c2adcb3d1bfd6b9f5c2dec13d02a9473e4445a1":"crwdns52900:0crwdne52900:0","6b15ce93fd68d80aeee7f7964c1306044c3c1baf":"crwdns19111:0crwdne19111:0","95ec92885c855ba9cf734c17a43f081901e4d2cc":"crwdns19042:0crwdne19042:0","b033619e108c9e43bfd8a42cd97bf5c5dc86dc65":"crwdns19043:0crwdne19043:0","4034de66995b876b2ba9bfd0274025e39168e05d":"crwdns19044:0crwdne19044:0","f9da880c8b0e4cce4431912c24eba939e6bc06e1":"crwdns19045:0crwdne19045:0","a9842c95766da40bf4ea6ee263cb5a5985847763":"crwdns19046:0crwdne19046:0","347775a293c14362d492f019e677c965be1d6e7d":"crwdns19047:0crwdne19047:0","4cc7b9e53d082896ad884eb01be16320af65f282":"crwdns19048:0crwdne19048:0","2c75179a57af3c36581008b65e86ed81c4a4cbea":"crwdns19049:0crwdne19049:0","39f024cf49724fe7ffdea7773c72ed06eec998e1":"crwdns29884:0crwdne29884:0","e4bed3e67e58b2334ee4b9c6ce59ac7a95d80aaf":"crwdns18980:0crwdne18980:0","ad47561efb1dcbd7246d9b64487f615647fda036":"crwdns18981:0crwdne18981:0","05bef508aadd62bf3967dcf67d769da296f19989":"crwdns18982:0crwdne18982:0","d089ab98a846a521b09aad6ff3fefa728bfa8b42":"crwdns19678:0crwdne19678:0","cdb31fc857f01a59f664413498293c714285f46d":"crwdns18984:0crwdne18984:0","20fd5f86f08796f145d69dedc209a27e459b2f51":"crwdns18985:0crwdne18985:0","a96606af8c33ac3428b45abc4782dbf93f458d29":"crwdns18986:0crwdne18986:0","90ed0e1ea5c1907f8a32d8051a66e845857bb2a4":"crwdns33430:0crwdne33430:0","248428facb97408414180d4de74e4db35360fbc4":"crwdns33431:0crwdne33431:0","2e4202acde880b7b1c3686f0335ff879fc1e5c7a":"crwdns18987:0crwdne18987:0","e46e0bd2f7fe37217dec8aa26ebce8ffa3608663":"crwdns18988:0crwdne18988:0","d5fde4c9d5edf660f760fc226df4d2678d3334ab":"crwdns18989:0crwdne18989:0","95e552a40d3446c96905cd3ec7e3d123d0246ce8":"crwdns18990:0crwdne18990:0","5a0ed227a01b7d30b05dcaf3e1c23b74b9be6ff4":"crwdns19772:0crwdne19772:0","a4220593d385a720886f7af1ed3c478fd0c6339c":"crwdns19773:0crwdne19773:0","cd8cdf3d47e921c8a72addae9269e66041d417c5":"crwdns18992:0crwdne18992:0","3e4f335e7a6f79bd1bafd219ddde30acbf16a7ac":"crwdns19774:0crwdne19774:0","34037f9452fdb66c9ca27ebcc0afe9d5139e9e24":"crwdns19775:0crwdne19775:0","aba43a580daa7f306956ec69b83e6e37e7233126":"crwdns18979:0crwdne18979:0","e04b522218a181cf0223042dd18ae08dcc22d8d3":"crwdns18993:0crwdne18993:0","6ee445fc253a55c9ed54c009c3f020ac65200d80":"crwdns18994:0crwdne18994:0","ed44b69176217a1251c04f0c13d23ac789ea60b2":"crwdns121064:0crwdne121064:0","ea24dd1988c6534a5f0d11b8fbbc6c374fe68766":"crwdns121066:0crwdne121066:0","4b2340a890e88d1886757c3f7172e273a1edc31f":"crwdns18995:0crwdne18995:0","b54d7b4590559dad64f02d09aacbf6d9863e2624":"crwdns29885:0crwdne29885:0","ebffc758056e6b2fc2af99af17fbc6853e5d3583":"crwdns18997:0crwdne18997:0","17649cac8739adcae95e641f794880272ad33bd1":"crwdns18998:0crwdne18998:0","46ecdefde6a8dd5872cc6e0e52afb717f1140426":"crwdns121068:0crwdne121068:0","3bdc75d5d68b05dfd3ce6dcdf7d9773e60ed0a51":"crwdns121070:0crwdne121070:0","802dc02469ae51067ca620ff57dfb5bdb3e524ac":"crwdns18999:0crwdne18999:0","c4ee8e12b2484cd5b47cdf00bfa2c50b83e91d3d":"crwdns19000:0crwdne19000:0","69280143949fcd59c171dd60f6b6e13d0cc08fe6":"crwdns19061:0crwdne19061:0","d072c2ceeb5c1217722d14c74de7aeab945b4215":"crwdns19002:0crwdne19002:0","e98ea4ac4e2cfd6a4c84386534c5d1acd7ec85d3":"crwdns121072:0%1crwdnd121072:0%2crwdne121072:0","27305f6365c38dd36f5b5eb781e05b5e2e4e3f6e":"crwdns121074:0crwdne121074:0","b06acc4158c824231f727a13e1c9811f43d5be42":"crwdns19003:0crwdne19003:0","661db37251a1ed1afe357ee13895f37a623d7cbf":"crwdns19004:0crwdne19004:0","6c03ee54ad3a51fc92a1d69943e99667847705b6":"crwdns19005:0crwdne19005:0","b1bec5d06e3672915d81b2fbc2347c8b4947a954":"crwdns29882:0crwdne29882:0","a2d0c89fdfff3176efd4a443eb0f6607067b93e7":"crwdns19006:0crwdne19006:0","6e0fc122f936f808bc2e3af661121b65712ae855":"crwdns67010:0%1crwdnd67010:0%2crwdnd67010:0%3crwdnd67010:0%4crwdne67010:0","1aeb6caed9e46edf5d6224adc905ffb8ee3a7708":"crwdns67012:0crwdne67012:0","45ebd38f4c641ebf6f72be8c3a79dfa50cf9f20e":"crwdns19007:0crwdne19007:0","ffb465875e1ff2b49bcaa7c6b70965ffe39fa59d":"crwdns19008:0crwdne19008:0","532e65f6e266db0bb442d1f426d44d7d32962340":"crwdns121076:0crwdne121076:0","78e84591ff76f992953a8e19b57c7eab7546d638":"crwdns121078:0crwdne121078:0","bc528d26f66fe8c4aa4bb24ec9c99dff12c055e0":"crwdns19009:0crwdne19009:0","bea5756b18644ccfab01c1c0dbd6fa9db7103379":"crwdns19010:0crwdne19010:0","7d500ebe352ccfa932b253e21938813a06fcff8e":"crwdns121080:0%1crwdne121080:0","e770fd2a6b980a0815592b1bd499127c5a5cfe39":"crwdns121082:0crwdne121082:0","a35646754dbe7a9211ba8b81338a5d64580eb276":"crwdns121084:0crwdne121084:0","69b0648eddd207cd45a9e1ba973dae287b535576":"crwdns121086:0crwdne121086:0","c67ded6b64019212eb2bc69afd761f5b3f626040":"crwdns19011:0crwdne19011:0","569bbd757e1bb8bbccd250b98dc2bb37cb47b787":"crwdns19012:0crwdne19012:0","74751e67c3e1010c343095eaf543e7cb21ced2ef":"crwdns18774:0crwdne18774:0","1f4698382842477e211eb46de81fa506f01a8c34":"crwdns19014:0crwdne19014:0","c1baf816aac5a5cd849768773fc248cd249dc296":"crwdns19015:0crwdne19015:0","c93025710d1ae6cbaf8e710f63eca8edfa0c9399":"crwdns19776:0crwdne19776:0","9693aeaaf68e3929b59b79306feaa0a847d01192":"crwdns19017:0crwdne19017:0","78d7103a319e808455d397513279d99f3b3f3768":"crwdns18792:0crwdne18792:0","10c02649e226d430bd75a5b6315a41c0db9992a2":"crwdns53196:0crwdne53196:0","837276742aa90209dde3b4eef07d8e7ab26731ef":"crwdns53198:0crwdne53198:0","258b49925b41751c6bd790a0848246566ba61440":"crwdns27133:0crwdne27133:0","c55ee3445cd391ab299b6f85a6ea9a68a65ea64d":"crwdns27134:0crwdne27134:0","b410994b67e37d9516eb9b866c85a8c639f79e68":"crwdns27135:0crwdne27135:0","2260c5a971c2602834ef8feeb5fa522f900b469f":"crwdns27136:0crwdne27136:0","cd1495cb4c60266a6abad9024022ae079bf7e416":"crwdns19022:0crwdne19022:0","0745acf92abd7b60598f161717884cc45dab8694":"crwdns19777:0crwdne19777:0","999e1ade10ff5ee1d115f5a6288bfd2e0d0736e6":"crwdns19778:0crwdne19778:0","a43c3299d30a5bc7e31a574cdc87f59cbc8fe585":"crwdns19023:0crwdne19023:0","d571f33d957ebcab086ecf38eedd71b6ef0c5820":"crwdns19779:0crwdne19779:0","4d22b565e4253e92a908f216184779679bb1a044":"crwdns53200:0crwdne53200:0","b70c38c6db3127422e05315c30bdf76c7c36c480":"crwdns53202:0crwdne53202:0","a6c5f081b3addee364af1c8cdb84853f49dc8e07":"crwdns53204:0crwdne53204:0","0f2ba74929aca6fea950e351dcd576b7cd841fa4":"crwdns19026:0crwdne19026:0","7cb3b482ab66947d439642ec64dc7f5bd4e065dc":"crwdns19780:0crwdne19780:0","5925d08228e246f07b790b88ad70c1b73a97d2bc":"crwdns19781:0crwdne19781:0","852b438f91ad9eb2cdd84419a675a216d543c687":"crwdns18976:0crwdne18976:0","67d3b35a0b740127b56bcd44d3bcb1ccc20e0b48":"crwdns19782:0crwdne19782:0","d79d854dcd0829e2177a47beab6a55569e781ab1":"crwdns19029:0crwdne19029:0","5606b4460ac96063b8a8e5647008f3ec97252fc5":"crwdns19050:0crwdne19050:0","2de20bdeecb1a8c28bd36fe75f028ed4318d0348":"crwdns19051:0crwdne19051:0","f43cb41af7ce8a69c7aecbc1c603bb0381270982":"crwdns19052:0crwdne19052:0","4b6fe6898f0f956d48a4c8172c6dfbcb4159ab09":"crwdns19053:0crwdne19053:0","2eea87bb804e4e73e3f8e9c41140f7ed83ea8875":"crwdns19054:0crwdne19054:0","e0af6ddc8a892704f64680bcb22b30c4bfcefec5":"crwdns19783:0crwdne19783:0","7b9c76088576a64f32d67ec335162b9f73eaa026":"crwdns19055:0crwdne19055:0","ff56ffac023cf69ca5c7f71d407499536f4f86b5":"crwdns19056:0crwdne19056:0","e9fb732dde76a6977bcaa2818b0f56125b183648":"crwdns121088:0crwdne121088:0","1a90ae7cb728e7f25b031d7e844882f75e74ab5c":"crwdns121090:0crwdne121090:0"}
 
 /***/ }),
 /* 253 */
 /***/ (function(module, exports) {
 
-module.exports = {"3d52a6d8fedcc48a65297c07bf5f7e3e41aab5aa":"Logika","3edf0df49942da6d11a1a217e4d3af4a5a8e64f2":"Matematika","c3328c39b0e29f78e9ff45db674248b1d245887d":"Teks","4d064726954a17487f94e931f5b157b733ec22ed":"Lanjutan","a1fffaaafb7cc996685bceb829c053cc4f7de43d":"Daftar","19de69cb601f53a4ea7af22a65c71ae63251365c":"Variabel","2b961dea1dc0c60ddf9a2c8e9d090f6f7d082483":"Fungsi","dc7f77b4ccfc9f70a78bd97303bd10ba4c9d70c8":"Loop","66639f7d455dd71faa9147f5d69e5ce885d8bebd":"Binary","0ba66deaab2f2cd3b0793d03f600ee2b8f577fbc":"Definisi Trading","9201c6ac624e98e168e6ccddbcd5a9b5cdff06b3":"Sebelum Membeli","44ab9a87268d3fd74040ed0b55c04f83294cfdef":"Selama Pembelian","c415c9399b7ae7285d2c1c880a6a0aa18f62ff8c":"Setelah Pembelian","d07ffc19d51f0973859a0d95c1d15cd9f22388ca":"Analisis Tik","8cf71374fa095a64b5295b672daef8507ec7be6a":"Indikator","4fa8cc860c52b268dc6a3adcde7305e9415db5bb":"Alat","6c82e6dd86807ee3db07e3c82bec1ae1ce00b08b":"Waktu","8d8fd6765e184419cad8b88d1a60c895d79578c2":"Candle","548f449b63ff41eaaff5a2d679ffa56b2015fc20":"Lainnya.","8bf95ea372568c7a254ba9fada5f6f1701ebc5b5":"Log","12b71c3e0fe5f7c0b8d17cc03186e281412da4a8":"Ringkasan","9feddbabd7e7309e96c590069057158e96baa8f6":"Pengecekan Realitas","038fe2bdb7ec6ee078f60bdb5bee94654ec6a81d":"Trading opsi dapat menyebabkan ketagihan, sebagaimana kegiatan lain yang dilakukan di luar batas. Untuk menghidari bahaya ketagihan tersebut, kami menyediakan pengecekan yang memberikan ringkasan trading Anda secara teratur.","4152043e8c670075d2c919677e835edb0d923cab":"Silahkan tentukan interval cek-realitas pilihan Anda dalam menit","d9fff2df19e90f2c7ea6bb30fde4e0da119d13d1":"Silakan masukkan nomor antara 10 hingga 60.","2439f2f199b2a3e798aa9b4feaa9248bdec9bc0b":"Lanjutkan Trading","a72ca256dc49e55a1a57b9a727fbde9834c9a3f7":"Pernyataan","6e78c91f5a05fc0d4f1a787d38e3d6fe2f856d46":"Keluar","4832e45812a2724f16a15f9ae87adfc8ae4168cf":"Hubungi kami","f7c400ed695f898b8ee9d21664aa17b5bb693828":"Masuk","5ea75f1605a4bf1db5c39fcc61854627478c0a7d":"Reset ulang blok ke keadaan awal","f98595d541778d86f75ef22b3328a031d20aa16b":"Muat blok baru (file xml)","4a1e616226c329a94da7768bc0435a3284478010":"Simpan blok yang ada (file xml)","6b3465ace62f33f0687b4669ac26d95895e9ca52":"Hubungkan Binary Bot ke Google Drive Anda untuk menyimpan dan menggunakan kembali blok Anda dengan mudah","8e4ec2c451ec7b1bf68d72fe9086ec978e41feb7":"Membatalkan perubahan (Ctrl+Z)","937f5055f05be359ddf619744e8af4d643549e80":"Mengulangi perubahan (Ctrl+Shift+Z)","8406d1cce44230835932060649e999ca3283b413":"Perbesar (Ctrl + +)","1109673172af2c173c492622ff8a72c8f29f0e70":"Perkecil (Ctrl + -)","44c22002c65d2871331263a23c3e09c0a1bfd847":"Susun ulang secara vertikal","ebd0945359e5578ff9bd3a2ab490ca84c225d8f5":"Tampilkan/sembunyikan munculan ringkasan","76bb05950f80f3a88ee05ef3276c5934fd355e8d":"Jalankan bot","ba50a42d8d3228c37a817865fce49fbca692c2ad":"Hentikan bot","4f4aa4117318a8ddf8783885d4f3542c5b2733bd":"Tampilkan log","91017ef9b165cd0e7475a770f318ea5e705e1321":"Tampilkan grafik","c89e3dd1cafcadcc0312e476ab58b2332209da23":"Tampilkan Trading View","b02c858e72be118a65c9393930351012b647cb9e":"Toggle header","250be77f7605669a0b3d968b9ed381a3d9787ed1":"Buka file XML yang sudah disimpan dan ambil bloknya","ff29ccd7a6c6073cc462ed590d27a91632fdf67e":"Binary Bot","608061fb5aab975013fa70c5c814a1d8ba30c152":"Trading Lebih Efisien Dari Apa Yang Anda Pikirkan","e4ce8dc3e416e69262ba642dc57d3975d6616980":"Tertarik untuk mengotomatisasi strategi pilihan Anda pada trading opsi binary?","f261237ca8beec6f77b76c4121feb8da22818c56":"Binary Bot adalah alat pemrograman utama yang memungkinkan Anda untuk membangun aplikasi trading sesederhana menyusun “potongan-potongan gambar“ dengan fungsi tarik dan lepaskan.","f6c85c68616eeaaa15fcd53fdc52f6eb5c886357":"Impikan berapapun jumlah trading opsi binary bot, dari formula yang sangat sederhana hingga menggunakan algoritma yang lebih kompleks. Kemudian biarkan mereka bertrading untuk Anda, meskipun Anda sedang tidur.","e6906a0d1c28b202f9bd49da4a6abbddca57399a":"Terpenting, kami dapat membantu Anda menjual bot Anda kepada trader di","1dd0cf79c572bcdbdfabbd54ee95710a21234d73":"Toko Binary.com","abeef9a35ae6256796ba2462e4f64d308de42359":"Dapatkan 80% dari penjualan pada setiap pembelian bot Anda pada app store kami.","0606f0b7763ee6e8094a3dab7873d34c08fd3670":"Mulai Bangun Bot Sekarang","221acaf3a0290adafe08cdcb8c66121c73d8b4a3":"Perlu bantuan lebih lanjut?","d635b53e59c9aad8c5d78458826beffb029b27bf":"Terima kasih, kami akan menghubungi Anda dalam tempo 24 jam","1de91e827ec70ca735abc2c71b0a89cb0cfc4ce1":"Pasar dasar tidak dipilih","50050f06645ad2743165b429a8f7deebd285fd63":"Jenis kontrak tidak dipilih","6a7d1a3a17c4e8ae6712cb60d46db1edf0aa2667":"Silahkan masuk","2f9f9096be1a1c0569a9ce54e57f0420f6b3c2e9":"Durasi harus bilangan bulat positif","4df6e872792d72aea8a2f6b831d00b554464da23":"Jumlah harus berupa angka positif","001e68df3a4b32a4d57148d9d407f44eee3b7436":"Candle yang diberikan tidak berlaku","04f14ea7c92e0b2b5ae005c696245063ec641d66":"Daftar candle yang diberikan tidak berlaku","c1bbfcbb4f57d3a56c1239af0c2138321589efd2":"mencoba kembali","57b453bb26b1c28dfe362b7cc9f17f0be93dd581":"Batas harga tercapai","094628ce13fc0e78f07b697d1cc9421bb2edd666":"Permintaan gagal untuk","816c52fd2bdd94a63cd0944823a6c0aa9384c103":"Tidak","5397e0583f14f6c88de06b1ef28f460a1fb5b0ae":"Ya","9bb396940adb9705fe57eba6ea8b578e6aafa792":"Hasil","78d7103a319e808455d397513279d99f3b3f3768":"Modal","bbb930cc426507ed3f6b7c343c75dd0e041494b7":"pernyataan","e6e886cdcdefeb6d3edb4c31bed06dd183ac4153":"harga ask","50e72909992bdc37c7c07769d1b7efac5e52874c":"hasil","ecb5ba7044417916ba12de5fa9e6fccac3e5d475":"keuntungan","c980b910204c7babdffe8ff3f7e755f30133383c":"jenis kontrak","a726c6955157f1b8b92f9932652434a7150f80f8":"spot awal","a66d5c7ef2c63dbc9a8f9e6ae4e2bc575e74a36e":"nilai awal","7674920c033ca14277c577e19c037a6754d4fa80":"spot akhir","e8b8bd9f2eabc12875605a37c93e7f04a713fcb8":"nilai akhir","779455ee3bde8494d9629b353e17b19e92357ba8":"batasan","37a5301a88da334dc5afc5b63979daa0f3f45e68":"hasil","4973f4c599d5f42cf7bde52d66c3ed8ef77accb1":"Untung","12e24a7d8ac40579e8a0aef4869288afe7ed6745":"Rugi","563339f82447b4e758ad76d5a0b63b5698594fba":"Rise","5c1ae82c29543ac887703776bf3da2c7dcce683d":"Fall","2fc096bb7b6596ab243d0286c9f43fdf2b9b406d":"Tidak Berubah","ecb252044b5ea0f679ee78ec1a12904739e2904d":"string","53b0a1b2fadf4e040cdc2155a7340de24aca93cb":"jumlah","bc74f4f071a5a33f00ab88a6d6385b5e6638b86c":"hijau","4c9a82ce72ca2519f38d0af0abbb4cecb9fceca9":"biru","96de5543d183d7de52ac5fa21c46fc811f673f89":"kuning","78988010b890ce6f4d2136481f392787ec6d6106":"merah","aa9330a16e5b055de809256dad6b4d1cbd2999e7":"Tanpa suara","cf84a98d6cf7f156862a08ba8236467b6f471004":"Pengumuman","eee2facd669d1434848c24da5527b3e87d9a12d5":"Uang yang diperoleh","9d705578b0f1f0ce3a06dc5e82f9a1e6078f81e1":"Pekerjaan selasai","7f2f6a15cf8da2b27e5a4af47b58e7ad71c0b3d9":"Error","a3b1583d377f37ac20de7e089edfa0920a078e57":"Error berat","66c8b6848eee629c4ac551bf2b5fa591571654be":"Rise Equal","5649dce3367d490fa19d563ee9e3d4c4b6f7c642":"Fall Equal","062787aa328047e189774b3703d983b83938f6e9":"Higher","b91eed4b7a80cd9572a27e65ebdff9caa4b3b9a4":"Lower","e3f139abb7a549a1210b36f7dbf89215ad6c9902":"Touch","7d7932bcc2e262ae98cf09dc5445130fb3881769":"No Touch","a16814a48ec58c2e24ba224a80921a5c02361abe":"Ends In","391d02cd75ebcd6ed26f5f45ddf7d40bf13e9dc5":"Ends Out","534ec5da4e82ec419abc170e1a8448f55a01664f":"Stays In","98cbe1998effd8b1a8aefdcc538573055e99a5f5":"Goes Out","93d13bad1d2c2841db127cb70cc35bfc98059fc9":"Asian Up","c098658ce3d3a258e4d155949a60072966b36db7":"Asian Down","ee2dbd5d6d82d0833069b07e7dd2848d3bf4d83a":"Matches","8444b7ce28bbc3443cc5cf73359b8353989b2a4b":"Differs","9e767ad03e5547f251044e0724dc1d9f3e75aeed":"Even","dc28f5f3c65ec611f0f30022650d24382d27448e":"Odd","18a63f5512afb5573e5b44deba78d629f0635317":"Over","2a268b89b83f8cb38ea48e46e93dd8840db512f9":"Under","2155c8b38181dd2552e84a94049aacd33ef9c607":"High Tick","1408cfd2b064b923f024fbe590e27db8282941a5":"Low Tick","b86eb15dc4f13e4c2972de158d3038d9f657242f":"Reset Call","669a1f3d9a8f601a84da536cfdad1de4092b1926":"Reset Put","844d1a5c99a0a668383340cc095d040eef998c79":"Only Up","87293a146cd481a2b30cf74282ec061dc4cf0735":"Only Down","cf9b77061f7b3126b49d50a6fa68f7ca8c26b7a3":"Open","b1a5954a483f8f8b0207385095f74aeb409b3f80":"High","a124947cbd2d1d92b47e027274c3269ff0c7a84b":"Low","bbfa773e5a63a5ea58c9b6207e608ca0120e592a":"Close","1173872a4fb205b713702f0eec5cf2c732c828fd":"Waktu Buka","808d7dca8a74d84af27a2d6602c3d786de45fe1e":"Standar","62957ecfdc50957e8957c11d2eae74d078f0ef1a":"1 menit","1dd3e663dfa7ac9cb77cfddd2cf8ac700657e2d6":"2 menit","24e46784cbce32443db5a2638b1a7d3201543e9b":"3 menit","3aa5819ed8a0b94d0f293db8e9c9598298ddd402":"5 menit","a6f151883b736f0470d33492e61c72a7d059d065":"10 menit","899761ff5425abd2ee214fa7aa46e27c6c8b5aae":"15 menit","31bbe8890d28d183f8f7f2c160fa892c444c0ec7":"30 menit","f030c3d667652646b86732ad7bc67e226c49cd3a":"1 jam","2046e49e33c040e08dbd6fd83df3e1846015e6f1":"2 jam","7b47150d431db70d783724007f07ab894eb8ac2e":"4 jam","191800b7e9a48680792c0dd77cb6cac00c4514c6":"8 jam","2d8a6f7c34468578640b333b8650131de06ac770":"1 hari","f94510322ecd9b3a2af67a10bd51ecc4ac6a24e7":"Up/Down","c1365a35e99d0f9147ebc72f21534cf471fa7d95":"Up/Down Equals","9c7960c6b11d35ac9d6cdc1ebaad3af43b2065c5":"Asian","2260ce49306460c8a2ef501939f29ad6ddd4e934":"Digit","0186aa73a1b75fa8f0eb98bbd9ad01102bb09ec1":"Touch/No Touch","f7de1f66f0979667da275b7e8996e805395025a1":"Ends In/Out","a431deecd4c2258097adae418d496fe9a8179fee":"Stays In/Goes Out","256fe245cb7d3d673095f7faaa8c9ff81b985ad1":"High/Low Ticks","12a3f461cdebbc8f335190413ee6c57442743bba":"Reset Call/Reset Put","e696144fa588782e6d6b2c97e2d3ed1adf52bd5c":"Only Up/Only Down","91a64e3f83c91acf336c631fba295f297f94c399":"Tampilkan Setelah n Detik","024696596f26a4db232fd9e966eadfeb27c0bd1a":"Tampilkan Setiap n Detik","c538c170bdc6b0f3bb98dce44a016a2e2d45a6e7":"atas","85c274929bc0e28eafd3734f2c25046c3b95b36b":"tengah","346e3ee198e98146993894d3de8ecab1a86c3e80":"bawah","f16459104f92ab6b38aa265adb4ecbfc3768e303":"Histogram","e09f635f4e77476c9ca1c37bc9992e9ace3431c1":"MACD","27bed13a88c60350c3de92ec3820e1cc4f7d6ec3":"Signal","19eabc961735d78f12fc7be906ffcb033853cf85":"Timestamp","68f4145fee7dde76afceb910165924ad14cf0d00":"Pesan","629777b7d4d610ace6dee24442730f27d7d0853e":"File tidak didukung:","beb040c8fabd007c9cc5ac6a9feb6bdb05d33dac":"Perubahan yang belum tersimpan akan hilang.","410bf23a3f080def9c7a976a16305bcde7943ed1":"Anda yakin?","e99811bd3b1ad17e74614060ecb180602be35ad6":"Mengeluarkan Anda!","3b26e990d3acff493ee2cf66d1280bed2625e43f":"Koneksi terputus sebelum menerima respon dari server","876f3e0202ca40dedf2e5ab6577eba1ae637fb53":"Strategi","8ce80462febd4d573cb2f9c1984fdc93b7c21c57":"Terjadi kesalahan saat memuat pustaka Google Drive","7f412a8cf67f755d3eb36846dd07148ceb8d4c72":"Tidak dapat memuat blok Google Drive","3b6bbab905129dd36b8d4e99947fa30540ed7b2a":"Format file tidak dikenali","3d6b44df6eaf6236b4abc1aadcf8f5b1cda769c1":"Terjadi kesalahan saat mengambil data dari Google Drive","cdfe947b0c089a4a1f78c11299f25c32a124f1a6":"Pilih strategi Bot Binary","2db43c69a4b96454914f0b8272bc869984529e6e":"Terjadi kesalahan saat mencantumkan file dari Google Drive","0dcea5f584938e0fff00084b83156ab31d641ab3":"Terjadi kesalahan saat mengambil file dari Google Drive","18da95988117ff029393f3f5c881d70ef47f7385":"Terdapat kesalahan dalam memproses permintaan Anda","04226bcf91195130e25fe7a8e8ea4d3e058efcb7":"Pilih folder","aee24f2456ea8516b024a5d3e2b815ae7f2239d9":"Notifikasi Telegram tidak dapat dikirim","05754ed14275a070a20a1d5cd65f0cea66f1da7f":"Proposal tidak siap","79222cd9892a434aa61fc7dc01c3839951eb8d1e":"Proposal yang dipilih tidak tersedia","6ea4a034747d020b1d8ce4848def95d537555dd6":"Membeli","89f89c02cf47e091e726a4e07b88af0966806897":"ID","1200c1af2f7bba4e29a34112865662748c9d41df":"Penjualan kembali kontrak ini tidak ditawarkan.","62d6180e55905f7b996d442c53631981a4ef8b5b":"Dijual seharga","ed4978867de1da05b336b724a3fb96222a29ebec":"Indeks harus berupa angka genap positif","87e2e01f93d25ba7ed582cc81ef5c9ab2959f4c6":"Jumlah keuntungan","b2a4553586d1062c21323bca1dc0589f7a9d5cf7":"Jumlah kerugian","46fc6f27a835486d63d9e927c6687e4508cb3087":"Jumlah maksimum trading tercapai","9202ddae4cea16513e53bbc965d88ed975e59512":"Jumlah kerugian maksimum tercapai","5f52b397b7e5f538681f0f5717a88aa626349c7a":"Bot.init tidak disebut","85dfa32c97d8618d1bea083609e2c8a29845abe5":"Akun","d847919a30d31c0be624087f3370492b3fdf80c6":"Jumlah kontrak","5cd6978d63540c8a490ef76f43219de6362f958e":"Total Modal","17410d7b62b8b1de981cfebada24632987edf186":"Total hasil","b841eeb091f1ff0e14be08e5ea1b93e4cf147ed3":"Total untung/rugi","90eef613042c5a51f542421065b68b886d473807":"Saldo","db1c784524e1b54011a95823026161f7c8517fe0":"Referensi","4db3e9e4aecd187db9339a10d2629fef46724dc4":"Jenis kontrak","1bb4086b66659d8580f9be4beef69931aeea3cad":"Spot awal","8bf249c4855e591964bd5bdd35c8ef2ee107342d":"Spot akhir","ba7be969e7c1bb5f22489e843478e3d721aaa843":"Harga beli","772fbced18230220d2d9be1456be16fc1b271d25":"Untung/Rugi","bae7d5be70820ed56467bd9a63744e23b47bd711":"Status","96f608c16cef16caa06bf38901fb5f618a35a70b":"Tertunda","7fb3a9b5101bcd45e2dca077191693a5199bafa9":"Diselesaikan","82a82f798dd773717ec37d15fd4405510291734e":"Bot tidak berjalan.","6a88e58aa1798626f94cf17f1a91618b405bb289":"Bot sedang memulai...","624cc7f40b68faace7e78d8e5c5be1d4f15facda":"Bot berjalan...","788180a6ddbbbcca10f6f49d8e85d557934bae0e":"Bot berhenti...","d907a40a4a15da3c21a6e0f8ace3f987d482f92c":"Bot telah berhenti.","4f219c17ab9ab76aa1cd431b4e0e5ecf5520e8e4":"Mencoba Membeli","4684ee1026d9b4c872d016c3c4588a0c479a451c":"Jumlah beli","ca92c55b9e4233d771d5b6300fe751a9678d1deb":"Pembelian berhasil","f02760cd2eac28169f0a990c950c3dfe8427f772":"Kontrak ditutup","66c7734789e19cbeef3a5ac185ea732139aed213":"Grafik","3b662fb2e8bafce29aa98321b18874bb44905488":"Integrasi Google Drive","7ee0ff5eaa6fa82bd6d83a2f4ca446c663f097cb":"Maksimum trading berurutan harus antara 1 hingga 100","93039e609d94a24f3572b794a31b21525a09af2b":"Belum diset","ea67c8023c75375484f3a5f1aeb009b20059d5bc":"Batas harian kerugian:","b1946e5b4b78465b7661fd4bc89ff52de6c633e7":"Maksimum trading berurutan","952f375412e89ff213a8aca383d18e5691354347":"Mulai","9f1c61cc03f3ef9324db05502f7f0b61e61e1521":"Batasan Trading","095ba68888b5ace5f4515f5acab76dfa1073544e":"Komputer saya","ddcb77ff769ea54ca622848f6bedd4004fa4f4fa":"Muatan","248e224f533752db28a1aab3519a58569ad96140":"Memuat blok","c7097e97dcc446ca889d3ca6be733a65e2728afe":"Berhasil memuat Google Drive","3218e5a460e82d7bdea9ce0f145cab2f47ba9a4b":"Menyimpan sebagai koleksi","611ebbfb080284312904de925ef0f75f4cb56ad2":"Simpan blok dan pengaturan Anda untuk digunakan kembali dalam strategi lain","efc007a393f66cdb14d57d385822a3d9e36ef873":"Simpan","a638caa8ab2b7ff7980a571334217339e6d1d634":"Menyimpan blok","39fca63515c105918f03e4908ec12df675b07f92":"Trading View","fadc0ef93d1ff13370524ce8481ddc4a71195934":"Susun ulang secara vertikal","e4458464df6cbb8da1134875ba51519c5d244d9f":"Blok harus berada didalam pemegang blok, blok utama atau fungsi","e9c45563358e813f157ba81b33143542165ba84e":"Peringatan","31cb6f44d030abeabcc7046555dea851602a87a5":"Strategi ini tidak tersedia di negara Anda.","9ce3bd4224c8c1780db56b4125ecf3f24bf748b7":"OK","af145748c9cf765a3b059eec20cb1dbb899297d8":"Blok berhasil dimuat","a479c9c34e878d07b4d67a73a48f432ad7dc53c8":"Men-download","f1d8b7b118d6f82f95614d476bc11af650aed3bc":"Tidak dapat memuat file blok","11ee9c5d534cc8d22651092222b532917594161a":"Durasi minimum","5283ac04c9a8ba8a937d1edb4ba986aeefce8bf1":"Jumlah tik harus antara 5 dan 10","ace1342bc3720b77ce510b93074041e7386d209e":"Waktu berakhir tidak dapat setara dengan waktu mulai","fed3e7bd6696fb97a12d720845ab5388456bfc3b":"Analisa harus berupa satu digit","d466687f90ba548434d65186d11a80c4204f9ad6":"harus ditambahkan didalam:","6ddf2b3075ac9ab5d66b40e15ea9a34c087672ea":"harus ditambahkan didalam","33aa6ff282ee509d37c6f758274c9156b419ff73":"Strategi yang Anda coba impor tidak berlaku.","da162a909c2981ed318d23cd9a6be1d66e0a8400":"Format file tidak dikenali.","5e719fa76e1b6cb396376c82ebdd04bec7253229":"Remote blok untuk memuat harus berupa koleksi.","b0d2de25daf6ba09a5e710c6968ffded29c4dae1":"Tidak dapat memuat file blok.","df84a88f38b03b5b342362d72370b0d66afdae35":"Target harus berupa file xml","cd680fd936e9559ef1d95efac7a71680e2b13a89":"Url ini telah dimuat","34c59389053701a04127f74d32315e0206e076f8":"Error terjadi saat mencoba untuk memuat url","3ead0b14c72503187691a7a6d7121987299bd401":"Ini bukan versi resmi dari Binary Bot, penggunaan dengan risiko sendiri.","27401c9c8e476d659c8382e05c6d70a4a82be468":"Versi Resmi","bc981983e7f547dc62e19a1e383acfe00782a6d5":"Lanjutkan","b52b36b7269fbfc58ec24bb724691951a3decbe8":"Kembali","e9b450d14bc2363d292c84f17cfad5cfbd58a458":"Selesai","29cadadfebdd578a50b7b3d1b2c5b33e424d5de7":"Ikuti tur singkat","a48e81d4a8da67637b46725824177a959fe99b21":"Sudah bersedia untuk mempelajari cara menggunakan Bot Binary?","6f3e6ebf249947cec4f64117253a8fe43335ae79":"Tidak terima kasih","fcb6e90e7223e1d1d735f15dbb7ded9d81bbe7ef":"Jangan tanya saya lagi.","4ca0a75c2b7fa7da4364d03b72c46fee1860a2bf":"Ruang kerja (workspace)","5fcf29b9f0b8971c8148e70a150ddc9ac04c94fc":"Tarik dan lepas file blok.","ddcbb5361b1a16eba60fca2383fb297bb90ed9b3":"Unduh contoh strategi","1758356db21759f7c5a0da9b4dd1db8fd6feab3f":"atau","00b581632c1532969a7128ebc8eae936ed8af04e":"buat strategi Anda sendiri.","d171baee235d4c93f63755a876782dc5be4c3e47":"Peralatan blok","056f19272d96f902c38207cf163ea8dbff7fbd32":"Tambahkan lebih banyak blok kedalam bot Anda.","36bae31694f85bd7a5b0ad45e51ef622b95baadb":"Akun","f5c47fd3b3553b10441a06054078cea745177dea":"Masuk kedalam akun sebelum memulai bot Anda. Selalu uji strategi Anda menggunakan akun virtual.","fd825ae94aa79500a878dd4590a4b360e7162663":"Cara mengendalikan bot","6ee7980833e1ed72901b919ffd0fa20e1a251d3f":"Kontrol blok. Tahan kursor tombol masing-masing untuk info lebih lanjut.","f5169c84497de3aea74f7da9e7e177d1427e736b":"Selamat Menikmati!","4f1b3d682c2a00b393c33637da402463bc11d5ff":"Ingin melaporkan masalah atau memerlukan bantuan?","0049f8894e41937ebb9111cd3def6749049fb50f":"Klik di sini","aac1569ccf6b1a11b0ad0fbefdb9ffc777b4c733":"Klik untuk memilih","53adebdc2b1cbbedb56395b19a73fe47b87cc554":"Tik","5fb1db527825d2996e37c655e5dec49d4da80c09":"Detik","092f99ea11a34a8490e7a767a83a42fc45634f82":"Menit","9e25a34e635a123f8958bbe26e7c4843278597fb":"Jam","f6bb0f468a8569c67b3d6826e57e62c5500c3681":"Hari","d1a17af19f5388af9d6596cc0ea7dbb1d739e255":"Tidak tersedia","db6708630fc646eb98298d9acd701e0a1ac051c2":"Simpan blok dan strategi Anda ke Google Drive","85538d002a336c5addef8d189d80976cf7758f8c":"Anda mengakses sebagai","b65463cb6a42a17de514acc4659f7fd331e0876a":"Menghubungkan","ed28e0686e1251ba046f582a3e9ec02470a5e78d":"Memutuskan","cd5f85b6f187605f82386eacd680f93820af8d11":"Hasilnya adalah","1e38ce3d180cefae485a6986ca7c67841e30376f":"Benar jika hasilnya sesuai pilihan","5c89497fc3c128e2ff865ce8df15356054f2c028":"(4) Dapatkan hasil trading Anda dan bertrading lagi","14ea81918758c994cbe3178e695e56afc1ef2b45":"Dapatkan informasi trading sebelumnya beserta hasil, kemudian trading lagi (Tampilkan kontrak yang telah selesai)","5098e2bcc96ee227983c9f7eeddfd226c220ca00":"Rincian Kontrak:","251c830f8f869e0887e8b4dc4c30ba1738c7097e":"Baca pilihan opsi dari daftar rincian kontrak","b3b543c80063a116ced4965d8537b7b62d14c0b7":"Trading Kembali","a1eeb7c1e92e9a5d9323ed8ebd7ca7ffed8b0232":"Tampilkan blok kembali","da3105e38c42a481ad7230ed393b0e12bebe9c4f":"Harga Ask","343fda69c73b78b84967055aae97f790c422adfd":"Harga Ask bagi proposal yang dipilih","d4d34ce9d9dd7e87213469f88cb7ac43725675d5":"(2) Lihat dan beli kontrak Anda","fb61a3c71f4c488b3b470cb7daf502a3e9b5ad48":"Lihat stream tik dan beli kontrak yang Anda inginkan (Tampilkan tik terbaru)","87da93a46d143f6019979b3548414d9d7adabb35":"Hasil bagi proposal yang dipilih","160f06d4799c85021a810f68c5b517eea37a2737":"Beli","4c2fdde3d9c1950498ed263d6ce21d4bf3d0800b":"Beli kontrak terpilih.","ca5586bdb5bdc1a2c0baf53ed0ecd21fafabebe7":"Penjualan tersedia","03bad10717e183b24829baf483dc715e1a44bf7b":"Benar jika penjualan pada pasar tersedia","2c71ed279a402e93312dbda173ab18f244d6bf46":"(3) Lihat dan jual kontrak yang Anda beli","17632a9f51611d2579d95b4b1ccb9476566d7ccf":"Lihat info kontrak yang dibeli dan jual pada pasar jika tersedia (Tampilkan kontrak terbaru)","579607dc4f989ce2b94b558431666a0ab07ac1f3":"Jual pada pasar","e20afd5cf3811a42071c9a312abb2afdad4c590b":"Jual pada pasar.","4712cbff8e92822fc960ef9c0197293a19675eae":"Jual untung/rugi","df817b48c7a076561b4f8bedc52d65d2e351ab52":"Menampilkan keuntungan jual pada pasar.","b44e884c355e447d0da0e6ba45caaff18c84373b":"Bollinger Bands","d6a2a207343bd83aacdc80b579ff4419713a256e":"Daftar Input","170a28a9db6d27d7212fc6dc249434a57517e7bc":"Periode","b833989d69900a4be9e32d1bab65c8f8233f099e":"Std. Dev. Up Multiplier","1cee82f19c0bedef64f68b32e6b02128efe7c61b":"Std. Dev. Down Multiplier","974da601086448d0060aeed90e53ddd5acd17b91":"Menghitung daftar Bollinger band (BB) menggunakan periode","d5b65cac1f1cf9421ac978eebe532de99040cca6":"Bollinger band Array","58de49791c64aba14e36e5887244a5ef088286cd":"Menghitung daftar Bollinger band (BB) menggunakan periode","4bd99f76f1104229744455d93df0ff76b9eeed58":"Exponential Moving Average","ea615c6d6a74e25a6d2f1bc9980b46e73508c2eb":"Menghitung Exponential Moving Average (EMA) dari daftar dengan periode","4082d9379e59b38c891d046312f8d3c4b64ae3b1":"Susunan Exponential Moving Average","562edc102c5dd9e2fbbede1140b8a5461c2d4dc8":"Menghitung daftar Exponential Moving Average (EMA) dari daftar nilai dengan periode","a537f4f3c0f6c68bf896fb23cb2ecdc658488ea2":"MACD Array","b18e572ea14edd48587145f1ef50718adbf256c6":"Fast EMA Period","974023bddd6249d0f6404872cfcae205b2599ea2":"Slow EMA Period","5c2adcb3d1bfd6b9f5c2dec13d02a9473e4445a1":"Sinyal Periode EMA","6b15ce93fd68d80aeee7f7964c1306044c3c1baf":"Menghitung Moving Average Convergence Divergence (MACD) dari daftar","95ec92885c855ba9cf734c17a43f081901e4d2cc":"Indeks Kekuatan Relatif (RSI)","b033619e108c9e43bfd8a42cd97bf5c5dc86dc65":"Indeks Kekuatan Relatif (RSI) adalah dari daftar dengan periode","4034de66995b876b2ba9bfd0274025e39168e05d":"Array Indeks Kekuatan Relatif (RSI)","f9da880c8b0e4cce4431912c24eba939e6bc06e1":"Menghitung daftar Indeks Kekuatan Relatif (RSI) dari nilai dengan periode","a9842c95766da40bf4ea6ee263cb5a5985847763":"Simple Moving Average","347775a293c14362d492f019e677c965be1d6e7d":"Menghitung Simple Moving Average (SMA) dari daftar dengan periode","4cc7b9e53d082896ad884eb01be16320af65f282":"Susunan Simple Moving Average","2c75179a57af3c36581008b65e86ed81c4a4cbea":"Menghitung daftar Simple Moving Average (SMA) dari daftar nilai dengan periode","39f024cf49724fe7ffdea7773c72ed06eec998e1":"dengan interval","e4bed3e67e58b2334ee4b9c6ce59ac7a95d80aaf":"Arah adalah","ad47561efb1dcbd7246d9b64487f615647fda036":"Benar jika arah sesuai dengan pilihan","05bef508aadd62bf3967dcf67d769da296f19989":"Arah Tik","d089ab98a846a521b09aad6ff3fefa728bfa8b42":"Arah blok tidak dipergunakan lagi, silahkan gunakan cek arah blog","cdb31fc857f01a59f664413498293c714285f46d":"dalam daftar candle","20fd5f86f08796f145d69dedc209a27e459b2f51":"dapatkan # dari akhir","a96606af8c33ac3428b45abc4782dbf93f458d29":"Dapatkan candle terbaru","90ed0e1ea5c1907f8a32d8051a66e845857bb2a4":"Daftar Digit Terakhir","248428facb97408414180d4de74e4db35360fbc4":"Kembali ke daftar nilai ditit terakhir","2e4202acde880b7b1c3686f0335ff879fc1e5c7a":"Digit Terakhir","e46e0bd2f7fe37217dec8aa26ebce8ffa3608663":"Menampilkan digit terakhir pada tik terbaru","d5fde4c9d5edf660f760fc226df4d2678d3334ab":"Daftar Candle","95e552a40d3446c96905cd3ec7e3d123d0246ce8":"Menampilkan daftar candle","5a0ed227a01b7d30b05dcaf3e1c23b74b9be6ff4":"Membuat daftar","a4220593d385a720886f7af1ed3c478fd0c6339c":"nilai pada daftar candle","cd8cdf3d47e921c8a72addae9269e66041d417c5":"Menampilkan daftar nilai candle yang dipilih","3e4f335e7a6f79bd1bafd219ddde30acbf16a7ac":"Pada daftar candle terbaca ","34037f9452fdb66c9ca27ebcc0afe9d5139e9e24":"# dari akhir","aba43a580daa7f306956ec69b83e6e37e7233126":"Baca nilai candle terpilih dalam candle terbaru","e04b522218a181cf0223042dd18ae08dcc22d8d3":"Tik Terakhir","6ee445fc253a55c9ed54c009c3f020ac65200d80":"Menampilkan nilai tik yang diterima sebelum pembelian blok","4b2340a890e88d1886757c3f7172e273a1edc31f":"Blok ini menampilkan setiap tik","b54d7b4590559dad64f02d09aacbf6d9863e2624":"Anda dapat menggunakan blok ini untuk menganalisa tik, apapun kontrak Anda","ebffc758056e6b2fc2af99af17fbc6853e5d3583":"Daftar Tik","17649cac8739adcae95e641f794880272ad33bd1":"Menampilkan daftar nilai tik","802dc02469ae51067ca620ff57dfb5bdb3e524ac":"Saldo:","c4ee8e12b2484cd5b47cdf00bfa2c50b83e91d3d":"Dapatkan sisa saldo atau string","69280143949fcd59c171dd60f6b6e13d0cc08fe6":"Blok di dalam tidak diperhitungkan","d072c2ceeb5c1217722d14c74de7aeab945b4215":"Tempatkan blok di sini untuk mencegah penghapusan","b06acc4158c824231f727a13e1c9811f43d5be42":"Muat Blok Dari","661db37251a1ed1afe357ee13895f37a623d7cbf":"Muat blok daru url","6c03ee54ad3a51fc92a1d69943e99667847705b6":"Memberitahukan","b1bec5d06e3672915d81b2fbc2347c8b4947a954":"dengan suara","a2d0c89fdfff3176efd4a443eb0f6607067b93e7":"Menciptakan pemberitahuan","6e0fc122f936f808bc2e3af661121b65712ae855":"Notifikasi Telegram %1 Token Akses: %2 ID Chat: %3 Pesan: %4","1aeb6caed9e46edf5d6224adc905ffb8ee3a7708":"Mengirim pesan ke Telegram","45ebd38f4c641ebf6f72be8c3a79dfa50cf9f20e":"Total Profit","ffb465875e1ff2b49bcaa7c6b70965ffe39fa59d":"Menampilkan total profit","bc528d26f66fe8c4aa4bb24ec9c99dff12c055e0":"Jumlah Transaksi","bea5756b18644ccfab01c1c0dbd6fa9db7103379":"Menampilkan jumlah transaksi sejak awal","c67ded6b64019212eb2bc69afd761f5b3f626040":"Tambahkan tanda untuk membuat Barrier Offset.","569bbd757e1bb8bbccd250b98dc2bb37cb47b787":"Pasar","74751e67c3e1010c343095eaf543e7cb21ced2ef":"Jenis Trading","1f4698382842477e211eb46de81fa506f01a8c34":"Keduanya","c1baf816aac5a5cd849768773fc248cd249dc296":"Jenis Kontrak:","c93025710d1ae6cbaf8e710f63eca8edfa0c9399":"Interval Candle Tetap:","9693aeaaf68e3929b59b79306feaa0a847d01192":"Durasi:","10c02649e226d430bd75a5b6315a41c0db9992a2":"Batasan","837276742aa90209dde3b4eef07d8e7ab26731ef":"Analisa","258b49925b41751c6bd790a0848246566ba61440":"Ulang beli/jual pada error","c55ee3445cd391ab299b6f85a6ea9a68a65ea64d":"batalkan untuk kinerja yang lebih baik","b410994b67e37d9516eb9b866c85a8c639f79e68":"Ulang trading terakhir pada error","2260c5a971c2602834ef8feeb5fa522f900b469f":"bot akan mengabaikan trading yang tidak berhasil","cd1495cb4c60266a6abad9024022ae079bf7e416":"(1) Tentukan kontrak trading Anda","0745acf92abd7b60598f161717884cc45dab8694":"Jalankan Setelah di Mulai","999e1ade10ff5ee1d115f5a6288bfd2e0d0736e6":"Tentukan Pilihan Trading","a43c3299d30a5bc7e31a574cdc87f59cbc8fe585":"Tentukan kontrak trading Anda dan mulai trading, tambahkan inisialisasi disini. (Tampilkan pada awal)","d571f33d957ebcab086ecf38eedd71b6ef0c5820":"Opsi Trading","4d22b565e4253e92a908f216184779679bb1a044":"Batasan Atas","b70c38c6db3127422e05315c30bdf76c7c36c480":"Batasan bawah","a6c5f081b3addee364af1c8cdb84853f49dc8e07":"Mutlak","0f2ba74929aca6fea950e351dcd576b7cd841fa4":"apakah candle hitam?","7cb3b482ab66947d439642ec64dc7f5bd4e065dc":"Membuat daftar","5925d08228e246f07b790b88ad70c1b73a97d2bc":"nilai dari daftar candle","852b438f91ad9eb2cdd84419a675a216d543c687":"Baca","67d3b35a0b740127b56bcd44d3bcb1ccc20e0b48":"nilai pada candle","d79d854dcd0829e2177a47beab6a55569e781ab1":"Membaca sebuah kolom pada candle (Baca dari daftar Candle)","5606b4460ac96063b8a8e5647008f3ec97252fc5":"Detik Sejak Jangka Waktu","2de20bdeecb1a8c28bd36fe75f028ed4318d0348":"Kembali ke jangka waktu (detik setelah jangka waktu)","f43cb41af7ce8a69c7aecbc1c603bb0381270982":"Menjalankan Setiap","4b6fe6898f0f956d48a4c8172c6dfbcb4159ab09":"Detik","2eea87bb804e4e73e3f8e9c41140f7ed83ea8875":"Tampilkan blok didalam setiap detik","e0af6ddc8a892704f64680bcb22b30c4bfcefec5":"Pengoperasian blok setiap detik telah berakhir. Silahkan hubungi kami jika Anda memiliki kasus yang masih berlaku.","7b9c76088576a64f32d67ec335162b9f73eaa026":"Tampilkan Setelah","ff56ffac023cf69ca5c7f71d407499536f4f86b5":"Tampilkan blok setelah beberapa detik"}
+module.exports = {"3d52a6d8fedcc48a65297c07bf5f7e3e41aab5aa":"Logika","3edf0df49942da6d11a1a217e4d3af4a5a8e64f2":"Matematika","c3328c39b0e29f78e9ff45db674248b1d245887d":"Teks","4d064726954a17487f94e931f5b157b733ec22ed":"Lanjutan","a1fffaaafb7cc996685bceb829c053cc4f7de43d":"Daftar","19de69cb601f53a4ea7af22a65c71ae63251365c":"Variabel","2b961dea1dc0c60ddf9a2c8e9d090f6f7d082483":"Fungsi","dc7f77b4ccfc9f70a78bd97303bd10ba4c9d70c8":"Loop","66639f7d455dd71faa9147f5d69e5ce885d8bebd":"Binary","0ba66deaab2f2cd3b0793d03f600ee2b8f577fbc":"Definisi Trading","9201c6ac624e98e168e6ccddbcd5a9b5cdff06b3":"Sebelum Membeli","44ab9a87268d3fd74040ed0b55c04f83294cfdef":"Selama Pembelian","c415c9399b7ae7285d2c1c880a6a0aa18f62ff8c":"Setelah Pembelian","d07ffc19d51f0973859a0d95c1d15cd9f22388ca":"Analisis Tik","8cf71374fa095a64b5295b672daef8507ec7be6a":"Indikator","4fa8cc860c52b268dc6a3adcde7305e9415db5bb":"Alat","6c82e6dd86807ee3db07e3c82bec1ae1ce00b08b":"Waktu","8d8fd6765e184419cad8b88d1a60c895d79578c2":"Candle","548f449b63ff41eaaff5a2d679ffa56b2015fc20":"Lainnya.","8bf95ea372568c7a254ba9fada5f6f1701ebc5b5":"Log","12b71c3e0fe5f7c0b8d17cc03186e281412da4a8":"Ringkasan","9feddbabd7e7309e96c590069057158e96baa8f6":"Pengecekan Realitas","038fe2bdb7ec6ee078f60bdb5bee94654ec6a81d":"Trading opsi dapat menyebabkan ketagihan, sebagaimana kegiatan lain yang dilakukan di luar batas. Untuk menghidari bahaya ketagihan tersebut, kami menyediakan pengecekan yang memberikan ringkasan trading Anda secara teratur.","4152043e8c670075d2c919677e835edb0d923cab":"Silahkan tentukan interval cek-realitas pilihan Anda dalam menit","d9fff2df19e90f2c7ea6bb30fde4e0da119d13d1":"Silakan masukkan nomor antara 10 hingga 60.","2439f2f199b2a3e798aa9b4feaa9248bdec9bc0b":"Lanjutkan Trading","a72ca256dc49e55a1a57b9a727fbde9834c9a3f7":"Pernyataan","6e78c91f5a05fc0d4f1a787d38e3d6fe2f856d46":"Keluar","4832e45812a2724f16a15f9ae87adfc8ae4168cf":"Hubungi kami","f7c400ed695f898b8ee9d21664aa17b5bb693828":"Masuk","5ea75f1605a4bf1db5c39fcc61854627478c0a7d":"Reset ulang blok ke keadaan awal","f98595d541778d86f75ef22b3328a031d20aa16b":"Muat blok baru (file xml)","4a1e616226c329a94da7768bc0435a3284478010":"Simpan blok yang ada (file xml)","6b3465ace62f33f0687b4669ac26d95895e9ca52":"Hubungkan Binary Bot ke Google Drive Anda untuk menyimpan dan menggunakan kembali blok Anda dengan mudah","8e4ec2c451ec7b1bf68d72fe9086ec978e41feb7":"Membatalkan perubahan (Ctrl+Z)","937f5055f05be359ddf619744e8af4d643549e80":"Mengulangi perubahan (Ctrl+Shift+Z)","8406d1cce44230835932060649e999ca3283b413":"Perbesar (Ctrl + +)","1109673172af2c173c492622ff8a72c8f29f0e70":"Perkecil (Ctrl + -)","44c22002c65d2871331263a23c3e09c0a1bfd847":"Susun ulang secara vertikal","ebd0945359e5578ff9bd3a2ab490ca84c225d8f5":"Tampilkan/sembunyikan munculan ringkasan","76bb05950f80f3a88ee05ef3276c5934fd355e8d":"Jalankan bot","ba50a42d8d3228c37a817865fce49fbca692c2ad":"Hentikan bot","4f4aa4117318a8ddf8783885d4f3542c5b2733bd":"Tampilkan log","91017ef9b165cd0e7475a770f318ea5e705e1321":"Tampilkan grafik","c89e3dd1cafcadcc0312e476ab58b2332209da23":"Tampilkan Trading View","b02c858e72be118a65c9393930351012b647cb9e":"Toggle header","250be77f7605669a0b3d968b9ed381a3d9787ed1":"Buka file XML yang sudah disimpan dan ambil bloknya","ff29ccd7a6c6073cc462ed590d27a91632fdf67e":"Binary Bot","608061fb5aab975013fa70c5c814a1d8ba30c152":"Trading Lebih Efisien Dari Apa Yang Anda Pikirkan","e4ce8dc3e416e69262ba642dc57d3975d6616980":"Tertarik untuk mengotomatisasi strategi pilihan Anda pada trading opsi binary?","f261237ca8beec6f77b76c4121feb8da22818c56":"Binary Bot adalah alat pemrograman utama yang memungkinkan Anda untuk membangun aplikasi trading sesederhana menyusun “potongan-potongan gambar“ dengan fungsi tarik dan lepaskan.","f6c85c68616eeaaa15fcd53fdc52f6eb5c886357":"Impikan berapapun jumlah trading opsi binary bot, dari formula yang sangat sederhana hingga menggunakan algoritma yang lebih kompleks. Kemudian biarkan mereka bertrading untuk Anda, meskipun Anda sedang tidur.","e6906a0d1c28b202f9bd49da4a6abbddca57399a":"Terpenting, kami dapat membantu Anda menjual bot Anda kepada trader di","1dd0cf79c572bcdbdfabbd54ee95710a21234d73":"Toko Binary.com","abeef9a35ae6256796ba2462e4f64d308de42359":"Dapatkan 80% dari penjualan pada setiap pembelian bot Anda pada app store kami.","0606f0b7763ee6e8094a3dab7873d34c08fd3670":"Mulai Bangun Bot Sekarang","221acaf3a0290adafe08cdcb8c66121c73d8b4a3":"Perlu bantuan lebih lanjut?","d635b53e59c9aad8c5d78458826beffb029b27bf":"Terima kasih, kami akan menghubungi Anda dalam tempo 24 jam","a69a8fc21499d0fd85e87bab467699827547a5bc":"Silakan masukkan URL server yang valid","1de91e827ec70ca735abc2c71b0a89cb0cfc4ce1":"Pasar dasar tidak dipilih","50050f06645ad2743165b429a8f7deebd285fd63":"Jenis kontrak tidak dipilih","6a7d1a3a17c4e8ae6712cb60d46db1edf0aa2667":"Silahkan masuk","2f9f9096be1a1c0569a9ce54e57f0420f6b3c2e9":"Durasi harus bilangan bulat positif","4df6e872792d72aea8a2f6b831d00b554464da23":"Jumlah harus berupa angka positif","001e68df3a4b32a4d57148d9d407f44eee3b7436":"Candle yang diberikan tidak berlaku","04f14ea7c92e0b2b5ae005c696245063ec641d66":"Daftar candle yang diberikan tidak berlaku","c1bbfcbb4f57d3a56c1239af0c2138321589efd2":"mencoba kembali","57b453bb26b1c28dfe362b7cc9f17f0be93dd581":"Batas harga tercapai","094628ce13fc0e78f07b697d1cc9421bb2edd666":"Permintaan gagal untuk","816c52fd2bdd94a63cd0944823a6c0aa9384c103":"Tidak","5397e0583f14f6c88de06b1ef28f460a1fb5b0ae":"Ya","bbb930cc426507ed3f6b7c343c75dd0e041494b7":"pernyataan","e6e886cdcdefeb6d3edb4c31bed06dd183ac4153":"harga ask","50e72909992bdc37c7c07769d1b7efac5e52874c":"hasil","ecb5ba7044417916ba12de5fa9e6fccac3e5d475":"keuntungan","c980b910204c7babdffe8ff3f7e755f30133383c":"jenis kontrak","a726c6955157f1b8b92f9932652434a7150f80f8":"spot awal","a66d5c7ef2c63dbc9a8f9e6ae4e2bc575e74a36e":"nilai awal","3905be81561384dc8c43d6127c57ed1e0eb03b74":"nilai masuk string","7674920c033ca14277c577e19c037a6754d4fa80":"spot akhir","e8b8bd9f2eabc12875605a37c93e7f04a713fcb8":"nilai akhir","06ecea26625359f7dcf5ff5c47af6174ff815257":"nilai akhir string","779455ee3bde8494d9629b353e17b19e92357ba8":"batasan","37a5301a88da334dc5afc5b63979daa0f3f45e68":"hasil","4973f4c599d5f42cf7bde52d66c3ed8ef77accb1":"Untung","12e24a7d8ac40579e8a0aef4869288afe7ed6745":"Rugi","563339f82447b4e758ad76d5a0b63b5698594fba":"Rise","5c1ae82c29543ac887703776bf3da2c7dcce683d":"Fall","2fc096bb7b6596ab243d0286c9f43fdf2b9b406d":"Tidak Berubah","ecb252044b5ea0f679ee78ec1a12904739e2904d":"string","53b0a1b2fadf4e040cdc2155a7340de24aca93cb":"jumlah","bc74f4f071a5a33f00ab88a6d6385b5e6638b86c":"hijau","4c9a82ce72ca2519f38d0af0abbb4cecb9fceca9":"biru","96de5543d183d7de52ac5fa21c46fc811f673f89":"kuning","78988010b890ce6f4d2136481f392787ec6d6106":"merah","aa9330a16e5b055de809256dad6b4d1cbd2999e7":"Tanpa suara","cf84a98d6cf7f156862a08ba8236467b6f471004":"Pengumuman","eee2facd669d1434848c24da5527b3e87d9a12d5":"Uang yang diperoleh","9d705578b0f1f0ce3a06dc5e82f9a1e6078f81e1":"Pekerjaan selasai","7f2f6a15cf8da2b27e5a4af47b58e7ad71c0b3d9":"Error","a3b1583d377f37ac20de7e089edfa0920a078e57":"Error berat","66c8b6848eee629c4ac551bf2b5fa591571654be":"Rise Equal","5649dce3367d490fa19d563ee9e3d4c4b6f7c642":"Fall Equal","062787aa328047e189774b3703d983b83938f6e9":"Higher","b91eed4b7a80cd9572a27e65ebdff9caa4b3b9a4":"Lower","e3f139abb7a549a1210b36f7dbf89215ad6c9902":"Touch","7d7932bcc2e262ae98cf09dc5445130fb3881769":"No Touch","a16814a48ec58c2e24ba224a80921a5c02361abe":"Ends In","391d02cd75ebcd6ed26f5f45ddf7d40bf13e9dc5":"Ends Out","534ec5da4e82ec419abc170e1a8448f55a01664f":"Stays In","98cbe1998effd8b1a8aefdcc538573055e99a5f5":"Goes Out","93d13bad1d2c2841db127cb70cc35bfc98059fc9":"Asian Up","c098658ce3d3a258e4d155949a60072966b36db7":"Asian Down","ee2dbd5d6d82d0833069b07e7dd2848d3bf4d83a":"Matches","8444b7ce28bbc3443cc5cf73359b8353989b2a4b":"Differs","9e767ad03e5547f251044e0724dc1d9f3e75aeed":"Even","dc28f5f3c65ec611f0f30022650d24382d27448e":"Odd","18a63f5512afb5573e5b44deba78d629f0635317":"Over","2a268b89b83f8cb38ea48e46e93dd8840db512f9":"Under","2155c8b38181dd2552e84a94049aacd33ef9c607":"High Tick","1408cfd2b064b923f024fbe590e27db8282941a5":"Low Tick","b86eb15dc4f13e4c2972de158d3038d9f657242f":"Reset Call","669a1f3d9a8f601a84da536cfdad1de4092b1926":"Reset Put","844d1a5c99a0a668383340cc095d040eef998c79":"Only Up","87293a146cd481a2b30cf74282ec061dc4cf0735":"Only Down","cf9b77061f7b3126b49d50a6fa68f7ca8c26b7a3":"Open","b1a5954a483f8f8b0207385095f74aeb409b3f80":"High","a124947cbd2d1d92b47e027274c3269ff0c7a84b":"Low","bbfa773e5a63a5ea58c9b6207e608ca0120e592a":"Close","1173872a4fb205b713702f0eec5cf2c732c828fd":"Waktu Buka","808d7dca8a74d84af27a2d6602c3d786de45fe1e":"Standar","62957ecfdc50957e8957c11d2eae74d078f0ef1a":"1 menit","1dd3e663dfa7ac9cb77cfddd2cf8ac700657e2d6":"2 menit","24e46784cbce32443db5a2638b1a7d3201543e9b":"3 menit","3aa5819ed8a0b94d0f293db8e9c9598298ddd402":"5 menit","a6f151883b736f0470d33492e61c72a7d059d065":"10 menit","899761ff5425abd2ee214fa7aa46e27c6c8b5aae":"15 menit","31bbe8890d28d183f8f7f2c160fa892c444c0ec7":"30 menit","f030c3d667652646b86732ad7bc67e226c49cd3a":"1 jam","2046e49e33c040e08dbd6fd83df3e1846015e6f1":"2 jam","7b47150d431db70d783724007f07ab894eb8ac2e":"4 jam","191800b7e9a48680792c0dd77cb6cac00c4514c6":"8 jam","2d8a6f7c34468578640b333b8650131de06ac770":"1 hari","f94510322ecd9b3a2af67a10bd51ecc4ac6a24e7":"Up/Down","c1365a35e99d0f9147ebc72f21534cf471fa7d95":"Up/Down Equals","9c7960c6b11d35ac9d6cdc1ebaad3af43b2065c5":"Asian","2260ce49306460c8a2ef501939f29ad6ddd4e934":"Digit","0186aa73a1b75fa8f0eb98bbd9ad01102bb09ec1":"Touch/No Touch","f7de1f66f0979667da275b7e8996e805395025a1":"Ends In/Out","a431deecd4c2258097adae418d496fe9a8179fee":"Stays In/Goes Out","256fe245cb7d3d673095f7faaa8c9ff81b985ad1":"High/Low Ticks","12a3f461cdebbc8f335190413ee6c57442743bba":"Reset Call/Reset Put","e696144fa588782e6d6b2c97e2d3ed1adf52bd5c":"Only Up/Only Down","91a64e3f83c91acf336c631fba295f297f94c399":"Tampilkan Setelah n Detik","024696596f26a4db232fd9e966eadfeb27c0bd1a":"Tampilkan Setiap n Detik","c538c170bdc6b0f3bb98dce44a016a2e2d45a6e7":"atas","85c274929bc0e28eafd3734f2c25046c3b95b36b":"tengah","346e3ee198e98146993894d3de8ecab1a86c3e80":"bawah","f16459104f92ab6b38aa265adb4ecbfc3768e303":"Histogram","e09f635f4e77476c9ca1c37bc9992e9ace3431c1":"MACD","27bed13a88c60350c3de92ec3820e1cc4f7d6ec3":"Signal","19eabc961735d78f12fc7be906ffcb033853cf85":"Timestamp","68f4145fee7dde76afceb910165924ad14cf0d00":"Pesan","629777b7d4d610ace6dee24442730f27d7d0853e":"File tidak didukung:","beb040c8fabd007c9cc5ac6a9feb6bdb05d33dac":"Perubahan yang belum tersimpan akan hilang.","410bf23a3f080def9c7a976a16305bcde7943ed1":"Anda yakin?","e99811bd3b1ad17e74614060ecb180602be35ad6":"Mengeluarkan Anda!","876f3e0202ca40dedf2e5ab6577eba1ae637fb53":"Strategi","8ce80462febd4d573cb2f9c1984fdc93b7c21c57":"Terjadi kesalahan saat memuat pustaka Google Drive","c4c758b5c8f5b3985f6bf7382c848bb44e0a5b74":"Mohon beri izin untuk melihat dan mengelola file Google drive Anda","3b6bbab905129dd36b8d4e99947fa30540ed7b2a":"Format file tidak dikenali","3d6b44df6eaf6236b4abc1aadcf8f5b1cda769c1":"Terjadi kesalahan saat mengambil data dari Google Drive","cdfe947b0c089a4a1f78c11299f25c32a124f1a6":"Pilih strategi Bot Binary","2db43c69a4b96454914f0b8272bc869984529e6e":"Terjadi kesalahan saat mencantumkan file dari Google Drive","0dcea5f584938e0fff00084b83156ab31d641ab3":"Terjadi kesalahan saat mengambil file dari Google Drive","18da95988117ff029393f3f5c881d70ef47f7385":"Terdapat kesalahan dalam memproses permintaan Anda","04226bcf91195130e25fe7a8e8ea4d3e058efcb7":"Pilih folder","aee24f2456ea8516b024a5d3e2b815ae7f2239d9":"Notifikasi Telegram tidak dapat dikirim","3f370309b6280eb100f898426d8605c1f45d558d":"Timestamp tidak valid","af6a4e2a5582be89ac930e946eaed86e01cac58b":"Tanggal/waktu tidak valid","49d51398b574e7312d99b18d2b93d2ede416f053":"Tidak dapat mengirim webhook","05754ed14275a070a20a1d5cd65f0cea66f1da7f":"Proposal tidak siap","79222cd9892a434aa61fc7dc01c3839951eb8d1e":"Proposal yang dipilih tidak tersedia","6ea4a034747d020b1d8ce4848def95d537555dd6":"Membeli","89f89c02cf47e091e726a4e07b88af0966806897":"ID","1200c1af2f7bba4e29a34112865662748c9d41df":"Penjualan kembali kontrak ini tidak ditawarkan.","62d6180e55905f7b996d442c53631981a4ef8b5b":"Dijual seharga","ed4978867de1da05b336b724a3fb96222a29ebec":"Indeks harus berupa angka genap positif","87e2e01f93d25ba7ed582cc81ef5c9ab2959f4c6":"Jumlah keuntungan","b2a4553586d1062c21323bca1dc0589f7a9d5cf7":"Jumlah kerugian","46fc6f27a835486d63d9e927c6687e4508cb3087":"Jumlah maksimum trading tercapai","9202ddae4cea16513e53bbc965d88ed975e59512":"Jumlah kerugian maksimum tercapai","5f52b397b7e5f538681f0f5717a88aa626349c7a":"Bot.init tidak disebut","66c7734789e19cbeef3a5ac185ea732139aed213":"Grafik","3b662fb2e8bafce29aa98321b18874bb44905488":"Integrasi Google Drive","7ee0ff5eaa6fa82bd6d83a2f4ca446c663f097cb":"Maksimum trading berurutan harus antara 1 hingga 100","93039e609d94a24f3572b794a31b21525a09af2b":"Belum diset","ea67c8023c75375484f3a5f1aeb009b20059d5bc":"Batas harian kerugian:","b1946e5b4b78465b7661fd4bc89ff52de6c633e7":"Maksimum trading berurutan","952f375412e89ff213a8aca383d18e5691354347":"Mulai","9f1c61cc03f3ef9324db05502f7f0b61e61e1521":"Batasan Trading","095ba68888b5ace5f4515f5acab76dfa1073544e":"Komputer saya","ddcb77ff769ea54ca622848f6bedd4004fa4f4fa":"Muatan","248e224f533752db28a1aab3519a58569ad96140":"Memuat blok","c7097e97dcc446ca889d3ca6be733a65e2728afe":"Berhasil memuat Google Drive","3218e5a460e82d7bdea9ce0f145cab2f47ba9a4b":"Menyimpan sebagai koleksi","611ebbfb080284312904de925ef0f75f4cb56ad2":"Simpan blok dan pengaturan Anda untuk digunakan kembali dalam strategi lain","efc007a393f66cdb14d57d385822a3d9e36ef873":"Simpan","a638caa8ab2b7ff7980a571334217339e6d1d634":"Menyimpan blok","39fca63515c105918f03e4908ec12df675b07f92":"Trading View","85dfa32c97d8618d1bea083609e2c8a29845abe5":"Akun","d847919a30d31c0be624087f3370492b3fdf80c6":"Jumlah kontrak","5cd6978d63540c8a490ef76f43219de6362f958e":"Total Modal","17410d7b62b8b1de981cfebada24632987edf186":"Total hasil","b841eeb091f1ff0e14be08e5ea1b93e4cf147ed3":"Total untung/rugi","90eef613042c5a51f542421065b68b886d473807":"Saldo","db1c784524e1b54011a95823026161f7c8517fe0":"Referensi","4db3e9e4aecd187db9339a10d2629fef46724dc4":"Jenis kontrak","1bb4086b66659d8580f9be4beef69931aeea3cad":"Spot awal","8bf249c4855e591964bd5bdd35c8ef2ee107342d":"Spot akhir","ba7be969e7c1bb5f22489e843478e3d721aaa843":"Harga beli","772fbced18230220d2d9be1456be16fc1b271d25":"Untung/Rugi","bae7d5be70820ed56467bd9a63744e23b47bd711":"Status","96f608c16cef16caa06bf38901fb5f618a35a70b":"Tertunda","7fb3a9b5101bcd45e2dca077191693a5199bafa9":"Diselesaikan","82a82f798dd773717ec37d15fd4405510291734e":"Bot tidak berjalan.","6a88e58aa1798626f94cf17f1a91618b405bb289":"Bot sedang memulai...","624cc7f40b68faace7e78d8e5c5be1d4f15facda":"Bot berjalan...","788180a6ddbbbcca10f6f49d8e85d557934bae0e":"Bot berhenti...","d907a40a4a15da3c21a6e0f8ace3f987d482f92c":"Bot telah berhenti.","4f219c17ab9ab76aa1cd431b4e0e5ecf5520e8e4":"Mencoba Membeli","4684ee1026d9b4c872d016c3c4588a0c479a451c":"Jumlah beli","ca92c55b9e4233d771d5b6300fe751a9678d1deb":"Pembelian berhasil","f02760cd2eac28169f0a990c950c3dfe8427f772":"Kontrak ditutup","fadc0ef93d1ff13370524ce8481ddc4a71195934":"Susun ulang secara vertikal","a479c9c34e878d07b4d67a73a48f432ad7dc53c8":"Men-download","e4458464df6cbb8da1134875ba51519c5d244d9f":"Blok harus berada didalam pemegang blok, blok utama atau fungsi","e9c45563358e813f157ba81b33143542165ba84e":"Peringatan","31cb6f44d030abeabcc7046555dea851602a87a5":"Strategi ini tidak tersedia di negara Anda.","9ce3bd4224c8c1780db56b4125ecf3f24bf748b7":"OK","486d55264892207fef1ed5799e0b213b446d3eaa":"File XML berisi elemen yang tidak tersedia. Silakan periksa atau ubah file.","a594b427eaf0f108d3e9cc20d70e15da811c760c":"Strategi yang tidak didukung","04a5090686ac7b54822e00a9ff08c38a107601e7":"Maaf, strategi ini tidak dapat digunakan pada bot Binary. Anda hanya dapat menggunakannya pada DBot.","77dfd2135f4db726c47299bb55be26f7f4525a46":"Batal","fdaa08aeaee0bf9b78d83ea19ef9e9bd019e8193":"Bawa saya ke DBot","f1d8b7b118d6f82f95614d476bc11af650aed3bc":"Tidak dapat memuat file blok","af145748c9cf765a3b059eec20cb1dbb899297d8":"Blok berhasil dimuat","11ee9c5d534cc8d22651092222b532917594161a":"Durasi minimum","5283ac04c9a8ba8a937d1edb4ba986aeefce8bf1":"Jumlah tik harus antara 5 dan 10","ace1342bc3720b77ce510b93074041e7386d209e":"Waktu berakhir tidak dapat setara dengan waktu mulai","fed3e7bd6696fb97a12d720845ab5388456bfc3b":"Analisa harus berupa satu digit","d466687f90ba548434d65186d11a80c4204f9ad6":"harus ditambahkan didalam:","6ddf2b3075ac9ab5d66b40e15ea9a34c087672ea":"harus ditambahkan didalam","33aa6ff282ee509d37c6f758274c9156b419ff73":"Strategi yang Anda coba impor tidak berlaku.","da162a909c2981ed318d23cd9a6be1d66e0a8400":"Format file tidak dikenali.","5e719fa76e1b6cb396376c82ebdd04bec7253229":"Remote blok untuk memuat harus berupa koleksi.","b0d2de25daf6ba09a5e710c6968ffded29c4dae1":"Tidak dapat memuat file blok.","df84a88f38b03b5b342362d72370b0d66afdae35":"Target harus berupa file xml","cd680fd936e9559ef1d95efac7a71680e2b13a89":"Url ini telah dimuat","34c59389053701a04127f74d32315e0206e076f8":"Error terjadi saat mencoba untuk memuat url","3ead0b14c72503187691a7a6d7121987299bd401":"Ini bukan versi resmi dari Binary Bot, penggunaan dengan risiko sendiri.","27401c9c8e476d659c8382e05c6d70a4a82be468":"Versi Resmi","bc981983e7f547dc62e19a1e383acfe00782a6d5":"Lanjutkan","b52b36b7269fbfc58ec24bb724691951a3decbe8":"Kembali","e9b450d14bc2363d292c84f17cfad5cfbd58a458":"Selesai","29cadadfebdd578a50b7b3d1b2c5b33e424d5de7":"Ikuti tur singkat","a48e81d4a8da67637b46725824177a959fe99b21":"Sudah bersedia untuk mempelajari cara menggunakan Bot Binary?","6f3e6ebf249947cec4f64117253a8fe43335ae79":"Tidak terima kasih","fcb6e90e7223e1d1d735f15dbb7ded9d81bbe7ef":"Jangan tanya saya lagi.","4ca0a75c2b7fa7da4364d03b72c46fee1860a2bf":"Ruang kerja (workspace)","5fcf29b9f0b8971c8148e70a150ddc9ac04c94fc":"Tarik dan lepas file blok.","ddcbb5361b1a16eba60fca2383fb297bb90ed9b3":"Unduh contoh strategi","1758356db21759f7c5a0da9b4dd1db8fd6feab3f":"atau","00b581632c1532969a7128ebc8eae936ed8af04e":"buat strategi Anda sendiri.","d171baee235d4c93f63755a876782dc5be4c3e47":"Peralatan blok","056f19272d96f902c38207cf163ea8dbff7fbd32":"Tambahkan lebih banyak blok kedalam bot Anda.","36bae31694f85bd7a5b0ad45e51ef622b95baadb":"Akun","f5c47fd3b3553b10441a06054078cea745177dea":"Masuk kedalam akun sebelum memulai bot Anda. Selalu uji strategi Anda menggunakan akun virtual.","fd825ae94aa79500a878dd4590a4b360e7162663":"Cara mengendalikan bot","6ee7980833e1ed72901b919ffd0fa20e1a251d3f":"Kontrol blok. Tahan kursor tombol masing-masing untuk info lebih lanjut.","f5169c84497de3aea74f7da9e7e177d1427e736b":"Selamat Menikmati!","4f1b3d682c2a00b393c33637da402463bc11d5ff":"Ingin melaporkan masalah atau memerlukan bantuan?","0049f8894e41937ebb9111cd3def6749049fb50f":"Klik di sini","aac1569ccf6b1a11b0ad0fbefdb9ffc777b4c733":"Klik untuk memilih","d1a17af19f5388af9d6596cc0ea7dbb1d739e255":"Tidak tersedia","53adebdc2b1cbbedb56395b19a73fe47b87cc554":"Tik","5fb1db527825d2996e37c655e5dec49d4da80c09":"Detik","092f99ea11a34a8490e7a767a83a42fc45634f82":"Menit","9e25a34e635a123f8958bbe26e7c4843278597fb":"Jam","f6bb0f468a8569c67b3d6826e57e62c5500c3681":"Hari","db6708630fc646eb98298d9acd701e0a1ac051c2":"Simpan blok dan strategi Anda ke Google Drive","85538d002a336c5addef8d189d80976cf7758f8c":"Anda mengakses sebagai","b65463cb6a42a17de514acc4659f7fd331e0876a":"Menghubungkan","ed28e0686e1251ba046f582a3e9ec02470a5e78d":"Memutuskan","cd5f85b6f187605f82386eacd680f93820af8d11":"Hasilnya adalah","1e38ce3d180cefae485a6986ca7c67841e30376f":"Benar jika hasilnya sesuai pilihan","5c89497fc3c128e2ff865ce8df15356054f2c028":"(4) Dapatkan hasil trading Anda dan bertrading lagi","14ea81918758c994cbe3178e695e56afc1ef2b45":"Dapatkan informasi trading sebelumnya beserta hasil, kemudian trading lagi (Tampilkan kontrak yang telah selesai)","5098e2bcc96ee227983c9f7eeddfd226c220ca00":"Rincian Kontrak:","251c830f8f869e0887e8b4dc4c30ba1738c7097e":"Baca pilihan opsi dari daftar rincian kontrak","b3b543c80063a116ced4965d8537b7b62d14c0b7":"Trading Kembali","a1eeb7c1e92e9a5d9323ed8ebd7ca7ffed8b0232":"Tampilkan blok kembali","ca5586bdb5bdc1a2c0baf53ed0ecd21fafabebe7":"Penjualan tersedia","03bad10717e183b24829baf483dc715e1a44bf7b":"Benar jika penjualan pada pasar tersedia","2c71ed279a402e93312dbda173ab18f244d6bf46":"(3) Lihat dan jual kontrak yang Anda beli","17632a9f51611d2579d95b4b1ccb9476566d7ccf":"Lihat info kontrak yang dibeli dan jual pada pasar jika tersedia (Tampilkan kontrak terbaru)","579607dc4f989ce2b94b558431666a0ab07ac1f3":"Jual pada pasar","e20afd5cf3811a42071c9a312abb2afdad4c590b":"Jual pada pasar.","4712cbff8e92822fc960ef9c0197293a19675eae":"Jual untung/rugi","df817b48c7a076561b4f8bedc52d65d2e351ab52":"Menampilkan keuntungan jual pada pasar.","da3105e38c42a481ad7230ed393b0e12bebe9c4f":"Harga Ask","343fda69c73b78b84967055aae97f790c422adfd":"Harga Ask bagi proposal yang dipilih","d4d34ce9d9dd7e87213469f88cb7ac43725675d5":"(2) Lihat dan beli kontrak Anda","fb61a3c71f4c488b3b470cb7daf502a3e9b5ad48":"Lihat stream tik dan beli kontrak yang Anda inginkan (Tampilkan tik terbaru)","9bb396940adb9705fe57eba6ea8b578e6aafa792":"Hasil","87da93a46d143f6019979b3548414d9d7adabb35":"Hasil bagi proposal yang dipilih","160f06d4799c85021a810f68c5b517eea37a2737":"Beli","4c2fdde3d9c1950498ed263d6ce21d4bf3d0800b":"Beli kontrak terpilih.","b44e884c355e447d0da0e6ba45caaff18c84373b":"Bollinger Bands","d6a2a207343bd83aacdc80b579ff4419713a256e":"Daftar Input","170a28a9db6d27d7212fc6dc249434a57517e7bc":"Periode","b833989d69900a4be9e32d1bab65c8f8233f099e":"Std. Dev. Up Multiplier","1cee82f19c0bedef64f68b32e6b02128efe7c61b":"Std. Dev. Down Multiplier","974da601086448d0060aeed90e53ddd5acd17b91":"Menghitung daftar Bollinger band (BB) menggunakan periode","d5b65cac1f1cf9421ac978eebe532de99040cca6":"Bollinger Bands Array","58de49791c64aba14e36e5887244a5ef088286cd":"Menghitung daftar Bollinger band (BB) menggunakan periode","4bd99f76f1104229744455d93df0ff76b9eeed58":"Exponential Moving Average","ea615c6d6a74e25a6d2f1bc9980b46e73508c2eb":"Menghitung Exponential Moving Average (EMA) dari daftar dengan periode","4082d9379e59b38c891d046312f8d3c4b64ae3b1":"Susunan Exponential Moving Average","562edc102c5dd9e2fbbede1140b8a5461c2d4dc8":"Menghitung daftar Exponential Moving Average (EMA) dari daftar nilai dengan periode","a537f4f3c0f6c68bf896fb23cb2ecdc658488ea2":"MACD Array","b18e572ea14edd48587145f1ef50718adbf256c6":"Fast EMA Period","974023bddd6249d0f6404872cfcae205b2599ea2":"Slow EMA Period","5c2adcb3d1bfd6b9f5c2dec13d02a9473e4445a1":"Sinyal Periode EMA","6b15ce93fd68d80aeee7f7964c1306044c3c1baf":"Menghitung Moving Average Convergence Divergence (MACD) dari daftar","95ec92885c855ba9cf734c17a43f081901e4d2cc":"Indeks Kekuatan Relatif (RSI)","b033619e108c9e43bfd8a42cd97bf5c5dc86dc65":"Indeks Kekuatan Relatif (RSI) adalah dari daftar dengan periode","4034de66995b876b2ba9bfd0274025e39168e05d":"Array Indeks Kekuatan Relatif (RSI)","f9da880c8b0e4cce4431912c24eba939e6bc06e1":"Menghitung daftar Indeks Kekuatan Relatif (RSI) dari nilai dengan periode","a9842c95766da40bf4ea6ee263cb5a5985847763":"Simple Moving Average","347775a293c14362d492f019e677c965be1d6e7d":"Menghitung Simple Moving Average (SMA) dari daftar dengan periode","4cc7b9e53d082896ad884eb01be16320af65f282":"Susunan Simple Moving Average","2c75179a57af3c36581008b65e86ed81c4a4cbea":"Menghitung daftar Simple Moving Average (SMA) dari daftar nilai dengan periode","39f024cf49724fe7ffdea7773c72ed06eec998e1":"dengan interval","e4bed3e67e58b2334ee4b9c6ce59ac7a95d80aaf":"Arah adalah","ad47561efb1dcbd7246d9b64487f615647fda036":"Benar jika arah sesuai dengan pilihan","05bef508aadd62bf3967dcf67d769da296f19989":"Arah Tik","d089ab98a846a521b09aad6ff3fefa728bfa8b42":"Arah blok tidak dipergunakan lagi, silahkan gunakan cek arah blog","cdb31fc857f01a59f664413498293c714285f46d":"dalam daftar candle","20fd5f86f08796f145d69dedc209a27e459b2f51":"dapatkan # dari akhir","a96606af8c33ac3428b45abc4782dbf93f458d29":"Dapatkan candle terbaru","90ed0e1ea5c1907f8a32d8051a66e845857bb2a4":"Daftar Digit Terakhir","248428facb97408414180d4de74e4db35360fbc4":"Kembali ke daftar nilai ditit terakhir","2e4202acde880b7b1c3686f0335ff879fc1e5c7a":"Digit Terakhir","e46e0bd2f7fe37217dec8aa26ebce8ffa3608663":"Menampilkan digit terakhir pada tik terbaru","d5fde4c9d5edf660f760fc226df4d2678d3334ab":"Daftar Candle","95e552a40d3446c96905cd3ec7e3d123d0246ce8":"Menampilkan daftar candle","5a0ed227a01b7d30b05dcaf3e1c23b74b9be6ff4":"Membuat daftar","a4220593d385a720886f7af1ed3c478fd0c6339c":"nilai pada daftar candle","cd8cdf3d47e921c8a72addae9269e66041d417c5":"Menampilkan daftar nilai candle yang dipilih","3e4f335e7a6f79bd1bafd219ddde30acbf16a7ac":"Pada daftar candle terbaca ","34037f9452fdb66c9ca27ebcc0afe9d5139e9e24":"# dari akhir","aba43a580daa7f306956ec69b83e6e37e7233126":"Baca nilai candle terpilih dalam candle terbaru","e04b522218a181cf0223042dd18ae08dcc22d8d3":"Tik Terakhir","6ee445fc253a55c9ed54c009c3f020ac65200d80":"Menampilkan nilai tik yang diterima sebelum pembelian blok","ed44b69176217a1251c04f0c13d23ac789ea60b2":"String Tik Terakhir","ea24dd1988c6534a5f0d11b8fbbc6c374fe68766":"Menampilkan nilai tik yang diterima oleh blok sebelum pembelian (String)","4b2340a890e88d1886757c3f7172e273a1edc31f":"Blok ini menampilkan setiap tik","b54d7b4590559dad64f02d09aacbf6d9863e2624":"Anda dapat menggunakan blok ini untuk menganalisa tik, apapun kontrak Anda","ebffc758056e6b2fc2af99af17fbc6853e5d3583":"Daftar Tik","17649cac8739adcae95e641f794880272ad33bd1":"Menampilkan daftar nilai tik","46ecdefde6a8dd5872cc6e0e52afb717f1140426":"String Daftar Tik","3bdc75d5d68b05dfd3ce6dcdf7d9773e60ed0a51":"Menampilkan daftar nilai tik (String)","802dc02469ae51067ca620ff57dfb5bdb3e524ac":"Saldo:","c4ee8e12b2484cd5b47cdf00bfa2c50b83e91d3d":"Dapatkan sisa saldo atau string","69280143949fcd59c171dd60f6b6e13d0cc08fe6":"Blok di dalam tidak diperhitungkan","d072c2ceeb5c1217722d14c74de7aeab945b4215":"Tempatkan blok di sini untuk mencegah penghapusan","e98ea4ac4e2cfd6a4c84386534c5d1acd7ec85d3":"Kunci: %1 Nilai: %2","27305f6365c38dd36f5b5eb781e05b5e2e4e3f6e":"Menampilkan representasi string dari pasangan nilai kunci","b06acc4158c824231f727a13e1c9811f43d5be42":"Muat Blok Dari","661db37251a1ed1afe357ee13895f37a623d7cbf":"Muat blok daru url","6c03ee54ad3a51fc92a1d69943e99667847705b6":"Memberitahukan","b1bec5d06e3672915d81b2fbc2347c8b4947a954":"dengan suara","a2d0c89fdfff3176efd4a443eb0f6607067b93e7":"Menciptakan pemberitahuan","6e0fc122f936f808bc2e3af661121b65712ae855":"Notifikasi Telegram %1 Token Akses: %2 ID Chat: %3 Pesan: %4","1aeb6caed9e46edf5d6224adc905ffb8ee3a7708":"Mengirim pesan ke Telegram","45ebd38f4c641ebf6f72be8c3a79dfa50cf9f20e":"Total Profit","ffb465875e1ff2b49bcaa7c6b70965ffe39fa59d":"Menampilkan total profit","532e65f6e266db0bb442d1f426d44d7d32962340":"String Total Keuntungan","78e84591ff76f992953a8e19b57c7eab7546d638":"Menampilkan total keuntungan (String)","bc528d26f66fe8c4aa4bb24ec9c99dff12c055e0":"Jumlah Transaksi","bea5756b18644ccfab01c1c0dbd6fa9db7103379":"Menampilkan jumlah transaksi sejak awal","7d500ebe352ccfa932b253e21938813a06fcff8e":"URL webhook: %1","e770fd2a6b980a0815592b1bd499127c5a5cfe39":"Kirim permintaan POST ke URL","a35646754dbe7a9211ba8b81338a5d64580eb276":"Payload kosong","69b0648eddd207cd45a9e1ba973dae287b535576":"Payload:","c67ded6b64019212eb2bc69afd761f5b3f626040":"Tambahkan tanda untuk membuat Barrier Offset.","569bbd757e1bb8bbccd250b98dc2bb37cb47b787":"Pasar","74751e67c3e1010c343095eaf543e7cb21ced2ef":"Jenis Trading","1f4698382842477e211eb46de81fa506f01a8c34":"Keduanya","c1baf816aac5a5cd849768773fc248cd249dc296":"Jenis Kontrak:","c93025710d1ae6cbaf8e710f63eca8edfa0c9399":"Interval Candle Tetap:","9693aeaaf68e3929b59b79306feaa0a847d01192":"Durasi:","78d7103a319e808455d397513279d99f3b3f3768":"Modal","10c02649e226d430bd75a5b6315a41c0db9992a2":"Batasan","837276742aa90209dde3b4eef07d8e7ab26731ef":"Analisa","258b49925b41751c6bd790a0848246566ba61440":"Ulang beli/jual pada error","c55ee3445cd391ab299b6f85a6ea9a68a65ea64d":"batalkan untuk kinerja yang lebih baik","b410994b67e37d9516eb9b866c85a8c639f79e68":"Ulang trading terakhir pada error","2260c5a971c2602834ef8feeb5fa522f900b469f":"bot akan mengabaikan trading yang tidak berhasil","cd1495cb4c60266a6abad9024022ae079bf7e416":"(1) Tentukan kontrak trading Anda","0745acf92abd7b60598f161717884cc45dab8694":"Jalankan Setelah di Mulai","999e1ade10ff5ee1d115f5a6288bfd2e0d0736e6":"Tentukan Pilihan Trading","a43c3299d30a5bc7e31a574cdc87f59cbc8fe585":"Tentukan kontrak trading Anda dan mulai trading, tambahkan inisialisasi disini. (Tampilkan pada awal)","d571f33d957ebcab086ecf38eedd71b6ef0c5820":"Opsi Trading","4d22b565e4253e92a908f216184779679bb1a044":"Batasan Atas","b70c38c6db3127422e05315c30bdf76c7c36c480":"Batasan bawah","a6c5f081b3addee364af1c8cdb84853f49dc8e07":"Mutlak","0f2ba74929aca6fea950e351dcd576b7cd841fa4":"apakah candle hitam?","7cb3b482ab66947d439642ec64dc7f5bd4e065dc":"Membuat daftar","5925d08228e246f07b790b88ad70c1b73a97d2bc":"nilai dari daftar candle","852b438f91ad9eb2cdd84419a675a216d543c687":"Baca","67d3b35a0b740127b56bcd44d3bcb1ccc20e0b48":"nilai pada candle","d79d854dcd0829e2177a47beab6a55569e781ab1":"Membaca sebuah kolom pada candle (Baca dari daftar Candle)","5606b4460ac96063b8a8e5647008f3ec97252fc5":"Detik Sejak Jangka Waktu","2de20bdeecb1a8c28bd36fe75f028ed4318d0348":"Kembali ke jangka waktu (detik setelah jangka waktu)","f43cb41af7ce8a69c7aecbc1c603bb0381270982":"Menjalankan Setiap","4b6fe6898f0f956d48a4c8172c6dfbcb4159ab09":"Detik","2eea87bb804e4e73e3f8e9c41140f7ed83ea8875":"Tampilkan blok didalam setiap detik","e0af6ddc8a892704f64680bcb22b30c4bfcefec5":"Pengoperasian blok setiap detik telah berakhir. Silahkan hubungi kami jika Anda memiliki kasus yang masih berlaku.","7b9c76088576a64f32d67ec335162b9f73eaa026":"Tampilkan Setelah","ff56ffac023cf69ca5c7f71d407499536f4f86b5":"Tampilkan blok setelah beberapa detik","e9fb732dde76a6977bcaa2818b0f56125b183648":"Ke Tanggal/Waktu","1a90ae7cb728e7f25b031d7e844882f75e74ab5c":"Ke Timestamp"}
 
 /***/ }),
 /* 254 */,
@@ -69700,13 +69753,13 @@ module.exports = {"3d52a6d8fedcc48a65297c07bf5f7e3e41aab5aa":"Logika","3edf0df49
 /* unused harmony export isEuLandingCompany */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return hasEuAccount; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return isEuCountry; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_modules_es6_promise__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_modules_es6_promise__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_modules_es6_promise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_core_js_modules_es6_promise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_modules_es6_object_to_string__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_modules_es6_object_to_string___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_core_js_modules_es6_object_to_string__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_regenerator_runtime_runtime__ = __webpack_require__(67);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_regenerator_runtime_runtime___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_regenerator_runtime_runtime__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__appId__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__appId__ = __webpack_require__(44);
 
 
 
@@ -69812,7 +69865,7 @@ function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_modules_es6_array_find__ = __webpack_require__(54);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_modules_es6_array_find__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_modules_es6_array_find___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_core_js_modules_es6_array_find__);
 
 
@@ -70419,28 +70472,25 @@ langListener();
 /* 717 */,
 /* 718 */,
 /* 719 */,
-/* 720 */,
-/* 721 */,
-/* 722 */,
-/* 723 */
+/* 720 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_modules_es6_regexp_replace__ = __webpack_require__(53);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_modules_es6_regexp_replace__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_modules_es6_regexp_replace___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_core_js_modules_es6_regexp_replace__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_dom__ = __webpack_require__(75);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react_dom__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__endpoint__ = __webpack_require__(724);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__react_components_logo_jsx__ = __webpack_require__(726);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__react_components_footer_jsx__ = __webpack_require__(727);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__common_appId__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__endpoint__ = __webpack_require__(721);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__react_components_logo_jsx__ = __webpack_require__(723);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__react_components_footer_jsx__ = __webpack_require__(724);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__common_appId__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__common_footer_checks__ = __webpack_require__(269);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__common_gtm__ = __webpack_require__(76);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__common_lang__ = __webpack_require__(47);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__common_utils_storageManager__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__common_lang__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__common_utils_storageManager__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__common_utils_tools__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__common_binary_ui_dropdown__ = __webpack_require__(270);
 
@@ -70491,25 +70541,25 @@ loginCheck();
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(2)))
 
 /***/ }),
-/* 724 */
+/* 721 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function($) {/* harmony export (immutable) */ __webpack_exports__["a"] = endpoint;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_regenerator_runtime_runtime__ = __webpack_require__(67);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_regenerator_runtime_runtime___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_regenerator_runtime_runtime__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_modules_es6_promise__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_modules_es6_promise__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_modules_es6_promise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_core_js_modules_es6_promise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_modules_es6_object_to_string__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_modules_es6_object_to_string___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_core_js_modules_es6_object_to_string__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_modules_es6_regexp_match__ = __webpack_require__(71);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_modules_es6_regexp_match__ = __webpack_require__(69);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_modules_es6_regexp_match___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_core_js_modules_es6_regexp_match__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_core_js_modules_es6_regexp_replace__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_core_js_modules_es6_regexp_replace__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_core_js_modules_es6_regexp_replace___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_core_js_modules_es6_regexp_replace__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_core_js_modules_es6_string_ends_with__ = __webpack_require__(725);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_core_js_modules_es6_string_ends_with__ = __webpack_require__(722);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_core_js_modules_es6_string_ends_with___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_core_js_modules_es6_string_ends_with__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__common_utils_storageManager__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__common_appId__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__common_utils_storageManager__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__common_appId__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__common_utils_tools__ = __webpack_require__(21);
 
 
@@ -70630,7 +70680,7 @@ function resetEndpoint() {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(2)))
 
 /***/ }),
-/* 725 */
+/* 722 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -70638,11 +70688,11 @@ function resetEndpoint() {
 
 var $export = __webpack_require__(8);
 var toLength = __webpack_require__(29);
-var context = __webpack_require__(114);
+var context = __webpack_require__(112);
 var ENDS_WITH = 'endsWith';
 var $endsWith = ''[ENDS_WITH];
 
-$export($export.P + $export.F * __webpack_require__(115)(ENDS_WITH), 'String', {
+$export($export.P + $export.F * __webpack_require__(113)(ENDS_WITH), 'String', {
   endsWith: function endsWith(searchString /* , endPosition = @length */) {
     var that = context(this, searchString, ENDS_WITH);
     var endPosition = arguments.length > 1 ? arguments[1] : undefined;
@@ -70657,7 +70707,7 @@ $export($export.P + $export.F * __webpack_require__(115)(ENDS_WITH), 'String', {
 
 
 /***/ }),
-/* 726 */
+/* 723 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -70695,7 +70745,7 @@ var Logo = function Logo() {
 /* harmony default export */ __webpack_exports__["a"] = (Logo);
 
 /***/ }),
-/* 727 */
+/* 724 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
